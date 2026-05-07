@@ -86,6 +86,10 @@ pub fn get_move(name: &str) -> Option<&'static MoveData> {
     MOVES.iter().find(|m| m.name.eq_ignore_ascii_case(name))
 }
 
+pub fn get_move_by_id(id: u16) -> Option<&'static MoveData> {
+    MOVES.iter().find(|m| m.id == id)
+}
+
 #[allow(dead_code)]
 const _: () = {
     // Suppress unused warnings for constants used only in array initialization
