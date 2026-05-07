@@ -1,0 +1,75 @@
+{
+  "id": "replay-drizzle-rain-boost",
+  "description": "Dondozo has Drizzle. It leads and sets Rain on turn 0. Then uses Surf (Water, boosted 1.5x by Rain) vs Heatran (4x weak to Water). Should be a guaranteed OHKO with rain boost.",
+  "teams": {
+    "p1": [
+      {
+        "species": "Dondozo",
+        "level": 100,
+        "moves": [
+          "Surf"
+        ],
+        "ability": "Drizzle",
+        "item": "None",
+        "nature": "Modest",
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          0,
+          0
+        ],
+        "ivs": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ]
+      }
+    ],
+    "p2": [
+      {
+        "species": "Heatran",
+        "level": 75,
+        "moves": [
+          "Flamethrower"
+        ],
+        "ability": "None",
+        "item": "None",
+        "nature": "Calm",
+        "evs": [
+          252,
+          0,
+          0,
+          0,
+          252,
+          0
+        ],
+        "ivs": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ]
+      }
+    ]
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "p1_choice": "move 0",
+      "p2_choice": "move 0",
+      "expected": {
+        "weather": "Rain",
+        "p2_active_fainted": true,
+        "p1_active_fainted": false
+      }
+    }
+  ],
+  "winner": "p1"
+}

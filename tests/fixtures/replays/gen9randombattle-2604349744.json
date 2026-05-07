@@ -1,0 +1,407 @@
+{
+  "teams": {
+    "p1": [
+      {
+        "species": "Meowscarada",
+        "level": 78
+      },
+      {
+        "species": "Eelektross",
+        "level": 87
+      },
+      {
+        "species": "Tinkaton",
+        "level": 82
+      },
+      {
+        "species": "Eternatus",
+        "level": 69
+      },
+      {
+        "species": "Zangoose",
+        "level": 85
+      },
+      {
+        "species": "Suicune",
+        "level": 82
+      }
+    ],
+    "p2": [
+      {
+        "species": "Flutter Mane",
+        "level": 74
+      },
+      {
+        "species": "Komala",
+        "level": 88
+      },
+      {
+        "species": "Ho-Oh",
+        "level": 71
+      },
+      {
+        "species": "Torkoal",
+        "level": 88
+      },
+      {
+        "species": "Orthworm",
+        "level": 88
+      }
+    ]
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "p1_choice": "switch Eelektross",
+      "p2_choice": "move Moonblast",
+      "expected": {
+        "p1_active_hp": 179,
+        "p2_active_hp": 203,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 2,
+      "p1_choice": "move Discharge",
+      "p2_choice": "switch Komala",
+      "expected": {
+        "p1_active_hp": 179,
+        "p2_active_hp": 219,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 3,
+      "p1_choice": "switch Tinkaton",
+      "p2_choice": "move Knock Off",
+      "expected": {
+        "p1_active_hp": 274,
+        "p2_active_hp": 152,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 4,
+      "p1_choice": "move Swords Dance",
+      "p2_choice": "switch Ho-Oh",
+      "expected": {
+        "p1_active_hp": 274,
+        "p2_active_hp": 268,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 5,
+      "p1_choice": "switch Eternatus",
+      "p2_choice": "move Sacred Fire",
+      "expected": {
+        "p1_active_hp": 308,
+        "p2_active_hp": 268,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 6,
+      "p1_choice": "move Meteor Beam",
+      "p2_choice": "switch Komala",
+      "expected": {
+        "p1_active_hp": 308,
+        "p2_active_hp": 82,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 7,
+      "p1_choice": "move Dynamax Cannon",
+      "p2_choice": "switch Torkoal",
+      "expected": {
+        "p1_active_hp": 308,
+        "p2_active_hp": 266,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 8,
+      "p1_choice": "move Meteor Beam",
+      "p2_choice": "move Yawn",
+      "expected": {
+        "p1_active_hp": 308,
+        "p2_active_hp": 266,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 9,
+      "p1_choice": "move Meteor Beam",
+      "p2_choice": "switch Flutter Mane",
+      "expected": {
+        "p1_active_hp": 308,
+        "p2_active_hp": 203,
+        "p1_active_status": "slp",
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 10,
+      "p1_choice": null,
+      "p2_choice": "move Moonblast",
+      "expected": {
+        "p1_active_hp": 97,
+        "p2_active_hp": 203,
+        "p1_active_status": "slp",
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 11,
+      "p1_choice": "switch Tinkaton",
+      "p2_choice": "move Moonblast",
+      "expected": {
+        "p1_active_hp": 274,
+        "p2_active_hp": 203,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 12,
+      "p1_choice": "switch Zangoose",
+      "p2_choice": "switch Ho-Oh",
+      "expected": {
+        "p1_active_hp": 263,
+        "p2_active_hp": 268,
+        "p1_active_status": "tox",
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 13,
+      "p1_choice": "move Knock Off",
+      "p2_choice": "move Brave Bird",
+      "expected": {
+        "p1_active_hp": 87,
+        "p2_active_hp": 85,
+        "p1_active_status": "tox",
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 14,
+      "p1_choice": "move Knock Off",
+      "p2_choice": "switch Orthworm",
+      "expected": {
+        "p1_active_hp": 55,
+        "p2_active_hp": 187,
+        "p1_active_status": "tox",
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 15,
+      "p1_choice": "move Close Combat",
+      "p2_choice": "move Rest",
+      "expected": {
+        "p1_active_hp": 7,
+        "p2_active_hp": 266,
+        "p1_active_status": "tox",
+        "p2_active_status": "slp",
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 16,
+      "p1_choice": "switch Suicune",
+      "p2_choice": "switch Ho-Oh",
+      "expected": {
+        "p1_active_hp": 298,
+        "p2_active_hp": 94,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 17,
+      "p1_choice": "move Calm Mind",
+      "p2_choice": "switch Flutter Mane",
+      "expected": {
+        "p1_active_hp": 298,
+        "p2_active_hp": 203,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 18,
+      "p1_choice": "move Protect",
+      "p2_choice": "move Psyshock",
+      "expected": {
+        "p1_active_hp": 298,
+        "p2_active_hp": 203,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 19,
+      "p1_choice": "move Calm Mind",
+      "p2_choice": "switch Ho-Oh",
+      "expected": {
+        "p1_active_hp": 298,
+        "p2_active_hp": 183,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 20,
+      "p1_choice": "move Substitute",
+      "p2_choice": "switch Flutter Mane",
+      "expected": {
+        "p1_active_hp": 242,
+        "p2_active_hp": 203,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 21,
+      "p1_choice": "move Calm Mind",
+      "p2_choice": "move Moonblast",
+      "expected": {
+        "p1_active_hp": 260,
+        "p2_active_hp": 203,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 22,
+      "p1_choice": "move Calm Mind",
+      "p2_choice": "move Moonblast",
+      "expected": {
+        "p1_active_hp": 278,
+        "p2_active_hp": 203,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 23,
+      "p1_choice": "move Substitute",
+      "p2_choice": "move Moonblast",
+      "expected": {
+        "p1_active_hp": 180,
+        "p2_active_hp": 203,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 24,
+      "p1_choice": "move Scald",
+      "p2_choice": "move Moonblast",
+      "expected": {
+        "p1_active_hp": 198,
+        "p2_active_hp": 11,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 25,
+      "p1_choice": "move Protect",
+      "p2_choice": "move Moonblast",
+      "expected": {
+        "p1_active_hp": 216,
+        "p2_active_hp": 11,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 26,
+      "p1_choice": "move Substitute",
+      "p2_choice": "move Moonblast",
+      "expected": {
+        "p1_active_hp": 160,
+        "p2_active_hp": 11,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 27,
+      "p1_choice": "move Scald",
+      "p2_choice": "move Moonblast",
+      "expected": {
+        "p1_active_hp": 178,
+        "p2_active_hp": 0,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": true
+      }
+    }
+  ],
+  "winner": "etechemsdank",
+  "id": "gen9randombattle-2604349744"
+}

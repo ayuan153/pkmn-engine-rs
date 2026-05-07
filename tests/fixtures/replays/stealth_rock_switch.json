@@ -1,0 +1,57 @@
+{
+  "id": "replay-stealth-rock-switch",
+  "description": "Stealth Rock is up on p1 side. Garchomp switches to Volcarona (Bug/Fire, 4x Rock weak = 50% SR damage). Blissey uses Flamethrower. Volcarona should survive at ~50% HP.",
+  "teams": {
+    "p1": [
+      {
+        "species": "Garchomp",
+        "level": 100,
+        "moves": ["Earthquake"],
+        "ability": "None",
+        "item": "None",
+        "nature": "Adamant",
+        "evs": [0, 252, 0, 0, 0, 252],
+        "ivs": [31, 31, 31, 31, 31, 31]
+      },
+      {
+        "species": "Volcarona",
+        "level": 100,
+        "moves": ["Flamethrower"],
+        "ability": "None",
+        "item": "None",
+        "nature": "Modest",
+        "evs": [252, 0, 0, 252, 0, 0],
+        "ivs": [31, 31, 31, 31, 31, 31]
+      }
+    ],
+    "p2": [
+      {
+        "species": "Blissey",
+        "level": 100,
+        "moves": ["Flamethrower"],
+        "ability": "None",
+        "item": "None",
+        "nature": "Bold",
+        "evs": [252, 0, 252, 0, 0, 0],
+        "ivs": [31, 31, 31, 31, 31, 31]
+      }
+    ]
+  },
+  "setup": {
+    "p1_stealth_rock": true
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "p1_choice": "switch 1",
+      "p2_choice": "move 0",
+      "expected": {
+        "p1_active_fainted": false,
+        "p2_active_fainted": false,
+        "p1_took_damage": true,
+        "p1_hp_fraction_max": 0.50
+      }
+    }
+  ],
+  "winner": null
+}

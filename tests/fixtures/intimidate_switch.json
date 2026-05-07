@@ -1,0 +1,52 @@
+{
+  "id": "replay-intimidate-switch",
+  "description": "Garchomp uses Earthquake, then switches to Dragonite (Intimidate). Dragonite's Intimidate should lower Heatran's Attack by 1 stage. Heatran uses Flamethrower (special, unaffected by Intimidate) both turns.",
+  "teams": {
+    "p1": [
+      {
+        "species": "Garchomp",
+        "level": 100,
+        "moves": ["Earthquake"],
+        "ability": "None",
+        "item": "None",
+        "nature": "Adamant",
+        "evs": [0, 252, 0, 0, 0, 252],
+        "ivs": [31, 31, 31, 31, 31, 31]
+      },
+      {
+        "species": "Dragonite",
+        "level": 100,
+        "moves": ["Earthquake"],
+        "ability": "Intimidate",
+        "item": "None",
+        "nature": "Adamant",
+        "evs": [252, 252, 0, 0, 0, 0],
+        "ivs": [31, 31, 31, 31, 31, 31]
+      }
+    ],
+    "p2": [
+      {
+        "species": "Heatran",
+        "level": 100,
+        "moves": ["Flamethrower"],
+        "ability": "None",
+        "item": "None",
+        "nature": "Modest",
+        "evs": [252, 0, 0, 252, 0, 0],
+        "ivs": [31, 31, 31, 31, 31, 31]
+      }
+    ]
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "p1_choice": "move 0",
+      "p2_choice": "move 0",
+      "expected": {
+        "p2_active_fainted": true,
+        "p1_active_fainted": false
+      }
+    }
+  ],
+  "winner": "p1"
+}

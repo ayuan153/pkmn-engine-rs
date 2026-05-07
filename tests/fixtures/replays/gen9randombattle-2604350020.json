@@ -1,0 +1,230 @@
+{
+  "teams": {
+    "p1": [
+      {
+        "species": "Porygon2",
+        "level": 81
+      },
+      {
+        "species": "Ursaring",
+        "level": 84
+      },
+      {
+        "species": "Arceus-Electric",
+        "level": 70
+      },
+      {
+        "species": "Clawitzer",
+        "level": 87
+      },
+      {
+        "species": "Tropius",
+        "level": 91
+      }
+    ],
+    "p2": [
+      {
+        "species": "Toxicroak",
+        "level": 84
+      },
+      {
+        "species": "Skarmory",
+        "level": 80
+      },
+      {
+        "species": "Palossand",
+        "level": 89
+      },
+      {
+        "species": "Fezandipiti",
+        "level": 82
+      }
+    ]
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "p1_choice": "move Discharge",
+      "p2_choice": "move Swords Dance",
+      "expected": {
+        "p1_active_hp": 270,
+        "p2_active_hp": 171,
+        "p1_active_status": null,
+        "p2_active_status": "par",
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 2,
+      "p1_choice": "switch Ursaring",
+      "p2_choice": "switch Skarmory",
+      "expected": {
+        "p1_active_hp": 288,
+        "p2_active_hp": 235,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 3,
+      "p1_choice": "move Swords Dance",
+      "p2_choice": "move Body Press",
+      "expected": {
+        "p1_active_hp": 142,
+        "p2_active_hp": 235,
+        "p1_active_status": "tox",
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 4,
+      "p1_choice": "move Facade",
+      "p2_choice": "move Spikes",
+      "expected": {
+        "p1_active_hp": 76,
+        "p2_active_hp": 98,
+        "p1_active_status": "tox",
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 5,
+      "p1_choice": "move Facade",
+      "p2_choice": "switch Palossand",
+      "expected": {
+        "p1_active_hp": 40,
+        "p2_active_hp": 296,
+        "p1_active_status": "tox",
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 6,
+      "p1_choice": "switch Arceus-Electric",
+      "p2_choice": "switch Skarmory",
+      "expected": {
+        "p1_active_hp": 249,
+        "p2_active_hp": 2,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 7,
+      "p1_choice": "move Calm Mind",
+      "p2_choice": "switch Palossand",
+      "expected": {
+        "p1_active_hp": 249,
+        "p2_active_hp": 296,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 8,
+      "p1_choice": "move Ice Beam",
+      "p2_choice": "move Earth Power",
+      "expected": {
+        "p1_active_hp": 115,
+        "p2_active_hp": 128,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 9,
+      "p1_choice": "move Ice Beam",
+      "p2_choice": "switch Fezandipiti",
+      "expected": {
+        "p1_active_hp": 115,
+        "p2_active_hp": 278,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 10,
+      "p1_choice": "move Recover",
+      "p2_choice": "move Swords Dance",
+      "expected": {
+        "p1_active_hp": 257,
+        "p2_active_hp": 278,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 11,
+      "p1_choice": "move Judgment",
+      "p2_choice": "move Swords Dance",
+      "expected": {
+        "p1_active_hp": 257,
+        "p2_active_hp": 180,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 12,
+      "p1_choice": "switch Clawitzer",
+      "p2_choice": "move Tera Blast",
+      "expected": {
+        "p1_active_hp": 232,
+        "p2_active_hp": 197,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 13,
+      "p1_choice": "switch Tropius",
+      "p2_choice": "move Gunk Shot",
+      "expected": {
+        "p1_active_hp": 328,
+        "p2_active_hp": 214,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 14,
+      "p1_choice": null,
+      "p2_choice": "move Tera Blast",
+      "expected": {
+        "p1_active_hp": 0,
+        "p2_active_hp": 231,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": true,
+        "p2_active_fainted": false
+      }
+    }
+  ],
+  "winner": "liljuicewrldvert",
+  "id": "gen9randombattle-2604350020"
+}

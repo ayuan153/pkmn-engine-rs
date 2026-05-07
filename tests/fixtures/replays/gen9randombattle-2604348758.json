@@ -1,0 +1,200 @@
+{
+  "teams": {
+    "p1": [
+      {
+        "species": "Golurk",
+        "level": 87
+      },
+      {
+        "species": "Tropius",
+        "level": 91
+      },
+      {
+        "species": "Bombirdier",
+        "level": 85
+      },
+      {
+        "species": "Persian",
+        "level": 92
+      },
+      {
+        "species": "Probopass",
+        "level": 91
+      }
+    ],
+    "p2": [
+      {
+        "species": "Iron Moth",
+        "level": 78
+      },
+      {
+        "species": "Articuno-Galar",
+        "level": 84
+      },
+      {
+        "species": "Vileplume",
+        "level": 85
+      }
+    ]
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "p1_choice": "move Stealth Rock",
+      "p2_choice": "move Energy Ball",
+      "expected": {
+        "p1_active_hp": 67,
+        "p2_active_hp": 253,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 2,
+      "p1_choice": "switch Tropius",
+      "p2_choice": "move Energy Ball",
+      "expected": {
+        "p1_active_hp": 302,
+        "p2_active_hp": 253,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 3,
+      "p1_choice": "move Dragon Dance",
+      "p2_choice": "switch Articuno-Galar",
+      "expected": {
+        "p1_active_hp": 302,
+        "p2_active_hp": 288,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 4,
+      "p1_choice": "switch Bombirdier",
+      "p2_choice": "move Calm Mind",
+      "expected": {
+        "p1_active_hp": 258,
+        "p2_active_hp": 288,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 5,
+      "p1_choice": "move Knock Off",
+      "p2_choice": "move Hurricane",
+      "expected": {
+        "p1_active_hp": 47,
+        "p2_active_hp": 70,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 6,
+      "p1_choice": "switch Persian",
+      "p2_choice": "move Hurricane",
+      "expected": {
+        "p1_active_hp": 269,
+        "p2_active_hp": 70,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 7,
+      "p1_choice": "move Knock Off",
+      "p2_choice": "switch Iron Moth",
+      "expected": {
+        "p1_active_hp": 269,
+        "p2_active_hp": 190,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 8,
+      "p1_choice": "move Knock Off",
+      "p2_choice": "move Fiery Dance",
+      "expected": {
+        "p1_active_hp": 161,
+        "p2_active_hp": 54,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 9,
+      "p1_choice": "move Knock Off",
+      "p2_choice": "switch Vileplume",
+      "expected": {
+        "p1_active_hp": 161,
+        "p2_active_hp": 233,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 10,
+      "p1_choice": "move Knock Off",
+      "p2_choice": "move Strength Sap",
+      "expected": {
+        "p1_active_hp": 161,
+        "p2_active_hp": 266,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 11,
+      "p1_choice": "switch Probopass",
+      "p2_choice": "move Sludge Bomb",
+      "expected": {
+        "p1_active_hp": 257,
+        "p2_active_hp": 266,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 12,
+      "p1_choice": null,
+      "p2_choice": null,
+      "expected": {
+        "p1_active_hp": 257,
+        "p2_active_hp": 266,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    }
+  ],
+  "winner": "sukunamatata",
+  "id": "gen9randombattle-2604348758"
+}

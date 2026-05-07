@@ -1,0 +1,62 @@
+{
+  "id": "replay-ko-forced-switch",
+  "description": "Garchomp OHKOs Heatran with Earthquake (4x SE). P2 must switch to Blissey. Then Garchomp uses Earthquake again vs Blissey (Normal type, neutral). Blissey should survive due to massive HP.",
+  "teams": {
+    "p1": [
+      {
+        "species": "Garchomp",
+        "level": 100,
+        "moves": ["Earthquake"],
+        "ability": "None",
+        "item": "None",
+        "nature": "Adamant",
+        "evs": [0, 252, 0, 0, 0, 252],
+        "ivs": [31, 31, 31, 31, 31, 31]
+      }
+    ],
+    "p2": [
+      {
+        "species": "Heatran",
+        "level": 100,
+        "moves": ["Flamethrower"],
+        "ability": "None",
+        "item": "None",
+        "nature": "Modest",
+        "evs": [0, 0, 0, 252, 0, 252],
+        "ivs": [31, 31, 31, 31, 31, 31]
+      },
+      {
+        "species": "Blissey",
+        "level": 100,
+        "moves": ["Flamethrower"],
+        "ability": "None",
+        "item": "None",
+        "nature": "Bold",
+        "evs": [252, 0, 252, 0, 0, 0],
+        "ivs": [31, 31, 31, 31, 31, 31]
+      }
+    ]
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "p1_choice": "move 0",
+      "p2_choice": "move 0",
+      "expected": {
+        "p2_active_fainted": true,
+        "p1_active_fainted": false
+      }
+    },
+    {
+      "turn": 2,
+      "p1_choice": "move 0",
+      "p2_choice": "switch 1",
+      "expected": {
+        "p2_active_fainted": false,
+        "p1_active_fainted": false,
+        "p2_took_damage": true
+      }
+    }
+  ],
+  "winner": null
+}

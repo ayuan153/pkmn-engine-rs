@@ -1,0 +1,242 @@
+{
+  "teams": {
+    "p1": [
+      {
+        "species": "Lucario",
+        "level": 84
+      },
+      {
+        "species": "Iron Bundle",
+        "level": 78
+      },
+      {
+        "species": "Infernape",
+        "level": 82
+      },
+      {
+        "species": "Donphan",
+        "level": 84
+      },
+      {
+        "species": "Meganium",
+        "level": 90
+      },
+      {
+        "species": "Stonjourner",
+        "level": 91
+      }
+    ],
+    "p2": [
+      {
+        "species": "Drifblim",
+        "level": 86
+      },
+      {
+        "species": "Zamazenta",
+        "level": 71
+      },
+      {
+        "species": "Blastoise",
+        "level": 80
+      },
+      {
+        "species": "Decidueye-Hisui",
+        "level": 87
+      },
+      {
+        "species": "Plusle",
+        "level": 95
+      },
+      {
+        "species": "Smeargle",
+        "level": 95
+      }
+    ]
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "p1_choice": "move Swords Dance",
+      "p2_choice": "move Shadow Ball",
+      "expected": {
+        "p1_active_hp": 153,
+        "p2_active_hp": 398,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 2,
+      "p1_choice": "move Meteor Mash",
+      "p2_choice": "switch Zamazenta",
+      "expected": {
+        "p1_active_hp": 65,
+        "p2_active_hp": 248,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 3,
+      "p1_choice": "switch Iron Bundle",
+      "p2_choice": "move Psychic Fangs",
+      "expected": {
+        "p1_active_hp": 215,
+        "p2_active_hp": 121,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 4,
+      "p1_choice": "move Ice Beam",
+      "p2_choice": "switch Blastoise",
+      "expected": {
+        "p1_active_hp": 215,
+        "p2_active_hp": 258,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 5,
+      "p1_choice": "move Freeze-Dry",
+      "p2_choice": "move Shell Smash",
+      "expected": {
+        "p1_active_hp": 215,
+        "p2_active_hp": 118,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 6,
+      "p1_choice": "move Freeze-Dry",
+      "p2_choice": "switch Decidueye-Hisui",
+      "expected": {
+        "p1_active_hp": 114,
+        "p2_active_hp": 295,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 7,
+      "p1_choice": "switch Infernape",
+      "p2_choice": "move Triple Arrows",
+      "expected": {
+        "p1_active_hp": 259,
+        "p2_active_hp": 125,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 8,
+      "p1_choice": "move Flare Blitz",
+      "p2_choice": "switch Plusle",
+      "expected": {
+        "p1_active_hp": 218,
+        "p2_active_hp": 268,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 9,
+      "p1_choice": "switch Donphan",
+      "p2_choice": "switch Smeargle",
+      "expected": {
+        "p1_active_hp": 288,
+        "p2_active_hp": 258,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 10,
+      "p1_choice": null,
+      "p2_choice": "move Spore",
+      "expected": {
+        "p1_active_hp": 288,
+        "p2_active_hp": 258,
+        "p1_active_status": "slp",
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 11,
+      "p1_choice": "switch Meganium",
+      "p2_choice": "move Shell Smash",
+      "expected": {
+        "p1_active_hp": 290,
+        "p2_active_hp": 258,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 12,
+      "p1_choice": "move Knock Off",
+      "p2_choice": "move Shell Smash",
+      "expected": {
+        "p1_active_hp": 290,
+        "p2_active_hp": 47,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 13,
+      "p1_choice": "switch Stonjourner",
+      "p2_choice": "move Population Bomb",
+      "expected": {
+        "p1_active_hp": 330,
+        "p2_active_hp": 47,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 14,
+      "p1_choice": "move Earthquake",
+      "p2_choice": "move Power Trip",
+      "expected": {
+        "p1_active_hp": 125,
+        "p2_active_hp": 0,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": true
+      }
+    }
+  ],
+  "winner": "Alexspitzcharles",
+  "id": "gen9randombattle-2604349237"
+}

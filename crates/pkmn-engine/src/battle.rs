@@ -23,14 +23,18 @@ pub struct Battle {
 
 impl Battle {
     pub fn new(side1: Side, side2: Side, seed: u64) -> Self {
-        Self {
+        let mut battle = Self {
             sides: [side1, side2],
             field: Field::default(),
             turn: 0,
             result: BattleResult::Ongoing,
             phase: BattlePhase::ActionSelection,
             rng_seed: seed,
-        }
+        };
+        // Trigger abilities for starting leads (weather, terrain, Intimidate)
+        battle.trigger_ability_on_switch(0);
+        battle.trigger_ability_on_switch(1);
+        battle
     }
 
     /// Get legal choices for a player (0 or 1)

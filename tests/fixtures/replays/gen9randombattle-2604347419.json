@@ -1,0 +1,359 @@
+{
+  "teams": {
+    "p1": [
+      {
+        "species": "Ursaring",
+        "level": 84
+      },
+      {
+        "species": "Flapple",
+        "level": 88
+      },
+      {
+        "species": "Scyther",
+        "level": 82
+      },
+      {
+        "species": "Gumshoos",
+        "level": 95
+      },
+      {
+        "species": "Tentacruel",
+        "level": 84
+      },
+      {
+        "species": "Gardevoir",
+        "level": 83
+      }
+    ],
+    "p2": [
+      {
+        "species": "Delibird",
+        "level": 100
+      },
+      {
+        "species": "Minior-Orange",
+        "level": 79
+      },
+      {
+        "species": "Ariados",
+        "level": 95
+      },
+      {
+        "species": "Pawmot",
+        "level": 80
+      },
+      {
+        "species": "Giratina",
+        "level": 75
+      },
+      {
+        "species": "Wugtrio",
+        "level": 91
+      }
+    ]
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "p1_choice": "move Swords Dance",
+      "p2_choice": "move Spikes",
+      "expected": {
+        "p1_active_hp": 288,
+        "p2_active_hp": 252,
+        "p1_active_status": "tox",
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 2,
+      "p1_choice": "move Facade",
+      "p2_choice": "switch Minior-Orange",
+      "expected": {
+        "p1_active_hp": 270,
+        "p2_active_hp": 224,
+        "p1_active_status": "tox",
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 3,
+      "p1_choice": "move Close Combat",
+      "p2_choice": "move Shell Smash",
+      "expected": {
+        "p1_active_hp": 234,
+        "p2_active_hp": 8,
+        "p1_active_status": "tox",
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 4,
+      "p1_choice": "switch Flapple",
+      "p2_choice": "move Acrobatics",
+      "expected": {
+        "p1_active_hp": 233,
+        "p2_active_hp": 8,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 5,
+      "p1_choice": "move Sucker Punch",
+      "p2_choice": "switch Ariados",
+      "expected": {
+        "p1_active_hp": 233,
+        "p2_active_hp": 287,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 6,
+      "p1_choice": "switch Scyther",
+      "p2_choice": "move Sticky Web",
+      "expected": {
+        "p1_active_hp": 249,
+        "p2_active_hp": 287,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 7,
+      "p1_choice": "move Defog",
+      "p2_choice": "move Poison Jab",
+      "expected": {
+        "p1_active_hp": 141,
+        "p2_active_hp": 287,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 8,
+      "p1_choice": "move Dual Wingbeat",
+      "p2_choice": "switch Pawmot",
+      "expected": {
+        "p1_active_hp": 141,
+        "p2_active_hp": 74,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 9,
+      "p1_choice": "move Dual Wingbeat",
+      "p2_choice": "switch Giratina",
+      "expected": {
+        "p1_active_hp": 141,
+        "p2_active_hp": 249,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 10,
+      "p1_choice": "switch Gumshoos",
+      "p2_choice": "move Dragon Pulse",
+      "expected": {
+        "p1_active_hp": 227,
+        "p2_active_hp": 235,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 11,
+      "p1_choice": "move Knock Off",
+      "p2_choice": "switch Pawmot",
+      "expected": {
+        "p1_active_hp": 142,
+        "p2_active_hp": 74,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 12,
+      "p1_choice": "switch Flapple",
+      "p2_choice": "move Revival Blessing",
+      "expected": {
+        "p1_active_hp": 233,
+        "p2_active_hp": 112,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 13,
+      "p1_choice": "move Grav Apple",
+      "p2_choice": "move Close Combat",
+      "expected": {
+        "p1_active_hp": 50,
+        "p2_active_hp": 50,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 14,
+      "p1_choice": "switch Scyther",
+      "p2_choice": "move Close Combat",
+      "expected": {
+        "p1_active_hp": 141,
+        "p2_active_hp": 26,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 15,
+      "p1_choice": "move Close Combat",
+      "p2_choice": "switch Wugtrio",
+      "expected": {
+        "p1_active_hp": 141,
+        "p2_active_hp": 212,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 16,
+      "p1_choice": "switch Tentacruel",
+      "p2_choice": "move Liquidation",
+      "expected": {
+        "p1_active_hp": 187,
+        "p2_active_hp": 212,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 17,
+      "p1_choice": "move Rapid Spin",
+      "p2_choice": "move Liquidation",
+      "expected": {
+        "p1_active_hp": 63,
+        "p2_active_hp": 176,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 18,
+      "p1_choice": "switch Scyther",
+      "p2_choice": "move Liquidation",
+      "expected": {
+        "p1_active_hp": 141,
+        "p2_active_hp": 176,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 19,
+      "p1_choice": "switch Gardevoir",
+      "p2_choice": "move Liquidation",
+      "expected": {
+        "p1_active_hp": 249,
+        "p2_active_hp": 176,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 20,
+      "p1_choice": "move Calm Mind",
+      "p2_choice": "move Liquidation",
+      "expected": {
+        "p1_active_hp": 29,
+        "p2_active_hp": 176,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 21,
+      "p1_choice": "move Psyshock",
+      "p2_choice": "switch Ariados",
+      "expected": {
+        "p1_active_hp": 5,
+        "p2_active_hp": 287,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 22,
+      "p1_choice": "switch Gumshoos",
+      "p2_choice": "switch Pawmot",
+      "expected": {
+        "p1_active_hp": 142,
+        "p2_active_hp": 26,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 23,
+      "p1_choice": "move Earthquake",
+      "p2_choice": "move Double Shock",
+      "expected": {
+        "p1_active_hp": 142,
+        "p2_active_hp": 0,
+        "p1_active_status": null,
+        "p2_active_status": null,
+        "p1_active_fainted": false,
+        "p2_active_fainted": true
+      }
+    }
+  ],
+  "winner": "BrownTerminator",
+  "id": "gen9randombattle-2604347419"
+}
