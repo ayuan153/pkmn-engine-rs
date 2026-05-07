@@ -1,7 +1,9 @@
 use crate::choice::{BattleResult, Choice};
 use crate::field::Field;
-use crate::pokemon::Volatiles;
+use crate::pokemon::{MoveSlot, Pokemon, Volatiles};
 use crate::side::Side;
+use pkmn_core::nature::Nature;
+use pkmn_core::species::get_species;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum BattlePhase {
@@ -157,5 +159,39 @@ impl Battle {
     /// Random check: returns true with probability percent/100
     pub(crate) fn rand_check(&mut self, percent: u8) -> bool {
         self.rand_range(1, 100) <= percent
+    }
+
+    /// Create a 6v6 battle with common competitive Pokemon for benchmarking/testing
+    pub fn default_test_battle(seed: u64) -> Self {
+        let evs_phys = [0, 252, 0, 0, 0, 252u8];
+        let evs_spec = [0, 0, 0, 252, 0, 252u8];
+        let ivs = [31u8; 6];
+
+        let make = |name: &str, nature: Nature, evs: [u8; 6], moves: [MoveSlot; 4]| -> Pokemon {
+            let species = get_species(name).unwrap();
+            Pokemon::new(species, 100, nature, moves, evs, ivs)
+        };
+
+        let ms = |id: u16, pp: u8| MoveSlot { move_id: id, pp, max_pp: pp };
+
+        let team1 = vec![
+            make("Garchomp", Nature::Jolly, evs_phys, [ms(89, 10), ms(370, 5), ms(444, 5), ms(14, 20)]),
+            make("Dragapult", Nature::Timid, evs_spec, [ms(247, 15), ms(53, 15), ms(85, 15), ms(434, 5)]),
+            make("Kingambit", Nature::Adamant, evs_phys, [ms(282, 20), ms(442, 15), ms(14, 20), ms(89, 10)]),
+            make("Heatran", Nature::Modest, evs_spec, [ms(53, 15), ms(126, 5), ms(446, 20), ms(85, 15)]),
+            make("Corviknight", Nature::Impish, [252, 0, 252, 0, 0, 0], [ms(413, 15), ms(355, 5), ms(432, 15), ms(369, 20)]),
+            make("Breloom", Nature::Jolly, evs_phys, [ms(370, 5), ms(89, 10), ms(14, 20), ms(282, 20)]),
+        ];
+
+        let team2 = vec![
+            make("Dragonite", Nature::Adamant, evs_phys, [ms(200, 10), ms(89, 10), ms(349, 20), ms(583, 10)]),
+            make("Volcarona", Nature::Timid, evs_spec, [ms(53, 15), ms(585, 15), ms(347, 20), ms(355, 5)]),
+            make("Great Tusk", Nature::Jolly, evs_phys, [ms(89, 10), ms(370, 5), ms(229, 40), ms(446, 20)]),
+            make("Gholdengo", Nature::Timid, evs_spec, [ms(247, 15), ms(85, 15), ms(399, 15), ms(105, 5)]),
+            make("Iron Valiant", Nature::Naive, evs_phys, [ms(370, 5), ms(585, 15), ms(282, 20), ms(14, 20)]),
+            make("Tyranitar", Nature::Adamant, evs_phys, [ms(444, 5), ms(89, 10), ms(282, 20), ms(349, 20)]),
+        ];
+
+        Self::new(Side::new(team1), Side::new(team2), seed)
     }
 }

@@ -1,0 +1,42 @@
+{
+  "id": "handcrafted-simple-ohko",
+  "description": "Garchomp Earthquake vs Heatran - Ground is 4x SE vs Fire/Steel, guaranteed OHKO. Garchomp outspeeds.",
+  "teams": {
+    "p1": [
+      {
+        "species": "Garchomp",
+        "level": 100,
+        "moves": ["Earthquake"],
+        "ability": "None",
+        "item": "None",
+        "nature": "Adamant",
+        "evs": [0, 252, 0, 0, 0, 252],
+        "ivs": [31, 31, 31, 31, 31, 31]
+      }
+    ],
+    "p2": [
+      {
+        "species": "Heatran",
+        "level": 100,
+        "moves": ["Flamethrower"],
+        "ability": "None",
+        "item": "None",
+        "nature": "Modest",
+        "evs": [0, 0, 0, 252, 0, 252],
+        "ivs": [31, 31, 31, 31, 31, 31]
+      }
+    ]
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "p1_choice": "move 0",
+      "p2_choice": "move 0",
+      "expected": {
+        "p2_active_fainted": true,
+        "p1_active_fainted": false
+      }
+    }
+  ],
+  "winner": "p1"
+}

@@ -5,8 +5,12 @@ edition.workspace = true
 license.workspace = true
 description = "WASM bindings for pkmn-engine"
 
+[lib]
+crate-type = ["cdylib", "rlib"]
+
 [dependencies]
 pkmn-engine = { path = "../pkmn-engine" }
-
-[lib]
-crate-type = ["cdylib"]
+pkmn-core = { path = "../pkmn-core" }
+wasm-bindgen = "0.2"
+serde = { workspace = true }
+serde-wasm-bindgen = "0.6"

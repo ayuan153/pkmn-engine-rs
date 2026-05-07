@@ -1,0 +1,62 @@
+{
+  "id": "handcrafted-weather-battle",
+  "description": "Dondozo with Drizzle switches in (sets rain), then Surf does rain-boosted + SE damage vs Heatran",
+  "teams": {
+    "p1": [
+      {
+        "species": "Garchomp",
+        "level": 100,
+        "moves": ["Earthquake"],
+        "ability": "None",
+        "item": "None",
+        "nature": "Adamant",
+        "evs": [0, 252, 0, 0, 0, 252],
+        "ivs": [31, 31, 31, 31, 31, 31]
+      },
+      {
+        "species": "Dondozo",
+        "level": 100,
+        "moves": ["Surf"],
+        "ability": "Drizzle",
+        "item": "None",
+        "nature": "Modest",
+        "evs": [0, 0, 0, 252, 0, 252],
+        "ivs": [31, 31, 31, 31, 31, 31]
+      }
+    ],
+    "p2": [
+      {
+        "species": "Heatran",
+        "level": 100,
+        "moves": ["Flamethrower"],
+        "ability": "None",
+        "item": "None",
+        "nature": "Modest",
+        "evs": [0, 0, 0, 252, 0, 252],
+        "ivs": [31, 31, 31, 31, 31, 31]
+      }
+    ]
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "p1_choice": "switch 1",
+      "p2_choice": "move 0",
+      "expected": {
+        "weather": "Rain",
+        "p1_active_fainted": false,
+        "p2_active_fainted": false
+      }
+    },
+    {
+      "turn": 2,
+      "p1_choice": "move 0",
+      "p2_choice": "move 0",
+      "expected": {
+        "p2_took_damage": true,
+        "p1_active_fainted": false
+      }
+    }
+  ],
+  "winner": null
+}
