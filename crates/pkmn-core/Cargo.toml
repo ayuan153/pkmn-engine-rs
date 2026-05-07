@@ -1,0 +1,9 @@
+[package]
+name = "pkmn-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Core types, type chart, base stats, and move data for Pokemon battle simulation"
+
+[dependencies]
+serde = { workspace = true }

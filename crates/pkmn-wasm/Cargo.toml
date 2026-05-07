@@ -1,0 +1,12 @@
+[package]
+name = "pkmn-wasm"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "WASM bindings for pkmn-engine"
+
+[dependencies]
+pkmn-engine = { path = "../pkmn-engine" }
+
+[lib]
+crate-type = ["cdylib"]

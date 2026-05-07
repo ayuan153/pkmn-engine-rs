@@ -1,0 +1,10 @@
+[package]
+name = "pkmn-engine"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "High-performance Pokemon battle simulation engine"
+
+[dependencies]
+pkmn-core = { path = "../pkmn-core" }
+serde = { workspace = true }
