@@ -17,6 +17,23 @@ pub enum Status {
     Freeze,
 }
 
+bitflags::bitflags! {
+    #[derive(Debug, Clone, Copy, Default, PartialEq, Eq)]
+    pub struct Volatiles: u32 {
+        const CONFUSED = 0x01;
+        const SUBSTITUTE = 0x02;
+        const ENCORE = 0x04;
+        const PROTECT = 0x08;
+        const FLINCH = 0x10;
+        const LEECH_SEED = 0x20;
+        const TAUNT = 0x40;
+        const TORMENT = 0x80;
+        const LOCKED_MOVE = 0x100;
+        const RECHARGING = 0x200;
+        const MUST_RECHARGE = 0x400;
+    }
+}
+
 #[derive(Debug, Clone, Copy)]
 pub struct Boosts {
     pub atk: i8,
@@ -33,7 +50,6 @@ impl Boosts {
         Self { atk: 0, def: 0, spa: 0, spd: 0, spe: 0, accuracy: 0, evasion: 0 }
     }
 
-    /// Apply boost multiplier: stages -6 to +6
     pub fn multiplier(stage: i8) -> f32 {
         match stage.clamp(-6, 6) {
             -6 => 2.0 / 8.0,
@@ -51,6 +67,14 @@ impl Boosts {
             6 => 8.0 / 2.0,
             _ => 1.0,
         }
+    }
+
+    pub fn clamp_all(&mut self) {
+        self.atk = self.atk.clamp(-6, 6);
+        self.def = self.def.clamp(-6, 6);
+        self.spa = self.spa.clamp(-6, 6);
+        self.spd = self.spd.clamp(-6, 6);
+        self.spe = self.spe.clamp(-6, 6);
     }
 }
 
@@ -88,6 +112,16 @@ pub struct Pokemon {
     pub nature: Nature,
     pub is_fainted: bool,
     pub has_moved_this_turn: bool,
+    // Volatiles
+    pub volatiles: Volatiles,
+    pub substitute_hp: u16,
+    pub locked_move_turns: u8,
+    pub locked_move_idx: u8,
+    pub protect_consecutive: u8,
+    pub confusion_turns: u8,
+    // Tera
+    pub tera_type: Option<Type>,
+    pub is_terastallized: bool,
 }
 
 impl Pokemon {
@@ -125,6 +159,14 @@ impl Pokemon {
             nature,
             is_fainted: false,
             has_moved_this_turn: false,
+            volatiles: Volatiles::empty(),
+            substitute_hp: 0,
+            locked_move_turns: 0,
+            locked_move_idx: 0,
+            protect_consecutive: 0,
+            confusion_turns: 0,
+            tera_type: None,
+            is_terastallized: false,
         }
     }
 
@@ -135,7 +177,6 @@ impl Pokemon {
     pub fn effective_speed(&self) -> u16 {
         let base = self.stats.spe as f32 * Boosts::multiplier(self.boosts.spe);
         let base = if self.status == Status::Paralyze { base * 0.5 } else { base };
-        // Choice Scarf handled externally via item_speed_modifier
         base as u16
     }
 

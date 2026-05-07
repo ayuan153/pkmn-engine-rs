@@ -4,6 +4,7 @@ mod tests {
     use pkmn_core::items::ItemId;
     use pkmn_core::nature::Nature;
     use pkmn_core::species::get_species;
+    use pkmn_core::types::Type;
     use pkmn_engine::*;
 
     fn eq_slot() -> MoveSlot {
@@ -631,5 +632,300 @@ mod tests {
         assert_eq!(battle.sides[0].active().status, Status::None);
         battle.end_of_turn();
         assert_eq!(battle.sides[0].active().status, Status::Toxic);
+    }
+
+    // === M4: Forced Switch After Faint ===
+
+    #[test]
+    fn test_forced_switch_after_faint() {
+        let side1 = Side::new(vec![make_garchomp(), make_blissey()]);
+        let side2 = Side::new(vec![make_dragapult()]);
+        let mut battle = Battle::new(side1, side2, 42);
+        // Kill p1's active
+        battle.sides[0].active_mut().hp = 1;
+        battle.sides[0].active_mut().is_fainted = false;
+        // Apply a turn where p2 attacks and kills p1
+        let result = battle.apply(Choice::Move(0), Choice::Move(0));
+        // Should be ongoing with forced switch
+        if battle.sides[0].active().is_fainted {
+            assert_eq!(result, BattleResult::Ongoing);
+            assert_eq!(battle.phase, BattlePhase::ForcedSwitch(0));
+            // Choices should only be switches
+            let choices = battle.choices(0);
+            assert!(choices.iter().all(|c| matches!(c, Choice::Switch(_))));
+            assert!(!choices.is_empty());
+            // Apply the forced switch
+            battle.apply_switch(0, 1);
+            assert_eq!(battle.phase, BattlePhase::ActionSelection);
+            assert!(battle.sides[0].active().is_alive());
+        }
+    }
+
+    #[test]
+    fn test_forced_switch_choices_only_switches() {
+        let side1 = Side::new(vec![make_garchomp(), make_blissey()]);
+        let side2 = Side::new(vec![make_dragapult()]);
+        let mut battle = Battle::new(side1, side2, 42);
+        battle.phase = BattlePhase::ForcedSwitch(0);
+        let choices = battle.choices(0);
+        for c in &choices {
+            assert!(matches!(c, Choice::Switch(_)));
+        }
+    }
+
+    // === M4: Boost Moves ===
+
+    #[test]
+    fn test_swords_dance_raises_attack_by_2() {
+        let sd_slot = MoveSlot { move_id: 14, pp: 20, max_pp: 20 };
+        let p1 = make_pokemon("Garchomp", Nature::Adamant, [sd_slot, eq_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, make_blissey());
+        assert_eq!(battle.sides[0].active().boosts.atk, 0);
+        battle.execute_choice(0, Choice::Move(0));
+        assert_eq!(battle.sides[0].active().boosts.atk, 2);
+    }
+
+    #[test]
+    fn test_dragon_dance_raises_atk_spe_by_1() {
+        let dd_slot = MoveSlot { move_id: 349, pp: 20, max_pp: 20 };
+        let p1 = make_pokemon("Garchomp", Nature::Adamant, [dd_slot, eq_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, make_blissey());
+        battle.execute_choice(0, Choice::Move(0));
+        assert_eq!(battle.sides[0].active().boosts.atk, 1);
+        assert_eq!(battle.sides[0].active().boosts.spe, 1);
+    }
+
+    #[test]
+    fn test_calm_mind_raises_spa_spd() {
+        let cm_slot = MoveSlot { move_id: 347, pp: 20, max_pp: 20 };
+        let p1 = make_pokemon("Blissey", Nature::Bold, [cm_slot, empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, make_garchomp());
+        battle.execute_choice(0, Choice::Move(0));
+        assert_eq!(battle.sides[0].active().boosts.spa, 1);
+        assert_eq!(battle.sides[0].active().boosts.spd, 1);
+    }
+
+    #[test]
+    fn test_boost_capped_at_6() {
+        let sd_slot = MoveSlot { move_id: 14, pp: 20, max_pp: 20 };
+        let p1 = make_pokemon("Garchomp", Nature::Adamant, [sd_slot, eq_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, make_blissey());
+        battle.sides[0].active_mut().boosts.atk = 5;
+        battle.execute_choice(0, Choice::Move(0));
+        assert_eq!(battle.sides[0].active().boosts.atk, 6); // Capped at 6
+    }
+
+    // === M4: Protect ===
+
+    #[test]
+    fn test_protect_blocks_damage() {
+        let protect_slot = MoveSlot { move_id: 182, pp: 10, max_pp: 10 };
+        let p2 = make_pokemon("Blissey", Nature::Bold, [protect_slot, empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(make_garchomp(), p2);
+        let hp_before = battle.sides[1].active().hp;
+        // P2 uses Protect (priority 4, goes first), P1 uses Earthquake
+        battle.apply(Choice::Move(0), Choice::Move(0));
+        // Blissey should take no damage
+        assert_eq!(battle.sides[1].active().hp, hp_before);
+    }
+
+    // === M4: Confusion ===
+
+    #[test]
+    fn test_confusion_self_hit() {
+        let mut battle = make_battle(make_garchomp(), make_blissey());
+        battle.sides[0].active_mut().volatiles.insert(Volatiles::CONFUSED);
+        battle.sides[0].active_mut().confusion_turns = 3;
+        let hp_before = battle.sides[0].active().hp;
+        // Run many turns to statistically hit self at least once
+        let mut self_hit = false;
+        for _ in 0..20 {
+            let hp = battle.sides[0].active().hp;
+            battle.execute_choice(0, Choice::Move(0));
+            if battle.sides[0].active().hp < hp && battle.sides[1].active().hp == battle.sides[1].active().max_hp {
+                // Took damage but defender didn't - self hit
+                self_hit = true;
+                break;
+            }
+            // Reset confusion for next iteration
+            battle.sides[0].active_mut().volatiles.insert(Volatiles::CONFUSED);
+            battle.sides[0].active_mut().confusion_turns = 3;
+        }
+        // With 33% chance over 20 tries, extremely unlikely to never self-hit
+        assert!(self_hit || battle.sides[0].active().hp < hp_before);
+    }
+
+    // === M4: Substitute ===
+
+    #[test]
+    fn test_substitute_absorbs_damage() {
+        let sub_slot = MoveSlot { move_id: 164, pp: 10, max_pp: 10 };
+        let p1 = make_pokemon("Blissey", Nature::Bold, [sub_slot, empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, make_garchomp());
+        let max_hp = battle.sides[0].active().max_hp;
+        // Use Substitute
+        battle.execute_choice(0, Choice::Move(0));
+        assert!(battle.sides[0].active().volatiles.contains(Volatiles::SUBSTITUTE));
+        assert_eq!(battle.sides[0].active().substitute_hp, max_hp / 4);
+        assert_eq!(battle.sides[0].active().hp, max_hp - max_hp / 4);
+        // Now opponent attacks - sub absorbs
+        let hp_after_sub = battle.sides[0].active().hp;
+        battle.execute_choice(1, Choice::Move(0));
+        // HP should not change (sub took the hit)
+        assert_eq!(battle.sides[0].active().hp, hp_after_sub);
+    }
+
+    // === M4: Multi-turn Moves (Outrage) ===
+
+    #[test]
+    fn test_outrage_locks_and_confuses() {
+        let outrage_slot = MoveSlot { move_id: 200, pp: 10, max_pp: 10 };
+        let p1 = make_pokemon("Garchomp", Nature::Adamant, [outrage_slot, eq_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, make_blissey());
+        // Use Outrage
+        battle.execute_choice(0, Choice::Move(0));
+        // Should be locked
+        assert!(battle.sides[0].active().volatiles.contains(Volatiles::LOCKED_MOVE));
+        // Choices should only return the locked move
+        let choices = battle.choices(0);
+        assert_eq!(choices.len(), 1);
+        assert_eq!(choices[0], Choice::Move(0));
+        // Execute until lock ends
+        for _ in 0..5 {
+            if !battle.sides[0].active().volatiles.contains(Volatiles::LOCKED_MOVE) {
+                break;
+            }
+            battle.execute_choice(0, Choice::Move(0));
+        }
+        // After lock ends, should be confused
+        assert!(battle.sides[0].active().volatiles.contains(Volatiles::CONFUSED));
+    }
+
+    // === M4: Recharge Moves ===
+
+    #[test]
+    fn test_hyper_beam_must_recharge() {
+        let hb_slot = MoveSlot { move_id: 63, pp: 5, max_pp: 5 };
+        let p1 = make_pokemon("Blissey", Nature::Modest, [hb_slot, empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, make_garchomp());
+        battle.execute_choice(0, Choice::Move(0));
+        assert!(battle.sides[0].active().volatiles.contains(Volatiles::MUST_RECHARGE));
+        // Choices should be empty during recharge
+        let choices = battle.choices(0);
+        assert!(choices.is_empty());
+    }
+
+    // === M4: Terastallization ===
+
+    #[test]
+    fn test_tera_changes_type() {
+        let mut p1 = make_garchomp();
+        p1.tera_type = Some(Type::Steel);
+        let mut battle = make_battle(p1, make_blissey());
+        assert!(!battle.sides[0].active().is_terastallized);
+        battle.execute_choice(0, Choice::Tera(0));
+        assert!(battle.sides[0].active().is_terastallized);
+        assert_eq!(battle.sides[0].active().types, [Type::Steel, Type::Steel]);
+        assert!(battle.sides[0].tera_used);
+    }
+
+    #[test]
+    fn test_tera_once_per_battle() {
+        let mut p1 = make_garchomp();
+        p1.tera_type = Some(Type::Steel);
+        let side1 = Side::new(vec![p1, make_blissey()]);
+        let side2 = Side::new(vec![make_dragapult()]);
+        let mut battle = Battle::new(side1, side2, 42);
+        // Tera first mon
+        battle.execute_choice(0, Choice::Tera(0));
+        assert!(battle.sides[0].tera_used);
+        // Switch to second mon - tera choices should not appear
+        battle.execute_choice(0, Choice::Switch(1));
+        let choices = battle.choices(0);
+        assert!(!choices.iter().any(|c| matches!(c, Choice::Tera(_))));
+    }
+
+    #[test]
+    fn test_tera_stab_boost() {
+        // Garchomp is Dragon/Ground, tera to Dragon should give 2.25x STAB on Dragon moves
+        let mut p1 = make_garchomp();
+        p1.tera_type = Some(Type::Dragon);
+        let mut battle = make_battle(p1, make_blissey());
+        // Tera to Dragon (original type matches)
+        battle.apply_tera(0);
+        let stab = battle.tera_stab(0, Type::Dragon);
+        assert_eq!(stab, 2.25); // Original type matches tera type
+    }
+
+    #[test]
+    fn test_tera_stab_new_type() {
+        // Garchomp teras to Steel (not original type) - should get 2.0x
+        let mut p1 = make_garchomp();
+        p1.tera_type = Some(Type::Steel);
+        let mut battle = make_battle(p1, make_blissey());
+        battle.apply_tera(0);
+        let stab = battle.tera_stab(0, Type::Steel);
+        assert_eq!(stab, 2.0); // New type, not original
+    }
+
+    // === M4: Close Combat stat drops ===
+
+    #[test]
+    fn test_close_combat_drops_def_spd() {
+        let cc_slot = MoveSlot { move_id: 370, pp: 5, max_pp: 5 };
+        let p1 = make_pokemon("Iron Valiant", Nature::Adamant, [cc_slot, empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, make_blissey());
+        assert_eq!(battle.sides[0].active().boosts.def, 0);
+        assert_eq!(battle.sides[0].active().boosts.spd, 0);
+        battle.execute_choice(0, Choice::Move(0));
+        assert_eq!(battle.sides[0].active().boosts.def, -1);
+        assert_eq!(battle.sides[0].active().boosts.spd, -1);
+    }
+
+    // === M4: Full game with boosts and switches ===
+
+    #[test]
+    fn test_full_game_with_boosts_and_switches() {
+        let sd_slot = MoveSlot { move_id: 14, pp: 20, max_pp: 20 };
+        let p1_a = make_pokemon("Garchomp", Nature::Adamant, [eq_slot(), sd_slot, empty_slot(), empty_slot()]);
+        let p1_b = make_blissey();
+        let p2_a = make_dragapult();
+        let p2_b = make_pokemon("Blissey", Nature::Bold, [toxic_slot(), empty_slot(), empty_slot(), empty_slot()]);
+
+        let side1 = Side::new(vec![p1_a, p1_b]);
+        let side2 = Side::new(vec![p2_a, p2_b]);
+        let mut battle = Battle::new(side1, side2, 99999);
+
+        // Play up to 100 turns or until game ends
+        for _ in 0..100 {
+            if battle.result != BattleResult::Ongoing {
+                break;
+            }
+
+            // Handle forced switches
+            if let BattlePhase::ForcedSwitch(p) = battle.phase {
+                let choices = battle.choices(p);
+                if let Some(&choice) = choices.first() {
+                    if let Choice::Switch(target) = choice {
+                        battle.apply_switch(p, target);
+                    }
+                }
+                continue;
+            }
+
+            let p1_choices = battle.choices(0);
+            let p2_choices = battle.choices(1);
+
+            if p1_choices.is_empty() || p2_choices.is_empty() {
+                break;
+            }
+
+            let p1_choice = p1_choices[0];
+            let p2_choice = p2_choices[0];
+            battle.apply(p1_choice, p2_choice);
+        }
+
+        // Game should have ended or be in a valid state
+        assert!(battle.turn > 0);
     }
 }

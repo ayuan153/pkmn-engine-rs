@@ -37,7 +37,7 @@ impl Battle {
     fn get_priority(&self, player: u8, choice: Choice) -> i8 {
         match choice {
             Choice::Switch(_) => 6,
-            Choice::Move(idx) => {
+            Choice::Move(idx) | Choice::Tera(idx) => {
                 let mon = self.sides[player as usize].active();
                 let move_id = mon.moves[idx as usize].move_id;
                 pkmn_core::moves::get_move_by_id(move_id)

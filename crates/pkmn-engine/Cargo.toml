@@ -8,3 +8,4 @@ description = "High-performance Pokemon battle simulation engine"
 [dependencies]
 pkmn-core = { path = "../pkmn-core" }
 serde = { workspace = true }
+bitflags = { workspace = true }

@@ -127,6 +127,10 @@ pub fn get_species(name: &str) -> Option<&'static SpeciesData> {
     SPECIES.iter().find(|s| s.name.eq_ignore_ascii_case(name))
 }
 
+pub fn get_species_by_id(id: u16) -> Option<&'static SpeciesData> {
+    SPECIES.iter().find(|s| s.id == id)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

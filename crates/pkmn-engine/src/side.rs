@@ -16,11 +16,12 @@ pub struct Side {
     pub team: Vec<Pokemon>,
     pub active_index: usize,
     pub side_conditions: SideConditions,
+    pub tera_used: bool,
 }
 
 impl Side {
     pub fn new(team: Vec<Pokemon>) -> Self {
-        Self { team, active_index: 0, side_conditions: SideConditions::default() }
+        Self { team, active_index: 0, side_conditions: SideConditions::default(), tera_used: false }
     }
 
     pub fn active(&self) -> &Pokemon {

@@ -80,6 +80,10 @@ pub const MOVES: &[MoveData] = &[
     MoveData { id: 434, name: "Draco Meteor", move_type: Type::Dragon, category: MoveCategory::Special, base_power: 130, accuracy: 90, pp: 5, priority: 0, flags: MoveFlags::NONE },
     MoveData { id: 585, name: "Moonblast", move_type: Type::Fairy, category: MoveCategory::Special, base_power: 95, accuracy: 100, pp: 15, priority: 0, flags: MoveFlags::NONE },
     MoveData { id: 583, name: "Play Rough", move_type: Type::Fairy, category: MoveCategory::Physical, base_power: 90, accuracy: 90, pp: 10, priority: 0, flags: MoveFlags::new(C) },
+    MoveData { id: 182, name: "Protect", move_type: Type::Normal, category: MoveCategory::Status, base_power: 0, accuracy: 0, pp: 10, priority: 4, flags: MoveFlags::NONE },
+    MoveData { id: 164, name: "Substitute", move_type: Type::Normal, category: MoveCategory::Status, base_power: 0, accuracy: 0, pp: 10, priority: 0, flags: MoveFlags::NONE },
+    MoveData { id: 200, name: "Outrage", move_type: Type::Dragon, category: MoveCategory::Physical, base_power: 120, accuracy: 100, pp: 10, priority: 0, flags: MoveFlags::new(C) },
+    MoveData { id: 63, name: "Hyper Beam", move_type: Type::Normal, category: MoveCategory::Special, base_power: 150, accuracy: 90, pp: 5, priority: 0, flags: MoveFlags::NONE },
 ];
 
 pub fn get_move(name: &str) -> Option<&'static MoveData> {
@@ -136,7 +140,7 @@ mod tests {
 
     #[test]
     fn test_move_count() {
-        assert_eq!(MOVES.len(), 30);
+        assert_eq!(MOVES.len(), 34);
     }
 
     #[test]

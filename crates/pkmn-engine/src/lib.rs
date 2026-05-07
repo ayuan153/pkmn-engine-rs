@@ -9,8 +9,8 @@ pub mod turn;
 pub mod abilities;
 pub mod items_effect;
 
-pub use battle::Battle;
+pub use battle::{Battle, BattlePhase};
 pub use choice::{BattleResult, Choice};
 pub use field::{Field, Terrain, Weather};
-pub use pokemon::{Boosts, MoveSlot, Pokemon, Stats, Status};
+pub use pokemon::{Boosts, MoveSlot, Pokemon, Stats, Status, Volatiles};
 pub use side::{Side, SideConditions};

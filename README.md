@@ -14,7 +14,11 @@ Currently implements:
 - 50+ abilities (Intimidate, Levitate, Technician, weather setters, etc.)
 - 30+ items (Choice Band/Specs/Scarf, Life Orb, Leftovers, Focus Sash, etc.)
 - Entry hazards (Stealth Rock, Spikes, Toxic Spikes)
-- 100 unit + integration tests
+- Forced switch after faint, volatile statuses (confusion, substitute, protect)
+- Multi-turn moves (Outrage), recharge moves (Hyper Beam)
+- Terastallization (type change + STAB boost)
+- Boost moves (Swords Dance, Dragon Dance, Calm Mind, Shell Smash, etc.)
+- 117 unit + integration tests
 
 ## Goals
 
