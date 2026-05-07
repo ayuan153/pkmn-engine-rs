@@ -9,6 +9,12 @@ Currently implements:
 - Gen 9 damage formula with all modifiers
 - Species data (50 Pokemon), move data (30 moves)
 - Stat calculation with natures
+- Battle state machine (104 bytes, trivially cloneable)
+- Turn execution: priority, damage, switching, end-of-turn
+- 50+ abilities (Intimidate, Levitate, Technician, weather setters, etc.)
+- 30+ items (Choice Band/Specs/Scarf, Life Orb, Leftovers, Focus Sash, etc.)
+- Entry hazards (Stealth Rock, Spikes, Toxic Spikes)
+- 100 unit + integration tests
 
 ## Goals
 

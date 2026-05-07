@@ -6,6 +6,8 @@ pub mod pokemon;
 pub mod priority;
 pub mod side;
 pub mod turn;
+pub mod abilities;
+pub mod items_effect;
 
 pub use battle::Battle;
 pub use choice::{BattleResult, Choice};

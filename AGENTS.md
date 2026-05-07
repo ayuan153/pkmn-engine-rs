@@ -19,10 +19,19 @@ All tests must pass before committing. Run `cargo clippy` for lint warnings.
 Conventional Commits:
 ```
 <type>(<scope>): <summary>
+
+<body>
+
+Reconstruct: <one-shot prompt that would reproduce this commit's changes>
+Verify: <1-2 sentence testing/verification steps>
 ```
 
 Types: feat, fix, refactor, test, docs, chore, perf
 Scopes: core, engine, wasm, data, bench
+
+Every commit body MUST include:
+- `Reconstruct:` — A single prompt/instruction that could reproduce the work
+- `Verify:` — How to confirm the change works (e.g., "cargo test -p pkmn-engine passes 45 tests")
 
 ## Code Style
 
@@ -50,4 +59,7 @@ Scopes: core, engine, wasm, data, bench
 
 ## Progress Tracking
 
-After substantive changes, update `docs/plan.md` milestone checkboxes.
+After each major milestone or substantive progress:
+1. Update `docs/plan.md` milestone checkboxes
+2. Update `README.md` "Status" section to reflect what's built
+3. Commit the doc updates alongside the code

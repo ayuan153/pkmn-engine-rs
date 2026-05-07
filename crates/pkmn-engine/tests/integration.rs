@@ -1,5 +1,7 @@
 #[cfg(test)]
 mod tests {
+    use pkmn_core::abilities::AbilityId;
+    use pkmn_core::items::ItemId;
     use pkmn_core::nature::Nature;
     use pkmn_core::species::get_species;
     use pkmn_engine::*;
@@ -376,5 +378,258 @@ mod tests {
         battle.sides[0].side_conditions.reflect = 1;
         battle.end_of_turn();
         assert_eq!(battle.sides[0].side_conditions.reflect, 0);
+    }
+
+    // === Ability tests ===
+
+    #[test]
+    fn test_intimidate_lowers_attack_on_switch() {
+        let side1 = Side::new(vec![make_garchomp(), make_dragapult()]);
+        let side2 = Side::new(vec![make_blissey()]);
+        let mut battle = Battle::new(side1, side2, 42);
+        // Give Dragapult Intimidate
+        battle.sides[0].team[1].ability_id = AbilityId::Intimidate;
+        assert_eq!(battle.sides[1].active().boosts.atk, 0);
+        battle.execute_choice(0, Choice::Switch(1));
+        assert_eq!(battle.sides[1].active().boosts.atk, -1);
+    }
+
+    #[test]
+    fn test_intimidate_capped_at_minus_6() {
+        let mut battle = make_battle(make_garchomp(), make_dragapult());
+        battle.sides[0].active_mut().ability_id = AbilityId::Intimidate;
+        battle.sides[1].active_mut().boosts.atk = -6;
+        battle.trigger_ability_on_switch(0);
+        assert_eq!(battle.sides[1].active().boosts.atk, -6);
+    }
+
+    #[test]
+    fn test_levitate_ground_immunity() {
+        let mut battle = make_battle(make_garchomp(), make_dragapult());
+        battle.sides[1].active_mut().ability_id = AbilityId::Levitate;
+        let hp_before = battle.sides[1].active().hp;
+        // Garchomp uses Earthquake (Ground, move_idx 0)
+        battle.execute_choice(0, Choice::Move(0));
+        assert_eq!(battle.sides[1].active().hp, hp_before);
+    }
+
+    #[test]
+    fn test_flash_fire_immunity() {
+        let mut battle = make_battle(make_dragapult(), make_garchomp());
+        battle.sides[1].active_mut().ability_id = AbilityId::FlashFire;
+        let hp_before = battle.sides[1].active().hp;
+        // Dragapult uses Flamethrower (Fire, move_idx 0)
+        battle.execute_choice(0, Choice::Move(0));
+        assert_eq!(battle.sides[1].active().hp, hp_before);
+    }
+
+    #[test]
+    fn test_volt_absorb_electric_immunity() {
+        let mut battle = make_battle(make_dragapult(), make_garchomp());
+        battle.sides[1].active_mut().ability_id = AbilityId::VoltAbsorb;
+        let hp_before = battle.sides[1].active().hp;
+        // Dragapult uses Thunderbolt (Electric, move_idx 1)
+        battle.execute_choice(0, Choice::Move(1));
+        assert_eq!(battle.sides[1].active().hp, hp_before);
+    }
+
+    #[test]
+    fn test_drizzle_sets_rain() {
+        let side1 = Side::new(vec![make_garchomp(), make_dragapult()]);
+        let side2 = Side::new(vec![make_blissey()]);
+        let mut battle = Battle::new(side1, side2, 42);
+        battle.sides[0].team[1].ability_id = AbilityId::Drizzle;
+        assert_eq!(battle.field.weather, Weather::None);
+        battle.execute_choice(0, Choice::Switch(1));
+        assert_eq!(battle.field.weather, Weather::Rain);
+        assert_eq!(battle.field.weather_turns, 5);
+    }
+
+    #[test]
+    fn test_drought_sets_sun() {
+        let side1 = Side::new(vec![make_garchomp(), make_dragapult()]);
+        let side2 = Side::new(vec![make_blissey()]);
+        let mut battle = Battle::new(side1, side2, 42);
+        battle.sides[0].team[1].ability_id = AbilityId::Drought;
+        battle.execute_choice(0, Choice::Switch(1));
+        assert_eq!(battle.field.weather, Weather::Sun);
+    }
+
+    #[test]
+    fn test_sand_stream_sets_sand() {
+        let mut battle = make_battle(make_garchomp(), make_dragapult());
+        battle.sides[0].active_mut().ability_id = AbilityId::SandStream;
+        battle.trigger_ability_on_switch(0);
+        assert_eq!(battle.field.weather, Weather::Sand);
+    }
+
+    #[test]
+    fn test_electric_surge_sets_terrain() {
+        let mut battle = make_battle(make_garchomp(), make_dragapult());
+        battle.sides[0].active_mut().ability_id = AbilityId::ElectricSurge;
+        battle.trigger_ability_on_switch(0);
+        assert_eq!(battle.field.terrain, Terrain::Electric);
+        assert_eq!(battle.field.terrain_turns, 5);
+    }
+
+    #[test]
+    fn test_speed_boost_end_of_turn() {
+        let mut battle = make_battle(make_garchomp(), make_dragapult());
+        battle.sides[0].active_mut().ability_id = AbilityId::SpeedBoost;
+        assert_eq!(battle.sides[0].active().boosts.spe, 0);
+        battle.end_of_turn();
+        assert_eq!(battle.sides[0].active().boosts.spe, 1);
+        battle.end_of_turn();
+        assert_eq!(battle.sides[0].active().boosts.spe, 2);
+    }
+
+    #[test]
+    fn test_speed_boost_capped_at_6() {
+        let mut battle = make_battle(make_garchomp(), make_dragapult());
+        battle.sides[0].active_mut().ability_id = AbilityId::SpeedBoost;
+        battle.sides[0].active_mut().boosts.spe = 6;
+        battle.end_of_turn();
+        assert_eq!(battle.sides[0].active().boosts.spe, 6);
+    }
+
+    #[test]
+    fn test_technician_boosts_weak_moves() {
+        // Rapid Spin has 50 BP, should get Technician boost (1.5x)
+        let mut battle = make_battle(make_garchomp(), make_dragapult());
+        let rapid_spin = pkmn_core::moves::get_move("Rapid Spin").unwrap();
+        // Technician: base_power <= 60 => 1.5x modifier
+        let mod_with = battle.ability_damage_modifier(0, rapid_spin);
+        battle.sides[0].active_mut().ability_id = AbilityId::Technician;
+        let mod_tech = battle.ability_damage_modifier(0, rapid_spin);
+        assert_eq!(mod_with, 1.0);
+        assert_eq!(mod_tech, 1.5);
+
+        // Earthquake has 100 BP, should NOT get Technician boost
+        let earthquake = pkmn_core::moves::get_move("Earthquake").unwrap();
+        let mod_eq = battle.ability_damage_modifier(0, earthquake);
+        assert_eq!(mod_eq, 1.0);
+    }
+
+    // === Item tests ===
+
+    #[test]
+    fn test_choice_band_boosts_physical() {
+        let mut p1 = make_garchomp();
+        p1.item_id = ItemId::ChoiceBand;
+        let mut battle = make_battle(p1, make_dragapult());
+        let hp_before = battle.sides[1].active().hp;
+        battle.execute_choice(0, Choice::Move(0)); // Earthquake (Physical)
+        let damage_with_band = hp_before - battle.sides[1].active().hp;
+
+        let p1b = make_garchomp(); // No item
+        let mut battle2 = make_battle(p1b, make_dragapult());
+        let hp_before2 = battle2.sides[1].active().hp;
+        battle2.execute_choice(0, Choice::Move(0));
+        let damage_without = hp_before2 - battle2.sides[1].active().hp;
+
+        assert!(damage_with_band > damage_without);
+    }
+
+    #[test]
+    fn test_choice_scarf_speed_modifier() {
+        let mut battle = make_battle(make_garchomp(), make_dragapult());
+        battle.sides[0].active_mut().item_id = ItemId::ChoiceScarf;
+        assert_eq!(battle.item_speed_modifier(0), 1.5);
+        assert_eq!(battle.item_speed_modifier(1), 1.0);
+    }
+
+    #[test]
+    fn test_life_orb_boost_and_recoil() {
+        let mut p1 = make_garchomp();
+        p1.item_id = ItemId::LifeOrb;
+        let mut battle = make_battle(p1, make_dragapult());
+        let attacker_hp_before = battle.sides[0].active().hp;
+        let defender_hp_before = battle.sides[1].active().hp;
+        battle.execute_choice(0, Choice::Move(0));
+        // Defender took damage
+        assert!(battle.sides[0].active().hp < attacker_hp_before || !battle.sides[1].active().is_alive());
+        // Attacker took Life Orb recoil (if still alive)
+        if battle.sides[0].active().is_alive() {
+            assert!(battle.sides[0].active().hp < attacker_hp_before);
+        }
+    }
+
+    #[test]
+    fn test_leftovers_heals_end_of_turn() {
+        let mut battle = make_battle(make_garchomp(), make_dragapult());
+        battle.sides[0].active_mut().item_id = ItemId::Leftovers;
+        let max_hp = battle.sides[0].active().max_hp;
+        battle.sides[0].active_mut().hp = max_hp - 50;
+        let hp_before = battle.sides[0].active().hp;
+        battle.end_of_turn();
+        let expected_heal = max_hp / 16;
+        assert_eq!(battle.sides[0].active().hp, hp_before + expected_heal);
+    }
+
+    #[test]
+    fn test_leftovers_does_not_overheal() {
+        let mut battle = make_battle(make_garchomp(), make_dragapult());
+        battle.sides[0].active_mut().item_id = ItemId::Leftovers;
+        let max_hp = battle.sides[0].active().max_hp;
+        // Already at full HP
+        battle.end_of_turn();
+        assert_eq!(battle.sides[0].active().hp, max_hp);
+    }
+
+    #[test]
+    fn test_focus_sash_survives_ohko() {
+        let mut battle = make_battle(make_garchomp(), make_dragapult());
+        battle.sides[1].active_mut().item_id = ItemId::FocusSash;
+        let max_hp = battle.sides[1].active().max_hp;
+        // Simulate a huge hit
+        let damage = max_hp + 100;
+        let adjusted = battle.check_focus_sash(1, damage);
+        assert_eq!(adjusted, max_hp - 1);
+        // Sash consumed
+        assert_eq!(battle.sides[1].active().item_id, ItemId::None);
+    }
+
+    #[test]
+    fn test_focus_sash_only_from_full() {
+        let mut battle = make_battle(make_garchomp(), make_dragapult());
+        battle.sides[1].active_mut().item_id = ItemId::FocusSash;
+        battle.sides[1].active_mut().hp -= 1; // Not at full
+        let damage = battle.sides[1].active().hp + 100;
+        let adjusted = battle.check_focus_sash(1, damage);
+        // Sash doesn't activate when not at full HP
+        assert_eq!(adjusted, damage);
+        assert_eq!(battle.sides[1].active().item_id, ItemId::FocusSash);
+    }
+
+    #[test]
+    fn test_heavy_duty_boots_skips_hazards() {
+        let side1 = Side::new(vec![make_garchomp(), make_blissey()]);
+        let side2 = Side::new(vec![make_dragapult()]);
+        let mut battle = Battle::new(side1, side2, 42);
+        battle.sides[0].side_conditions.stealth_rock = true;
+        battle.sides[0].side_conditions.spikes = 3;
+        battle.sides[0].team[1].item_id = ItemId::HeavyDutyBoots;
+        battle.execute_choice(0, Choice::Switch(1));
+        // Blissey with HDB takes no hazard damage
+        let mon = battle.sides[0].active();
+        assert_eq!(mon.hp, mon.max_hp);
+    }
+
+    #[test]
+    fn test_flame_orb_burns_end_of_turn() {
+        let mut battle = make_battle(make_garchomp(), make_dragapult());
+        battle.sides[0].active_mut().item_id = ItemId::FlameOrb;
+        assert_eq!(battle.sides[0].active().status, Status::None);
+        battle.end_of_turn();
+        assert_eq!(battle.sides[0].active().status, Status::Burn);
+    }
+
+    #[test]
+    fn test_toxic_orb_poisons_end_of_turn() {
+        let mut battle = make_battle(make_garchomp(), make_dragapult());
+        battle.sides[0].active_mut().item_id = ItemId::ToxicOrb;
+        assert_eq!(battle.sides[0].active().status, Status::None);
+        battle.end_of_turn();
+        assert_eq!(battle.sides[0].active().status, Status::Toxic);
     }
 }

@@ -1,3 +1,5 @@
+use pkmn_core::abilities::AbilityId;
+use pkmn_core::items::ItemId;
 use pkmn_core::nature::Nature;
 use pkmn_core::species::SpeciesData;
 use pkmn_core::stats;
@@ -79,8 +81,8 @@ pub struct Pokemon {
     pub status_turns: u8,
     pub boosts: Boosts,
     pub moves: [MoveSlot; 4],
-    pub ability_id: u16,
-    pub item_id: u16,
+    pub ability_id: AbilityId,
+    pub item_id: ItemId,
     pub types: [Type; 2],
     pub stats: Stats,
     pub nature: Nature,
@@ -116,8 +118,8 @@ impl Pokemon {
             status_turns: 0,
             boosts: Boosts::new(),
             moves,
-            ability_id: 0,
-            item_id: 0,
+            ability_id: AbilityId::None,
+            item_id: ItemId::None,
             types: species.types,
             stats: computed,
             nature,
@@ -133,6 +135,7 @@ impl Pokemon {
     pub fn effective_speed(&self) -> u16 {
         let base = self.stats.spe as f32 * Boosts::multiplier(self.boosts.spe);
         let base = if self.status == Status::Paralyze { base * 0.5 } else { base };
+        // Choice Scarf handled externally via item_speed_modifier
         base as u16
     }
 

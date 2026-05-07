@@ -15,7 +15,10 @@ impl Battle {
 
     fn execute_switch(&mut self, player: u8, target: u8) {
         self.sides[player as usize].active_index = target as usize;
-        self.apply_entry_hazards(player);
+        if !self.has_heavy_duty_boots(player) {
+            self.apply_entry_hazards(player);
+        }
+        self.trigger_ability_on_switch(player);
     }
 
     fn execute_move(&mut self, player: u8, move_idx: u8) {
@@ -50,9 +53,18 @@ impl Battle {
             return;
         }
 
+        // Check ability immunity
+        if self.check_ability_immunity(defender_idx, move_data.move_type) {
+            return;
+        }
+
         // Calculate and apply damage
         let damage = self.calculate_move_damage(player, defender_idx, &move_data);
+        let damage = self.check_focus_sash(defender_idx, damage);
         self.apply_damage(defender_idx, damage);
+
+        // Life Orb recoil
+        self.apply_life_orb_recoil(player);
     }
 
     fn calculate_move_damage(
@@ -61,7 +73,6 @@ impl Battle {
         defender_player: u8,
         move_data: &MoveData,
     ) -> u16 {
-        // Extract all needed values before calling &mut self methods
         let attacker = self.sides[attacker_player as usize].active();
         let defender = self.sides[defender_player as usize].active();
 
@@ -91,6 +102,10 @@ impl Battle {
                 1.0
             };
 
+        // Ability and item damage modifiers
+        let ability_mod = self.ability_damage_modifier(attacker_player, move_data);
+        let item_mod = self.item_damage_modifier(attacker_player, move_data);
+
         let ctx = pkmn_core::damage::DamageContext {
             attacker_level,
             attacker_stat: atk_stat,
@@ -100,7 +115,7 @@ impl Battle {
             type_effectiveness: effectiveness,
             critical,
             weather_boost,
-            other_modifiers: burn_mod,
+            other_modifiers: burn_mod * ability_mod * item_mod,
             random_factor,
         };
 
@@ -149,6 +164,13 @@ impl Battle {
     }
 
     pub fn end_of_turn(&mut self) {
+        for player in 0..2u8 {
+            // Ability end-of-turn effects
+            self.trigger_ability_end_of_turn(player);
+            // Item end-of-turn effects
+            self.trigger_item_end_of_turn(player);
+        }
+
         for player in 0..2 {
             let weather = self.field.weather;
             let mon = self.sides[player].active_mut();

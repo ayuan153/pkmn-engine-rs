@@ -4,3 +4,5 @@ pub mod moves;
 pub mod stats;
 pub mod damage;
 pub mod nature;
+pub mod abilities;
+pub mod items;
