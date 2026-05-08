@@ -15,8 +15,8 @@
 - Direction only (both predict damage, magnitude off): 14.5% (280/1967)
 - Type chart failures: 0
 
-### Why 36% Exact Instead of 100%
-The 64% non-exact matches are caused by modifiers we DON'T track in the verification test context:
+### Why 80.6% Exact Instead of 100%
+The remaining ~19% non-exact matches are caused by modifiers we DON'T track in the verification test context:
 1. **Abilities affecting stats before the move** — e.g., Intimidate lowers Atk on switch-in, but the verification doesn't always see the `-unboost` event before the damage event
 2. **Items consumed/activated mid-turn** — e.g., Weakness Policy doubles Atk/SpA after taking SE damage
 3. **Ability-based damage modifiers not yet wired** — e.g., Adaptability (2x STAB), Tinted Lens (2x on resisted), Sniper (3x crit)
@@ -40,7 +40,7 @@ The 64% non-exact matches are caused by modifiers we DON'T track in the verifica
 - `crates/pkmn-engine/src/turn.rs` — Turn execution (where damage is calculated)
 - `crates/pkmn-core/src/gen/move_data.rs` — All move data (BP, type, flags)
 - `tools/fetch-fixtures.py` — Downloads and parses replay fixtures
-- `tests/fixtures/replay_events/` — 89 real replay fixtures (JSON)
+- `tests/fixtures/replay_events/` — 142 real replay fixtures (JSON)
 
 ---
 
