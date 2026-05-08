@@ -1,0 +1,1139 @@
+{
+  "id": "gen9randombattle-2604498483",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Sawsbuck-Winter",
+      "level": 88,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Chi-Yu",
+      "level": 77,
+      "hp": 211,
+      "max_hp": 211
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Beads of Ruin"
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "High Horsepower",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 256,
+      "max_hp": 284,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toucannon",
+      "level": 88,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Carbink",
+      "level": 90,
+      "hp": 236,
+      "max_hp": 236
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "U-turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 216,
+      "max_hp": 236
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Goodra",
+      "level": 85,
+      "hp": 292,
+      "max_hp": 292
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 230,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Power Whip",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 126,
+      "max_hp": 236
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Defense",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 2
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 140,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Scream Tail",
+      "level": 84,
+      "hp": 330,
+      "max_hp": 330
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Rock Polish",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 154,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonblast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 266,
+      "max_hp": 330
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Encore",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 168,
+      "max_hp": 236
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 286,
+      "max_hp": 330
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonblast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 225,
+      "max_hp": 330
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Play Rough",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 147,
+      "max_hp": 236
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 161,
+      "max_hp": 236
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 245,
+      "max_hp": 330
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonblast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 181,
+      "max_hp": 330
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wish",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 175,
+      "max_hp": 236
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 201,
+      "max_hp": 330
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonblast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 143,
+      "max_hp": 330
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Play Rough",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 154,
+      "max_hp": 236
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 308,
+      "max_hp": 330
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 168,
+      "max_hp": 236
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 328,
+      "max_hp": 330
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Porygon2",
+      "level": 81,
+      "hp": 270,
+      "max_hp": 270
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Download"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Press",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 16,
+      "max_hp": 270
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 182,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonblast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 196,
+      "max_hp": 236
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toucannon",
+      "level": 88,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Defense",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Boomburst",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 154,
+      "max_hp": 236
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 168,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonblast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 205,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Beak Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 153,
+      "max_hp": 236
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 167,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Defense",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Boomburst",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 127,
+      "max_hp": 236
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 141,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonblast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 121,
+      "max_hp": 284
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Beak Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 131,
+      "max_hp": 236
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 145,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonblast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 43,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Roost",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 185,
+      "max_hp": 284
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 159,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonblast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 110,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Roost",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 252,
+      "max_hp": 284
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 173,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonblast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 177,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Boomburst",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 146,
+      "max_hp": 236
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 160,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonblast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 92,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Beak Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 148,
+      "max_hp": 236
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 162,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Press",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "brn"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 176,
+      "max_hp": 236
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 162,
+      "max_hp": 236,
+      "source": "[from] brn"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Arceus-Fighting",
+      "level": 70,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Press",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 176,
+      "max_hp": 236
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 162,
+      "max_hp": 236,
+      "source": "[from] brn"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Goodra",
+      "level": 85,
+      "hp": 292,
+      "max_hp": 292
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Press",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 176,
+      "max_hp": 236
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 162,
+      "max_hp": 236,
+      "source": "[from] brn"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Scream Tail",
+      "level": 84,
+      "hp": 328,
+      "max_hp": 330
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Press",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 270,
+      "max_hp": 330
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Play Rough",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 138,
+      "max_hp": 236
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 152,
+      "max_hp": 236
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 290,
+      "max_hp": 330
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 138,
+      "max_hp": 236,
+      "source": "[from] brn"
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "win",
+      "player": "Recxi06"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,a4d9a6d4820662cba3277024fae93866\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Recxi06\",\"avatar\":\"falkner\",\"rating\":1900,\"seed\":\"sodium,521a444cf52318e13ae14d6ed6c8aa2e\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"Njur$ten\",\"avatar\":\"bugcatcher-gen1rb\",\"rating\":1915,\"seed\":\"sodium,b7274422d7bb39faee2e58f97e0856c7\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "highhorsepower"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flamethrower"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "irondefense"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "powerwhip"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rockpolish"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "irondefense"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "boomburst"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "beakblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "irondefense"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "boomburst"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "beakblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "boomburst"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "beakblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "beakblast"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodypress terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "irondefense terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragontail"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
+    }
+  ],
+  "winner": "Recxi06"
+}

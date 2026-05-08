@@ -1,0 +1,988 @@
+{
+  "id": "gen9randombattle-2604506199",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mamoswine",
+      "level": 81,
+      "hp": 311,
+      "max_hp": 311
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Blaziken",
+      "level": 76,
+      "hp": 247,
+      "max_hp": 247
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ho-Oh",
+      "level": 71,
+      "hp": 268,
+      "max_hp": 268
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Typhlosion",
+      "level": 84,
+      "hp": 267,
+      "max_hp": 267
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sacred Fire",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Slowking-Galar",
+      "level": 85,
+      "hp": 300,
+      "max_hp": 300
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 152,
+      "max_hp": 300
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Squawkabilly-White",
+      "level": 89,
+      "hp": 291,
+      "max_hp": 291
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Steel"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Brave Bird",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 155,
+      "max_hp": 268
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 254,
+      "max_hp": 291,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sacred Fire",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 127,
+      "max_hp": 291
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Parting Shot",
+      "target": "p2"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Gastrodon",
+      "level": 86,
+      "hp": 331,
+      "max_hp": 331
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 277,
+      "max_hp": 331
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 297,
+      "max_hp": 331
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Overqwil",
+      "level": 82,
+      "hp": 274,
+      "max_hp": 274
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 317,
+      "max_hp": 331
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Swords Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 142,
+      "max_hp": 274
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 331,
+      "max_hp": 331
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Crunch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 114,
+      "max_hp": 331
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 20,
+      "max_hp": 274
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 134,
+      "max_hp": 331
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Squawkabilly-White",
+      "level": 89,
+      "hp": 127,
+      "max_hp": 291
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Scale Shot",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 72,
+      "max_hp": 291
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 20,
+      "max_hp": 291
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mamoswine",
+      "level": 81,
+      "hp": 311,
+      "max_hp": 311
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Ice Shard",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Blaziken",
+      "level": 76,
+      "hp": 247,
+      "max_hp": 247
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 217,
+      "max_hp": 247,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Slowking-Galar",
+      "level": 85,
+      "hp": 252,
+      "max_hp": 300
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Swords Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Speed Boost"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 193,
+      "max_hp": 247,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Speed Boost"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Typhlosion",
+      "level": 84,
+      "hp": 267,
+      "max_hp": 267
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 169,
+      "max_hp": 247,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Speed Boost"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mamoswine",
+      "level": 81,
+      "hp": 311,
+      "max_hp": 311
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Gastrodon",
+      "level": 86,
+      "hp": 134,
+      "max_hp": 331
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 145,
+      "max_hp": 247,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Speed Boost"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mamoswine",
+      "level": 81,
+      "hp": 311,
+      "max_hp": 311
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Ice"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Ice Shard",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 14,
+      "max_hp": 247
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Raichu",
+      "level": 88,
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ho-Oh",
+      "level": 71,
+      "hp": 244,
+      "max_hp": 268
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Nasty Plot",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 79,
+      "max_hp": 249
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunderbolt",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 45,
+      "max_hp": 268
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 55,
+      "max_hp": 249,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sacred Fire",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "win",
+      "player": "branden kim dokjaa"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,65e4bf156bdc07cb455edaf0bc20b10a\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"forsherlock\",\"avatar\":\"101\",\"rating\":2155,\"seed\":\"sodium,f213a96d0ebc6ba60ac3cf85c6f7fcb2\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"branden kim dokjaa\",\"avatar\":\"cynthia-masters3\",\"rating\":2218,\"seed\":\"sodium,9a8b3e0284416e915a8050e1f982a099\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sacredfire"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sacredfire terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "partingshot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "crunch"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "scaleshot"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "iceshard"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scorchingsands"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "iceshard terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sacredfire"
+    }
+  ],
+  "winner": "branden kim dokjaa"
+}

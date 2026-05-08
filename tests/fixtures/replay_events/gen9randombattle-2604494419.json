@@ -511,7 +511,8 @@
     },
     {
       "type": "weather",
-      "weather": "RainDance"
+      "weather": "RainDance",
+      "source": "[upkeep]"
     },
     {
       "type": "turn",
@@ -548,7 +549,8 @@
     },
     {
       "type": "weather",
-      "weather": "RainDance"
+      "weather": "RainDance",
+      "source": "[upkeep]"
     },
     {
       "type": "switch",
@@ -605,7 +607,8 @@
     },
     {
       "type": "weather",
-      "weather": "RainDance"
+      "weather": "RainDance",
+      "source": "[upkeep]"
     },
     {
       "type": "switch",
@@ -616,12 +619,279 @@
       "max_hp": 235
     },
     {
+      "type": "ability",
+      "player": "p1",
+      "ability": "As One"
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Unnerve"
+    },
+    {
       "type": "turn",
       "turn": 19
     },
     {
       "type": "win",
       "player": "klklkll 4"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,0ac0af0608c3c838a87d0c99e1ebdef7\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"klklkll 4\",\"avatar\":\"giovanni\",\"rating\":2239,\"seed\":\"sodium,bc70c42fee93e386b9b06b505490315d\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"nuubs\",\"avatar\":\"169\",\"rating\":2295,\"seed\":\"sodium,3cfffc12d40fb719370d291cbb40a5c9\"}"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragontail"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spiritbreak"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spiritbreak"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "aurawheel"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "aurawheel"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "taunt"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafblade"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafblade"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafblade"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafblade"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hydropump"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hydropump"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "raindance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hydropump"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hydropump"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wavecrash terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
     }
   ],
   "winner": "klklkll 4"

@@ -1,0 +1,743 @@
+{
+  "id": "gen9randombattle-2604498453",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Sunflora",
+      "level": 100,
+      "hp": 312,
+      "max_hp": 312
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Jumpluff",
+      "level": 87,
+      "hp": 271,
+      "max_hp": 271
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Acrobatics",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 28,
+      "max_hp": 312
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sludge Bomb",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Palafin",
+      "level": 77,
+      "hp": 281,
+      "max_hp": 281
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Decidueye",
+      "level": 88,
+      "hp": 281,
+      "max_hp": 281
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flip Turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 248,
+      "max_hp": 281
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Staraptor",
+      "level": 79,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Vigoroth",
+      "level": 85,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Brave Bird",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 113,
+      "max_hp": 275
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 210,
+      "max_hp": 263,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Brave Bird",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 173,
+      "max_hp": 263,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Bruxish",
+      "level": 85,
+      "hp": 254,
+      "max_hp": 254
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Rhydon",
+      "level": 85,
+      "hp": 317,
+      "max_hp": 317
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psychic Fangs",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 222,
+      "max_hp": 317
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 229,
+      "max_hp": 254,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Megahorn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Sunflora",
+      "level": 100,
+      "hp": 28,
+      "max_hp": 312
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Scrafty",
+      "level": 83,
+      "hp": 244,
+      "max_hp": 244
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bulk Up",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 169,
+      "max_hp": 244
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 184,
+      "max_hp": 244
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Staraptor",
+      "level": 79,
+      "hp": 173,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bulk Up",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 199,
+      "max_hp": 244
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Brave Bird",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 71,
+      "max_hp": 244
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 131,
+      "max_hp": 263,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bulk Up",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 86,
+      "max_hp": 244
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Brave Bird",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 103,
+      "max_hp": 263,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Raging Bolt",
+      "level": 78,
+      "hp": 323,
+      "max_hp": 323
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Rhydon",
+      "level": 85,
+      "hp": 222,
+      "max_hp": 317
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Calm Mind",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Calm Mind",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 41,
+      "max_hp": 323
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dragon Pulse",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Palafin-Hero",
+      "level": 77,
+      "hp": 281,
+      "max_hp": 281
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Jet Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "win",
+      "player": "Oginotakashi"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,61d956bba40afd1750f2eb60f5b2e9c8\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"SingWay\",\"avatar\":\"burglar\",\"rating\":2234,\"seed\":\"sodium,6c9d4076a2778e4e88c68aeb6555bfe7\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"Oginotakashi\",\"avatar\":\"102\",\"rating\":2329,\"seed\":\"sodium,d3c210baf7939607c639fe0dc5071a97\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "acrobatics"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "slackoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychicfangs"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "megahorn"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafstorm"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulkup terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "drainpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dragonpulse"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderclap"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "jetpunch"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
+    }
+  ],
+  "winner": "Oginotakashi"
+}

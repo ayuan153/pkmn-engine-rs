@@ -1,0 +1,1288 @@
+{
+  "id": "gen9randombattle-2604504229",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Toxapex",
+      "level": 82,
+      "hp": 216,
+      "max_hp": 216
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Clodsire",
+      "level": 81,
+      "hp": 343,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Liquidation",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 114,
+      "max_hp": 216
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 127,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Tornadus-Therian",
+      "level": 79,
+      "hp": 254,
+      "max_hp": 254
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Nasty Plot",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Toxic",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "tox"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 239,
+      "max_hp": 254,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ursaring",
+      "level": 84,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bleakwind Storm",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 72,
+      "max_hp": 288
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 209,
+      "max_hp": 254,
+      "source": "[from] psn"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "tox"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Heat Wave",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 164,
+      "max_hp": 254,
+      "source": "[from] psn"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Clodsire",
+      "level": 81,
+      "hp": 343,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Rhyperior",
+      "level": 82,
+      "hp": 323,
+      "max_hp": 323
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Gunk Shot",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 307,
+      "max_hp": 323
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Tornadus-Therian",
+      "level": 79,
+      "hp": 248,
+      "max_hp": 254
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ariados",
+      "level": 95,
+      "hp": 287,
+      "max_hp": 287
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 233,
+      "max_hp": 254,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Clodsire",
+      "level": 81,
+      "hp": 343,
+      "max_hp": 343
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bleakwind Storm",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 244,
+      "max_hp": 343
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 265,
+      "max_hp": 343
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 203,
+      "max_hp": 254,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Rhyperior",
+      "level": 82,
+      "hp": 307,
+      "max_hp": 323
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Gunk Shot",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 289,
+      "max_hp": 323
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 286,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ariados",
+      "level": 95,
+      "hp": 287,
+      "max_hp": 287
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 155,
+      "max_hp": 287
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sticky Web",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Sticky Web"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Stone Edge",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Regidrago",
+      "level": 77,
+      "hp": 435,
+      "max_hp": 435
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Claw",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 182,
+      "max_hp": 323
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 392,
+      "max_hp": 435,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Ice Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 158,
+      "max_hp": 435
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Claw",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 75,
+      "max_hp": 323
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 115,
+      "max_hp": 435,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Rock Polish",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Ice Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Sandslash",
+      "level": 89,
+      "hp": 278,
+      "max_hp": 278
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Ice Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 168,
+      "max_hp": 278
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 185,
+      "max_hp": 278
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Passimian",
+      "level": 83,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Defiant"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Clodsire",
+      "level": 81,
+      "hp": 286,
+      "max_hp": 343
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Close Combat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 97,
+      "max_hp": 343
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 118,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Close Combat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Infernape",
+      "level": 82,
+      "hp": 259,
+      "max_hp": 259
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Toxapex",
+      "level": 82,
+      "hp": 199,
+      "max_hp": 216
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Overheat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 141,
+      "max_hp": 216
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 234,
+      "max_hp": 259,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 154,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Sandslash",
+      "level": 89,
+      "hp": 185,
+      "max_hp": 278
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Toxic Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Toxic Spikes"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 202,
+      "max_hp": 278
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 167,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 219,
+      "max_hp": 278
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Passimian",
+      "level": 83,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Defiant"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Close Combat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Infernape",
+      "level": 82,
+      "hp": 234,
+      "max_hp": 259
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "psn"
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Tornadus-Therian",
+      "level": 79,
+      "hp": 254,
+      "max_hp": 254
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Overheat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 82,
+      "max_hp": 254
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 209,
+      "max_hp": 259,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 67,
+      "max_hp": 254,
+      "source": "[from] psn"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 177,
+      "max_hp": 259,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Gardevoir",
+      "level": 83,
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Blaze"
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Dark"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 152,
+      "max_hp": 259,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 120,
+      "max_hp": 259,
+      "source": "[from] psn"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Passimian",
+      "level": 83,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Defiant"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 149,
+      "max_hp": 302
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 95,
+      "max_hp": 259,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Close Combat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "win",
+      "player": "Brewerfan"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,9898bb574122980304aa95534024dda2\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Brewerfan\",\"avatar\":\"riley\",\"rating\":2017,\"seed\":\"sodium,66d3ceb6607f37ba7f4fbd815baafb9a\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"lime ave\",\"avatar\":\"yellow\",\"rating\":2045,\"seed\":\"sodium,5e216fc5b52c45f95780fc5a6ed78bce\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bleakwindstorm"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "heatwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "facade"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bleakwindstorm"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stickyweb"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "icepunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragonclaw"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rockpolish"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragonclaw"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "icepunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragonclaw"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "icepunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "overheat"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "toxicspikes"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "overheat"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    }
+  ],
+  "winner": "Brewerfan"
+}

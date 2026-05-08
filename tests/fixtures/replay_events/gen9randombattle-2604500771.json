@@ -1,0 +1,1030 @@
+{
+  "id": "gen9randombattle-2604500771",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Iron Boulder",
+      "level": 77,
+      "hp": 265,
+      "max_hp": 265
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Salazzle",
+      "level": 83,
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Misdreavus",
+      "level": 90,
+      "hp": 254,
+      "max_hp": 254
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Zen Headbutt",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 168,
+      "max_hp": 254
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 239,
+      "max_hp": 265,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Cobalion",
+      "level": 80,
+      "hp": 277,
+      "max_hp": 277
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Will-O-Wisp",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "brn"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 260,
+      "max_hp": 277,
+      "source": "[from] brn"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Salazzle",
+      "level": 83,
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Stealth Rock",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 277,
+      "max_hp": 277
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 260,
+      "max_hp": 277,
+      "source": "[from] brn"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fire Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Regidrago",
+      "level": 77,
+      "hp": 435,
+      "max_hp": 435
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dragon Energy",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Misdreavus",
+      "level": 90,
+      "hp": 168,
+      "max_hp": 254
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 137,
+      "max_hp": 254,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Shiftry",
+      "level": 89,
+      "hp": 305,
+      "max_hp": 305
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Fairy"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Draining Kiss",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 125,
+      "max_hp": 305
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 254,
+      "max_hp": 254
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Draining Kiss",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Sandslash-Alola",
+      "level": 88,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Chien-Pao",
+      "level": 72,
+      "hp": 234,
+      "max_hp": 234
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 176,
+      "max_hp": 234,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Sword of Ruin"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Ground"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sacred Sword",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 185,
+      "max_hp": 275
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 202,
+      "max_hp": 275
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Iron Bundle",
+      "level": 78,
+      "hp": 215,
+      "max_hp": 215
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hydro Pump",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Gallade",
+      "level": 80,
+      "hp": 240,
+      "max_hp": 240
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Espeon",
+      "level": 84,
+      "hp": 246,
+      "max_hp": 246
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 216,
+      "max_hp": 246,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Agility",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Night Slash",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 216,
+      "max_hp": 240,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Misdreavus",
+      "level": 90,
+      "hp": 254,
+      "max_hp": 254
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 223,
+      "max_hp": 254,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psycho Cut",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 77,
+      "max_hp": 254
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 192,
+      "max_hp": 240,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Draining Kiss",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 72,
+      "max_hp": 240
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 167,
+      "max_hp": 254
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psycho Cut",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 33,
+      "max_hp": 254
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 48,
+      "max_hp": 240,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Draining Kiss",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 69,
+      "max_hp": 254
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Iron Boulder",
+      "level": 77,
+      "hp": 239,
+      "max_hp": 265
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Darkrai",
+      "level": 77,
+      "hp": 234,
+      "max_hp": 234
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 205,
+      "max_hp": 234,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Mighty Cleave",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 53,
+      "max_hp": 234
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 213,
+      "max_hp": 265,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Regidrago",
+      "level": 77,
+      "hp": 435,
+      "max_hp": 435
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dark Pulse",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 244,
+      "max_hp": 435
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 30,
+      "max_hp": 234,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Misdreavus",
+      "level": 90,
+      "hp": 69,
+      "max_hp": 254
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 38,
+      "max_hp": 254,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Iron Boulder",
+      "level": 77,
+      "hp": 213,
+      "max_hp": 265
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Shadow Ball",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 61,
+      "max_hp": 265
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Darkrai",
+      "level": 77,
+      "hp": 30,
+      "max_hp": 234
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 1,
+      "max_hp": 234,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Mighty Cleave",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 35,
+      "max_hp": 265,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Iron Bundle",
+      "level": 78,
+      "hp": 215,
+      "max_hp": 215
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Beam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Regidrago",
+      "level": 77,
+      "hp": 244,
+      "max_hp": 435
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Beam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "win",
+      "player": "aldanully"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,a29a016184f6c905e5f2190293f802d9\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"mnlwazz\",\"avatar\":\"101\",\"rating\":1473,\"seed\":\"sodium,f0b180726794ff0311b8343c00c8bcb7\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"aldanully\",\"avatar\":\"170\",\"rating\":1512,\"seed\":\"sodium,8fbba755f25652724bc370d92deb931f\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "zenheadbutt"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "willowisp"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "voltswitch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dragonenergy"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sludgewave"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "drainingkiss terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "drainingkiss"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sacredsword"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hydropump"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "agility"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "nightslash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "alluringvoice"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606mnlwazz|i",
+      "args": "hate this gay floating head"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606aldanully|understandable",
+      "args": ""
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychocut"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "drainingkiss"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychocut"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "drainingkiss"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "mightycleave"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "darkpulse"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "mightycleave"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606mnlwazz|ggwp",
+      "args": ""
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "mightycleave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icebeam"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icebeam"
+    }
+  ],
+  "winner": "aldanully"
+}

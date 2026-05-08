@@ -1,0 +1,589 @@
+{
+  "id": "gen9randombattle-2604500721",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Toucannon",
+      "level": 88,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Mewtwo",
+      "level": 72,
+      "hp": 272,
+      "max_hp": 272
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Unnerve"
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Nasty Plot",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 78,
+      "max_hp": 272
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 214,
+      "max_hp": 272
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Boomburst",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 52,
+      "max_hp": 272
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psystrike",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 20,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Boomburst",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Salamence",
+      "level": 77,
+      "hp": 273,
+      "max_hp": 273
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dual Wingbeat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "brn"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Moxie"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 256,
+      "max_hp": 273,
+      "source": "[from] brn"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Glimmora",
+      "level": 75,
+      "hp": 248,
+      "max_hp": 248
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Toxic Spikes"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Moxie"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 239,
+      "max_hp": 273,
+      "source": "[from] brn"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Crabominable",
+      "level": 90,
+      "hp": 321,
+      "max_hp": 321
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dual Wingbeat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 233,
+      "max_hp": 321
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 137,
+      "max_hp": 321
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Ice Hammer",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toxtricity",
+      "level": 82,
+      "hp": 257,
+      "max_hp": 257
+    },
+    {
+      "type": "sideend",
+      "player": "p2",
+      "condition": "Toxic Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Talonflame",
+      "level": 83,
+      "hp": 265,
+      "max_hp": 265
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Whiscash",
+      "level": 88,
+      "hp": 337,
+      "max_hp": 337
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Basculin",
+      "level": 86,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Stealth Rock",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Cacturne",
+      "level": 92,
+      "hp": 278,
+      "max_hp": 278
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wave Crash",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toxtricity",
+      "level": 82,
+      "hp": 257,
+      "max_hp": 257
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 225,
+      "max_hp": 257,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 251,
+      "max_hp": 278,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ceruledge",
+      "level": 78,
+      "hp": 245,
+      "max_hp": 245
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sucker Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 224,
+      "max_hp": 278,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "win",
+      "player": "dasfg"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,df49c2f9e2885b1357e389dad2f22003\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"dasfg\",\"avatar\":\"1\",\"rating\":1243,\"seed\":\"sodium,dd9cd5f83a23c13d041b5765b00048b6\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"NoonkAlt\",\"avatar\":\"1\",\"rating\":1228,\"seed\":\"sodium,fa93dc419931498e7c47e07069a042ba\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "boomburst"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "boomburst"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psystrike"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "beakblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dualwingbeat"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "powergem"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "icehammer"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dualwingbeat"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bitterblade"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
+    }
+  ],
+  "winner": "dasfg"
+}

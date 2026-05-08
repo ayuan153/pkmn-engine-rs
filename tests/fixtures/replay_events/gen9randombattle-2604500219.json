@@ -1,0 +1,905 @@
+{
+  "id": "gen9randombattle-2604500219",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Kyurem-White",
+      "level": 73,
+      "hp": 303,
+      "max_hp": 303
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Cinderace",
+      "level": 77,
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Turboblaze"
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "High Jump Kick",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mesprit",
+      "level": 85,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Scrafty",
+      "level": 83,
+      "hp": 244,
+      "max_hp": 244
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 214,
+      "max_hp": 244
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Squawkabilly-Yellow",
+      "level": 89,
+      "hp": 291,
+      "max_hp": 291
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 229,
+      "max_hp": 244
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Brave Bird",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 215,
+      "max_hp": 291,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Basculin-Blue-Striped",
+      "level": 86,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Barraskewda",
+      "level": 81,
+      "hp": 231,
+      "max_hp": 231
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wave Crash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 66,
+      "max_hp": 231
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 207,
+      "max_hp": 261,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Close Combat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 28,
+      "max_hp": 261
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wave Crash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 6,
+      "max_hp": 261,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Flareon",
+      "level": 90,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Flutter Mane",
+      "level": 74,
+      "hp": 203,
+      "max_hp": 203
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Quick Attack",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "tox"
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Corviknight",
+      "level": 80,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Pressure"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Shadow Ball",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 166,
+      "max_hp": 288
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 183,
+      "max_hp": 203,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Squawkabilly-Yellow",
+      "level": 89,
+      "hp": 215,
+      "max_hp": 291
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Calm Mind",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Moonblast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 163,
+      "max_hp": 203,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Corviknight",
+      "level": 80,
+      "hp": 166,
+      "max_hp": 288
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Pressure"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Shadow Ball",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 143,
+      "max_hp": 203,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mesprit",
+      "level": 85,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Shadow Ball",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 204,
+      "max_hp": 275
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 123,
+      "max_hp": 203,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunder Wave",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 221,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psychic Noise",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 75,
+      "max_hp": 203
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Moonblast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 55,
+      "max_hp": 203,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Flareon",
+      "level": 90,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Trailblaze",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 247,
+      "max_hp": 263,
+      "source": "[from] psn"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Vileplume",
+      "level": 85,
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Flare Blitz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 159,
+      "max_hp": 263,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 127,
+      "max_hp": 263,
+      "source": "[from] psn"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Leavanny",
+      "level": 86,
+      "hp": 269,
+      "max_hp": 269
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Facade",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 38,
+      "max_hp": 269
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sticky Web",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Sticky Web"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 79,
+      "max_hp": 263,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Facade",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 15,
+      "max_hp": 263,
+      "source": "[from] psn"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Basculin-Blue-Striped",
+      "level": 86,
+      "hp": 6,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Quick Attack",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0,
+      "source": "[from] psn"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "win",
+      "player": "ThirdRequiem"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,f91dc22f7f4cf27da5a753831f48432f\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Mitchel531\",\"avatar\":\"101\",\"rating\":1902,\"seed\":\"sodium,a8f00e0e0992f0d895417fb032a2166a\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"ThirdRequiem\",\"avatar\":\"buck\",\"rating\":1964,\"seed\":\"sodium,220d1d7ab258d4a877edb22d51e6b7c9\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dracometeor"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "highjumpkick"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "quickattack"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "trailblaze"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flareblitz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "strengthsap"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "facade"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stickyweb"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "facade"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "quickattack"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "aquajet"
+    }
+  ],
+  "winner": "ThirdRequiem"
+}

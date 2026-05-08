@@ -40,7 +40,7 @@ cargo test
 
 ## Testing
 
-Differential tested against [Pokémon Showdown](https://github.com/smogon/pokemon-showdown) replay fixtures. Every damage roll, every interaction, verified tick-for-tick against the reference implementation. 120 unit + integration tests and growing. 117 unit + integration tests and growing.
+Differential tested against [Pokémon Showdown](https://github.com/smogon/pokemon-showdown) replay fixtures. Every damage roll, every interaction, verified tick-for-tick against the reference implementation. 120 unit + integration tests and growing. 117 unit + integration tests and growing. 117 unit + integration tests and growing.
 
 ## Architecture
 

@@ -1,0 +1,1333 @@
+{
+  "id": "gen9randombattle-2604505983",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Sawsbuck-Summer",
+      "level": 88,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Amoonguss",
+      "level": 82,
+      "hp": 321,
+      "max_hp": 321
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dragapult",
+      "level": 77,
+      "hp": 262,
+      "max_hp": 262
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sludge Bomb",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 216,
+      "max_hp": 262
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 259,
+      "max_hp": 321
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Sawsbuck-Summer",
+      "level": 88,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Spore",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 279,
+      "max_hp": 321
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dragapult",
+      "level": 77,
+      "hp": 216,
+      "max_hp": 262
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sludge Bomb",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 166,
+      "max_hp": 262
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "psn"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 299,
+      "max_hp": 321
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 134,
+      "max_hp": 262,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Girafarig",
+      "level": 89,
+      "hp": 269,
+      "max_hp": 269
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Fire Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 102,
+      "max_hp": 262,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Sawsbuck-Summer",
+      "level": 88,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Nasty Plot",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psyshock",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 98,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Hippowdon",
+      "level": 82,
+      "hp": 311,
+      "max_hp": 311
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[from] ability: Sand Stream"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Headbutt",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 143,
+      "max_hp": 311
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 70,
+      "max_hp": 284,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 53,
+      "max_hp": 284,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 162,
+      "max_hp": 311
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Girafarig",
+      "level": 89,
+      "hp": 269,
+      "max_hp": 269
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Headbutt",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 86,
+      "max_hp": 269
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 25,
+      "max_hp": 284,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 8,
+      "max_hp": 284,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 70,
+      "max_hp": 269,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Amoonguss",
+      "level": 82,
+      "hp": 321,
+      "max_hp": 321
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Headbutt",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 70,
+      "max_hp": 321
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 50,
+      "max_hp": 321,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 70,
+      "max_hp": 321
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Pelipper",
+      "level": 86,
+      "hp": 243,
+      "max_hp": 243
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[from] ability: Drizzle"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Hippowdon",
+      "level": 82,
+      "hp": 162,
+      "max_hp": 311
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[from] ability: Sand Stream"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 135,
+      "max_hp": 311
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Moltres",
+      "level": 81,
+      "hp": 278,
+      "max_hp": 278
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 261,
+      "max_hp": 278,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 154,
+      "max_hp": 311
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Fire Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 10,
+      "max_hp": 311
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stone Edge",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 29,
+      "max_hp": 311
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Pelipper",
+      "level": 86,
+      "hp": 243,
+      "max_hp": 243
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[from] ability: Drizzle"
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Amoonguss",
+      "level": 82,
+      "hp": 177,
+      "max_hp": 321
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Girafarig",
+      "level": 89,
+      "hp": 70,
+      "max_hp": 269
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dragapult",
+      "level": 77,
+      "hp": 102,
+      "max_hp": 262
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Okidogi",
+      "level": 77,
+      "hp": 262,
+      "max_hp": 262
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 252,
+      "max_hp": 262
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Poliwrath",
+      "level": 88,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 262,
+      "max_hp": 262
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bulk Up",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Gunk Shot",
+      "target": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Liquidation",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 63,
+      "max_hp": 262
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 280,
+      "max_hp": 302
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 79,
+      "max_hp": 262
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Liquidation",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Bombirdier",
+      "level": 85,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Brave Bird",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 14,
+      "max_hp": 302
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 170,
+      "max_hp": 258,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Liquidation",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 29,
+      "max_hp": 258
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Brave Bird",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 24,
+      "max_hp": 258,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Scream Tail",
+      "level": 84,
+      "hp": 330,
+      "max_hp": 330
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Hippowdon",
+      "level": 82,
+      "hp": 29,
+      "max_hp": 311
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[from] ability: Sand Stream"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dazzling Gleam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 310,
+      "max_hp": 330,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 330,
+      "max_hp": 330
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lycanroc-Dusk",
+      "level": 81,
+      "hp": 254,
+      "max_hp": 254
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunder Wave",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stone Edge",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 204,
+      "max_hp": 330
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 229,
+      "max_hp": 254,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 184,
+      "max_hp": 330,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 204,
+      "max_hp": 330
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dazzling Gleam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 175,
+      "max_hp": 254
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Swords Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 184,
+      "max_hp": 330,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 204,
+      "max_hp": 330
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dazzling Gleam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 121,
+      "max_hp": 254
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stone Edge",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 96,
+      "max_hp": 254,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dragapult",
+      "level": 77,
+      "hp": 102,
+      "max_hp": 262
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 30,
+      "max_hp": 254
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic Fangs",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 5,
+      "max_hp": 254,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "win",
+      "player": "superluckhero"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,ec6db0afc7663b211c4d00763a3ff09f\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"UBHCA\",\"avatar\":\"101\",\"rating\":1935,\"seed\":\"sodium,7758f968e422eec990145c6c17022fdb\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"superluckhero\",\"avatar\":\"102\",\"rating\":1981,\"seed\":\"sodium,4c2a576690b0b839e0c659121e594ca0\"}"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "spore"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psyshock"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "headbutt"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "headbutt"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "headbutt"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "drainpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicfangs"
+    }
+  ],
+  "winner": "superluckhero"
+}

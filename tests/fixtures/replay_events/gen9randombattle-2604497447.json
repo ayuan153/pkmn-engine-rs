@@ -1,0 +1,1226 @@
+{
+  "id": "gen9randombattle-2604497447",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mismagius",
+      "level": 86,
+      "hp": 243,
+      "max_hp": 243
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Scrafty",
+      "level": 83,
+      "hp": 244,
+      "max_hp": 244
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lucario",
+      "level": 84,
+      "hp": 255,
+      "max_hp": 255
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Magnezone",
+      "level": 85,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Chandelure",
+      "level": 83,
+      "hp": 235,
+      "max_hp": 235
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Pelipper",
+      "level": 86,
+      "hp": 243,
+      "max_hp": 243
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[from] ability: Drizzle"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fire Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 201,
+      "max_hp": 243
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Froslass",
+      "level": 87,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Weather Ball",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Flapple",
+      "level": 88,
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lilligant-Hisui",
+      "level": 79,
+      "hp": 240,
+      "max_hp": 240
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Outrage",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lucario",
+      "level": 84,
+      "hp": 255,
+      "max_hp": 255
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Outrage",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 63,
+      "max_hp": 255
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Close Combat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 71,
+      "max_hp": 266
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 38,
+      "max_hp": 255,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Extreme Speed",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 13,
+      "max_hp": 255,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Chandelure",
+      "level": 83,
+      "hp": 235,
+      "max_hp": 235
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Shadow Ball",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Furret",
+      "level": 94,
+      "hp": 312,
+      "max_hp": 312
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Choice Scarf"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Magnezone",
+      "level": 85,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 230,
+      "max_hp": 258
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mismagius",
+      "level": 86,
+      "hp": 243,
+      "max_hp": 243
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Nasty Plot",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Volt Switch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 95,
+      "max_hp": 243
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Chandelure",
+      "level": 83,
+      "hp": 235,
+      "max_hp": 235
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 110,
+      "max_hp": 243
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Furret",
+      "level": 94,
+      "hp": 312,
+      "max_hp": 312
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Choice Scarf"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Shadow Ball",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Magnezone",
+      "level": 85,
+      "hp": 230,
+      "max_hp": 258
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Trick",
+      "target": "p2"
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Choice Band"
+    },
+    {
+      "type": "item",
+      "player": "p1",
+      "item": "Assault Vest"
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Double-Edge",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 176,
+      "max_hp": 258
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 294,
+      "max_hp": 312,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Volt Switch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 188,
+      "max_hp": 312
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Scrafty",
+      "level": 83,
+      "hp": 244,
+      "max_hp": 244
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 199,
+      "max_hp": 244
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Pincurchin",
+      "level": 100,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 177,
+      "max_hp": 258
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 214,
+      "max_hp": 244
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Bulk Up",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Discharge",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 96,
+      "max_hp": 244
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 111,
+      "max_hp": 244
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Drain Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 90,
+      "max_hp": 258
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 155,
+      "max_hp": 244
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Discharge",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 28,
+      "max_hp": 244
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 43,
+      "max_hp": 244
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Drain Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 88,
+      "max_hp": 244
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 103,
+      "max_hp": 244
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mismagius",
+      "level": 86,
+      "hp": 110,
+      "max_hp": 243
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Tera Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 125,
+      "max_hp": 243
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Hitmontop",
+      "level": 88,
+      "hp": 231,
+      "max_hp": 231
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Pelipper",
+      "level": 86,
+      "hp": 201,
+      "max_hp": 243
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[from] ability: Drizzle"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 150,
+      "max_hp": 243
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Triple Axel",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 117,
+      "max_hp": 243
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 59,
+      "max_hp": 243
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 77,
+      "max_hp": 231
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 91,
+      "max_hp": 231
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Triple Axel",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 29,
+      "max_hp": 243
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 105,
+      "max_hp": 231
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mismagius",
+      "level": 86,
+      "hp": 125,
+      "max_hp": 243
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Triple Axel",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 77,
+      "max_hp": 243
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 119,
+      "max_hp": 231
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Furret",
+      "level": 94,
+      "hp": 188,
+      "max_hp": 312
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Leftovers"
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "win",
+      "player": "theancientchungus"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,c53b549d38723d4d3d26bfaf0fa9a4dc\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"summerr707\",\"avatar\":\"169\",\"rating\":1921,\"seed\":\"sodium,3b92ddd53c7ecb17c936f06c62cdd9ba\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"theancientchungus\",\"avatar\":\"swimmer-gen4\",\"rating\":1935,\"seed\":\"sodium,7537ee27d25924d6f09f2afd833db580\"}"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "weatherball"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "icespinner"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "extremespeed"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "voltswitch"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "trick"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "voltswitch"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "discharge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "discharge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "drainpunch"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "discharge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "drainpunch"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "terablast terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "tripleaxel terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "tripleaxel"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "terablast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "tripleaxel"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    }
+  ],
+  "winner": "theancientchungus"
+}

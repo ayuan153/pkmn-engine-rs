@@ -1,0 +1,897 @@
+{
+  "id": "gen9randombattle-2604504536",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ogerpon",
+      "level": 80,
+      "hp": 259,
+      "max_hp": 259
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Arceus-Psychic",
+      "level": 69,
+      "hp": 280,
+      "max_hp": 280
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dodrio",
+      "level": 85,
+      "hp": 241,
+      "max_hp": 241
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 208,
+      "max_hp": 241
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ampharos",
+      "level": 88,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Piloswine",
+      "level": 85,
+      "hp": 309,
+      "max_hp": 309
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Volt Switch",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Regice",
+      "level": 88,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 193,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Ice Beam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 261,
+      "max_hp": 309
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 91,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Rest",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "slp"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 185,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sleep Talk",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Ice Beam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 215,
+      "max_hp": 309
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 91,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sleep Talk",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunderbolt",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ogerpon",
+      "level": 80,
+      "hp": 259,
+      "max_hp": 259
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 179,
+      "max_hp": 309
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Cinderace",
+      "level": 77,
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Toedscruel",
+      "level": 87,
+      "hp": 281,
+      "max_hp": 281
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leaf Storm",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Kyurem",
+      "level": 77,
+      "hp": 319,
+      "max_hp": 319
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Beam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ampharos",
+      "level": 88,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Beam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 172,
+      "max_hp": 302
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dazzling Gleam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 105,
+      "max_hp": 319
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Beam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 28,
+      "max_hp": 302
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "frz"
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Beam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ogerpon",
+      "level": 80,
+      "hp": 259,
+      "max_hp": 259
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Superpower",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Delphox",
+      "level": 84,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fire Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 1,
+      "max_hp": 259
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Ivy Cudgel",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 169,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fire Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Maushold-Four",
+      "level": 76,
+      "hp": 238,
+      "max_hp": 238
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fire Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 61,
+      "max_hp": 238
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Tidy Up",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dodrio",
+      "level": 85,
+      "hp": 208,
+      "max_hp": 241
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Population Bomb",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 169,
+      "max_hp": 241
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 132,
+      "max_hp": 241
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 92,
+      "max_hp": 241
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 53,
+      "max_hp": 241
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 10,
+      "max_hp": 241
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Delphox",
+      "level": 84,
+      "hp": 169,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psyshock",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "win",
+      "player": "branden kim dokjaa"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,f511f1de7bf017238f50827f74226415\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"fdjskl\",\"avatar\":\"170\",\"rating\":2109,\"seed\":\"sodium,0bdea83c768dba3d16120dfed2156784\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"branden kim dokjaa\",\"avatar\":\"cynthia-masters3\",\"rating\":2203,\"seed\":\"sodium,be6fe31778b78acc24e9c0e3c324db6e\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "voltswitch"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "icebeam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rest"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sleeptalk"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sleeptalk"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafstorm"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "iciclecrash"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icebeam"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icebeam"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icebeam"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icebeam"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "superpower"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icebeam"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ivycudgel"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ivycudgel"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "tidyup"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "populationbomb"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "populationbomb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psyshock"
+    }
+  ],
+  "winner": "branden kim dokjaa"
+}

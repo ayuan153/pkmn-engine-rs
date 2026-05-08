@@ -1,0 +1,230 @@
+{
+  "id": "gen9randombattle-2604507716",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Florges-White",
+      "level": 85,
+      "hp": 271,
+      "max_hp": 271
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Gastrodon-East",
+      "level": 86,
+      "hp": 331,
+      "max_hp": 331
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Bronzong",
+      "level": 88,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonblast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 215,
+      "max_hp": 261
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 231,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ceruledge",
+      "level": 78,
+      "hp": 245,
+      "max_hp": 245
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stealth Rock",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 247,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Hippowdon",
+      "level": 82,
+      "hp": 311,
+      "max_hp": 311
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[from] ability: Sand Stream"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 230,
+      "max_hp": 245,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Poltergeist",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "win",
+      "player": "Carosburger"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,dc70682631509f4a2aaf46cbf3acee61\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"baby shaxx\",\"avatar\":\"iris-gen5bw2\",\"rating\":1986,\"seed\":\"sodium,03404252c3700bf12018c75592f932c3\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"Carosburger\",\"avatar\":\"lady\",\"rating\":2054,\"seed\":\"sodium,d1965a86b782328dd3056a3c9e657964\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "poltergeist"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
+    }
+  ],
+  "winner": "Carosburger"
+}

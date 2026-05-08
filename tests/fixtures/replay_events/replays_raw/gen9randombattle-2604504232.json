@@ -1,0 +1,16 @@
+{
+  "id": "gen9randombattle-2604504232",
+  "format": "[Gen 9] Random Battle",
+  "players": [
+    "SyxthSence",
+    "KnightsOfNi"
+  ],
+  "log": "|j|\u2606SyxthSence\n|j|\u2606KnightsOfNi\n|t:|1778208963\n|gametype|singles\n|player|p1|SyxthSence|265|2107\n|player|p2|KnightsOfNi|plasmagrunt-gen5bw|2129\n|gen|9\n|tier|[Gen 9] Random Battle\n|rated|\n|rule|Species Clause: Limit one of each Pok\u00e9mon\n|rule|HP Percentage Mod: HP is shown in percentages\n|rule|Sleep Clause Mod: Limit one foe put to sleep\n|rule|Illusion Level Mod: Illusion disguises the Pok\u00e9mon's true level\n|\n|t:|1778208963\n|teamsize|p1|6\n|teamsize|p2|6\n|start\n|switch|p1a: Greedent|Greedent, L86, F|347/347\n|switch|p2a: Flamigo|Flamigo, L82, F|269/269\n|turn|1\n|inactive|Battle timer is ON: inactive players will automatically lose when time's up. (requested by KnightsOfNi)\n|\n|t:|1778208979\n|move|p2a: Flamigo|Close Combat|p1a: Greedent\n|-supereffective|p1a: Greedent\n|-damage|p1a: Greedent|0 fnt\n|-unboost|p2a: Flamigo|def|1\n|-unboost|p2a: Flamigo|spd|1\n|faint|p1a: Greedent\n|\n|upkeep\n|\n|t:|1778208986\n|switch|p1a: Minun|Minun, L95, M|268/268\n|turn|2\n|\n|t:|1778208997\n|switch|p2a: Wyrdeer|Wyrdeer, L87, F|321/321\n|-ability|p2a: Wyrdeer|Intimidate|boost\n|-unboost|p1a: Minun|atk|1\n|-terastallize|p1a: Minun|Fairy\n|move|p1a: Minun|Nasty Plot|p1a: Minun\n|-boost|p1a: Minun|spa|2\n|\n|upkeep\n|turn|3\n|\n|t:|1778209005\n|move|p1a: Minun|Nasty Plot|p1a: Minun\n|-boost|p1a: Minun|spa|2\n|move|p2a: Wyrdeer|Body Slam|p1a: Minun\n|-damage|p1a: Minun|145/268\n|\n|upkeep\n|turn|4\n|\n|t:|1778209015\n|move|p1a: Minun|Alluring Voice|p2a: Wyrdeer\n|-damage|p2a: Wyrdeer|79/321\n|-damage|p1a: Minun|119/268|[from] item: Life Orb\n|move|p2a: Wyrdeer|Body Slam|p1a: Minun\n|-damage|p1a: Minun|0 fnt\n|faint|p1a: Minun\n|\n|upkeep\n|-message|SyxthSence forfeited.\n|\n|win|KnightsOfNi\n|raw|SyxthSence's rating: 2107 &rarr; <strong>2088</strong><br />(-19 for losing)\n|raw|KnightsOfNi's rating: 2129 &rarr; <strong>2148</strong><br />(+19 for winning)\n",
+  "inputlog": ">version d3c0b4cf388ee6ae107ccf7216674edd176762ce\n>start {\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,ce5c815371a021f807769f0052dac68e\",\"rated\":\"Rated battle\"}\n>player p1 {\"name\":\"SyxthSence\",\"avatar\":\"265\",\"rating\":2107,\"seed\":\"sodium,dd46f050664a0fed7b2cbdc79b3b823b\"}\n>player p2 {\"name\":\"KnightsOfNi\",\"avatar\":\"plasmagrunt-gen5bw\",\"rating\":2129,\"seed\":\"sodium,f6b4bb30708544be872a8b088f9777f9\"}\n>p1 move swordsdance\n>p2 move closecombat\n>p1 switch 5\n>p1 move nastyplot terastallize\n>p2 switch 5\n>p1 move nastyplot\n>p2 move bodyslam\n>p1 move alluringvoice\n>p2 move bodyslam\n>forcelose p1",
+  "uploadtime": 1778209021,
+  "views": 2,
+  "formatid": "gen9randombattle",
+  "rating": 2088,
+  "private": 0,
+  "password": null
+}

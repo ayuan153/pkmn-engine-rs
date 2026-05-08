@@ -1,0 +1,99 @@
+{
+  "id": "gen9randombattle-2604499712",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Hitmontop",
+      "level": 88,
+      "hp": 231,
+      "max_hp": 231
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Gliscor",
+      "level": 76,
+      "hp": 239,
+      "max_hp": 239
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Entei",
+      "level": 78,
+      "hp": 307,
+      "max_hp": 307
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Clodsire",
+      "level": 81,
+      "hp": 343,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "win",
+      "player": "starrcal"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,912e3b74f90d302742a7168c0e52700f\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"thesenya\",\"avatar\":\"101\",\"rating\":1937,\"seed\":\"sodium,773770d153118cbdd32b4e40f62bb131\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"starrcal\",\"avatar\":\"170\",\"rating\":1972,\"seed\":\"sodium,ca4664f22aee7bdc8c1e14af1838b5ff\"}"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
+    }
+  ],
+  "winner": "starrcal"
+}

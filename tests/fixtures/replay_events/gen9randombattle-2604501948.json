@@ -1,0 +1,1121 @@
+{
+  "id": "gen9randombattle-2604501948",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Jumpluff",
+      "level": 87,
+      "hp": 271,
+      "max_hp": 271
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Eternatus",
+      "level": 69,
+      "hp": 308,
+      "max_hp": 308
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Porygon2",
+      "level": 81,
+      "hp": 270,
+      "max_hp": 270
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Download"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sludge Bomb",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 216,
+      "max_hp": 270
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Magcargo",
+      "level": 95,
+      "hp": 268,
+      "max_hp": 268
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunder Wave",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Shadow Ball",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 182,
+      "max_hp": 268
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Lava Plume",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 120,
+      "max_hp": 270
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Recover",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 255,
+      "max_hp": 270
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Lava Plume",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 186,
+      "max_hp": 270
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Shadow Ball",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 109,
+      "max_hp": 268
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 243,
+      "max_hp": 268
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Krookodile",
+      "level": 79,
+      "hp": 280,
+      "max_hp": 280
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Shadow Ball",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 223,
+      "max_hp": 280
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stealth Rock",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Tera Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 57,
+      "max_hp": 280
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Jumpluff",
+      "level": 87,
+      "hp": 271,
+      "max_hp": 271
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 204,
+      "max_hp": 271,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 56,
+      "max_hp": 271
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 29,
+      "max_hp": 280,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Magcargo",
+      "level": 95,
+      "hp": 243,
+      "max_hp": 268
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Strength Sap",
+      "target": "p2"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 156,
+      "max_hp": 271
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Porygon2",
+      "level": 81,
+      "hp": 186,
+      "max_hp": 270
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 153,
+      "max_hp": 270,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Download"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Krookodile",
+      "level": 79,
+      "hp": 29,
+      "max_hp": 280
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 59,
+      "max_hp": 270
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 1,
+      "max_hp": 280,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Tera Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Eternatus",
+      "level": 69,
+      "hp": 308,
+      "max_hp": 308
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sludge Bomb",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Scream Tail",
+      "level": 84,
+      "hp": 330,
+      "max_hp": 330
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 289,
+      "max_hp": 330,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Magcargo",
+      "level": 95,
+      "hp": 243,
+      "max_hp": 268
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunder Wave",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 309,
+      "max_hp": 330
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Wish",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Yawn",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 329,
+      "max_hp": 330
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mabosstiff",
+      "level": 86,
+      "hp": 278,
+      "max_hp": 278
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 244,
+      "max_hp": 278,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Eternatus",
+      "level": 69,
+      "hp": 308,
+      "max_hp": 308
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 278,
+      "max_hp": 278
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psychic Fangs",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 124,
+      "max_hp": 308
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 232,
+      "max_hp": 278,
+      "source": "[from] item: Rocky Helmet"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sludge Bomb",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 126,
+      "max_hp": 278
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "psn"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 92,
+      "max_hp": 278,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Magcargo",
+      "level": 95,
+      "hp": 243,
+      "max_hp": 268
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psychic Fangs",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 145,
+      "max_hp": 268
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 58,
+      "max_hp": 278,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psychic Fangs",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 92,
+      "max_hp": 268
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 24,
+      "max_hp": 278,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psychic Fangs",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 40,
+      "max_hp": 268
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 174,
+      "max_hp": 268
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0,
+      "source": "[from] psn"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Serperior",
+      "level": 79,
+      "hp": 248,
+      "max_hp": 248
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 217,
+      "max_hp": 248,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Dragon"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leaf Storm",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 74,
+      "max_hp": 268
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Yawn",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 232,
+      "max_hp": 248
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Corviknight",
+      "level": 80,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 252,
+      "max_hp": 288,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 208,
+      "max_hp": 268
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 270,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Press",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 134,
+      "max_hp": 268
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 268,
+      "max_hp": 268
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Scream Tail",
+      "level": 84,
+      "hp": 329,
+      "max_hp": 330
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 288,
+      "max_hp": 330,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Lava Plume",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 203,
+      "max_hp": 330
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "brn"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 223,
+      "max_hp": 330
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 203,
+      "max_hp": 330,
+      "source": "[from] brn"
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "win",
+      "player": "MandoWarrior"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,4020ce1a18fe7be91ff3fa0928635bac\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Ggcbhg\",\"avatar\":\"101\",\"rating\":1992,\"seed\":\"sodium,7128c5f17667eca407ae79e72b0d9bf5\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"MandoWarrior\",\"avatar\":\"1\",\"rating\":2021,\"seed\":\"sodium,fea336e0ae9932ce29ee16c71be601eb\"}"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "lavaplume"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "lavaplume"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "terablast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "strengthsap"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "terablast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "yawn"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychicfangs"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychicfangs"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychicfangs"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychicfangs"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafstorm terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "yawn"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "lavaplume"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
+    }
+  ],
+  "winner": "MandoWarrior"
+}

@@ -1,0 +1,1500 @@
+{
+  "id": "gen9randombattle-2604500336",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Gholdengo",
+      "level": 77,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lumineon",
+      "level": 93,
+      "hp": 279,
+      "max_hp": 279
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Electrode-Hisui",
+      "level": 87,
+      "hp": 246,
+      "max_hp": 246
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hydro Pump",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 171,
+      "max_hp": 246
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 252,
+      "max_hp": 279,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Umbreon",
+      "level": 84,
+      "hp": 297,
+      "max_hp": 297
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Volt Switch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 237,
+      "max_hp": 297
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 147,
+      "max_hp": 246,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Greninja",
+      "level": 80,
+      "hp": 246,
+      "max_hp": 246
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 255,
+      "max_hp": 297
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Toxic",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "tox"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 273,
+      "max_hp": 297
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 231,
+      "max_hp": 246,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Rillaboom",
+      "level": 79,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 252,
+      "max_hp": 288,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 246,
+      "max_hp": 246
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 270,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 216,
+      "max_hp": 246,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Gholdengo",
+      "level": 77,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "U-turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 239,
+      "max_hp": 261
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Palkia-Origin",
+      "level": 72,
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 208,
+      "max_hp": 249,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 255,
+      "max_hp": 261
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 223,
+      "max_hp": 249
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Alcremie",
+      "level": 90,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fire Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 201,
+      "max_hp": 263
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 238,
+      "max_hp": 249
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 217,
+      "max_hp": 263
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 233,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunder Wave",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "par"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 249,
+      "max_hp": 263
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Squawkabilly-Blue",
+      "level": 85,
+      "hp": 278,
+      "max_hp": 278
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Alluring Voice",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 107,
+      "max_hp": 278
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "brn"
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Gholdengo",
+      "level": 77,
+      "hp": 255,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "U-turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 235,
+      "max_hp": 261
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Umbreon",
+      "level": 84,
+      "hp": 273,
+      "max_hp": 297
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 224,
+      "max_hp": 297,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 242,
+      "max_hp": 297
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Alcremie",
+      "level": 90,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wish",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 260,
+      "max_hp": 297
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Rillaboom",
+      "level": 79,
+      "hp": 270,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 222,
+      "max_hp": 288,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Alluring Voice",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 80,
+      "max_hp": 288
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 228,
+      "max_hp": 288
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 246,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Gholdengo",
+      "level": 77,
+      "hp": 235,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wood Hammer",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 91,
+      "max_hp": 261
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 198,
+      "max_hp": 288,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 107,
+      "max_hp": 261
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 216,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Breloom",
+      "level": 83,
+      "hp": 235,
+      "max_hp": 235
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wood Hammer",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 86,
+      "max_hp": 235
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 167,
+      "max_hp": 288,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 185,
+      "max_hp": 288
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 100,
+      "max_hp": 235
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Mach Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 72,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 77,
+      "max_hp": 235,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wood Hammer",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 47,
+      "max_hp": 288,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 65,
+      "max_hp": 288
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Greninja",
+      "level": 80,
+      "hp": 216,
+      "max_hp": 246
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Umbreon",
+      "level": 84,
+      "hp": 260,
+      "max_hp": 297
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 211,
+      "max_hp": 297,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 71,
+      "max_hp": 297
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 192,
+      "max_hp": 246,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mienshao",
+      "level": 83,
+      "hp": 243,
+      "max_hp": 243
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 89,
+      "max_hp": 297
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 107,
+      "max_hp": 297
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Poison"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 69,
+      "max_hp": 297
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Alcremie",
+      "level": 90,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Toxic"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 87,
+      "max_hp": 297
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wish",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psychic",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Rillaboom",
+      "level": 79,
+      "hp": 65,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 17,
+      "max_hp": 288,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wood Hammer",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dunsparce",
+      "level": 86,
+      "hp": 312,
+      "max_hp": 312
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Electrode-Hisui",
+      "level": 87,
+      "hp": 147,
+      "max_hp": 246
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 260,
+      "max_hp": 312,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leaf Storm",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 77,
+      "max_hp": 312
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 123,
+      "max_hp": 246,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 88,
+      "max_hp": 246
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 103,
+      "max_hp": 246
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 96,
+      "max_hp": 312
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leaf Storm",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Slam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 24,
+      "max_hp": 246
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 39,
+      "max_hp": 246
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 115,
+      "max_hp": 312
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leaf Storm",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 33,
+      "max_hp": 312
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 15,
+      "max_hp": 246,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Roost",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 189,
+      "max_hp": 312
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 30,
+      "max_hp": 246
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 208,
+      "max_hp": 312
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Taunt",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 227,
+      "max_hp": 312
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mienshao",
+      "level": 83,
+      "hp": 243,
+      "max_hp": 243
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "High Jump Kick",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lumineon",
+      "level": 93,
+      "hp": 252,
+      "max_hp": 279
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 206,
+      "max_hp": 279,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Alluring Voice",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 40,
+      "max_hp": 243
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 179,
+      "max_hp": 279,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "High Jump Kick",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Squawkabilly-Blue",
+      "level": 85,
+      "hp": 107,
+      "max_hp": 278
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Greninja",
+      "level": 80,
+      "hp": 192,
+      "max_hp": 246
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "U-turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Palkia-Origin",
+      "level": 72,
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 208,
+      "max_hp": 249,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mienshao",
+      "level": 83,
+      "hp": 40,
+      "max_hp": 243
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Fighting"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "High Jump Kick",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0,
+      "source": "[from] highjumpkick"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fire Blast",
+      "target": "p1"
+    },
+    {
+      "type": "win",
+      "player": "branden kim dokjaa"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,df6653ee6243e389b1b55fad44bc914c\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Kurumin33\",\"avatar\":\"169\",\"rating\":2185,\"seed\":\"sodium,3ba346dfb01b2105f1db572dd05d724d\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"branden kim dokjaa\",\"avatar\":\"cynthia-masters3\",\"rating\":2159,\"seed\":\"sodium,6b1de094a999966f0e8a447d412b94c9\"}"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hydropump"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "voltswitch"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "alluringvoice"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "alluringvoice"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "alluringvoice"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "woodhammer"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "woodhammer"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "machpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "woodhammer"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "toxic terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychic"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "alluringvoice"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "woodhammer"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafstorm"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafstorm"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafstorm"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "taunt"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "highjumpkick"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "highjumpkick"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "alluringvoice"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "highjumpkick terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
+    }
+  ],
+  "winner": "branden kim dokjaa"
+}

@@ -1,0 +1,1359 @@
+{
+  "id": "gen9randombattle-2604504544",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Infernape",
+      "level": 82,
+      "hp": 259,
+      "max_hp": 259
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Tyranitar",
+      "level": 78,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[from] ability: Sand Stream"
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Giratina",
+      "level": 75,
+      "hp": 349,
+      "max_hp": 349
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Close Combat",
+      "target": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 243,
+      "max_hp": 259,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 328,
+      "max_hp": 349,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 349,
+      "max_hp": 349
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Komala",
+      "level": 88,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Comatose"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Pulse",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 215,
+      "max_hp": 258
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 328,
+      "max_hp": 349,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 199,
+      "max_hp": 258,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 349,
+      "max_hp": 349
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Tyranitar",
+      "level": 78,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 245,
+      "max_hp": 284
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 183,
+      "max_hp": 258,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Groudon",
+      "level": 72,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[from] ability: Drought"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Tail",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 224,
+      "max_hp": 263
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Komala",
+      "level": 88,
+      "hp": 183,
+      "max_hp": 258
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Comatose"
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 85,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 41,
+      "max_hp": 258
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Giratina",
+      "level": 75,
+      "hp": 349,
+      "max_hp": 349
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Pulse",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Greninja",
+      "level": 80,
+      "hp": 246,
+      "max_hp": 246
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Muk-Alola",
+      "level": 82,
+      "hp": 306,
+      "max_hp": 306
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Ice Beam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 259,
+      "max_hp": 306
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 222,
+      "max_hp": 246,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Clodsire",
+      "level": 81,
+      "hp": 343,
+      "max_hp": 343
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 209,
+      "max_hp": 343
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 230,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 88,
+      "max_hp": 343
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 61,
+      "max_hp": 306
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Greninja",
+      "level": 80,
+      "hp": 222,
+      "max_hp": 246
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hydro Pump",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Battle Bond"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 198,
+      "max_hp": 246,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Regidrago",
+      "level": 77,
+      "hp": 435,
+      "max_hp": 435
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Ice Beam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 45,
+      "max_hp": 435
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 174,
+      "max_hp": 246,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Claw",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 9,
+      "max_hp": 246
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 2,
+      "max_hp": 435,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dark Pulse",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Hypno",
+      "level": 95,
+      "hp": 315,
+      "max_hp": 315
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Tornadus-Therian",
+      "level": 79,
+      "hp": 254,
+      "max_hp": 254
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Giratina",
+      "level": 75,
+      "hp": 349,
+      "max_hp": 349
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Toxic",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "tox"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 328,
+      "max_hp": 349,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Protect",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Calm Mind",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 349,
+      "max_hp": 349
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 307,
+      "max_hp": 349,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psychic Noise",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 261,
+      "max_hp": 349
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Pulse",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 237,
+      "max_hp": 315
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 256,
+      "max_hp": 315
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 198,
+      "max_hp": 349,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psychic Noise",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 146,
+      "max_hp": 349
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Pulse",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 177,
+      "max_hp": 315
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 196,
+      "max_hp": 315
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 62,
+      "max_hp": 349,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psychic Noise",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 16,
+      "max_hp": 349
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 215,
+      "max_hp": 315
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] psn"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Zacian-Crowned",
+      "level": 64,
+      "hp": 225,
+      "max_hp": 225
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Intrepid Sword"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Groudon",
+      "level": 72,
+      "hp": 224,
+      "max_hp": 263
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[from] ability: Drought"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Swords Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 240,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Fighting"
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Fire"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Behemoth Blade",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 144,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Precipice Blades",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 95,
+      "max_hp": 225
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 160,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Hypno",
+      "level": 95,
+      "hp": 215,
+      "max_hp": 315
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Behemoth Blade",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 2,
+      "max_hp": 315
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psychic Noise",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 21,
+      "max_hp": 315
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Tornadus-Therian",
+      "level": 79,
+      "hp": 254,
+      "max_hp": 254
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Heat Wave",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Infernape",
+      "level": 82,
+      "hp": 243,
+      "max_hp": 259
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Bleakwind Storm",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "win",
+      "player": "FantasyWind"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,7c71024f16a76f456f627dbf8620a56d\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Ggcbhg\",\"avatar\":\"101\",\"rating\":1974,\"seed\":\"sodium,75d5add5b542fdf3cc14684628a8c743\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"FantasyWind\",\"avatar\":\"hilda\",\"rating\":1972,\"seed\":\"sodium,82e176beeb4706db0760f14fa504537f\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragonpulse"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragontail"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragonpulse"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "icebeam"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icepunch"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hydropump"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "icebeam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragonclaw"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "darkpulse"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragonclaw"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragonpulse"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragonpulse"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rest"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "precipiceblades terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "behemothblade terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "precipiceblades"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "behemothblade"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "heatwave"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bleakwindstorm"
+    }
+  ],
+  "winner": "FantasyWind"
+}

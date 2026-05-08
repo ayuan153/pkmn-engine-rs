@@ -94,6 +94,11 @@
       "max_hp": 248
     },
     {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Dauntless Shield"
+    },
+    {
       "type": "boost",
       "player": "p2",
       "stat": "def",
@@ -223,6 +228,10 @@
       "player": "p2",
       "stat": "spe",
       "amount": 2
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
     },
     {
       "type": "turn",
@@ -522,6 +531,10 @@
       "max_hp": 258
     },
     {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
       "type": "turn",
       "turn": 13
     },
@@ -631,6 +644,213 @@
     {
       "type": "win",
       "player": "Alexspitzcharles"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,a0ae0a7f27638d1e70a8fb19ef4fc20e\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Alexspitzcharles\",\"avatar\":\"101\",\"rating\":1966,\"seed\":\"sodium,fe6b6a7671ab6cee3e25ea0d167503b2\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"Revengeboyz\",\"avatar\":\"dancer\",\"rating\":1945,\"seed\":\"sodium,e757db21809a5a932afba79a607b5d6b\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "meteormash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "strengthsap"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "extremespeed"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicfangs"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "icebeam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicfangs"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "freezedry"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shellsmash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "freezedry"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "icebeam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "triplearrows"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flareblitz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "triplearrows"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flareblitz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "spore"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shellsmash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shellsmash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "petalblizzard"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "populationbomb"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "powertrip"
     }
   ],
   "winner": "Alexspitzcharles"

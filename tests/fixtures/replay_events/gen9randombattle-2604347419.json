@@ -29,6 +29,11 @@
       "target": "p1"
     },
     {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Spikes"
+    },
+    {
       "type": "move",
       "player": "p1",
       "move": "Swords Dance",
@@ -144,6 +149,10 @@
       "amount": 2
     },
     {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
       "type": "damage",
       "player": "p1",
       "hp": 234,
@@ -230,6 +239,11 @@
       "target": "p1"
     },
     {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Sticky Web"
+    },
+    {
       "type": "turn",
       "turn": 7
     },
@@ -244,6 +258,16 @@
       "player": "p2",
       "stat": "evasion",
       "amount": 1
+    },
+    {
+      "type": "sideend",
+      "player": "p1",
+      "condition": "Spikes"
+    },
+    {
+      "type": "sideend",
+      "player": "p1",
+      "condition": "Sticky Web"
     },
     {
       "type": "move",
@@ -298,6 +322,11 @@
       "level": 75,
       "hp": 349,
       "max_hp": 349
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
     },
     {
       "type": "move",
@@ -391,6 +420,10 @@
       "type": "damage",
       "player": "p2",
       "hp": 0
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
     },
     {
       "type": "faint",
@@ -633,6 +666,11 @@
       "amount": 1
     },
     {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Gooey"
+    },
+    {
       "type": "unboost",
       "player": "p1",
       "stat": "spe",
@@ -699,6 +737,11 @@
       "max_hp": 249
     },
     {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Gooey"
+    },
+    {
       "type": "turn",
       "turn": 20
     },
@@ -713,6 +756,11 @@
       "player": "p1",
       "hp": 29,
       "max_hp": 249
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Gooey"
     },
     {
       "type": "unboost",
@@ -845,6 +893,323 @@
     {
       "type": "win",
       "player": "BrownTerminator"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,927931c80ead5dc84dbd15a83123765b\"}",
+      "args": ""
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"BrownTerminator\",\"avatar\":\"2\",\"rating\":0,\"seed\":\"sodium,f53a68371ca2cfb0a3b88a0aa1c44f67\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"tacitos06\",\"avatar\":\"red\",\"rating\":0,\"seed\":\"sodium,178d1698aaf3559c4c25d5838274c26a\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "facade"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shellsmash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "throatchop"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "acrobatics"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "acrobatics"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stickyweb"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "defog"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "poisonjab"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dualwingbeat"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dualwingbeat"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragonpulse"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragonpulse"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "revivalblessing"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gravapple"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gravapple"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psyshock"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psyshock"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "poisonjab"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "doubleshock terastallize"
     }
   ],
   "winner": "BrownTerminator"

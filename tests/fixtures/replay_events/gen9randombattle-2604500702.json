@@ -1,0 +1,770 @@
+{
+  "id": "gen9randombattle-2604500702",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Vigoroth",
+      "level": 85,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Gogoat",
+      "level": 88,
+      "hp": 360,
+      "max_hp": 360
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bulk Up",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Bulk Up",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bulk Up",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Horn Leech",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 227,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bulk Up",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Bulk Up",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bulk Up",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Bulk Up",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bulk Up",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Bulk Up",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bulk Up",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Bulk Up",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Eiscue",
+      "level": 88,
+      "hp": 274,
+      "max_hp": 274
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 274,
+      "max_hp": 274
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Hawlucha",
+      "level": 80,
+      "hp": 256,
+      "max_hp": 256
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Ghost"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Heracross",
+      "level": 80,
+      "hp": 259,
+      "max_hp": 259
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 197,
+      "max_hp": 275
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Tatsugiri",
+      "level": 87,
+      "hp": 260,
+      "max_hp": 260
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Kleavor",
+      "level": 78,
+      "hp": 237,
+      "max_hp": 237
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 9,
+      "max_hp": 237
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "X-Scissor",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 179,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "win",
+      "player": "Wittyfr"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,f108dbc8f7e1e0c28dde15ca828d5a65\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Wittyfr\",\"avatar\":\"giovanni\",\"rating\":1305,\"seed\":\"sodium,922f900d7f2bdc27955f127b44fa7c89\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"ImortalVagabondou\",\"avatar\":\"lucas\",\"rating\":1347,\"seed\":\"sodium,8354876b098374b8a0145bd0491aa44f\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hornleech"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606ImortalVagabondou|Oh",
+      "args": "shit"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Wittyfr|yeah",
+      "args": ""
+    },
+    {
+      "player": "chat",
+      "action": "\u2606ImortalVagabondou|I",
+      "args": "fucked up"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bellydrum"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606ImortalVagabondou|Bruh",
+      "args": "paralyze proc seriously"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Wittyfr|unlucky",
+      "args": ""
+    },
+    {
+      "player": "chat",
+      "action": "\u2606ImortalVagabondou|I\u2019m",
+      "args": "too drunk for this"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Wittyfr|lmao",
+      "args": ""
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icespinner"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606ImortalVagabondou|U",
+      "args": "batch"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Wittyfr|hehe",
+      "args": ""
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606ImortalVagabondou|How",
+      "args": "dare you"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606ImortalVagabondou|How",
+      "args": "tf do all my pokem hav all physical"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Wittyfr|lmao",
+      "args": ""
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dracometeor"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606ImortalVagabondou|Godamn",
+      "args": "fish do your job"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "xscissor"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606ImortalVagabondou|Oh",
+      "args": "well"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Wittyfr|o",
+      "args": ""
+    },
+    {
+      "player": "chat",
+      "action": "\u2606ImortalVagabondou|Dumb",
+      "args": "sloth suck me"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "xscissor"
+    }
+  ],
+  "winner": "Wittyfr"
+}

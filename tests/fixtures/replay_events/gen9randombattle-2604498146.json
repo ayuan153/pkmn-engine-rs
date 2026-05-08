@@ -1,0 +1,789 @@
+{
+  "id": "gen9randombattle-2604498146",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Leavanny",
+      "level": 86,
+      "hp": 269,
+      "max_hp": 269
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Drednaw",
+      "level": 81,
+      "hp": 278,
+      "max_hp": 278
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Vikavolt",
+      "level": 83,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bullet Seed",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 248,
+      "max_hp": 263
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 233,
+      "max_hp": 263
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 219,
+      "max_hp": 263
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 203,
+      "max_hp": 263
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 188,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sticky Web",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Sticky Web"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sticky Web",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Sticky Web"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Triple Axel",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 171,
+      "max_hp": 263
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 138,
+      "max_hp": 263
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 91,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Bug Buzz",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 3,
+      "max_hp": 269
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Triple Axel",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 76,
+      "max_hp": 263
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 43,
+      "max_hp": 263
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Squawkabilly-Yellow",
+      "level": 89,
+      "hp": 291,
+      "max_hp": 291
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Quick Attack",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Glastrier",
+      "level": 86,
+      "hp": 312,
+      "max_hp": 312
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Drednaw",
+      "level": 81,
+      "hp": 278,
+      "max_hp": 278
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Icicle Crash",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 206,
+      "max_hp": 278
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Slowbro-Galar",
+      "level": 87,
+      "hp": 307,
+      "max_hp": 307
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stone Edge",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 199,
+      "max_hp": 307
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 218,
+      "max_hp": 307
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Shell Smash",
+      "target": "p2"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psychic",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 20,
+      "max_hp": 278
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 237,
+      "max_hp": 307
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ditto",
+      "level": 87,
+      "hp": 225,
+      "max_hp": 225
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ludicolo",
+      "level": 90,
+      "hp": 290,
+      "max_hp": 290
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Liquidation",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 231,
+      "max_hp": 290
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Glastrier",
+      "level": 86,
+      "hp": 312,
+      "max_hp": 312
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Giga Drain",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 210,
+      "max_hp": 312
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 282,
+      "max_hp": 290
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Drednaw",
+      "level": 81,
+      "hp": 20,
+      "max_hp": 278
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Icicle Crash",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Chilling Neigh"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ludicolo",
+      "level": 90,
+      "hp": 282,
+      "max_hp": 290
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Leaf Storm",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Regidrago",
+      "level": 77,
+      "hp": 435,
+      "max_hp": 435
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Squawkabilly-Yellow",
+      "level": 89,
+      "hp": 291,
+      "max_hp": 291
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dragon Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Brave Bird",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dragon Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "win",
+      "player": "ban95accuratemoves"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,3f175ecef3a69c7ea009d202215ed289\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"ban95accuratemoves\",\"avatar\":\"boarder\",\"rating\":1952,\"seed\":\"sodium,7b40d71229f1b5380a649b06b76e68a0\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"Meowerdoom\",\"avatar\":\"2\",\"rating\":1915,\"seed\":\"sodium,15b5effb54ffd534509b1a9a925c2680\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulletseed"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stickyweb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stickyweb"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "tripleaxel"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "tripleaxel"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "quickattack"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "iciclecrash"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychic"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shellsmash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychic"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "iciclecrash"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "iciclecrash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "leafstorm terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
+    }
+  ],
+  "winner": "ban95accuratemoves"
+}

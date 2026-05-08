@@ -1,0 +1,879 @@
+{
+  "id": "gen9randombattle-2604499024",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Stonjourner",
+      "level": 91,
+      "hp": 330,
+      "max_hp": 330
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Polteageist",
+      "level": 78,
+      "hp": 222,
+      "max_hp": 222
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Vaporeon",
+      "level": 86,
+      "hp": 364,
+      "max_hp": 364
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Stone Edge",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 121,
+      "max_hp": 364
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 297,
+      "max_hp": 330,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 143,
+      "max_hp": 364
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Flygon",
+      "level": 82,
+      "hp": 265,
+      "max_hp": 265
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Stone Edge",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Jumpluff",
+      "level": 87,
+      "hp": 271,
+      "max_hp": 271
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Vaporeon",
+      "level": 86,
+      "hp": 143,
+      "max_hp": 364
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leech Seed",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 165,
+      "max_hp": 364
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 120,
+      "max_hp": 364,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Acrobatics",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 15,
+      "max_hp": 364
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wish",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 37,
+      "max_hp": 364
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Polteageist",
+      "level": 78,
+      "hp": 222,
+      "max_hp": 222
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leech Seed",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Shell Smash",
+      "target": "p2"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 195,
+      "max_hp": 222,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Shell Smash",
+      "target": "p2"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Acrobatics",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 30,
+      "max_hp": 222
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 3,
+      "max_hp": 222,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mimikyu",
+      "level": 79,
+      "hp": 216,
+      "max_hp": 216
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stored Power",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 216,
+      "max_hp": 216
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 189,
+      "max_hp": 216,
+      "source": "[from] pokemon: Mimikyu-Busted"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 192,
+      "max_hp": 216
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Bisharp",
+      "level": 79,
+      "hp": 232,
+      "max_hp": 232
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Drain Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 81,
+      "max_hp": 232
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 216,
+      "max_hp": 216
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 195,
+      "max_hp": 216,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Head",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Kleavor",
+      "level": 78,
+      "hp": 237,
+      "max_hp": 237
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sucker Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 150,
+      "max_hp": 237
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "X-Scissor",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Flygon",
+      "level": 82,
+      "hp": 265,
+      "max_hp": 265
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stone Edge",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 16,
+      "max_hp": 237
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "X-Scissor",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 114,
+      "max_hp": 265
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stone Edge",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Stonjourner",
+      "level": 91,
+      "hp": 297,
+      "max_hp": 330
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Archaludon",
+      "level": 78,
+      "hp": 268,
+      "max_hp": 268
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Stealth Rock",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 57,
+      "max_hp": 268
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Stamina"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 264,
+      "max_hp": 330,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stealth Rock",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 73,
+      "max_hp": 268
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Golem-Alola",
+      "level": 93,
+      "hp": 300,
+      "max_hp": 300
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 263,
+      "max_hp": 300,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 231,
+      "max_hp": 330,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Flygon",
+      "level": 82,
+      "hp": 114,
+      "max_hp": 265
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 98,
+      "max_hp": 265,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 99,
+      "max_hp": 330
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Stone Edge",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 66,
+      "max_hp": 330,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "win",
+      "player": "FantasyWind"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,6ad1d0568238864d583ed6c5e87d1a65\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"FantasyWind\",\"avatar\":\"hilda\",\"rating\":1950,\"seed\":\"sodium,e0ba819e4d078479759e63f33dbeda8b\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"SalmonCashew\",\"avatar\":\"caitlin\",\"rating\":1980,\"seed\":\"sodium,c65caaa016b90b6571a9ce2bd4e5c1af\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leechseed"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "acrobatics"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leechseed"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shellsmash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "acrobatics"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shellsmash"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "storedpower"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "drainpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "xscissor"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "xscissor"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "xscissor"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
+    }
+  ],
+  "winner": "FantasyWind"
+}

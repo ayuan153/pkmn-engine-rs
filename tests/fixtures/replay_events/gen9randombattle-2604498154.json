@@ -1,0 +1,758 @@
+{
+  "id": "gen9randombattle-2604498154",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Donphan",
+      "level": 84,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Entei",
+      "level": 78,
+      "hp": 307,
+      "max_hp": 307
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sacred Fire",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 170,
+      "max_hp": 288
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Stealth Rock",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 188,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sacred Fire",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 68,
+      "max_hp": 288
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "brn"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 162,
+      "max_hp": 307
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 86,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 68,
+      "max_hp": 288,
+      "source": "[from] brn"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sacred Fire",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Kyogre",
+      "level": 71,
+      "hp": 259,
+      "max_hp": 259
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[from] ability: Drizzle"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Origin Pulse",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Hydrapple",
+      "level": 83,
+      "hp": 312,
+      "max_hp": 312
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 273,
+      "max_hp": 312,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Clodsire",
+      "level": 81,
+      "hp": 343,
+      "max_hp": 343
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Nasty Plot",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earth Power",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 242,
+      "max_hp": 312,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Exeggutor-Alola",
+      "level": 89,
+      "hp": 314,
+      "max_hp": 314
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Sylveon",
+      "level": 85,
+      "hp": 300,
+      "max_hp": 300
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 263,
+      "max_hp": 300,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dragon Pulse",
+      "target": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 281,
+      "max_hp": 300
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Electrode",
+      "level": 92,
+      "hp": 260,
+      "max_hp": 260
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Calm Mind",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 299,
+      "max_hp": 300
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Protect",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunder Wave",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 300,
+      "max_hp": 300
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Hydrapple",
+      "level": 83,
+      "hp": 312,
+      "max_hp": 312
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 273,
+      "max_hp": 312,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunder Wave",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Exeggutor-Alola",
+      "level": 89,
+      "hp": 314,
+      "max_hp": 314
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Electrode",
+      "level": 92,
+      "hp": 260,
+      "max_hp": 260
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fickle Beam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 127,
+      "max_hp": 260
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 242,
+      "max_hp": 312,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 143,
+      "max_hp": 260
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Taunt",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fickle Beam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 18,
+      "max_hp": 260
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 211,
+      "max_hp": 312,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 34,
+      "max_hp": 260
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Zamazenta-Crowned",
+      "level": 68,
+      "hp": 238,
+      "max_hp": 238
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Dauntless Shield"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fickle Beam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 128,
+      "max_hp": 238
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 180,
+      "max_hp": 312,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Defense",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Press",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 17,
+      "max_hp": 312
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earth Power",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "win",
+      "player": "nuubs"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,b53c6b4fb8d3d64d32658f5337342bcb\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"slanga\",\"avatar\":\"rood\",\"rating\":2067,\"seed\":\"sodium,798ee5e5389fbc23b0c25b3125662164\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"nuubs\",\"avatar\":\"169\",\"rating\":2221,\"seed\":\"sodium,fe3e4773469d8911a1658134a29edada\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sacredfire"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sacredfire"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sacredfire"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "originpulse"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sacredfire"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "poisonjab"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dragonpulse"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ficklebeam"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ficklebeam"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "taunt"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ficklebeam"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ficklebeam"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "irondefense"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
+    }
+  ],
+  "winner": "nuubs"
+}

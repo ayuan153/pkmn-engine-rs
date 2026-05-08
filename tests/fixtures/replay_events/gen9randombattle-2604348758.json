@@ -41,6 +41,11 @@
       "target": "p2"
     },
     {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Stealth Rock"
+    },
+    {
       "type": "turn",
       "turn": 2
     },
@@ -153,6 +158,10 @@
       "max_hp": 288
     },
     {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
       "type": "turn",
       "turn": 6
     },
@@ -238,6 +247,10 @@
       "max_hp": 253
     },
     {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
       "type": "move",
       "player": "p2",
       "move": "Fiery Dance",
@@ -306,6 +319,10 @@
       "max_hp": 266
     },
     {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
       "type": "move",
       "player": "p2",
       "move": "Strength Sap",
@@ -348,6 +365,158 @@
     {
       "type": "win",
       "player": "sukunamatata"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,8f0e8586414fca014c272851d8154140\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"sukunamatata\",\"avatar\":\"1\",\"rating\":1924,\"seed\":\"sodium,d0774091af9fa5910671dc72e92b4fa8\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"PhoHoa\",\"avatar\":\"flannery\",\"rating\":1958,\"seed\":\"sodium,e354cbdd62601bd85e652343a8a6cd42\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "energyball"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "energyball"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fierydance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fierydance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "strengthsap"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
     }
   ],
   "winner": "sukunamatata"

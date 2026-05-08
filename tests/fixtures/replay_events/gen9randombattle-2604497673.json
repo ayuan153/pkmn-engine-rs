@@ -1,0 +1,893 @@
+{
+  "id": "gen9randombattle-2604497673",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Weavile",
+      "level": 79,
+      "hp": 239,
+      "max_hp": 239
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Rabsca",
+      "level": 91,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dedenne",
+      "level": 88,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Raikou",
+      "level": 81,
+      "hp": 278,
+      "max_hp": 278
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Pressure"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dazzling Gleam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 199,
+      "max_hp": 278
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 216,
+      "max_hp": 278
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Calm Mind",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "U-turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 174,
+      "max_hp": 278
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dodrio",
+      "level": 85,
+      "hp": 241,
+      "max_hp": 241
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 191,
+      "max_hp": 278
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Chandelure",
+      "level": 83,
+      "hp": 235,
+      "max_hp": 235
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Drill Run",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 111,
+      "max_hp": 235
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Volbeat",
+      "level": 90,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 173,
+      "max_hp": 263
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dedenne",
+      "level": 88,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Encore"
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 118,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 250,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "U-turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 210,
+      "max_hp": 263
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Blaziken",
+      "level": 76,
+      "hp": 247,
+      "max_hp": 247
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunder Wave",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Swords Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Speed Boost"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Chandelure",
+      "level": 83,
+      "hp": 111,
+      "max_hp": 235
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flare Blitz",
+      "target": "p1"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Speed Boost"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 223,
+      "max_hp": 247,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Speed Boost"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Volbeat",
+      "level": 90,
+      "hp": 210,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flare Blitz",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 33,
+      "max_hp": 263
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 165,
+      "max_hp": 247,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 141,
+      "max_hp": 247,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Weavile",
+      "level": 79,
+      "hp": 239,
+      "max_hp": 239
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dedenne",
+      "level": 88,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Triple Axel",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 191,
+      "max_hp": 261
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 110,
+      "max_hp": 261
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 175,
+      "max_hp": 261
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 122,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dazzling Gleam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 63,
+      "max_hp": 239
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Triple Axel",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 82,
+      "max_hp": 261
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dodrio",
+      "level": 85,
+      "hp": 241,
+      "max_hp": 241
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Triple Axel",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 161,
+      "max_hp": 241
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 15,
+      "max_hp": 241
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Tropius",
+      "level": 91,
+      "hp": 328,
+      "max_hp": 328
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Triple Axel",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 204,
+      "max_hp": 328
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Uxie",
+      "level": 83,
+      "hp": 260,
+      "max_hp": 260
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Triple Axel",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 235,
+      "max_hp": 260
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 187,
+      "max_hp": 260
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 118,
+      "max_hp": 260
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunder Wave",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 134,
+      "max_hp": 260
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "win",
+      "player": "eyy can you don't"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,ff33ac89694ebedbaea32d4e5721293e\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"eyy can you don't\",\"avatar\":\"backpacker\",\"rating\":2013,\"seed\":\"sodium,b0cd55f50d387e57a7e2901508714a5d\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"ThirdRequiem\",\"avatar\":\"buck\",\"rating\":1982,\"seed\":\"sodium,7db1cdb878b9c9728dbc6114c9e0277c\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "drillrun"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flareblitz"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "willowisp"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flareblitz"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "tripleaxel"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "tripleaxel"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "tripleaxel"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "tripleaxel"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "airslash"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "tripleaxel"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
+    }
+  ],
+  "winner": "eyy can you don't"
+}

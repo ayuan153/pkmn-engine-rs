@@ -1,0 +1,1565 @@
+{
+  "id": "gen9randombattle-2604502580",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Appletun",
+      "level": 92,
+      "hp": 352,
+      "max_hp": 352
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Grafaiai",
+      "level": 86,
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "U-turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 256,
+      "max_hp": 352
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "psn"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Grumpig",
+      "level": 92,
+      "hp": 297,
+      "max_hp": 297
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dragon Pulse",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 207,
+      "max_hp": 297
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 225,
+      "max_hp": 297
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 278,
+      "max_hp": 352
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 234,
+      "max_hp": 352,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Nasty Plot",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leech Seed",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 243,
+      "max_hp": 297
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 256,
+      "max_hp": 352
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 206,
+      "max_hp": 297,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 293,
+      "max_hp": 352
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 249,
+      "max_hp": 352,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 53,
+      "max_hp": 352
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Recover",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 229,
+      "max_hp": 352
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 224,
+      "max_hp": 297
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 251,
+      "max_hp": 352
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 187,
+      "max_hp": 297,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 288,
+      "max_hp": 352
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 244,
+      "max_hp": 352,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Nasty Plot",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Recover",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 352,
+      "max_hp": 352
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 205,
+      "max_hp": 297
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 168,
+      "max_hp": 297,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 308,
+      "max_hp": 352,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 186,
+      "max_hp": 297
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Spectrier",
+      "level": 75,
+      "hp": 274,
+      "max_hp": 274
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ting-Lu",
+      "level": 78,
+      "hp": 370,
+      "max_hp": 370
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Vessel of Ruin"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Shadow Ball",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 319,
+      "max_hp": 370
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 247,
+      "max_hp": 274,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 342,
+      "max_hp": 370
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Baxcalibur",
+      "level": 75,
+      "hp": 295,
+      "max_hp": 295
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stealth Rock",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 365,
+      "max_hp": 370
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Coalossal",
+      "level": 89,
+      "hp": 341,
+      "max_hp": 341
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Icicle Spear",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 330,
+      "max_hp": 341
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 318,
+      "max_hp": 341
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 307,
+      "max_hp": 341
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 295,
+      "max_hp": 341
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 283,
+      "max_hp": 341
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 51,
+      "max_hp": 341
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Spikes",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Scale Shot",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 30,
+      "max_hp": 341
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 8,
+      "max_hp": 341
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Grumpig",
+      "level": 92,
+      "hp": 186,
+      "max_hp": 297
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Focus Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 67,
+      "max_hp": 295
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 204,
+      "max_hp": 297
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Icicle Spear",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 168,
+      "max_hp": 297
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 134,
+      "max_hp": 297
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 95,
+      "max_hp": 297
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 61,
+      "max_hp": 297
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 79,
+      "max_hp": 297
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Solgaleo",
+      "level": 74,
+      "hp": 325,
+      "max_hp": 325
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 305,
+      "max_hp": 325,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 265,
+      "max_hp": 325,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Shadow Ball",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 125,
+      "max_hp": 325
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ninetales",
+      "level": 85,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[from] ability: Drought"
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fire Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Oricorio",
+      "level": 84,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Grafaiai",
+      "level": 86,
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Quiver Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Revelation Dance",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 98,
+      "max_hp": 249
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Gunk Shot",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 121,
+      "max_hp": 263
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "psn"
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 89,
+      "max_hp": 263,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Revelation Dance",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 57,
+      "max_hp": 263,
+      "source": "[from] psn"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ninetales",
+      "level": 85,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Ground"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Revelation Dance",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 25,
+      "max_hp": 263,
+      "source": "[from] psn"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ting-Lu",
+      "level": 78,
+      "hp": 365,
+      "max_hp": 370
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Vessel of Ruin"
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Revelation Dance",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 247,
+      "max_hp": 370
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 270,
+      "max_hp": 370
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Moltres-Galar",
+      "level": 79,
+      "hp": 271,
+      "max_hp": 271
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 204,
+      "max_hp": 271,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Delibird",
+      "level": 100,
+      "hp": 252,
+      "max_hp": 252
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Spectrier",
+      "level": 75,
+      "hp": 247,
+      "max_hp": 274
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 213,
+      "max_hp": 274,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 179,
+      "max_hp": 274,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Freeze-Dry",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 80,
+      "max_hp": 274
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ting-Lu",
+      "level": 78,
+      "hp": 270,
+      "max_hp": 370
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Vessel of Ruin"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Shadow Ball",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 213,
+      "max_hp": 370
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 53,
+      "max_hp": 274,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 236,
+      "max_hp": 370
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Will-O-Wisp",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "brn"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Heavy Slam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 259,
+      "max_hp": 370
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 236,
+      "max_hp": 370,
+      "source": "[from] brn"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Moltres-Galar",
+      "level": 79,
+      "hp": 204,
+      "max_hp": 271
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 137,
+      "max_hp": 271,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Delibird",
+      "level": 100,
+      "hp": 252,
+      "max_hp": 252
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Agility",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Freeze-Dry",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 5,
+      "max_hp": 271
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Berserk"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Fiery Wrath",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ting-Lu",
+      "level": 78,
+      "hp": 236,
+      "max_hp": 370
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Vessel of Ruin"
+    },
+    {
+      "type": "turn",
+      "turn": 27
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Steel"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 118,
+      "max_hp": 370
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Heavy Slam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "win",
+      "player": "wall"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,fc90dece0101533ca1826d30ba5033e8\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"ban95accuratemoves\",\"avatar\":\"boarder\",\"rating\":1949,\"seed\":\"sodium,f00efa0e724b0a7601a3a251a32af789\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"wall\",\"avatar\":\"266\",\"rating\":1919,\"seed\":\"sodium,b68905c0abdebb41d07f3648f17769a0\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dragonpulse"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leechseed"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychic"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "appleacid"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychic"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "iciclespear"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scaleshot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "focusblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "iciclespear"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychic"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606ban95accuratemoves|as",
+      "args": "soon as i clicked it i wanted it back lol"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "quiverdance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "revelationdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "revelationdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "revelationdance terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "scorchingsands"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "revelationdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "freezedry"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "willowisp"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "heavyslam"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "agility"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "freezedry"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "fierywrath"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "freezedry"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606ban95accuratemoves|gg",
+      "args": ""
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "heavyslam terastallize"
+    }
+  ],
+  "winner": "wall"
+}

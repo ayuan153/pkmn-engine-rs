@@ -1,0 +1,1417 @@
+{
+  "id": "gen9randombattle-2604499320",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Wugtrio",
+      "level": 91,
+      "hp": 212,
+      "max_hp": 212
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Infernape",
+      "level": 82,
+      "hp": 259,
+      "max_hp": 259
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Dark"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Liquidation",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 57,
+      "max_hp": 259
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Gooey"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 32,
+      "max_hp": 259,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lokix",
+      "level": 82,
+      "hp": 251,
+      "max_hp": 251
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Arceus-Rock",
+      "level": 74,
+      "hp": 300,
+      "max_hp": 300
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 224,
+      "max_hp": 300
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Hitmonlee",
+      "level": 85,
+      "hp": 224,
+      "max_hp": 224
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Donphan",
+      "level": 84,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Close Combat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 173,
+      "max_hp": 288
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 106,
+      "max_hp": 288
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 55,
+      "max_hp": 224
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Close Combat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Seviper",
+      "level": 93,
+      "hp": 287,
+      "max_hp": 287
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 180,
+      "max_hp": 287
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Giga Drain",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 208,
+      "max_hp": 287
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lokix",
+      "level": 82,
+      "hp": 251,
+      "max_hp": 251
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 98,
+      "max_hp": 287
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Weezing-Galar",
+      "level": 86,
+      "hp": 252,
+      "max_hp": 252
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Gunk Shot",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 129,
+      "max_hp": 252
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 144,
+      "max_hp": 252
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Gunk Shot",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Fire Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 15,
+      "max_hp": 287
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 159,
+      "max_hp": 252
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Gunk Shot",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 39,
+      "max_hp": 252
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Strange Steam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 54,
+      "max_hp": 252
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Arceus-Rock",
+      "level": 74,
+      "hp": 224,
+      "max_hp": 300
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Judgment",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Cramorant",
+      "level": 86,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Blissey",
+      "level": 85,
+      "hp": 572,
+      "max_hp": 572
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Surf",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 511,
+      "max_hp": 572
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 546,
+      "max_hp": 572
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Ground"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Brave Bird",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 33,
+      "max_hp": 572
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 92,
+      "max_hp": 261,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunder Wave",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 68,
+      "max_hp": 572
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 223,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Soft-Boiled",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 354,
+      "max_hp": 572
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 389,
+      "max_hp": 572
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Surf",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 328,
+      "max_hp": 572
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Soft-Boiled",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 572,
+      "max_hp": 572
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Surf",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 478,
+      "max_hp": 572
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stealth Rock",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 513,
+      "max_hp": 572
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Surf",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 450,
+      "max_hp": 572
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Seismic Toss",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 138,
+      "max_hp": 261
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 307,
+      "max_hp": 572,
+      "source": "[from] ability: Gulp Missile"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 342,
+      "max_hp": 572
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Surf",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 284,
+      "max_hp": 572
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Seismic Toss",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 53,
+      "max_hp": 261
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 141,
+      "max_hp": 572,
+      "source": "[from] ability: Gulp Missile"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 176,
+      "max_hp": 572
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 184,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Seismic Toss",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 99,
+      "max_hp": 261
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 211,
+      "max_hp": 572
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 230,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Seismic Toss",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 145,
+      "max_hp": 261
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 246,
+      "max_hp": 572
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Defog",
+      "target": "p2"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "evasion",
+      "amount": 1
+    },
+    {
+      "type": "sideend",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Seismic Toss",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 60,
+      "max_hp": 261
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 281,
+      "max_hp": 572
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 191,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Seismic Toss",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 106,
+      "max_hp": 261
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 316,
+      "max_hp": 572
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 237,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Seismic Toss",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 152,
+      "max_hp": 261
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 351,
+      "max_hp": 572
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Brave Bird",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 36,
+      "max_hp": 261,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Arceus-Rock",
+      "level": 74,
+      "hp": 224,
+      "max_hp": 300
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Judgment",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lokix",
+      "level": 82,
+      "hp": 251,
+      "max_hp": 251
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "First Impression",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 118,
+      "max_hp": 300
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Judgment",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ribombee",
+      "level": 83,
+      "hp": 235,
+      "max_hp": 235
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Quiver Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Judgment",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 47,
+      "max_hp": 235
+    },
+    {
+      "type": "turn",
+      "turn": 27
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonblast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Hitmonlee",
+      "level": 85,
+      "hp": 223,
+      "max_hp": 223
+    },
+    {
+      "type": "turn",
+      "turn": 28
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonblast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "win",
+      "player": "SoCapable"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,4fe7767718102924887d99d9bc874287\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"SoCapable\",\"avatar\":\"steven\",\"rating\":2040,\"seed\":\"sodium,51e765e86f2dc5226e2c5826b9312f68\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"kokonutpi\",\"avatar\":\"102\",\"rating\":2171,\"seed\":\"sodium,637296e9a777a62b3e5539c1ffec90d7\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "strangesteam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "judgment"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "surf"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bravebird terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "softboiled"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "surf"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "softboiled"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "surf"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "surf"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "seismictoss"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "surf"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "seismictoss"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "seismictoss"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "seismictoss"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "defog"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "seismictoss"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "seismictoss"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "seismictoss"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "seismictoss"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "surf"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "judgment"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "firstimpression"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "judgment"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "quiverdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "judgment"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "judgment"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
+    }
+  ],
+  "winner": "SoCapable"
+}

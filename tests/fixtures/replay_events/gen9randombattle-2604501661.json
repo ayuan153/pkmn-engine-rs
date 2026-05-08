@@ -1,0 +1,1982 @@
+{
+  "id": "gen9randombattle-2604501661",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dudunsparce",
+      "level": 83,
+      "hp": 343,
+      "max_hp": 343
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ursaring",
+      "level": 84,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Slam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 220,
+      "max_hp": 343
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Glare",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 241,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lycanroc",
+      "level": 86,
+      "hp": 269,
+      "max_hp": 269
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Slam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 160,
+      "max_hp": 269
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Fighting"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Close Combat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 7,
+      "max_hp": 288
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 134,
+      "max_hp": 269,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Illumise",
+      "level": 91,
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Ghost"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Probopass",
+      "level": 91,
+      "hp": 257,
+      "max_hp": 257
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunder Wave",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Defense",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Pawmot",
+      "level": 80,
+      "hp": 243,
+      "max_hp": 243
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Defense",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Double Shock",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 227,
+      "max_hp": 257
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Press",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Piloswine",
+      "level": 85,
+      "hp": 309,
+      "max_hp": 309
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 131,
+      "max_hp": 257
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Press",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dudunsparce",
+      "level": 83,
+      "hp": 241,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 71,
+      "max_hp": 257
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 262,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 11,
+      "max_hp": 257
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rest",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "slp"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 257,
+      "max_hp": 257
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "curestatus",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 283,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Glare",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Press",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Granbull",
+      "level": 88,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Defense",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roar",
+      "target": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ambipom",
+      "level": 84,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fake Out",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 176,
+      "max_hp": 302
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 194,
+      "max_hp": 302
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Double-Edge",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 20,
+      "max_hp": 302
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 206,
+      "max_hp": 263,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunder Wave",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 38,
+      "max_hp": 302
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Double-Edge",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 193,
+      "max_hp": 263,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Illumise",
+      "level": 91,
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 88,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Probopass",
+      "level": 91,
+      "hp": 257,
+      "max_hp": 257
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 230,
+      "max_hp": 257
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Defense",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 203,
+      "max_hp": 257
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Defense",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Encore",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Defense",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 175,
+      "max_hp": 257
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Defense",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 0
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 147,
+      "max_hp": 257
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Defense",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 0
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Encore",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Defense",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 0
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 122,
+      "max_hp": 257
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Defense",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 0
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 93,
+      "max_hp": 257
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Defense",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 0
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Encore",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Defense",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 0
+    },
+    {
+      "type": "turn",
+      "turn": 27
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Great Tusk",
+      "level": 77,
+      "hp": 304,
+      "max_hp": 304
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 257,
+      "max_hp": 304
+    },
+    {
+      "type": "turn",
+      "turn": 28
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 213,
+      "max_hp": 304
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 223,
+      "max_hp": 266
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 29
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Encore",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 185,
+      "max_hp": 266
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 30
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 149,
+      "max_hp": 266
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 165,
+      "max_hp": 304
+    },
+    {
+      "type": "turn",
+      "turn": 31
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 230,
+      "max_hp": 266
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 32
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Encore",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 194,
+      "max_hp": 266
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 33
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 155,
+      "max_hp": 266
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 118,
+      "max_hp": 304
+    },
+    {
+      "type": "turn",
+      "turn": 34
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 112,
+      "max_hp": 266
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 75,
+      "max_hp": 304
+    },
+    {
+      "type": "turn",
+      "turn": 35
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Encore",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 74,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 36
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 207,
+      "max_hp": 266
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 168,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 37
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 132,
+      "max_hp": 266
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 33,
+      "max_hp": 304
+    },
+    {
+      "type": "turn",
+      "turn": 38
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Encore",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 95,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 39
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 228,
+      "max_hp": 266
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 187,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 40
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 145,
+      "max_hp": 266
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Conkeldurr",
+      "level": 80,
+      "hp": 299,
+      "max_hp": 299
+    },
+    {
+      "type": "turn",
+      "turn": 41
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunder Wave",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Mach Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 106,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 42
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Encore",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Mach Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 67,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 43
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 200,
+      "max_hp": 266
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Mach Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 160,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 44
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Mach Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 226,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 45
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 46
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Facade",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 78,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 47
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 211,
+      "max_hp": 266
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Facade",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 29,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 48
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunder Wave",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Mach Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "win",
+      "player": "31234m4n4m1"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,77452fd07ae77ef87aee6c68f8bb78ae\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"PichiMomo\",\"avatar\":\"roxie\",\"rating\":1117,\"seed\":\"sodium,5343d68ebebd6233dfca58f6aeb12ef1\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"31234m4n4m1\",\"avatar\":\"266\",\"rating\":1123,\"seed\":\"sodium,d690918d3f88bdb665a011e991f387c1\"}"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606PichiMomo|glhf",
+      "args": ""
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "glare"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rest terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "irondefense"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "irondefense"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "doubleshock"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rest"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "glare"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roar"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "irondefense"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fakeout"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roar"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "irondefense"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "irondefense"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "irondefense"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "irondefense"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "irondefense"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "irondefense"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "irondefense"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "machpunch"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "facade"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "machpunch"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "machpunch"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "facade"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "facade"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "facade"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "machpunch"
+    }
+  ],
+  "winner": "31234m4n4m1"
+}

@@ -61,6 +61,11 @@
       "max_hp": 258
     },
     {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Comatose"
+    },
+    {
       "type": "move",
       "player": "p1",
       "move": "Discharge",
@@ -89,6 +94,10 @@
       "max_hp": 290
     },
     {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
       "type": "move",
       "player": "p1",
       "move": "U-turn",
@@ -107,6 +116,11 @@
       "level": 82,
       "hp": 274,
       "max_hp": 274
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Mold Breaker"
     },
     {
       "type": "turn",
@@ -168,6 +182,11 @@
       "max_hp": 308
     },
     {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Pressure"
+    },
+    {
       "type": "turn",
       "turn": 6
     },
@@ -180,6 +199,11 @@
       "max_hp": 258
     },
     {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Comatose"
+    },
+    {
       "type": "move",
       "player": "p1",
       "move": "Meteor Beam"
@@ -189,6 +213,10 @@
       "player": "p1",
       "stat": "spa",
       "amount": 1
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
     },
     {
       "type": "damage",
@@ -225,7 +253,8 @@
     },
     {
       "type": "weather",
-      "weather": "SunnyDay"
+      "weather": "SunnyDay",
+      "source": "[from] ability: Drought"
     },
     {
       "type": "turn",
@@ -250,7 +279,8 @@
     },
     {
       "type": "weather",
-      "weather": "SunnyDay"
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
     },
     {
       "type": "turn",
@@ -273,7 +303,8 @@
     },
     {
       "type": "weather",
-      "weather": "SunnyDay"
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
     },
     {
       "type": "status",
@@ -306,7 +337,8 @@
     },
     {
       "type": "weather",
-      "weather": "SunnyDay"
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
     },
     {
       "type": "turn",
@@ -329,7 +361,8 @@
     },
     {
       "type": "weather",
-      "weather": "SunnyDay"
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
     },
     {
       "type": "switch",
@@ -338,6 +371,11 @@
       "level": 82,
       "hp": 274,
       "max_hp": 274
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Mold Breaker"
     },
     {
       "type": "turn",
@@ -383,6 +421,10 @@
       "player": "p2",
       "hp": 138,
       "max_hp": 268
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
     },
     {
       "type": "move",
@@ -433,6 +475,10 @@
       "player": "p2",
       "hp": 187,
       "max_hp": 266
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
     },
     {
       "type": "damage",
@@ -546,6 +592,11 @@
       "level": 82,
       "hp": 298,
       "max_hp": 298
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Pressure"
     },
     {
       "type": "turn",
@@ -867,6 +918,333 @@
     {
       "type": "win",
       "player": "etechemsdank"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,50491cc38bf2760d1ddf8cc4e45d56bf\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"etechemsdank\",\"avatar\":\"harlequin\",\"rating\":2016,\"seed\":\"sodium,e6f30f62d88d7e0ae6412b6c9d6c4db4\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"thesunishao\",\"avatar\":\"psychic-gen4\",\"rating\":2015,\"seed\":\"sodium,6d23efb4457c06ddc53f39a57550c3f6\"}"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "discharge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sacredfire"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "meteorbeam"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dynamaxcannon"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "meteorbeam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "yawn"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "meteorbeam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rest"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psyshock"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
     }
   ],
   "winner": "etechemsdank"

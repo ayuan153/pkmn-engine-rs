@@ -1,0 +1,917 @@
+{
+  "id": "gen9randombattle-2604499919",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Heatran",
+      "level": 79,
+      "hp": 273,
+      "max_hp": 273
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Emboar",
+      "level": 84,
+      "hp": 322,
+      "max_hp": 322
+    },
+    {
+      "type": "item",
+      "player": "p1",
+      "item": "Air Balloon"
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Golurk",
+      "level": 87,
+      "hp": 297,
+      "max_hp": 297
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Trailblaze",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 213,
+      "max_hp": 297
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Bulk Up",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Poltergeist",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Roaring Moon",
+      "level": 72,
+      "hp": 270,
+      "max_hp": 270
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mightyena",
+      "level": 96,
+      "hp": 290,
+      "max_hp": 290
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Outrage",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 104,
+      "max_hp": 290
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Super Fang",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 135,
+      "max_hp": 270
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sucker Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 73,
+      "max_hp": 270
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Outrage",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Corviknight",
+      "level": 80,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Pressure"
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Outrage",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 232,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 28,
+      "max_hp": 270,
+      "source": "[from] item: Rocky Helmet"
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Brave Bird",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 223,
+      "max_hp": 288,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Tentacruel",
+      "level": 84,
+      "hp": 272,
+      "max_hp": 272
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Regigigas",
+      "level": 84,
+      "hp": 322,
+      "max_hp": 322
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Surf",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 253,
+      "max_hp": 322
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 273,
+      "max_hp": 322
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sludge Bomb",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 204,
+      "max_hp": 322
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 202,
+      "max_hp": 272
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 224,
+      "max_hp": 322
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sludge Bomb",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 154,
+      "max_hp": 322
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 126,
+      "max_hp": 272
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 174,
+      "max_hp": 322
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sludge Bomb",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 101,
+      "max_hp": 322
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "psn"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Rest",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "slp"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 322,
+      "max_hp": 322
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Luvdisc",
+      "level": 100,
+      "hp": 247,
+      "max_hp": 247
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sleep Talk",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 185,
+      "max_hp": 247
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Tropius",
+      "level": 91,
+      "hp": 328,
+      "max_hp": 328
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Whirlpool",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 314,
+      "max_hp": 328
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 273,
+      "max_hp": 328,
+      "source": "[from] move: Whirlpool"
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Substitute",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 124,
+      "max_hp": 247
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Substitute",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 191,
+      "max_hp": 328
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Endeavor",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Air Slash",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Endeavor",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Air Slash",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 45,
+      "max_hp": 247
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Endeavor",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 45,
+      "max_hp": 328
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 127,
+      "max_hp": 328
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Air Slash",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Noivern",
+      "level": 82,
+      "hp": 274,
+      "max_hp": 274
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Protect",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hurricane",
+      "target": "p1"
+    },
+    {
+      "type": "item",
+      "player": "p1",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 209,
+      "max_hp": 328
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Heatran",
+      "level": 79,
+      "hp": 273,
+      "max_hp": 273
+    },
+    {
+      "type": "item",
+      "player": "p1",
+      "item": "Air Balloon"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hurricane",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "win",
+      "player": "kokonutpi"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,8734fce339cb75ebf245d4cd7d748d6c\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"kokonutpi\",\"avatar\":\"102\",\"rating\":2171,\"seed\":\"sodium,8a6be1d78848f40eab85abe736e014eb\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"Spectrecat17\",\"avatar\":\"lebanne\",\"rating\":2224,\"seed\":\"sodium,1f1c761e9956c8196668c7f35c960fea\"}"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "trailblaze"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "poltergeist"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bulkup terastallize"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606kokonutpi|oof",
+      "args": ""
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Spectrecat17|Welp",
+      "args": ""
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Spectrecat17|it",
+      "args": "happens"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Spectrecat17|But",
+      "args": "sometimes I do see lavos\u2019s point"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "superfang"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606kokonutpi|i",
+      "args": "have no idea who that is"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Spectrecat17|\u201cUnfortunate",
+      "args": "doesn\u2019t begin to describe my series\u201d"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "surf"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rest"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sleeptalk"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Spectrecat17|Yeah",
+      "args": "I\u2019m lowk goobed w/out the boar"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "whirlpool"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "airslash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "endeavor"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "airslash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "endeavor"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "airslash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "endeavor"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
+    }
+  ],
+  "winner": "kokonutpi"
+}

@@ -1,0 +1,1419 @@
+{
+  "id": "gen9randombattle-2604501389",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Tentacruel",
+      "level": 84,
+      "hp": 272,
+      "max_hp": 272
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dewgong",
+      "level": 94,
+      "hp": 322,
+      "max_hp": 322
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Toxic Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Toxic Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 190,
+      "max_hp": 272
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sludge Bomb",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 258,
+      "max_hp": 322
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "psn"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Encore",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 218,
+      "max_hp": 322,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Grafaiai",
+      "level": 86,
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "sideend",
+      "player": "p2",
+      "condition": "Toxic Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sludge Bomb",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 204,
+      "max_hp": 249
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ursaring",
+      "level": 84,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Swords Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 154,
+      "max_hp": 288
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 180,
+      "max_hp": 249,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 32,
+      "max_hp": 249
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Tentacruel",
+      "level": 84,
+      "hp": 190,
+      "max_hp": 272
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Low Kick",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 98,
+      "max_hp": 272
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 8,
+      "max_hp": 249,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ursaring",
+      "level": 84,
+      "hp": 154,
+      "max_hp": 288
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 15,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Infernape",
+      "level": 82,
+      "hp": 259,
+      "max_hp": 259
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 234,
+      "max_hp": 259,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Farigiraf",
+      "level": 90,
+      "hp": 362,
+      "max_hp": 362
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Protect",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 167,
+      "max_hp": 362
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 209,
+      "max_hp": 259,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psychic Noise",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Hatterene",
+      "level": 85,
+      "hp": 236,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Wish",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Nuzzle",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 151,
+      "max_hp": 362
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "par"
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Protect",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic Noise",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 332,
+      "max_hp": 362
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic Noise",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 272,
+      "max_hp": 362
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 136,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Protect",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Draining Kiss",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Mystical Fire",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 192,
+      "max_hp": 362
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Draining Kiss",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 117,
+      "max_hp": 362
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 192,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic Noise",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 57,
+      "max_hp": 362
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 101,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Draining Kiss",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 144,
+      "max_hp": 236
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Tentacruel",
+      "level": 84,
+      "hp": 98,
+      "max_hp": 272
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Steel"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sludge Bomb",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Nuzzle",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 58,
+      "max_hp": 272
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "par"
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Surf",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 99,
+      "max_hp": 236
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic Noise",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Solgaleo",
+      "level": 74,
+      "hp": 325,
+      "max_hp": 325
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Close Combat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Kingdra",
+      "level": 84,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rain Dance",
+      "target": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 190,
+      "max_hp": 263
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Pincurchin",
+      "level": 100,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wave Crash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 99,
+      "max_hp": 258
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 138,
+      "max_hp": 263,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 115,
+      "max_hp": 258
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wave Crash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 100,
+      "max_hp": 263,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Solgaleo",
+      "level": 74,
+      "hp": 325,
+      "max_hp": 325
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dewgong",
+      "level": 94,
+      "hp": 218,
+      "max_hp": 322
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 148,
+      "max_hp": 322
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 108,
+      "max_hp": 322,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sunsteel Strike",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 6,
+      "max_hp": 322
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hydro Pump",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 136,
+      "max_hp": 325
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] psn"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Kingdra",
+      "level": 84,
+      "hp": 100,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 27
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rain Dance",
+      "target": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sunsteel Strike",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 45,
+      "max_hp": 263
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 28
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Polteageist-Antique",
+      "level": 78,
+      "hp": 222,
+      "max_hp": 222
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wave Crash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Torterra",
+      "level": 78,
+      "hp": 276,
+      "max_hp": 276
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Solgaleo",
+      "level": 74,
+      "hp": 136,
+      "max_hp": 325
+    },
+    {
+      "type": "turn",
+      "turn": 29
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Fighting"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sunsteel Strike",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 170,
+      "max_hp": 276
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Shell Smash",
+      "target": "p2"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 30
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Bullet Seed",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 54,
+      "max_hp": 325
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "win",
+      "player": "AssaultLei"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,928cdbbf6f35287b532a706fe0dfa83b\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"nuubs\",\"avatar\":\"169\",\"rating\":2233,\"seed\":\"sodium,b63b58884a919f69057e0f4927e57d38\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"AssaultLei\",\"avatar\":\"unknown\",\"rating\":2151,\"seed\":\"sodium,21aaf4744db10971de4978f0282b8037\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "toxicspikes"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "lowkick"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "nuzzle"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "drainingkiss"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "mysticalfire"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "drainingkiss"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "drainingkiss"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "nuzzle terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "surf"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "nuzzle"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "raindance"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "zingzap"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sunsteelstrike"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hydropump"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sunsteelstrike"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "raindance"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sunsteelstrike terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shellsmash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flamecharge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bulletseed"
+    }
+  ],
+  "winner": "AssaultLei"
+}

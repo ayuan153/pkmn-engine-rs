@@ -1,0 +1,1830 @@
+{
+  "id": "gen9randombattle-2604499595",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Cloyster",
+      "level": 80,
+      "hp": 211,
+      "max_hp": 211
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lumineon",
+      "level": 93,
+      "hp": 279,
+      "max_hp": 279
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "U-turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 184,
+      "max_hp": 211
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Grimmsnarl",
+      "level": 83,
+      "hp": 293,
+      "max_hp": 293
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Rock Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 273,
+      "max_hp": 293
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 253,
+      "max_hp": 293
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 232,
+      "max_hp": 293
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 210,
+      "max_hp": 293
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 190,
+      "max_hp": 293
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dunsparce",
+      "level": 86,
+      "hp": 312,
+      "max_hp": 312
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Reflect",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Reflect"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Parting Shot",
+      "target": "p1"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Pikachu",
+      "level": 93,
+      "hp": 216,
+      "max_hp": 216
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 181,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dedenne",
+      "level": 88,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 185,
+      "max_hp": 261
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dazzling Gleam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 64,
+      "max_hp": 216
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Volt Switch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 123,
+      "max_hp": 261
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Mewtwo",
+      "level": 72,
+      "hp": 272,
+      "max_hp": 272
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Unnerve"
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psystrike",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 245,
+      "max_hp": 272,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Gothitelle",
+      "level": 90,
+      "hp": 272,
+      "max_hp": 272
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fire Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 186,
+      "max_hp": 272
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 218,
+      "max_hp": 272,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dark Pulse",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 60,
+      "max_hp": 272
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 203,
+      "max_hp": 272
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fire Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 125,
+      "max_hp": 272
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 33,
+      "max_hp": 272,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dark Pulse",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 142,
+      "max_hp": 272
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Pikachu",
+      "level": 93,
+      "hp": 64,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "sideend",
+      "player": "p2",
+      "condition": "Reflect"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Calyrex-Ice",
+      "level": 72,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "As One"
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Unnerve"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Volt Switch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 172,
+      "max_hp": 263
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Grimmsnarl",
+      "level": 83,
+      "hp": 190,
+      "max_hp": 293
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Trick Room",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Reflect",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Reflect"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Glacial Lance",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 106,
+      "max_hp": 293
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Parting Shot",
+      "target": "p1"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Regice",
+      "level": 88,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Glacial Lance",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 262,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Close Combat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 206,
+      "max_hp": 284
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 71,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dunsparce",
+      "level": 86,
+      "hp": 312,
+      "max_hp": 312
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 248,
+      "max_hp": 312
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Grimmsnarl",
+      "level": 83,
+      "hp": 106,
+      "max_hp": 293
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 59,
+      "max_hp": 293
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Parting Shot",
+      "target": "p1"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Pikachu",
+      "level": 93,
+      "hp": 64,
+      "max_hp": 216
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Coil",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "accuracy",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 194,
+      "max_hp": 312
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lumineon",
+      "level": 93,
+      "hp": 279,
+      "max_hp": 279
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Encore",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 185,
+      "max_hp": 279
+    },
+    {
+      "type": "sideend",
+      "player": "p2",
+      "condition": "Reflect"
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Calyrex-Ice",
+      "level": 72,
+      "hp": 71,
+      "max_hp": 263
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "As One"
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Unnerve"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "U-turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Regice",
+      "level": 88,
+      "hp": 206,
+      "max_hp": 284
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Cloyster",
+      "level": 80,
+      "hp": 184,
+      "max_hp": 211
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Electric"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Rock Blast",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dunsparce",
+      "level": 86,
+      "hp": 194,
+      "max_hp": 312
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lumineon",
+      "level": 93,
+      "hp": 185,
+      "max_hp": 279
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 122,
+      "max_hp": 279
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hydro Pump",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 65,
+      "max_hp": 312
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 47,
+      "max_hp": 279
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 221,
+      "max_hp": 312
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Encore",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 312,
+      "max_hp": 312
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "U-turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 256,
+      "max_hp": 312
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Infernape",
+      "level": 82,
+      "hp": 259,
+      "max_hp": 259
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Oricorio",
+      "level": 84,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flare Blitz",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 187,
+      "max_hp": 263
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 234,
+      "max_hp": 259,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Regice",
+      "level": 88,
+      "hp": 206,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Quiver Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 27
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Quiver Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Beam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 123,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 28
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Grimmsnarl",
+      "level": 83,
+      "hp": 59,
+      "max_hp": 293
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 255,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 29
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Light Screen",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Light Screen"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Revelation Dance",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Regice",
+      "level": 88,
+      "hp": 206,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 30
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Quiver Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 145,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 31
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Quiver Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 61,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 32
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 193,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 148,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 33
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 223,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 34
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Quiver Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 155,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 35
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 223,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 36
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Quiver Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 161,
+      "max_hp": 263
+    },
+    {
+      "type": "sideend",
+      "player": "p2",
+      "condition": "Light Screen"
+    },
+    {
+      "type": "turn",
+      "turn": 37
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Ground"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Revelation Dance",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "win",
+      "player": "cebash"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,eca4257c40549dbac3deea6c84dacf63\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"cebash\",\"avatar\":\"pokemonranger-gen4\",\"rating\":1920,\"seed\":\"sodium,446dc6586a9d747a524887f4b961561a\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"hotgriil\",\"avatar\":\"wallace\",\"rating\":1968,\"seed\":\"sodium,c70cfe3f95f53f432aa5dbb7e10c4efc\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rockblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "reflect"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "partingshot"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "voltswitch"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "nuzzle"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psystrike"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "darkpulse"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "darkpulse"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "trickroom"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "voltswitch"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "glaciallance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "reflect"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "glaciallance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "partingshot"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "coil"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "partingshot"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rockblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hydropump"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flareblitz"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "quiverdance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "quiverdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icebeam"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "revelationdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "lightscreen"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "quiverdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "quiverdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "quiverdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "quiverdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "revelationdance terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
+    }
+  ],
+  "winner": "cebash"
+}

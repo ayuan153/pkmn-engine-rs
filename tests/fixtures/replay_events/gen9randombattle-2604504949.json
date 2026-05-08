@@ -1,0 +1,1305 @@
+{
+  "id": "gen9randombattle-2604504949",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Kingdra",
+      "level": 84,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Reshiram",
+      "level": 76,
+      "hp": 277,
+      "max_hp": 277
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Turboblaze"
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Outrage",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 23,
+      "max_hp": 277
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Draco Meteor",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Iron Thorns",
+      "level": 83,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "item",
+      "player": "p1",
+      "item": "Air Balloon"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Will-O-Wisp",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "brn"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 284,
+      "max_hp": 302,
+      "source": "[from] brn"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Blue Flare",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 239,
+      "max_hp": 302
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 221,
+      "max_hp": 302,
+      "source": "[from] brn"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earth Power",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 57,
+      "max_hp": 302
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 39,
+      "max_hp": 302,
+      "source": "[from] brn"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earth Power",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Sneasler",
+      "level": 74,
+      "hp": 240,
+      "max_hp": 240
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Volbeat",
+      "level": 90,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dire Claw",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 139,
+      "max_hp": 263
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Gholdengo",
+      "level": 77,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Encore",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Nasty Plot",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Roost",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Shadow Ball",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 79,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Reshiram",
+      "level": 76,
+      "hp": 23,
+      "max_hp": 277
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Turboblaze"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Shadow Ball",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Greninja",
+      "level": 80,
+      "hp": 246,
+      "max_hp": 246
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 185,
+      "max_hp": 246,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Arboliva",
+      "level": 91,
+      "hp": 290,
+      "max_hp": 290
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dark Pulse",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 204,
+      "max_hp": 290
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 161,
+      "max_hp": 246,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 176,
+      "max_hp": 246
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 222,
+      "max_hp": 290
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 240,
+      "max_hp": 290
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Gunk Shot",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Energy Ball",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 258,
+      "max_hp": 290
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 276,
+      "max_hp": 290
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Avalugg",
+      "level": 88,
+      "hp": 310,
+      "max_hp": 310
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Energy Ball",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 33,
+      "max_hp": 310
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 236,
+      "max_hp": 290
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "sideend",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 52,
+      "max_hp": 310
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 254,
+      "max_hp": 290
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 272,
+      "max_hp": 290
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Press",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 78,
+      "max_hp": 290
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Energy Ball",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 96,
+      "max_hp": 290
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 114,
+      "max_hp": 290
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Deoxys",
+      "level": 74,
+      "hp": 196,
+      "max_hp": 196
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Superpower",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 177,
+      "max_hp": 196,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 189,
+      "max_hp": 196
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Sneasler",
+      "level": 74,
+      "hp": 240,
+      "max_hp": 240
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Dark"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psycho Boost",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Throat Chop",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Volbeat",
+      "level": 90,
+      "hp": 79,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Throat Chop",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Appletun",
+      "level": 92,
+      "hp": 352,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Gholdengo",
+      "level": 77,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Apple Acid",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 204,
+      "max_hp": 261
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 220,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Nasty Plot",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Tail",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 236,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Nasty Plot",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Tail",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 202,
+      "max_hp": 261
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Venomoth",
+      "level": 84,
+      "hp": 255,
+      "max_hp": 255
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sludge Wave",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 176,
+      "max_hp": 352
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Tail",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 198,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sludge Wave",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 24,
+      "max_hp": 352
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 200,
+      "max_hp": 352
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 222,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Steel"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sludge Wave",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Pulse",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 141,
+      "max_hp": 255
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 244,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sleep Powder",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "slp"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 266,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Quiver Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 288,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 158,
+      "max_hp": 352
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 180,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 27
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bug Buzz",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "win",
+      "player": "Marchingegno95"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,6cab197b39d7bef0207a5b8e11673975\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Marchingegno95\",\"avatar\":\"ghetsis\",\"rating\":1922,\"seed\":\"sodium,15006532ea41a207a3abc74c2a538cdd\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"ShootsGoots\",\"avatar\":\"n\",\"rating\":1904,\"seed\":\"sodium,c20371e4d6871e69181054553b9ae981\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dracometeor"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "willowisp"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "blueflare"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "direclaw"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shadowball"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "darkpulse"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "energyball"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "energyball"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "energyball"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "energyball"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "superpower"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "throatchop terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychoboost"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "throatchop"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "lunge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "appleacid"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragontail"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragontail"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sludgewave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragontail"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sludgewave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sludgewave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragonpulse terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sleeppowder"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragontail"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "quiverdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragontail"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragontail"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragontail"
+    }
+  ],
+  "winner": "Marchingegno95"
+}

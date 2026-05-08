@@ -1,0 +1,1290 @@
+{
+  "id": "gen9randombattle-2604496223",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Magnezone",
+      "level": 85,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lilligant-Hisui",
+      "level": 79,
+      "hp": 240,
+      "max_hp": 240
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Pelipper",
+      "level": 86,
+      "hp": 243,
+      "max_hp": 243
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[from] ability: Drizzle"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Muk",
+      "level": 86,
+      "hp": 321,
+      "max_hp": 321
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Registeel",
+      "level": 81,
+      "hp": 262,
+      "max_hp": 262
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Gunk Shot",
+      "target": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 212,
+      "max_hp": 262
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stealth Rock",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Magnezone",
+      "level": 85,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 242,
+      "max_hp": 258,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Head",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 228,
+      "max_hp": 258
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Discharge",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 134,
+      "max_hp": 262
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Press",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 108,
+      "max_hp": 258
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Volt Switch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 68,
+      "max_hp": 262
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Muk",
+      "level": 86,
+      "hp": 321,
+      "max_hp": 321
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 281,
+      "max_hp": 321,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Press",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 239,
+      "max_hp": 321
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 33,
+      "max_hp": 262
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Head",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 172,
+      "max_hp": 321
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lycanroc-Midnight",
+      "level": 89,
+      "hp": 296,
+      "max_hp": 296
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stone Edge",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 267,
+      "max_hp": 296,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Palafin",
+      "level": 77,
+      "hp": 281,
+      "max_hp": 281
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 246,
+      "max_hp": 281,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Magnezone",
+      "level": 85,
+      "hp": 108,
+      "max_hp": 258
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 92,
+      "max_hp": 258,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Noivern",
+      "level": 82,
+      "hp": 274,
+      "max_hp": 274
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "U-turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 76,
+      "max_hp": 258
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lycanroc-Midnight",
+      "level": 89,
+      "hp": 267,
+      "max_hp": 296
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Discharge",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 150,
+      "max_hp": 296
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 121,
+      "max_hp": 296,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Palafin-Hero",
+      "level": 77,
+      "hp": 246,
+      "max_hp": 281
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 211,
+      "max_hp": 281,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Drain Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 272,
+      "max_hp": 281
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 281,
+      "max_hp": 281
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lilligant-Hisui",
+      "level": 79,
+      "hp": 240,
+      "max_hp": 240
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Regidrago",
+      "level": 77,
+      "hp": 435,
+      "max_hp": 435
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 381,
+      "max_hp": 435,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 99,
+      "max_hp": 435
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Magearna-Original",
+      "level": 77,
+      "hp": 250,
+      "max_hp": 250
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dragon Claw",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 102,
+      "max_hp": 250
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 56,
+      "max_hp": 435,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Aura Sphere",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Soul-Heart"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 117,
+      "max_hp": 250
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Palafin-Hero",
+      "level": 77,
+      "hp": 281,
+      "max_hp": 281
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 246,
+      "max_hp": 281,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Wave Crash",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 207,
+      "max_hp": 281,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 224,
+      "max_hp": 281
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lilligant-Hisui",
+      "level": 79,
+      "hp": 240,
+      "max_hp": 240
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sleep Powder",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "slp"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 241,
+      "max_hp": 281
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Victory Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 258,
+      "max_hp": 281
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Noivern",
+      "level": 82,
+      "hp": 274,
+      "max_hp": 274
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 206,
+      "max_hp": 274,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 54,
+      "max_hp": 274
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Boomburst",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Noivern",
+      "level": 82,
+      "hp": 274,
+      "max_hp": 274
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Boomburst",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 129,
+      "max_hp": 274
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Boomburst",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Komala",
+      "level": 88,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 226,
+      "max_hp": 258,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Comatose"
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Boomburst",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 146,
+      "max_hp": 258
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Rapid Spin",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 56,
+      "max_hp": 274
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "sideend",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Boomburst",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 66,
+      "max_hp": 258
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Pelipper",
+      "level": 86,
+      "hp": 243,
+      "max_hp": 243
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[from] ability: Drizzle"
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 140,
+      "max_hp": 243
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Weather Ball",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "win",
+      "player": "iamlitmomo"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,f57811371a26a76d07b8806bc7fd9c3e\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"ok^18\",\"avatar\":\"1\",\"rating\":1918,\"seed\":\"sodium,ff450dc6e7a4b5b0b1dcf494ddf3a026\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"iamlitmomo\",\"avatar\":\"hoopster\",\"rating\":2033,\"seed\":\"sodium,c1b121e5fe2ac9cb2675dcc6a7d6c331\"}"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "discharge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "voltswitch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "discharge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flashcannon"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "drainpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dragonclaw"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "aurasphere"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "drainpunch terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sleeppowder"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "drainpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "victorydance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "drainpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "boomburst"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "boomburst"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "boomburst"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "boomburst"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "boomburst"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "weatherball terastallize"
+    }
+  ],
+  "winner": "iamlitmomo"
+}

@@ -1,0 +1,1282 @@
+{
+  "id": "gen9randombattle-2604500309",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Iron Jugulis",
+      "level": 77,
+      "hp": 271,
+      "max_hp": 271
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Slaking",
+      "level": 84,
+      "hp": 389,
+      "max_hp": 389
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Double-Edge",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 300,
+      "max_hp": 389,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Abomasnow",
+      "level": 84,
+      "hp": 287,
+      "max_hp": 287
+    },
+    {
+      "type": "weather",
+      "weather": "Snowscape",
+      "source": "[from] ability: Snow Warning"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Torkoal",
+      "level": 88,
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[from] ability: Drought"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Aurora Veil"
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Hatterene",
+      "level": 85,
+      "hp": 236,
+      "max_hp": 236
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Lava Plume",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 118,
+      "max_hp": 236
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 132,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Camerupt",
+      "level": 91,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Calm Mind",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 146,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 20,
+      "max_hp": 236
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Draining Kiss",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 218,
+      "max_hp": 275
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 63,
+      "max_hp": 236
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 235,
+      "max_hp": 275
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 77,
+      "max_hp": 236
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 252,
+      "max_hp": 275
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Floatzel",
+      "level": 86,
+      "hp": 286,
+      "max_hp": 286
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Clawitzer",
+      "level": 87,
+      "hp": 265,
+      "max_hp": 265
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Flip Turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 211,
+      "max_hp": 265
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Abomasnow",
+      "level": 84,
+      "hp": 287,
+      "max_hp": 287
+    },
+    {
+      "type": "weather",
+      "weather": "Snowscape",
+      "source": "[from] ability: Snow Warning"
+    },
+    {
+      "type": "weather",
+      "weather": "Snowscape",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Torkoal",
+      "level": 88,
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[from] ability: Drought"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 180,
+      "max_hp": 266
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Floatzel",
+      "level": 86,
+      "hp": 286,
+      "max_hp": 286
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Lava Plume",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 200,
+      "max_hp": 286
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Flip Turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 114,
+      "max_hp": 266
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Walking Wake",
+      "level": 79,
+      "hp": 286,
+      "max_hp": 286
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Solar Beam"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 184,
+      "max_hp": 286
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Clawitzer",
+      "level": 87,
+      "hp": 211,
+      "max_hp": 265
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Flip Turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 199,
+      "max_hp": 265
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Abomasnow",
+      "level": 84,
+      "hp": 287,
+      "max_hp": 287
+    },
+    {
+      "type": "weather",
+      "weather": "Snowscape",
+      "source": "[from] ability: Snow Warning"
+    },
+    {
+      "type": "weather",
+      "weather": "Snowscape",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Aura Sphere",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "Snowscape",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Walking Wake",
+      "level": 79,
+      "hp": 184,
+      "max_hp": 286
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Draco Meteor",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "Snowscape",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Slaking",
+      "level": 84,
+      "hp": 235,
+      "max_hp": 235
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dark Pulse",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 27,
+      "max_hp": 286
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Draco Meteor",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 97,
+      "max_hp": 235
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "weather",
+      "weather": "Snowscape",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dark Pulse",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Floatzel",
+      "level": 86,
+      "hp": 200,
+      "max_hp": 286
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Torkoal",
+      "level": 88,
+      "hp": 114,
+      "max_hp": 266
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[from] ability: Drought"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Wave Crash",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 162,
+      "max_hp": 286,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Iron Leaves",
+      "level": 80,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Wave Crash",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 224,
+      "max_hp": 275
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 145,
+      "max_hp": 286,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Leaf Blade",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 197,
+      "max_hp": 275,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Darkrai",
+      "level": 77,
+      "hp": 234,
+      "max_hp": 234
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Poison"
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Fighting"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Nasty Plot",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 129,
+      "max_hp": 234
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 170,
+      "max_hp": 275,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sludge Bomb",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 106,
+      "max_hp": 234,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "weather",
+      "weather": "SunnyDay",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Camerupt",
+      "level": 91,
+      "hp": 252,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hypnosis",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "slp"
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 269,
+      "max_hp": 275
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 235,
+      "max_hp": 275,
+      "source": "[from] ability: Bad Dreams"
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Nasty Plot",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 252,
+      "max_hp": 275
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 218,
+      "max_hp": 275,
+      "source": "[from] ability: Bad Dreams"
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dark Pulse",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 83,
+      "max_hp": 234,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Slaking",
+      "level": 84,
+      "hp": 300,
+      "max_hp": 389
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dark Pulse",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 60,
+      "max_hp": 234,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Zoroark",
+      "level": 83,
+      "hp": 97,
+      "max_hp": 235
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sludge Bomb",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 37,
+      "max_hp": 234,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "win",
+      "player": "noocha"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,ca7a8b339d41a67712fd2910e25471fd\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"noocha\",\"avatar\":\"n\",\"rating\":2111,\"seed\":\"sodium,5fc467dd5ff22eaa4810ccefef2a0ccd\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"padstar36\",\"avatar\":\"170\",\"rating\":2265,\"seed\":\"sodium,c3e494f66a60313ec300cb351410bd4c\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "meteorbeam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "auroraveil"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "lavaplume"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "drainingkiss"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psyshock"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "lavaplume"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "solarbeam"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "auroraveil"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "aurasphere"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dracometeor"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "aurasphere"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dracometeor"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "darkpulse"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dracometeor"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "darkpulse"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "leafblade"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "nastyplot terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psyblade"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hypnosis"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "darkpulse"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "darkpulse"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606noocha|ggwp",
+      "args": ""
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "darkpulse"
+    }
+  ],
+  "winner": "noocha"
+}

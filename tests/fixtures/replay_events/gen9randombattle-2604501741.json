@@ -1,0 +1,1732 @@
+{
+  "id": "gen9randombattle-2604501741",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Copperajah",
+      "level": 86,
+      "hp": 350,
+      "max_hp": 350
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Girafarig",
+      "level": 89,
+      "hp": 269,
+      "max_hp": 269
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Nasty Plot",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Head",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 117,
+      "max_hp": 269
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 103,
+      "max_hp": 350
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Head",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Magmortar",
+      "level": 88,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Wugtrio",
+      "level": 91,
+      "hp": 212,
+      "max_hp": 212
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Appletun",
+      "level": 92,
+      "hp": 352,
+      "max_hp": 352
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Liquidation",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 310,
+      "max_hp": 352
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 332,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Iron Leaves",
+      "level": 80,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Apple Acid",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 227,
+      "max_hp": 275
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 352,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Draco Meteor",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 11,
+      "max_hp": 275
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Alomomola",
+      "level": 87,
+      "hp": 429,
+      "max_hp": 429
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Psyblade",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 156,
+      "max_hp": 429
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Kommo-o",
+      "level": 78,
+      "hp": 245,
+      "max_hp": 245
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flip Turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 221,
+      "max_hp": 245
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Tauros-Paldea-Combat",
+      "level": 82,
+      "hp": 257,
+      "max_hp": 257
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 77,
+      "max_hp": 245
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 232,
+      "max_hp": 257,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Scale Shot",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 183,
+      "max_hp": 257
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 131,
+      "max_hp": 257
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 77,
+      "max_hp": 257
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 25,
+      "max_hp": 257
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Head",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Houndstone",
+      "level": 86,
+      "hp": 264,
+      "max_hp": 264
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Noctowl",
+      "level": 95,
+      "hp": 344,
+      "max_hp": 344
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Press",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 218,
+      "max_hp": 344
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Magmortar",
+      "level": 88,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 154,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Sudowoodo",
+      "level": 94,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fire Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 203,
+      "max_hp": 284
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 220,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Focus Blast",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Head Smash",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 237,
+      "max_hp": 284
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Appletun",
+      "level": 92,
+      "hp": 352,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Wugtrio",
+      "level": 91,
+      "hp": 212,
+      "max_hp": 212
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Apple Acid",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 6,
+      "max_hp": 212
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Throat Chop",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 255,
+      "max_hp": 352
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Apple Acid",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 277,
+      "max_hp": 352
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Noctowl",
+      "level": 95,
+      "hp": 218,
+      "max_hp": 344
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Steel"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 139,
+      "max_hp": 352
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Apple Acid",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 177,
+      "max_hp": 344
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 161,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Sudowoodo",
+      "level": 94,
+      "hp": 237,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 337,
+      "max_hp": 352
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 254,
+      "max_hp": 284
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 352,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Alomomola",
+      "level": 87,
+      "hp": 299,
+      "max_hp": 429
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Grass"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 208,
+      "max_hp": 429
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 271,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Scald",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 233,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Head Smash",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 250,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Kommo-o",
+      "level": 78,
+      "hp": 77,
+      "max_hp": 245
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Scald",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 54,
+      "max_hp": 245
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Scale Shot",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 181,
+      "max_hp": 429
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 156,
+      "max_hp": 429
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 126,
+      "max_hp": 429
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 98,
+      "max_hp": 429
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flip Turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 23,
+      "max_hp": 245
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Houndstone",
+      "level": 86,
+      "hp": 264,
+      "max_hp": 264
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Scale Shot",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 240,
+      "max_hp": 264
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 218,
+      "max_hp": 264
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 194,
+      "max_hp": 264
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 170,
+      "max_hp": 264
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Press",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 186,
+      "max_hp": 264
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Noctowl",
+      "level": 95,
+      "hp": 177,
+      "max_hp": 344
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Appletun",
+      "level": 92,
+      "hp": 352,
+      "max_hp": 352
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Sudowoodo",
+      "level": 94,
+      "hp": 250,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Apple Acid",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 198,
+      "max_hp": 284
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 215,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 162,
+      "max_hp": 352
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Draco Meteor",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 184,
+      "max_hp": 352
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Noctowl",
+      "level": 95,
+      "hp": 177,
+      "max_hp": 344
+    },
+    {
+      "type": "turn",
+      "turn": 27
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 42,
+      "max_hp": 352
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 218,
+      "max_hp": 352
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 240,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 28
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 352,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 29
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 344,
+      "max_hp": 344
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Apple Acid",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 298,
+      "max_hp": 344
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 30
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Apple Acid",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 266,
+      "max_hp": 344
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 31
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 228,
+      "max_hp": 352
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 200,
+      "max_hp": 352,
+      "source": "[from] confusion"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 222,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 32
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Alomomola",
+      "level": 87,
+      "hp": 241,
+      "max_hp": 429
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 25,
+      "max_hp": 429
+    },
+    {
+      "type": "turn",
+      "turn": 33
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hyper Voice",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Appletun",
+      "level": 92,
+      "hp": 222,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 34
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hyper Voice",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 112,
+      "max_hp": 352
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 288,
+      "max_hp": 352
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 310,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 35
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Apple Acid",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 178,
+      "max_hp": 344
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 332,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 36
+    },
+    {
+      "type": "win",
+      "player": "ocmaster"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,070c567af8096a022f6ae26803bac5dd\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Kimmig\",\"avatar\":\"musician-gen9\",\"rating\":1830,\"seed\":\"sodium,ff2d4589b82dcd8ce79d205aa324d4a8\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"ocmaster\",\"avatar\":\"169\",\"rating\":1779,\"seed\":\"sodium,893fe0da2c67ca24711de8d59f3816da\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rockslide"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "appleacid"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dracometeor"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psyblade"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scaleshot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "headsmash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "focusblast"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606ocmaster|mmmmm}",
+      "args": ""
+    },
+    {
+      "player": "chat",
+      "action": "\u2606ocmaster|mmmmm}",
+      "args": ""
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "appleacid"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "throatchop"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "appleacid"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "appleacid terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "headsmash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scaleshot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scaleshot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "appleacid"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dracometeor"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "appleacid"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "appleacid"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "appleacid"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hypervoice"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hypervoice"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "appleacid"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
+    }
+  ],
+  "winner": "ocmaster"
+}

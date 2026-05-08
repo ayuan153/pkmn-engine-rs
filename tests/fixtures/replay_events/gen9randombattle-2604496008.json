@@ -1,0 +1,2153 @@
+{
+  "id": "gen9randombattle-2604496008",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Alomomola",
+      "level": 87,
+      "hp": 429,
+      "max_hp": 429
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Necrozma-Dusk-Mane",
+      "level": 69,
+      "hp": 248,
+      "max_hp": 248
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toxapex",
+      "level": 82,
+      "hp": 216,
+      "max_hp": 216
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Scald",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 199,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Protect",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Toxic",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Flip Turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 181,
+      "max_hp": 216
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 358,
+      "max_hp": 429,
+      "source": "[from] item: Rocky Helmet"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Bisharp",
+      "level": 79,
+      "hp": 232,
+      "max_hp": 232
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Toxic",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Liquidation",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 192,
+      "max_hp": 232
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Rotom-Frost",
+      "level": 87,
+      "hp": 229,
+      "max_hp": 229
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Haze",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Piloswine",
+      "level": 85,
+      "hp": 309,
+      "max_hp": 309
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunderbolt",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toxapex",
+      "level": 82,
+      "hp": 216,
+      "max_hp": 216
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Will-O-Wisp",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Nasty Plot",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Toxic",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "tox"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 215,
+      "max_hp": 229,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Piloswine",
+      "level": 85,
+      "hp": 309,
+      "max_hp": 309
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Blizzard",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 197,
+      "max_hp": 309
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 187,
+      "max_hp": 229,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Will-O-Wisp",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Roar",
+      "target": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dragonite",
+      "level": 74,
+      "hp": 257,
+      "max_hp": 257
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Alomomola",
+      "level": 87,
+      "hp": 429,
+      "max_hp": 429
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Icicle Crash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 377,
+      "max_hp": 429
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Exeggutor",
+      "level": 89,
+      "hp": 312,
+      "max_hp": 312
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Flip Turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 284,
+      "max_hp": 312
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Typhlosion-Hisui",
+      "level": 83,
+      "hp": 257,
+      "max_hp": 257
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toxapex",
+      "level": 82,
+      "hp": 216,
+      "max_hp": 216
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Eruption",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 123,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Rotom-Frost",
+      "level": 87,
+      "hp": 187,
+      "max_hp": 229
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Liquidation",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 139,
+      "max_hp": 229
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 125,
+      "max_hp": 229,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Piloswine",
+      "level": 85,
+      "hp": 197,
+      "max_hp": 309
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Will-O-Wisp",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "brn"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 97,
+      "max_hp": 229,
+      "source": "[from] psn"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 178,
+      "max_hp": 309,
+      "source": "[from] brn"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Alomomola",
+      "level": 87,
+      "hp": 429,
+      "max_hp": 429
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toxapex",
+      "level": 82,
+      "hp": 195,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Flip Turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 177,
+      "max_hp": 216
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 358,
+      "max_hp": 429,
+      "source": "[from] item: Rocky Helmet"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Rotom-Frost",
+      "level": 87,
+      "hp": 97,
+      "max_hp": 229
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Liquidation",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 43,
+      "max_hp": 229
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 29,
+      "max_hp": 229,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Piloswine",
+      "level": 85,
+      "hp": 178,
+      "max_hp": 309
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunderbolt",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 1,
+      "max_hp": 229,
+      "source": "[from] psn"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 159,
+      "max_hp": 309,
+      "source": "[from] brn"
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Alomomola",
+      "level": 87,
+      "hp": 429,
+      "max_hp": 429
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Icicle Crash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 405,
+      "max_hp": 429
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 140,
+      "max_hp": 309,
+      "source": "[from] brn"
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toxapex",
+      "level": 82,
+      "hp": 216,
+      "max_hp": 216
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Flip Turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 198,
+      "max_hp": 216
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 334,
+      "max_hp": 429,
+      "source": "[from] item: Rocky Helmet"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Rotom-Frost",
+      "level": 87,
+      "hp": 1,
+      "max_hp": 229
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0,
+      "source": "[from] psn"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Bisharp",
+      "level": 79,
+      "hp": 192,
+      "max_hp": 232
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Haze",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Haze",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Haze",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Throat Chop",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 135,
+      "max_hp": 216
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 154,
+      "max_hp": 232,
+      "source": "[from] item: Rocky Helmet"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Haze",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Haze",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Haze",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 27
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Throat Chop",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 71,
+      "max_hp": 216
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 116,
+      "max_hp": 232,
+      "source": "[from] item: Rocky Helmet"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Haze",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 28
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Necrozma-Dusk-Mane",
+      "level": 69,
+      "hp": 248,
+      "max_hp": 248
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 29
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Head",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 161,
+      "max_hp": 248
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 30,
+      "max_hp": 232
+    },
+    {
+      "type": "turn",
+      "turn": 30
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Piloswine",
+      "level": 85,
+      "hp": 140,
+      "max_hp": 309
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Throat Chop",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 4,
+      "max_hp": 309
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] brn"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Flapple",
+      "level": 88,
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 31
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sucker Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 92,
+      "max_hp": 266
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "U-turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toxapex",
+      "level": 82,
+      "hp": 143,
+      "max_hp": 216
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dragonite",
+      "level": 74,
+      "hp": 257,
+      "max_hp": 257
+    },
+    {
+      "type": "turn",
+      "turn": 32
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dragon Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Toxic",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "tox"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 241,
+      "max_hp": 257,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 33
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Exeggutor",
+      "level": 89,
+      "hp": 284,
+      "max_hp": 312
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 233,
+      "max_hp": 312
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 209,
+      "max_hp": 257,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 34
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dragon Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Substitute",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 155,
+      "max_hp": 312
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 233,
+      "max_hp": 312
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 161,
+      "max_hp": 257,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 35
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Protect",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Head",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 97,
+      "max_hp": 257,
+      "source": "[from] psn"
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "turn",
+      "turn": 36
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Head",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Leech Seed",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 65,
+      "max_hp": 257,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 265,
+      "max_hp": 312
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0,
+      "source": "[from] psn"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Typhlosion-Hisui",
+      "level": 83,
+      "hp": 257,
+      "max_hp": 257
+    },
+    {
+      "type": "turn",
+      "turn": 37
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Protect",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Eruption",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 38
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Walking Wake",
+      "level": 79,
+      "hp": 286,
+      "max_hp": 286
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Eruption",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 189,
+      "max_hp": 286
+    },
+    {
+      "type": "turn",
+      "turn": 39
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Alomomola",
+      "level": 87,
+      "hp": 429,
+      "max_hp": 429
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Draco Meteor",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 143,
+      "max_hp": 429
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 161,
+      "max_hp": 286,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "turn",
+      "turn": 40
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toxapex",
+      "level": 82,
+      "hp": 215,
+      "max_hp": 216
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Basculin-Blue-Striped",
+      "level": 86,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 41
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Double-Edge",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 133,
+      "max_hp": 216
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 218,
+      "max_hp": 261,
+      "source": "[from] item: Rocky Helmet"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 191,
+      "max_hp": 261,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Toxic",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "tox"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 175,
+      "max_hp": 261,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 42
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Alomomola",
+      "level": 87,
+      "hp": 286,
+      "max_hp": 429
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 216,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 43
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Wish",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Toxic",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "tox"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 260,
+      "max_hp": 429,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 44
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Flip Turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 196,
+      "max_hp": 216
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 189,
+      "max_hp": 429,
+      "source": "[from] item: Rocky Helmet"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Basculin-Blue-Striped",
+      "level": 86,
+      "hp": 175,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Toxic",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 245,
+      "max_hp": 261,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 45
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Exeggutor",
+      "level": 89,
+      "hp": 265,
+      "max_hp": 312
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Wave Crash",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 150,
+      "max_hp": 312
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 228,
+      "max_hp": 312
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 207,
+      "max_hp": 261,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 175,
+      "max_hp": 261,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 46
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Wave Crash",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 111,
+      "max_hp": 312
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 136,
+      "max_hp": 261,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Substitute",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 33,
+      "max_hp": 312
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 88,
+      "max_hp": 261,
+      "source": "[from] psn"
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 111,
+      "max_hp": 312
+    },
+    {
+      "type": "turn",
+      "turn": 47
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Alomomola",
+      "level": 87,
+      "hp": 332,
+      "max_hp": 429
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Protect"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 306,
+      "max_hp": 429,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 48
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Wish",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Leech Seed",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 253,
+      "max_hp": 429,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 164,
+      "max_hp": 312
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 201,
+      "max_hp": 429,
+      "source": "[from] psn"
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "turn",
+      "turn": 49
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Basculin-Blue-Striped",
+      "level": 86,
+      "hp": 88,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic Noise",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Typhlosion-Hisui",
+      "level": 83,
+      "hp": 257,
+      "max_hp": 257
+    },
+    {
+      "type": "turn",
+      "turn": 50
+    },
+    {
+      "type": "win",
+      "player": "100taka"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,0c3542e95856f0b37c8eb539f5d6d939\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"AssaultLei\",\"avatar\":\"unknown\",\"rating\":2170,\"seed\":\"sodium,3ddf852a5a9e154d9b7afb5d98f96fed\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"100taka\",\"avatar\":\"265\",\"rating\":2188,\"seed\":\"sodium,2e6881298299dab7444577cae2010453\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "haze"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "willowisp"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "blizzard"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "willowisp"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "roar"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "iciclecrash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "eruption"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "willowisp"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "iciclecrash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "haze"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "haze"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "haze"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "throatchop"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "haze"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "haze"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "haze"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "throatchop"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "haze"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "throatchop"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "leechseed"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "eruption terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "eruption"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dracometeor"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "leechseed"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
+    }
+  ],
+  "winner": "100taka"
+}

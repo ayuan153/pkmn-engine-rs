@@ -184,6 +184,10 @@
       "amount": 2
     },
     {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
       "type": "move",
       "player": "p2",
       "move": "Double-Edge",
@@ -316,6 +320,11 @@
       "target": "p2"
     },
     {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Sticky Web"
+    },
+    {
       "type": "turn",
       "turn": 10
     },
@@ -336,6 +345,11 @@
       "player": "p2",
       "hp": 236,
       "max_hp": 254
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
     },
     {
       "type": "heal",
@@ -383,8 +397,22 @@
       "amount": 1
     },
     {
+      "type": "sideend",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "sideend",
+      "player": "p2",
+      "condition": "Sticky Web"
+    },
+    {
       "type": "turn",
       "turn": 13
+    },
+    {
+      "type": "curestatus",
+      "player": "p1"
     },
     {
       "type": "move",
@@ -408,6 +436,11 @@
       "target": "p2"
     },
     {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Sticky Web"
+    },
+    {
       "type": "turn",
       "turn": 15
     },
@@ -424,6 +457,10 @@
       "turn": 16
     },
     {
+      "type": "curestatus",
+      "player": "p2"
+    },
+    {
       "type": "move",
       "player": "p2",
       "move": "Defog",
@@ -434,6 +471,11 @@
       "player": "p1",
       "stat": "evasion",
       "amount": 1
+    },
+    {
+      "type": "sideend",
+      "player": "p2",
+      "condition": "Sticky Web"
     },
     {
       "type": "move",
@@ -680,6 +722,11 @@
       "player": "p2",
       "hp": 148,
       "max_hp": 254
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
     },
     {
       "type": "heal",
@@ -982,6 +1029,11 @@
       "target": "p2"
     },
     {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Sticky Web"
+    },
+    {
       "type": "heal",
       "player": "p2",
       "hp": 254,
@@ -1023,6 +1075,11 @@
       "max_hp": 254
     },
     {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
       "type": "heal",
       "player": "p2",
       "hp": 237,
@@ -1056,6 +1113,11 @@
       "player": "p2",
       "hp": 203,
       "max_hp": 254
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
     },
     {
       "type": "heal",
@@ -1718,6 +1780,11 @@
       "player": "p1"
     },
     {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Moxie"
+    },
+    {
       "type": "boost",
       "player": "p2",
       "stat": "atk",
@@ -1726,6 +1793,608 @@
     {
       "type": "win",
       "player": "test x343"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,85d82b38eb1e566f582b76edd181b082\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"kakrita\",\"avatar\":\"richboy-gen4\",\"rating\":1731,\"seed\":\"sodium,7c4bfbe9121d0e43b68c8741b77d6f79\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"test x343\",\"avatar\":\"170\",\"rating\":1801,\"seed\":\"sodium,23ce8df155f440acae1d8267e14aa790\"}"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "drainingkiss"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shellsmash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "iciclespear"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hydropump"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "yawn terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hydropump"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hydropump"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stickyweb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "yawn"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ceaselessedge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ceaselessedge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spore"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "defog"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spore"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stickyweb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "defog"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "defog"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonlight"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "haze"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moongeistbeam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "yawn"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ceaselessedge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "yawn"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stickyweb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ceaselessedge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ceaselessedge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "yawn"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moongeistbeam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "yawn"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "yawn"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moongeistbeam"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moongeistbeam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "waterfall"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moongeistbeam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "waterfall"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "waterfall"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
     }
   ],
   "winner": "test x343"

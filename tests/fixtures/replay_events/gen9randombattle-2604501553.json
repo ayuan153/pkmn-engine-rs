@@ -1,0 +1,959 @@
+{
+  "id": "gen9randombattle-2604501553",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Feraligatr",
+      "level": 79,
+      "hp": 264,
+      "max_hp": 264
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Illumise",
+      "level": 91,
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Palossand",
+      "level": 89,
+      "hp": 296,
+      "max_hp": 296
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunder Wave",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Politoed",
+      "level": 88,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[from] ability: Drizzle"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sludge Bomb",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 237,
+      "max_hp": 302
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Feraligatr",
+      "level": 79,
+      "hp": 264,
+      "max_hp": 264
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Weather Ball",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 122,
+      "max_hp": 264
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Amoonguss",
+      "level": 82,
+      "hp": 321,
+      "max_hp": 321
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Trailblaze",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 305,
+      "max_hp": 321
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 78,
+      "max_hp": 264,
+      "source": "[from] item: Rocky Helmet"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Ice Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 100,
+      "max_hp": 321
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 34,
+      "max_hp": 264,
+      "source": "[from] item: Rocky Helmet"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Giga Drain",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 117,
+      "max_hp": 321
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Articuno-Galar",
+      "level": 84,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Illumise",
+      "level": 91,
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 20,
+      "max_hp": 266
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Palossand",
+      "level": 89,
+      "hp": 296,
+      "max_hp": 296
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Minun",
+      "level": 95,
+      "hp": 268,
+      "max_hp": 268
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Politoed",
+      "level": 88,
+      "hp": 237,
+      "max_hp": 302
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[from] ability: Drizzle"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earth Power",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 135,
+      "max_hp": 302
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dunsparce",
+      "level": 86,
+      "hp": 312,
+      "max_hp": 312
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Weather Ball",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 110,
+      "max_hp": 312
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Weather Ball",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Articuno-Galar",
+      "level": 84,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Minun",
+      "level": 95,
+      "hp": 268,
+      "max_hp": 268
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Calm Mind",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Palossand",
+      "level": 89,
+      "hp": 296,
+      "max_hp": 296
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Encore"
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Amoonguss",
+      "level": 82,
+      "hp": 224,
+      "max_hp": 321
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earth Power",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 106,
+      "max_hp": 321
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Honchkrow",
+      "level": 86,
+      "hp": 312,
+      "max_hp": 312
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earth Power",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Magcargo",
+      "level": 95,
+      "hp": 268,
+      "max_hp": 268
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Brave Bird",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 208,
+      "max_hp": 268
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Weak Armor"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 292,
+      "max_hp": 312,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Illumise",
+      "level": 91,
+      "hp": 20,
+      "max_hp": 266
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Power Gem",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Espathra",
+      "level": 80,
+      "hp": 283,
+      "max_hp": 283
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Protect",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Shell Smash",
+      "target": "p1"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Speed Boost"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Amoonguss",
+      "level": 82,
+      "hp": 213,
+      "max_hp": 321
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Fire Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Honchkrow",
+      "level": 86,
+      "hp": 292,
+      "max_hp": 312
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Dark"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sucker Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 20,
+      "max_hp": 268
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Weak Armor"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Power Gem",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Espathra",
+      "level": 80,
+      "hp": 283,
+      "max_hp": 283
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Fire Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "win",
+      "player": "baby shaxx"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,ebddc772ea08ae79c2e3f5c51182148f\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"baby shaxx\",\"avatar\":\"iris-gen5bw2\",\"rating\":1990,\"seed\":\"sodium,4ae5901053b0218b69a2b04e096d0d9b\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"endallbeallball\",\"avatar\":\"pokefanf\",\"rating\":1942,\"seed\":\"sodium,1d67db94a67034c65aacb9244f5fb325\"}"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sludgebomb"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "weatherball"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "trailblaze"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "icepunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "weatherball"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "weatherball"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "powergem"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shellsmash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "powergem"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "suckerpunch terastallize"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606endallbeallball|omg",
+      "args": ""
+    },
+    {
+      "player": "chat",
+      "action": "\u2606endallbeallball|its",
+      "args": "still alive"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
+    }
+  ],
+  "winner": "baby shaxx"
+}

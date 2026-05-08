@@ -1,0 +1,1227 @@
+{
+  "id": "gen9randombattle-2604496892",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Camerupt",
+      "level": 91,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Gouging Fire",
+      "level": 74,
+      "hp": 277,
+      "max_hp": 277
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Stealth Rock",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 121,
+      "max_hp": 275
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roar",
+      "target": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Revavroom",
+      "level": 79,
+      "hp": 256,
+      "max_hp": 256
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 240,
+      "max_hp": 256,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 138,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "High Horsepower",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 215,
+      "max_hp": 256,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Inteleon",
+      "level": 81,
+      "hp": 246,
+      "max_hp": 246
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Arboliva",
+      "level": 91,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 252,
+      "max_hp": 288,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hydro Pump",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Salazzle",
+      "level": 83,
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hyper Voice",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 63,
+      "max_hp": 249
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sludge Wave",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 82,
+      "max_hp": 288
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 154,
+      "max_hp": 288
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hyper Voice",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Hitmontop",
+      "level": 88,
+      "hp": 231,
+      "max_hp": 231
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Venomoth",
+      "level": 84,
+      "hp": 255,
+      "max_hp": 255
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Close Combat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 209,
+      "max_hp": 255
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Clefable",
+      "level": 83,
+      "hp": 293,
+      "max_hp": 293
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Quiver Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sleep Powder",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Fire Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 35,
+      "max_hp": 255
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sleep Powder",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "slp"
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Hitmontop",
+      "level": 88,
+      "hp": 231,
+      "max_hp": 231
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sludge Wave",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 159,
+      "max_hp": 231
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "psn"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 131,
+      "max_hp": 231,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Indeedee-F",
+      "level": 90,
+      "hp": 272,
+      "max_hp": 272
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 238,
+      "max_hp": 272,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sucker Punch"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 103,
+      "max_hp": 231,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psyshock",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 211,
+      "max_hp": 272,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Inteleon",
+      "level": 81,
+      "hp": 246,
+      "max_hp": 246
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hydro Pump",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 7,
+      "max_hp": 272
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psyshock",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 50,
+      "max_hp": 246
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Arboliva",
+      "level": 91,
+      "hp": 154,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 118,
+      "max_hp": 288,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 190,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Clefable",
+      "level": 83,
+      "hp": 293,
+      "max_hp": 293
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hyper Voice",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 163,
+      "max_hp": 293
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 181,
+      "max_hp": 293
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Venomoth",
+      "level": 84,
+      "hp": 35,
+      "max_hp": 255
+    },
+    {
+      "type": "curestatus",
+      "player": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonlight",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 293,
+      "max_hp": 293
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sludge Wave",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 95,
+      "max_hp": 293
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Moonblast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 113,
+      "max_hp": 293
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Revavroom",
+      "level": 79,
+      "hp": 215,
+      "max_hp": 256
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 199,
+      "max_hp": 256,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Head",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 174,
+      "max_hp": 256,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Inteleon",
+      "level": 81,
+      "hp": 50,
+      "max_hp": 246
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Scald",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Arboliva",
+      "level": 91,
+      "hp": 190,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 154,
+      "max_hp": 288,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Scald",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 39,
+      "max_hp": 288
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "brn"
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 111,
+      "max_hp": 288
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hyper Voice",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 93,
+      "max_hp": 288,
+      "source": "[from] brn"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Flapple",
+      "level": 88,
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dragon Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hyper Voice",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 83,
+      "max_hp": 266
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 75,
+      "max_hp": 288,
+      "source": "[from] brn"
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 147,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Outrage",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Gouging Fire",
+      "level": 74,
+      "hp": 277,
+      "max_hp": 277
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Outrage",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Blastoise",
+      "level": 80,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 226,
+      "max_hp": 258,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Outrage",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "win",
+      "player": "padstar36"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,c42aa846dea20ce2ac87ec69056bc5b7\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"padstar36\",\"avatar\":\"170\",\"rating\":2250,\"seed\":\"sodium,2dfb6fd2689e779231acec00d84fba58\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"fdjskl\",\"avatar\":\"170\",\"rating\":2164,\"seed\":\"sodium,ea473a7f094dd66c1dfd1e4584e7d52f\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roar"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "highhorsepower"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hydropump"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hypervoice"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sludgewave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hypervoice"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "quiverdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sleeppowder"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sleeppowder"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sludgewave"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psyshock"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hydropump terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psyshock"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hypervoice"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonlight"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sludgewave"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hypervoice"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hypervoice"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hypervoice"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "shellsmash"
+    }
+  ],
+  "winner": "padstar36"
+}

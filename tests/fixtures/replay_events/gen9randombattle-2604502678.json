@@ -1,0 +1,1305 @@
+{
+  "id": "gen9randombattle-2604502678",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Minior-Orange",
+      "level": 79,
+      "hp": 224,
+      "max_hp": 224
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Falinks",
+      "level": 84,
+      "hp": 246,
+      "max_hp": 246
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "No Retreat",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Shell Smash",
+      "target": "p1"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Acrobatics",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 72,
+      "max_hp": 246
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 48,
+      "max_hp": 246,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Talonflame",
+      "level": 83,
+      "hp": 265,
+      "max_hp": 265
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 126,
+      "max_hp": 265
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 24,
+      "max_hp": 246,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Brave Bird",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 118,
+      "max_hp": 265,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Milotic",
+      "level": 83,
+      "hp": 293,
+      "max_hp": 293
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lurantis",
+      "level": 87,
+      "hp": 264,
+      "max_hp": 264
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Scald",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 238,
+      "max_hp": 264
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "brn"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 222,
+      "max_hp": 264,
+      "source": "[from] brn"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toucannon",
+      "level": 88,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 241,
+      "max_hp": 284
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 206,
+      "max_hp": 264,
+      "source": "[from] brn"
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Garganacl",
+      "level": 80,
+      "hp": 291,
+      "max_hp": 291
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Beak Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 242,
+      "max_hp": 291
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 260,
+      "max_hp": 291
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Bullet Seed",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 222,
+      "max_hp": 291
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 184,
+      "max_hp": 291
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 144,
+      "max_hp": 291
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 106,
+      "max_hp": 291
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 66,
+      "max_hp": 291
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Salt Cure",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 145,
+      "max_hp": 284
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 84,
+      "max_hp": 291
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 110,
+      "max_hp": 284,
+      "source": "[from] Salt Cure"
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lurantis",
+      "level": 87,
+      "hp": 206,
+      "max_hp": 264
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Roost",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 252,
+      "max_hp": 284
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 190,
+      "max_hp": 264,
+      "source": "[from] brn"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 217,
+      "max_hp": 284,
+      "source": "[from] Salt Cure"
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Froslass",
+      "level": 87,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Beak Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 115,
+      "max_hp": 263
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 182,
+      "max_hp": 284,
+      "source": "[from] Salt Cure"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Triple Axel",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 140,
+      "max_hp": 284
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "brn"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 95,
+      "max_hp": 284
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 32,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Beak Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] Salt Cure"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lurantis",
+      "level": 87,
+      "hp": 190,
+      "max_hp": 264
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lycanroc-Dusk",
+      "level": 81,
+      "hp": 254,
+      "max_hp": 254
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Fighting"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Talonflame",
+      "level": 83,
+      "hp": 118,
+      "max_hp": 265
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Milotic",
+      "level": 83,
+      "hp": 293,
+      "max_hp": 293
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Brave Bird",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 170,
+      "max_hp": 293
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 77,
+      "max_hp": 265,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 188,
+      "max_hp": 293
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 210,
+      "max_hp": 265
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 293,
+      "max_hp": 293
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Garganacl",
+      "level": 80,
+      "hp": 84,
+      "max_hp": 291
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Scald",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Torterra",
+      "level": 78,
+      "hp": 276,
+      "max_hp": 276
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Water"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Shell Smash",
+      "target": "p1"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Tail",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bullet Seed",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 141,
+      "max_hp": 293
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 25,
+      "max_hp": 293
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lycanroc-Dusk",
+      "level": 81,
+      "hp": 254,
+      "max_hp": 254
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Poliwrath",
+      "level": 88,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bullet Seed",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 206,
+      "max_hp": 302
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 78,
+      "max_hp": 302
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Garchomp",
+      "level": 74,
+      "hp": 282,
+      "max_hp": 282
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bullet Seed",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 225,
+      "max_hp": 282
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 147,
+      "max_hp": 282
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 92,
+      "max_hp": 282
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 37,
+      "max_hp": 282
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Scale Shot",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 242,
+      "max_hp": 276
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 202,
+      "max_hp": 276
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 166,
+      "max_hp": 276
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 127,
+      "max_hp": 276
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 88,
+      "max_hp": 276
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Talonflame",
+      "level": 83,
+      "hp": 210,
+      "max_hp": 265
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Scale Shot",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 177,
+      "max_hp": 265
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 147,
+      "max_hp": 265
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 117,
+      "max_hp": 265
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 72,
+      "max_hp": 265
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Overheat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lycanroc-Dusk",
+      "level": 81,
+      "hp": 254,
+      "max_hp": 254
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Accelerock",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "win",
+      "player": "forsherlock"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,b2f5f960a78be06377707134591c1345\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"firehawk785\",\"avatar\":\"102\",\"rating\":2081,\"seed\":\"sodium,e04dde9bdb905c44843449429872657a\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"forsherlock\",\"avatar\":\"101\",\"rating\":2138,\"seed\":\"sodium,b6c7e459e062b3fb1196daac63de9415\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shellsmash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "noretreat"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "acrobatics"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "beakblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "saltcure"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bulletseed"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "beakblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "tripleaxel"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "beakblast"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafstorm"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shellsmash terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragontail"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulletseed"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragontail"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulletseed"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulletseed"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "scaleshot"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulletseed"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "overheat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "scaleshot"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "accelerock"
+    }
+  ],
+  "winner": "forsherlock"
+}

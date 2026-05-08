@@ -1,0 +1,1640 @@
+{
+  "id": "gen9randombattle-2604495787",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Toedscruel",
+      "level": 87,
+      "hp": 281,
+      "max_hp": 281
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Mesprit",
+      "level": 85,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Bronzong",
+      "level": 88,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 133,
+      "max_hp": 261
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stealth Rock",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Head",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 202,
+      "max_hp": 275
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 219,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 57,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Head",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 144,
+      "max_hp": 275
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 161,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 178,
+      "max_hp": 275
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dusknoir",
+      "level": 89,
+      "hp": 235,
+      "max_hp": 235
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 206,
+      "max_hp": 235,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dark Pulse",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dedenne",
+      "level": 88,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Toedscruel",
+      "level": 87,
+      "hp": 281,
+      "max_hp": 281
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 264,
+      "max_hp": 281,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Super Fang",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 281,
+      "max_hp": 281
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Articuno",
+      "level": 86,
+      "hp": 295,
+      "max_hp": 295
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spore",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "slp"
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Kingambit",
+      "level": 74,
+      "hp": 270,
+      "max_hp": 270
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 254,
+      "max_hp": 270,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Mabosstiff",
+      "level": 86,
+      "hp": 278,
+      "max_hp": 278
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 270,
+      "max_hp": 270
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dedenne",
+      "level": 88,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Head",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 135,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dazzling Gleam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 180,
+      "max_hp": 270
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 196,
+      "max_hp": 270
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dazzling Gleam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 97,
+      "max_hp": 270
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Head",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 113,
+      "max_hp": 270
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Magnezone",
+      "level": 85,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sucker Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 134,
+      "max_hp": 258
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 150,
+      "max_hp": 258
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dusknoir",
+      "level": 89,
+      "hp": 206,
+      "max_hp": 235
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 177,
+      "max_hp": 235,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Focus Blast",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 15,
+      "max_hp": 235
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 166,
+      "max_hp": 258
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Focus Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Mabosstiff",
+      "level": 86,
+      "hp": 278,
+      "max_hp": 278
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Crunch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Keldeo-Resolute",
+      "level": 79,
+      "hp": 273,
+      "max_hp": 273
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 256,
+      "max_hp": 273,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lumineon",
+      "level": 93,
+      "hp": 279,
+      "max_hp": 279
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Calm Mind",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 273,
+      "max_hp": 273
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Toedscruel",
+      "level": 87,
+      "hp": 281,
+      "max_hp": 281
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 264,
+      "max_hp": 281,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Alluring Voice",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 208,
+      "max_hp": 281
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 252,
+      "max_hp": 279,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 225,
+      "max_hp": 281
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dusknoir",
+      "level": 89,
+      "hp": 225,
+      "max_hp": 225
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 197,
+      "max_hp": 225,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Articuno",
+      "level": 86,
+      "hp": 295,
+      "max_hp": 295
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 211,
+      "max_hp": 225
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Focus Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 183,
+      "max_hp": 295
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 225,
+      "max_hp": 225
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Poltergeist",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 71,
+      "max_hp": 295
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Mabosstiff",
+      "level": 86,
+      "hp": 278,
+      "max_hp": 278
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Focus Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 34,
+      "max_hp": 278
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Keldeo-Resolute",
+      "level": 79,
+      "hp": 273,
+      "max_hp": 273
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 256,
+      "max_hp": 273,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Crunch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 151,
+      "max_hp": 273
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Justified"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 168,
+      "max_hp": 273
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Lumineon",
+      "level": 93,
+      "hp": 252,
+      "max_hp": 279
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Secret Sword",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 150,
+      "max_hp": 279
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 185,
+      "max_hp": 273
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Alluring Voice",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 45,
+      "max_hp": 273
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 123,
+      "max_hp": 279,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Secret Sword",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 24,
+      "max_hp": 279
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 62,
+      "max_hp": 273
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Beam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 18,
+      "max_hp": 273
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Secret Sword",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 35,
+      "max_hp": 273
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Mabosstiff",
+      "level": 86,
+      "hp": 34,
+      "max_hp": 278
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Crunch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Toedscruel",
+      "level": 87,
+      "hp": 225,
+      "max_hp": 281
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 208,
+      "max_hp": 281,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 27
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Crunch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 70,
+      "max_hp": 281
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Rapid Spin",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 6,
+      "max_hp": 278
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "sideend",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 87,
+      "max_hp": 281
+    },
+    {
+      "type": "turn",
+      "turn": 28
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Rapid Spin",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 104,
+      "max_hp": 281
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Articuno",
+      "level": 86,
+      "hp": 71,
+      "max_hp": 295
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "turn",
+      "turn": 29
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Rapid Spin",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 42,
+      "max_hp": 295
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 121,
+      "max_hp": 281
+    },
+    {
+      "type": "turn",
+      "turn": 30
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Rapid Spin",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 16,
+      "max_hp": 295
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "curestatus",
+      "player": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Roost",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 164,
+      "max_hp": 295
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 138,
+      "max_hp": 281
+    },
+    {
+      "type": "turn",
+      "turn": 31
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Roost",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 295,
+      "max_hp": 295
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spore",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "slp"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 155,
+      "max_hp": 281
+    },
+    {
+      "type": "turn",
+      "turn": 32
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dusknoir",
+      "level": 89,
+      "hp": 225,
+      "max_hp": 225
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Heavy-Duty Boots"
+    },
+    {
+      "type": "turn",
+      "turn": 33
+    },
+    {
+      "type": "curestatus",
+      "player": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Freeze-Dry",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 146,
+      "max_hp": 225
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Poltergeist",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 180,
+      "max_hp": 295
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 160,
+      "max_hp": 225
+    },
+    {
+      "type": "turn",
+      "turn": 34
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Freeze-Dry",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 111,
+      "max_hp": 225
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Poltergeist",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 56,
+      "max_hp": 295
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 125,
+      "max_hp": 225
+    },
+    {
+      "type": "turn",
+      "turn": 35
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Roost",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 204,
+      "max_hp": 295
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Focus Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "win",
+      "player": "Youknowit123"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,2bdf844f165bb52c98102d78fd8e4f5c\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Youknowit123\",\"avatar\":\"2\",\"rating\":2045,\"seed\":\"sodium,f82456a25628532dc7fade9db3429376\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"Surf90\",\"avatar\":\"170\",\"rating\":2051,\"seed\":\"sodium,9c232d8cc9858a84839a027aabd10b6d\"}"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rest"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "darkpulse"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "superfang"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spore"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "focusblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "focusblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flashcannon"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "focusblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "crunch"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "alluringvoice"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "focuspunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "freezedry"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "poltergeist"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "freezedry"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "focuspunch"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "crunch"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "secretsword"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "secretsword"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "alluringvoice"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "secretsword"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icebeam"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "secretsword"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "crunch"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "crunch"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "crunch"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spore"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "freezedry"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "poltergeist"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "freezedry"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "poltergeist"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "freezedry"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "focuspunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "roost"
+    }
+  ],
+  "winner": "Youknowit123"
+}

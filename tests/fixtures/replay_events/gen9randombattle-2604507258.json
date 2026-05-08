@@ -1,0 +1,396 @@
+{
+  "id": "gen9randombattle-2604507258",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Plusle",
+      "level": 95,
+      "hp": 268,
+      "max_hp": 268
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Smeargle",
+      "level": 95,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Nasty Plot",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Spore",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "slp"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sticky Web",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Sticky Web"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ceaseless Edge",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 234,
+      "max_hp": 268
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "curestatus",
+      "player": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunderbolt",
+      "target": "p2"
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 1,
+      "max_hp": 258
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 208,
+      "max_hp": 268,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunderbolt",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 182,
+      "max_hp": 268,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Delphox",
+      "level": 84,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunderbolt",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 17,
+      "max_hp": 263
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 156,
+      "max_hp": 268,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fire Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Skeledirge",
+      "level": 79,
+      "hp": 294,
+      "max_hp": 294
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Thundurus-Therian",
+      "level": 80,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Flame Charge",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 210,
+      "max_hp": 258
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Torch Song",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 111,
+      "max_hp": 258
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 144,
+      "max_hp": 294
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "par"
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "win",
+      "player": "georgefinger"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,121b0da032e3da0886c25d59bc40cc9c\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"nickolassbomfim\",\"avatar\":\"red-masters\",\"rating\":1973,\"seed\":\"sodium,c89e112a14458f2c8139c30f4a3fdf11\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"georgefinger\",\"avatar\":\"102\",\"rating\":2040,\"seed\":\"sodium,b34168795bb324a08ab3eb58055f5872\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "spore"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stickyweb"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "encore"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ceaselessedge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ceaselessedge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ceaselessedge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flamecharge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "torchsong"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
+    }
+  ],
+  "winner": "georgefinger"
+}

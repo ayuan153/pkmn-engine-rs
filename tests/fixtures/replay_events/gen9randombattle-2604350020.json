@@ -19,6 +19,11 @@
       "max_hp": 277
     },
     {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Download"
+    },
+    {
       "type": "boost",
       "player": "p1",
       "stat": "spa",
@@ -187,6 +192,11 @@
       "player": "p2",
       "move": "Spikes",
       "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Spikes"
     },
     {
       "type": "damage",
@@ -523,6 +533,203 @@
     {
       "type": "win",
       "player": "liljuicewrldvert"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,ebf0c02e6b2ca4ecedd5c2072d6ad472\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"fathermclovin\",\"avatar\":\"steven\",\"rating\":1552,\"seed\":\"sodium,bf66281e521502c0bc8b82cbd14c490e\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"liljuicewrldvert\",\"avatar\":\"roxie\",\"rating\":1501,\"seed\":\"sodium,5346422173501a16404ddd010a44bfe8\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "discharge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "triattack"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "facade"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "facade"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "throatchop"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "icebeam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "icebeam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "judgment"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "judgment"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "terablast terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "waterpulse"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leechseed terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "terablast"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
     }
   ],
   "winner": "liljuicewrldvert"

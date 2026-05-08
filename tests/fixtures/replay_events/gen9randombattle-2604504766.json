@@ -1,0 +1,1263 @@
+{
+  "id": "gen9randombattle-2604504766",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Zekrom",
+      "level": 71,
+      "hp": 259,
+      "max_hp": 259
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Virizion",
+      "level": 82,
+      "hp": 283,
+      "max_hp": 283
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Teravolt"
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Swords Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dragon Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Substitute",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 195,
+      "max_hp": 259
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 255,
+      "max_hp": 283,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 211,
+      "max_hp": 259
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Outrage",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 227,
+      "max_hp": 259
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Raging Bolt",
+      "level": 78,
+      "hp": 323,
+      "max_hp": 323
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Fairy"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Outrage",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Pulse",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Hypno",
+      "level": 95,
+      "hp": 315,
+      "max_hp": 315
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Arceus-Dark",
+      "level": 71,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Toxic",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "tox"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 270,
+      "max_hp": 288,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Virizion",
+      "level": 82,
+      "hp": 283,
+      "max_hp": 283
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Calm Mind",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 234,
+      "max_hp": 288,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toxicroak",
+      "level": 84,
+      "hp": 277,
+      "max_hp": 277
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Forretress",
+      "level": 84,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 121,
+      "max_hp": 263
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 137,
+      "max_hp": 263
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ceruledge",
+      "level": 78,
+      "hp": 245,
+      "max_hp": 245
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Alomomola",
+      "level": 87,
+      "hp": 429,
+      "max_hp": 429
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Poltergeist",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Scald",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 153,
+      "max_hp": 245
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Poltergeist",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 191,
+      "max_hp": 429
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Scald",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 63,
+      "max_hp": 245
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Poltergeist",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Arceus-Dark",
+      "level": 71,
+      "hp": 234,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Virizion",
+      "level": 82,
+      "hp": 283,
+      "max_hp": 283
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Judgment",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 242,
+      "max_hp": 283
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Justified"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 216,
+      "max_hp": 288,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toxicroak",
+      "level": 84,
+      "hp": 277,
+      "max_hp": 277
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leaf Blade",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 182,
+      "max_hp": 277
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 214,
+      "max_hp": 283,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Close Combat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 52,
+      "max_hp": 277
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 186,
+      "max_hp": 283,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Gunk Shot",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Arboliva",
+      "level": 91,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Arceus-Dark",
+      "level": 71,
+      "hp": 216,
+      "max_hp": 288
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Poison"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hyper Voice",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 90,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 72,
+      "max_hp": 288,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Judgment",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 197,
+      "max_hp": 288
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Substitute",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 125,
+      "max_hp": 288
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 197,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 36,
+      "max_hp": 288,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Protect",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 180,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 126,
+      "max_hp": 288,
+      "source": "[from] psn"
+    },
+    {
+      "type": "item",
+      "player": "p1",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Judgment",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Substitute",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 125,
+      "max_hp": 288
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 197,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 54,
+      "max_hp": 288,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Protect",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 198,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 108,
+      "max_hp": 288,
+      "source": "[from] psn"
+    },
+    {
+      "type": "item",
+      "player": "p1",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Judgment",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Substitute",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 125,
+      "max_hp": 288
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 197,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] psn"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "item",
+      "player": "p1",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Raging Bolt",
+      "level": 78,
+      "hp": 323,
+      "max_hp": 323
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Calm Mind",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leech Seed",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 283,
+      "max_hp": 323,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 237,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Protect",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Calm Mind",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 243,
+      "max_hp": 323,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 277,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Thunderbolt",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Substitute",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 205,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 203,
+      "max_hp": 323,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 245,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "win",
+      "player": "KnightsOfNi"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,675ec044e14ae172c5df8894c8a2bdfb\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"KnightsOfNi\",\"avatar\":\"plasmagrunt-gen5bw\",\"rating\":2148,\"seed\":\"sodium,62e75ee8ebc6d51c103265fc8b897ba7\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"Kurumin33\",\"avatar\":\"169\",\"rating\":2145,\"seed\":\"sodium,5232f5b8909472b93da7451ebcab56a3\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "leafblade"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragonpulse terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "poltergeist"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "poltergeist"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "poltergeist"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "judgment"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafblade"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hypervoice terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "judgment"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "judgment"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "judgment"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leechseed"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
+    }
+  ],
+  "winner": "KnightsOfNi"
+}

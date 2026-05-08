@@ -1,0 +1,1478 @@
+{
+  "id": "gen9randombattle-2604500842",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dedenne",
+      "level": 88,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Feraligatr",
+      "level": 79,
+      "hp": 264,
+      "max_hp": 264
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Gogoat",
+      "level": 88,
+      "hp": 360,
+      "max_hp": 360
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Super Fang",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Super Fang",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 180,
+      "max_hp": 360
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 59,
+      "max_hp": 261
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 124,
+      "max_hp": 261
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 211,
+      "max_hp": 261
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 202,
+      "max_hp": 360
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 104,
+      "max_hp": 360
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Charizard",
+      "level": 85,
+      "hp": 271,
+      "max_hp": 271
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Horn Leech",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 249,
+      "max_hp": 271
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 115,
+      "max_hp": 360
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 137,
+      "max_hp": 360
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dudunsparce",
+      "level": 83,
+      "hp": 343,
+      "max_hp": 343
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Flamethrower",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 216,
+      "max_hp": 343
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 237,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 81,
+      "max_hp": 343
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Roost",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 253,
+      "max_hp": 343
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 274,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ting-Lu",
+      "level": 78,
+      "hp": 370,
+      "max_hp": 370
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Vessel of Ruin"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Boomburst",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 295,
+      "max_hp": 370
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 295,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Zangoose",
+      "level": 85,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Payback",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 191,
+      "max_hp": 263
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "tox"
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Facade",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 94,
+      "max_hp": 370
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Payback",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 62,
+      "max_hp": 263
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 46,
+      "max_hp": 263,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Mimikyu",
+      "level": 79,
+      "hp": 216,
+      "max_hp": 216
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Facade",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 14,
+      "max_hp": 263,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 216,
+      "max_hp": 216
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 189,
+      "max_hp": 216,
+      "source": "[from] pokemon: Mimikyu-Busted"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] psn"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Magearna",
+      "level": 77,
+      "hp": 250,
+      "max_hp": 250
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Shadow Claw",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 144,
+      "max_hp": 250
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flash Cannon",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 25,
+      "max_hp": 216
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 159,
+      "max_hp": 250
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Shadow Claw",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 54,
+      "max_hp": 250
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flash Cannon",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Soul-Heart"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 69,
+      "max_hp": 250
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Charizard",
+      "level": 85,
+      "hp": 249,
+      "max_hp": 271
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Feraligatr",
+      "level": 79,
+      "hp": 264,
+      "max_hp": 264
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 108,
+      "max_hp": 264
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Liquidation",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Registeel",
+      "level": 81,
+      "hp": 262,
+      "max_hp": 262
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 69,
+      "max_hp": 264,
+      "source": "[from] confusion"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Defense",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Gholdengo",
+      "level": 77,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Press",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ting-Lu",
+      "level": 78,
+      "hp": 94,
+      "max_hp": 370
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Vessel of Ruin"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Focus Blast",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dedenne",
+      "level": 88,
+      "hp": 211,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Focus Blast",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dudunsparce",
+      "level": 83,
+      "hp": 295,
+      "max_hp": 343
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 253,
+      "max_hp": 343
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Rattled"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Chesnaught",
+      "level": 84,
+      "hp": 285,
+      "max_hp": 285
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 274,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Fairy"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Calm Mind",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Trailblaze",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 211,
+      "max_hp": 343
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 232,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Steel"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Defense",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earth Power",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 103,
+      "max_hp": 285
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 120,
+      "max_hp": 285
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 253,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Press",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 145,
+      "max_hp": 343
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earth Power",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 166,
+      "max_hp": 343
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Registeel",
+      "level": 81,
+      "hp": 262,
+      "max_hp": 262
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earth Power",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 100,
+      "max_hp": 262
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Iron Head",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 32,
+      "max_hp": 343
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 53,
+      "max_hp": 343
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earth Power",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 74,
+      "max_hp": 343
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dedenne",
+      "level": 88,
+      "hp": 211,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunderbolt",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Gogoat",
+      "level": 88,
+      "hp": 137,
+      "max_hp": 360
+    },
+    {
+      "type": "turn",
+      "turn": 27
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dazzling Gleam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 58,
+      "max_hp": 360
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Milk Drink",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 238,
+      "max_hp": 360
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 260,
+      "max_hp": 360
+    },
+    {
+      "type": "turn",
+      "turn": 28
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Super Fang",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 130,
+      "max_hp": 360
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 17,
+      "max_hp": 261
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 152,
+      "max_hp": 360
+    },
+    {
+      "type": "turn",
+      "turn": 29
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 58,
+      "max_hp": 360
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ting-Lu",
+      "level": 78,
+      "hp": 94,
+      "max_hp": 370
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Vessel of Ruin"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Horn Leech",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 105,
+      "max_hp": 360
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 127,
+      "max_hp": 360
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dedenne",
+      "level": 88,
+      "hp": 17,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 30
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 29,
+      "max_hp": 360
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Horn Leech",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 38,
+      "max_hp": 360
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "win",
+      "player": "Oginotakashi"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,c69ad4739baa2b87423654afb1a248ac\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"helpimbadatthislol\",\"avatar\":\"rosa\",\"rating\":2296,\"seed\":\"sodium,0b2c39dad5b29086bd89b2176ca05afc\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"Oginotakashi\",\"avatar\":\"102\",\"rating\":2344,\"seed\":\"sodium,057fcc67b3202dc3193cc7ac177ffd52\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "superfang"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "superfang"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hornleech"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flamethrower"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "boomburst"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "payback"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "payback"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "facade"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "facade"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shadowclaw"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flashcannon"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shadowclaw"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flashcannon"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flashcannon"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "irondefense"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "focusblast"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "focusblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "trailblaze"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "calmmind terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "irondefense terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rest"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "milkdrink"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "superfang"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hornleech"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hornleech"
+    }
+  ],
+  "winner": "Oginotakashi"
+}

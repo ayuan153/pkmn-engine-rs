@@ -1,0 +1,1977 @@
+{
+  "id": "gen9randombattle-2604497425",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Klefki",
+      "level": 84,
+      "hp": 233,
+      "max_hp": 233
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Hitmonlee",
+      "level": 85,
+      "hp": 224,
+      "max_hp": 224
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Mudsdale",
+      "level": 83,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Magnet Rise",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Heavy Slam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 88,
+      "max_hp": 233
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 102,
+      "max_hp": 233
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Heavy Slam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Meganium",
+      "level": 90,
+      "hp": 290,
+      "max_hp": 290
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Spidops",
+      "level": 96,
+      "hp": 271,
+      "max_hp": 271
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 154,
+      "max_hp": 271
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sticky Web",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Sticky Web"
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 69,
+      "max_hp": 271
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Toxic Spikes",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Toxic Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Spikes",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dondozo",
+      "level": 78,
+      "hp": 362,
+      "max_hp": 362
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 302,
+      "max_hp": 362,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 269,
+      "max_hp": 362
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Curse",
+      "target": "p2"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Overqwil",
+      "level": 82,
+      "hp": 274,
+      "max_hp": 274
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "sideend",
+      "player": "p1",
+      "condition": "Toxic Spikes"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 240,
+      "max_hp": 274,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wave Crash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 126,
+      "max_hp": 274
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 231,
+      "max_hp": 362,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dipplin",
+      "level": 88,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 249,
+      "max_hp": 284,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Mudsdale",
+      "level": 83,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 252,
+      "max_hp": 302,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 270,
+      "max_hp": 302
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Hitmonlee",
+      "level": 85,
+      "hp": 224,
+      "max_hp": 224
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 187,
+      "max_hp": 224,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Giga Drain",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 120,
+      "max_hp": 224
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 283,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Slowking",
+      "level": 88,
+      "hp": 310,
+      "max_hp": 310
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 272,
+      "max_hp": 310,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Swords Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 291,
+      "max_hp": 310
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Banette",
+      "level": 93,
+      "hp": 270,
+      "max_hp": 270
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 237,
+      "max_hp": 270,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Shadow Sneak",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 10,
+      "max_hp": 224
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 210,
+      "max_hp": 270,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dipplin",
+      "level": 88,
+      "hp": 283,
+      "max_hp": 284
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 248,
+      "max_hp": 284,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sucker Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Grumpig",
+      "level": 92,
+      "hp": 297,
+      "max_hp": 297
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 248,
+      "max_hp": 297,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Meganium",
+      "level": 90,
+      "hp": 290,
+      "max_hp": 290
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 254,
+      "max_hp": 290,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Nasty Plot",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 266,
+      "max_hp": 297
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 272,
+      "max_hp": 290
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 103,
+      "max_hp": 290
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 106,
+      "max_hp": 297
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 121,
+      "max_hp": 290
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dipplin",
+      "level": 88,
+      "hp": 248,
+      "max_hp": 284
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 213,
+      "max_hp": 284,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sucker Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dondozo",
+      "level": 78,
+      "hp": 231,
+      "max_hp": 362
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 171,
+      "max_hp": 362,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rest",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "slp"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 362,
+      "max_hp": 362
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Giga Drain",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 247,
+      "max_hp": 362
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 271,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sleep Talk",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wave Crash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 256,
+      "max_hp": 284
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 242,
+      "max_hp": 362,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Giga Drain",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 128,
+      "max_hp": 362
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Giga Drain",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 22,
+      "max_hp": 362
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "curestatus",
+      "player": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rest",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "slp"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 362,
+      "max_hp": 362
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Giga Drain",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 238,
+      "max_hp": 362
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Giga Drain",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 121,
+      "max_hp": 362
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Giga Drain",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 3,
+      "max_hp": 362
+    },
+    {
+      "type": "turn",
+      "turn": 27
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Overqwil",
+      "level": 82,
+      "hp": 126,
+      "max_hp": 274
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 92,
+      "max_hp": 274,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "curestatus",
+      "player": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rest",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "slp"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 362,
+      "max_hp": 362
+    },
+    {
+      "type": "turn",
+      "turn": 28
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Mudsdale",
+      "level": 83,
+      "hp": 270,
+      "max_hp": 302
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 220,
+      "max_hp": 302,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 238,
+      "max_hp": 302
+    },
+    {
+      "type": "turn",
+      "turn": 29
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Liquidation",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 65,
+      "max_hp": 274,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Iron Boulder",
+      "level": 77,
+      "hp": 265,
+      "max_hp": 265
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 221,
+      "max_hp": 265,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 30
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dipplin",
+      "level": 88,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 249,
+      "max_hp": 284,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Mighty Cleave",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 171,
+      "max_hp": 284
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 195,
+      "max_hp": 265,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "turn",
+      "turn": 31
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Zen Headbutt",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 116,
+      "max_hp": 284
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 169,
+      "max_hp": 265,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Giga Drain",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 13,
+      "max_hp": 265
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 194,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 32
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Swords Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Recover",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 33
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sucker Punch"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Swords Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 34
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sucker Punch"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Swords Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 35
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sucker Punch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Dondozo",
+      "level": 78,
+      "hp": 362,
+      "max_hp": 362
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 302,
+      "max_hp": 362,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "turn",
+      "turn": 36
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sleep Talk",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wave Crash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 270,
+      "max_hp": 284
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 297,
+      "max_hp": 362,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Giga Drain",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 171,
+      "max_hp": 362
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 37
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sleep Talk",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wave Crash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 270,
+      "max_hp": 284
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 166,
+      "max_hp": 362,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Giga Drain",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 54,
+      "max_hp": 362
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 38
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Overqwil",
+      "level": 82,
+      "hp": 65,
+      "max_hp": 274
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 31,
+      "max_hp": 274,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "curestatus",
+      "player": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rest",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "slp"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 362,
+      "max_hp": 362
+    },
+    {
+      "type": "turn",
+      "turn": 39
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Gunk Shot",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 50,
+      "max_hp": 362
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 4,
+      "max_hp": 274,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sleep Talk",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rest"
+    },
+    {
+      "type": "turn",
+      "turn": 40
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Liquidation",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "win",
+      "player": "Kurumin33"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,af858f7c266c9b3a2ddea246b0e1a533\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Kurumin33\",\"avatar\":\"169\",\"rating\":2167,\"seed\":\"sodium,e04b0fb1ac51fcbbc61848acbcf30eb7\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"noocha\",\"avatar\":\"n\",\"rating\":2129,\"seed\":\"sodium,07de221c176fc1ca770516637e5cdf2d\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "magnetrise"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "heavyslam"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "heavyslam"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stickyweb"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "toxicspikes"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "curse terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shadowsneak"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "nastyplot"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychic"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychic"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606noocha|ggwp",
+      "args": ""
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rest"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sleeptalk"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "curse"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rest"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "curse"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "curse"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rest"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "liquidation terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "roar"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "mightycleave"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "zenheadbutt"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "mightycleave"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sleeptalk"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sleeptalk"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rest"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sleeptalk"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606noocha|ggwp",
+      "args": ""
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sleeptalk"
+    }
+  ],
+  "winner": "Kurumin33"
+}

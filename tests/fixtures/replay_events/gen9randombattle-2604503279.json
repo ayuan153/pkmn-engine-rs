@@ -1,0 +1,887 @@
+{
+  "id": "gen9randombattle-2604503279",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Pyroar",
+      "level": 88,
+      "hp": 295,
+      "max_hp": 295
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Tauros-Paldea-Blaze",
+      "level": 81,
+      "hp": 254,
+      "max_hp": 254
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Unnerve"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Luvdisc",
+      "level": 100,
+      "hp": 247,
+      "max_hp": 247
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Close Combat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 24,
+      "max_hp": 247
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Poliwrath",
+      "level": 88,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Endeavor",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 24,
+      "max_hp": 302
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 42,
+      "max_hp": 302
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Vespiquen",
+      "level": 99,
+      "hp": 299,
+      "max_hp": 299
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Pressure"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Drain Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 284,
+      "max_hp": 299
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 50,
+      "max_hp": 302
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 68,
+      "max_hp": 302
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 190,
+      "max_hp": 299
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 86,
+      "max_hp": 302
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Bulk Up",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 299,
+      "max_hp": 299
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 104,
+      "max_hp": 302
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 177,
+      "max_hp": 299
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 122,
+      "max_hp": 302
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 53,
+      "max_hp": 299
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "frz"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 140,
+      "max_hp": 302
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 158,
+      "max_hp": 302
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Trevenant",
+      "level": 89,
+      "hp": 296,
+      "max_hp": 296
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 122,
+      "max_hp": 296
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 196,
+      "max_hp": 296
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Toxic",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "tox"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 176,
+      "max_hp": 302
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 158,
+      "max_hp": 302,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 24,
+      "max_hp": 296
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Poltergeist",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 77,
+      "max_hp": 302
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 95,
+      "max_hp": 302
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 59,
+      "max_hp": 302,
+      "source": "[from] psn"
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Protect",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Liquidation",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 77,
+      "max_hp": 302
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 23,
+      "max_hp": 302,
+      "source": "[from] psn"
+    },
+    {
+      "type": "item",
+      "player": "p1",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 98,
+      "max_hp": 296
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Glastrier",
+      "level": 86,
+      "hp": 311,
+      "max_hp": 311
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 280,
+      "max_hp": 311
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 41,
+      "max_hp": 302
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "source": "[from] psn"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Tauros-Paldea-Blaze",
+      "level": 81,
+      "hp": 254,
+      "max_hp": 254
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 223,
+      "max_hp": 254,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flare Blitz",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 2,
+      "max_hp": 311
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 131,
+      "max_hp": 254,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "High Horsepower",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Chilling Neigh"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Overqwil",
+      "level": 82,
+      "hp": 274,
+      "max_hp": 274
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 240,
+      "max_hp": 274,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ting-Lu",
+      "level": 78,
+      "hp": 370,
+      "max_hp": 370
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Vessel of Ruin"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Swords Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Dragon"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Scale Shot",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 325,
+      "max_hp": 370
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 274,
+      "max_hp": 370
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 222,
+      "max_hp": 370
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 176,
+      "max_hp": 370
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 124,
+      "max_hp": 370
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 83,
+      "max_hp": 274
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 147,
+      "max_hp": 370
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "win",
+      "player": "kokonutpi"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,a2f538755fb686e21ff9e016c9b3b97d\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Kurumin33\",\"avatar\":\"169\",\"rating\":2165,\"seed\":\"sodium,123a37441ba0ddddcca7dd840606bf50\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"kokonutpi\",\"avatar\":\"102\",\"rating\":2166,\"seed\":\"sodium,9b960757ac0c94325475a5004424e2ad\"}"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "endeavor"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "drainpunch"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icepunch"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icepunch"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icepunch"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icepunch"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icepunch"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "poltergeist"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icepunch"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icepunch"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "highhorsepower"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flareblitz"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "scaleshot terastallize"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
+    }
+  ],
+  "winner": "kokonutpi"
+}

@@ -175,6 +175,52 @@ def parse_protocol_log(log):
                     "amount": amount,
                 })
 
+        elif cmd == "-ability":
+            if len(parts) >= 4:
+                ident = parts[2]
+                player = ident[:2]
+                ability = parts[3].strip()
+                events.append({"type": "ability", "player": player, "ability": ability})
+
+        elif cmd == "-terastallize":
+            if len(parts) >= 4:
+                ident = parts[2]
+                player = ident[:2]
+                tera_type = parts[3].strip()
+                events.append({"type": "terastallize", "player": player, "tera_type": tera_type})
+
+        elif cmd == "-item":
+            if len(parts) >= 4:
+                ident = parts[2]
+                player = ident[:2]
+                item = parts[3].strip()
+                events.append({"type": "item", "player": player, "item": item})
+
+        elif cmd == "-enditem":
+            if len(parts) >= 4:
+                ident = parts[2]
+                player = ident[:2]
+                events.append({"type": "enditem", "player": player})
+
+        elif cmd == "-sidestart":
+            if len(parts) >= 4:
+                side = parts[2].strip()
+                player = side[:2]
+                condition = parts[3].strip()
+                # Normalize: "move: Reflect" -> "Reflect"
+                if condition.startswith("move: "):
+                    condition = condition[6:]
+                events.append({"type": "sidestart", "player": player, "condition": condition})
+
+        elif cmd == "-sideend":
+            if len(parts) >= 4:
+                side = parts[2].strip()
+                player = side[:2]
+                condition = parts[3].strip()
+                if condition.startswith("move: "):
+                    condition = condition[6:]
+                events.append({"type": "sideend", "player": player, "condition": condition})
+
     return events
 
 

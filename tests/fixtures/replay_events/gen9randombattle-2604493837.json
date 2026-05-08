@@ -19,6 +19,11 @@
       "max_hp": 244
     },
     {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Mold Breaker"
+    },
+    {
       "type": "turn",
       "turn": 1
     },
@@ -156,6 +161,10 @@
       "max_hp": 362
     },
     {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
       "type": "damage",
       "player": "p2",
       "hp": 140,
@@ -227,6 +236,11 @@
       "max_hp": 240
     },
     {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Mold Breaker"
+    },
+    {
       "type": "turn",
       "turn": 5
     },
@@ -282,6 +296,11 @@
       "player": "p2",
       "move": "Sticky Web",
       "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Sticky Web"
     },
     {
       "type": "turn",
@@ -342,6 +361,20 @@
       "player": "p1",
       "move": "Switcheroo",
       "target": "p2"
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Choice Band"
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "item",
+      "player": "p1",
+      "item": "White Herb"
     },
     {
       "type": "move",
@@ -808,6 +841,293 @@
     {
       "type": "win",
       "player": "PepsiPHD"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,4bb858dddb993f548ad87f097c585e7c\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Choice Kicks\",\"avatar\":\"roxie\",\"rating\":2185,\"seed\":\"sodium,0db5f045abf6d9d56bff2dd4a3146ae0\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"PepsiPHD\",\"avatar\":\"li\",\"rating\":2139,\"seed\":\"sodium,449b10150123f6f9c302f43b00307437\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "scaleshot"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rest"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "scaleshot"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stickyweb"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "switcheroo"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "iciclespear"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "iciclespear"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "kowtowcleave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wavecrash terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "iciclespear"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "superpower"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "iciclespear"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "superpower"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stunspore"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stunspore"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Choice",
+      "args": "Kicks|gg"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
     }
   ],
   "winner": "PepsiPHD"

@@ -1,0 +1,1495 @@
+{
+  "id": "gen9randombattle-2604498782",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Furret",
+      "level": 94,
+      "hp": 312,
+      "max_hp": 312
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Arceus-Flying",
+      "level": 69,
+      "hp": 279,
+      "max_hp": 279
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Sky Plate"
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Corviknight",
+      "level": 80,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Double-Edge",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 202,
+      "max_hp": 288
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 284,
+      "max_hp": 312,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 220,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lanturn",
+      "level": 89,
+      "hp": 367,
+      "max_hp": 367
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Brave Bird",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 299,
+      "max_hp": 367
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 198,
+      "max_hp": 288,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 321,
+      "max_hp": 367
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 216,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Gardevoir",
+      "level": 83,
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Volt Absorb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Scald",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 185,
+      "max_hp": 249
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 343,
+      "max_hp": 367
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Greedent",
+      "level": 86,
+      "hp": 347,
+      "max_hp": 347
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Moonblast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 208,
+      "max_hp": 347
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Corviknight",
+      "level": 80,
+      "hp": 216,
+      "max_hp": 288
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Knock Off",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 150,
+      "max_hp": 288
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lanturn",
+      "level": 89,
+      "hp": 343,
+      "max_hp": 367
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Roost",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 365,
+      "max_hp": 367
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Gardevoir",
+      "level": 83,
+      "hp": 185,
+      "max_hp": 249
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Volt Absorb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Scald",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 124,
+      "max_hp": 249
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 367,
+      "max_hp": 367
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Greedent",
+      "level": 86,
+      "hp": 208,
+      "max_hp": 347
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Moonblast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 76,
+      "max_hp": 347
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 162,
+      "max_hp": 347
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 277,
+      "max_hp": 347
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Corviknight",
+      "level": 80,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 244,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Press",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 177,
+      "max_hp": 347
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 199,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lanturn",
+      "level": 89,
+      "hp": 367,
+      "max_hp": 367
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Press",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 290,
+      "max_hp": 367
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 312,
+      "max_hp": 367
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Arceus-Flying",
+      "level": 69,
+      "hp": 279,
+      "max_hp": 279
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Scald",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 197,
+      "max_hp": 279
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 334,
+      "max_hp": 367
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Calm Mind",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Scald",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 143,
+      "max_hp": 279
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 356,
+      "max_hp": 367
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earth Power",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 194,
+      "max_hp": 367
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunder Wave",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 216,
+      "max_hp": 367
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Furret",
+      "level": 94,
+      "hp": 284,
+      "max_hp": 312
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Sky Plate"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 279,
+      "max_hp": 279
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Corviknight",
+      "level": 80,
+      "hp": 199,
+      "max_hp": 288
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "U-turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 183,
+      "max_hp": 288
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lanturn",
+      "level": 89,
+      "hp": 216,
+      "max_hp": 367
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 238,
+      "max_hp": 367
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Gardevoir",
+      "level": 83,
+      "hp": 124,
+      "max_hp": 249
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Volt Absorb"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Scald",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 54,
+      "max_hp": 249
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 260,
+      "max_hp": 367
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Moonblast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 133,
+      "max_hp": 367
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Scald",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 8,
+      "max_hp": 249
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 155,
+      "max_hp": 367
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Moonblast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 28,
+      "max_hp": 367
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Scald",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 50,
+      "max_hp": 367
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Entei",
+      "level": 78,
+      "hp": 307,
+      "max_hp": 307
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Noivern",
+      "level": 82,
+      "hp": 274,
+      "max_hp": 274
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flare Blitz",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 173,
+      "max_hp": 274
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 274,
+      "max_hp": 307,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Oinkologne",
+      "level": 92,
+      "hp": 352,
+      "max_hp": 352
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Boomburst",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 159,
+      "max_hp": 352
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 181,
+      "max_hp": 352
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Boomburst",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Corviknight",
+      "level": 80,
+      "hp": 183,
+      "max_hp": 288
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Greedent",
+      "level": 86,
+      "hp": 177,
+      "max_hp": 347
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Press",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 71,
+      "max_hp": 347
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Press",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lanturn",
+      "level": 89,
+      "hp": 50,
+      "max_hp": 367
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Arceus-Flying",
+      "level": 69,
+      "hp": 279,
+      "max_hp": 279
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunderbolt",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 3,
+      "max_hp": 279
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 72,
+      "max_hp": 367
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Scald",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 94,
+      "max_hp": 367
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Entei",
+      "level": 78,
+      "hp": 274,
+      "max_hp": 307
+    },
+    {
+      "type": "turn",
+      "turn": 27
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Leavanny",
+      "level": 86,
+      "hp": 269,
+      "max_hp": 269
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flare Blitz",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 185,
+      "max_hp": 307,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Noivern",
+      "level": 82,
+      "hp": 173,
+      "max_hp": 274
+    },
+    {
+      "type": "turn",
+      "turn": 28
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Corviknight",
+      "level": 80,
+      "hp": 183,
+      "max_hp": 288
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Pressure"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Boomburst",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 65,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 29
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Boomburst",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Entei",
+      "level": 78,
+      "hp": 235,
+      "max_hp": 235
+    },
+    {
+      "type": "turn",
+      "turn": 30
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Lanturn",
+      "level": 89,
+      "hp": 94,
+      "max_hp": 367
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dark Pulse",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 212,
+      "max_hp": 235,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Furret",
+      "level": 94,
+      "hp": 284,
+      "max_hp": 312
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Life Orb"
+    },
+    {
+      "type": "turn",
+      "turn": 31
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Double-Edge",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 214,
+      "max_hp": 312,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Entei",
+      "level": 78,
+      "hp": 185,
+      "max_hp": 307
+    },
+    {
+      "type": "turn",
+      "turn": 32
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Double-Edge",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 153,
+      "max_hp": 312,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "win",
+      "player": "muddbud"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,a13ebba184ce20b1a770b12a64d8c971\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"muddbud\",\"avatar\":\"benga\",\"rating\":2177,\"seed\":\"sodium,448dbacdd9875db77cb707bb75fabded\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"Lirvothethird\",\"avatar\":\"pokemonbreeder-gen4\",\"rating\":2111,\"seed\":\"sodium,f3ca7f91efab532e15cf7f4130f6f814\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthpower"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flareblitz"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "boomburst terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "boomburst"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "scald"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "judgment"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flareblitz"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "boomburst"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "boomburst"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "darkpulse"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "darkpulse"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "doubleedge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sacredfire terastallize"
+    }
+  ],
+  "winner": "muddbud"
+}

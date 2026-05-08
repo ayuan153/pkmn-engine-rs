@@ -143,6 +143,11 @@
       "target": "p2"
     },
     {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Sticky Web"
+    },
+    {
       "type": "move",
       "player": "p2",
       "move": "Earthquake",
@@ -189,7 +194,8 @@
     },
     {
       "type": "weather",
-      "weather": "RainDance"
+      "weather": "RainDance",
+      "source": "[from] ability: Drizzle"
     },
     {
       "type": "turn",
@@ -221,7 +227,8 @@
     },
     {
       "type": "weather",
-      "weather": "RainDance"
+      "weather": "RainDance",
+      "source": "[upkeep]"
     },
     {
       "type": "turn",
@@ -259,7 +266,8 @@
     },
     {
       "type": "weather",
-      "weather": "RainDance"
+      "weather": "RainDance",
+      "source": "[upkeep]"
     },
     {
       "type": "turn",
@@ -282,7 +290,8 @@
     },
     {
       "type": "weather",
-      "weather": "RainDance"
+      "weather": "RainDance",
+      "source": "[upkeep]"
     },
     {
       "type": "switch",
@@ -308,12 +317,17 @@
       "hp": 0
     },
     {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
       "type": "faint",
       "player": "p1"
     },
     {
       "type": "weather",
-      "weather": "RainDance"
+      "weather": "RainDance",
+      "source": "[upkeep]"
     },
     {
       "type": "status",
@@ -343,6 +357,10 @@
       "player": "p1",
       "hp": 239,
       "max_hp": 271
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
     },
     {
       "type": "move",
@@ -496,6 +514,11 @@
       "max_hp": 196
     },
     {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Tangling Hair"
+    },
+    {
       "type": "unboost",
       "player": "p1",
       "stat": "spe",
@@ -540,6 +563,11 @@
       "type": "damage",
       "player": "p2",
       "hp": 0
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Tangling Hair"
     },
     {
       "type": "unboost",
@@ -716,6 +744,11 @@
       "amount": 1
     },
     {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Defiant"
+    },
+    {
       "type": "boost",
       "player": "p2",
       "stat": "atk",
@@ -782,6 +815,293 @@
     {
       "type": "win",
       "player": "gr88nhood"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,f860fc35bcb0b8c20370ae929407f148\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"gr88nhood\",\"avatar\":\"1\",\"rating\":1549,\"seed\":\"sodium,f86e8b326715c9c4e8fbd8279a63415a\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"romanrosina\",\"avatar\":\"1\",\"rating\":1532,\"seed\":\"sodium,495319f1c2e656ba5a99e9f042f9bd3a\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "poltergeist"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sunsteelstrike terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stickyweb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "megahorn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "focusblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "poisonjab"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "focusblast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "poisonjab"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "focusblast"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "megahorn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "freezedry"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "taunt"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
     }
   ],
   "winner": "gr88nhood"

@@ -1,0 +1,470 @@
+{
+  "id": "gen9randombattle-2604503446",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Orthworm",
+      "level": 88,
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Kingambit",
+      "level": 74,
+      "hp": 270,
+      "max_hp": 270
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Swords Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Fighting"
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Flying"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Body Press",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 210,
+      "max_hp": 270
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Swords Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 226,
+      "max_hp": 270
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Heavy Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 165,
+      "max_hp": 270
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Head",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 92,
+      "max_hp": 266
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 108,
+      "max_hp": 266
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 181,
+      "max_hp": 270
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sucker Punch"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 124,
+      "max_hp": 266
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 197,
+      "max_hp": 270
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Heavy Slam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 143,
+      "max_hp": 270
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Kowtow Cleave",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 38,
+      "max_hp": 266
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 54,
+      "max_hp": 266
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 159,
+      "max_hp": 270
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sucker Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 175,
+      "max_hp": 270
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Darkrai",
+      "level": 77,
+      "hp": 234,
+      "max_hp": 234
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Substitute",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 176,
+      "max_hp": 234
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Head",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 190,
+      "max_hp": 234
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 191,
+      "max_hp": 270
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Substitute",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 132,
+      "max_hp": 234
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Head",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 146,
+      "max_hp": 234
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 207,
+      "max_hp": 270
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dark Pulse",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 105,
+      "max_hp": 270
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Iron Head",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 121,
+      "max_hp": 270
+    },
+    {
+      "type": "win",
+      "player": "Boomtown2012"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,5811c00de2f1c98ce009186151d875a7\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Gryptfriend\",\"avatar\":\"roughneck-gen4\",\"rating\":1384,\"seed\":\"sodium,3b445101f2c0719b605f3a7b1058f901\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"Boomtown2012\",\"avatar\":\"lucas-gen4pt\",\"rating\":1356,\"seed\":\"sodium,554679c47c0e4a43ea037e2f6195ed4c\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodypress terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "heavyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "heavyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "kowtowcleave"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "heavyslam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "darkpulse"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
+    }
+  ],
+  "winner": "Boomtown2012"
+}

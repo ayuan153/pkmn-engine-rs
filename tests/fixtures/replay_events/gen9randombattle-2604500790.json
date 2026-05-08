@@ -1,0 +1,1018 @@
+{
+  "id": "gen9randombattle-2604500790",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Froslass",
+      "level": 87,
+      "hp": 263,
+      "max_hp": 263
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Garchomp",
+      "level": 74,
+      "hp": 282,
+      "max_hp": 282
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Infernape",
+      "level": 82,
+      "hp": 259,
+      "max_hp": 259
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Triple Axel",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 247,
+      "max_hp": 259
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 223,
+      "max_hp": 259
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 191,
+      "max_hp": 259
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Destiny Bond",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Overheat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Granbull",
+      "level": 88,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Komala",
+      "level": 88,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Comatose"
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Golurk",
+      "level": 87,
+      "hp": 297,
+      "max_hp": 297
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "U-turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 275,
+      "max_hp": 297
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Yanmega",
+      "level": 82,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Protect",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Stone Edge",
+      "target": "p2"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Speed Boost"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Garchomp",
+      "level": 74,
+      "hp": 282,
+      "max_hp": 282
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Arboliva",
+      "level": 91,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Skeledirge",
+      "level": 79,
+      "hp": 294,
+      "max_hp": 294
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Substitute",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 216,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Torch Song",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 76,
+      "max_hp": 288
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 148,
+      "max_hp": 288
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leech Seed",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 258,
+      "max_hp": 294,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 184,
+      "max_hp": 288
+    },
+    {
+      "type": "item",
+      "player": "p1",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Barraskewda",
+      "level": 81,
+      "hp": 231,
+      "max_hp": 231
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Torch Song",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 144,
+      "max_hp": 231
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 222,
+      "max_hp": 294,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 180,
+      "max_hp": 231
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Granbull",
+      "level": 88,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Garchomp",
+      "level": 74,
+      "hp": 282,
+      "max_hp": 282
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Komala",
+      "level": 88,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Comatose"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Play Rough",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 110,
+      "max_hp": 258
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Golurk",
+      "level": 87,
+      "hp": 275,
+      "max_hp": 297
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 99,
+      "max_hp": 297
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Knock Off",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Rillaboom",
+      "level": 79,
+      "hp": 288,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Yanmega",
+      "level": 82,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Swords Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Granbull",
+      "level": 88,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Air Slash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 185,
+      "max_hp": 302
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 203,
+      "max_hp": 302
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 221,
+      "max_hp": 302
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Speed Boost"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Air Slash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 107,
+      "max_hp": 302
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 125,
+      "max_hp": 302
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 143,
+      "max_hp": 302
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Speed Boost"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Air Slash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 28,
+      "max_hp": 302
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 46,
+      "max_hp": 302
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 64,
+      "max_hp": 302
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Speed Boost"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Air Slash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Speed Boost"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Arboliva",
+      "level": 91,
+      "hp": 184,
+      "max_hp": 288
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Water"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Bug Buzz",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 96,
+      "max_hp": 288
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 168,
+      "max_hp": 288
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leech Seed",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 241,
+      "max_hp": 275,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 202,
+      "max_hp": 288
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Speed Boost"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Zekrom",
+      "level": 71,
+      "hp": 259,
+      "max_hp": 259
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Teravolt"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hyper Voice",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 120,
+      "max_hp": 259
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 136,
+      "max_hp": 259
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Bolt Strike",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 152,
+      "max_hp": 259
+    },
+    {
+      "type": "win",
+      "player": "hoang nguyen"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,c5b35ed2e894258326618dd2107d77d1\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Kvngnick18\",\"avatar\":\"169\",\"rating\":2020,\"seed\":\"sodium,20b7e6a2d8e0a6c831f87a9f7503e2f6\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"hoang nguyen\",\"avatar\":\"acetrainerf\",\"rating\":2056,\"seed\":\"sodium,3945054d667bc4bc0bdd79ff669e6f4a\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "tripleaxel"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "destinybond"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "overheat"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stoneedge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leechseed"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "torchsong"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "torchsong"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dynamicpunch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "airslash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "airslash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "airslash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "airslash"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leechseed terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hypervoice"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hypervoice"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "boltstrike"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
+    }
+  ],
+  "winner": "hoang nguyen"
+}

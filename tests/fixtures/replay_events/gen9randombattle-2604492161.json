@@ -73,6 +73,10 @@
       "max_hp": 246
     },
     {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
       "type": "heal",
       "player": "p2",
       "hp": 221,
@@ -155,6 +159,10 @@
       "max_hp": 275
     },
     {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
       "type": "turn",
       "turn": 5
     },
@@ -210,10 +218,20 @@
       "amount": 1
     },
     {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Toxic Spikes"
+    },
+    {
       "type": "move",
       "player": "p2",
       "move": "Stealth Rock",
       "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Stealth Rock"
     },
     {
       "type": "turn",
@@ -229,6 +247,15 @@
       "type": "damage",
       "player": "p2",
       "hp": 0
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Toxic Spikes"
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
     },
     {
       "type": "faint",
@@ -488,6 +515,10 @@
       "max_hp": 234
     },
     {
+      "type": "enditem",
+      "player": "p1"
+    },
+    {
       "type": "move",
       "player": "p1",
       "move": "Will-O-Wisp",
@@ -557,6 +588,11 @@
       "level": 78,
       "hp": 253,
       "max_hp": 253
+    },
+    {
+      "type": "sideend",
+      "player": "p1",
+      "condition": "Toxic Spikes"
     },
     {
       "type": "turn",
@@ -647,6 +683,10 @@
       "hp": 0
     },
     {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
       "type": "faint",
       "player": "p2"
     },
@@ -706,6 +746,10 @@
       "player": "p1",
       "hp": 125,
       "max_hp": 258
+    },
+    {
+      "type": "enditem",
+      "player": "p1"
     },
     {
       "type": "heal",
@@ -778,6 +822,11 @@
       "max_hp": 267
     },
     {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Weak Armor"
+    },
+    {
       "type": "unboost",
       "player": "p2",
       "stat": "def",
@@ -788,6 +837,10 @@
       "player": "p2",
       "stat": "spe",
       "amount": 2
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
     },
     {
       "type": "move",
@@ -928,6 +981,423 @@
     {
       "type": "win",
       "player": "Falkner44"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,d10e26407f686d5ff0c9e4bab617ae77\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Falkner44\",\"avatar\":\"102\",\"rating\":1113,\"seed\":\"sodium,21acdc6a9a93287a7dcf9829732f2913\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"PichiMomo\",\"avatar\":\"roxie\",\"rating\":1138,\"seed\":\"sodium,7f76d399162ccf23245e36d6669d9519\"}"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606PichiMomo|glhf",
+      "args": ""
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "surf"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "noretreat"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychic"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychic"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "swordsdance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "ironhead"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "aquajet"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "closecombat"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "surf"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Falkner44|Falinks",
+      "args": "is my fav pokemon so its nice it put in the work"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606PichiMomo|oh",
+      "args": "hell yeah it does"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606PichiMomo|i",
+      "args": "love falinks"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606PichiMomo|a",
+      "args": "wonderful funky coalition of little dudes"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Falkner44|Its",
+      "args": "new mega looks kinda derpy too"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Falkner44|in",
+      "args": "a good way"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606PichiMomo|it",
+      "args": "reminds me of like older mecha anime"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606PichiMomo|like",
+      "args": "gurren lagann"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606PichiMomo|which",
+      "args": "is big baller"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "willowisp"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Falkner44|Yeah",
+      "args": ""
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "poltergeist"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "swordsdance terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "willowisp"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "drainingkiss"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606PichiMomo|on",
+      "args": "ARCEUS the true hazard in any showdown match is knock off lmaooooo"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafblade"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafblade"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "drainpunch"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Falkner44|Lol",
+      "args": "there has to have been at least 5 knock offs in this game"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "knockoff"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "meteorbeam"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606PichiMomo|I",
+      "args": "KNOW"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606PichiMomo|also",
+      "args": "the sheer amount of choicing going on in the rng is unconscionable"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafblade"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "meteorbeam"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Falkner44|yeah",
+      "args": ""
+    },
+    {
+      "player": "chat",
+      "action": "\u2606PichiMomo|like",
+      "args": "can a bitch get a weakness policy?"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606PichiMomo|iapapa",
+      "args": "berry perhaps?"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "fierydance"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psyshock"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "surf"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "meteorbeam"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Falkner44|Yeah",
+      "args": "the rng really sucks sometimes"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606PichiMomo|like",
+      "args": "i deadass used to BUILD choice and now when my choices get knocked off or tricked i literally say 'thank GOD'"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gunkshot"
     }
   ],
   "winner": "Falkner44"

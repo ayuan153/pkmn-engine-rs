@@ -1,0 +1,1421 @@
+{
+  "id": "gen9randombattle-2604502344",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Klefki",
+      "level": 84,
+      "hp": 233,
+      "max_hp": 233
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Porygon2",
+      "level": 81,
+      "hp": 270,
+      "max_hp": 270
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Download"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunder Wave",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Discharge",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 140,
+      "max_hp": 233
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 154,
+      "max_hp": 233
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 168,
+      "max_hp": 233
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Discharge",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 79,
+      "max_hp": 233
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 93,
+      "max_hp": 233
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spikes",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Discharge",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 12,
+      "max_hp": 233
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "par"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 26,
+      "max_hp": 233
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dazzling Gleam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 219,
+      "max_hp": 270
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Discharge",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Scovillain",
+      "level": 91,
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leech Seed",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 186,
+      "max_hp": 270,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Zapdos",
+      "level": 78,
+      "hp": 268,
+      "max_hp": 268
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Substitute",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 200,
+      "max_hp": 266
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 216,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hurricane",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leech Seed",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 232,
+      "max_hp": 266
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 235,
+      "max_hp": 268,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 265,
+      "max_hp": 266
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Protect",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hurricane",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 266,
+      "max_hp": 266
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 202,
+      "max_hp": 268,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hurricane",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Flamethrower",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 63,
+      "max_hp": 268
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 30,
+      "max_hp": 268,
+      "source": "[from] Leech Seed"
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hurricane",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Persian-Alola",
+      "level": 86,
+      "hp": 252,
+      "max_hp": 252
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Foul Play",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Porygon2",
+      "level": 81,
+      "hp": 186,
+      "max_hp": 270
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 119,
+      "max_hp": 270,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Download"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Camerupt",
+      "level": 91,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 254,
+      "max_hp": 270
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Stealth Rock",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Tri Attack",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 193,
+      "max_hp": 275
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 210,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Tri Attack",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 116,
+      "max_hp": 275
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "par"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roar",
+      "target": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Gouging Fire",
+      "level": 74,
+      "hp": 277,
+      "max_hp": 277
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 133,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 67,
+      "max_hp": 277
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 150,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Annihilape",
+      "level": 76,
+      "hp": 292,
+      "max_hp": 292
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Heat Crash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 85,
+      "max_hp": 292
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Bulk Up",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Persian-Alola",
+      "level": 86,
+      "hp": 252,
+      "max_hp": 252
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Heat Crash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 141,
+      "max_hp": 252
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Heat Crash",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 39,
+      "max_hp": 252
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Foul Play",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Exeggutor",
+      "level": 89,
+      "hp": 314,
+      "max_hp": 314
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 236,
+      "max_hp": 314,
+      "source": "[from] Spikes"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 197,
+      "max_hp": 314,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Taunt",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Giga Drain",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 217,
+      "max_hp": 314
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Solgaleo",
+      "level": 74,
+      "hp": 325,
+      "max_hp": 325
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Flame Charge",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 143,
+      "max_hp": 314
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 221,
+      "max_hp": 314
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Giga Drain",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 262,
+      "max_hp": 325
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 253,
+      "max_hp": 314
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sunsteel Strike",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 145,
+      "max_hp": 314
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 223,
+      "max_hp": 314
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Giga Drain",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 205,
+      "max_hp": 325
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 252,
+      "max_hp": 314
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sunsteel Strike",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 147,
+      "max_hp": 314
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 225,
+      "max_hp": 314
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sleep Powder",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "slp"
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Calm Mind",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Giga Drain",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 112,
+      "max_hp": 325
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 272,
+      "max_hp": 314
+    },
+    {
+      "type": "turn",
+      "turn": 27
+    },
+    {
+      "type": "curestatus",
+      "player": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sunsteel Strike",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 163,
+      "max_hp": 314
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Calm Mind",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 28
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sunsteel Strike",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 48,
+      "max_hp": 314
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 126,
+      "max_hp": 314
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sleep Powder",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 29
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sunsteel Strike",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 12,
+      "max_hp": 314
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sleep Powder",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "slp"
+    },
+    {
+      "type": "turn",
+      "turn": 30
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Annihilape",
+      "level": 76,
+      "hp": 85,
+      "max_hp": 292
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Giga Drain",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 55,
+      "max_hp": 314
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "item",
+      "player": "p2",
+      "item": "Sitrus Berry"
+    },
+    {
+      "type": "enditem",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 133,
+      "max_hp": 314
+    },
+    {
+      "type": "win",
+      "player": "Teres bahji"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,7eab1372a9e7d658b8cfbec956e3599e\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"fdjskl\",\"avatar\":\"170\",\"rating\":2124,\"seed\":\"sodium,88ced730a9ef5e280d8205c80347c223\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"Teres bahji\",\"avatar\":\"#rbtt6teamzarudef\",\"rating\":2214,\"seed\":\"sodium,88ec076011ba6b8bbc586f4a7f1fe990\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "discharge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "discharge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "discharge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spikes"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "discharge"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "discharge"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leechseed"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "triattack"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "substitute"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leechseed"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flamethrower"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flamethrower"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "foulplay"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "triattack"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roar"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "triattack"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bulkup"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "heatcrash"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "heatcrash"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "foulplay"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "heatcrash"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "taunt"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flamecharge"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sunsteelstrike"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sunsteelstrike"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sleeppowder"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sunsteelstrike"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sunsteelstrike"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sunsteelstrike"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sunsteelstrike"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sleeppowder"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sunsteelstrike"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "sleeppowder"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "gigadrain"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
+    }
+  ],
+  "winner": "Teres bahji"
+}
