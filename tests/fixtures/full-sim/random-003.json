@@ -1,0 +1,851 @@
+{
+  "id": "random-003",
+  "description": "Random battle random-003",
+  "seed": [
+    3008,
+    3009,
+    3010,
+    3011
+  ],
+  "format": "gen9randombattle",
+  "p1": {
+    "team": [
+      {
+        "species": "Greedent",
+        "ability": "Cheek Pouch",
+        "item": "Sitrus Berry",
+        "moves": [
+          "Swords Dance",
+          "Double-Edge",
+          "Earthquake",
+          "Knock Off"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 86,
+        "gender": "F"
+      },
+      {
+        "species": "Feraligatr",
+        "ability": "Sheer Force",
+        "item": "Life Orb",
+        "moves": [
+          "Liquidation",
+          "Dragon Dance",
+          "Ice Punch",
+          "Crunch"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "M"
+      },
+      {
+        "species": "Beartic",
+        "ability": "Swift Swim",
+        "item": "Choice Band",
+        "moves": [
+          "Aqua Jet",
+          "Earthquake",
+          "Icicle Crash",
+          "Close Combat"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 91,
+        "gender": "M"
+      },
+      {
+        "species": "Toxicroak",
+        "ability": "Dry Skin",
+        "item": "Life Orb",
+        "moves": [
+          "Gunk Shot",
+          "Close Combat",
+          "Knock Off",
+          "Swords Dance"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "M"
+      },
+      {
+        "species": "Lapras",
+        "ability": "Water Absorb",
+        "item": "Choice Specs",
+        "moves": [
+          "Ice Beam",
+          "Sparkling Aria",
+          "Hydro Pump",
+          "Freeze-Dry"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 81,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 87,
+        "gender": "F"
+      },
+      {
+        "species": "Muk",
+        "ability": "Poison Touch",
+        "item": "Leftovers",
+        "moves": [
+          "Drain Punch",
+          "Toxic Spikes",
+          "Knock Off",
+          "Poison Jab"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 86,
+        "gender": "F"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Vespiquen",
+        "ability": "Pressure",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Roost",
+          "Hurricane",
+          "Toxic",
+          "U-turn"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 99,
+        "gender": "F"
+      },
+      {
+        "species": "Goodra",
+        "ability": "Sap Sipper",
+        "item": "Assault Vest",
+        "moves": [
+          "Sludge Bomb",
+          "Scald",
+          "Dragon Tail",
+          "Draco Meteor"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 85,
+        "gender": "M"
+      },
+      {
+        "species": "Electivire",
+        "ability": "Motor Drive",
+        "item": "Life Orb",
+        "moves": [
+          "Ice Punch",
+          "Bulk Up",
+          "Earthquake",
+          "Supercell Slam"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "M"
+      },
+      {
+        "species": "Wyrdeer",
+        "ability": "Intimidate",
+        "item": "Leftovers",
+        "moves": [
+          "Thunder Wave",
+          "Psychic Noise",
+          "Body Slam",
+          "Earthquake"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 87,
+        "gender": "F"
+      },
+      {
+        "species": "Pyroar",
+        "ability": "Unnerve",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Hyper Voice",
+          "Fire Blast",
+          "Will-O-Wisp",
+          "Work Up"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "F"
+      },
+      {
+        "species": "Serperior",
+        "ability": "Contrary",
+        "item": "Leftovers",
+        "moves": [
+          "Leech Seed",
+          "Substitute",
+          "Dragon Pulse",
+          "Leaf Storm"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "F"
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "switch 5"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "switch 2",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "switch 4"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "switch 5",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "switch 1"
+    ],
+    [
+      "move 3",
+      "switch 6"
+    ],
+    [
+      "switch 6",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "switch 1"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "switch 3",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "switch 3"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "switch 2"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Greedent|Greedent, L86, F|347/347",
+    "|switch|p2a: Vespiquen|Vespiquen, L99, F|299/299",
+    "|-ability|p2a: Vespiquen|Pressure",
+    "|turn|1",
+    "|move|p2a: Vespiquen|U-turn|p1a: Greedent",
+    "|-damage|p1a: Greedent|265/347",
+    "|switch|p2a: Pyroar|Pyroar, L88, F|295/295|[from] U-turn",
+    "|-ability|p2a: Pyroar|Unnerve",
+    "|move|p1a: Greedent|Earthquake|p2a: Pyroar",
+    "|-supereffective|p2a: Pyroar",
+    "|-damage|p2a: Pyroar|143/295",
+    "|upkeep",
+    "|turn|2",
+    "|move|p2a: Pyroar|Fire Blast|p1a: Greedent",
+    "|-damage|p1a: Greedent|115/347",
+    "|move|p1a: Greedent|Double-Edge|p2a: Pyroar",
+    "|-damage|p2a: Pyroar|7/295",
+    "|-damage|p1a: Greedent|70/347|[from] Recoil",
+    "|upkeep",
+    "|turn|3",
+    "|move|p2a: Pyroar|Will-O-Wisp|p1a: Greedent|[miss]",
+    "|-miss|p2a: Pyroar|p1a: Greedent",
+    "|move|p1a: Greedent|Swords Dance|p1a: Greedent",
+    "|-boost|p1a: Greedent|atk|2",
+    "|upkeep",
+    "|turn|4",
+    "|move|p2a: Pyroar|Fire Blast|p1a: Greedent",
+    "|-damage|p1a: Greedent|0 fnt",
+    "|faint|p1a: Greedent",
+    "|upkeep",
+    "|switch|p1a: Feraligatr|Feraligatr, L79, M|264/264",
+    "|turn|5",
+    "|move|p2a: Pyroar|Work Up|p2a: Pyroar",
+    "|-boost|p2a: Pyroar|atk|1",
+    "|-boost|p2a: Pyroar|spa|1",
+    "|move|p1a: Feraligatr|Ice Punch|p2a: Pyroar",
+    "|-resisted|p2a: Pyroar",
+    "|-damage|p2a: Pyroar|0 fnt",
+    "|faint|p2a: Pyroar",
+    "|upkeep",
+    "|switch|p2a: Wyrdeer|Wyrdeer, L87, F|321/321",
+    "|-ability|p2a: Wyrdeer|Intimidate|boost",
+    "|-unboost|p1a: Feraligatr|atk|1",
+    "|turn|6",
+    "|move|p1a: Feraligatr|Ice Punch|p2a: Wyrdeer",
+    "|-damage|p2a: Wyrdeer|257/321",
+    "|move|p2a: Wyrdeer|Thunder Wave|p1a: Feraligatr",
+    "|-status|p1a: Feraligatr|par",
+    "|-heal|p2a: Wyrdeer|277/321|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|7",
+    "|move|p2a: Wyrdeer|Thunder Wave|p1a: Feraligatr",
+    "|-fail|p1a: Feraligatr|par",
+    "|move|p1a: Feraligatr|Ice Punch|p2a: Wyrdeer",
+    "|-damage|p2a: Wyrdeer|216/321",
+    "|-heal|p2a: Wyrdeer|236/321|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|8",
+    "|move|p2a: Wyrdeer|Psychic Noise|p1a: Feraligatr",
+    "|-crit|p1a: Feraligatr",
+    "|-damage|p1a: Feraligatr|117/264 par",
+    "|-start|p1a: Feraligatr|move: Heal Block",
+    "|cant|p1a: Feraligatr|par",
+    "|-heal|p2a: Wyrdeer|256/321|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|9",
+    "|move|p2a: Wyrdeer|Earthquake|p1a: Feraligatr",
+    "|-damage|p1a: Feraligatr|47/264 par",
+    "|cant|p1a: Feraligatr|par",
+    "|-heal|p2a: Wyrdeer|276/321|[from] item: Leftovers",
+    "|-end|p1a: Feraligatr|move: Heal Block",
+    "|upkeep",
+    "|turn|10",
+    "|move|p2a: Wyrdeer|Thunder Wave|p1a: Feraligatr",
+    "|-fail|p1a: Feraligatr|par",
+    "|move|p1a: Feraligatr|Crunch|p2a: Wyrdeer",
+    "|-supereffective|p2a: Wyrdeer",
+    "|-damage|p2a: Wyrdeer|149/321",
+    "|-heal|p2a: Wyrdeer|169/321|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|11",
+    "|move|p2a: Wyrdeer|Thunder Wave|p1a: Feraligatr",
+    "|-fail|p1a: Feraligatr|par",
+    "|move|p1a: Feraligatr|Crunch|p2a: Wyrdeer",
+    "|-supereffective|p2a: Wyrdeer",
+    "|-damage|p2a: Wyrdeer|36/321",
+    "|-heal|p2a: Wyrdeer|56/321|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|12",
+    "|move|p2a: Wyrdeer|Psychic Noise|p1a: Feraligatr",
+    "|-damage|p1a: Feraligatr|0 fnt",
+    "|faint|p1a: Feraligatr",
+    "|-heal|p2a: Wyrdeer|76/321|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p1a: Lapras|Lapras, L87, F|367/367",
+    "|turn|13",
+    "|move|p2a: Wyrdeer|Thunder Wave|p1a: Lapras",
+    "|-status|p1a: Lapras|par",
+    "|cant|p1a: Lapras|par",
+    "|-heal|p2a: Wyrdeer|96/321|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|14",
+    "|move|p2a: Wyrdeer|Psychic Noise|p1a: Lapras",
+    "|-damage|p1a: Lapras|286/367 par",
+    "|-start|p1a: Lapras|move: Heal Block",
+    "|move|p1a: Lapras|Hydro Pump|p2a: Wyrdeer|[miss]",
+    "|-miss|p1a: Lapras|p2a: Wyrdeer",
+    "|-heal|p2a: Wyrdeer|116/321|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|15",
+    "|move|p2a: Wyrdeer|Earthquake|p1a: Lapras",
+    "|-damage|p1a: Lapras|207/367 par",
+    "|cant|p1a: Lapras|par",
+    "|-heal|p2a: Wyrdeer|136/321|[from] item: Leftovers",
+    "|-end|p1a: Lapras|move: Heal Block",
+    "|upkeep",
+    "|turn|16",
+    "|move|p2a: Wyrdeer|Earthquake|p1a: Lapras",
+    "|-damage|p1a: Lapras|122/367 par",
+    "|move|p1a: Lapras|Hydro Pump|p2a: Wyrdeer",
+    "|-damage|p2a: Wyrdeer|0 fnt",
+    "|faint|p2a: Wyrdeer",
+    "|upkeep",
+    "|switch|p2a: Vespiquen|Vespiquen, L99, F|299/299",
+    "|-ability|p2a: Vespiquen|Pressure",
+    "|turn|17",
+    "|move|p2a: Vespiquen|U-turn|p1a: Lapras",
+    "|-damage|p1a: Lapras|38/367 par",
+    "|switch|p2a: Serperior|Serperior, L79, F|248/248|[from] U-turn",
+    "|move|p1a: Lapras|Hydro Pump|p2a: Serperior",
+    "|-resisted|p2a: Serperior",
+    "|-damage|p2a: Serperior|162/248",
+    "|-heal|p2a: Serperior|177/248|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|18",
+    "|move|p2a: Serperior|Leaf Storm|p1a: Lapras",
+    "|-supereffective|p1a: Lapras",
+    "|-damage|p1a: Lapras|0 fnt",
+    "|-boost|p2a: Serperior|spa|2",
+    "|faint|p1a: Lapras",
+    "|-heal|p2a: Serperior|192/248|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p1a: Muk|Muk, L86, F|321/321",
+    "|turn|19",
+    "|move|p2a: Serperior|Leech Seed|p1a: Muk",
+    "|-start|p1a: Muk|move: Leech Seed",
+    "|move|p1a: Muk|Knock Off|p2a: Serperior",
+    "|-damage|p2a: Serperior|119/248",
+    "|-enditem|p2a: Serperior|Leftovers|[from] move: Knock Off|[of] p1a: Muk",
+    "|-damage|p1a: Muk|281/321|[from] Leech Seed|[of] p2a: Serperior",
+    "|-heal|p2a: Serperior|159/248|[silent]",
+    "|upkeep",
+    "|turn|20",
+    "|move|p2a: Serperior|Leech Seed||[still]",
+    "|-fail|p2a: Serperior",
+    "|move|p1a: Muk|Drain Punch|p2a: Serperior",
+    "|-damage|p2a: Serperior|100/248",
+    "|-heal|p1a: Muk|311/321|[from] drain|[of] p2a: Serperior",
+    "|-heal|p1a: Muk|321/321|[from] item: Leftovers",
+    "|-damage|p1a: Muk|281/321|[from] Leech Seed|[of] p2a: Serperior",
+    "|-heal|p2a: Serperior|140/248|[silent]",
+    "|upkeep",
+    "|turn|21",
+    "|move|p2a: Serperior|Leech Seed||[still]",
+    "|-fail|p2a: Serperior",
+    "|move|p1a: Muk|Poison Jab|p2a: Serperior",
+    "|-supereffective|p2a: Serperior",
+    "|-damage|p2a: Serperior|0 fnt",
+    "|faint|p2a: Serperior",
+    "|-heal|p1a: Muk|301/321|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p2a: Vespiquen|Vespiquen, L99, F|299/299",
+    "|-ability|p2a: Vespiquen|Pressure",
+    "|turn|22",
+    "|move|p2a: Vespiquen|Hurricane|p1a: Muk|[miss]",
+    "|-miss|p2a: Vespiquen|p1a: Muk",
+    "|move|p1a: Muk|Toxic Spikes|p2a: Vespiquen",
+    "|-sidestart|p2: Player 2|move: Toxic Spikes",
+    "|-heal|p1a: Muk|321/321|[from] item: Leftovers",
+    "|-damage|p1a: Muk|281/321|[from] Leech Seed|[of] p2a: Vespiquen",
+    "|upkeep",
+    "|turn|23",
+    "|move|p2a: Vespiquen|Roost||[still]",
+    "|-fail|p2a: Vespiquen|heal",
+    "|move|p1a: Muk|Poison Jab|p2a: Vespiquen",
+    "|-damage|p2a: Vespiquen|227/299",
+    "|-status|p2a: Vespiquen|psn",
+    "|-heal|p1a: Muk|301/321|[from] item: Leftovers",
+    "|-damage|p1a: Muk|261/321|[from] Leech Seed|[of] p2a: Vespiquen",
+    "|-heal|p2a: Vespiquen|267/299 psn|[silent]",
+    "|-damage|p2a: Vespiquen|230/299 psn|[from] psn",
+    "|upkeep",
+    "|turn|24",
+    "|move|p2a: Vespiquen|Roost|p2a: Vespiquen",
+    "|-heal|p2a: Vespiquen|299/299 psn",
+    "|-singleturn|p2a: Vespiquen|move: Roost",
+    "|move|p1a: Muk|Toxic Spikes|p2a: Vespiquen",
+    "|-sidestart|p2: Player 2|move: Toxic Spikes",
+    "|-heal|p1a: Muk|281/321|[from] item: Leftovers",
+    "|-damage|p1a: Muk|241/321|[from] Leech Seed|[of] p2a: Vespiquen",
+    "|-damage|p2a: Vespiquen|262/299 psn|[from] psn",
+    "|upkeep",
+    "|turn|25",
+    "|move|p2a: Vespiquen|Hurricane|p1a: Muk",
+    "|-damage|p1a: Muk|109/321",
+    "|move|p1a: Muk|Poison Jab|p2a: Vespiquen",
+    "|-crit|p2a: Vespiquen",
+    "|-damage|p2a: Vespiquen|162/299 psn",
+    "|-heal|p1a: Muk|129/321|[from] item: Leftovers",
+    "|-damage|p1a: Muk|89/321|[from] Leech Seed|[of] p2a: Vespiquen",
+    "|-heal|p2a: Vespiquen|202/299 psn|[silent]",
+    "|-damage|p2a: Vespiquen|165/299 psn|[from] psn",
+    "|upkeep",
+    "|turn|26",
+    "|move|p1a: Muk|Poison Jab|p2a: Vespiquen",
+    "|-damage|p2a: Vespiquen|96/299 psn",
+    "|move|p2a: Vespiquen|Hurricane|p1a: Muk|[miss]",
+    "|-miss|p2a: Vespiquen|p1a: Muk",
+    "|-heal|p1a: Muk|109/321|[from] item: Leftovers",
+    "|-damage|p1a: Muk|69/321|[from] Leech Seed|[of] p2a: Vespiquen",
+    "|-heal|p2a: Vespiquen|136/299 psn|[silent]",
+    "|-damage|p2a: Vespiquen|99/299 psn|[from] psn",
+    "|upkeep",
+    "|turn|27",
+    "|move|p1a: Muk|Drain Punch|p2a: Vespiquen",
+    "|-resisted|p2a: Vespiquen",
+    "|-damage|p2a: Vespiquen|87/299 psn",
+    "|-heal|p1a: Muk|75/321|[from] drain|[of] p2a: Vespiquen",
+    "|move|p2a: Vespiquen|Hurricane|p1a: Muk|[miss]",
+    "|-miss|p2a: Vespiquen|p1a: Muk",
+    "|-heal|p1a: Muk|95/321|[from] item: Leftovers",
+    "|-damage|p1a: Muk|55/321|[from] Leech Seed|[of] p2a: Vespiquen",
+    "|-heal|p2a: Vespiquen|127/299 psn|[silent]",
+    "|-damage|p2a: Vespiquen|90/299 psn|[from] psn",
+    "|upkeep",
+    "|turn|28",
+    "|move|p2a: Vespiquen|Toxic|p1a: Muk",
+    "|-immune|p1a: Muk",
+    "|move|p1a: Muk|Toxic Spikes||[still]",
+    "|-fail|p1a: Muk",
+    "|-heal|p1a: Muk|75/321|[from] item: Leftovers",
+    "|-damage|p1a: Muk|35/321|[from] Leech Seed|[of] p2a: Vespiquen",
+    "|-heal|p2a: Vespiquen|130/299 psn|[silent]",
+    "|-damage|p2a: Vespiquen|93/299 psn|[from] psn",
+    "|upkeep",
+    "|turn|29",
+    "|move|p1a: Muk|Poison Jab|p2a: Vespiquen",
+    "|-damage|p2a: Vespiquen|24/299 psn",
+    "|move|p2a: Vespiquen|Roost|p2a: Vespiquen",
+    "|-heal|p2a: Vespiquen|174/299 psn",
+    "|-singleturn|p2a: Vespiquen|move: Roost",
+    "|-heal|p1a: Muk|55/321|[from] item: Leftovers",
+    "|-damage|p1a: Muk|15/321|[from] Leech Seed|[of] p2a: Vespiquen",
+    "|-heal|p2a: Vespiquen|214/299 psn|[silent]",
+    "|-damage|p2a: Vespiquen|177/299 psn|[from] psn",
+    "|upkeep",
+    "|turn|30",
+    "|move|p1a: Muk|Drain Punch|p2a: Vespiquen",
+    "|-resisted|p2a: Vespiquen",
+    "|-damage|p2a: Vespiquen|165/299 psn",
+    "|-heal|p1a: Muk|21/321|[from] drain|[of] p2a: Vespiquen",
+    "|move|p2a: Vespiquen|Toxic|p1a: Muk",
+    "|-immune|p1a: Muk",
+    "|-heal|p1a: Muk|41/321|[from] item: Leftovers",
+    "|-damage|p1a: Muk|1/321|[from] Leech Seed|[of] p2a: Vespiquen",
+    "|-heal|p2a: Vespiquen|205/299 psn|[silent]",
+    "|-damage|p2a: Vespiquen|168/299 psn|[from] psn",
+    "|upkeep",
+    "|turn|31",
+    "|move|p1a: Muk|Knock Off|p2a: Vespiquen",
+    "|-damage|p2a: Vespiquen|107/299 psn",
+    "|-enditem|p2a: Vespiquen|Heavy-Duty Boots|[from] move: Knock Off|[of] p1a: Muk",
+    "|move|p2a: Vespiquen|Hurricane|p1a: Muk",
+    "|-damage|p1a: Muk|0 fnt",
+    "|faint|p1a: Muk",
+    "|-damage|p2a: Vespiquen|70/299 psn|[from] psn",
+    "|upkeep",
+    "|switch|p1a: Beartic|Beartic, L91, M|321/321",
+    "|turn|32",
+    "|move|p1a: Beartic|Icicle Crash|p2a: Vespiquen",
+    "|-supereffective|p2a: Vespiquen",
+    "|-damage|p2a: Vespiquen|0 fnt",
+    "|faint|p2a: Vespiquen",
+    "|upkeep",
+    "|switch|p2a: Electivire|Electivire, L84, M|263/263",
+    "|-status|p2a: Electivire|tox",
+    "|turn|33",
+    "|move|p2a: Electivire|Earthquake|p1a: Beartic",
+    "|-damage|p1a: Beartic|204/321",
+    "|-damage|p2a: Electivire|237/263 tox|[from] item: Life Orb",
+    "|move|p1a: Beartic|Icicle Crash|p2a: Electivire|[miss]",
+    "|-miss|p1a: Beartic|p2a: Electivire",
+    "|-damage|p2a: Electivire|221/263 tox|[from] psn",
+    "|upkeep",
+    "|turn|34",
+    "|move|p2a: Electivire|Earthquake|p1a: Beartic",
+    "|-damage|p1a: Beartic|100/321",
+    "|-damage|p2a: Electivire|195/263 tox|[from] item: Life Orb",
+    "|move|p1a: Beartic|Icicle Crash|p2a: Electivire",
+    "|-damage|p2a: Electivire|0 fnt",
+    "|faint|p2a: Electivire",
+    "|upkeep",
+    "|switch|p2a: Goodra|Goodra, L85, M|292/292",
+    "|-status|p2a: Goodra|tox",
+    "|turn|35",
+    "|move|p2a: Goodra|Scald|p1a: Beartic",
+    "|-damage|p1a: Beartic|40/321",
+    "|move|p1a: Beartic|Icicle Crash|p2a: Goodra",
+    "|-supereffective|p2a: Goodra",
+    "|-damage|p2a: Goodra|0 fnt",
+    "|faint|p2a: Goodra",
+    "|win|Player 1"
+  ]
+}

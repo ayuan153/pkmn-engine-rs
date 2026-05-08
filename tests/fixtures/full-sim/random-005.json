@@ -1,0 +1,800 @@
+{
+  "id": "random-005",
+  "description": "Random battle random-005",
+  "seed": [
+    3016,
+    3017,
+    3018,
+    3019
+  ],
+  "format": "gen9randombattle",
+  "p1": {
+    "team": [
+      {
+        "species": "Hariyama",
+        "ability": "Guts",
+        "item": "Flame Orb",
+        "moves": [
+          "Fake Out",
+          "Knock Off",
+          "Close Combat",
+          "Facade"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 87,
+        "gender": "M"
+      },
+      {
+        "species": "Lugia",
+        "ability": "Multiscale",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Psychic Noise",
+          "Recover",
+          "Calm Mind",
+          "Aeroblast"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 73,
+        "gender": "N"
+      },
+      {
+        "species": "Iron Valiant",
+        "ability": "Quark Drive",
+        "item": "Life Orb",
+        "moves": [
+          "Spirit Break",
+          "Knock Off",
+          "Close Combat",
+          "Swords Dance"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 78,
+        "gender": "N"
+      },
+      {
+        "species": "Maushold",
+        "ability": "Technician",
+        "item": "Wide Lens",
+        "moves": [
+          "Population Bomb",
+          "Bite",
+          "Encore",
+          "Tidy Up"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 76,
+        "gender": "N"
+      },
+      {
+        "species": "Dusknoir",
+        "ability": "Frisk",
+        "item": "Leftovers",
+        "moves": [
+          "Will-O-Wisp",
+          "Earthquake",
+          "Poltergeist",
+          "Pain Split"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 89,
+        "gender": "M"
+      },
+      {
+        "species": "Dondozo",
+        "ability": "Unaware",
+        "item": "Leftovers",
+        "moves": [
+          "Rest",
+          "Sleep Talk",
+          "Wave Crash",
+          "Curse"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 78,
+        "gender": "M"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Mamoswine",
+        "ability": "Thick Fat",
+        "item": "Choice Band",
+        "moves": [
+          "Knock Off",
+          "Earthquake",
+          "Icicle Crash",
+          "Ice Shard"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 81,
+        "gender": "F"
+      },
+      {
+        "species": "Ogerpon-Wellspring",
+        "ability": "Water Absorb",
+        "item": "Wellspring Mask",
+        "moves": [
+          "Horn Leech",
+          "Swords Dance",
+          "Play Rough",
+          "Ivy Cudgel"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 76,
+        "gender": "F"
+      },
+      {
+        "species": "Sandaconda",
+        "ability": "Shed Skin",
+        "item": "Loaded Dice",
+        "moves": [
+          "Rock Blast",
+          "Coil",
+          "Earthquake",
+          "Scale Shot"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "M"
+      },
+      {
+        "species": "Chandelure",
+        "ability": "Flash Fire",
+        "item": "Choice Scarf",
+        "moves": [
+          "Shadow Ball",
+          "Trick",
+          "Fire Blast",
+          "Energy Ball"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 83,
+        "gender": "M"
+      },
+      {
+        "species": "Clawitzer",
+        "ability": "Mega Launcher",
+        "item": "Choice Specs",
+        "moves": [
+          "Water Pulse",
+          "Ice Beam",
+          "Aura Sphere",
+          "Dark Pulse"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 87,
+        "gender": "M"
+      },
+      {
+        "species": "Hitmontop",
+        "ability": "Technician",
+        "item": "Leftovers",
+        "moves": [
+          "Triple Axel",
+          "Bulk Up",
+          "Close Combat",
+          "Rapid Spin"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "M"
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "switch 4"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "switch 4",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "switch 3"
+    ],
+    [
+      "move 1",
+      "switch 2"
+    ],
+    [
+      "move 3",
+      "switch 6"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "switch 3",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "switch 5"
+    ],
+    [
+      "switch 2",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Hariyama|Hariyama, L87, M|392/392",
+    "|switch|p2a: Mamoswine|Mamoswine, L81, F|311/311",
+    "|turn|1",
+    "|move|p2a: Mamoswine|Icicle Crash|p1a: Hariyama|[miss]",
+    "|-miss|p2a: Mamoswine|p1a: Hariyama",
+    "|move|p1a: Hariyama|Facade|p2a: Mamoswine",
+    "|-damage|p2a: Mamoswine|241/311",
+    "|-status|p1a: Hariyama|brn|[from] item: Flame Orb",
+    "|upkeep",
+    "|turn|2",
+    "|move|p2a: Mamoswine|Icicle Crash|p1a: Hariyama",
+    "|-damage|p1a: Hariyama|191/392 brn",
+    "|cant|p1a: Hariyama|flinch",
+    "|-damage|p1a: Hariyama|167/392 brn|[from] brn",
+    "|upkeep",
+    "|turn|3",
+    "|move|p2a: Mamoswine|Icicle Crash|p1a: Hariyama",
+    "|-damage|p1a: Hariyama|0 fnt",
+    "|faint|p1a: Hariyama",
+    "|upkeep",
+    "|switch|p1a: Dondozo|Dondozo, L78, M|362/362",
+    "|turn|4",
+    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo|[miss]",
+    "|-miss|p2a: Mamoswine|p1a: Dondozo",
+    "|move|p1a: Dondozo|Wave Crash|p2a: Mamoswine",
+    "|-supereffective|p2a: Mamoswine",
+    "|-damage|p2a: Mamoswine|7/311",
+    "|-damage|p1a: Dondozo|285/362|[from] Recoil",
+    "|-heal|p1a: Dondozo|307/362|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|5",
+    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
+    "|-resisted|p1a: Dondozo",
+    "|-damage|p1a: Dondozo|238/362",
+    "|move|p1a: Dondozo|Rest|p1a: Dondozo",
+    "|-status|p1a: Dondozo|slp|[from] move: Rest",
+    "|-heal|p1a: Dondozo|362/362 slp|[silent]",
+    "|upkeep",
+    "|turn|6",
+    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
+    "|-resisted|p1a: Dondozo",
+    "|-damage|p1a: Dondozo|296/362 slp",
+    "|cant|p1a: Dondozo|slp",
+    "|-heal|p1a: Dondozo|318/362 slp|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|7",
+    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
+    "|-resisted|p1a: Dondozo",
+    "|-damage|p1a: Dondozo|245/362 slp",
+    "|cant|p1a: Dondozo|slp",
+    "|-heal|p1a: Dondozo|267/362 slp|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|8",
+    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
+    "|-resisted|p1a: Dondozo",
+    "|-damage|p1a: Dondozo|196/362 slp",
+    "|-curestatus|p1a: Dondozo|slp|[msg]",
+    "|move|p1a: Dondozo|Rest|p1a: Dondozo",
+    "|-status|p1a: Dondozo|slp|[from] move: Rest",
+    "|-heal|p1a: Dondozo|362/362 slp|[silent]",
+    "|upkeep",
+    "|turn|9",
+    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
+    "|-resisted|p1a: Dondozo",
+    "|-crit|p1a: Dondozo",
+    "|-damage|p1a: Dondozo|257/362 slp",
+    "|cant|p1a: Dondozo|slp",
+    "|cant|p1a: Dondozo|flinch",
+    "|-heal|p1a: Dondozo|279/362 slp|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|10",
+    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
+    "|-resisted|p1a: Dondozo",
+    "|-damage|p1a: Dondozo|210/362 slp",
+    "|cant|p1a: Dondozo|slp",
+    "|-heal|p1a: Dondozo|232/362 slp|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|11",
+    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
+    "|-resisted|p1a: Dondozo",
+    "|-damage|p1a: Dondozo|157/362 slp",
+    "|-curestatus|p1a: Dondozo|slp|[msg]",
+    "|move|p1a: Dondozo|Curse|p1a: Dondozo",
+    "|-unboost|p1a: Dondozo|spe|1",
+    "|-boost|p1a: Dondozo|atk|1",
+    "|-boost|p1a: Dondozo|def|1",
+    "|-heal|p1a: Dondozo|179/362|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|12",
+    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
+    "|-resisted|p1a: Dondozo",
+    "|-damage|p1a: Dondozo|134/362",
+    "|cant|p1a: Dondozo|flinch",
+    "|-heal|p1a: Dondozo|156/362|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|13",
+    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo|[miss]",
+    "|-miss|p2a: Mamoswine|p1a: Dondozo",
+    "|move|p1a: Dondozo|Wave Crash|p2a: Mamoswine",
+    "|-supereffective|p2a: Mamoswine",
+    "|-damage|p2a: Mamoswine|0 fnt",
+    "|faint|p2a: Mamoswine",
+    "|-damage|p1a: Dondozo|154/362|[from] Recoil",
+    "|-heal|p1a: Dondozo|176/362|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p2a: Chandelure|Chandelure, L83, M|235/235",
+    "|turn|14",
+    "|move|p2a: Chandelure|Shadow Ball|p1a: Dondozo",
+    "|-damage|p1a: Dondozo|11/362",
+    "|move|p1a: Dondozo|Rest|p1a: Dondozo",
+    "|-status|p1a: Dondozo|slp|[from] move: Rest",
+    "|-heal|p1a: Dondozo|362/362 slp|[silent]",
+    "|upkeep",
+    "|turn|15",
+    "|move|p2a: Chandelure|Shadow Ball|p1a: Dondozo",
+    "|-damage|p1a: Dondozo|211/362 slp",
+    "|-unboost|p1a: Dondozo|spd|1",
+    "|cant|p1a: Dondozo|slp",
+    "|move|p1a: Dondozo|Sleep Talk|p1a: Dondozo",
+    "|move|p1a: Dondozo|Rest||[from] move: Sleep Talk|[still]",
+    "|-fail|p1a: Dondozo",
+    "|-heal|p1a: Dondozo|233/362 slp|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|16",
+    "|move|p2a: Chandelure|Shadow Ball|p1a: Dondozo",
+    "|-damage|p1a: Dondozo|0 fnt",
+    "|faint|p1a: Dondozo",
+    "|upkeep",
+    "|switch|p1a: Maushold|Maushold, L76|238/238",
+    "|turn|17",
+    "|move|p2a: Chandelure|Shadow Ball|p1a: Maushold",
+    "|-immune|p1a: Maushold",
+    "|move|p1a: Maushold|Tidy Up|p1a: Maushold",
+    "|-boost|p1a: Maushold|atk|1",
+    "|-boost|p1a: Maushold|spe|1",
+    "|upkeep",
+    "|turn|18",
+    "|move|p1a: Maushold|Tidy Up|p1a: Maushold",
+    "|-boost|p1a: Maushold|atk|1",
+    "|-boost|p1a: Maushold|spe|1",
+    "|move|p2a: Chandelure|Shadow Ball|p1a: Maushold",
+    "|-immune|p1a: Maushold",
+    "|upkeep",
+    "|turn|19",
+    "|move|p1a: Maushold|Bite|p2a: Chandelure",
+    "|-supereffective|p2a: Chandelure",
+    "|-damage|p2a: Chandelure|59/235",
+    "|move|p2a: Chandelure|Shadow Ball|p1a: Maushold",
+    "|-immune|p1a: Maushold",
+    "|upkeep",
+    "|turn|20",
+    "|move|p1a: Maushold|Tidy Up|p1a: Maushold",
+    "|-boost|p1a: Maushold|atk|1",
+    "|-boost|p1a: Maushold|spe|1",
+    "|move|p2a: Chandelure|Shadow Ball|p1a: Maushold",
+    "|-immune|p1a: Maushold",
+    "|upkeep",
+    "|turn|21",
+    "|move|p1a: Maushold|Bite|p2a: Chandelure",
+    "|-supereffective|p2a: Chandelure",
+    "|-damage|p2a: Chandelure|0 fnt",
+    "|faint|p2a: Chandelure",
+    "|upkeep",
+    "|switch|p2a: Sandaconda|Sandaconda, L84, M|258/258",
+    "|turn|22",
+    "|move|p1a: Maushold|Population Bomb|p2a: Sandaconda",
+    "|-damage|p2a: Sandaconda|216/258",
+    "|-damage|p2a: Sandaconda|173/258",
+    "|-damage|p2a: Sandaconda|128/258",
+    "|-crit|p2a: Sandaconda",
+    "|-damage|p2a: Sandaconda|62/258",
+    "|-damage|p2a: Sandaconda|20/258",
+    "|-damage|p2a: Sandaconda|0 fnt",
+    "|faint|p2a: Sandaconda",
+    "|-hitcount|p2: Sandaconda|6",
+    "|upkeep",
+    "|switch|p2a: Ogerpon|Ogerpon-Wellspring, L76, F|247/247",
+    "|turn|23",
+    "|move|p1a: Maushold|Population Bomb|p2a: Ogerpon",
+    "|-damage|p2a: Ogerpon|189/247",
+    "|-damage|p2a: Ogerpon|126/247",
+    "|-damage|p2a: Ogerpon|68/247",
+    "|-damage|p2a: Ogerpon|4/247",
+    "|-damage|p2a: Ogerpon|0 fnt",
+    "|faint|p2a: Ogerpon",
+    "|-hitcount|p2: Ogerpon|5",
+    "|upkeep",
+    "|switch|p2a: Hitmontop|Hitmontop, L88, M|231/231",
+    "|turn|24",
+    "|move|p1a: Maushold|Encore||[still]",
+    "|-fail|p1a: Maushold",
+    "|move|p2a: Hitmontop|Rapid Spin|p1a: Maushold",
+    "|-damage|p1a: Maushold|161/238",
+    "|-boost|p2a: Hitmontop|spe|1",
+    "|upkeep",
+    "|turn|25",
+    "|move|p1a: Maushold|Bite|p2a: Hitmontop",
+    "|-resisted|p2a: Hitmontop",
+    "|-damage|p2a: Hitmontop|183/231",
+    "|cant|p2a: Hitmontop|flinch",
+    "|-heal|p2a: Hitmontop|197/231|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|26",
+    "|move|p1a: Maushold|Encore|p2a: Hitmontop",
+    "|-start|p2a: Hitmontop|Encore",
+    "|move|p2a: Hitmontop|Rapid Spin|p1a: Maushold",
+    "|-damage|p1a: Maushold|88/238",
+    "|-boost|p2a: Hitmontop|spe|1",
+    "|-heal|p2a: Hitmontop|211/231|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|27",
+    "|move|p1a: Maushold|Bite|p2a: Hitmontop",
+    "|-resisted|p2a: Hitmontop",
+    "|-damage|p2a: Hitmontop|162/231",
+    "|cant|p2a: Hitmontop|flinch",
+    "|-heal|p2a: Hitmontop|176/231|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|28",
+    "|move|p1a: Maushold|Population Bomb|p2a: Hitmontop",
+    "|-damage|p2a: Hitmontop|130/231",
+    "|-hitcount|p2a: Hitmontop|1",
+    "|move|p2a: Hitmontop|Rapid Spin|p1a: Maushold",
+    "|-damage|p1a: Maushold|15/238",
+    "|-boost|p2a: Hitmontop|spe|1",
+    "|-heal|p2a: Hitmontop|144/231|[from] item: Leftovers",
+    "|-end|p2a: Hitmontop|Encore",
+    "|upkeep",
+    "|turn|29",
+    "|move|p1a: Maushold|Encore|p2a: Hitmontop",
+    "|-start|p2a: Hitmontop|Encore",
+    "|move|p2a: Hitmontop|Rapid Spin|p1a: Maushold",
+    "|-damage|p1a: Maushold|0 fnt",
+    "|-boost|p2a: Hitmontop|spe|1",
+    "|faint|p1a: Maushold",
+    "|-heal|p2a: Hitmontop|158/231|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p1a: Iron Valiant|Iron Valiant, L78|244/244",
+    "|turn|30",
+    "|move|p2a: Hitmontop|Rapid Spin|p1a: Iron Valiant",
+    "|-damage|p1a: Iron Valiant|180/244",
+    "|-boost|p2a: Hitmontop|spe|1",
+    "|move|p1a: Iron Valiant|Close Combat|p2a: Hitmontop",
+    "|-damage|p2a: Hitmontop|0 fnt",
+    "|-unboost|p1a: Iron Valiant|def|1",
+    "|-unboost|p1a: Iron Valiant|spd|1",
+    "|faint|p2a: Hitmontop",
+    "|-damage|p1a: Iron Valiant|156/244|[from] item: Life Orb",
+    "|upkeep",
+    "|switch|p2a: Clawitzer|Clawitzer, L87, M|265/265",
+    "|turn|31",
+    "|move|p1a: Iron Valiant|Knock Off|p2a: Clawitzer",
+    "|-damage|p2a: Clawitzer|173/265",
+    "|-enditem|p2a: Clawitzer|Choice Specs|[from] move: Knock Off|[of] p1a: Iron Valiant",
+    "|-damage|p1a: Iron Valiant|132/244|[from] item: Life Orb",
+    "|move|p2a: Clawitzer|Water Pulse|p1a: Iron Valiant",
+    "|-damage|p1a: Iron Valiant|0 fnt",
+    "|faint|p1a: Iron Valiant",
+    "|-end|p1a: Iron Valiant|Quark Drive|[silent]",
+    "|upkeep",
+    "|switch|p1a: Lugia|Lugia, L73|275/275",
+    "|turn|32",
+    "|move|p1a: Lugia|Aeroblast|p2a: Clawitzer",
+    "|-crit|p2a: Clawitzer",
+    "|-damage|p2a: Clawitzer|59/265",
+    "|move|p2a: Clawitzer|Dark Pulse|p1a: Lugia",
+    "|-supereffective|p1a: Lugia",
+    "|-damage|p1a: Lugia|196/275",
+    "|upkeep",
+    "|turn|33",
+    "|move|p1a: Lugia|Psychic Noise|p2a: Clawitzer",
+    "|-damage|p2a: Clawitzer|0 fnt",
+    "|faint|p2a: Clawitzer",
+    "|win|Player 1"
+  ]
+}

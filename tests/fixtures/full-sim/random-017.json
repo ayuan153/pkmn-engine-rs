@@ -1,0 +1,858 @@
+{
+  "id": "random-017",
+  "description": "Random battle random-017",
+  "seed": [
+    3064,
+    3065,
+    3066,
+    3067
+  ],
+  "format": "gen9randombattle",
+  "p1": {
+    "team": [
+      {
+        "species": "Cetitan",
+        "ability": "Thick Fat",
+        "item": "Sitrus Berry",
+        "moves": [
+          "Earthquake",
+          "Belly Drum",
+          "Ice Shard",
+          "Ice Spinner"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 81,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 82,
+        "gender": "M"
+      },
+      {
+        "species": "Dragonite",
+        "ability": "Multiscale",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Dragon Dance",
+          "Earthquake",
+          "Tera Blast",
+          "Outrage"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 74,
+        "gender": "F"
+      },
+      {
+        "species": "Meowscarada",
+        "ability": "Protean",
+        "item": "Choice Band",
+        "moves": [
+          "Knock Off",
+          "U-turn",
+          "Flower Trick",
+          "Triple Axel"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 78,
+        "gender": "F"
+      },
+      {
+        "species": "Pikachu-World",
+        "ability": "Lightning Rod",
+        "item": "Light Ball",
+        "moves": [
+          "Surf",
+          "Knock Off",
+          "Volt Switch",
+          "Volt Tackle"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 93,
+        "gender": "M"
+      },
+      {
+        "species": "Regigigas",
+        "ability": "Slow Start",
+        "item": "Leftovers",
+        "moves": [
+          "Sleep Talk",
+          "Body Slam",
+          "Knock Off",
+          "Rest"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "N"
+      },
+      {
+        "species": "Spidops",
+        "ability": "Stakeout",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "U-turn",
+          "Circle Throw",
+          "Sticky Web",
+          "Knock Off"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 96,
+        "gender": "M"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Barraskewda",
+        "ability": "Swift Swim",
+        "item": "Choice Band",
+        "moves": [
+          "Close Combat",
+          "Throat Chop",
+          "Waterfall",
+          "Flip Turn"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 81,
+        "gender": "M"
+      },
+      {
+        "species": "Grafaiai",
+        "ability": "Poison Touch",
+        "item": "Life Orb",
+        "moves": [
+          "Gunk Shot",
+          "Knock Off",
+          "Low Kick",
+          "Swords Dance"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 86,
+        "gender": "F"
+      },
+      {
+        "species": "Spectrier",
+        "ability": "Grim Neigh",
+        "item": "Life Orb",
+        "moves": [
+          "Draining Kiss",
+          "Shadow Ball",
+          "Nasty Plot",
+          "Will-O-Wisp"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 75,
+        "gender": "N"
+      },
+      {
+        "species": "Electrode",
+        "ability": "Soundproof",
+        "item": "Life Orb",
+        "moves": [
+          "Explosion",
+          "Thunderbolt",
+          "Taunt",
+          "Foul Play"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 92,
+        "gender": "N"
+      },
+      {
+        "species": "Bombirdier",
+        "ability": "Big Pecks",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Roost",
+          "Sucker Punch",
+          "Knock Off",
+          "Brave Bird"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 85,
+        "gender": "M"
+      },
+      {
+        "species": "Bisharp",
+        "ability": "Defiant",
+        "item": "Eviolite",
+        "moves": [
+          "Iron Head",
+          "Stealth Rock",
+          "Throat Chop",
+          "Sucker Punch"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "M"
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "switch 6"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "switch 3"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "switch 1"
+    ],
+    [
+      "switch 2",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "switch 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "switch 4",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "switch 5",
+      "switch 4"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "switch 5"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "switch 3",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Cetitan|Cetitan, L82, M|412/412",
+    "|switch|p2a: Barraskewda|Barraskewda, L81, M|231/231",
+    "|turn|1",
+    "|move|p2a: Barraskewda|Flip Turn|p1a: Cetitan",
+    "|-damage|p1a: Cetitan|267/412",
+    "|switch|p2a: Bisharp|Bisharp, L79, M|232/232|[from] Flip Turn",
+    "|move|p1a: Cetitan|Belly Drum|p1a: Cetitan",
+    "|-damage|p1a: Cetitan|61/412",
+    "|-setboost|p1a: Cetitan|atk|6|[from] move: Belly Drum",
+    "|-enditem|p1a: Cetitan|Sitrus Berry|[eat]",
+    "|-heal|p1a: Cetitan|164/412|[from] item: Sitrus Berry",
+    "|upkeep",
+    "|turn|2",
+    "|move|p1a: Cetitan|Belly Drum||[still]",
+    "|-fail|p1a: Cetitan",
+    "|move|p2a: Bisharp|Throat Chop|p1a: Cetitan",
+    "|-damage|p1a: Cetitan|53/412",
+    "|-start|p1a: Cetitan|Throat Chop|[silent]",
+    "|upkeep",
+    "|turn|3",
+    "|move|p1a: Cetitan|Earthquake|p2a: Bisharp",
+    "|-supereffective|p2a: Bisharp",
+    "|-damage|p2a: Bisharp|0 fnt",
+    "|faint|p2a: Bisharp",
+    "|-end|p1a: Cetitan|Throat Chop|[silent]",
+    "|upkeep",
+    "|switch|p2a: Spectrier|Spectrier, L75|274/274",
+    "|turn|4",
+    "|move|p2a: Spectrier|Will-O-Wisp|p1a: Cetitan",
+    "|-status|p1a: Cetitan|brn",
+    "|move|p1a: Cetitan|Earthquake|p2a: Spectrier",
+    "|-damage|p2a: Spectrier|43/274",
+    "|-damage|p1a: Cetitan|28/412 brn|[from] brn",
+    "|upkeep",
+    "|turn|5",
+    "|move|p2a: Spectrier|Will-O-Wisp|p1a: Cetitan",
+    "|-fail|p1a: Cetitan|brn",
+    "|move|p1a: Cetitan|Earthquake|p2a: Spectrier",
+    "|-crit|p2a: Spectrier",
+    "|-damage|p2a: Spectrier|0 fnt",
+    "|faint|p2a: Spectrier",
+    "|-damage|p1a: Cetitan|3/412 brn|[from] brn",
+    "|upkeep",
+    "|switch|p2a: Barraskewda|Barraskewda, L81, M|231/231",
+    "|turn|6",
+    "|move|p2a: Barraskewda|Throat Chop|p1a: Cetitan",
+    "|-damage|p1a: Cetitan|0 fnt",
+    "|faint|p1a: Cetitan",
+    "|upkeep",
+    "|switch|p1a: Dragonite|Dragonite, L74, F|257/257",
+    "|turn|7",
+    "|move|p2a: Barraskewda|Throat Chop|p1a: Dragonite",
+    "|-damage|p1a: Dragonite|205/257",
+    "|-start|p1a: Dragonite|Throat Chop|[silent]",
+    "|move|p1a: Dragonite|Earthquake|p2a: Barraskewda",
+    "|-damage|p2a: Barraskewda|136/231",
+    "|upkeep",
+    "|turn|8",
+    "|move|p2a: Barraskewda|Throat Chop|p1a: Dragonite",
+    "|-damage|p1a: Dragonite|99/257",
+    "|move|p1a: Dragonite|Earthquake|p2a: Barraskewda",
+    "|-damage|p2a: Barraskewda|46/231",
+    "|-end|p1a: Dragonite|Throat Chop|[silent]",
+    "|upkeep",
+    "|turn|9",
+    "|move|p2a: Barraskewda|Throat Chop|p1a: Dragonite",
+    "|-damage|p1a: Dragonite|0 fnt",
+    "|faint|p1a: Dragonite",
+    "|upkeep",
+    "|switch|p1a: Spidops|Spidops, L96, M|271/271",
+    "|turn|10",
+    "|move|p2a: Barraskewda|Throat Chop|p1a: Spidops",
+    "|-damage|p1a: Spidops|194/271",
+    "|-start|p1a: Spidops|Throat Chop|[silent]",
+    "|move|p1a: Spidops|Knock Off|p2a: Barraskewda",
+    "|-damage|p2a: Barraskewda|0 fnt",
+    "|-enditem|p2a: Barraskewda|Choice Band|[from] move: Knock Off|[of] p1a: Spidops",
+    "|faint|p2a: Barraskewda",
+    "|upkeep",
+    "|switch|p2a: Grafaiai|Grafaiai, L86, F|249/249",
+    "|turn|11",
+    "|move|p2a: Grafaiai|Knock Off|p1a: Spidops",
+    "|-damage|p1a: Spidops|121/271",
+    "|-enditem|p1a: Spidops|Heavy-Duty Boots|[from] move: Knock Off|[of] p2a: Grafaiai",
+    "|-damage|p2a: Grafaiai|225/249|[from] item: Life Orb",
+    "|move|p1a: Spidops|Sticky Web|p2a: Grafaiai",
+    "|-sidestart|p2: Player 2|move: Sticky Web",
+    "|-end|p1a: Spidops|Throat Chop|[silent]",
+    "|upkeep",
+    "|turn|12",
+    "|move|p2a: Grafaiai|Knock Off|p1a: Spidops",
+    "|-damage|p1a: Spidops|72/271",
+    "|-damage|p2a: Grafaiai|201/249|[from] item: Life Orb",
+    "|move|p1a: Spidops|Knock Off|p2a: Grafaiai",
+    "|-damage|p2a: Grafaiai|106/249",
+    "|-enditem|p2a: Grafaiai|Life Orb|[from] move: Knock Off|[of] p1a: Spidops",
+    "|upkeep",
+    "|turn|13",
+    "|move|p2a: Grafaiai|Gunk Shot|p1a: Spidops",
+    "|-damage|p1a: Spidops|0 fnt",
+    "|faint|p1a: Spidops",
+    "|upkeep",
+    "|switch|p1a: Pikachu|Pikachu-World, L93, M|216/216",
+    "|turn|14",
+    "|move|p2a: Grafaiai|Low Kick|p1a: Pikachu",
+    "|-damage|p1a: Pikachu|191/216",
+    "|move|p1a: Pikachu|Volt Switch|p2a: Grafaiai",
+    "|-damage|p2a: Grafaiai|0 fnt",
+    "|faint|p2a: Grafaiai",
+    "|switch|p1a: Regigigas|Regigigas, L84|322/322|[from] Volt Switch",
+    "|-start|p1a: Regigigas|ability: Slow Start",
+    "|upkeep",
+    "|switch|p2a: Electrode|Electrode, L92|260/260",
+    "|-activate|p2a: Electrode|move: Sticky Web",
+    "|-unboost|p2a: Electrode|spe|1",
+    "|turn|15",
+    "|move|p2a: Electrode|Taunt|p1a: Regigigas",
+    "|-start|p1a: Regigigas|move: Taunt",
+    "|cant|p1a: Regigigas|move: Taunt|Sleep Talk",
+    "|upkeep",
+    "|turn|16",
+    "|move|p2a: Electrode|Explosion|p1a: Regigigas",
+    "|-damage|p1a: Regigigas|187/322",
+    "|faint|p2a: Electrode",
+    "|move|p1a: Regigigas|Body Slam|p2: Electrode|[notarget]",
+    "|-fail|p1a: Regigigas",
+    "|-heal|p1a: Regigigas|207/322|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p2a: Bombirdier|Bombirdier, L85, M|258/258",
+    "|turn|17",
+    "|move|p2a: Bombirdier|Sucker Punch|p1a: Regigigas",
+    "|-damage|p1a: Regigigas|144/322",
+    "|move|p1a: Regigigas|Body Slam|p2a: Bombirdier",
+    "|-damage|p2a: Bombirdier|186/258",
+    "|-heal|p1a: Regigigas|164/322|[from] item: Leftovers",
+    "|-end|p1a: Regigigas|move: Taunt",
+    "|upkeep",
+    "|turn|18",
+    "|move|p2a: Bombirdier|Sucker Punch||[still]",
+    "|-fail|p2a: Bombirdier",
+    "|move|p1a: Regigigas|Sleep Talk||[still]",
+    "|-fail|p1a: Regigigas",
+    "|-heal|p1a: Regigigas|184/322|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|19",
+    "|move|p2a: Bombirdier|Knock Off|p1a: Regigigas",
+    "|-damage|p1a: Regigigas|88/322",
+    "|-enditem|p1a: Regigigas|Leftovers|[from] move: Knock Off|[of] p2a: Bombirdier",
+    "|move|p1a: Regigigas|Knock Off|p2a: Bombirdier",
+    "|-resisted|p2a: Bombirdier",
+    "|-damage|p2a: Bombirdier|161/258",
+    "|-enditem|p2a: Bombirdier|Heavy-Duty Boots|[from] move: Knock Off|[of] p1a: Regigigas",
+    "|-end|p1a: Regigigas|Slow Start",
+    "|upkeep",
+    "|turn|20",
+    "|move|p1a: Regigigas|Sleep Talk||[still]",
+    "|-fail|p1a: Regigigas",
+    "|move|p2a: Bombirdier|Knock Off|p1a: Regigigas",
+    "|-damage|p1a: Regigigas|21/322",
+    "|upkeep",
+    "|turn|21",
+    "|move|p1a: Regigigas|Rest|p1a: Regigigas",
+    "|-status|p1a: Regigigas|slp|[from] move: Rest",
+    "|-heal|p1a: Regigigas|322/322 slp|[silent]",
+    "|move|p2a: Bombirdier|Roost|p2a: Bombirdier",
+    "|-heal|p2a: Bombirdier|258/258",
+    "|-singleturn|p2a: Bombirdier|move: Roost",
+    "|upkeep",
+    "|turn|22",
+    "|cant|p1a: Regigigas|slp",
+    "|move|p1a: Regigigas|Sleep Talk|p1a: Regigigas",
+    "|move|p1a: Regigigas|Rest||[from] move: Sleep Talk|[still]",
+    "|-fail|p1a: Regigigas",
+    "|move|p2a: Bombirdier|Brave Bird|p1a: Regigigas",
+    "|-damage|p1a: Regigigas|204/322 slp",
+    "|-damage|p2a: Bombirdier|219/258|[from] Recoil",
+    "|upkeep",
+    "|turn|23",
+    "|cant|p1a: Regigigas|slp",
+    "|move|p2a: Bombirdier|Roost|p2a: Bombirdier",
+    "|-heal|p2a: Bombirdier|258/258",
+    "|-singleturn|p2a: Bombirdier|move: Roost",
+    "|upkeep",
+    "|turn|24",
+    "|-curestatus|p1a: Regigigas|slp|[msg]",
+    "|move|p1a: Regigigas|Knock Off|p2a: Bombirdier",
+    "|-resisted|p2a: Bombirdier",
+    "|-damage|p2a: Bombirdier|224/258",
+    "|move|p2a: Bombirdier|Roost|p2a: Bombirdier",
+    "|-heal|p2a: Bombirdier|258/258",
+    "|-singleturn|p2a: Bombirdier|move: Roost",
+    "|upkeep",
+    "|turn|25",
+    "|move|p2a: Bombirdier|Sucker Punch||[still]",
+    "|-fail|p2a: Bombirdier",
+    "|move|p1a: Regigigas|Rest|p1a: Regigigas",
+    "|-status|p1a: Regigigas|slp|[from] move: Rest",
+    "|-heal|p1a: Regigigas|322/322 slp|[silent]",
+    "|upkeep",
+    "|turn|26",
+    "|cant|p1a: Regigigas|slp",
+    "|move|p2a: Bombirdier|Brave Bird|p1a: Regigigas",
+    "|-damage|p1a: Regigigas|205/322 slp",
+    "|-damage|p2a: Bombirdier|219/258|[from] Recoil",
+    "|upkeep",
+    "|turn|27",
+    "|cant|p1a: Regigigas|slp",
+    "|move|p2a: Bombirdier|Roost|p2a: Bombirdier",
+    "|-heal|p2a: Bombirdier|258/258",
+    "|-singleturn|p2a: Bombirdier|move: Roost",
+    "|upkeep",
+    "|turn|28",
+    "|-curestatus|p1a: Regigigas|slp|[msg]",
+    "|move|p1a: Regigigas|Knock Off|p2a: Bombirdier",
+    "|-resisted|p2a: Bombirdier",
+    "|-damage|p2a: Bombirdier|220/258",
+    "|move|p2a: Bombirdier|Roost|p2a: Bombirdier",
+    "|-heal|p2a: Bombirdier|258/258",
+    "|-singleturn|p2a: Bombirdier|move: Roost",
+    "|upkeep",
+    "|turn|29",
+    "|move|p1a: Regigigas|Knock Off|p2a: Bombirdier",
+    "|-resisted|p2a: Bombirdier",
+    "|-damage|p2a: Bombirdier|223/258",
+    "|move|p2a: Bombirdier|Knock Off|p1a: Regigigas",
+    "|-damage|p1a: Regigigas|138/322",
+    "|upkeep",
+    "|turn|30",
+    "|move|p2a: Bombirdier|Sucker Punch||[still]",
+    "|-fail|p2a: Bombirdier",
+    "|move|p1a: Regigigas|Sleep Talk||[still]",
+    "|-fail|p1a: Regigigas",
+    "|upkeep",
+    "|turn|31",
+    "|move|p2a: Bombirdier|Sucker Punch|p1a: Regigigas",
+    "|-damage|p1a: Regigigas|66/322",
+    "|move|p1a: Regigigas|Knock Off|p2a: Bombirdier",
+    "|-resisted|p2a: Bombirdier",
+    "|-damage|p2a: Bombirdier|190/258",
+    "|upkeep",
+    "|turn|32",
+    "|move|p1a: Regigigas|Rest|p1a: Regigigas",
+    "|-status|p1a: Regigigas|slp|[from] move: Rest",
+    "|-heal|p1a: Regigigas|322/322 slp|[silent]",
+    "|move|p2a: Bombirdier|Brave Bird|p1a: Regigigas",
+    "|-damage|p1a: Regigigas|207/322 slp",
+    "|-damage|p2a: Bombirdier|152/258|[from] Recoil",
+    "|upkeep",
+    "|turn|33",
+    "|move|p2a: Bombirdier|Sucker Punch||[still]",
+    "|-fail|p2a: Bombirdier",
+    "|cant|p1a: Regigigas|slp",
+    "|move|p1a: Regigigas|Sleep Talk|p1a: Regigigas",
+    "|move|p1a: Regigigas|Rest||[from] move: Sleep Talk|[still]",
+    "|-fail|p1a: Regigigas",
+    "|upkeep",
+    "|turn|34",
+    "|cant|p1a: Regigigas|slp",
+    "|move|p2a: Bombirdier|Knock Off|p1a: Regigigas",
+    "|-damage|p1a: Regigigas|141/322 slp",
+    "|upkeep",
+    "|turn|35",
+    "|-curestatus|p1a: Regigigas|slp|[msg]",
+    "|move|p1a: Regigigas|Sleep Talk||[still]",
+    "|-fail|p1a: Regigigas",
+    "|move|p2a: Bombirdier|Roost|p2a: Bombirdier",
+    "|-heal|p2a: Bombirdier|258/258",
+    "|-singleturn|p2a: Bombirdier|move: Roost",
+    "|upkeep",
+    "|turn|36",
+    "|move|p1a: Regigigas|Knock Off|p2a: Bombirdier",
+    "|-resisted|p2a: Bombirdier",
+    "|-damage|p2a: Bombirdier|223/258",
+    "|move|p2a: Bombirdier|Brave Bird|p1a: Regigigas",
+    "|-damage|p1a: Regigigas|33/322",
+    "|-damage|p2a: Bombirdier|187/258|[from] Recoil",
+    "|upkeep",
+    "|turn|37",
+    "|move|p1a: Regigigas|Knock Off|p2a: Bombirdier",
+    "|-resisted|p2a: Bombirdier",
+    "|-damage|p2a: Bombirdier|154/258",
+    "|move|p2a: Bombirdier|Brave Bird|p1a: Regigigas",
+    "|-damage|p1a: Regigigas|0 fnt",
+    "|faint|p1a: Regigigas",
+    "|-end|p1a: Regigigas|Slow Start|[silent]",
+    "|-damage|p2a: Bombirdier|143/258|[from] Recoil",
+    "|upkeep",
+    "|switch|p1a: Meowscarada|Meowscarada, L78, F|247/247",
+    "|turn|38",
+    "|move|p1a: Meowscarada|U-turn|p2a: Bombirdier",
+    "|-start|p1a: Meowscarada|typechange|Bug|[from] ability: Protean",
+    "|-damage|p2a: Bombirdier|28/258",
+    "|switch|p1a: Pikachu|Pikachu-World, L93, M|191/216|[from] U-turn",
+    "|move|p2a: Bombirdier|Knock Off|p1a: Pikachu",
+    "|-damage|p1a: Pikachu|17/216",
+    "|-enditem|p1a: Pikachu|Light Ball|[from] move: Knock Off|[of] p2a: Bombirdier",
+    "|upkeep",
+    "|turn|39",
+    "|move|p1a: Pikachu|Volt Switch|p2a: Bombirdier",
+    "|-supereffective|p2a: Bombirdier",
+    "|-damage|p2a: Bombirdier|0 fnt",
+    "|faint|p2a: Bombirdier",
+    "|win|Player 1"
+  ]
+}

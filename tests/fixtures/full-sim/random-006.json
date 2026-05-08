@@ -1,0 +1,670 @@
+{
+  "id": "random-006",
+  "description": "Random battle random-006",
+  "seed": [
+    3020,
+    3021,
+    3022,
+    3023
+  ],
+  "format": "gen9randombattle",
+  "p1": {
+    "team": [
+      {
+        "species": "Arceus-Fairy",
+        "ability": "Multitype",
+        "item": "Pixie Plate",
+        "moves": [
+          "Judgment",
+          "Calm Mind",
+          "Earth Power",
+          "Recover"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 69,
+        "gender": "N"
+      },
+      {
+        "species": "Granbull",
+        "ability": "Intimidate",
+        "item": "Leftovers",
+        "moves": [
+          "Earthquake",
+          "Roar",
+          "Play Rough",
+          "Thunder Wave"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "F"
+      },
+      {
+        "species": "Conkeldurr",
+        "ability": "Guts",
+        "item": "Flame Orb",
+        "moves": [
+          "Knock Off",
+          "Facade",
+          "Close Combat",
+          "Mach Punch"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 80,
+        "gender": "M"
+      },
+      {
+        "species": "Spectrier",
+        "ability": "Grim Neigh",
+        "item": "Life Orb",
+        "moves": [
+          "Draining Kiss",
+          "Dark Pulse",
+          "Shadow Ball",
+          "Nasty Plot"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 75,
+        "gender": "N"
+      },
+      {
+        "species": "Illumise",
+        "ability": "Prankster",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Thunder Wave",
+          "Roost",
+          "Encore",
+          "Bug Buzz"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 91,
+        "gender": "F"
+      },
+      {
+        "species": "Drednaw",
+        "ability": "Strong Jaw",
+        "item": "White Herb",
+        "moves": [
+          "Liquidation",
+          "Shell Smash",
+          "Crunch",
+          "Stone Edge"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 81,
+        "gender": "M"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Azumarill",
+        "ability": "Huge Power",
+        "item": "Choice Band",
+        "moves": [
+          "Play Rough",
+          "Ice Spinner",
+          "Liquidation",
+          "Aqua Jet"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 82,
+        "gender": "M"
+      },
+      {
+        "species": "Carbink",
+        "ability": "Sturdy",
+        "item": "Leftovers",
+        "moves": [
+          "Moonblast",
+          "Rock Polish",
+          "Iron Defense",
+          "Body Press"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 90,
+        "gender": "N"
+      },
+      {
+        "species": "Kingambit",
+        "ability": "Supreme Overlord",
+        "item": "Leftovers",
+        "moves": [
+          "Kowtow Cleave",
+          "Iron Head",
+          "Sucker Punch",
+          "Swords Dance"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 74,
+        "gender": "M"
+      },
+      {
+        "species": "Hypno",
+        "ability": "Insomnia",
+        "item": "Leftovers",
+        "moves": [
+          "Encore",
+          "Thunder Wave",
+          "Knock Off",
+          "Psychic Noise"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 95,
+        "gender": "M"
+      },
+      {
+        "species": "Lanturn",
+        "ability": "Volt Absorb",
+        "item": "Leftovers",
+        "moves": [
+          "Thunder Wave",
+          "Thunderbolt",
+          "Scald",
+          "Ice Beam"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 89,
+        "gender": "M"
+      },
+      {
+        "species": "Gogoat",
+        "ability": "Sap Sipper",
+        "item": "Leftovers",
+        "moves": [
+          "Horn Leech",
+          "Earthquake",
+          "Milk Drink",
+          "Bulk Up"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "F"
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "switch 5"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "switch 3"
+    ],
+    [
+      "move 4",
+      "switch 4"
+    ],
+    [
+      "switch 4",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "switch 2"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "switch 6"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Arceus|Arceus-Fairy, L69|280/280",
+    "|switch|p2a: Azumarill|Azumarill, L82, M|298/298",
+    "|turn|1",
+    "|move|p1a: Arceus|Recover||[still]",
+    "|-fail|p1a: Arceus|heal",
+    "|move|p2a: Azumarill|Liquidation|p1a: Arceus",
+    "|-damage|p1a: Arceus|132/280",
+    "|-unboost|p1a: Arceus|def|1",
+    "|upkeep",
+    "|turn|2",
+    "|move|p1a: Arceus|Recover|p1a: Arceus",
+    "|-heal|p1a: Arceus|272/280",
+    "|move|p2a: Azumarill|Liquidation|p1a: Arceus",
+    "|-damage|p1a: Arceus|31/280",
+    "|upkeep",
+    "|turn|3",
+    "|move|p1a: Arceus|Calm Mind|p1a: Arceus",
+    "|-boost|p1a: Arceus|spa|1",
+    "|-boost|p1a: Arceus|spd|1",
+    "|move|p2a: Azumarill|Liquidation|p1a: Arceus",
+    "|-damage|p1a: Arceus|0 fnt",
+    "|faint|p1a: Arceus",
+    "|upkeep",
+    "|switch|p1a: Drednaw|Drednaw, L81, M|278/278",
+    "|turn|4",
+    "|move|p1a: Drednaw|Shell Smash|p1a: Drednaw",
+    "|-unboost|p1a: Drednaw|def|1",
+    "|-unboost|p1a: Drednaw|spd|1",
+    "|-boost|p1a: Drednaw|atk|2",
+    "|-boost|p1a: Drednaw|spa|2",
+    "|-boost|p1a: Drednaw|spe|2",
+    "|-enditem|p1a: Drednaw|White Herb",
+    "|move|p2a: Azumarill|Liquidation|p1a: Drednaw",
+    "|-damage|p1a: Drednaw|104/278",
+    "|upkeep",
+    "|turn|5",
+    "|move|p1a: Drednaw|Liquidation|p2a: Azumarill",
+    "|-resisted|p2a: Azumarill",
+    "|-damage|p2a: Azumarill|193/298",
+    "|-unboost|p2a: Azumarill|def|1",
+    "|move|p2a: Azumarill|Liquidation|p1a: Drednaw",
+    "|-damage|p1a: Drednaw|0 fnt",
+    "|faint|p1a: Drednaw",
+    "|upkeep",
+    "|switch|p1a: Illumise|Illumise, L91, F|266/266",
+    "|turn|6",
+    "|move|p1a: Illumise|Thunder Wave|p2a: Azumarill",
+    "|-status|p2a: Azumarill|par",
+    "|move|p2a: Azumarill|Liquidation|p1a: Illumise",
+    "|-damage|p1a: Illumise|89/266",
+    "|upkeep",
+    "|turn|7",
+    "|move|p1a: Illumise|Thunder Wave|p2a: Azumarill",
+    "|-fail|p2a: Azumarill|par",
+    "|move|p2a: Azumarill|Liquidation|p1a: Illumise",
+    "|-damage|p1a: Illumise|0 fnt",
+    "|faint|p1a: Illumise",
+    "|upkeep",
+    "|switch|p1a: Conkeldurr|Conkeldurr, L80, M|299/299",
+    "|turn|8",
+    "|move|p1a: Conkeldurr|Facade|p2a: Azumarill",
+    "|-damage|p2a: Azumarill|100/298 par",
+    "|move|p2a: Azumarill|Liquidation|p1a: Conkeldurr",
+    "|-damage|p1a: Conkeldurr|139/299",
+    "|-status|p1a: Conkeldurr|brn|[from] item: Flame Orb",
+    "|upkeep",
+    "|turn|9",
+    "|move|p1a: Conkeldurr|Close Combat|p2a: Azumarill",
+    "|-resisted|p2a: Azumarill",
+    "|-damage|p2a: Azumarill|0 fnt",
+    "|-unboost|p1a: Conkeldurr|def|1",
+    "|-unboost|p1a: Conkeldurr|spd|1",
+    "|faint|p2a: Azumarill",
+    "|-damage|p1a: Conkeldurr|121/299 brn|[from] brn",
+    "|upkeep",
+    "|switch|p2a: Lanturn|Lanturn, L89, M|367/367",
+    "|turn|10",
+    "|move|p1a: Conkeldurr|Mach Punch|p2a: Lanturn",
+    "|-damage|p2a: Lanturn|259/367",
+    "|move|p2a: Lanturn|Thunder Wave||[still]",
+    "|-fail|p2a: Lanturn",
+    "|-heal|p2a: Lanturn|281/367|[from] item: Leftovers",
+    "|-damage|p1a: Conkeldurr|103/299 brn|[from] brn",
+    "|upkeep",
+    "|turn|11",
+    "|move|p2a: Lanturn|Thunder Wave||[still]",
+    "|-fail|p2a: Lanturn",
+    "|move|p1a: Conkeldurr|Knock Off|p2a: Lanturn",
+    "|-damage|p2a: Lanturn|117/367",
+    "|-enditem|p2a: Lanturn|Leftovers|[from] move: Knock Off|[of] p1a: Conkeldurr",
+    "|-damage|p1a: Conkeldurr|85/299 brn|[from] brn",
+    "|upkeep",
+    "|turn|12",
+    "|move|p2a: Lanturn|Thunder Wave||[still]",
+    "|-fail|p2a: Lanturn",
+    "|move|p1a: Conkeldurr|Facade|p2a: Lanturn",
+    "|-damage|p2a: Lanturn|0 fnt",
+    "|faint|p2a: Lanturn",
+    "|-damage|p1a: Conkeldurr|67/299 brn|[from] brn",
+    "|upkeep",
+    "|switch|p2a: Kingambit|Kingambit, L74, M|270/270",
+    "|-activate|p2a: Kingambit|ability: Supreme Overlord",
+    "|-start|p2a: Kingambit|fallen2|[silent]",
+    "|turn|13",
+    "|move|p1a: Conkeldurr|Close Combat|p2a: Kingambit",
+    "|-supereffective|p2a: Kingambit",
+    "|-damage|p2a: Kingambit|0 fnt",
+    "|-unboost|p1a: Conkeldurr|def|1",
+    "|-unboost|p1a: Conkeldurr|spd|1",
+    "|faint|p2a: Kingambit",
+    "|-end|p2a: Kingambit|fallen2|[silent]",
+    "|-damage|p1a: Conkeldurr|49/299 brn|[from] brn",
+    "|upkeep",
+    "|switch|p2a: Hypno|Hypno, L95, M|315/315",
+    "|turn|14",
+    "|move|p1a: Conkeldurr|Mach Punch|p2a: Hypno",
+    "|-resisted|p2a: Hypno",
+    "|-damage|p2a: Hypno|270/315",
+    "|move|p2a: Hypno|Knock Off|p1a: Conkeldurr",
+    "|-resisted|p1a: Conkeldurr",
+    "|-damage|p1a: Conkeldurr|0 fnt",
+    "|-enditem|p1a: Conkeldurr|Flame Orb|[from] move: Knock Off|[of] p2a: Hypno",
+    "|faint|p1a: Conkeldurr",
+    "|-heal|p2a: Hypno|289/315|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p1a: Spectrier|Spectrier, L75|274/274",
+    "|turn|15",
+    "|move|p1a: Spectrier|Nasty Plot|p1a: Spectrier",
+    "|-boost|p1a: Spectrier|spa|2",
+    "|move|p2a: Hypno|Psychic Noise|p1a: Spectrier",
+    "|-damage|p1a: Spectrier|169/274",
+    "|-start|p1a: Spectrier|move: Heal Block",
+    "|-heal|p2a: Hypno|308/315|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|16",
+    "|move|p1a: Spectrier|Shadow Ball|p2a: Hypno",
+    "|-supereffective|p2a: Hypno",
+    "|-damage|p2a: Hypno|0 fnt",
+    "|faint|p2a: Hypno",
+    "|-ability|p1a: Spectrier|Grim Neigh|boost",
+    "|-boost|p1a: Spectrier|spa|1",
+    "|-damage|p1a: Spectrier|142/274|[from] item: Life Orb",
+    "|-end|p1a: Spectrier|move: Heal Block",
+    "|upkeep",
+    "|switch|p2a: Carbink|Carbink, L90|236/236",
+    "|turn|17",
+    "|move|p1a: Spectrier|Draining Kiss|p2a: Carbink",
+    "|-damage|p2a: Carbink|155/236",
+    "|-heal|p1a: Spectrier|203/274|[from] drain|[of] p2a: Carbink",
+    "|-damage|p1a: Spectrier|176/274|[from] item: Life Orb",
+    "|move|p2a: Carbink|Body Press|p1a: Spectrier",
+    "|-immune|p1a: Spectrier",
+    "|-heal|p2a: Carbink|169/236|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|18",
+    "|move|p1a: Spectrier|Dark Pulse|p2a: Carbink",
+    "|-resisted|p2a: Carbink",
+    "|-damage|p2a: Carbink|111/236",
+    "|-damage|p1a: Spectrier|149/274|[from] item: Life Orb",
+    "|move|p2a: Carbink|Body Press|p1a: Spectrier",
+    "|-immune|p1a: Spectrier",
+    "|-heal|p2a: Carbink|125/236|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|19",
+    "|move|p1a: Spectrier|Draining Kiss|p2a: Carbink",
+    "|-damage|p2a: Carbink|47/236",
+    "|-heal|p1a: Spectrier|208/274|[from] drain|[of] p2a: Carbink",
+    "|-damage|p1a: Spectrier|181/274|[from] item: Life Orb",
+    "|move|p2a: Carbink|Moonblast|p1a: Spectrier",
+    "|-damage|p1a: Spectrier|97/274",
+    "|-heal|p2a: Carbink|61/236|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|20",
+    "|move|p1a: Spectrier|Nasty Plot|p1a: Spectrier",
+    "|-boost|p1a: Spectrier|spa|2",
+    "|move|p2a: Carbink|Body Press|p1a: Spectrier",
+    "|-immune|p1a: Spectrier",
+    "|-heal|p2a: Carbink|75/236|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|21",
+    "|move|p1a: Spectrier|Dark Pulse|p2a: Carbink",
+    "|-resisted|p2a: Carbink",
+    "|-damage|p2a: Carbink|0 fnt",
+    "|faint|p2a: Carbink",
+    "|-ability|p1a: Spectrier|Grim Neigh|boost",
+    "|-boost|p1a: Spectrier|spa|1",
+    "|-damage|p1a: Spectrier|70/274|[from] item: Life Orb",
+    "|upkeep",
+    "|switch|p2a: Gogoat|Gogoat, L88, F|360/360",
+    "|turn|22",
+    "|move|p1a: Spectrier|Shadow Ball|p2a: Gogoat",
+    "|-damage|p2a: Gogoat|0 fnt",
+    "|faint|p2a: Gogoat",
+    "|-damage|p1a: Spectrier|43/274|[from] item: Life Orb",
+    "|win|Player 1"
+  ]
+}

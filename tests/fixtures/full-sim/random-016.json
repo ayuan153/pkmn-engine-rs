@@ -1,0 +1,961 @@
+{
+  "id": "random-016",
+  "description": "Random battle random-016",
+  "seed": [
+    3060,
+    3061,
+    3062,
+    3063
+  ],
+  "format": "gen9randombattle",
+  "p1": {
+    "team": [
+      {
+        "species": "Solgaleo",
+        "ability": "Full Metal Body",
+        "item": "Rocky Helmet",
+        "moves": [
+          "Close Combat",
+          "Sunsteel Strike",
+          "Earthquake",
+          "Morning Sun"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 74,
+        "gender": "N"
+      },
+      {
+        "species": "Electrode-Hisui",
+        "ability": "Soundproof",
+        "item": "Leftovers",
+        "moves": [
+          "Leech Seed",
+          "Substitute",
+          "Giga Drain",
+          "Thunderbolt"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 87,
+        "gender": "N"
+      },
+      {
+        "species": "Staraptor",
+        "ability": "Reckless",
+        "item": "Choice Scarf",
+        "moves": [
+          "Double-Edge",
+          "Close Combat",
+          "Brave Bird",
+          "U-turn"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 81,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "M"
+      },
+      {
+        "species": "Carbink",
+        "ability": "Clear Body",
+        "item": "Chesto Berry",
+        "moves": [
+          "Body Press",
+          "Moonblast",
+          "Iron Defense",
+          "Rest"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 90,
+        "gender": "N"
+      },
+      {
+        "species": "Vileplume",
+        "ability": "Effect Spore",
+        "item": "Leftovers",
+        "moves": [
+          "Sleep Powder",
+          "Giga Drain",
+          "Strength Sap",
+          "Sludge Bomb"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 85,
+        "gender": "M"
+      },
+      {
+        "species": "Skeledirge",
+        "ability": "Unaware",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Slack Off",
+          "Torch Song",
+          "Flame Charge",
+          "Shadow Ball"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "M"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Entei",
+        "ability": "Inner Focus",
+        "item": "Choice Band",
+        "moves": [
+          "Sacred Fire",
+          "Extreme Speed",
+          "Stone Edge",
+          "Flare Blitz"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 78,
+        "gender": "N"
+      },
+      {
+        "species": "Spidops",
+        "ability": "Stakeout",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Spikes",
+          "Knock Off",
+          "Sticky Web",
+          "U-turn"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 96,
+        "gender": "M"
+      },
+      {
+        "species": "Meganium",
+        "ability": "Overgrow",
+        "item": "Leftovers",
+        "moves": [
+          "Knock Off",
+          "Earthquake",
+          "Swords Dance",
+          "Petal Blizzard"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 90,
+        "gender": "M"
+      },
+      {
+        "species": "Dudunsparce",
+        "ability": "Rattled",
+        "item": "Leftovers",
+        "moves": [
+          "Roost",
+          "Shadow Ball",
+          "Calm Mind",
+          "Boomburst"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 83,
+        "gender": "M"
+      },
+      {
+        "species": "Pawmot",
+        "ability": "Iron Fist",
+        "item": "Life Orb",
+        "moves": [
+          "Double Shock",
+          "Ice Punch",
+          "Close Combat",
+          "Revival Blessing"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 80,
+        "gender": "M"
+      },
+      {
+        "species": "Ursaluna",
+        "ability": "Guts",
+        "item": "Flame Orb",
+        "moves": [
+          "Facade",
+          "Throat Chop",
+          "Headlong Rush",
+          "Swords Dance"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "F"
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "switch 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "switch 4"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "switch 2"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "switch 5"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "switch 3"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "switch 6",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "switch 6"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Solgaleo|Solgaleo, L74|325/325",
+    "|switch|p2a: Entei|Entei, L78|307/307",
+    "|turn|1",
+    "|move|p2a: Entei|Sacred Fire|p1a: Solgaleo",
+    "|-supereffective|p1a: Solgaleo",
+    "|-damage|p1a: Solgaleo|29/325",
+    "|-status|p1a: Solgaleo|brn",
+    "|move|p1a: Solgaleo|Morning Sun|p1a: Solgaleo",
+    "|-heal|p1a: Solgaleo|191/325 brn",
+    "|-damage|p1a: Solgaleo|171/325 brn|[from] brn",
+    "|upkeep",
+    "|turn|2",
+    "|move|p2a: Entei|Sacred Fire|p1a: Solgaleo",
+    "|-supereffective|p1a: Solgaleo",
+    "|-damage|p1a: Solgaleo|0 fnt",
+    "|faint|p1a: Solgaleo",
+    "|upkeep",
+    "|switch|p1a: Carbink|Carbink, L90|236/236",
+    "|turn|3",
+    "|move|p2a: Entei|Sacred Fire|p1a: Carbink",
+    "|-resisted|p1a: Carbink",
+    "|-damage|p1a: Carbink|191/236",
+    "|-status|p1a: Carbink|brn",
+    "|move|p1a: Carbink|Rest|p1a: Carbink",
+    "|-status|p1a: Carbink|slp|[from] move: Rest",
+    "|-heal|p1a: Carbink|236/236 slp|[silent]",
+    "|-enditem|p1a: Carbink|Chesto Berry|[eat]",
+    "|-curestatus|p1a: Carbink|slp|[msg]",
+    "|upkeep",
+    "|turn|4",
+    "|move|p2a: Entei|Sacred Fire|p1a: Carbink",
+    "|-resisted|p1a: Carbink",
+    "|-damage|p1a: Carbink|187/236",
+    "|-status|p1a: Carbink|brn",
+    "|move|p1a: Carbink|Moonblast|p2a: Entei",
+    "|-resisted|p2a: Entei",
+    "|-damage|p2a: Entei|262/307",
+    "|-unboost|p2a: Entei|spa|1",
+    "|-damage|p1a: Carbink|173/236 brn|[from] brn",
+    "|upkeep",
+    "|turn|5",
+    "|move|p2a: Entei|Sacred Fire|p1a: Carbink",
+    "|-resisted|p1a: Carbink",
+    "|-damage|p1a: Carbink|125/236 brn",
+    "|move|p1a: Carbink|Iron Defense|p1a: Carbink",
+    "|-boost|p1a: Carbink|def|2",
+    "|-damage|p1a: Carbink|111/236 brn|[from] brn",
+    "|upkeep",
+    "|turn|6",
+    "|move|p2a: Entei|Sacred Fire|p1a: Carbink",
+    "|-resisted|p1a: Carbink",
+    "|-damage|p1a: Carbink|87/236 brn",
+    "|move|p1a: Carbink|Iron Defense|p1a: Carbink",
+    "|-boost|p1a: Carbink|def|2",
+    "|-damage|p1a: Carbink|73/236 brn|[from] brn",
+    "|upkeep",
+    "|turn|7",
+    "|move|p2a: Entei|Sacred Fire|p1a: Carbink",
+    "|-resisted|p1a: Carbink",
+    "|-damage|p1a: Carbink|57/236 brn",
+    "|move|p1a: Carbink|Rest|p1a: Carbink",
+    "|-status|p1a: Carbink|slp|[from] move: Rest",
+    "|-heal|p1a: Carbink|236/236 slp|[silent]",
+    "|upkeep",
+    "|turn|8",
+    "|move|p2a: Entei|Sacred Fire|p1a: Carbink",
+    "|-resisted|p1a: Carbink",
+    "|-damage|p1a: Carbink|219/236 slp",
+    "|cant|p1a: Carbink|slp",
+    "|upkeep",
+    "|turn|9",
+    "|-activate|p2a: Entei|move: Struggle",
+    "|move|p2a: Entei|Struggle|p1a: Carbink",
+    "|-damage|p1a: Carbink|208/236 slp",
+    "|-damage|p2a: Entei|185/307|[from] recoil",
+    "|cant|p1a: Carbink|slp",
+    "|upkeep",
+    "|turn|10",
+    "|-activate|p2a: Entei|move: Struggle",
+    "|move|p2a: Entei|Struggle|p1a: Carbink",
+    "|-damage|p1a: Carbink|196/236 slp",
+    "|-damage|p2a: Entei|108/307|[from] recoil",
+    "|-curestatus|p1a: Carbink|slp|[msg]",
+    "|move|p1a: Carbink|Iron Defense|p1a: Carbink",
+    "|-boost|p1a: Carbink|def|2",
+    "|upkeep",
+    "|turn|11",
+    "|-activate|p2a: Entei|move: Struggle",
+    "|move|p2a: Entei|Struggle|p1a: Carbink",
+    "|-damage|p1a: Carbink|188/236",
+    "|-damage|p2a: Entei|31/307|[from] recoil",
+    "|move|p1a: Carbink|Rest|p1a: Carbink",
+    "|-status|p1a: Carbink|slp|[from] move: Rest",
+    "|-heal|p1a: Carbink|236/236 slp|[silent]",
+    "|upkeep",
+    "|turn|12",
+    "|-activate|p2a: Entei|move: Struggle",
+    "|move|p2a: Entei|Struggle|p1a: Carbink",
+    "|-damage|p1a: Carbink|228/236 slp",
+    "|-damage|p2a: Entei|0 fnt|[from] recoil",
+    "|faint|p2a: Entei",
+    "|cant|p1a: Carbink|slp",
+    "|upkeep",
+    "|switch|p2a: Spidops|Spidops, L96, M|271/271",
+    "|turn|13",
+    "|cant|p1a: Carbink|slp",
+    "|move|p2a: Spidops|Knock Off|p1a: Carbink",
+    "|-resisted|p1a: Carbink",
+    "|-damage|p1a: Carbink|223/236 slp",
+    "|upkeep",
+    "|turn|14",
+    "|-curestatus|p1a: Carbink|slp|[msg]",
+    "|move|p1a: Carbink|Rest|p1a: Carbink",
+    "|-status|p1a: Carbink|slp|[from] move: Rest",
+    "|-heal|p1a: Carbink|236/236 slp|[silent]",
+    "|move|p2a: Spidops|Knock Off|p1a: Carbink",
+    "|-resisted|p1a: Carbink",
+    "|-crit|p1a: Carbink",
+    "|-damage|p1a: Carbink|211/236 slp",
+    "|upkeep",
+    "|turn|15",
+    "|cant|p1a: Carbink|slp",
+    "|move|p2a: Spidops|U-turn|p1a: Carbink",
+    "|-resisted|p1a: Carbink",
+    "|-damage|p1a: Carbink|205/236 slp",
+    "|switch|p2a: Dudunsparce|Dudunsparce, L83, M|343/343|[from] U-turn",
+    "|upkeep",
+    "|turn|16",
+    "|cant|p1a: Carbink|slp",
+    "|move|p2a: Dudunsparce|Boomburst|p1a: Carbink",
+    "|-resisted|p1a: Carbink",
+    "|-damage|p1a: Carbink|168/236 slp",
+    "|upkeep",
+    "|turn|17",
+    "|-curestatus|p1a: Carbink|slp|[msg]",
+    "|move|p1a: Carbink|Body Press|p2a: Dudunsparce",
+    "|-supereffective|p2a: Dudunsparce",
+    "|-damage|p2a: Dudunsparce|0 fnt",
+    "|faint|p2a: Dudunsparce",
+    "|upkeep",
+    "|switch|p2a: Spidops|Spidops, L96, M|271/271",
+    "|turn|18",
+    "|move|p1a: Carbink|Moonblast|p2a: Spidops",
+    "|-damage|p2a: Spidops|210/271",
+    "|move|p2a: Spidops|Sticky Web|p1a: Carbink",
+    "|-sidestart|p1: Player 1|move: Sticky Web",
+    "|upkeep",
+    "|turn|19",
+    "|move|p1a: Carbink|Rest|p1a: Carbink",
+    "|-status|p1a: Carbink|slp|[from] move: Rest",
+    "|-heal|p1a: Carbink|236/236 slp|[silent]",
+    "|move|p2a: Spidops|Knock Off|p1a: Carbink",
+    "|-resisted|p1a: Carbink",
+    "|-damage|p1a: Carbink|232/236 slp",
+    "|upkeep",
+    "|turn|20",
+    "|cant|p1a: Carbink|slp",
+    "|move|p2a: Spidops|Sticky Web||[still]",
+    "|-fail|p2a: Spidops",
+    "|upkeep",
+    "|turn|21",
+    "|cant|p1a: Carbink|slp",
+    "|move|p2a: Spidops|Sticky Web||[still]",
+    "|-fail|p2a: Spidops",
+    "|upkeep",
+    "|turn|22",
+    "|-curestatus|p1a: Carbink|slp|[msg]",
+    "|move|p1a: Carbink|Moonblast|p2a: Spidops",
+    "|-damage|p2a: Spidops|138/271",
+    "|move|p2a: Spidops|Knock Off|p1a: Carbink",
+    "|-resisted|p1a: Carbink",
+    "|-damage|p1a: Carbink|228/236",
+    "|upkeep",
+    "|turn|23",
+    "|move|p1a: Carbink|Moonblast|p2a: Spidops",
+    "|-damage|p2a: Spidops|75/271",
+    "|-unboost|p2a: Spidops|spa|1",
+    "|move|p2a: Spidops|Knock Off|p1a: Carbink",
+    "|-resisted|p1a: Carbink",
+    "|-damage|p1a: Carbink|224/236",
+    "|upkeep",
+    "|turn|24",
+    "|move|p1a: Carbink|Body Press|p2a: Spidops",
+    "|-resisted|p2a: Spidops",
+    "|-damage|p2a: Spidops|0 fnt",
+    "|faint|p2a: Spidops",
+    "|upkeep",
+    "|switch|p2a: Pawmot|Pawmot, L80, M|243/243",
+    "|turn|25",
+    "|move|p2a: Pawmot|Double Shock|p1a: Carbink",
+    "|-damage|p1a: Carbink|195/236",
+    "|-start|p2a: Pawmot|typechange|???/Fighting|[from] move: Double Shock",
+    "|-damage|p2a: Pawmot|219/243|[from] item: Life Orb",
+    "|move|p1a: Carbink|Iron Defense|p1a: Carbink",
+    "|-boost|p1a: Carbink|def|0",
+    "|upkeep",
+    "|turn|26",
+    "|move|p2a: Pawmot|Double Shock||[still]",
+    "|-fail|p2a: Pawmot|move: Double Shock",
+    "|move|p1a: Carbink|Iron Defense|p1a: Carbink",
+    "|-boost|p1a: Carbink|def|0",
+    "|upkeep",
+    "|turn|27",
+    "|move|p2a: Pawmot|Double Shock||[still]",
+    "|-fail|p2a: Pawmot|move: Double Shock",
+    "|move|p1a: Carbink|Body Press|p2a: Pawmot",
+    "|-damage|p2a: Pawmot|0 fnt",
+    "|faint|p2a: Pawmot",
+    "|upkeep",
+    "|switch|p2a: Meganium|Meganium, L90, M|290/290",
+    "|turn|28",
+    "|move|p2a: Meganium|Petal Blizzard|p1a: Carbink",
+    "|-supereffective|p1a: Carbink",
+    "|-damage|p1a: Carbink|163/236",
+    "|move|p1a: Carbink|Rest|p1a: Carbink",
+    "|-status|p1a: Carbink|slp|[from] move: Rest",
+    "|-heal|p1a: Carbink|236/236 slp|[silent]",
+    "|upkeep",
+    "|turn|29",
+    "|move|p2a: Meganium|Swords Dance|p2a: Meganium",
+    "|-boost|p2a: Meganium|atk|2",
+    "|cant|p1a: Carbink|slp",
+    "|upkeep",
+    "|turn|30",
+    "|move|p2a: Meganium|Knock Off|p1a: Carbink",
+    "|-resisted|p1a: Carbink",
+    "|-damage|p1a: Carbink|228/236 slp",
+    "|cant|p1a: Carbink|slp",
+    "|upkeep",
+    "|turn|31",
+    "|move|p2a: Meganium|Swords Dance|p2a: Meganium",
+    "|-boost|p2a: Meganium|atk|2",
+    "|-curestatus|p1a: Carbink|slp|[msg]",
+    "|move|p1a: Carbink|Rest|p1a: Carbink",
+    "|-status|p1a: Carbink|slp|[from] move: Rest",
+    "|-heal|p1a: Carbink|236/236 slp|[silent]",
+    "|upkeep",
+    "|turn|32",
+    "|move|p2a: Meganium|Swords Dance|p2a: Meganium",
+    "|-boost|p2a: Meganium|atk|2",
+    "|cant|p1a: Carbink|slp",
+    "|upkeep",
+    "|turn|33",
+    "|move|p2a: Meganium|Petal Blizzard|p1a: Carbink",
+    "|-supereffective|p1a: Carbink",
+    "|-damage|p1a: Carbink|114/236 slp",
+    "|cant|p1a: Carbink|slp",
+    "|upkeep",
+    "|turn|34",
+    "|move|p2a: Meganium|Knock Off|p1a: Carbink",
+    "|-resisted|p1a: Carbink",
+    "|-damage|p1a: Carbink|99/236 slp",
+    "|-curestatus|p1a: Carbink|slp|[msg]",
+    "|move|p1a: Carbink|Iron Defense|p1a: Carbink",
+    "|-boost|p1a: Carbink|def|0",
+    "|upkeep",
+    "|turn|35",
+    "|move|p2a: Meganium|Petal Blizzard|p1a: Carbink",
+    "|-supereffective|p1a: Carbink",
+    "|-damage|p1a: Carbink|0 fnt",
+    "|faint|p1a: Carbink",
+    "|upkeep",
+    "|switch|p1a: Skeledirge|Skeledirge, L79, M|294/294",
+    "|turn|36",
+    "|move|p2a: Meganium|Petal Blizzard|p1a: Skeledirge",
+    "|-resisted|p1a: Skeledirge",
+    "|-damage|p1a: Skeledirge|248/294",
+    "|move|p1a: Skeledirge|Shadow Ball|p2a: Meganium",
+    "|-damage|p2a: Meganium|215/290",
+    "|-heal|p2a: Meganium|233/290|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|37",
+    "|move|p2a: Meganium|Knock Off|p1a: Skeledirge",
+    "|-supereffective|p1a: Skeledirge",
+    "|-damage|p1a: Skeledirge|114/294",
+    "|-enditem|p1a: Skeledirge|Heavy-Duty Boots|[from] move: Knock Off|[of] p2a: Meganium",
+    "|move|p1a: Skeledirge|Slack Off|p1a: Skeledirge",
+    "|-heal|p1a: Skeledirge|261/294",
+    "|-heal|p2a: Meganium|251/290|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|38",
+    "|move|p2a: Meganium|Petal Blizzard|p1a: Skeledirge",
+    "|-resisted|p1a: Skeledirge",
+    "|-damage|p1a: Skeledirge|212/294",
+    "|move|p1a: Skeledirge|Shadow Ball|p2a: Meganium",
+    "|-damage|p2a: Meganium|176/290",
+    "|-unboost|p2a: Meganium|spd|1",
+    "|-heal|p2a: Meganium|194/290|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|39",
+    "|move|p2a: Meganium|Petal Blizzard|p1a: Skeledirge",
+    "|-resisted|p1a: Skeledirge",
+    "|-damage|p1a: Skeledirge|167/294",
+    "|move|p1a: Skeledirge|Slack Off|p1a: Skeledirge",
+    "|-heal|p1a: Skeledirge|294/294",
+    "|-heal|p2a: Meganium|212/290|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|40",
+    "|move|p2a: Meganium|Petal Blizzard|p1a: Skeledirge",
+    "|-resisted|p1a: Skeledirge",
+    "|-damage|p1a: Skeledirge|249/294",
+    "|move|p1a: Skeledirge|Slack Off|p1a: Skeledirge",
+    "|-heal|p1a: Skeledirge|294/294",
+    "|-heal|p2a: Meganium|230/290|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|41",
+    "|move|p2a: Meganium|Petal Blizzard|p1a: Skeledirge",
+    "|-resisted|p1a: Skeledirge",
+    "|-damage|p1a: Skeledirge|249/294",
+    "|move|p1a: Skeledirge|Slack Off|p1a: Skeledirge",
+    "|-heal|p1a: Skeledirge|294/294",
+    "|-heal|p2a: Meganium|248/290|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|42",
+    "|move|p2a: Meganium|Swords Dance|p2a: Meganium",
+    "|-boost|p2a: Meganium|atk|0",
+    "|move|p1a: Skeledirge|Shadow Ball|p2a: Meganium",
+    "|-damage|p2a: Meganium|173/290",
+    "|-unboost|p2a: Meganium|spd|1",
+    "|-heal|p2a: Meganium|191/290|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|43",
+    "|move|p2a: Meganium|Knock Off|p1a: Skeledirge",
+    "|-supereffective|p1a: Skeledirge",
+    "|-damage|p1a: Skeledirge|206/294",
+    "|move|p1a: Skeledirge|Shadow Ball|p2a: Meganium",
+    "|-damage|p2a: Meganium|122/290",
+    "|-heal|p2a: Meganium|140/290|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|44",
+    "|move|p2a: Meganium|Swords Dance|p2a: Meganium",
+    "|-boost|p2a: Meganium|atk|0",
+    "|move|p1a: Skeledirge|Flame Charge|p2a: Meganium",
+    "|-supereffective|p2a: Meganium",
+    "|-damage|p2a: Meganium|72/290",
+    "|-boost|p1a: Skeledirge|spe|1",
+    "|-heal|p2a: Meganium|90/290|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|45",
+    "|move|p1a: Skeledirge|Torch Song|p2a: Meganium",
+    "|-supereffective|p2a: Meganium",
+    "|-damage|p2a: Meganium|0 fnt",
+    "|-boost|p1a: Skeledirge|spa|1",
+    "|faint|p2a: Meganium",
+    "|upkeep",
+    "|switch|p2a: Ursaluna|Ursaluna, L79, F|335/335",
+    "|turn|46",
+    "|move|p1a: Skeledirge|Torch Song|p2a: Ursaluna",
+    "|-damage|p2a: Ursaluna|205/335",
+    "|-boost|p1a: Skeledirge|spa|1",
+    "|move|p2a: Ursaluna|Throat Chop|p1a: Skeledirge",
+    "|-supereffective|p1a: Skeledirge",
+    "|-damage|p1a: Skeledirge|84/294",
+    "|-start|p1a: Skeledirge|Throat Chop|[silent]",
+    "|-status|p2a: Ursaluna|brn|[from] item: Flame Orb",
+    "|upkeep",
+    "|turn|47",
+    "|move|p1a: Skeledirge|Slack Off|p1a: Skeledirge",
+    "|-heal|p1a: Skeledirge|231/294",
+    "|move|p2a: Ursaluna|Facade|p1a: Skeledirge",
+    "|-immune|p1a: Skeledirge",
+    "|-damage|p2a: Ursaluna|185/335 brn|[from] brn",
+    "|-end|p1a: Skeledirge|Throat Chop|[silent]",
+    "|upkeep",
+    "|turn|48",
+    "|move|p1a: Skeledirge|Flame Charge|p2a: Ursaluna",
+    "|-damage|p2a: Ursaluna|148/335 brn",
+    "|-boost|p1a: Skeledirge|spe|1",
+    "|move|p2a: Ursaluna|Facade|p1a: Skeledirge",
+    "|-immune|p1a: Skeledirge",
+    "|-damage|p2a: Ursaluna|128/335 brn|[from] brn",
+    "|upkeep",
+    "|turn|49",
+    "|move|p1a: Skeledirge|Torch Song|p2a: Ursaluna",
+    "|-damage|p2a: Ursaluna|0 fnt",
+    "|-boost|p1a: Skeledirge|spa|1",
+    "|faint|p2a: Ursaluna",
+    "|win|Player 1"
+  ]
+}

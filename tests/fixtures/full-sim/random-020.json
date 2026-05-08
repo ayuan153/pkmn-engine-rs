@@ -1,0 +1,795 @@
+{
+  "id": "random-020",
+  "description": "Random battle random-020",
+  "seed": [
+    3076,
+    3077,
+    3078,
+    3079
+  ],
+  "format": "gen9randombattle",
+  "p1": {
+    "team": [
+      {
+        "species": "Gyarados",
+        "ability": "Moxie",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Dragon Dance",
+          "Waterfall",
+          "Earthquake",
+          "Tera Blast"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "F"
+      },
+      {
+        "species": "Clawitzer",
+        "ability": "Mega Launcher",
+        "item": "Choice Specs",
+        "moves": [
+          "Dark Pulse",
+          "U-turn",
+          "Water Pulse",
+          "Aura Sphere"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 87,
+        "gender": "F"
+      },
+      {
+        "species": "Chandelure",
+        "ability": "Flash Fire",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Calm Mind",
+          "Shadow Ball",
+          "Fire Blast",
+          "Energy Ball"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 83,
+        "gender": "F"
+      },
+      {
+        "species": "Arboliva",
+        "ability": "Harvest",
+        "item": "Sitrus Berry",
+        "moves": [
+          "Substitute",
+          "Protect",
+          "Leech Seed",
+          "Hyper Voice"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 77,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 91,
+        "gender": "F"
+      },
+      {
+        "species": "Gothitelle",
+        "ability": "Shadow Tag",
+        "item": "Choice Scarf",
+        "moves": [
+          "Psychic",
+          "Trick",
+          "Focus Blast",
+          "Dark Pulse"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 90,
+        "gender": "M"
+      },
+      {
+        "species": "Iron Crown",
+        "ability": "Quark Drive",
+        "item": "Leftovers",
+        "moves": [
+          "Calm Mind",
+          "Focus Blast",
+          "Psyshock",
+          "Tachyon Cutter"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 78,
+        "gender": "N"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Golduck",
+        "ability": "Cloud Nine",
+        "item": "Life Orb",
+        "moves": [
+          "Nasty Plot",
+          "Hydro Pump",
+          "Ice Beam",
+          "Grass Knot"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 90,
+        "gender": "M"
+      },
+      {
+        "species": "Dedenne",
+        "ability": "Cheek Pouch",
+        "item": "Sitrus Berry",
+        "moves": [
+          "Thunderbolt",
+          "Nuzzle",
+          "Dazzling Gleam",
+          "Super Fang"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "F"
+      },
+      {
+        "species": "Frosmoth",
+        "ability": "Ice Scales",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Quiver Dance",
+          "Hurricane",
+          "Ice Beam",
+          "Giga Drain"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 82,
+        "gender": "F"
+      },
+      {
+        "species": "Bastiodon",
+        "ability": "Soundproof",
+        "item": "Chesto Berry",
+        "moves": [
+          "Rest",
+          "Iron Defense",
+          "Foul Play",
+          "Body Press"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 89,
+        "gender": "F"
+      },
+      {
+        "species": "Gyarados",
+        "ability": "Moxie",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Tera Blast",
+          "Waterfall",
+          "Dragon Dance",
+          "Earthquake"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "F"
+      },
+      {
+        "species": "Miraidon",
+        "ability": "Hadron Engine",
+        "item": "Choice Specs",
+        "moves": [
+          "Volt Switch",
+          "Electro Drift",
+          "Overheat",
+          "Draco Meteor"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 65,
+        "gender": "N"
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "switch 6"
+    ],
+    [
+      "switch 3",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "switch 2"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "switch 3"
+    ],
+    [
+      "switch 6",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "switch 4"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Gyarados|Gyarados, L79, F|280/280",
+    "|switch|p2a: Golduck|Golduck, L90, M|290/290",
+    "|-ability|p2a: Golduck|Cloud Nine",
+    "|turn|1",
+    "|move|p2a: Golduck|Hydro Pump|p1a: Gyarados",
+    "|-resisted|p1a: Gyarados",
+    "|-damage|p1a: Gyarados|196/280",
+    "|-damage|p2a: Golduck|261/290|[from] item: Life Orb",
+    "|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados",
+    "|-boost|p1a: Gyarados|atk|1",
+    "|-boost|p1a: Gyarados|spe|1",
+    "|upkeep",
+    "|turn|2",
+    "|move|p1a: Gyarados|Earthquake|p2a: Golduck",
+    "|-damage|p2a: Golduck|143/290",
+    "|move|p2a: Golduck|Ice Beam|p1a: Gyarados",
+    "|-damage|p1a: Gyarados|101/280",
+    "|-damage|p2a: Golduck|114/290|[from] item: Life Orb",
+    "|upkeep",
+    "|turn|3",
+    "|move|p1a: Gyarados|Waterfall|p2a: Golduck",
+    "|-resisted|p2a: Golduck",
+    "|-damage|p2a: Golduck|46/290",
+    "|move|p2a: Golduck|Ice Beam|p1a: Gyarados",
+    "|-damage|p1a: Gyarados|13/280",
+    "|-damage|p2a: Golduck|17/290|[from] item: Life Orb",
+    "|upkeep",
+    "|turn|4",
+    "|move|p1a: Gyarados|Tera Blast|p2a: Golduck",
+    "|-damage|p2a: Golduck|0 fnt",
+    "|faint|p2a: Golduck",
+    "|-ability|p1a: Gyarados|Moxie|boost",
+    "|-boost|p1a: Gyarados|atk|1",
+    "|upkeep",
+    "|switch|p2a: Miraidon|Miraidon, L65|238/238",
+    "|-fieldstart|move: Electric Terrain|[from] ability: Hadron Engine|[of] p2a: Miraidon",
+    "|turn|5",
+    "|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados",
+    "|-boost|p1a: Gyarados|atk|1",
+    "|-boost|p1a: Gyarados|spe|1",
+    "|move|p2a: Miraidon|Draco Meteor|p1a: Gyarados",
+    "|-damage|p1a: Gyarados|0 fnt",
+    "|-unboost|p2a: Miraidon|spa|2",
+    "|faint|p1a: Gyarados",
+    "|upkeep",
+    "|switch|p1a: Chandelure|Chandelure, L83, F|235/235",
+    "|turn|6",
+    "|move|p2a: Miraidon|Draco Meteor|p1a: Chandelure",
+    "|-damage|p1a: Chandelure|126/235",
+    "|-unboost|p2a: Miraidon|spa|2",
+    "|move|p1a: Chandelure|Calm Mind|p1a: Chandelure",
+    "|-boost|p1a: Chandelure|spa|1",
+    "|-boost|p1a: Chandelure|spd|1",
+    "|upkeep",
+    "|turn|7",
+    "|move|p2a: Miraidon|Draco Meteor|p1a: Chandelure",
+    "|-damage|p1a: Chandelure|74/235",
+    "|-unboost|p2a: Miraidon|spa|2",
+    "|move|p1a: Chandelure|Shadow Ball|p2a: Miraidon",
+    "|-damage|p2a: Miraidon|69/238",
+    "|-unboost|p2a: Miraidon|spd|1",
+    "|upkeep",
+    "|turn|8",
+    "|move|p2a: Miraidon|Draco Meteor|p1a: Chandelure",
+    "|-damage|p1a: Chandelure|35/235",
+    "|move|p1a: Chandelure|Shadow Ball|p2a: Miraidon",
+    "|-damage|p2a: Miraidon|0 fnt",
+    "|faint|p2a: Miraidon",
+    "|upkeep",
+    "|switch|p2a: Dedenne|Dedenne, L88, F|261/261",
+    "|turn|9",
+    "|move|p2a: Dedenne|Nuzzle|p1a: Chandelure",
+    "|-damage|p1a: Chandelure|13/235",
+    "|-status|p1a: Chandelure|par",
+    "|move|p1a: Chandelure|Calm Mind|p1a: Chandelure",
+    "|-boost|p1a: Chandelure|spa|1",
+    "|-boost|p1a: Chandelure|spd|1",
+    "|-fieldend|move: Electric Terrain",
+    "|upkeep",
+    "|turn|10",
+    "|move|p2a: Dedenne|Super Fang|p1a: Chandelure",
+    "|-immune|p1a: Chandelure",
+    "|move|p1a: Chandelure|Fire Blast|p2a: Dedenne",
+    "|-damage|p2a: Dedenne|0 fnt",
+    "|faint|p2a: Dedenne",
+    "|upkeep",
+    "|switch|p2a: Frosmoth|Frosmoth, L82, F|249/249",
+    "|turn|11",
+    "|move|p2a: Frosmoth|Giga Drain|p1a: Chandelure",
+    "|-resisted|p1a: Chandelure",
+    "|-damage|p1a: Chandelure|0 fnt",
+    "|faint|p1a: Chandelure",
+    "|upkeep",
+    "|switch|p1a: Iron Crown|Iron Crown, L78|268/268",
+    "|turn|12",
+    "|move|p1a: Iron Crown|Focus Blast|p2a: Frosmoth|[miss]",
+    "|-miss|p1a: Iron Crown|p2a: Frosmoth",
+    "|move|p2a: Frosmoth|Hurricane|p1a: Iron Crown",
+    "|-resisted|p1a: Iron Crown",
+    "|-damage|p1a: Iron Crown|228/268",
+    "|-start|p1a: Iron Crown|confusion",
+    "|-heal|p1a: Iron Crown|244/268|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|13",
+    "|-activate|p1a: Iron Crown|confusion",
+    "|move|p1a: Iron Crown|Psyshock|p2a: Frosmoth",
+    "|-damage|p2a: Frosmoth|188/249",
+    "|move|p2a: Frosmoth|Giga Drain|p1a: Iron Crown",
+    "|-resisted|p1a: Iron Crown",
+    "|-damage|p1a: Iron Crown|216/268",
+    "|-heal|p2a: Frosmoth|202/249|[from] drain|[of] p1a: Iron Crown",
+    "|-heal|p1a: Iron Crown|232/268|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|14",
+    "|-activate|p1a: Iron Crown|confusion",
+    "|-damage|p1a: Iron Crown|217/268|[from] confusion",
+    "|move|p2a: Frosmoth|Quiver Dance|p2a: Frosmoth",
+    "|-boost|p2a: Frosmoth|spa|1",
+    "|-boost|p2a: Frosmoth|spd|1",
+    "|-boost|p2a: Frosmoth|spe|1",
+    "|-heal|p1a: Iron Crown|233/268|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|15",
+    "|move|p2a: Frosmoth|Ice Beam|p1a: Iron Crown",
+    "|-resisted|p1a: Iron Crown",
+    "|-damage|p1a: Iron Crown|157/268",
+    "|-end|p1a: Iron Crown|confusion",
+    "|move|p1a: Iron Crown|Psyshock|p2a: Frosmoth",
+    "|-damage|p2a: Frosmoth|144/249",
+    "|-heal|p1a: Iron Crown|173/268|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|16",
+    "|move|p2a: Frosmoth|Quiver Dance|p2a: Frosmoth",
+    "|-boost|p2a: Frosmoth|spa|1",
+    "|-boost|p2a: Frosmoth|spd|1",
+    "|-boost|p2a: Frosmoth|spe|1",
+    "|move|p1a: Iron Crown|Focus Blast|p2a: Frosmoth|[miss]",
+    "|-miss|p1a: Iron Crown|p2a: Frosmoth",
+    "|-heal|p1a: Iron Crown|189/268|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|17",
+    "|move|p2a: Frosmoth|Giga Drain|p1a: Iron Crown",
+    "|-resisted|p1a: Iron Crown",
+    "|-damage|p1a: Iron Crown|138/268",
+    "|-heal|p2a: Frosmoth|170/249|[from] drain|[of] p1a: Iron Crown",
+    "|move|p1a: Iron Crown|Tachyon Cutter|p2a: Frosmoth",
+    "|-supereffective|p2a: Frosmoth",
+    "|-damage|p2a: Frosmoth|145/249",
+    "|-supereffective|p2a: Frosmoth",
+    "|-damage|p2a: Frosmoth|114/249",
+    "|-hitcount|p2a: Frosmoth|2",
+    "|-heal|p1a: Iron Crown|154/268|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|18",
+    "|move|p2a: Frosmoth|Hurricane|p1a: Iron Crown",
+    "|-resisted|p1a: Iron Crown",
+    "|-damage|p1a: Iron Crown|69/268",
+    "|-start|p1a: Iron Crown|confusion",
+    "|-activate|p1a: Iron Crown|confusion",
+    "|-damage|p1a: Iron Crown|52/268|[from] confusion",
+    "|-heal|p1a: Iron Crown|68/268|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|19",
+    "|move|p2a: Frosmoth|Giga Drain|p1a: Iron Crown",
+    "|-resisted|p1a: Iron Crown",
+    "|-damage|p1a: Iron Crown|11/268",
+    "|-heal|p2a: Frosmoth|143/249|[from] drain|[of] p1a: Iron Crown",
+    "|-activate|p1a: Iron Crown|confusion",
+    "|move|p1a: Iron Crown|Focus Blast|p2a: Frosmoth",
+    "|-damage|p2a: Frosmoth|122/249",
+    "|-heal|p1a: Iron Crown|27/268|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|20",
+    "|move|p2a: Frosmoth|Ice Beam|p1a: Iron Crown",
+    "|-resisted|p1a: Iron Crown",
+    "|-damage|p1a: Iron Crown|0 fnt",
+    "|faint|p1a: Iron Crown",
+    "|-end|p1a: Iron Crown|Quark Drive|[silent]",
+    "|upkeep",
+    "|switch|p1a: Arboliva|Arboliva, L91, F|288/288",
+    "|turn|21",
+    "|move|p1a: Arboliva|Protect|p1a: Arboliva",
+    "|-singleturn|p1a: Arboliva|Protect",
+    "|move|p2a: Frosmoth|Giga Drain|p1a: Arboliva",
+    "|-activate|p1a: Arboliva|move: Protect",
+    "|upkeep",
+    "|turn|22",
+    "|move|p1a: Arboliva|Protect||[still]",
+    "|-fail|p1a: Arboliva",
+    "|move|p2a: Frosmoth|Giga Drain|p1a: Arboliva",
+    "|-resisted|p1a: Arboliva",
+    "|-damage|p1a: Arboliva|240/288",
+    "|-heal|p2a: Frosmoth|146/249|[from] drain|[of] p1a: Arboliva",
+    "|upkeep",
+    "|turn|23",
+    "|move|p2a: Frosmoth|Giga Drain|p1a: Arboliva",
+    "|-resisted|p1a: Arboliva",
+    "|-damage|p1a: Arboliva|190/288",
+    "|-heal|p2a: Frosmoth|171/249|[from] drain|[of] p1a: Arboliva",
+    "|move|p1a: Arboliva|Hyper Voice|p2a: Frosmoth",
+    "|-damage|p2a: Frosmoth|135/249",
+    "|upkeep",
+    "|turn|24",
+    "|move|p2a: Frosmoth|Giga Drain|p1a: Arboliva",
+    "|-resisted|p1a: Arboliva",
+    "|-damage|p1a: Arboliva|145/288",
+    "|-heal|p2a: Frosmoth|158/249|[from] drain|[of] p1a: Arboliva",
+    "|move|p1a: Arboliva|Leech Seed|p2a: Frosmoth",
+    "|-start|p2a: Frosmoth|move: Leech Seed",
+    "|-damage|p2a: Frosmoth|127/249|[from] Leech Seed|[of] p1a: Arboliva",
+    "|-heal|p1a: Arboliva|176/288|[silent]",
+    "|upkeep",
+    "|turn|25",
+    "|move|p2a: Frosmoth|Ice Beam|p1a: Arboliva",
+    "|-supereffective|p1a: Arboliva",
+    "|-damage|p1a: Arboliva|0 fnt",
+    "|faint|p1a: Arboliva",
+    "|upkeep",
+    "|switch|p1a: Gothitelle|Gothitelle, L90, M|272/272",
+    "|turn|26",
+    "|move|p2a: Frosmoth|Hurricane|p1a: Gothitelle",
+    "|-crit|p1a: Gothitelle",
+    "|-damage|p1a: Gothitelle|46/272",
+    "|-start|p1a: Gothitelle|confusion",
+    "|-activate|p1a: Gothitelle|confusion",
+    "|move|p1a: Gothitelle|Dark Pulse|p2a: Frosmoth",
+    "|-damage|p2a: Frosmoth|111/249",
+    "|-damage|p2a: Frosmoth|80/249|[from] Leech Seed|[of] p1a: Gothitelle",
+    "|-heal|p1a: Gothitelle|77/272|[silent]",
+    "|upkeep",
+    "|turn|27",
+    "|move|p2a: Frosmoth|Quiver Dance|p2a: Frosmoth",
+    "|-boost|p2a: Frosmoth|spa|1",
+    "|-boost|p2a: Frosmoth|spd|1",
+    "|-boost|p2a: Frosmoth|spe|1",
+    "|-activate|p1a: Gothitelle|confusion",
+    "|-damage|p1a: Gothitelle|62/272|[from] confusion",
+    "|-damage|p2a: Frosmoth|49/249|[from] Leech Seed|[of] p1a: Gothitelle",
+    "|-heal|p1a: Gothitelle|93/272|[silent]",
+    "|upkeep",
+    "|turn|28",
+    "|move|p2a: Frosmoth|Hurricane|p1a: Gothitelle|[miss]",
+    "|-miss|p2a: Frosmoth|p1a: Gothitelle",
+    "|-activate|p1a: Gothitelle|confusion",
+    "|move|p1a: Gothitelle|Dark Pulse|p2a: Frosmoth",
+    "|-damage|p2a: Frosmoth|37/249",
+    "|-damage|p2a: Frosmoth|6/249|[from] Leech Seed|[of] p1a: Gothitelle",
+    "|-heal|p1a: Gothitelle|124/272|[silent]",
+    "|upkeep",
+    "|turn|29",
+    "|move|p2a: Frosmoth|Hurricane|p1a: Gothitelle",
+    "|-damage|p1a: Gothitelle|0 fnt",
+    "|faint|p1a: Gothitelle",
+    "|upkeep",
+    "|switch|p1a: Clawitzer|Clawitzer, L87, F|265/265",
+    "|turn|30",
+    "|move|p2a: Frosmoth|Hurricane|p1a: Clawitzer",
+    "|-damage|p1a: Clawitzer|69/265",
+    "|move|p1a: Clawitzer|Dark Pulse|p2a: Frosmoth",
+    "|-damage|p2a: Frosmoth|0 fnt",
+    "|faint|p2a: Frosmoth",
+    "|upkeep",
+    "|switch|p2a: Bastiodon|Bastiodon, L89, F|252/252",
+    "|turn|31",
+    "|move|p1a: Clawitzer|Dark Pulse|p2a: Bastiodon",
+    "|-damage|p2a: Bastiodon|144/252",
+    "|move|p2a: Bastiodon|Iron Defense|p2a: Bastiodon",
+    "|-boost|p2a: Bastiodon|def|2",
+    "|upkeep",
+    "|turn|32",
+    "|move|p1a: Clawitzer|Dark Pulse|p2a: Bastiodon",
+    "|-damage|p2a: Bastiodon|46/252",
+    "|move|p2a: Bastiodon|Body Press|p1a: Clawitzer",
+    "|-damage|p1a: Clawitzer|0 fnt",
+    "|faint|p1a: Clawitzer",
+    "|win|Player 2"
+  ]
+}

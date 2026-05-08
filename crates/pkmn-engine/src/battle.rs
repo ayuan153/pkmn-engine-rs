@@ -20,6 +20,8 @@ pub struct Battle {
     pub phase: BattlePhase,
     pub protocol: Vec<String>,
     rng_seed: [u16; 4],
+    /// Queued pivot switch targets per player (set externally by test runner)
+    pub pivot_switch_targets: [Vec<u8>; 2],
 }
 
 impl Battle {
@@ -32,6 +34,7 @@ impl Battle {
             phase: BattlePhase::ActionSelection,
             protocol: Vec::new(),
             rng_seed: seed,
+            pivot_switch_targets: [Vec::new(), Vec::new()],
         };
         // PS consumes one RNG call per Pokemon during team initialization
         // (battle.sample in new Pokemon for gender determination)
@@ -159,11 +162,22 @@ impl Battle {
     /// Apply forced switch after faint
     pub fn apply_switch(&mut self, player: u8, target: u8) -> BattleResult {
         self.sides[player as usize].active_index = target as usize;
+        // Emit switch line
+        let name = self.species_name(player);
+        let mon = self.sides[player as usize].active();
+        let hp = mon.hp;
+        let max_hp = mon.max_hp;
+        let level = mon.level;
+        let level_str = if level == 100 { String::new() } else { format!(", L{}", level) };
+        self.emit(format!("|switch|p{}a: {}|{}{}|{}/{}", player+1, name, name, level_str, hp, max_hp));
         if !self.has_heavy_duty_boots(player) {
             self.apply_entry_hazards(player);
         }
         self.trigger_ability_on_switch(player);
         self.phase = BattlePhase::ActionSelection;
+        // Emit turn marker after forced switch
+        self.turn += 1;
+        self.emit(format!("|turn|{}", self.turn));
         self.result
     }
 

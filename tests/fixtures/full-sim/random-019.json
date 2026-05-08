@@ -1,0 +1,614 @@
+{
+  "id": "random-019",
+  "description": "Random battle random-019",
+  "seed": [
+    3072,
+    3073,
+    3074,
+    3075
+  ],
+  "format": "gen9randombattle",
+  "p1": {
+    "team": [
+      {
+        "species": "Slither Wing",
+        "ability": "Protosynthesis",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Will-O-Wisp",
+          "Close Combat",
+          "Morning Sun",
+          "U-turn"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 81,
+        "gender": "N"
+      },
+      {
+        "species": "Golurk",
+        "ability": "No Guard",
+        "item": "Choice Band",
+        "moves": [
+          "Poltergeist",
+          "Dynamic Punch",
+          "Stone Edge",
+          "Earthquake"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 87,
+        "gender": "N"
+      },
+      {
+        "species": "Minior-Indigo",
+        "ability": "Shields Down",
+        "item": "White Herb",
+        "moves": [
+          "Power Gem",
+          "Earthquake",
+          "Acrobatics",
+          "Shell Smash"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "N"
+      },
+      {
+        "species": "Terrakion",
+        "ability": "Justified",
+        "item": "Life Orb",
+        "moves": [
+          "Stone Edge",
+          "Swords Dance",
+          "Earthquake",
+          "Close Combat"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "N"
+      },
+      {
+        "species": "Gyarados",
+        "ability": "Intimidate",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Dragon Dance",
+          "Earthquake",
+          "Tera Blast",
+          "Waterfall"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "M"
+      },
+      {
+        "species": "Tauros",
+        "ability": "Sheer Force",
+        "item": "Life Orb",
+        "moves": [
+          "Throat Chop",
+          "Zen Headbutt",
+          "Body Slam",
+          "Close Combat"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 82,
+        "gender": "M"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Rampardos",
+        "ability": "Sheer Force",
+        "item": "Life Orb",
+        "moves": [
+          "Zen Headbutt",
+          "Fire Punch",
+          "Earthquake",
+          "Rock Slide"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 90,
+        "gender": "M"
+      },
+      {
+        "species": "Swampert",
+        "ability": "Torrent",
+        "item": "Leftovers",
+        "moves": [
+          "Roar",
+          "Ice Beam",
+          "Earthquake",
+          "Flip Turn"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 83,
+        "gender": "M"
+      },
+      {
+        "species": "Lilligant",
+        "ability": "Own Tempo",
+        "item": "Life Orb",
+        "moves": [
+          "Quiver Dance",
+          "Petal Dance",
+          "Sleep Powder",
+          "Alluring Voice"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 86,
+        "gender": "F"
+      },
+      {
+        "species": "Bisharp",
+        "ability": "Defiant",
+        "item": "Eviolite",
+        "moves": [
+          "Throat Chop",
+          "Stealth Rock",
+          "Sucker Punch",
+          "Iron Head"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "F"
+      },
+      {
+        "species": "Espathra",
+        "ability": "Speed Boost",
+        "item": "Choice Specs",
+        "moves": [
+          "U-turn",
+          "Dazzling Gleam",
+          "Lumina Crash",
+          "Shadow Ball"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 80,
+        "gender": "F"
+      },
+      {
+        "species": "Dipplin",
+        "ability": "Sticky Hold",
+        "item": "Eviolite",
+        "moves": [
+          "Recover",
+          "Dragon Pulse",
+          "Sucker Punch",
+          "Giga Drain"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "M"
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "switch 4"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "switch 3",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "switch 3"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "switch 6",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Slither Wing|Slither Wing, L81|270/270",
+    "|switch|p2a: Rampardos|Rampardos, L90, M|321/321",
+    "|turn|1",
+    "|move|p1a: Slither Wing|Will-O-Wisp|p2a: Rampardos",
+    "|-status|p2a: Rampardos|brn",
+    "|move|p2a: Rampardos|Fire Punch|p1a: Slither Wing",
+    "|-supereffective|p1a: Slither Wing",
+    "|-damage|p1a: Slither Wing|83/270",
+    "|-damage|p2a: Rampardos|301/321 brn|[from] brn",
+    "|upkeep",
+    "|turn|2",
+    "|move|p1a: Slither Wing|Will-O-Wisp|p2a: Rampardos",
+    "|-fail|p2a: Rampardos|brn",
+    "|move|p2a: Rampardos|Zen Headbutt|p1a: Slither Wing",
+    "|-supereffective|p1a: Slither Wing",
+    "|-damage|p1a: Slither Wing|0 fnt",
+    "|faint|p1a: Slither Wing",
+    "|-end|p1a: Slither Wing|Protosynthesis|[silent]",
+    "|-damage|p2a: Rampardos|281/321 brn|[from] brn",
+    "|upkeep",
+    "|switch|p1a: Terrakion|Terrakion, L79|273/273",
+    "|turn|3",
+    "|move|p1a: Terrakion|Earthquake|p2a: Rampardos",
+    "|-supereffective|p2a: Rampardos",
+    "|-damage|p2a: Rampardos|13/321 brn",
+    "|-damage|p1a: Terrakion|246/273|[from] item: Life Orb",
+    "|move|p2a: Rampardos|Earthquake|p1a: Terrakion",
+    "|-supereffective|p1a: Terrakion",
+    "|-damage|p1a: Terrakion|77/273",
+    "|-damage|p2a: Rampardos|0 fnt|[from] item: Life Orb",
+    "|faint|p2a: Rampardos",
+    "|upkeep",
+    "|switch|p2a: Bisharp|Bisharp, L79, F|232/232",
+    "|turn|4",
+    "|move|p2a: Bisharp|Sucker Punch|p1a: Terrakion",
+    "|-resisted|p1a: Terrakion",
+    "|-damage|p1a: Terrakion|32/273",
+    "|-ability|p1a: Terrakion|Justified|boost",
+    "|-boost|p1a: Terrakion|atk|1",
+    "|move|p1a: Terrakion|Stone Edge|p2a: Bisharp",
+    "|-resisted|p2a: Bisharp",
+    "|-damage|p2a: Bisharp|162/232",
+    "|-damage|p1a: Terrakion|5/273|[from] item: Life Orb",
+    "|upkeep",
+    "|turn|5",
+    "|move|p2a: Bisharp|Sucker Punch|p1a: Terrakion",
+    "|-resisted|p1a: Terrakion",
+    "|-damage|p1a: Terrakion|0 fnt",
+    "|faint|p1a: Terrakion",
+    "|upkeep",
+    "|switch|p1a: Minior|Minior-Indigo, L79|224/224",
+    "|-formechange|p1a: Minior|Minior-Meteor||[from] ability: Shields Down",
+    "|turn|6",
+    "|move|p2a: Bisharp|Sucker Punch|p1a: Minior",
+    "|-damage|p1a: Minior|152/224",
+    "|move|p1a: Minior|Power Gem|p2a: Bisharp",
+    "|-resisted|p2a: Bisharp",
+    "|-damage|p2a: Bisharp|141/232",
+    "|upkeep",
+    "|turn|7",
+    "|move|p2a: Bisharp|Sucker Punch||[still]",
+    "|-fail|p2a: Bisharp",
+    "|move|p1a: Minior|Shell Smash|p1a: Minior",
+    "|-unboost|p1a: Minior|def|1",
+    "|-unboost|p1a: Minior|spd|1",
+    "|-boost|p1a: Minior|atk|2",
+    "|-boost|p1a: Minior|spa|2",
+    "|-boost|p1a: Minior|spe|2",
+    "|-enditem|p1a: Minior|White Herb",
+    "|upkeep",
+    "|turn|8",
+    "|move|p2a: Bisharp|Sucker Punch|p1a: Minior",
+    "|-damage|p1a: Minior|76/224",
+    "|move|p1a: Minior|Power Gem|p2a: Bisharp",
+    "|-resisted|p2a: Bisharp",
+    "|-damage|p2a: Bisharp|94/232",
+    "|-formechange|p1a: Minior|Minior-Indigo||[from] ability: Shields Down",
+    "|upkeep",
+    "|turn|9",
+    "|move|p1a: Minior|Power Gem|p2a: Bisharp",
+    "|-resisted|p2a: Bisharp",
+    "|-damage|p2a: Bisharp|25/232",
+    "|move|p2a: Bisharp|Iron Head|p1a: Minior",
+    "|-supereffective|p1a: Minior",
+    "|-damage|p1a: Minior|0 fnt",
+    "|faint|p1a: Minior",
+    "|upkeep",
+    "|switch|p1a: Gyarados|Gyarados, L79, M, shiny|280/280",
+    "|-ability|p1a: Gyarados|Intimidate|boost",
+    "|-unboost|p2a: Bisharp|atk|1",
+    "|-ability|p2a: Bisharp|Defiant|boost",
+    "|-boost|p2a: Bisharp|atk|2",
+    "|turn|10",
+    "|move|p1a: Gyarados|Dragon Dance|p1a: Gyarados",
+    "|-boost|p1a: Gyarados|atk|1",
+    "|-boost|p1a: Gyarados|spe|1",
+    "|move|p2a: Bisharp|Throat Chop|p1a: Gyarados",
+    "|-damage|p1a: Gyarados|111/280",
+    "|-start|p1a: Gyarados|Throat Chop|[silent]",
+    "|upkeep",
+    "|turn|11",
+    "|move|p1a: Gyarados|Earthquake|p2a: Bisharp",
+    "|-supereffective|p2a: Bisharp",
+    "|-damage|p2a: Bisharp|0 fnt",
+    "|faint|p2a: Bisharp",
+    "|-end|p1a: Gyarados|Throat Chop|[silent]",
+    "|upkeep",
+    "|switch|p2a: Lilligant|Lilligant, L86, F|261/261",
+    "|turn|12",
+    "|move|p1a: Gyarados|Waterfall|p2a: Lilligant",
+    "|-resisted|p2a: Lilligant",
+    "|-damage|p2a: Lilligant|181/261",
+    "|move|p2a: Lilligant|Alluring Voice|p1a: Gyarados",
+    "|-damage|p1a: Gyarados|25/280",
+    "|-damage|p2a: Lilligant|155/261|[from] item: Life Orb",
+    "|upkeep",
+    "|turn|13",
+    "|move|p1a: Gyarados|Earthquake|p2a: Lilligant",
+    "|-resisted|p2a: Lilligant",
+    "|-damage|p2a: Lilligant|92/261",
+    "|move|p2a: Lilligant|Quiver Dance|p2a: Lilligant",
+    "|-boost|p2a: Lilligant|spa|1",
+    "|-boost|p2a: Lilligant|spd|1",
+    "|-boost|p2a: Lilligant|spe|1",
+    "|upkeep",
+    "|turn|14",
+    "|move|p2a: Lilligant|Quiver Dance|p2a: Lilligant",
+    "|-boost|p2a: Lilligant|spa|1",
+    "|-boost|p2a: Lilligant|spd|1",
+    "|-boost|p2a: Lilligant|spe|1",
+    "|move|p1a: Gyarados|Tera Blast|p2a: Lilligant",
+    "|-damage|p2a: Lilligant|70/261",
+    "|upkeep",
+    "|turn|15",
+    "|move|p2a: Lilligant|Petal Dance|p1a: Gyarados",
+    "|-damage|p1a: Gyarados|0 fnt",
+    "|faint|p1a: Gyarados",
+    "|-damage|p2a: Lilligant|44/261|[from] item: Life Orb",
+    "|upkeep",
+    "|switch|p1a: Tauros|Tauros, L82, M|257/257",
+    "|turn|16",
+    "|move|p2a: Lilligant|Petal Dance|p1a: Tauros|[from] lockedmove",
+    "|-damage|p1a: Tauros|0 fnt",
+    "|faint|p1a: Tauros",
+    "|-damage|p2a: Lilligant|18/261|[from] item: Life Orb",
+    "|upkeep",
+    "|switch|p1a: Golurk|Golurk, L87|297/297",
+    "|turn|17",
+    "|move|p2a: Lilligant|Petal Dance|p1a: Golurk|[from] lockedmove",
+    "|-supereffective|p1a: Golurk",
+    "|-damage|p1a: Golurk|0 fnt",
+    "|faint|p1a: Golurk",
+    "|-damage|p2a: Lilligant|0 fnt|[from] item: Life Orb",
+    "|faint|p2a: Lilligant",
+    "|win|Player 2"
+  ]
+}

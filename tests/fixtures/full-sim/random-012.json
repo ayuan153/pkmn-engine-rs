@@ -1,0 +1,1162 @@
+{
+  "id": "random-012",
+  "description": "Random battle random-012",
+  "seed": [
+    3044,
+    3045,
+    3046,
+    3047
+  ],
+  "format": "gen9randombattle",
+  "p1": {
+    "team": [
+      {
+        "species": "Articuno",
+        "ability": "Pressure",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "U-turn",
+          "Roost",
+          "Freeze-Dry",
+          "Brave Bird"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 86,
+        "gender": "N"
+      },
+      {
+        "species": "Vigoroth",
+        "ability": "Vital Spirit",
+        "item": "Eviolite",
+        "moves": [
+          "Body Slam",
+          "Slack Off",
+          "Knock Off",
+          "Bulk Up"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 85,
+        "gender": "F"
+      },
+      {
+        "species": "Pecharunt",
+        "ability": "Poison Puppeteer",
+        "item": "Leftovers",
+        "moves": [
+          "Recover",
+          "Malignant Chain",
+          "Parting Shot",
+          "Shadow Ball"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 77,
+        "gender": "N"
+      },
+      {
+        "species": "Cetitan",
+        "ability": "Sheer Force",
+        "item": "Life Orb",
+        "moves": [
+          "Superpower",
+          "Liquidation",
+          "Icicle Crash",
+          "Ice Shard"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 82,
+        "gender": "F"
+      },
+      {
+        "species": "Raikou",
+        "ability": "Pressure",
+        "item": "Choice Specs",
+        "moves": [
+          "Thunderbolt",
+          "Scald",
+          "Volt Switch",
+          "Shadow Ball"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 81,
+        "gender": "N"
+      },
+      {
+        "species": "Oricorio-Sensu",
+        "ability": "Dancer",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Quiver Dance",
+          "Revelation Dance",
+          "Hurricane",
+          "Roost"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 85,
+        "gender": "F"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Chandelure",
+        "ability": "Flame Body",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Shadow Ball",
+          "Will-O-Wisp",
+          "Fire Blast",
+          "Calm Mind"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 83,
+        "gender": "M"
+      },
+      {
+        "species": "Barraskewda",
+        "ability": "Swift Swim",
+        "item": "Choice Band",
+        "moves": [
+          "Flip Turn",
+          "Psychic Fangs",
+          "Waterfall",
+          "Close Combat"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 81,
+        "gender": "M"
+      },
+      {
+        "species": "Archaludon",
+        "ability": "Stamina",
+        "item": "Leftovers",
+        "moves": [
+          "Body Press",
+          "Flash Cannon",
+          "Thunder Wave",
+          "Draco Meteor"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 78,
+        "gender": "M"
+      },
+      {
+        "species": "Ampharos",
+        "ability": "Static",
+        "item": "Assault Vest",
+        "moves": [
+          "Dazzling Gleam",
+          "Focus Blast",
+          "Volt Switch",
+          "Discharge"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "M"
+      },
+      {
+        "species": "Spectrier",
+        "ability": "Grim Neigh",
+        "item": "Life Orb",
+        "moves": [
+          "Nasty Plot",
+          "Tera Blast",
+          "Shadow Ball",
+          "Will-O-Wisp"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 75,
+        "gender": "N"
+      },
+      {
+        "species": "Serperior",
+        "ability": "Contrary",
+        "item": "Life Orb",
+        "moves": [
+          "Leaf Storm",
+          "Glare",
+          "Synthesis",
+          "Dragon Pulse"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "M"
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "switch 2"
+    ],
+    [
+      "switch 5",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "switch 4"
+    ],
+    [
+      "switch 6",
+      "switch 6"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "switch 4"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "switch 3",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "switch 3"
+    ],
+    [
+      "switch 3",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "switch 4"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "switch 5"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Articuno|Articuno, L86|295/295",
+    "|switch|p2a: Chandelure|Chandelure, L83, M|235/235",
+    "|-ability|p1a: Articuno|Pressure",
+    "|turn|1",
+    "|move|p1a: Articuno|Brave Bird|p2a: Chandelure",
+    "|-damage|p2a: Chandelure|106/235",
+    "|-damage|p1a: Articuno|252/295|[from] Recoil",
+    "|move|p2a: Chandelure|Shadow Ball|p1a: Articuno",
+    "|-damage|p1a: Articuno|171/295",
+    "|-unboost|p1a: Articuno|spd|1",
+    "|upkeep",
+    "|turn|2",
+    "|move|p1a: Articuno|Freeze-Dry|p2a: Chandelure",
+    "|-resisted|p2a: Chandelure",
+    "|-damage|p2a: Chandelure|68/235",
+    "|move|p2a: Chandelure|Shadow Ball|p1a: Articuno",
+    "|-damage|p1a: Articuno|33/295",
+    "|-unboost|p1a: Articuno|spd|1",
+    "|upkeep",
+    "|turn|3",
+    "|move|p1a: Articuno|Freeze-Dry|p2a: Chandelure",
+    "|-resisted|p2a: Chandelure",
+    "|-damage|p2a: Chandelure|26/235",
+    "|move|p2a: Chandelure|Calm Mind|p2a: Chandelure",
+    "|-boost|p2a: Chandelure|spa|1",
+    "|-boost|p2a: Chandelure|spd|1",
+    "|upkeep",
+    "|turn|4",
+    "|move|p1a: Articuno|Brave Bird|p2a: Chandelure",
+    "|-damage|p2a: Chandelure|0 fnt",
+    "|faint|p2a: Chandelure",
+    "|-damage|p1a: Articuno|24/295|[from] Recoil",
+    "|upkeep",
+    "|switch|p2a: Barraskewda|Barraskewda, L81, M|231/231",
+    "|turn|5",
+    "|move|p2a: Barraskewda|Psychic Fangs|p1a: Articuno",
+    "|-damage|p1a: Articuno|0 fnt",
+    "|faint|p1a: Articuno",
+    "|upkeep",
+    "|switch|p1a: Raikou|Raikou, L81|278/278",
+    "|-ability|p1a: Raikou|Pressure",
+    "|turn|6",
+    "|move|p2a: Barraskewda|Psychic Fangs|p1a: Raikou",
+    "|-damage|p1a: Raikou|156/278",
+    "|move|p1a: Raikou|Shadow Ball|p2a: Barraskewda",
+    "|-damage|p2a: Barraskewda|101/231",
+    "|-unboost|p2a: Barraskewda|spd|1",
+    "|upkeep",
+    "|turn|7",
+    "|move|p2a: Barraskewda|Psychic Fangs|p1a: Raikou",
+    "|-damage|p1a: Raikou|48/278",
+    "|move|p1a: Raikou|Shadow Ball|p2a: Barraskewda",
+    "|-damage|p2a: Barraskewda|0 fnt",
+    "|faint|p2a: Barraskewda",
+    "|upkeep",
+    "|switch|p2a: Ampharos|Ampharos, L88, M|302/302",
+    "|turn|8",
+    "|move|p1a: Raikou|Shadow Ball|p2a: Ampharos",
+    "|-damage|p2a: Ampharos|245/302",
+    "|move|p2a: Ampharos|Volt Switch|p1a: Raikou",
+    "|-resisted|p1a: Raikou",
+    "|-damage|p1a: Raikou|0 fnt",
+    "|faint|p1a: Raikou",
+    "|switch|p2a: Serperior|Serperior, L79, M|248/248|[from] Volt Switch",
+    "|upkeep",
+    "|switch|p1a: Oricorio|Oricorio-Sensu, L85, F|266/266",
+    "|turn|9",
+    "|move|p2a: Serperior|Glare|p1a: Oricorio",
+    "|-status|p1a: Oricorio|par",
+    "|move|p1a: Oricorio|Hurricane|p2a: Serperior",
+    "|-supereffective|p2a: Serperior",
+    "|-damage|p2a: Serperior|24/248",
+    "|-start|p2a: Serperior|confusion",
+    "|upkeep",
+    "|turn|10",
+    "|-activate|p2a: Serperior|confusion",
+    "|-damage|p2a: Serperior|9/248|[from] confusion",
+    "|move|p1a: Oricorio|Roost||[still]",
+    "|-fail|p1a: Oricorio|heal",
+    "|upkeep",
+    "|turn|11",
+    "|-activate|p2a: Serperior|confusion",
+    "|move|p2a: Serperior|Synthesis|p2a: Serperior",
+    "|-heal|p2a: Serperior|133/248",
+    "|move|p1a: Oricorio|Hurricane|p2a: Serperior",
+    "|-supereffective|p2a: Serperior",
+    "|-damage|p2a: Serperior|0 fnt",
+    "|faint|p2a: Serperior",
+    "|upkeep",
+    "|switch|p2a: Ampharos|Ampharos, L88, M|245/302",
+    "|turn|12",
+    "|move|p2a: Ampharos|Focus Blast|p1a: Oricorio",
+    "|-immune|p1a: Oricorio",
+    "|cant|p1a: Oricorio|par",
+    "|upkeep",
+    "|turn|13",
+    "|move|p2a: Ampharos|Focus Blast|p1a: Oricorio",
+    "|-immune|p1a: Oricorio",
+    "|move|p1a: Oricorio|Revelation Dance|p2a: Ampharos",
+    "|-damage|p2a: Ampharos|187/302",
+    "|upkeep",
+    "|turn|14",
+    "|move|p2a: Ampharos|Discharge|p1a: Oricorio",
+    "|-supereffective|p1a: Oricorio",
+    "|-crit|p1a: Oricorio",
+    "|-damage|p1a: Oricorio|0 fnt",
+    "|faint|p1a: Oricorio",
+    "|upkeep",
+    "|switch|p1a: Pecharunt|Pecharunt, L77|262/262",
+    "|turn|15",
+    "|move|p1a: Pecharunt|Malignant Chain|p2a: Ampharos",
+    "|-damage|p2a: Ampharos|135/302",
+    "|move|p2a: Ampharos|Discharge|p1a: Pecharunt",
+    "|-damage|p1a: Pecharunt|141/262",
+    "|-heal|p1a: Pecharunt|157/262|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|16",
+    "|move|p1a: Pecharunt|Malignant Chain|p2a: Ampharos",
+    "|-damage|p2a: Ampharos|81/302",
+    "|move|p2a: Ampharos|Dazzling Gleam|p1a: Pecharunt",
+    "|-resisted|p1a: Pecharunt",
+    "|-damage|p1a: Pecharunt|116/262",
+    "|-heal|p1a: Pecharunt|132/262|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|17",
+    "|move|p1a: Pecharunt|Parting Shot|p2a: Ampharos",
+    "|-unboost|p2a: Ampharos|atk|1",
+    "|-unboost|p2a: Ampharos|spa|1",
+    "|switch|p1a: Cetitan|Cetitan, L82, F|413/413|[from] Parting Shot",
+    "|move|p2a: Ampharos|Focus Blast|p1a: Cetitan",
+    "|-supereffective|p1a: Cetitan",
+    "|-damage|p1a: Cetitan|221/413",
+    "|upkeep",
+    "|turn|18",
+    "|move|p1a: Cetitan|Ice Shard|p2a: Ampharos",
+    "|-damage|p2a: Ampharos|25/302",
+    "|-damage|p1a: Cetitan|180/413|[from] item: Life Orb",
+    "|move|p2a: Ampharos|Volt Switch|p1a: Cetitan",
+    "|-damage|p1a: Cetitan|92/413",
+    "|switch|p2a: Archaludon|Archaludon, L78, M|268/268|[from] Volt Switch",
+    "|upkeep",
+    "|turn|19",
+    "|move|p1a: Cetitan|Ice Shard|p2a: Archaludon",
+    "|-damage|p2a: Archaludon|220/268",
+    "|-ability|p2a: Archaludon|Stamina|boost",
+    "|-boost|p2a: Archaludon|def|1",
+    "|-damage|p1a: Cetitan|51/413|[from] item: Life Orb",
+    "|move|p2a: Archaludon|Draco Meteor|p1a: Cetitan",
+    "|-damage|p1a: Cetitan|0 fnt",
+    "|-unboost|p2a: Archaludon|spa|2",
+    "|faint|p1a: Cetitan",
+    "|-heal|p2a: Archaludon|236/268|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p1a: Pecharunt|Pecharunt, L77|132/262",
+    "|turn|20",
+    "|move|p1a: Pecharunt|Malignant Chain|p2a: Archaludon",
+    "|-immune|p2a: Archaludon",
+    "|move|p2a: Archaludon|Thunder Wave|p1a: Pecharunt|[miss]",
+    "|-miss|p2a: Archaludon|p1a: Pecharunt",
+    "|-heal|p1a: Pecharunt|148/262|[from] item: Leftovers",
+    "|-heal|p2a: Archaludon|252/268|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|21",
+    "|move|p1a: Pecharunt|Recover|p1a: Pecharunt",
+    "|-heal|p1a: Pecharunt|262/262",
+    "|move|p2a: Archaludon|Body Press|p1a: Pecharunt",
+    "|-immune|p1a: Pecharunt",
+    "|-heal|p2a: Archaludon|268/268|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|22",
+    "|move|p1a: Pecharunt|Recover||[still]",
+    "|-fail|p1a: Pecharunt|heal",
+    "|move|p2a: Archaludon|Body Press|p1a: Pecharunt",
+    "|-immune|p1a: Pecharunt",
+    "|upkeep",
+    "|turn|23",
+    "|move|p1a: Pecharunt|Malignant Chain|p2a: Archaludon",
+    "|-immune|p2a: Archaludon",
+    "|move|p2a: Archaludon|Body Press|p1a: Pecharunt",
+    "|-immune|p1a: Pecharunt",
+    "|upkeep",
+    "|turn|24",
+    "|move|p1a: Pecharunt|Malignant Chain|p2a: Archaludon",
+    "|-immune|p2a: Archaludon",
+    "|move|p2a: Archaludon|Draco Meteor|p1a: Pecharunt|[miss]",
+    "|-miss|p2a: Archaludon|p1a: Pecharunt",
+    "|upkeep",
+    "|turn|25",
+    "|move|p1a: Pecharunt|Parting Shot|p2a: Archaludon",
+    "|-unboost|p2a: Archaludon|atk|1",
+    "|-unboost|p2a: Archaludon|spa|1",
+    "|switch|p1a: Vigoroth|Vigoroth, L85, F|275/275|[from] Parting Shot",
+    "|move|p2a: Archaludon|Thunder Wave|p1a: Vigoroth",
+    "|-status|p1a: Vigoroth|par",
+    "|upkeep",
+    "|turn|26",
+    "|move|p2a: Archaludon|Flash Cannon|p1a: Vigoroth",
+    "|-damage|p1a: Vigoroth|242/275 par",
+    "|move|p1a: Vigoroth|Slack Off|p1a: Vigoroth",
+    "|-heal|p1a: Vigoroth|275/275 par",
+    "|upkeep",
+    "|turn|27",
+    "|move|p2a: Archaludon|Body Press|p1a: Vigoroth",
+    "|-supereffective|p1a: Vigoroth",
+    "|-damage|p1a: Vigoroth|153/275 par",
+    "|move|p1a: Vigoroth|Body Slam|p2a: Archaludon",
+    "|-resisted|p2a: Archaludon",
+    "|-damage|p2a: Archaludon|248/268",
+    "|-ability|p2a: Archaludon|Stamina|boost",
+    "|-boost|p2a: Archaludon|def|1",
+    "|-heal|p2a: Archaludon|264/268|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|28",
+    "|move|p2a: Archaludon|Flash Cannon|p1a: Vigoroth",
+    "|-damage|p1a: Vigoroth|119/275 par",
+    "|move|p1a: Vigoroth|Slack Off|p1a: Vigoroth",
+    "|-heal|p1a: Vigoroth|257/275 par",
+    "|-heal|p2a: Archaludon|268/268|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|29",
+    "|move|p2a: Archaludon|Draco Meteor|p1a: Vigoroth",
+    "|-damage|p1a: Vigoroth|206/275 par",
+    "|-unboost|p2a: Archaludon|spa|2",
+    "|move|p1a: Vigoroth|Bulk Up|p1a: Vigoroth",
+    "|-boost|p1a: Vigoroth|atk|1",
+    "|-boost|p1a: Vigoroth|def|1",
+    "|upkeep",
+    "|turn|30",
+    "|move|p2a: Archaludon|Thunder Wave|p1a: Vigoroth",
+    "|-fail|p1a: Vigoroth|par",
+    "|move|p1a: Vigoroth|Knock Off|p2a: Archaludon",
+    "|-damage|p2a: Archaludon|232/268",
+    "|-ability|p2a: Archaludon|Stamina|boost",
+    "|-boost|p2a: Archaludon|def|1",
+    "|-enditem|p2a: Archaludon|Leftovers|[from] move: Knock Off|[of] p1a: Vigoroth",
+    "|upkeep",
+    "|turn|31",
+    "|move|p2a: Archaludon|Draco Meteor|p1a: Vigoroth",
+    "|-damage|p1a: Vigoroth|170/275 par",
+    "|-unboost|p2a: Archaludon|spa|1",
+    "|move|p1a: Vigoroth|Bulk Up|p1a: Vigoroth",
+    "|-boost|p1a: Vigoroth|atk|1",
+    "|-boost|p1a: Vigoroth|def|1",
+    "|upkeep",
+    "|turn|32",
+    "|move|p2a: Archaludon|Body Press|p1a: Vigoroth",
+    "|-supereffective|p1a: Vigoroth",
+    "|-damage|p1a: Vigoroth|58/275 par",
+    "|move|p1a: Vigoroth|Slack Off|p1a: Vigoroth",
+    "|-heal|p1a: Vigoroth|196/275 par",
+    "|upkeep",
+    "|turn|33",
+    "|move|p2a: Archaludon|Flash Cannon|p1a: Vigoroth",
+    "|-damage|p1a: Vigoroth|174/275 par",
+    "|move|p1a: Vigoroth|Body Slam|p2a: Archaludon",
+    "|-resisted|p2a: Archaludon",
+    "|-damage|p2a: Archaludon|208/268",
+    "|-ability|p2a: Archaludon|Stamina|boost",
+    "|-boost|p2a: Archaludon|def|1",
+    "|upkeep",
+    "|turn|34",
+    "|move|p2a: Archaludon|Draco Meteor|p1a: Vigoroth",
+    "|-damage|p1a: Vigoroth|140/275 par",
+    "|move|p1a: Vigoroth|Slack Off|p1a: Vigoroth",
+    "|-heal|p1a: Vigoroth|275/275 par",
+    "|upkeep",
+    "|turn|35",
+    "|move|p2a: Archaludon|Thunder Wave|p1a: Vigoroth",
+    "|-fail|p1a: Vigoroth|par",
+    "|move|p1a: Vigoroth|Knock Off|p2a: Archaludon",
+    "|-damage|p2a: Archaludon|187/268",
+    "|-ability|p2a: Archaludon|Stamina|boost",
+    "|-boost|p2a: Archaludon|def|1",
+    "|upkeep",
+    "|turn|36",
+    "|move|p2a: Archaludon|Flash Cannon|p1a: Vigoroth",
+    "|-damage|p1a: Vigoroth|254/275 par",
+    "|-unboost|p1a: Vigoroth|spd|1",
+    "|move|p1a: Vigoroth|Slack Off|p1a: Vigoroth",
+    "|-heal|p1a: Vigoroth|275/275 par",
+    "|upkeep",
+    "|turn|37",
+    "|move|p2a: Archaludon|Thunder Wave|p1a: Vigoroth",
+    "|-fail|p1a: Vigoroth|par",
+    "|move|p1a: Vigoroth|Bulk Up|p1a: Vigoroth",
+    "|-boost|p1a: Vigoroth|atk|1",
+    "|-boost|p1a: Vigoroth|def|1",
+    "|upkeep",
+    "|turn|38",
+    "|move|p2a: Archaludon|Body Press|p1a: Vigoroth",
+    "|-supereffective|p1a: Vigoroth",
+    "|-damage|p1a: Vigoroth|153/275 par",
+    "|move|p1a: Vigoroth|Body Slam|p2a: Archaludon",
+    "|-resisted|p2a: Archaludon",
+    "|-damage|p2a: Archaludon|163/268",
+    "|-ability|p2a: Archaludon|Stamina|boost",
+    "|-boost|p2a: Archaludon|def|1",
+    "|upkeep",
+    "|turn|39",
+    "|move|p2a: Archaludon|Flash Cannon|p1a: Vigoroth",
+    "|-damage|p1a: Vigoroth|123/275 par",
+    "|cant|p1a: Vigoroth|par",
+    "|upkeep",
+    "|turn|40",
+    "|move|p2a: Archaludon|Thunder Wave|p1a: Vigoroth",
+    "|-fail|p1a: Vigoroth|par",
+    "|move|p1a: Vigoroth|Body Slam|p2a: Archaludon",
+    "|-resisted|p2a: Archaludon",
+    "|-damage|p2a: Archaludon|142/268",
+    "|-status|p2a: Archaludon|par",
+    "|upkeep",
+    "|turn|41",
+    "|move|p1a: Vigoroth|Knock Off|p2a: Archaludon",
+    "|-damage|p2a: Archaludon|123/268 par",
+    "|cant|p2a: Archaludon|par",
+    "|upkeep",
+    "|turn|42",
+    "|move|p1a: Vigoroth|Slack Off|p1a: Vigoroth",
+    "|-heal|p1a: Vigoroth|261/275 par",
+    "|move|p2a: Archaludon|Body Press|p1a: Vigoroth",
+    "|-supereffective|p1a: Vigoroth",
+    "|-damage|p1a: Vigoroth|119/275 par",
+    "|upkeep",
+    "|turn|43",
+    "|cant|p1a: Vigoroth|par",
+    "|cant|p2a: Archaludon|par",
+    "|upkeep",
+    "|turn|44",
+    "|move|p1a: Vigoroth|Knock Off|p2a: Archaludon",
+    "|-damage|p2a: Archaludon|104/268 par",
+    "|cant|p2a: Archaludon|par",
+    "|upkeep",
+    "|turn|45",
+    "|move|p1a: Vigoroth|Bulk Up|p1a: Vigoroth",
+    "|-boost|p1a: Vigoroth|atk|1",
+    "|-boost|p1a: Vigoroth|def|1",
+    "|move|p2a: Archaludon|Body Press|p1a: Vigoroth",
+    "|-supereffective|p1a: Vigoroth",
+    "|-damage|p1a: Vigoroth|0 fnt",
+    "|faint|p1a: Vigoroth",
+    "|upkeep",
+    "|switch|p1a: Pecharunt|Pecharunt, L77|262/262",
+    "|turn|46",
+    "|move|p1a: Pecharunt|Recover||[still]",
+    "|-fail|p1a: Pecharunt|heal",
+    "|move|p2a: Archaludon|Body Press|p1a: Pecharunt",
+    "|-immune|p1a: Pecharunt",
+    "|upkeep",
+    "|turn|47",
+    "|move|p1a: Pecharunt|Malignant Chain|p2a: Archaludon",
+    "|-immune|p2a: Archaludon",
+    "|move|p2a: Archaludon|Draco Meteor|p1a: Pecharunt",
+    "|-damage|p1a: Pecharunt|220/262",
+    "|-heal|p1a: Pecharunt|236/262|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|48",
+    "|move|p1a: Pecharunt|Parting Shot|p2a: Archaludon",
+    "|-unboost|p2a: Archaludon|atk|1",
+    "|-unboost|p2a: Archaludon|spa|0",
+    "|move|p2a: Archaludon|Body Press|p1a: Pecharunt",
+    "|-immune|p1a: Pecharunt",
+    "|-heal|p1a: Pecharunt|252/262|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|49",
+    "|move|p1a: Pecharunt|Recover|p1a: Pecharunt",
+    "|-heal|p1a: Pecharunt|262/262",
+    "|move|p2a: Archaludon|Thunder Wave|p1a: Pecharunt",
+    "|-status|p1a: Pecharunt|par",
+    "|upkeep",
+    "|turn|50",
+    "|move|p1a: Pecharunt|Malignant Chain|p2a: Archaludon",
+    "|-immune|p2a: Archaludon",
+    "|move|p2a: Archaludon|Body Press|p1a: Pecharunt",
+    "|-immune|p1a: Pecharunt",
+    "|upkeep",
+    "|turn|51",
+    "|move|p1a: Pecharunt|Malignant Chain|p2a: Archaludon",
+    "|-immune|p2a: Archaludon",
+    "|cant|p2a: Archaludon|par",
+    "|upkeep",
+    "|turn|52",
+    "|cant|p1a: Pecharunt|par",
+    "|move|p2a: Archaludon|Draco Meteor|p1a: Pecharunt",
+    "|-damage|p1a: Pecharunt|223/262 par",
+    "|-heal|p1a: Pecharunt|239/262 par|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|53",
+    "|move|p1a: Pecharunt|Shadow Ball|p2a: Archaludon",
+    "|-damage|p2a: Archaludon|22/268 par",
+    "|move|p2a: Archaludon|Body Press|p1a: Pecharunt",
+    "|-immune|p1a: Pecharunt",
+    "|-heal|p1a: Pecharunt|255/262 par|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|54",
+    "|move|p1a: Pecharunt|Recover|p1a: Pecharunt",
+    "|-heal|p1a: Pecharunt|262/262 par",
+    "|move|p2a: Archaludon|Draco Meteor|p1a: Pecharunt|[miss]",
+    "|-miss|p2a: Archaludon|p1a: Pecharunt",
+    "|upkeep",
+    "|turn|55",
+    "|move|p1a: Pecharunt|Recover||[still]",
+    "|-fail|p1a: Pecharunt|heal",
+    "|cant|p2a: Archaludon|par",
+    "|upkeep",
+    "|turn|56",
+    "|move|p1a: Pecharunt|Parting Shot|p2a: Archaludon",
+    "|-unboost|p2a: Archaludon|atk|1",
+    "|-unboost|p2a: Archaludon|spa|0",
+    "|cant|p2a: Archaludon|par",
+    "|upkeep",
+    "|turn|57",
+    "|cant|p1a: Pecharunt|par",
+    "|cant|p2a: Archaludon|par",
+    "|upkeep",
+    "|turn|58",
+    "|cant|p1a: Pecharunt|par",
+    "|move|p2a: Archaludon|Thunder Wave|p1a: Pecharunt",
+    "|-fail|p1a: Pecharunt|par",
+    "|upkeep",
+    "|turn|59",
+    "|cant|p1a: Pecharunt|par",
+    "|move|p2a: Archaludon|Thunder Wave|p1a: Pecharunt",
+    "|-fail|p1a: Pecharunt|par",
+    "|upkeep",
+    "|turn|60",
+    "|move|p1a: Pecharunt|Parting Shot|p2a: Archaludon",
+    "|-unboost|p2a: Archaludon|atk|1",
+    "|-unboost|p2a: Archaludon|spa|0",
+    "|move|p2a: Archaludon|Thunder Wave|p1a: Pecharunt",
+    "|-fail|p1a: Pecharunt|par",
+    "|upkeep",
+    "|turn|61",
+    "|move|p1a: Pecharunt|Recover||[still]",
+    "|-fail|p1a: Pecharunt|heal",
+    "|cant|p2a: Archaludon|par",
+    "|upkeep",
+    "|turn|62",
+    "|move|p1a: Pecharunt|Shadow Ball|p2a: Archaludon",
+    "|-damage|p2a: Archaludon|0 fnt",
+    "|faint|p2a: Archaludon",
+    "|upkeep",
+    "|switch|p2a: Ampharos|Ampharos, L88, M|25/302",
+    "|turn|63",
+    "|move|p2a: Ampharos|Dazzling Gleam|p1a: Pecharunt",
+    "|-resisted|p1a: Pecharunt",
+    "|-damage|p1a: Pecharunt|222/262 par",
+    "|cant|p1a: Pecharunt|par",
+    "|-heal|p1a: Pecharunt|238/262 par|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|64",
+    "|move|p2a: Ampharos|Discharge|p1a: Pecharunt",
+    "|-damage|p1a: Pecharunt|126/262 par",
+    "|move|p1a: Pecharunt|Recover|p1a: Pecharunt",
+    "|-heal|p1a: Pecharunt|257/262 par",
+    "|-heal|p1a: Pecharunt|262/262 par|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|65",
+    "|move|p2a: Ampharos|Dazzling Gleam|p1a: Pecharunt",
+    "|-resisted|p1a: Pecharunt",
+    "|-damage|p1a: Pecharunt|222/262 par",
+    "|move|p1a: Pecharunt|Parting Shot|p2a: Ampharos",
+    "|-unboost|p2a: Ampharos|atk|1",
+    "|-unboost|p2a: Ampharos|spa|1",
+    "|-heal|p1a: Pecharunt|238/262 par|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|66",
+    "|move|p2a: Ampharos|Dazzling Gleam|p1a: Pecharunt",
+    "|-resisted|p1a: Pecharunt",
+    "|-damage|p1a: Pecharunt|212/262 par",
+    "|move|p1a: Pecharunt|Parting Shot|p2a: Ampharos",
+    "|-unboost|p2a: Ampharos|atk|1",
+    "|-unboost|p2a: Ampharos|spa|1",
+    "|-heal|p1a: Pecharunt|228/262 par|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|67",
+    "|move|p2a: Ampharos|Volt Switch|p1a: Pecharunt",
+    "|-damage|p1a: Pecharunt|174/262 par",
+    "|switch|p2a: Spectrier|Spectrier, L75|274/274|[from] Volt Switch",
+    "|move|p1a: Pecharunt|Parting Shot|p2a: Spectrier",
+    "|-unboost|p2a: Spectrier|atk|1",
+    "|-unboost|p2a: Spectrier|spa|1",
+    "|-heal|p1a: Pecharunt|190/262 par|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|68",
+    "|move|p2a: Spectrier|Shadow Ball|p1a: Pecharunt",
+    "|-supereffective|p1a: Pecharunt",
+    "|-crit|p1a: Pecharunt",
+    "|-damage|p1a: Pecharunt|0 fnt",
+    "|faint|p1a: Pecharunt",
+    "|-damage|p2a: Spectrier|247/274|[from] item: Life Orb",
+    "|win|Player 2"
+  ]
+}

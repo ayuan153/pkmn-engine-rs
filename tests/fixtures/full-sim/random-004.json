@@ -1,0 +1,909 @@
+{
+  "id": "random-004",
+  "description": "Random battle random-004",
+  "seed": [
+    3012,
+    3013,
+    3014,
+    3015
+  ],
+  "format": "gen9randombattle",
+  "p1": {
+    "team": [
+      {
+        "species": "Torkoal",
+        "ability": "Drought",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Rapid Spin",
+          "Lava Plume",
+          "Solar Beam",
+          "Stealth Rock"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "F"
+      },
+      {
+        "species": "Tyranitar",
+        "ability": "Sand Stream",
+        "item": "Leftovers",
+        "moves": [
+          "Knock Off",
+          "Stone Edge",
+          "Thunder Wave",
+          "Dragon Tail"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 78,
+        "gender": "F"
+      },
+      {
+        "species": "Rhydon",
+        "ability": "Lightning Rod",
+        "item": "Eviolite",
+        "moves": [
+          "Earthquake",
+          "Swords Dance",
+          "Stone Edge",
+          "Megahorn"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 85,
+        "gender": "F"
+      },
+      {
+        "species": "Goodra",
+        "ability": "Sap Sipper",
+        "item": "Assault Vest",
+        "moves": [
+          "Knock Off",
+          "Sludge Bomb",
+          "Draco Meteor",
+          "Earthquake"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 85,
+        "gender": "F"
+      },
+      {
+        "species": "Passimian",
+        "ability": "Defiant",
+        "item": "Choice Band",
+        "moves": [
+          "Rock Slide",
+          "Knock Off",
+          "Earthquake",
+          "Close Combat"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 83,
+        "gender": "M"
+      },
+      {
+        "species": "Dachsbun",
+        "ability": "Well-Baked Body",
+        "item": "Leftovers",
+        "moves": [
+          "Protect",
+          "Wish",
+          "Yawn",
+          "Play Rough"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 92,
+        "gender": "F"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Clefable",
+        "ability": "Unaware",
+        "item": "Leftovers",
+        "moves": [
+          "Moonblast",
+          "Stealth Rock",
+          "Moonlight",
+          "Knock Off"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 83,
+        "gender": "M"
+      },
+      {
+        "species": "Munkidori",
+        "ability": "Toxic Chain",
+        "item": "Life Orb",
+        "moves": [
+          "Focus Blast",
+          "Psyshock",
+          "Nasty Plot",
+          "Sludge Wave"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "M"
+      },
+      {
+        "species": "Meowscarada",
+        "ability": "Protean",
+        "item": "Life Orb",
+        "moves": [
+          "Knock Off",
+          "Flower Trick",
+          "Triple Axel",
+          "Toxic Spikes"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 78,
+        "gender": "M"
+      },
+      {
+        "species": "Revavroom",
+        "ability": "Filter",
+        "item": "Life Orb",
+        "moves": [
+          "High Horsepower",
+          "Gunk Shot",
+          "Shift Gear",
+          "Iron Head"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "M"
+      },
+      {
+        "species": "Mightyena",
+        "ability": "Intimidate",
+        "item": "Assault Vest",
+        "moves": [
+          "Throat Chop",
+          "Play Rough",
+          "Poison Fang",
+          "Super Fang"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 96,
+        "gender": "M"
+      },
+      {
+        "species": "Goodra-Hisui",
+        "ability": "Sap Sipper",
+        "item": "Assault Vest",
+        "moves": [
+          "Heavy Slam",
+          "Draco Meteor",
+          "Fire Blast",
+          "Hydro Pump"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 82,
+        "gender": "M"
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "switch 5"
+    ],
+    [
+      "switch 6",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "switch 4"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "switch 3",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "switch 2"
+    ],
+    [
+      "switch 5",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "switch 6"
+    ],
+    [
+      "switch 2",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "switch 3"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Torkoal|Torkoal, L88, F|266/266",
+    "|switch|p2a: Clefable|Clefable, L83, M|293/293",
+    "|-weather|SunnyDay|[from] ability: Drought|[of] p1a: Torkoal",
+    "|turn|1",
+    "|move|p2a: Clefable|Knock Off|p1a: Torkoal",
+    "|-damage|p1a: Torkoal|233/266",
+    "|-enditem|p1a: Torkoal|Heavy-Duty Boots|[from] move: Knock Off|[of] p2a: Clefable",
+    "|move|p1a: Torkoal|Lava Plume|p2a: Clefable",
+    "|-damage|p2a: Clefable|154/293",
+    "|-weather|SunnyDay|[upkeep]",
+    "|-heal|p2a: Clefable|172/293|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|2",
+    "|move|p2a: Clefable|Moonlight|p2a: Clefable",
+    "|-heal|p2a: Clefable|293/293",
+    "|move|p1a: Torkoal|Stealth Rock|p2a: Clefable",
+    "|-sidestart|p2: Player 2|move: Stealth Rock",
+    "|-weather|SunnyDay|[upkeep]",
+    "|upkeep",
+    "|turn|3",
+    "|move|p2a: Clefable|Knock Off|p1a: Torkoal",
+    "|-damage|p1a: Torkoal|207/266",
+    "|move|p1a: Torkoal|Stealth Rock||[still]",
+    "|-fail|p1a: Torkoal",
+    "|-weather|SunnyDay|[upkeep]",
+    "|upkeep",
+    "|turn|4",
+    "|move|p2a: Clefable|Knock Off|p1a: Torkoal",
+    "|-damage|p1a: Torkoal|184/266",
+    "|move|p1a: Torkoal|Solar Beam||[still]",
+    "|-prepare|p1a: Torkoal|Solar Beam",
+    "|-damage|p2a: Clefable|202/293",
+    "|-weather|SunnyDay|[upkeep]",
+    "|-heal|p2a: Clefable|220/293|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|5",
+    "|move|p2a: Clefable|Moonlight|p2a: Clefable",
+    "|-heal|p2a: Clefable|293/293",
+    "|move|p1a: Torkoal|Solar Beam||[still]",
+    "|-prepare|p1a: Torkoal|Solar Beam",
+    "|-damage|p2a: Clefable|207/293",
+    "|-weather|none",
+    "|-heal|p2a: Clefable|225/293|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|6",
+    "|move|p2a: Clefable|Knock Off|p1a: Torkoal",
+    "|-damage|p1a: Torkoal|157/266",
+    "|move|p1a: Torkoal|Stealth Rock||[still]",
+    "|-fail|p1a: Torkoal",
+    "|-heal|p2a: Clefable|243/293|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|7",
+    "|move|p2a: Clefable|Moonblast|p1a: Torkoal",
+    "|-resisted|p1a: Torkoal",
+    "|-damage|p1a: Torkoal|102/266",
+    "|move|p1a: Torkoal|Stealth Rock||[still]",
+    "|-fail|p1a: Torkoal",
+    "|-heal|p2a: Clefable|261/293|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|8",
+    "|move|p2a: Clefable|Stealth Rock|p1a: Torkoal",
+    "|-sidestart|p1: Player 1|move: Stealth Rock",
+    "|move|p1a: Torkoal|Rapid Spin|p2a: Clefable",
+    "|-damage|p2a: Clefable|222/293",
+    "|-boost|p1a: Torkoal|spe|1",
+    "|-sideend|p1: Player 1|Stealth Rock|[from] move: Rapid Spin|[of] p1a: Torkoal",
+    "|-heal|p2a: Clefable|240/293|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|9",
+    "|move|p2a: Clefable|Moonlight|p2a: Clefable",
+    "|-heal|p2a: Clefable|293/293",
+    "|move|p1a: Torkoal|Solar Beam||[still]",
+    "|-prepare|p1a: Torkoal|Solar Beam",
+    "|upkeep",
+    "|turn|10",
+    "|move|p2a: Clefable|Stealth Rock|p1a: Torkoal",
+    "|-sidestart|p1: Player 1|move: Stealth Rock",
+    "|move|p1a: Torkoal|Solar Beam|p2a: Clefable|[from] lockedmove",
+    "|-damage|p2a: Clefable|210/293",
+    "|-heal|p2a: Clefable|228/293|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|11",
+    "|move|p2a: Clefable|Moonblast|p1a: Torkoal",
+    "|-resisted|p1a: Torkoal",
+    "|-damage|p1a: Torkoal|46/266",
+    "|move|p1a: Torkoal|Lava Plume|p2a: Clefable",
+    "|-damage|p2a: Clefable|143/293",
+    "|-heal|p2a: Clefable|161/293|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|12",
+    "|move|p2a: Clefable|Stealth Rock||[still]",
+    "|-fail|p2a: Clefable",
+    "|move|p1a: Torkoal|Solar Beam||[still]",
+    "|-prepare|p1a: Torkoal|Solar Beam",
+    "|-heal|p2a: Clefable|179/293|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|13",
+    "|move|p2a: Clefable|Knock Off|p1a: Torkoal",
+    "|-damage|p1a: Torkoal|23/266",
+    "|move|p1a: Torkoal|Solar Beam|p2a: Clefable|[from] lockedmove",
+    "|-damage|p2a: Clefable|94/293",
+    "|-heal|p2a: Clefable|112/293|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|14",
+    "|move|p2a: Clefable|Knock Off|p1a: Torkoal",
+    "|-damage|p1a: Torkoal|0 fnt",
+    "|faint|p1a: Torkoal",
+    "|-heal|p2a: Clefable|130/293|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p1a: Goodra|Goodra, L85, F|292/292",
+    "|-damage|p1a: Goodra|256/292|[from] Stealth Rock",
+    "|turn|15",
+    "|move|p1a: Goodra|Draco Meteor|p2a: Clefable",
+    "|-immune|p2a: Clefable",
+    "|move|p2a: Clefable|Moonblast|p1a: Goodra",
+    "|-supereffective|p1a: Goodra",
+    "|-damage|p1a: Goodra|176/292",
+    "|-unboost|p1a: Goodra|spa|1",
+    "|-heal|p2a: Clefable|148/293|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|16",
+    "|move|p1a: Goodra|Sludge Bomb|p2a: Clefable",
+    "|-supereffective|p2a: Clefable",
+    "|-damage|p2a: Clefable|8/293",
+    "|move|p2a: Clefable|Stealth Rock||[still]",
+    "|-fail|p2a: Clefable",
+    "|-heal|p2a: Clefable|26/293|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|17",
+    "|move|p1a: Goodra|Draco Meteor|p2a: Clefable",
+    "|-immune|p2a: Clefable",
+    "|move|p2a: Clefable|Moonblast|p1a: Goodra",
+    "|-supereffective|p1a: Goodra",
+    "|-damage|p1a: Goodra|96/292",
+    "|-heal|p2a: Clefable|44/293|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|18",
+    "|move|p1a: Goodra|Knock Off|p2a: Clefable",
+    "|-resisted|p2a: Clefable",
+    "|-damage|p2a: Clefable|0 fnt",
+    "|-enditem|p2a: Clefable|Leftovers|[from] move: Knock Off|[of] p1a: Goodra",
+    "|faint|p2a: Clefable",
+    "|upkeep",
+    "|switch|p2a: Mightyena|Mightyena, L96, M|290/290",
+    "|-damage|p2a: Mightyena|254/290|[from] Stealth Rock",
+    "|-ability|p2a: Mightyena|Intimidate|boost",
+    "|-unboost|p1a: Goodra|atk|1",
+    "|turn|19",
+    "|move|p2a: Mightyena|Play Rough|p1a: Goodra",
+    "|-supereffective|p1a: Goodra",
+    "|-damage|p1a: Goodra|0 fnt",
+    "|faint|p1a: Goodra",
+    "|upkeep",
+    "|switch|p1a: Dachsbun|Dachsbun, L92, F|254/254",
+    "|-damage|p1a: Dachsbun|223/254|[from] Stealth Rock",
+    "|turn|20",
+    "|move|p1a: Dachsbun|Play Rough|p2a: Mightyena",
+    "|-supereffective|p2a: Mightyena",
+    "|-damage|p2a: Mightyena|66/290",
+    "|move|p2a: Mightyena|Play Rough|p1a: Dachsbun",
+    "|-damage|p1a: Dachsbun|165/254",
+    "|-heal|p1a: Dachsbun|180/254|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|21",
+    "|move|p1a: Dachsbun|Wish|p1a: Dachsbun",
+    "|move|p2a: Mightyena|Throat Chop|p1a: Dachsbun",
+    "|-resisted|p1a: Dachsbun",
+    "|-damage|p1a: Dachsbun|144/254",
+    "|-start|p1a: Dachsbun|Throat Chop|[silent]",
+    "|-heal|p1a: Dachsbun|159/254|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|22",
+    "|move|p1a: Dachsbun|Play Rough|p2a: Mightyena",
+    "|-supereffective|p2a: Mightyena",
+    "|-damage|p2a: Mightyena|0 fnt",
+    "|faint|p2a: Mightyena",
+    "|-heal|p1a: Dachsbun|254/254|[from] move: Wish|[wisher] Dachsbun",
+    "|-end|p1a: Dachsbun|Throat Chop|[silent]",
+    "|upkeep",
+    "|switch|p2a: Revavroom|Revavroom, L79, M|256/256",
+    "|-damage|p2a: Revavroom|240/256|[from] Stealth Rock",
+    "|turn|23",
+    "|move|p1a: Dachsbun|Protect|p1a: Dachsbun",
+    "|-singleturn|p1a: Dachsbun|Protect",
+    "|move|p2a: Revavroom|Gunk Shot|p1a: Dachsbun",
+    "|-activate|p1a: Dachsbun|move: Protect",
+    "|upkeep",
+    "|turn|24",
+    "|move|p1a: Dachsbun|Protect|p1a: Dachsbun",
+    "|-singleturn|p1a: Dachsbun|Protect",
+    "|move|p2a: Revavroom|Iron Head|p1a: Dachsbun",
+    "|-activate|p1a: Dachsbun|move: Protect",
+    "|upkeep",
+    "|turn|25",
+    "|move|p1a: Dachsbun|Yawn|p2a: Revavroom",
+    "|-start|p2a: Revavroom|move: Yawn|[of] p1a: Dachsbun",
+    "|move|p2a: Revavroom|Iron Head|p1a: Dachsbun",
+    "|-supereffective|p1a: Dachsbun",
+    "|-damage|p1a: Dachsbun|95/254",
+    "|-damage|p2a: Revavroom|215/256|[from] item: Life Orb",
+    "|-heal|p1a: Dachsbun|110/254|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|26",
+    "|move|p1a: Dachsbun|Protect|p1a: Dachsbun",
+    "|-singleturn|p1a: Dachsbun|Protect",
+    "|move|p2a: Revavroom|Iron Head|p1a: Dachsbun",
+    "|-activate|p1a: Dachsbun|move: Protect",
+    "|-heal|p1a: Dachsbun|125/254|[from] item: Leftovers",
+    "|-end|p2a: Revavroom|move: Yawn|[silent]",
+    "|-status|p2a: Revavroom|slp",
+    "|upkeep",
+    "|turn|27",
+    "|move|p1a: Dachsbun|Play Rough|p2a: Revavroom",
+    "|-resisted|p2a: Revavroom",
+    "|-damage|p2a: Revavroom|189/256 slp",
+    "|cant|p2a: Revavroom|slp",
+    "|-heal|p1a: Dachsbun|140/254|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|28",
+    "|move|p1a: Dachsbun|Protect|p1a: Dachsbun",
+    "|-singleturn|p1a: Dachsbun|Protect",
+    "|cant|p2a: Revavroom|slp",
+    "|-heal|p1a: Dachsbun|155/254|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|29",
+    "|move|p1a: Dachsbun|Protect|p1a: Dachsbun",
+    "|-singleturn|p1a: Dachsbun|Protect",
+    "|cant|p2a: Revavroom|slp",
+    "|-heal|p1a: Dachsbun|170/254|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|30",
+    "|move|p1a: Dachsbun|Play Rough|p2a: Revavroom",
+    "|-resisted|p2a: Revavroom",
+    "|-damage|p2a: Revavroom|165/256 slp",
+    "|-curestatus|p2a: Revavroom|slp|[msg]",
+    "|move|p2a: Revavroom|Iron Head|p1a: Dachsbun",
+    "|-supereffective|p1a: Dachsbun",
+    "|-damage|p1a: Dachsbun|6/254",
+    "|-damage|p2a: Revavroom|140/256|[from] item: Life Orb",
+    "|-heal|p1a: Dachsbun|21/254|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|31",
+    "|move|p1a: Dachsbun|Wish|p1a: Dachsbun",
+    "|move|p2a: Revavroom|Gunk Shot|p1a: Dachsbun",
+    "|-supereffective|p1a: Dachsbun",
+    "|-damage|p1a: Dachsbun|0 fnt",
+    "|faint|p1a: Dachsbun",
+    "|-damage|p2a: Revavroom|115/256|[from] item: Life Orb",
+    "|upkeep",
+    "|switch|p1a: Rhydon|Rhydon, L85, F|317/317",
+    "|-damage|p1a: Rhydon|298/317|[from] Stealth Rock",
+    "|turn|32",
+    "|move|p2a: Revavroom|Iron Head|p1a: Rhydon",
+    "|-supereffective|p1a: Rhydon",
+    "|-damage|p1a: Rhydon|178/317",
+    "|-damage|p2a: Revavroom|90/256|[from] item: Life Orb",
+    "|move|p1a: Rhydon|Stone Edge|p2a: Revavroom",
+    "|-resisted|p2a: Revavroom",
+    "|-damage|p2a: Revavroom|23/256",
+    "|-heal|p1a: Rhydon|305/317|[from] move: Wish|[wisher] Dachsbun",
+    "|upkeep",
+    "|turn|33",
+    "|move|p2a: Revavroom|Gunk Shot|p1a: Rhydon",
+    "|-resisted|p1a: Rhydon",
+    "|-damage|p1a: Rhydon|284/317",
+    "|-status|p1a: Rhydon|psn",
+    "|-damage|p2a: Revavroom|0 fnt|[from] item: Life Orb",
+    "|faint|p2a: Revavroom",
+    "|move|p1a: Rhydon|Swords Dance|p1a: Rhydon",
+    "|-boost|p1a: Rhydon|atk|2",
+    "|-damage|p1a: Rhydon|245/317 psn|[from] psn",
+    "|upkeep",
+    "|switch|p2a: Munkidori|Munkidori, L79, M|269/269",
+    "|-damage|p2a: Munkidori|236/269|[from] Stealth Rock",
+    "|turn|34",
+    "|move|p2a: Munkidori|Focus Blast|p1a: Rhydon",
+    "|-supereffective|p1a: Rhydon",
+    "|-damage|p1a: Rhydon|0 fnt",
+    "|faint|p1a: Rhydon",
+    "|-damage|p2a: Munkidori|210/269|[from] item: Life Orb",
+    "|upkeep",
+    "|switch|p1a: Passimian|Passimian, L83, M|302/302",
+    "|-damage|p1a: Passimian|284/302|[from] Stealth Rock",
+    "|turn|35",
+    "|move|p2a: Munkidori|Psyshock|p1a: Passimian",
+    "|-supereffective|p1a: Passimian",
+    "|-damage|p1a: Passimian|42/302",
+    "|-damage|p2a: Munkidori|184/269|[from] item: Life Orb",
+    "|move|p1a: Passimian|Earthquake|p2a: Munkidori",
+    "|-supereffective|p2a: Munkidori",
+    "|-damage|p2a: Munkidori|0 fnt",
+    "|faint|p2a: Munkidori",
+    "|upkeep",
+    "|switch|p2a: Goodra|Goodra-Hisui, L82, M|265/265",
+    "|-damage|p2a: Goodra|249/265|[from] Stealth Rock",
+    "|turn|36",
+    "|move|p1a: Passimian|Earthquake|p2a: Goodra",
+    "|-supereffective|p2a: Goodra",
+    "|-damage|p2a: Goodra|27/265",
+    "|move|p2a: Goodra|Hydro Pump|p1a: Passimian",
+    "|-damage|p1a: Passimian|0 fnt",
+    "|faint|p1a: Passimian",
+    "|upkeep",
+    "|switch|p1a: Tyranitar|Tyranitar, L78, F|284/284",
+    "|-damage|p1a: Tyranitar|249/284|[from] Stealth Rock",
+    "|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar",
+    "|turn|37",
+    "|move|p2a: Goodra|Heavy Slam|p1a: Tyranitar",
+    "|-supereffective|p1a: Tyranitar",
+    "|-crit|p1a: Tyranitar",
+    "|-damage|p1a: Tyranitar|135/284",
+    "|move|p1a: Tyranitar|Knock Off|p2a: Goodra",
+    "|-damage|p2a: Goodra|0 fnt",
+    "|-enditem|p2a: Goodra|Assault Vest|[from] move: Knock Off|[of] p1a: Tyranitar",
+    "|faint|p2a: Goodra",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-heal|p1a: Tyranitar|152/284|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p2a: Meowscarada|Meowscarada, L78, M|247/247",
+    "|-damage|p2a: Meowscarada|217/247|[from] Stealth Rock",
+    "|turn|38",
+    "|move|p2a: Meowscarada|Toxic Spikes|p1a: Tyranitar",
+    "|-start|p2a: Meowscarada|typechange|Poison|[from] ability: Protean",
+    "|-sidestart|p1: Player 1|move: Toxic Spikes",
+    "|move|p1a: Tyranitar|Thunder Wave|p2a: Meowscarada",
+    "|-status|p2a: Meowscarada|par",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-damage|p2a: Meowscarada|202/247 par|[from] Sandstorm",
+    "|-heal|p1a: Tyranitar|169/284|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|39",
+    "|move|p1a: Tyranitar|Thunder Wave|p2a: Meowscarada",
+    "|-fail|p2a: Meowscarada|par",
+    "|move|p2a: Meowscarada|Flower Trick|p1a: Tyranitar",
+    "|-supereffective|p1a: Tyranitar",
+    "|-crit|p1a: Tyranitar",
+    "|-damage|p1a: Tyranitar|10/284",
+    "|-damage|p2a: Meowscarada|178/247 par|[from] item: Life Orb",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-damage|p2a: Meowscarada|163/247 par|[from] Sandstorm",
+    "|-heal|p1a: Tyranitar|27/284|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|40",
+    "|move|p2a: Meowscarada|Flower Trick|p1a: Tyranitar",
+    "|-supereffective|p1a: Tyranitar",
+    "|-crit|p1a: Tyranitar",
+    "|-damage|p1a: Tyranitar|0 fnt",
+    "|faint|p1a: Tyranitar",
+    "|-damage|p2a: Meowscarada|139/247 par|[from] item: Life Orb",
+    "|win|Player 2"
+  ]
+}

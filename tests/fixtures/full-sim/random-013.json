@@ -1,0 +1,900 @@
+{
+  "id": "random-013",
+  "description": "Random battle random-013",
+  "seed": [
+    3048,
+    3049,
+    3050,
+    3051
+  ],
+  "format": "gen9randombattle",
+  "p1": {
+    "team": [
+      {
+        "species": "Eternatus",
+        "ability": "Pressure",
+        "item": "Power Herb",
+        "moves": [
+          "Dynamax Cannon",
+          "Meteor Beam",
+          "Fire Blast",
+          "Sludge Bomb"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 69,
+        "gender": "N"
+      },
+      {
+        "species": "Tentacruel",
+        "ability": "Liquid Ooze",
+        "item": "Leftovers",
+        "moves": [
+          "Toxic",
+          "Rapid Spin",
+          "Sludge Bomb",
+          "Surf"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "F"
+      },
+      {
+        "species": "Shaymin",
+        "ability": "Natural Cure",
+        "item": "Leftovers",
+        "moves": [
+          "Seed Flare",
+          "Air Slash",
+          "Leech Seed",
+          "Substitute"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 82,
+        "gender": "N"
+      },
+      {
+        "species": "Bombirdier",
+        "ability": "Big Pecks",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Roost",
+          "Brave Bird",
+          "Knock Off",
+          "Stealth Rock"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 85,
+        "gender": "F"
+      },
+      {
+        "species": "Cresselia",
+        "ability": "Levitate",
+        "item": "Leftovers",
+        "moves": [
+          "Psyshock",
+          "Moonlight",
+          "Moonblast",
+          "Calm Mind"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 80,
+        "gender": "F"
+      },
+      {
+        "species": "Alcremie-Lemon-Cream",
+        "ability": "Aroma Veil",
+        "item": "Leftovers",
+        "moves": [
+          "Recover",
+          "Psyshock",
+          "Alluring Voice",
+          "Calm Mind"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 90,
+        "gender": "F"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Eelektross",
+        "ability": "Levitate",
+        "item": "Assault Vest",
+        "moves": [
+          "U-turn",
+          "Close Combat",
+          "Knock Off",
+          "Discharge"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 87,
+        "gender": "F"
+      },
+      {
+        "species": "Volcanion",
+        "ability": "Water Absorb",
+        "item": "Assault Vest",
+        "moves": [
+          "Flame Charge",
+          "Steam Eruption",
+          "Flamethrower",
+          "Earth Power"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 81,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "N"
+      },
+      {
+        "species": "Zangoose",
+        "ability": "Toxic Boost",
+        "item": "Toxic Orb",
+        "moves": [
+          "Swords Dance",
+          "Quick Attack",
+          "Facade",
+          "Knock Off"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 85,
+        "gender": "M"
+      },
+      {
+        "species": "Oranguru",
+        "ability": "Inner Focus",
+        "item": "Leftovers",
+        "moves": [
+          "Thunderbolt",
+          "Psychic",
+          "Nasty Plot",
+          "Focus Blast"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 92,
+        "gender": "M"
+      },
+      {
+        "species": "Arbok",
+        "ability": "Intimidate",
+        "item": "Life Orb",
+        "moves": [
+          "Toxic Spikes",
+          "Knock Off",
+          "Gunk Shot",
+          "Earthquake"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 87,
+        "gender": "M"
+      },
+      {
+        "species": "Hitmontop",
+        "ability": "Technician",
+        "item": "Leftovers",
+        "moves": [
+          "Bulk Up",
+          "Close Combat",
+          "Rapid Spin",
+          "Triple Axel"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "M"
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "switch 2"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "switch 6",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "switch 6"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "switch 3",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "switch 5"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "switch 4"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "switch 5",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "switch 3"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "switch 4",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Eternatus|Eternatus, L69|308/308",
+    "|switch|p2a: Eelektross|Eelektross, L87, F|290/290",
+    "|-ability|p1a: Eternatus|Pressure",
+    "|turn|1",
+    "|move|p1a: Eternatus|Meteor Beam||[still]",
+    "|-prepare|p1a: Eternatus|Meteor Beam",
+    "|-boost|p1a: Eternatus|spa|1",
+    "|-enditem|p1a: Eternatus|Power Herb",
+    "|-crit|p2a: Eelektross",
+    "|-damage|p2a: Eelektross|166/290",
+    "|move|p2a: Eelektross|Close Combat|p1a: Eternatus",
+    "|-resisted|p1a: Eternatus",
+    "|-damage|p1a: Eternatus|254/308",
+    "|-unboost|p2a: Eelektross|def|1",
+    "|-unboost|p2a: Eelektross|spd|1",
+    "|upkeep",
+    "|turn|2",
+    "|move|p1a: Eternatus|Dynamax Cannon|p2a: Eelektross",
+    "|-damage|p2a: Eelektross|10/290",
+    "|move|p2a: Eelektross|Close Combat|p1a: Eternatus",
+    "|-resisted|p1a: Eternatus",
+    "|-damage|p1a: Eternatus|194/308",
+    "|-unboost|p2a: Eelektross|def|1",
+    "|-unboost|p2a: Eelektross|spd|1",
+    "|upkeep",
+    "|turn|3",
+    "|move|p1a: Eternatus|Dynamax Cannon|p2a: Eelektross",
+    "|-damage|p2a: Eelektross|0 fnt",
+    "|faint|p2a: Eelektross",
+    "|upkeep",
+    "|switch|p2a: Volcanion|Volcanion, L79|255/255",
+    "|turn|4",
+    "|move|p1a: Eternatus|Meteor Beam||[still]",
+    "|-prepare|p1a: Eternatus|Meteor Beam",
+    "|-boost|p1a: Eternatus|spa|1",
+    "|move|p2a: Volcanion|Flame Charge|p1a: Eternatus",
+    "|-resisted|p1a: Eternatus",
+    "|-damage|p1a: Eternatus|162/308",
+    "|-boost|p2a: Volcanion|spe|1",
+    "|upkeep",
+    "|turn|5",
+    "|move|p2a: Volcanion|Steam Eruption|p1a: Eternatus",
+    "|-resisted|p1a: Eternatus",
+    "|-damage|p1a: Eternatus|83/308",
+    "|move|p1a: Eternatus|Meteor Beam|p2a: Volcanion|[from] lockedmove",
+    "|-supereffective|p2a: Volcanion",
+    "|-damage|p2a: Volcanion|31/255",
+    "|upkeep",
+    "|turn|6",
+    "|move|p2a: Volcanion|Flamethrower|p1a: Eternatus",
+    "|-resisted|p1a: Eternatus",
+    "|-damage|p1a: Eternatus|22/308",
+    "|move|p1a: Eternatus|Fire Blast|p2a: Volcanion|[miss]",
+    "|-miss|p1a: Eternatus|p2a: Volcanion",
+    "|upkeep",
+    "|turn|7",
+    "|move|p2a: Volcanion|Earth Power|p1a: Eternatus",
+    "|-supereffective|p1a: Eternatus",
+    "|-damage|p1a: Eternatus|0 fnt",
+    "|faint|p1a: Eternatus",
+    "|upkeep",
+    "|switch|p1a: Alcremie|Alcremie-Lemon-Cream, L90, F|263/263",
+    "|turn|8",
+    "|move|p2a: Volcanion|Earth Power|p1a: Alcremie",
+    "|-damage|p1a: Alcremie|209/263",
+    "|move|p1a: Alcremie|Recover|p1a: Alcremie",
+    "|-heal|p1a: Alcremie|263/263",
+    "|upkeep",
+    "|turn|9",
+    "|move|p2a: Volcanion|Flame Charge|p1a: Alcremie",
+    "|-damage|p1a: Alcremie|209/263",
+    "|-boost|p2a: Volcanion|spe|1",
+    "|move|p1a: Alcremie|Calm Mind|p1a: Alcremie",
+    "|-boost|p1a: Alcremie|spa|1",
+    "|-boost|p1a: Alcremie|spd|1",
+    "|-heal|p1a: Alcremie|225/263|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|10",
+    "|move|p2a: Volcanion|Flame Charge|p1a: Alcremie",
+    "|-damage|p1a: Alcremie|173/263",
+    "|-boost|p2a: Volcanion|spe|1",
+    "|move|p1a: Alcremie|Psyshock|p2a: Volcanion",
+    "|-damage|p2a: Volcanion|0 fnt",
+    "|faint|p2a: Volcanion",
+    "|-heal|p1a: Alcremie|189/263|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p2a: Hitmontop|Hitmontop, L88, M|231/231",
+    "|turn|11",
+    "|move|p2a: Hitmontop|Close Combat|p1a: Alcremie",
+    "|-resisted|p1a: Alcremie",
+    "|-damage|p1a: Alcremie|112/263",
+    "|-unboost|p2a: Hitmontop|def|1",
+    "|-unboost|p2a: Hitmontop|spd|1",
+    "|move|p1a: Alcremie|Recover|p1a: Alcremie",
+    "|-heal|p1a: Alcremie|244/263",
+    "|-heal|p1a: Alcremie|260/263|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|12",
+    "|move|p2a: Hitmontop|Bulk Up|p2a: Hitmontop",
+    "|-boost|p2a: Hitmontop|atk|1",
+    "|-boost|p2a: Hitmontop|def|1",
+    "|move|p1a: Alcremie|Calm Mind|p1a: Alcremie",
+    "|-boost|p1a: Alcremie|spa|1",
+    "|-boost|p1a: Alcremie|spd|1",
+    "|-heal|p1a: Alcremie|263/263|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|13",
+    "|move|p2a: Hitmontop|Triple Axel|p1a: Alcremie",
+    "|-damage|p1a: Alcremie|229/263",
+    "|-damage|p1a: Alcremie|158/263",
+    "|-damage|p1a: Alcremie|45/263",
+    "|-hitcount|p1a: Alcremie|3",
+    "|move|p1a: Alcremie|Recover|p1a: Alcremie",
+    "|-heal|p1a: Alcremie|177/263",
+    "|-heal|p1a: Alcremie|193/263|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|14",
+    "|move|p2a: Hitmontop|Triple Axel|p1a: Alcremie",
+    "|-damage|p1a: Alcremie|154/263",
+    "|-damage|p1a: Alcremie|78/263",
+    "|-damage|p1a: Alcremie|0 fnt",
+    "|faint|p1a: Alcremie",
+    "|-hitcount|p1: Alcremie|3",
+    "|upkeep",
+    "|switch|p1a: Shaymin|Shaymin, L82|298/298",
+    "|turn|15",
+    "|move|p1a: Shaymin|Leech Seed|p2a: Hitmontop",
+    "|-start|p2a: Hitmontop|move: Leech Seed",
+    "|move|p2a: Hitmontop|Triple Axel|p1a: Shaymin|[miss]",
+    "|-miss|p2a: Hitmontop|p1a: Shaymin",
+    "|-damage|p2a: Hitmontop|203/231|[from] Leech Seed|[of] p1a: Shaymin",
+    "|upkeep",
+    "|turn|16",
+    "|move|p1a: Shaymin|Seed Flare|p2a: Hitmontop",
+    "|-damage|p2a: Hitmontop|65/231",
+    "|move|p2a: Hitmontop|Close Combat|p1a: Shaymin",
+    "|-damage|p1a: Shaymin|91/298",
+    "|-unboost|p2a: Hitmontop|def|1",
+    "|-unboost|p2a: Hitmontop|spd|1",
+    "|-heal|p1a: Shaymin|109/298|[from] item: Leftovers",
+    "|-heal|p2a: Hitmontop|79/231|[from] item: Leftovers",
+    "|-damage|p2a: Hitmontop|51/231|[from] Leech Seed|[of] p1a: Shaymin",
+    "|-heal|p1a: Shaymin|137/298|[silent]",
+    "|upkeep",
+    "|turn|17",
+    "|move|p1a: Shaymin|Air Slash|p2a: Hitmontop",
+    "|-supereffective|p2a: Hitmontop",
+    "|-damage|p2a: Hitmontop|0 fnt",
+    "|faint|p2a: Hitmontop",
+    "|-heal|p1a: Shaymin|155/298|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p2a: Arbok|Arbok, L87, M|246/246",
+    "|-ability|p2a: Arbok|Intimidate|boost",
+    "|-unboost|p1a: Shaymin|atk|1",
+    "|turn|18",
+    "|move|p1a: Shaymin|Seed Flare|p2a: Arbok",
+    "|-resisted|p2a: Arbok",
+    "|-damage|p2a: Arbok|176/246",
+    "|move|p2a: Arbok|Toxic Spikes|p1a: Shaymin",
+    "|-sidestart|p1: Player 1|move: Toxic Spikes",
+    "|-heal|p1a: Shaymin|173/298|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|19",
+    "|move|p1a: Shaymin|Seed Flare|p2a: Arbok",
+    "|-resisted|p2a: Arbok",
+    "|-damage|p2a: Arbok|113/246",
+    "|-unboost|p2a: Arbok|spd|2",
+    "|move|p2a: Arbok|Toxic Spikes|p1a: Shaymin",
+    "|-sidestart|p1: Player 1|move: Toxic Spikes",
+    "|-heal|p1a: Shaymin|191/298|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|20",
+    "|move|p1a: Shaymin|Air Slash|p2a: Arbok",
+    "|-damage|p2a: Arbok|13/246",
+    "|cant|p2a: Arbok|flinch",
+    "|-heal|p1a: Shaymin|209/298|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|21",
+    "|move|p1a: Shaymin|Substitute|p1a: Shaymin",
+    "|-start|p1a: Shaymin|Substitute",
+    "|-damage|p1a: Shaymin|135/298",
+    "|move|p2a: Arbok|Gunk Shot|p1a: Shaymin",
+    "|-supereffective|p1a: Shaymin",
+    "|-end|p1a: Shaymin|Substitute",
+    "|-damage|p2a: Arbok|0 fnt|[from] item: Life Orb",
+    "|faint|p2a: Arbok",
+    "|-heal|p1a: Shaymin|153/298|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p2a: Oranguru|Oranguru, L92, M|315/315",
+    "|turn|22",
+    "|move|p1a: Shaymin|Air Slash|p2a: Oranguru",
+    "|-crit|p2a: Oranguru",
+    "|-damage|p2a: Oranguru|253/315",
+    "|move|p2a: Oranguru|Psychic|p1a: Shaymin",
+    "|-damage|p1a: Shaymin|47/298",
+    "|-unboost|p1a: Shaymin|spd|1",
+    "|-heal|p1a: Shaymin|65/298|[from] item: Leftovers",
+    "|-heal|p2a: Oranguru|272/315|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|23",
+    "|move|p1a: Shaymin|Substitute|p1a: Shaymin",
+    "|-fail|p1a: Shaymin|move: Substitute|[weak]",
+    "|move|p2a: Oranguru|Thunderbolt|p1a: Shaymin",
+    "|-resisted|p1a: Shaymin",
+    "|-damage|p1a: Shaymin|14/298",
+    "|-heal|p1a: Shaymin|32/298|[from] item: Leftovers",
+    "|-heal|p2a: Oranguru|291/315|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|24",
+    "|move|p1a: Shaymin|Leech Seed|p2a: Oranguru",
+    "|-start|p2a: Oranguru|move: Leech Seed",
+    "|move|p2a: Oranguru|Thunderbolt|p1a: Shaymin",
+    "|-resisted|p1a: Shaymin",
+    "|-damage|p1a: Shaymin|0 fnt",
+    "|faint|p1a: Shaymin",
+    "|-heal|p2a: Oranguru|310/315|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p1a: Cresselia|Cresselia, L80, F|323/323",
+    "|turn|25",
+    "|move|p1a: Cresselia|Moonlight|p1a: Cresselia",
+    "|-fail|p1a: Cresselia|heal",
+    "|move|p2a: Oranguru|Focus Blast|p1a: Cresselia|[miss]",
+    "|-miss|p2a: Oranguru|p1a: Cresselia",
+    "|-heal|p2a: Oranguru|315/315|[from] item: Leftovers",
+    "|-damage|p2a: Oranguru|276/315|[from] Leech Seed|[of] p1a: Cresselia",
+    "|upkeep",
+    "|turn|26",
+    "|move|p1a: Cresselia|Moonlight|p1a: Cresselia",
+    "|-fail|p1a: Cresselia|heal",
+    "|move|p2a: Oranguru|Psychic|p1a: Cresselia",
+    "|-resisted|p1a: Cresselia",
+    "|-damage|p1a: Cresselia|282/323",
+    "|-heal|p1a: Cresselia|302/323|[from] item: Leftovers",
+    "|-heal|p2a: Oranguru|295/315|[from] item: Leftovers",
+    "|-damage|p2a: Oranguru|256/315|[from] Leech Seed|[of] p1a: Cresselia",
+    "|-heal|p1a: Cresselia|323/323|[silent]",
+    "|upkeep",
+    "|turn|27",
+    "|move|p1a: Cresselia|Moonblast|p2a: Oranguru",
+    "|-damage|p2a: Oranguru|217/315",
+    "|-unboost|p2a: Oranguru|spa|1",
+    "|move|p2a: Oranguru|Nasty Plot|p2a: Oranguru",
+    "|-boost|p2a: Oranguru|spa|2",
+    "|-heal|p2a: Oranguru|236/315|[from] item: Leftovers",
+    "|-damage|p2a: Oranguru|197/315|[from] Leech Seed|[of] p1a: Cresselia",
+    "|upkeep",
+    "|turn|28",
+    "|move|p1a: Cresselia|Moonlight|p1a: Cresselia",
+    "|-fail|p1a: Cresselia|heal",
+    "|move|p2a: Oranguru|Thunderbolt|p1a: Cresselia",
+    "|-damage|p1a: Cresselia|231/323",
+    "|-heal|p1a: Cresselia|251/323|[from] item: Leftovers",
+    "|-heal|p2a: Oranguru|216/315|[from] item: Leftovers",
+    "|-damage|p2a: Oranguru|177/315|[from] Leech Seed|[of] p1a: Cresselia",
+    "|-heal|p1a: Cresselia|290/323|[silent]",
+    "|upkeep",
+    "|turn|29",
+    "|move|p1a: Cresselia|Moonblast|p2a: Oranguru",
+    "|-damage|p2a: Oranguru|138/315",
+    "|-unboost|p2a: Oranguru|spa|1",
+    "|move|p2a: Oranguru|Psychic|p1a: Cresselia",
+    "|-resisted|p1a: Cresselia",
+    "|-damage|p1a: Cresselia|248/323",
+    "|-heal|p1a: Cresselia|268/323|[from] item: Leftovers",
+    "|-heal|p2a: Oranguru|157/315|[from] item: Leftovers",
+    "|-damage|p2a: Oranguru|118/315|[from] Leech Seed|[of] p1a: Cresselia",
+    "|-heal|p1a: Cresselia|307/323|[silent]",
+    "|upkeep",
+    "|turn|30",
+    "|move|p1a: Cresselia|Psyshock|p2a: Oranguru",
+    "|-resisted|p2a: Oranguru",
+    "|-damage|p2a: Oranguru|88/315",
+    "|move|p2a: Oranguru|Psychic|p1a: Cresselia",
+    "|-resisted|p1a: Cresselia",
+    "|-damage|p1a: Cresselia|264/323",
+    "|-heal|p1a: Cresselia|284/323|[from] item: Leftovers",
+    "|-heal|p2a: Oranguru|107/315|[from] item: Leftovers",
+    "|-damage|p2a: Oranguru|68/315|[from] Leech Seed|[of] p1a: Cresselia",
+    "|-heal|p1a: Cresselia|323/323|[silent]",
+    "|upkeep",
+    "|turn|31",
+    "|move|p1a: Cresselia|Moonlight|p1a: Cresselia",
+    "|-fail|p1a: Cresselia|heal",
+    "|move|p2a: Oranguru|Thunderbolt|p1a: Cresselia",
+    "|-damage|p1a: Cresselia|265/323",
+    "|-heal|p1a: Cresselia|285/323|[from] item: Leftovers",
+    "|-heal|p2a: Oranguru|87/315|[from] item: Leftovers",
+    "|-damage|p2a: Oranguru|48/315|[from] Leech Seed|[of] p1a: Cresselia",
+    "|-heal|p1a: Cresselia|323/323|[silent]",
+    "|upkeep",
+    "|turn|32",
+    "|move|p1a: Cresselia|Moonlight|p1a: Cresselia",
+    "|-fail|p1a: Cresselia|heal",
+    "|move|p2a: Oranguru|Nasty Plot|p2a: Oranguru",
+    "|-boost|p2a: Oranguru|spa|2",
+    "|-heal|p2a: Oranguru|67/315|[from] item: Leftovers",
+    "|-damage|p2a: Oranguru|28/315|[from] Leech Seed|[of] p1a: Cresselia",
+    "|upkeep",
+    "|turn|33",
+    "|move|p1a: Cresselia|Psyshock|p2a: Oranguru",
+    "|-resisted|p2a: Oranguru",
+    "|-damage|p2a: Oranguru|0 fnt",
+    "|faint|p2a: Oranguru",
+    "|upkeep",
+    "|switch|p2a: Zangoose|Zangoose, L85, M|263/263",
+    "|turn|34",
+    "|move|p2a: Zangoose|Knock Off|p1a: Cresselia",
+    "|-supereffective|p1a: Cresselia",
+    "|-damage|p1a: Cresselia|169/323",
+    "|-enditem|p1a: Cresselia|Leftovers|[from] move: Knock Off|[of] p2a: Zangoose",
+    "|move|p1a: Cresselia|Calm Mind|p1a: Cresselia",
+    "|-boost|p1a: Cresselia|spa|1",
+    "|-boost|p1a: Cresselia|spd|1",
+    "|-status|p2a: Zangoose|tox|[from] item: Toxic Orb",
+    "|upkeep",
+    "|turn|35",
+    "|move|p2a: Zangoose|Facade|p1a: Cresselia",
+    "|-damage|p1a: Cresselia|0 fnt",
+    "|faint|p1a: Cresselia",
+    "|-damage|p2a: Zangoose|247/263 tox|[from] psn",
+    "|upkeep",
+    "|switch|p1a: Bombirdier|Bombirdier, L85, F|258/258",
+    "|turn|36",
+    "|move|p2a: Zangoose|Knock Off|p1a: Bombirdier",
+    "|-resisted|p1a: Bombirdier",
+    "|-damage|p1a: Bombirdier|197/258",
+    "|-enditem|p1a: Bombirdier|Heavy-Duty Boots|[from] move: Knock Off|[of] p2a: Zangoose",
+    "|move|p1a: Bombirdier|Roost|p1a: Bombirdier",
+    "|-heal|p1a: Bombirdier|258/258",
+    "|-singleturn|p1a: Bombirdier|move: Roost",
+    "|-damage|p2a: Zangoose|215/263 tox|[from] psn",
+    "|upkeep",
+    "|turn|37",
+    "|move|p2a: Zangoose|Knock Off|p1a: Bombirdier",
+    "|-resisted|p1a: Bombirdier",
+    "|-crit|p1a: Bombirdier",
+    "|-damage|p1a: Bombirdier|195/258",
+    "|move|p1a: Bombirdier|Knock Off|p2a: Zangoose",
+    "|-damage|p2a: Zangoose|67/263 tox",
+    "|-enditem|p2a: Zangoose|Toxic Orb|[from] move: Knock Off|[of] p1a: Bombirdier",
+    "|-damage|p2a: Zangoose|19/263 tox|[from] psn",
+    "|upkeep",
+    "|turn|38",
+    "|move|p2a: Zangoose|Facade|p1a: Bombirdier",
+    "|-damage|p1a: Bombirdier|0 fnt",
+    "|faint|p1a: Bombirdier",
+    "|-damage|p2a: Zangoose|0 fnt|[from] psn",
+    "|faint|p2a: Zangoose",
+    "|win|Player 1"
+  ]
+}

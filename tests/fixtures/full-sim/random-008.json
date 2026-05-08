@@ -1,0 +1,719 @@
+{
+  "id": "random-008",
+  "description": "Random battle random-008",
+  "seed": [
+    3028,
+    3029,
+    3030,
+    3031
+  ],
+  "format": "gen9randombattle",
+  "p1": {
+    "team": [
+      {
+        "species": "Chesnaught",
+        "ability": "Bulletproof",
+        "item": "Leftovers",
+        "moves": [
+          "Body Press",
+          "Wood Hammer",
+          "Synthesis",
+          "Knock Off"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "M"
+      },
+      {
+        "species": "Pawmot",
+        "ability": "Iron Fist",
+        "item": "Life Orb",
+        "moves": [
+          "Double Shock",
+          "Revival Blessing",
+          "Close Combat",
+          "Ice Punch"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 80,
+        "gender": "F"
+      },
+      {
+        "species": "Revavroom",
+        "ability": "Filter",
+        "item": "Life Orb",
+        "moves": [
+          "High Horsepower",
+          "Gunk Shot",
+          "Iron Head",
+          "Shift Gear"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "F"
+      },
+      {
+        "species": "Suicune",
+        "ability": "Pressure",
+        "item": "Leftovers",
+        "moves": [
+          "Calm Mind",
+          "Scald",
+          "Ice Beam",
+          "Substitute"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 82,
+        "gender": "N"
+      },
+      {
+        "species": "Plusle",
+        "ability": "Lightning Rod",
+        "item": "Life Orb",
+        "moves": [
+          "Nasty Plot",
+          "Thunderbolt",
+          "Encore",
+          "Alluring Voice"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 95,
+        "gender": "M"
+      },
+      {
+        "species": "Cloyster",
+        "ability": "Skill Link",
+        "item": "White Herb",
+        "moves": [
+          "Shell Smash",
+          "Rock Blast",
+          "Drill Run",
+          "Icicle Spear"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 80,
+        "gender": "M"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Clefable",
+        "ability": "Magic Guard",
+        "item": "Life Orb",
+        "moves": [
+          "Moonlight",
+          "Moonblast",
+          "Calm Mind",
+          "Fire Blast"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 83,
+        "gender": "F"
+      },
+      {
+        "species": "Emboar",
+        "ability": "Reckless",
+        "item": "Leftovers",
+        "moves": [
+          "Bulk Up",
+          "Flare Blitz",
+          "Drain Punch",
+          "Trailblaze"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "M"
+      },
+      {
+        "species": "Weezing",
+        "ability": "Levitate",
+        "item": "Leftovers",
+        "moves": [
+          "Pain Split",
+          "Gunk Shot",
+          "Will-O-Wisp",
+          "Fire Blast"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "F"
+      },
+      {
+        "species": "Donphan",
+        "ability": "Sturdy",
+        "item": "Leftovers",
+        "moves": [
+          "Knock Off",
+          "Earthquake",
+          "Rapid Spin",
+          "Stealth Rock"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "F"
+      },
+      {
+        "species": "Masquerain",
+        "ability": "Intimidate",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Bug Buzz",
+          "Quiver Dance",
+          "Hurricane",
+          "Hydro Pump"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 87,
+        "gender": "F"
+      },
+      {
+        "species": "Sceptile",
+        "ability": "Overgrow",
+        "item": "Life Orb",
+        "moves": [
+          "Earthquake",
+          "Leaf Storm",
+          "Shed Tail",
+          "Focus Blast"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 87,
+        "gender": "M"
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "switch 4"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "switch 4",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "switch 2"
+    ],
+    [
+      "move 4",
+      "switch 5"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "switch 6"
+    ],
+    [
+      "switch 2",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "switch 3"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "switch 6",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Chesnaught|Chesnaught, L84, M|285/285",
+    "|switch|p2a: Clefable|Clefable, L83, F|293/293",
+    "|turn|1",
+    "|move|p1a: Chesnaught|Synthesis|p1a: Chesnaught",
+    "|-fail|p1a: Chesnaught|heal",
+    "|move|p2a: Clefable|Moonlight|p2a: Clefable",
+    "|-fail|p2a: Clefable|heal",
+    "|upkeep",
+    "|turn|2",
+    "|move|p1a: Chesnaught|Synthesis|p1a: Chesnaught",
+    "|-fail|p1a: Chesnaught|heal",
+    "|move|p2a: Clefable|Moonblast|p1a: Chesnaught",
+    "|-supereffective|p1a: Chesnaught",
+    "|-damage|p1a: Chesnaught|0 fnt",
+    "|faint|p1a: Chesnaught",
+    "|upkeep",
+    "|switch|p1a: Plusle|Plusle, L95, M|268/268",
+    "|turn|3",
+    "|move|p1a: Plusle|Encore|p2a: Clefable",
+    "|-start|p2a: Clefable|Encore",
+    "|move|p2a: Clefable|Moonblast|p1a: Plusle",
+    "|-damage|p1a: Plusle|150/268",
+    "|-unboost|p1a: Plusle|spa|1",
+    "|upkeep",
+    "|turn|4",
+    "|move|p1a: Plusle|Alluring Voice|p2a: Clefable",
+    "|-damage|p2a: Clefable|238/293",
+    "|-damage|p1a: Plusle|124/268|[from] item: Life Orb",
+    "|move|p2a: Clefable|Moonblast|p1a: Plusle",
+    "|-damage|p1a: Plusle|0 fnt",
+    "|faint|p1a: Plusle",
+    "|upkeep",
+    "|switch|p1a: Revavroom|Revavroom, L79, F|256/256",
+    "|turn|5",
+    "|move|p1a: Revavroom|Iron Head|p2a: Clefable",
+    "|-supereffective|p2a: Clefable",
+    "|-damage|p2a: Clefable|0 fnt",
+    "|faint|p2a: Clefable",
+    "|-damage|p1a: Revavroom|231/256|[from] item: Life Orb",
+    "|upkeep",
+    "|switch|p2a: Donphan|Donphan, L84, F|288/288",
+    "|turn|6",
+    "|move|p1a: Revavroom|Shift Gear|p1a: Revavroom",
+    "|-boost|p1a: Revavroom|spe|2",
+    "|-boost|p1a: Revavroom|atk|1",
+    "|move|p2a: Donphan|Stealth Rock|p1a: Revavroom",
+    "|-sidestart|p1: Player 1|move: Stealth Rock",
+    "|upkeep",
+    "|turn|7",
+    "|move|p1a: Revavroom|Shift Gear|p1a: Revavroom",
+    "|-boost|p1a: Revavroom|spe|2",
+    "|-boost|p1a: Revavroom|atk|1",
+    "|move|p2a: Donphan|Rapid Spin|p1a: Revavroom",
+    "|-resisted|p1a: Revavroom",
+    "|-damage|p1a: Revavroom|208/256",
+    "|-boost|p2a: Donphan|spe|1",
+    "|upkeep",
+    "|turn|8",
+    "|move|p1a: Revavroom|Gunk Shot|p2a: Donphan",
+    "|-resisted|p2a: Donphan",
+    "|-damage|p2a: Donphan|148/288",
+    "|-damage|p1a: Revavroom|183/256|[from] item: Life Orb",
+    "|move|p2a: Donphan|Earthquake|p1a: Revavroom",
+    "|-supereffective|p1a: Revavroom",
+    "|-damage|p1a: Revavroom|0 fnt",
+    "|faint|p1a: Revavroom",
+    "|-heal|p2a: Donphan|166/288|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p1a: Suicune|Suicune, L82|298/298",
+    "|-damage|p1a: Suicune|261/298|[from] Stealth Rock",
+    "|-ability|p1a: Suicune|Pressure",
+    "|turn|9",
+    "|move|p2a: Donphan|Rapid Spin|p1a: Suicune",
+    "|-damage|p1a: Suicune|223/298",
+    "|-boost|p2a: Donphan|spe|1",
+    "|move|p1a: Suicune|Calm Mind|p1a: Suicune",
+    "|-boost|p1a: Suicune|spa|1",
+    "|-boost|p1a: Suicune|spd|1",
+    "|-heal|p2a: Donphan|184/288|[from] item: Leftovers",
+    "|-heal|p1a: Suicune|241/298|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|10",
+    "|move|p2a: Donphan|Knock Off|p1a: Suicune",
+    "|-damage|p1a: Suicune|170/298",
+    "|-enditem|p1a: Suicune|Leftovers|[from] move: Knock Off|[of] p2a: Donphan",
+    "|move|p1a: Suicune|Substitute|p1a: Suicune",
+    "|-start|p1a: Suicune|Substitute",
+    "|-damage|p1a: Suicune|96/298",
+    "|-heal|p2a: Donphan|202/288|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|11",
+    "|move|p2a: Donphan|Knock Off|p1a: Suicune",
+    "|-activate|p1a: Suicune|move: Substitute|[damage]",
+    "|move|p1a: Suicune|Calm Mind|p1a: Suicune",
+    "|-boost|p1a: Suicune|spa|1",
+    "|-boost|p1a: Suicune|spd|1",
+    "|-heal|p2a: Donphan|220/288|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|12",
+    "|move|p2a: Donphan|Knock Off|p1a: Suicune",
+    "|-end|p1a: Suicune|Substitute",
+    "|move|p1a: Suicune|Calm Mind|p1a: Suicune",
+    "|-boost|p1a: Suicune|spa|1",
+    "|-boost|p1a: Suicune|spd|1",
+    "|-heal|p2a: Donphan|238/288|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|13",
+    "|move|p2a: Donphan|Stealth Rock||[still]",
+    "|-fail|p2a: Donphan",
+    "|move|p1a: Suicune|Calm Mind|p1a: Suicune",
+    "|-boost|p1a: Suicune|spa|1",
+    "|-boost|p1a: Suicune|spd|1",
+    "|-heal|p2a: Donphan|256/288|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|14",
+    "|move|p2a: Donphan|Knock Off|p1a: Suicune",
+    "|-damage|p1a: Suicune|50/298",
+    "|move|p1a: Suicune|Ice Beam|p2a: Donphan",
+    "|-supereffective|p2a: Donphan",
+    "|-damage|p2a: Donphan|0 fnt",
+    "|faint|p2a: Donphan",
+    "|upkeep",
+    "|switch|p2a: Emboar|Emboar, L84, M|322/322",
+    "|turn|15",
+    "|move|p1a: Suicune|Scald|p2a: Emboar",
+    "|-supereffective|p2a: Emboar",
+    "|-damage|p2a: Emboar|0 fnt",
+    "|faint|p2a: Emboar",
+    "|upkeep",
+    "|switch|p2a: Masquerain|Masquerain, L87, F|264/264",
+    "|-ability|p2a: Masquerain|Intimidate|boost",
+    "|-unboost|p1a: Suicune|atk|1",
+    "|turn|16",
+    "|move|p2a: Masquerain|Hydro Pump|p1a: Suicune|[miss]",
+    "|-miss|p2a: Masquerain|p1a: Suicune",
+    "|move|p1a: Suicune|Substitute|p1a: Suicune",
+    "|-fail|p1a: Suicune|move: Substitute|[weak]",
+    "|upkeep",
+    "|turn|17",
+    "|move|p2a: Masquerain|Quiver Dance|p2a: Masquerain",
+    "|-boost|p2a: Masquerain|spa|1",
+    "|-boost|p2a: Masquerain|spd|1",
+    "|-boost|p2a: Masquerain|spe|1",
+    "|move|p1a: Suicune|Scald|p2a: Masquerain",
+    "|-damage|p2a: Masquerain|122/264",
+    "|-status|p2a: Masquerain|brn",
+    "|-damage|p2a: Masquerain|106/264 brn|[from] brn",
+    "|upkeep",
+    "|turn|18",
+    "|move|p2a: Masquerain|Hydro Pump|p1a: Suicune|[miss]",
+    "|-miss|p2a: Masquerain|p1a: Suicune",
+    "|move|p1a: Suicune|Scald|p2a: Masquerain",
+    "|-damage|p2a: Masquerain|0 fnt",
+    "|faint|p2a: Masquerain",
+    "|upkeep",
+    "|switch|p2a: Sceptile|Sceptile, L87, M|264/264",
+    "|turn|19",
+    "|move|p2a: Sceptile|Leaf Storm|p1a: Suicune",
+    "|-supereffective|p1a: Suicune",
+    "|-damage|p1a: Suicune|0 fnt",
+    "|-unboost|p2a: Sceptile|spa|2",
+    "|faint|p1a: Suicune",
+    "|-damage|p2a: Sceptile|238/264|[from] item: Life Orb",
+    "|upkeep",
+    "|switch|p1a: Pawmot|Pawmot, L80, F|243/243",
+    "|-damage|p1a: Pawmot|228/243|[from] Stealth Rock",
+    "|turn|20",
+    "|move|p2a: Sceptile|Shed Tail|p2a: Sceptile",
+    "|-start|p2a: Sceptile|Substitute|[from] move: Shed Tail",
+    "|-damage|p2a: Sceptile|106/264",
+    "|switch|p2a: Weezing|Weezing, L88, F|258/258|[from] Shed Tail",
+    "|move|p1a: Pawmot|Close Combat|p2a: Weezing",
+    "|-resisted|p2a: Weezing",
+    "|-end|p2a: Weezing|Substitute",
+    "|-unboost|p1a: Pawmot|def|1",
+    "|-unboost|p1a: Pawmot|spd|1",
+    "|-damage|p1a: Pawmot|204/243|[from] item: Life Orb",
+    "|upkeep",
+    "|turn|21",
+    "|move|p1a: Pawmot|Ice Punch|p2a: Weezing",
+    "|-damage|p2a: Weezing|193/258",
+    "|-damage|p1a: Pawmot|180/243|[from] item: Life Orb",
+    "|move|p2a: Weezing|Fire Blast|p1a: Pawmot",
+    "|-damage|p1a: Pawmot|18/243",
+    "|-heal|p2a: Weezing|209/258|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|22",
+    "|move|p1a: Pawmot|Ice Punch|p2a: Weezing",
+    "|-damage|p2a: Weezing|144/258",
+    "|-damage|p1a: Pawmot|0 fnt|[from] item: Life Orb",
+    "|faint|p1a: Pawmot",
+    "|move|p2a: Weezing|Pain Split|p1: Pawmot|[notarget]",
+    "|-fail|p2a: Weezing",
+    "|-heal|p2a: Weezing|160/258|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p1a: Cloyster|Cloyster, L80, M|211/211",
+    "|-damage|p1a: Cloyster|159/211|[from] Stealth Rock",
+    "|turn|23",
+    "|move|p1a: Cloyster|Drill Run|p2a: Weezing",
+    "|-immune|p2a: Weezing|[from] ability: Levitate",
+    "|move|p2a: Weezing|Gunk Shot|p1a: Cloyster",
+    "|-damage|p1a: Cloyster|77/211",
+    "|-heal|p2a: Weezing|176/258|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|24",
+    "|move|p1a: Cloyster|Drill Run|p2a: Weezing",
+    "|-immune|p2a: Weezing|[from] ability: Levitate",
+    "|move|p2a: Weezing|Will-O-Wisp|p1a: Cloyster",
+    "|-status|p1a: Cloyster|brn",
+    "|-heal|p2a: Weezing|192/258|[from] item: Leftovers",
+    "|-damage|p1a: Cloyster|64/211 brn|[from] brn",
+    "|upkeep",
+    "|turn|25",
+    "|move|p1a: Cloyster|Rock Blast|p2a: Weezing",
+    "|-damage|p2a: Weezing|186/258",
+    "|-damage|p2a: Weezing|181/258",
+    "|-damage|p2a: Weezing|175/258",
+    "|-damage|p2a: Weezing|168/258",
+    "|-damage|p2a: Weezing|162/258",
+    "|-hitcount|p2a: Weezing|5",
+    "|move|p2a: Weezing|Gunk Shot|p1a: Cloyster",
+    "|-damage|p1a: Cloyster|0 fnt",
+    "|faint|p1a: Cloyster",
+    "|win|Player 2"
+  ]
+}

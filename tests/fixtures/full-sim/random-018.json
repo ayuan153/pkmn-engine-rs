@@ -1,0 +1,767 @@
+{
+  "id": "random-018",
+  "description": "Random battle random-018",
+  "seed": [
+    3068,
+    3069,
+    3070,
+    3071
+  ],
+  "format": "gen9randombattle",
+  "p1": {
+    "team": [
+      {
+        "species": "Tauros-Paldea-Aqua",
+        "ability": "Intimidate",
+        "item": "Life Orb",
+        "moves": [
+          "Close Combat",
+          "Bulk Up",
+          "Aqua Jet",
+          "Liquidation"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 81,
+        "gender": "M"
+      },
+      {
+        "species": "Misdreavus",
+        "ability": "Levitate",
+        "item": "Eviolite",
+        "moves": [
+          "Draining Kiss",
+          "Shadow Ball",
+          "Calm Mind",
+          "Will-O-Wisp"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 90,
+        "gender": "F"
+      },
+      {
+        "species": "Bombirdier",
+        "ability": "Rocky Payload",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Brave Bird",
+          "Knock Off",
+          "Roost",
+          "Stone Edge"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 85,
+        "gender": "F"
+      },
+      {
+        "species": "Lanturn",
+        "ability": "Volt Absorb",
+        "item": "Leftovers",
+        "moves": [
+          "Thunder Wave",
+          "Thunderbolt",
+          "Ice Beam",
+          "Scald"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 89,
+        "gender": "F"
+      },
+      {
+        "species": "Arboliva",
+        "ability": "Harvest",
+        "item": "Sitrus Berry",
+        "moves": [
+          "Substitute",
+          "Protect",
+          "Leech Seed",
+          "Hyper Voice"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 77,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 91,
+        "gender": "M"
+      },
+      {
+        "species": "Gallade",
+        "ability": "Sharpness",
+        "item": "Life Orb",
+        "moves": [
+          "Agility",
+          "Psycho Cut",
+          "Sacred Sword",
+          "Night Slash"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 80,
+        "gender": "M"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Sawsbuck-Summer",
+        "ability": "Sap Sipper",
+        "item": "Life Orb",
+        "moves": [
+          "Double-Edge",
+          "Horn Leech",
+          "Swords Dance",
+          "High Horsepower"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "M"
+      },
+      {
+        "species": "Chansey",
+        "ability": "Natural Cure",
+        "item": "Eviolite",
+        "moves": [
+          "Seismic Toss",
+          "Soft-Boiled",
+          "Stealth Rock",
+          "Thunder Wave"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 85,
+        "gender": "F"
+      },
+      {
+        "species": "Vivillon-Modern",
+        "ability": "Compound Eyes",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Tera Blast",
+          "Sleep Powder",
+          "Quiver Dance",
+          "Hurricane"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 83,
+        "gender": "M"
+      },
+      {
+        "species": "Regirock",
+        "ability": "Clear Body",
+        "item": "Chesto Berry",
+        "moves": [
+          "Stone Edge",
+          "Curse",
+          "Body Press",
+          "Rest"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 83,
+        "gender": "N"
+      },
+      {
+        "species": "Volcanion",
+        "ability": "Water Absorb",
+        "item": "Choice Specs",
+        "moves": [
+          "Flamethrower",
+          "Sludge Bomb",
+          "Earth Power",
+          "Steam Eruption"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 81,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "N"
+      },
+      {
+        "species": "Solgaleo",
+        "ability": "Full Metal Body",
+        "item": "Leftovers",
+        "moves": [
+          "Close Combat",
+          "Morning Sun",
+          "Knock Off",
+          "Sunsteel Strike"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 74,
+        "gender": "N"
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "switch 6"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "switch 6",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "switch 2"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "switch 5"
+    ],
+    [
+      "switch 2",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "switch 4",
+      "switch 4"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "switch 3"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Tauros|Tauros-Paldea-Aqua, L81, M|254/254",
+    "|switch|p2a: Sawsbuck|Sawsbuck-Summer, L88, M|284/284",
+    "|-ability|p1a: Tauros|Intimidate|boost",
+    "|-unboost|p2a: Sawsbuck|atk|1",
+    "|turn|1",
+    "|move|p2a: Sawsbuck|Double-Edge|p1a: Tauros",
+    "|-damage|p1a: Tauros|144/254",
+    "|-damage|p2a: Sawsbuck|248/284|[from] Recoil",
+    "|-damage|p2a: Sawsbuck|220/284|[from] item: Life Orb",
+    "|move|p1a: Tauros|Close Combat|p2a: Sawsbuck",
+    "|-supereffective|p2a: Sawsbuck",
+    "|-damage|p2a: Sawsbuck|0 fnt",
+    "|-unboost|p1a: Tauros|def|1",
+    "|-unboost|p1a: Tauros|spd|1",
+    "|faint|p2a: Sawsbuck",
+    "|-damage|p1a: Tauros|119/254|[from] item: Life Orb",
+    "|upkeep",
+    "|switch|p2a: Solgaleo|Solgaleo, L74|325/325",
+    "|turn|2",
+    "|move|p1a: Tauros|Liquidation|p2a: Solgaleo",
+    "|-damage|p2a: Solgaleo|200/325",
+    "|-damage|p1a: Tauros|94/254|[from] item: Life Orb",
+    "|move|p2a: Solgaleo|Morning Sun|p2a: Solgaleo",
+    "|-heal|p2a: Solgaleo|325/325",
+    "|upkeep",
+    "|turn|3",
+    "|move|p1a: Tauros|Close Combat|p2a: Solgaleo",
+    "|-damage|p2a: Solgaleo|153/325",
+    "|-unboost|p1a: Tauros|def|1",
+    "|-unboost|p1a: Tauros|spd|1",
+    "|-damage|p1a: Tauros|69/254|[from] item: Life Orb",
+    "|move|p2a: Solgaleo|Knock Off|p1a: Tauros",
+    "|-resisted|p1a: Tauros",
+    "|-damage|p1a: Tauros|5/254",
+    "|-enditem|p1a: Tauros|Life Orb|[from] move: Knock Off|[of] p2a: Solgaleo",
+    "|-heal|p2a: Solgaleo|173/325|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|4",
+    "|move|p1a: Tauros|Close Combat|p2a: Solgaleo",
+    "|-damage|p2a: Solgaleo|44/325",
+    "|-unboost|p1a: Tauros|def|1",
+    "|-unboost|p1a: Tauros|spd|1",
+    "|move|p2a: Solgaleo|Sunsteel Strike|p1a: Tauros",
+    "|-resisted|p1a: Tauros",
+    "|-damage|p1a: Tauros|0 fnt",
+    "|faint|p1a: Tauros",
+    "|-heal|p2a: Solgaleo|64/325|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p1a: Gallade|Gallade, L80, M|240/240",
+    "|turn|5",
+    "|move|p2a: Solgaleo|Close Combat|p1a: Gallade",
+    "|-resisted|p1a: Gallade",
+    "|-damage|p1a: Gallade|183/240",
+    "|-unboost|p2a: Solgaleo|def|1",
+    "|-unboost|p2a: Solgaleo|spd|1",
+    "|move|p1a: Gallade|Psycho Cut|p2a: Solgaleo",
+    "|-resisted|p2a: Solgaleo",
+    "|-damage|p2a: Solgaleo|9/325",
+    "|-damage|p1a: Gallade|159/240|[from] item: Life Orb",
+    "|-heal|p2a: Solgaleo|29/325|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|6",
+    "|move|p2a: Solgaleo|Knock Off|p1a: Gallade",
+    "|-damage|p1a: Gallade|59/240",
+    "|-enditem|p1a: Gallade|Life Orb|[from] move: Knock Off|[of] p2a: Solgaleo",
+    "|move|p1a: Gallade|Agility|p1a: Gallade",
+    "|-boost|p1a: Gallade|spe|2",
+    "|-heal|p2a: Solgaleo|49/325|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|7",
+    "|move|p1a: Gallade|Agility|p1a: Gallade",
+    "|-boost|p1a: Gallade|spe|2",
+    "|move|p2a: Solgaleo|Close Combat|p1a: Gallade",
+    "|-resisted|p1a: Gallade",
+    "|-damage|p1a: Gallade|4/240",
+    "|-unboost|p2a: Solgaleo|def|1",
+    "|-unboost|p2a: Solgaleo|spd|1",
+    "|-heal|p2a: Solgaleo|69/325|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|8",
+    "|move|p1a: Gallade|Sacred Sword|p2a: Solgaleo",
+    "|-damage|p2a: Solgaleo|0 fnt",
+    "|faint|p2a: Solgaleo",
+    "|upkeep",
+    "|switch|p2a: Chansey|Chansey, L85, F|564/564",
+    "|turn|9",
+    "|move|p1a: Gallade|Night Slash|p2a: Chansey",
+    "|-damage|p2a: Chansey|367/564",
+    "|move|p2a: Chansey|Thunder Wave|p1a: Gallade",
+    "|-status|p1a: Gallade|par",
+    "|upkeep",
+    "|turn|10",
+    "|move|p1a: Gallade|Sacred Sword|p2a: Chansey",
+    "|-supereffective|p2a: Chansey",
+    "|-damage|p2a: Chansey|0 fnt",
+    "|faint|p2a: Chansey",
+    "|upkeep",
+    "|switch|p2a: Volcanion|Volcanion, L79|255/255",
+    "|turn|11",
+    "|move|p1a: Gallade|Psycho Cut|p2a: Volcanion",
+    "|-damage|p2a: Volcanion|155/255",
+    "|move|p2a: Volcanion|Sludge Bomb|p1a: Gallade",
+    "|-damage|p1a: Gallade|0 fnt",
+    "|faint|p1a: Gallade",
+    "|upkeep",
+    "|switch|p1a: Misdreavus|Misdreavus, L90, F|254/254",
+    "|turn|12",
+    "|move|p1a: Misdreavus|Draining Kiss|p2a: Volcanion",
+    "|-resisted|p2a: Volcanion",
+    "|-damage|p2a: Volcanion|136/255",
+    "|move|p2a: Volcanion|Sludge Bomb|p1a: Misdreavus",
+    "|-resisted|p1a: Misdreavus",
+    "|-damage|p1a: Misdreavus|223/254",
+    "|upkeep",
+    "|turn|13",
+    "|move|p1a: Misdreavus|Shadow Ball|p2a: Volcanion",
+    "|-damage|p2a: Volcanion|49/255",
+    "|move|p2a: Volcanion|Sludge Bomb|p1a: Misdreavus",
+    "|-resisted|p1a: Misdreavus",
+    "|-damage|p1a: Misdreavus|187/254",
+    "|upkeep",
+    "|turn|14",
+    "|move|p1a: Misdreavus|Will-O-Wisp|p2a: Volcanion",
+    "|-immune|p2a: Volcanion",
+    "|move|p2a: Volcanion|Sludge Bomb|p1a: Misdreavus",
+    "|-resisted|p1a: Misdreavus",
+    "|-damage|p1a: Misdreavus|155/254",
+    "|upkeep",
+    "|turn|15",
+    "|move|p1a: Misdreavus|Will-O-Wisp|p2a: Volcanion",
+    "|-immune|p2a: Volcanion",
+    "|move|p2a: Volcanion|Sludge Bomb|p1a: Misdreavus",
+    "|-resisted|p1a: Misdreavus",
+    "|-damage|p1a: Misdreavus|121/254",
+    "|-status|p1a: Misdreavus|psn",
+    "|-damage|p1a: Misdreavus|90/254 psn|[from] psn",
+    "|upkeep",
+    "|turn|16",
+    "|move|p1a: Misdreavus|Calm Mind|p1a: Misdreavus",
+    "|-boost|p1a: Misdreavus|spa|1",
+    "|-boost|p1a: Misdreavus|spd|1",
+    "|move|p2a: Volcanion|Sludge Bomb|p1a: Misdreavus",
+    "|-resisted|p1a: Misdreavus",
+    "|-damage|p1a: Misdreavus|66/254 psn",
+    "|-damage|p1a: Misdreavus|35/254 psn|[from] psn",
+    "|upkeep",
+    "|turn|17",
+    "|move|p1a: Misdreavus|Calm Mind|p1a: Misdreavus",
+    "|-boost|p1a: Misdreavus|spa|1",
+    "|-boost|p1a: Misdreavus|spd|1",
+    "|move|p2a: Volcanion|Sludge Bomb|p1a: Misdreavus",
+    "|-resisted|p1a: Misdreavus",
+    "|-damage|p1a: Misdreavus|18/254 psn",
+    "|-damage|p1a: Misdreavus|0 fnt|[from] psn",
+    "|faint|p1a: Misdreavus",
+    "|upkeep",
+    "|switch|p1a: Bombirdier|Bombirdier, L85, F|258/258",
+    "|turn|18",
+    "|move|p1a: Bombirdier|Stone Edge|p2a: Volcanion|[miss]",
+    "|-miss|p1a: Bombirdier|p2a: Volcanion",
+    "|move|p2a: Volcanion|Sludge Bomb|p1a: Bombirdier",
+    "|-damage|p1a: Bombirdier|150/258",
+    "|upkeep",
+    "|turn|19",
+    "|move|p1a: Bombirdier|Stone Edge|p2a: Volcanion|[miss]",
+    "|-miss|p1a: Bombirdier|p2a: Volcanion",
+    "|move|p2a: Volcanion|Sludge Bomb|p1a: Bombirdier",
+    "|-damage|p1a: Bombirdier|38/258",
+    "|-status|p1a: Bombirdier|psn",
+    "|-damage|p1a: Bombirdier|6/258 psn|[from] psn",
+    "|upkeep",
+    "|turn|20",
+    "|move|p1a: Bombirdier|Stone Edge|p2a: Volcanion",
+    "|-supereffective|p2a: Volcanion",
+    "|-damage|p2a: Volcanion|0 fnt",
+    "|faint|p2a: Volcanion",
+    "|-damage|p1a: Bombirdier|0 fnt|[from] psn",
+    "|faint|p1a: Bombirdier",
+    "|upkeep",
+    "|switch|p1a: Lanturn|Lanturn, L89, F|367/367",
+    "|switch|p2a: Regirock|Regirock, L83|268/268",
+    "|turn|21",
+    "|move|p1a: Lanturn|Thunderbolt|p2a: Regirock",
+    "|-damage|p2a: Regirock|193/268",
+    "|move|p2a: Regirock|Body Press|p1a: Lanturn",
+    "|-damage|p1a: Lanturn|247/367",
+    "|-heal|p1a: Lanturn|269/367|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|22",
+    "|move|p1a: Lanturn|Ice Beam|p2a: Regirock",
+    "|-damage|p2a: Regirock|134/268",
+    "|move|p2a: Regirock|Curse|p2a: Regirock",
+    "|-unboost|p2a: Regirock|spe|1",
+    "|-boost|p2a: Regirock|atk|1",
+    "|-boost|p2a: Regirock|def|1",
+    "|-heal|p1a: Lanturn|291/367|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|23",
+    "|move|p1a: Lanturn|Thunder Wave|p2a: Regirock",
+    "|-status|p2a: Regirock|par",
+    "|move|p2a: Regirock|Stone Edge|p1a: Lanturn",
+    "|-damage|p1a: Lanturn|80/367",
+    "|-heal|p1a: Lanturn|102/367|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|24",
+    "|move|p1a: Lanturn|Thunder Wave|p2a: Regirock",
+    "|-fail|p2a: Regirock|par",
+    "|move|p2a: Regirock|Rest|p2a: Regirock",
+    "|-status|p2a: Regirock|slp|[from] move: Rest",
+    "|-heal|p2a: Regirock|268/268 slp|[silent]",
+    "|-enditem|p2a: Regirock|Chesto Berry|[eat]",
+    "|-curestatus|p2a: Regirock|slp|[msg]",
+    "|-heal|p1a: Lanturn|124/367|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|25",
+    "|move|p1a: Lanturn|Thunderbolt|p2a: Regirock",
+    "|-damage|p2a: Regirock|187/268",
+    "|move|p2a: Regirock|Curse|p2a: Regirock",
+    "|-unboost|p2a: Regirock|spe|1",
+    "|-boost|p2a: Regirock|atk|1",
+    "|-boost|p2a: Regirock|def|1",
+    "|-heal|p1a: Lanturn|146/367|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|26",
+    "|move|p1a: Lanturn|Thunderbolt|p2a: Regirock",
+    "|-damage|p2a: Regirock|102/268",
+    "|move|p2a: Regirock|Stone Edge|p1a: Lanturn|[miss]",
+    "|-miss|p2a: Regirock|p1a: Lanturn",
+    "|-heal|p1a: Lanturn|168/367|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|27",
+    "|move|p1a: Lanturn|Scald|p2a: Regirock",
+    "|-supereffective|p2a: Regirock",
+    "|-damage|p2a: Regirock|0 fnt",
+    "|faint|p2a: Regirock",
+    "|-heal|p1a: Lanturn|190/367|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p2a: Vivillon|Vivillon-Modern, L83, M|268/268",
+    "|turn|28",
+    "|move|p2a: Vivillon|Tera Blast|p1a: Lanturn",
+    "|-damage|p1a: Lanturn|134/367",
+    "|move|p1a: Lanturn|Ice Beam|p2a: Vivillon",
+    "|-supereffective|p2a: Vivillon",
+    "|-damage|p2a: Vivillon|82/268",
+    "|-heal|p1a: Lanturn|156/367|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|29",
+    "|move|p2a: Vivillon|Quiver Dance|p2a: Vivillon",
+    "|-boost|p2a: Vivillon|spa|1",
+    "|-boost|p2a: Vivillon|spd|1",
+    "|-boost|p2a: Vivillon|spe|1",
+    "|move|p1a: Lanturn|Thunderbolt|p2a: Vivillon",
+    "|-supereffective|p2a: Vivillon",
+    "|-damage|p2a: Vivillon|0 fnt",
+    "|faint|p2a: Vivillon",
+    "|win|Player 1"
+  ]
+}

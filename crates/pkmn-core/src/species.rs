@@ -126,6 +126,14 @@ pub const SPECIES: &[SpeciesData] = &[
 pub fn get_species(name: &str) -> Option<&'static SpeciesData> {
     SPECIES.iter().find(|s| s.name.eq_ignore_ascii_case(name))
         .or_else(|| crate::gen::species_data::get_species_by_name(name))
+        .or_else(|| {
+            // Fallback: strip form suffix (e.g. "Vivillon-Continental" -> "Vivillon")
+            name.find('-').and_then(|i| {
+                let base = &name[..i];
+                SPECIES.iter().find(|s| s.name.eq_ignore_ascii_case(base))
+                    .or_else(|| crate::gen::species_data::get_species_by_name(base))
+            })
+        })
 }
 
 pub fn get_species_by_id(id: u16) -> Option<&'static SpeciesData> {

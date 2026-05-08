@@ -1,0 +1,838 @@
+{
+  "id": "random-009",
+  "description": "Random battle random-009",
+  "seed": [
+    3032,
+    3033,
+    3034,
+    3035
+  ],
+  "format": "gen9randombattle",
+  "p1": {
+    "team": [
+      {
+        "species": "Volbeat",
+        "ability": "Prankster",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "U-turn",
+          "Roost",
+          "Encore",
+          "Thunder Wave"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 90,
+        "gender": "M"
+      },
+      {
+        "species": "Archaludon",
+        "ability": "Stamina",
+        "item": "Lum Berry",
+        "moves": [
+          "Earthquake",
+          "Outrage",
+          "Iron Head",
+          "Swords Dance"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 78,
+        "gender": "F"
+      },
+      {
+        "species": "Kilowattrel",
+        "ability": "Volt Absorb",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Discharge",
+          "Roost",
+          "U-turn",
+          "Hurricane"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 83,
+        "gender": "M"
+      },
+      {
+        "species": "Vespiquen",
+        "ability": "Pressure",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Air Slash",
+          "U-turn",
+          "Roost",
+          "Toxic"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 99,
+        "gender": "F"
+      },
+      {
+        "species": "Sableye",
+        "ability": "Prankster",
+        "item": "Leftovers",
+        "moves": [
+          "Will-O-Wisp",
+          "Recover",
+          "Knock Off",
+          "Encore"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "M"
+      },
+      {
+        "species": "Roaring Moon",
+        "ability": "Protosynthesis",
+        "item": "Lum Berry",
+        "moves": [
+          "Dragon Dance",
+          "Outrage",
+          "Iron Head",
+          "Knock Off"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 72,
+        "gender": "N"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Necrozma-Dawn-Wings",
+        "ability": "Prism Armor",
+        "item": "Leftovers",
+        "moves": [
+          "Calm Mind",
+          "Moonlight",
+          "Moongeist Beam",
+          "Photon Geyser"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 76,
+        "gender": "N"
+      },
+      {
+        "species": "Groudon",
+        "ability": "Drought",
+        "item": "Leftovers",
+        "moves": [
+          "Heat Crash",
+          "Precipice Blades",
+          "Swords Dance",
+          "Thunder Wave"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 72,
+        "gender": "N"
+      },
+      {
+        "species": "Volcarona",
+        "ability": "Swarm",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Quiver Dance",
+          "Fire Blast",
+          "Bug Buzz",
+          "Tera Blast"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 77,
+        "gender": "M"
+      },
+      {
+        "species": "Skarmory",
+        "ability": "Sturdy",
+        "item": "Rocky Helmet",
+        "moves": [
+          "Body Press",
+          "Brave Bird",
+          "Roost",
+          "Stealth Rock"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 80,
+        "gender": "M"
+      },
+      {
+        "species": "Chien-Pao",
+        "ability": "Sword of Ruin",
+        "item": "Choice Band",
+        "moves": [
+          "Throat Chop",
+          "Icicle Crash",
+          "Ice Shard",
+          "Sacred Sword"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 72,
+        "gender": "N"
+      },
+      {
+        "species": "Bronzong",
+        "ability": "Levitate",
+        "item": "Leftovers",
+        "moves": [
+          "Iron Defense",
+          "Psychic Noise",
+          "Body Press",
+          "Iron Head"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "N"
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "switch 6"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "switch 4"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "switch 5",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "switch 3"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "switch 5"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "switch 1",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "switch 2",
+      "switch 2"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Volbeat|Volbeat, L90, M|263/263",
+    "|switch|p2a: Necrozma|Necrozma-Dawn-Wings, L76|272/272",
+    "|turn|1",
+    "|move|p1a: Volbeat|U-turn|p2a: Necrozma",
+    "|-damage|p2a: Necrozma|211/272",
+    "|switch|p1a: Vespiquen|Vespiquen, L99, F|299/299|[from] U-turn",
+    "|-ability|p1a: Vespiquen|Pressure",
+    "|move|p2a: Necrozma|Photon Geyser|p1a: Vespiquen",
+    "|-damage|p1a: Vespiquen|193/299",
+    "|-heal|p2a: Necrozma|228/272|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|2",
+    "|move|p2a: Necrozma|Moonlight|p2a: Necrozma",
+    "|-heal|p2a: Necrozma|272/272",
+    "|move|p1a: Vespiquen|U-turn|p2a: Necrozma",
+    "|-damage|p2a: Necrozma|185/272",
+    "|switch|p1a: Kilowattrel|Kilowattrel, L83, M|252/252|[from] U-turn",
+    "|-heal|p2a: Necrozma|202/272|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|3",
+    "|move|p1a: Kilowattrel|U-turn|p2a: Necrozma",
+    "|-damage|p2a: Necrozma|166/272",
+    "|switch|p1a: Volbeat|Volbeat, L90, M|263/263|[from] U-turn",
+    "|move|p2a: Necrozma|Calm Mind|p2a: Necrozma",
+    "|-boost|p2a: Necrozma|spa|1",
+    "|-boost|p2a: Necrozma|spd|1",
+    "|-heal|p2a: Necrozma|183/272|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|4",
+    "|move|p1a: Volbeat|U-turn|p2a: Necrozma",
+    "|-damage|p2a: Necrozma|113/272",
+    "|switch|p1a: Roaring Moon|Roaring Moon, L72|270/270|[from] U-turn",
+    "|move|p2a: Necrozma|Photon Geyser|p1a: Roaring Moon",
+    "|-immune|p1a: Roaring Moon",
+    "|-heal|p2a: Necrozma|130/272|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|5",
+    "|move|p1a: Roaring Moon|Knock Off|p2a: Necrozma",
+    "|-supereffective|p2a: Necrozma",
+    "|-damage|p2a: Necrozma|0 fnt",
+    "|-enditem|p2a: Necrozma|Leftovers|[from] move: Knock Off|[of] p1a: Roaring Moon",
+    "|faint|p2a: Necrozma",
+    "|upkeep",
+    "|switch|p2a: Bronzong|Bronzong, L88|261/261",
+    "|turn|6",
+    "|move|p1a: Roaring Moon|Iron Head|p2a: Bronzong",
+    "|-resisted|p2a: Bronzong",
+    "|-damage|p2a: Bronzong|239/261",
+    "|move|p2a: Bronzong|Iron Head|p1a: Roaring Moon",
+    "|-damage|p1a: Roaring Moon|147/270",
+    "|-heal|p2a: Bronzong|255/261|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|7",
+    "|move|p1a: Roaring Moon|Outrage|p2a: Bronzong",
+    "|-resisted|p2a: Bronzong",
+    "|-damage|p2a: Bronzong|207/261",
+    "|move|p2a: Bronzong|Psychic Noise|p1a: Roaring Moon",
+    "|-immune|p1a: Roaring Moon",
+    "|-heal|p2a: Bronzong|223/261|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|8",
+    "|move|p1a: Roaring Moon|Outrage|p2a: Bronzong|[from] lockedmove",
+    "|-resisted|p2a: Bronzong",
+    "|-damage|p2a: Bronzong|178/261",
+    "|move|p2a: Bronzong|Psychic Noise|p1a: Roaring Moon",
+    "|-immune|p1a: Roaring Moon",
+    "|-heal|p2a: Bronzong|194/261|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|9",
+    "|move|p1a: Roaring Moon|Outrage|p2a: Bronzong|[from] lockedmove",
+    "|-resisted|p2a: Bronzong",
+    "|-damage|p2a: Bronzong|147/261",
+    "|-start|p1a: Roaring Moon|confusion|[fatigue]",
+    "|-enditem|p1a: Roaring Moon|Lum Berry|[eat]",
+    "|-end|p1a: Roaring Moon|confusion",
+    "|move|p2a: Bronzong|Iron Head|p1a: Roaring Moon",
+    "|-damage|p1a: Roaring Moon|29/270",
+    "|-heal|p2a: Bronzong|163/261|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|10",
+    "|move|p1a: Roaring Moon|Iron Head|p2a: Bronzong",
+    "|-resisted|p2a: Bronzong",
+    "|-damage|p2a: Bronzong|141/261",
+    "|cant|p2a: Bronzong|flinch",
+    "|-heal|p2a: Bronzong|157/261|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|11",
+    "|move|p1a: Roaring Moon|Knock Off|p2a: Bronzong",
+    "|-supereffective|p2a: Bronzong",
+    "|-damage|p2a: Bronzong|0 fnt",
+    "|-enditem|p2a: Bronzong|Leftovers|[from] move: Knock Off|[of] p1a: Roaring Moon",
+    "|faint|p2a: Bronzong",
+    "|upkeep",
+    "|switch|p2a: Skarmory|Skarmory, L80, M|235/235",
+    "|turn|12",
+    "|move|p1a: Roaring Moon|Dragon Dance|p1a: Roaring Moon",
+    "|-boost|p1a: Roaring Moon|atk|1",
+    "|-boost|p1a: Roaring Moon|spe|1",
+    "|move|p2a: Skarmory|Roost||[still]",
+    "|-fail|p2a: Skarmory|heal",
+    "|upkeep",
+    "|turn|13",
+    "|move|p1a: Roaring Moon|Iron Head|p2a: Skarmory",
+    "|-resisted|p2a: Skarmory",
+    "|-damage|p2a: Skarmory|204/235",
+    "|-damage|p1a: Roaring Moon|0 fnt|[from] item: Rocky Helmet|[of] p2a: Skarmory",
+    "|faint|p1a: Roaring Moon",
+    "|-end|p1a: Roaring Moon|Protosynthesis|[silent]",
+    "|move|p2a: Skarmory|Stealth Rock|p1: Roaring Moon",
+    "|-sidestart|p1: Player 1|move: Stealth Rock",
+    "|upkeep",
+    "|switch|p1a: Sableye|Sableye, L88, M|231/231",
+    "|-damage|p1a: Sableye|203/231|[from] Stealth Rock",
+    "|turn|14",
+    "|move|p2a: Skarmory|Body Press|p1a: Sableye",
+    "|-immune|p1a: Sableye",
+    "|move|p1a: Sableye|Knock Off|p2a: Skarmory",
+    "|-damage|p2a: Skarmory|138/235",
+    "|-damage|p1a: Sableye|165/231|[from] item: Rocky Helmet|[of] p2a: Skarmory",
+    "|-enditem|p2a: Skarmory|Rocky Helmet|[from] move: Knock Off|[of] p1a: Sableye",
+    "|-heal|p1a: Sableye|179/231|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|15",
+    "|move|p1a: Sableye|Recover|p1a: Sableye",
+    "|-heal|p1a: Sableye|231/231",
+    "|move|p2a: Skarmory|Roost|p2a: Skarmory",
+    "|-heal|p2a: Skarmory|235/235",
+    "|-singleturn|p2a: Skarmory|move: Roost",
+    "|upkeep",
+    "|turn|16",
+    "|move|p2a: Skarmory|Roost||[still]",
+    "|-fail|p2a: Skarmory|heal",
+    "|move|p1a: Sableye|Knock Off|p2a: Skarmory",
+    "|-damage|p2a: Skarmory|186/235",
+    "|upkeep",
+    "|turn|17",
+    "|move|p1a: Sableye|Recover||[still]",
+    "|-fail|p1a: Sableye|heal",
+    "|move|p2a: Skarmory|Body Press|p1a: Sableye",
+    "|-immune|p1a: Sableye",
+    "|upkeep",
+    "|turn|18",
+    "|move|p1a: Sableye|Recover||[still]",
+    "|-fail|p1a: Sableye|heal",
+    "|move|p2a: Skarmory|Brave Bird|p1a: Sableye",
+    "|-damage|p1a: Sableye|129/231",
+    "|-damage|p2a: Skarmory|152/235|[from] Recoil",
+    "|-heal|p1a: Sableye|143/231|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|19",
+    "|move|p1a: Sableye|Encore|p2a: Skarmory",
+    "|-start|p2a: Skarmory|Encore",
+    "|move|p2a: Skarmory|Brave Bird|p1a: Sableye",
+    "|-damage|p1a: Sableye|29/231",
+    "|-damage|p2a: Skarmory|114/235|[from] Recoil",
+    "|-heal|p1a: Sableye|43/231|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|20",
+    "|move|p1a: Sableye|Will-O-Wisp|p2a: Skarmory",
+    "|-status|p2a: Skarmory|brn",
+    "|move|p2a: Skarmory|Brave Bird|p1a: Sableye",
+    "|-damage|p1a: Sableye|0 fnt",
+    "|faint|p1a: Sableye",
+    "|-damage|p2a: Skarmory|100/235 brn|[from] Recoil",
+    "|-damage|p2a: Skarmory|86/235 brn|[from] brn",
+    "|upkeep",
+    "|switch|p1a: Kilowattrel|Kilowattrel, L83, M|252/252",
+    "|turn|21",
+    "|move|p1a: Kilowattrel|Discharge|p2a: Skarmory",
+    "|-supereffective|p2a: Skarmory",
+    "|-damage|p2a: Skarmory|0 fnt",
+    "|faint|p2a: Skarmory",
+    "|upkeep",
+    "|switch|p2a: Volcarona|Volcarona, L77, M|257/257",
+    "|turn|22",
+    "|move|p1a: Kilowattrel|Hurricane|p2a: Volcarona|[miss]",
+    "|-miss|p1a: Kilowattrel|p2a: Volcarona",
+    "|move|p2a: Volcarona|Quiver Dance|p2a: Volcarona",
+    "|-boost|p2a: Volcarona|spa|1",
+    "|-boost|p2a: Volcarona|spd|1",
+    "|-boost|p2a: Volcarona|spe|1",
+    "|upkeep",
+    "|turn|23",
+    "|move|p2a: Volcarona|Bug Buzz|p1a: Kilowattrel",
+    "|-resisted|p1a: Kilowattrel",
+    "|-damage|p1a: Kilowattrel|150/252",
+    "|move|p1a: Kilowattrel|Discharge|p2a: Volcarona",
+    "|-damage|p2a: Volcarona|200/257",
+    "|-status|p2a: Volcarona|par",
+    "|upkeep",
+    "|turn|24",
+    "|move|p1a: Kilowattrel|Hurricane|p2a: Volcarona",
+    "|-supereffective|p2a: Volcarona",
+    "|-damage|p2a: Volcarona|54/257 par",
+    "|move|p2a: Volcarona|Quiver Dance|p2a: Volcarona",
+    "|-boost|p2a: Volcarona|spa|1",
+    "|-boost|p2a: Volcarona|spd|1",
+    "|-boost|p2a: Volcarona|spe|1",
+    "|upkeep",
+    "|turn|25",
+    "|move|p1a: Kilowattrel|Hurricane|p2a: Volcarona",
+    "|-supereffective|p2a: Volcarona",
+    "|-damage|p2a: Volcarona|0 fnt",
+    "|faint|p2a: Volcarona",
+    "|upkeep",
+    "|switch|p2a: Chien-Pao|Chien-Pao, L72|234/234",
+    "|-ability|p2a: Chien-Pao|Sword of Ruin",
+    "|turn|26",
+    "|move|p1a: Kilowattrel|Roost|p1a: Kilowattrel",
+    "|-heal|p1a: Kilowattrel|252/252",
+    "|-singleturn|p1a: Kilowattrel|move: Roost",
+    "|move|p2a: Chien-Pao|Icicle Crash|p1a: Kilowattrel",
+    "|-damage|p1a: Kilowattrel|54/252",
+    "|upkeep",
+    "|turn|27",
+    "|move|p1a: Kilowattrel|Hurricane|p2a: Chien-Pao",
+    "|-damage|p2a: Chien-Pao|62/234",
+    "|move|p2a: Chien-Pao|Icicle Crash|p1a: Kilowattrel",
+    "|-supereffective|p1a: Kilowattrel",
+    "|-damage|p1a: Kilowattrel|0 fnt",
+    "|faint|p1a: Kilowattrel",
+    "|upkeep",
+    "|switch|p1a: Volbeat|Volbeat, L90, M|263/263",
+    "|turn|28",
+    "|move|p2a: Chien-Pao|Icicle Crash|p1a: Volbeat",
+    "|-damage|p1a: Volbeat|104/263",
+    "|move|p1a: Volbeat|U-turn|p2a: Chien-Pao",
+    "|-supereffective|p2a: Chien-Pao",
+    "|-damage|p2a: Chien-Pao|0 fnt",
+    "|faint|p2a: Chien-Pao",
+    "|switch|p1a: Archaludon|Archaludon, L78, F|268/268|[from] U-turn",
+    "|-damage|p1a: Archaludon|252/268|[from] Stealth Rock",
+    "|upkeep",
+    "|switch|p2a: Groudon|Groudon, L72|263/263",
+    "|-weather|SunnyDay|[from] ability: Drought|[of] p2a: Groudon",
+    "|turn|29",
+    "|move|p1a: Archaludon|Outrage|p2a: Groudon",
+    "|-damage|p2a: Groudon|167/263",
+    "|move|p2a: Groudon|Heat Crash|p1a: Archaludon",
+    "|-damage|p1a: Archaludon|143/268",
+    "|-ability|p1a: Archaludon|Stamina|boost",
+    "|-boost|p1a: Archaludon|def|1",
+    "|-weather|SunnyDay|[upkeep]",
+    "|-heal|p2a: Groudon|183/263|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|30",
+    "|move|p1a: Archaludon|Outrage|p2a: Groudon|[from] lockedmove",
+    "|-damage|p2a: Groudon|87/263",
+    "|-start|p1a: Archaludon|confusion|[fatigue]",
+    "|-enditem|p1a: Archaludon|Lum Berry|[eat]",
+    "|-end|p1a: Archaludon|confusion",
+    "|move|p2a: Groudon|Swords Dance|p2a: Groudon",
+    "|-boost|p2a: Groudon|atk|2",
+    "|-weather|SunnyDay|[upkeep]",
+    "|-heal|p2a: Groudon|103/263|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|31",
+    "|move|p1a: Archaludon|Earthquake|p2a: Groudon",
+    "|-damage|p2a: Groudon|45/263",
+    "|move|p2a: Groudon|Precipice Blades|p1a: Archaludon",
+    "|-supereffective|p1a: Archaludon",
+    "|-damage|p1a: Archaludon|0 fnt",
+    "|faint|p1a: Archaludon",
+    "|-weather|SunnyDay|[upkeep]",
+    "|-heal|p2a: Groudon|61/263|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p1a: Vespiquen|Vespiquen, L99, F|193/299",
+    "|-ability|p1a: Vespiquen|Pressure",
+    "|turn|32",
+    "|move|p2a: Groudon|Precipice Blades|p1a: Vespiquen",
+    "|-immune|p1a: Vespiquen",
+    "|move|p1a: Vespiquen|Toxic|p2a: Groudon",
+    "|-status|p2a: Groudon|tox",
+    "|-weather|SunnyDay|[upkeep]",
+    "|-heal|p2a: Groudon|77/263 tox|[from] item: Leftovers",
+    "|-damage|p2a: Groudon|61/263 tox|[from] psn",
+    "|upkeep",
+    "|turn|33",
+    "|move|p2a: Groudon|Thunder Wave|p1a: Vespiquen",
+    "|-status|p1a: Vespiquen|par",
+    "|cant|p1a: Vespiquen|par",
+    "|-weather|none",
+    "|-heal|p2a: Groudon|77/263 tox|[from] item: Leftovers",
+    "|-damage|p2a: Groudon|45/263 tox|[from] psn",
+    "|upkeep",
+    "|turn|34",
+    "|move|p2a: Groudon|Swords Dance|p2a: Groudon",
+    "|-boost|p2a: Groudon|atk|2",
+    "|move|p1a: Vespiquen|Roost|p1a: Vespiquen",
+    "|-heal|p1a: Vespiquen|299/299 par",
+    "|-singleturn|p1a: Vespiquen|move: Roost",
+    "|-heal|p2a: Groudon|61/263 tox|[from] item: Leftovers",
+    "|-damage|p2a: Groudon|13/263 tox|[from] psn",
+    "|upkeep",
+    "|turn|35",
+    "|move|p2a: Groudon|Thunder Wave|p1a: Vespiquen",
+    "|-fail|p1a: Vespiquen|par",
+    "|move|p1a: Vespiquen|Toxic|p2a: Groudon",
+    "|-fail|p2a: Groudon|tox",
+    "|-heal|p2a: Groudon|29/263 tox|[from] item: Leftovers",
+    "|-damage|p2a: Groudon|0 fnt|[from] psn",
+    "|faint|p2a: Groudon",
+    "|win|Player 1"
+  ]
+}

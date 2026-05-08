@@ -1,0 +1,945 @@
+{
+  "id": "random-002",
+  "description": "Random battle random-002",
+  "seed": [
+    3004,
+    3005,
+    3006,
+    3007
+  ],
+  "format": "gen9randombattle",
+  "p1": {
+    "team": [
+      {
+        "species": "Tyranitar",
+        "ability": "Sand Stream",
+        "item": "Weakness Policy",
+        "moves": [
+          "Knock Off",
+          "Stone Edge",
+          "Dragon Dance",
+          "Earthquake"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 78,
+        "gender": "M"
+      },
+      {
+        "species": "Latias",
+        "ability": "Levitate",
+        "item": "Soul Dew",
+        "moves": [
+          "Psyshock",
+          "Draco Meteor",
+          "Recover",
+          "Calm Mind"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "F"
+      },
+      {
+        "species": "Eelektross",
+        "ability": "Levitate",
+        "item": "Assault Vest",
+        "moves": [
+          "Knock Off",
+          "Close Combat",
+          "U-turn",
+          "Discharge"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 87,
+        "gender": "M"
+      },
+      {
+        "species": "Iron Treads",
+        "ability": "Quark Drive",
+        "item": "Leftovers",
+        "moves": [
+          "Rapid Spin",
+          "Iron Head",
+          "Stealth Rock",
+          "Earthquake"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 77,
+        "gender": "N"
+      },
+      {
+        "species": "Abomasnow",
+        "ability": "Snow Warning",
+        "item": "Light Clay",
+        "moves": [
+          "Earthquake",
+          "Blizzard",
+          "Aurora Veil",
+          "Ice Shard"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 77,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "M"
+      },
+      {
+        "species": "Slither Wing",
+        "ability": "Protosynthesis",
+        "item": "Life Orb",
+        "moves": [
+          "Wild Charge",
+          "Close Combat",
+          "First Impression",
+          "Earthquake"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 81,
+        "gender": "N"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Overqwil",
+        "ability": "Intimidate",
+        "item": "Loaded Dice",
+        "moves": [
+          "Scale Shot",
+          "Gunk Shot",
+          "Crunch",
+          "Swords Dance"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 82,
+        "gender": "M"
+      },
+      {
+        "species": "Magcargo",
+        "ability": "Weak Armor",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Power Gem",
+          "Fire Blast",
+          "Earth Power",
+          "Shell Smash"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 95,
+        "gender": "F"
+      },
+      {
+        "species": "Bruxish",
+        "ability": "Strong Jaw",
+        "item": "Choice Scarf",
+        "moves": [
+          "Crunch",
+          "Ice Fang",
+          "Psychic Fangs",
+          "Wave Crash"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 85,
+        "gender": "F"
+      },
+      {
+        "species": "Umbreon",
+        "ability": "Synchronize",
+        "item": "Leftovers",
+        "moves": [
+          "Protect",
+          "Toxic",
+          "Foul Play",
+          "Wish"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "M"
+      },
+      {
+        "species": "Lumineon",
+        "ability": "Storm Drain",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Encore",
+          "Hydro Pump",
+          "Ice Beam",
+          "U-turn"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 93,
+        "gender": "M"
+      },
+      {
+        "species": "Oinkologne-F",
+        "ability": "Thick Fat",
+        "item": "Leftovers",
+        "moves": [
+          "Body Slam",
+          "Rest",
+          "Curse",
+          "Sleep Talk"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 92,
+        "gender": "F"
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "switch 2"
+    ],
+    [
+      "move 4",
+      "switch 3"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "switch 4",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "switch 4"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "switch 5",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "switch 6"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Tyranitar|Tyranitar, L78, M|284/284",
+    "|switch|p2a: Overqwil|Overqwil, L82, M|274/274",
+    "|-ability|p2a: Overqwil|Intimidate|boost",
+    "|-unboost|p1a: Tyranitar|atk|1",
+    "|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar",
+    "|turn|1",
+    "|move|p2a: Overqwil|Scale Shot|p1a: Tyranitar",
+    "|-damage|p1a: Tyranitar|266/284",
+    "|-damage|p1a: Tyranitar|248/284",
+    "|-damage|p1a: Tyranitar|230/284",
+    "|-damage|p1a: Tyranitar|213/284",
+    "|-damage|p1a: Tyranitar|196/284",
+    "|-hitcount|p1a: Tyranitar|5",
+    "|-unboost|p2a: Overqwil|def|1",
+    "|-boost|p2a: Overqwil|spe|1",
+    "|move|p1a: Tyranitar|Dragon Dance|p1a: Tyranitar",
+    "|-boost|p1a: Tyranitar|atk|1",
+    "|-boost|p1a: Tyranitar|spe|1",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-damage|p2a: Overqwil|257/274|[from] Sandstorm",
+    "|upkeep",
+    "|turn|2",
+    "|move|p2a: Overqwil|Swords Dance|p2a: Overqwil",
+    "|-boost|p2a: Overqwil|atk|2",
+    "|move|p1a: Tyranitar|Dragon Dance|p1a: Tyranitar",
+    "|-boost|p1a: Tyranitar|atk|1",
+    "|-boost|p1a: Tyranitar|spe|1",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-damage|p2a: Overqwil|240/274|[from] Sandstorm",
+    "|upkeep",
+    "|turn|3",
+    "|move|p2a: Overqwil|Scale Shot|p1a: Tyranitar",
+    "|-damage|p1a: Tyranitar|163/284",
+    "|-damage|p1a: Tyranitar|125/284",
+    "|-damage|p1a: Tyranitar|93/284",
+    "|-damage|p1a: Tyranitar|60/284",
+    "|-damage|p1a: Tyranitar|26/284",
+    "|-hitcount|p1a: Tyranitar|5",
+    "|-unboost|p2a: Overqwil|def|1",
+    "|-boost|p2a: Overqwil|spe|1",
+    "|move|p1a: Tyranitar|Stone Edge|p2a: Overqwil|[miss]",
+    "|-miss|p1a: Tyranitar|p2a: Overqwil",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-damage|p2a: Overqwil|223/274|[from] Sandstorm",
+    "|upkeep",
+    "|turn|4",
+    "|move|p2a: Overqwil|Swords Dance|p2a: Overqwil",
+    "|-boost|p2a: Overqwil|atk|2",
+    "|move|p1a: Tyranitar|Knock Off|p2a: Overqwil",
+    "|-resisted|p2a: Overqwil",
+    "|-damage|p2a: Overqwil|60/274",
+    "|-enditem|p2a: Overqwil|Loaded Dice|[from] move: Knock Off|[of] p1a: Tyranitar",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-damage|p2a: Overqwil|43/274|[from] Sandstorm",
+    "|upkeep",
+    "|turn|5",
+    "|move|p2a: Overqwil|Crunch|p1a: Tyranitar",
+    "|-resisted|p1a: Tyranitar",
+    "|-damage|p1a: Tyranitar|0 fnt",
+    "|faint|p1a: Tyranitar",
+    "|-weather|none",
+    "|upkeep",
+    "|switch|p1a: Latias|Latias, L79, F|256/256",
+    "|turn|6",
+    "|move|p2a: Overqwil|Scale Shot|p1a: Latias|[miss]",
+    "|-miss|p2a: Overqwil|p1a: Latias",
+    "|move|p1a: Latias|Recover||[still]",
+    "|-fail|p1a: Latias|heal",
+    "|upkeep",
+    "|turn|7",
+    "|move|p2a: Overqwil|Crunch|p1a: Latias",
+    "|-supereffective|p1a: Latias",
+    "|-damage|p1a: Latias|0 fnt",
+    "|faint|p1a: Latias",
+    "|upkeep",
+    "|switch|p1a: Slither Wing|Slither Wing, L81|270/270",
+    "|turn|8",
+    "|move|p1a: Slither Wing|First Impression|p2a: Overqwil",
+    "|-damage|p2a: Overqwil|0 fnt",
+    "|faint|p2a: Overqwil",
+    "|-damage|p1a: Slither Wing|243/270|[from] item: Life Orb",
+    "|upkeep",
+    "|switch|p2a: Magcargo|Magcargo, L95, F|268/268",
+    "|turn|9",
+    "|move|p1a: Slither Wing|Earthquake|p2a: Magcargo",
+    "|-supereffective|p2a: Magcargo",
+    "|-damage|p2a: Magcargo|0 fnt",
+    "|faint|p2a: Magcargo",
+    "|-damage|p1a: Slither Wing|216/270|[from] item: Life Orb",
+    "|upkeep",
+    "|switch|p2a: Bruxish|Bruxish, L85, F|254/254",
+    "|turn|10",
+    "|move|p2a: Bruxish|Crunch|p1a: Slither Wing",
+    "|-resisted|p1a: Slither Wing",
+    "|-crit|p1a: Slither Wing",
+    "|-damage|p1a: Slither Wing|133/270",
+    "|move|p1a: Slither Wing|Earthquake|p2a: Bruxish",
+    "|-damage|p2a: Bruxish|116/254",
+    "|-damage|p1a: Slither Wing|106/270|[from] item: Life Orb",
+    "|upkeep",
+    "|turn|11",
+    "|move|p2a: Bruxish|Crunch|p1a: Slither Wing",
+    "|-resisted|p1a: Slither Wing",
+    "|-damage|p1a: Slither Wing|53/270",
+    "|move|p1a: Slither Wing|Wild Charge|p2a: Bruxish",
+    "|-supereffective|p2a: Bruxish",
+    "|-damage|p2a: Bruxish|0 fnt",
+    "|faint|p2a: Bruxish",
+    "|-damage|p1a: Slither Wing|24/270|[from] Recoil",
+    "|-damage|p1a: Slither Wing|0 fnt|[from] item: Life Orb",
+    "|faint|p1a: Slither Wing",
+    "|-end|p1a: Slither Wing|Protosynthesis|[silent]",
+    "|upkeep",
+    "|switch|p2a: Umbreon|Umbreon, L84, M|297/297",
+    "|switch|p1a: Iron Treads|Iron Treads, L77|265/265",
+    "|turn|12",
+    "|move|p1a: Iron Treads|Stealth Rock|p2a: Umbreon",
+    "|-sidestart|p2: Player 2|move: Stealth Rock",
+    "|move|p2a: Umbreon|Toxic|p1a: Iron Treads",
+    "|-immune|p1a: Iron Treads",
+    "|upkeep",
+    "|turn|13",
+    "|move|p1a: Iron Treads|Stealth Rock||[still]",
+    "|-fail|p1a: Iron Treads",
+    "|move|p2a: Umbreon|Toxic|p1a: Iron Treads|[miss]",
+    "|-miss|p2a: Umbreon|p1a: Iron Treads",
+    "|upkeep",
+    "|turn|14",
+    "|move|p1a: Iron Treads|Rapid Spin|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|266/297",
+    "|-boost|p1a: Iron Treads|spe|1",
+    "|move|p2a: Umbreon|Foul Play|p1a: Iron Treads",
+    "|-damage|p1a: Iron Treads|171/265",
+    "|-heal|p1a: Iron Treads|187/265|[from] item: Leftovers",
+    "|-heal|p2a: Umbreon|284/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|15",
+    "|move|p1a: Iron Treads|Iron Head|p2a: Umbreon",
+    "|-crit|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|182/297",
+    "|cant|p2a: Umbreon|flinch",
+    "|-heal|p1a: Iron Treads|203/265|[from] item: Leftovers",
+    "|-heal|p2a: Umbreon|200/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|16",
+    "|move|p1a: Iron Treads|Earthquake|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|112/297",
+    "|move|p2a: Umbreon|Foul Play|p1a: Iron Treads",
+    "|-damage|p1a: Iron Treads|121/265",
+    "|-heal|p1a: Iron Treads|137/265|[from] item: Leftovers",
+    "|-heal|p2a: Umbreon|130/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|17",
+    "|move|p1a: Iron Treads|Rapid Spin|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|100/297",
+    "|-boost|p1a: Iron Treads|spe|1",
+    "|move|p2a: Umbreon|Wish|p2a: Umbreon",
+    "|-heal|p1a: Iron Treads|153/265|[from] item: Leftovers",
+    "|-heal|p2a: Umbreon|118/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|18",
+    "|move|p2a: Umbreon|Protect|p2a: Umbreon",
+    "|-singleturn|p2a: Umbreon|Protect",
+    "|move|p1a: Iron Treads|Earthquake|p2a: Umbreon",
+    "|-activate|p2a: Umbreon|move: Protect",
+    "|-heal|p2a: Umbreon|266/297|[from] move: Wish|[wisher] Umbreon",
+    "|-heal|p1a: Iron Treads|169/265|[from] item: Leftovers",
+    "|-heal|p2a: Umbreon|284/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|19",
+    "|move|p1a: Iron Treads|Rapid Spin|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|256/297",
+    "|-boost|p1a: Iron Treads|spe|1",
+    "|move|p2a: Umbreon|Foul Play|p1a: Iron Treads",
+    "|-damage|p1a: Iron Treads|79/265",
+    "|-heal|p1a: Iron Treads|95/265|[from] item: Leftovers",
+    "|-heal|p2a: Umbreon|274/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|20",
+    "|move|p2a: Umbreon|Protect|p2a: Umbreon",
+    "|-singleturn|p2a: Umbreon|Protect",
+    "|move|p1a: Iron Treads|Rapid Spin|p2a: Umbreon",
+    "|-activate|p2a: Umbreon|move: Protect",
+    "|-heal|p1a: Iron Treads|111/265|[from] item: Leftovers",
+    "|-heal|p2a: Umbreon|292/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|21",
+    "|move|p1a: Iron Treads|Rapid Spin|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|262/297",
+    "|-boost|p1a: Iron Treads|spe|1",
+    "|move|p2a: Umbreon|Foul Play|p1a: Iron Treads",
+    "|-damage|p1a: Iron Treads|24/265",
+    "|-heal|p1a: Iron Treads|40/265|[from] item: Leftovers",
+    "|-heal|p2a: Umbreon|280/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|22",
+    "|move|p1a: Iron Treads|Iron Head|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|210/297",
+    "|move|p2a: Umbreon|Toxic|p1a: Iron Treads",
+    "|-immune|p1a: Iron Treads",
+    "|-heal|p1a: Iron Treads|56/265|[from] item: Leftovers",
+    "|-heal|p2a: Umbreon|228/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|23",
+    "|move|p1a: Iron Treads|Stealth Rock||[still]",
+    "|-fail|p1a: Iron Treads",
+    "|move|p2a: Umbreon|Toxic|p1a: Iron Treads",
+    "|-immune|p1a: Iron Treads",
+    "|-heal|p1a: Iron Treads|72/265|[from] item: Leftovers",
+    "|-heal|p2a: Umbreon|246/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|24",
+    "|move|p1a: Iron Treads|Iron Head|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|176/297",
+    "|cant|p2a: Umbreon|flinch",
+    "|-heal|p1a: Iron Treads|88/265|[from] item: Leftovers",
+    "|-heal|p2a: Umbreon|194/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|25",
+    "|move|p1a: Iron Treads|Iron Head|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|124/297",
+    "|cant|p2a: Umbreon|flinch",
+    "|-heal|p1a: Iron Treads|104/265|[from] item: Leftovers",
+    "|-heal|p2a: Umbreon|142/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|26",
+    "|move|p1a: Iron Treads|Earthquake|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|61/297",
+    "|move|p2a: Umbreon|Foul Play|p1a: Iron Treads",
+    "|-damage|p1a: Iron Treads|19/265",
+    "|-heal|p1a: Iron Treads|35/265|[from] item: Leftovers",
+    "|-heal|p2a: Umbreon|79/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|27",
+    "|move|p2a: Umbreon|Protect|p2a: Umbreon",
+    "|-singleturn|p2a: Umbreon|Protect",
+    "|move|p1a: Iron Treads|Rapid Spin|p2a: Umbreon",
+    "|-activate|p2a: Umbreon|move: Protect",
+    "|-heal|p1a: Iron Treads|51/265|[from] item: Leftovers",
+    "|-heal|p2a: Umbreon|97/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|28",
+    "|move|p1a: Iron Treads|Rapid Spin|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|70/297",
+    "|-boost|p1a: Iron Treads|spe|1",
+    "|move|p2a: Umbreon|Toxic|p1a: Iron Treads",
+    "|-immune|p1a: Iron Treads",
+    "|-heal|p1a: Iron Treads|67/265|[from] item: Leftovers",
+    "|-heal|p2a: Umbreon|88/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|29",
+    "|move|p1a: Iron Treads|Stealth Rock||[still]",
+    "|-fail|p1a: Iron Treads",
+    "|move|p2a: Umbreon|Foul Play|p1a: Iron Treads",
+    "|-damage|p1a: Iron Treads|0 fnt",
+    "|faint|p1a: Iron Treads",
+    "|-end|p1a: Iron Treads|Quark Drive|[silent]",
+    "|-heal|p2a: Umbreon|106/297|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p1a: Abomasnow|Abomasnow, L84, M|287/287",
+    "|-weather|Snowscape|[from] ability: Snow Warning|[of] p1a: Abomasnow",
+    "|turn|30",
+    "|move|p2a: Umbreon|Protect|p2a: Umbreon",
+    "|-singleturn|p2a: Umbreon|Protect",
+    "|move|p1a: Abomasnow|Aurora Veil|p1a: Abomasnow",
+    "|-sidestart|p1: Player 1|move: Aurora Veil",
+    "|-weather|Snowscape|[upkeep]",
+    "|-heal|p2a: Umbreon|124/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|31",
+    "|move|p2a: Umbreon|Wish|p2a: Umbreon",
+    "|move|p1a: Abomasnow|Aurora Veil||[still]",
+    "|-fail|p1a: Abomasnow",
+    "|-weather|Snowscape|[upkeep]",
+    "|-heal|p2a: Umbreon|142/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|32",
+    "|move|p1a: Abomasnow|Ice Shard|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|105/297",
+    "|move|p2a: Umbreon|Wish||[still]",
+    "|-fail|p2a: Umbreon",
+    "|-weather|Snowscape|[upkeep]",
+    "|-heal|p2a: Umbreon|253/297|[from] move: Wish|[wisher] Umbreon",
+    "|-heal|p2a: Umbreon|271/297|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|33",
+    "|move|p2a: Umbreon|Toxic|p1a: Abomasnow",
+    "|-status|p1a: Abomasnow|tox",
+    "|move|p1a: Abomasnow|Blizzard|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|184/297",
+    "|-status|p2a: Umbreon|frz",
+    "|-weather|Snowscape|[upkeep]",
+    "|-heal|p2a: Umbreon|202/297 frz|[from] item: Leftovers",
+    "|-damage|p1a: Abomasnow|270/287 tox|[from] psn",
+    "|upkeep",
+    "|turn|34",
+    "|-curestatus|p2a: Umbreon|frz|[msg]",
+    "|move|p2a: Umbreon|Foul Play|p1a: Abomasnow",
+    "|-damage|p1a: Abomasnow|232/287 tox",
+    "|move|p1a: Abomasnow|Aurora Veil||[still]",
+    "|-fail|p1a: Abomasnow",
+    "|-weather|none",
+    "|-heal|p2a: Umbreon|220/297|[from] item: Leftovers",
+    "|-damage|p1a: Abomasnow|198/287 tox|[from] psn",
+    "|upkeep",
+    "|turn|35",
+    "|move|p2a: Umbreon|Wish|p2a: Umbreon",
+    "|move|p1a: Abomasnow|Aurora Veil||[still]",
+    "|-fail|p1a: Abomasnow",
+    "|-heal|p2a: Umbreon|238/297|[from] item: Leftovers",
+    "|-damage|p1a: Abomasnow|147/287 tox|[from] psn",
+    "|upkeep",
+    "|turn|36",
+    "|move|p2a: Umbreon|Wish||[still]",
+    "|-fail|p2a: Umbreon",
+    "|move|p1a: Abomasnow|Earthquake|p2a: Umbreon",
+    "|-crit|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|152/297",
+    "|-heal|p2a: Umbreon|297/297|[from] move: Wish|[wisher] Umbreon",
+    "|-damage|p1a: Abomasnow|79/287 tox|[from] psn",
+    "|upkeep",
+    "|turn|37",
+    "|move|p2a: Umbreon|Wish|p2a: Umbreon",
+    "|move|p1a: Abomasnow|Blizzard|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|215/297",
+    "|-heal|p2a: Umbreon|233/297|[from] item: Leftovers",
+    "|-damage|p1a: Abomasnow|0 fnt|[from] psn",
+    "|faint|p1a: Abomasnow",
+    "|-sideend|p1: Player 1|move: Aurora Veil",
+    "|upkeep",
+    "|switch|p1a: Eelektross|Eelektross, L87, M|290/290",
+    "|turn|38",
+    "|move|p2a: Umbreon|Foul Play|p1a: Eelektross",
+    "|-damage|p1a: Eelektross|164/290",
+    "|move|p1a: Eelektross|Discharge|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|161/297",
+    "|-heal|p2a: Umbreon|297/297|[from] move: Wish|[wisher] Umbreon",
+    "|upkeep",
+    "|turn|39",
+    "|move|p2a: Umbreon|Protect|p2a: Umbreon",
+    "|-singleturn|p2a: Umbreon|Protect",
+    "|move|p1a: Eelektross|Close Combat|p2a: Umbreon",
+    "|-activate|p2a: Umbreon|move: Protect",
+    "|upkeep",
+    "|turn|40",
+    "|move|p2a: Umbreon|Toxic|p1a: Eelektross",
+    "|-status|p1a: Eelektross|tox",
+    "|move|p1a: Eelektross|Knock Off|p2a: Umbreon",
+    "|-resisted|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|260/297",
+    "|-enditem|p2a: Umbreon|Leftovers|[from] move: Knock Off|[of] p1a: Eelektross",
+    "|-damage|p1a: Eelektross|146/290 tox|[from] psn",
+    "|upkeep",
+    "|turn|41",
+    "|move|p2a: Umbreon|Toxic|p1a: Eelektross",
+    "|-fail|p1a: Eelektross|tox",
+    "|move|p1a: Eelektross|U-turn|p2a: Umbreon",
+    "|-supereffective|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|160/297",
+    "|-damage|p1a: Eelektross|110/290 tox|[from] psn",
+    "|upkeep",
+    "|turn|42",
+    "|move|p2a: Umbreon|Wish|p2a: Umbreon",
+    "|move|p1a: Eelektross|Close Combat|p2a: Umbreon",
+    "|-supereffective|p2a: Umbreon",
+    "|-damage|p2a: Umbreon|0 fnt",
+    "|-unboost|p1a: Eelektross|def|1",
+    "|-unboost|p1a: Eelektross|spd|1",
+    "|faint|p2a: Umbreon",
+    "|-damage|p1a: Eelektross|56/290 tox|[from] psn",
+    "|upkeep",
+    "|switch|p2a: Oinkologne|Oinkologne-F, L92, F|361/361",
+    "|-damage|p2a: Oinkologne|316/361|[from] Stealth Rock",
+    "|turn|43",
+    "|move|p2a: Oinkologne|Sleep Talk||[still]",
+    "|-fail|p2a: Oinkologne",
+    "|move|p1a: Eelektross|U-turn|p2a: Oinkologne",
+    "|-damage|p2a: Oinkologne|248/361",
+    "|-heal|p2a: Oinkologne|361/361|[from] move: Wish|[wisher] Umbreon",
+    "|-damage|p1a: Eelektross|0 fnt|[from] psn",
+    "|faint|p1a: Eelektross",
+    "|win|Player 2"
+  ]
+}

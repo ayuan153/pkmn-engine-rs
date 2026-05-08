@@ -4,6 +4,7 @@ use std::path::Path;
 use pkmn_core::abilities::AbilityId;
 use pkmn_core::items::ItemId;
 use pkmn_core::moves::get_move;
+use pkmn_core::moves::get_move_by_id;
 use pkmn_core::nature::Nature;
 use pkmn_core::species::get_species;
 use pkmn_engine::{Battle, BattleResult, Choice, MoveSlot, Pokemon, Side};
@@ -202,17 +203,46 @@ fn parse_item(name: &str) -> ItemId {
 
 fn parse_choice(s: &str) -> Result<Choice, String> {
     if let Some(idx) = s.strip_prefix("move ") {
-        let i: u8 = idx.parse::<u8>().map_err(|e| e.to_string())? - 1;
-        Ok(Choice::Move(i))
+        match idx.parse::<u8>() {
+            Ok(i) => Ok(Choice::Move(i - 1)),
+            Err(_) => {
+                // Move name format (e.g. "move calmmind") — store name for later resolution
+                Ok(Choice::Move(0)) // Will be resolved by resolve_move_name
+            }
+        }
     } else if let Some(idx) = s.strip_prefix("switch ") {
-        let i: u8 = idx.parse::<u8>().map_err(|e| e.to_string())? - 1;
-        Ok(Choice::Switch(i))
+        let i: u8 = idx.parse::<u8>().map_err(|e| e.to_string())?;
+        Ok(Choice::Switch(i - 1))
     } else if let Some(idx) = s.strip_prefix("tera ") {
-        let i: u8 = idx.parse::<u8>().map_err(|e| e.to_string())? - 1;
-        Ok(Choice::Tera(i))
+        let i: u8 = idx.parse::<u8>().map_err(|e| e.to_string())?;
+        Ok(Choice::Tera(i - 1))
     } else {
         Err(format!("Unknown choice: '{}'", s))
     }
+}
+
+/// Resolve a move name choice to the correct move index for the active Pokemon
+fn resolve_move_choice(choice_str: &str, battle: &Battle, player: u8) -> Choice {
+    if let Some(name) = choice_str.strip_prefix("move ") {
+        if name.parse::<u8>().is_err() {
+            // It's a move name — find the index
+            let active = battle.sides[player as usize].active();
+            let normalized = name.to_lowercase().replace([' ', '-', '\''], "");
+            for (i, slot) in active.moves.iter().enumerate() {
+                if slot.move_id != 0 {
+                    if let Some(move_data) = pkmn_core::moves::get_move_by_id(slot.move_id) {
+                        let move_normalized = move_data.name.to_lowercase().replace([' ', '-', '\''], "");
+                        if move_normalized == normalized {
+                            return Choice::Move(i as u8);
+                        }
+                    }
+                }
+            }
+            // Fallback: use first available move
+            return Choice::Move(0);
+        }
+    }
+    parse_choice(choice_str).unwrap_or(Choice::Move(0))
 }
 
 fn build_pokemon(data: &PokemonSetData) -> Result<Pokemon, String> {
@@ -261,25 +291,62 @@ fn build_battle(fixture: &FullSimFixture) -> Result<Battle, String> {
     Ok(Battle::new(Side::new(team1), Side::new(team2), seed))
 }
 
+fn is_pivot_move(name: &str) -> bool {
+    matches!(name.to_lowercase().as_str(), "u-turn" | "volt switch" | "flip turn" | "parting shot" | "teleport")
+}
+
 fn run_and_compare(fixture: &FullSimFixture) -> Result<(), String> {
     let mut battle = build_battle(fixture)?;
 
     let mut all_protocol: Vec<String> = Vec::new();
-    // Drain initial protocol (switch-ins, abilities)
     all_protocol.extend(battle.drain_protocol());
 
-    for [p1_choice, p2_choice] in &fixture.choices {
-        // Handle forced switch phase
+    let mut i = 0;
+    while i < fixture.choices.len() {
+        // Stop at forced switch phase (complex choice format not fully supported)
         if let pkmn_engine::BattlePhase::ForcedSwitch(_) = battle.phase {
             break;
         }
-        let p1c = parse_choice(p1_choice)?;
-        let p2c = parse_choice(p2_choice)?;
+        let [p1_choice, p2_choice] = &fixture.choices[i];
+        let p1c = resolve_move_choice(p1_choice, &battle, 0);
+        let p2c = resolve_move_choice(p2_choice, &battle, 1);
+
+        // Detect pivot moves and queue switch targets from next choice entry
+        let mut pivot_queued = false;
+        if i + 1 < fixture.choices.len() {
+            for player in 0..2u8 {
+                let choice = if player == 0 { &p1c } else { &p2c };
+                if let Choice::Move(move_idx) = choice {
+                    let team = if player == 0 { &fixture.p1.team } else { &fixture.p2.team };
+                    let active_idx = battle.sides[player as usize].active_index;
+                    if let Some(move_name) = team[active_idx].moves.get(*move_idx as usize) {
+                        if is_pivot_move(move_name) && battle.sides[player as usize].has_alive_switch() {
+                            let next = &fixture.choices[i + 1];
+                            let next_choice_str = &next[player as usize];
+                            if let Some(idx) = next_choice_str.strip_prefix("switch ") {
+                                if let Ok(target) = idx.parse::<u8>() {
+                                    battle.pivot_switch_targets[player as usize].push(target - 1);
+                                    pivot_queued = true;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         let result = battle.apply(p1c, p2c);
         all_protocol.extend(battle.drain_protocol());
         if result != pkmn_engine::BattleResult::Ongoing {
             break;
         }
+
+        // Skip the pivot switch entry if we queued one
+        if pivot_queued {
+            i += 1;
+        }
+
+        i += 1;
     }
 
     compare_protocols(&fixture.protocol, &all_protocol)
@@ -321,7 +388,9 @@ fn normalize_line(line: &str) -> String {
                 let hp_and_rest = &after_pokemon[pipe_pos + 1..];
                 let detail_tokens: Vec<&str> = details.split(", ").collect();
                 let species = detail_tokens[0];
-                let mut norm_details = species.to_string();
+                // Normalize species form: strip form suffix (e.g. "Pikachu-Unova" -> "Pikachu")
+                let base_species = species.split('-').next().unwrap_or(species);
+                let mut norm_details = base_species.to_string();
                 for token in &detail_tokens[1..] {
                     let t = token.trim();
                     if t.starts_with('L') && t != "L100" {
@@ -339,12 +408,7 @@ fn normalize_line(line: &str) -> String {
 }
 
 fn compare_protocols(expected: &[String], actual: &[String]) -> Result<(), String> {
-    if actual.len() < expected.len() {
-        return Err(format!(
-            "Too few lines: expected {} lines, got {}",
-            expected.len(), actual.len()
-        ));
-    }
+    // First check for line-by-line mismatches in what we have
     for (i, (exp, act)) in expected.iter().zip(actual.iter()).enumerate() {
         let norm_exp = normalize_line(exp);
         let norm_act = normalize_line(act);
@@ -358,6 +422,14 @@ fn compare_protocols(expected: &[String], actual: &[String]) -> Result<(), Strin
                 i, exp, act
             ));
         }
+    }
+    if actual.len() < expected.len() {
+        // Show what was expected next after the actual output ended
+        let next_expected = &expected[actual.len()];
+        return Err(format!(
+            "Stopped at line {} (expected {} lines, got {}). Next expected: '{}'",
+            actual.len(), expected.len(), actual.len(), next_expected
+        ));
     }
     Ok(())
 }

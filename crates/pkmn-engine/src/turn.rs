@@ -172,6 +172,11 @@ impl Battle {
                 | "substitute" | "protect" | "detect"
                 | "reflect" | "light screen" | "aurora veil" | "tailwind"
                 | "recover" | "soft-boiled" | "roost" | "slack off" | "rest"
+                | "belly drum" | "synthesis" | "wish" | "morning sun" | "moonlight"
+                | "bulk up" | "coil" | "hone claws" | "work up" | "growth"
+                | "cosmic power" | "cotton guard" | "stockpile" | "minimize"
+                | "autotomize" | "shift gear" | "tail glow" | "geomancy"
+                | "no retreat" | "clangorous soul" | "victory dance"
             );
             // Check if targeting status move will be blocked by Substitute
             let is_sub_blocked = move_data.category == MoveCategory::Status
@@ -182,18 +187,29 @@ impl Battle {
             // Check if healing move will fail (at full HP)
             let is_heal_fail = is_self_target && matches!(
                 move_data.name.to_lowercase().as_str(),
-                "recover" | "soft-boiled" | "roost" | "slack off"
+                "recover" | "soft-boiled" | "roost" | "slack off" | "synthesis" | "morning sun" | "moonlight"
             ) && self.sides[player as usize].active().hp >= self.sides[player as usize].active().max_hp;
+
+            // Moves that use [still] format when failing
+            let heal_still = is_heal_fail && matches!(
+                move_data.name.to_lowercase().as_str(),
+                "recover" | "soft-boiled" | "roost" | "slack off"
+            );
 
             if is_sub_blocked {
                 self.emit(format!("|move|p{}a: {}|{}||[still]", player+1, atk_name, move_data.name));
-            } else if is_heal_fail {
+            } else if heal_still {
                 self.emit(format!("|move|p{}a: {}|{}||[still]", player+1, atk_name, move_data.name));
             } else if is_self_target {
                 self.emit(format!("|move|p{}a: {}|{}|p{}a: {}", player+1, atk_name, move_data.name, player+1, atk_name));
             } else {
                 let def_name = self.species_name(defender_idx);
                 self.emit(format!("|move|p{}a: {}|{}|p{}a: {}", player+1, atk_name, move_data.name, defender_idx+1, def_name));
+            }
+
+            if is_heal_fail {
+                self.emit(format!("|-fail|p{}a: {}|heal", player+1, atk_name));
+                return;
             }
         }
 
@@ -233,8 +249,22 @@ impl Battle {
             if defender_ability == pkmn_core::abilities::AbilityId::FlashFire {
                 self.emit(format!("|-start|p{}a: {}|ability: Flash Fire", defender_idx+1, def_name));
                 self.sides[defender_idx as usize].active_mut().volatiles.insert(Volatiles::FLASH_FIRE);
+            } else if defender_ability == pkmn_core::abilities::AbilityId::LightningRod
+                || defender_ability == pkmn_core::abilities::AbilityId::StormDrain
+            {
+                let ability_name = pkmn_core::abilities::get_ability(defender_ability).name;
+                self.emit(format!("|-ability|p{}a: {}|{}|boost", defender_idx+1, def_name, ability_name));
+                // Boost SpA by 1
+                self.sides[defender_idx as usize].active_mut().boosts.spa += 1;
+                self.emit(format!("|-boost|p{}a: {}|spa|1", defender_idx+1, def_name));
+            } else if defender_ability == pkmn_core::abilities::AbilityId::VoltAbsorb
+                || defender_ability == pkmn_core::abilities::AbilityId::WaterAbsorb
+            {
+                let ability_name = pkmn_core::abilities::get_ability(defender_ability).name;
+                self.emit(format!("|-immune|p{}a: {}|[from] ability: {}", defender_idx+1, def_name, ability_name));
             } else {
-                self.emit(format!("|-immune|p{}a: {}", defender_idx+1, def_name));
+                let ability_name = pkmn_core::abilities::get_ability(defender_ability).name;
+                self.emit(format!("|-immune|p{}a: {}|[from] ability: {}", defender_idx+1, def_name, ability_name));
             }
             return;
         }
@@ -1102,13 +1132,17 @@ impl Battle {
         if !self.sides[player as usize].has_alive_switch() {
             return;
         }
-        let current = self.sides[player as usize].active_index;
-        let target = self.sides[player as usize].team.iter().enumerate()
-            .find(|(i, p)| *i != current && p.is_alive())
-            .map(|(i, _)| i);
-        if let Some(target_idx) = target {
-            self.execute_switch_from(player, target_idx as u8, Some(move_data.name));
-        }
+        // Use queued pivot target if available, otherwise pick first alive
+        let target = if !self.pivot_switch_targets[player as usize].is_empty() {
+            self.pivot_switch_targets[player as usize].remove(0)
+        } else {
+            let current = self.sides[player as usize].active_index;
+            self.sides[player as usize].team.iter().enumerate()
+                .find(|(i, p)| *i != current && p.is_alive())
+                .map(|(i, _)| i as u8)
+                .unwrap_or(0)
+        };
+        self.execute_switch_from(player, target, Some(move_data.name));
     }
 
     fn get_multi_hit_count(&self, player: u8, move_data: &MoveData) -> Option<u8> {
