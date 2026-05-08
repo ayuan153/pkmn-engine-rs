@@ -14,16 +14,20 @@ interface DamageEvent {
   damage: number;
   crit: boolean;
   effectiveness: number;
+  weather: string | null;
+  terrain: string | null;
+  screens: { reflect: boolean; lightScreen: boolean };
   attacker: {
     species: string; level: number;
-    stat_atk: number; stat_spa: number;
+    stat_atk: number; stat_def: number; stat_spa: number;
     ability: string; item: string;
     boosts: Record<string, number>;
     status: string | null;
+    teraType: string | null;
   };
   defender: {
     species: string; level: number;
-    stat_def: number; stat_spd: number;
+    stat_atk: number; stat_def: number; stat_spd: number;
     ability: string; item: string;
     boosts: Record<string, number>;
     status: string | null;
@@ -137,6 +141,11 @@ function parseOmniscientLog(log: string, scenario: typeof scenarios[0]): DamageE
   let lastMove: { source: string; move: string } | null = null;
   let nextCrit = false;
   let nextEffectiveness = 1.0;
+  let weather: string | null = null;
+  let terrain: string | null = null;
+  let p1Screens = { reflect: false, lightScreen: false };
+  let p2Screens = { reflect: false, lightScreen: false };
+  const terastallized: Record<string, string> = {};
 
   const pokemon: Record<string, {
     species: string; level: number;
@@ -186,6 +195,16 @@ function parseOmniscientLog(log: string, scenario: typeof scenarios[0]): DamageE
       nextEffectiveness = 0.5;
     } else if (cmd === '-damage') {
       if (!lastMove) continue;
+      // Skip residual damage (poison, burn, weather, etc.)
+      const fromTag = parts.slice(3).find(p => p.startsWith('[from]'));
+      if (fromTag) {
+        // Still update HP tracking
+        const targetSlot = parts[1].split(':')[0].trim();
+        const hpStr = parts[2].split(' ')[0];
+        const hpAfter = hpStr === '0' || hpStr.startsWith('0 ') ? 0 : parseInt(hpStr.split('/')[0]);
+        if (pokemon[targetSlot]) pokemon[targetSlot].hp = hpAfter;
+        continue;
+      }
       const targetSlot = parts[1].split(':')[0].trim();
       const hpStr = parts[2].split(' ')[0];
       const hpAfter = hpStr === '0' || hpStr.startsWith('0 ') ? 0 : parseInt(hpStr.split('/')[0]);
@@ -203,15 +222,21 @@ function parseOmniscientLog(log: string, scenario: typeof scenarios[0]): DamageE
           source: lastMove.source, target: targetSlot,
           move: lastMove.move, damage, crit: nextCrit,
           effectiveness: nextEffectiveness,
+          weather,
+          terrain,
+          screens: targetSlot.startsWith('p2') ? { reflect: p2Screens.reflect, lightScreen: p2Screens.lightScreen } : { reflect: p1Screens.reflect, lightScreen: p1Screens.lightScreen },
           attacker: {
             species: attacker.species, level: attacker.level,
             stat_atk: attacker.stats.atk || 0,
+            stat_def: attacker.stats.def || 0,
             stat_spa: attacker.stats.spa || 0,
             ability: attacker.ability, item: attacker.item,
             boosts: { ...attacker.boosts }, status: attacker.status,
+            teraType: terastallized[lastMove.source] || null,
           },
           defender: {
             species: target.species, level: target.level,
+            stat_atk: target.stats.atk || 0,
             stat_def: target.stats.def || 0,
             stat_spd: target.stats.spd || 0,
             ability: target.ability, item: target.item,
@@ -249,6 +274,25 @@ function parseOmniscientLog(log: string, scenario: typeof scenarios[0]): DamageE
     } else if (cmd === '-ability') {
       const slot = parts[1].split(':')[0].trim();
       if (pokemon[slot]) pokemon[slot].ability = parts[2];
+    } else if (cmd === '-weather') {
+      weather = parts[1] === 'none' ? null : parts[1];
+    } else if (cmd === '-fieldstart') {
+      const field = parts[1].replace('move: ', '');
+      if (field.includes('Terrain')) terrain = field;
+    } else if (cmd === '-fieldend') {
+      const field = parts[1].replace('move: ', '');
+      if (field.includes('Terrain')) terrain = null;
+    } else if (cmd === '-sidestart') {
+      const side = parts[1].startsWith('p1') ? p1Screens : p2Screens;
+      if (parts[2] === 'Reflect') side.reflect = true;
+      else if (parts[2] === 'Light Screen') side.lightScreen = true;
+    } else if (cmd === '-sideend') {
+      const side = parts[1].startsWith('p1') ? p1Screens : p2Screens;
+      if (parts[2] === 'Reflect') side.reflect = false;
+      else if (parts[2] === 'Light Screen') side.lightScreen = false;
+    } else if (cmd === '-terastallize') {
+      const slot = parts[1].split(':')[0].trim();
+      terastallized[slot] = parts[2];
     }
   }
 
