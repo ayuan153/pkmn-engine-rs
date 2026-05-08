@@ -1,24 +1,26 @@
 {
-  "id": "basic-physical",
-  "description": "Basic physical attack, no modifiers",
+  "id": "facade-doubled",
+  "description": "Facade 140 BP when user has status",
   "seed": [
-    1,
-    2,
-    3,
-    4
+    1120,
+    1121,
+    1122,
+    1123
   ],
   "format": "gen9customgame",
   "p1": {
     "name": "Player 1",
     "team": [
       {
-        "name": "Garchomp",
-        "species": "Garchomp",
-        "item": "",
-        "ability": "Rough Skin",
+        "name": "Ursaluna",
+        "species": "Ursaluna",
+        "item": "Flame Orb",
+        "ability": "Guts",
         "moves": [
-          "Earthquake",
-          "Dragon Claw"
+          "Facade",
+          "Headlong Rush",
+          "Crunch",
+          "Swords Dance"
         ],
         "nature": "Adamant",
         "evs": {
@@ -53,19 +55,21 @@
     "name": "Player 2",
     "team": [
       {
-        "name": "Tyranitar",
-        "species": "Tyranitar",
-        "item": "",
-        "ability": "Sand Stream",
+        "name": "Skarmory",
+        "species": "Skarmory",
+        "item": "Rocky Helmet",
+        "ability": "Sturdy",
         "moves": [
-          "Stone Edge",
-          "Crunch"
+          "Body Press",
+          "Iron Head",
+          "Roost",
+          "Whirlwind"
         ],
-        "nature": "Adamant",
+        "nature": "Impish",
         "evs": {
           "hp": 252,
-          "atk": 252,
-          "def": 0,
+          "atk": 0,
+          "def": 252,
           "spa": 0,
           "spd": 4,
           "spe": 0
@@ -93,99 +97,45 @@
   "events": [
     {
       "type": "damage",
-      "turn": 1,
+      "turn": 2,
       "source": "p1a",
       "target": "p2a",
-      "move": "Earthquake",
-      "damage": 338,
-      "crit": false,
-      "effectiveness": 2,
-      "weather": "Sandstorm",
-      "terrain": null,
-      "screens": {
-        "reflect": false,
-        "lightScreen": false
-      },
-      "attacker": {
-        "species": "Garchomp",
-        "level": 100,
-        "stat_atk": 394,
-        "stat_def": 226,
-        "stat_spa": 176,
-        "ability": "Rough Skin",
-        "item": "",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "teraType": null
-      },
-      "defender": {
-        "species": "Tyranitar",
-        "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spd": 237,
-        "ability": "Sand Stream",
-        "item": "",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "hp_before": 404,
-        "hp_after": 66,
-        "max_hp": 404
-      }
-    },
-    {
-      "type": "damage",
-      "turn": 1,
-      "source": "p2a",
-      "target": "p1a",
-      "move": "Stone Edge",
-      "damage": 105,
+      "move": "Facade",
+      "damage": 246,
       "crit": false,
       "effectiveness": 0.5,
-      "weather": "Sandstorm",
+      "weather": null,
       "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Tyranitar",
+        "species": "Ursaluna",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spa": 203,
-        "ability": "Sand Stream",
-        "item": "",
+        "stat_atk": 416,
+        "stat_def": 246,
+        "stat_spa": 113,
+        "ability": "Guts",
+        "item": "Flame Orb",
         "boosts": {
-          "atk": 0,
+          "atk": 2,
           "def": 0,
           "spa": 0,
           "spd": 0,
           "spe": 0
         },
-        "status": null,
+        "status": "brn",
         "teraType": null
       },
       "defender": {
-        "species": "Garchomp",
+        "species": "Skarmory",
         "level": 100,
-        "stat_atk": 394,
-        "stat_def": 226,
-        "stat_spd": 207,
-        "ability": "Rough Skin",
-        "item": "",
+        "stat_atk": 196,
+        "stat_def": 416,
+        "stat_spd": 177,
+        "ability": "Sturdy",
+        "item": "Rocky Helmet",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -194,34 +144,34 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 357,
-        "hp_after": 252,
-        "max_hp": 357
+        "hp_before": 334,
+        "hp_after": 88,
+        "max_hp": 334
       }
     },
     {
       "type": "damage",
       "turn": 2,
-      "source": "p1a",
-      "target": "p2a",
-      "move": "Dragon Claw",
-      "damage": 66,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Body Press",
+      "damage": 196,
       "crit": false,
-      "effectiveness": 1,
-      "weather": "Sandstorm",
+      "effectiveness": 2,
+      "weather": null,
       "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Garchomp",
+        "species": "Skarmory",
         "level": 100,
-        "stat_atk": 394,
-        "stat_def": 226,
-        "stat_spa": 176,
-        "ability": "Rough Skin",
-        "item": "",
+        "stat_atk": 196,
+        "stat_def": 416,
+        "stat_spa": 104,
+        "ability": "Sturdy",
+        "item": "Rocky Helmet",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -233,13 +183,67 @@
         "teraType": null
       },
       "defender": {
-        "species": "Tyranitar",
+        "species": "Ursaluna",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spd": 237,
-        "ability": "Sand Stream",
-        "item": "",
+        "stat_atk": 416,
+        "stat_def": 246,
+        "stat_spd": 197,
+        "ability": "Guts",
+        "item": "Flame Orb",
+        "boosts": {
+          "atk": 2,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": "brn",
+        "hp_before": 335,
+        "hp_after": 139,
+        "max_hp": 401
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Facade",
+      "damage": 88,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Ursaluna",
+        "level": 100,
+        "stat_atk": 416,
+        "stat_def": 246,
+        "stat_spa": 113,
+        "ability": "Guts",
+        "item": "Flame Orb",
+        "boosts": {
+          "atk": 2,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": "brn",
+        "teraType": null
+      },
+      "defender": {
+        "species": "Skarmory",
+        "level": 100,
+        "stat_atk": 196,
+        "stat_def": 416,
+        "stat_spd": 177,
+        "ability": "Sturdy",
+        "item": "Rocky Helmet",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -248,9 +252,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 66,
+        "hp_before": 88,
         "hp_after": 0,
-        "max_hp": 404
+        "max_hp": 334
       }
     }
   ]

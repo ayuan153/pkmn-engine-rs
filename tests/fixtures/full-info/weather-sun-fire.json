@@ -1,0 +1,337 @@
+{
+  "id": "weather-sun-fire",
+  "description": "Sun boosts Fire 1.5x, weakens Water 0.5x",
+  "seed": [
+    500,
+    501,
+    502,
+    503
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Charizard",
+        "species": "Charizard",
+        "item": "Choice Specs",
+        "ability": "Blaze",
+        "moves": [
+          "Fire Blast",
+          "Air Slash",
+          "Focus Blast",
+          "Dragon Pulse"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      },
+      {
+        "name": "Torkoal",
+        "species": "Torkoal",
+        "item": "Heat Rock",
+        "ability": "Drought",
+        "moves": [
+          "Lava Plume",
+          "Stealth Rock",
+          "Rapid Spin",
+          "Yawn"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Vaporeon",
+        "species": "Vaporeon",
+        "item": "Leftovers",
+        "ability": "Water Absorb",
+        "moves": [
+          "Scald",
+          "Ice Beam",
+          "Wish",
+          "Protect"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      },
+      {
+        "name": "Tyranitar",
+        "species": "Tyranitar",
+        "item": "Leftovers",
+        "ability": "Sand Stream",
+        "moves": [
+          "Stone Edge",
+          "Crunch",
+          "Earthquake",
+          "Stealth Rock"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Scald",
+      "damage": 132,
+      "crit": false,
+      "effectiveness": 2,
+      "weather": "SunnyDay",
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Vaporeon",
+        "level": 100,
+        "stat_atk": 149,
+        "stat_def": 240,
+        "stat_spa": 256,
+        "ability": "Water Absorb",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Torkoal",
+        "level": 100,
+        "stat_atk": 185,
+        "stat_def": 416,
+        "stat_spd": 177,
+        "ability": "Drought",
+        "item": "Heat Rock",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 344,
+        "hp_after": 212,
+        "max_hp": 344
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Ice Beam",
+      "damage": 54,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": "SunnyDay",
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Vaporeon",
+        "level": 100,
+        "stat_atk": 149,
+        "stat_def": 240,
+        "stat_spa": 256,
+        "ability": "Water Absorb",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Torkoal",
+        "level": 100,
+        "stat_atk": 185,
+        "stat_def": 416,
+        "stat_spd": 177,
+        "ability": "Drought",
+        "item": "Heat Rock",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 212,
+        "hp_after": 158,
+        "max_hp": 344
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Lava Plume",
+      "damage": 63,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": "SunnyDay",
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Torkoal",
+        "level": 100,
+        "stat_atk": 185,
+        "stat_def": 416,
+        "stat_spa": 206,
+        "ability": "Drought",
+        "item": "Heat Rock",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Vaporeon",
+        "level": 100,
+        "stat_atk": 149,
+        "stat_def": 240,
+        "stat_spd": 227,
+        "ability": "Water Absorb",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 464,
+        "hp_after": 401,
+        "max_hp": 464
+      }
+    }
+  ]
+}

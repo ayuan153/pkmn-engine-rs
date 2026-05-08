@@ -1,35 +1,35 @@
 {
-  "id": "technician",
-  "description": "Technician 1.5x on moves with BP <= 60",
+  "id": "terrain-grassy",
+  "description": "Grassy Terrain 1.3x Grass moves for grounded, halves EQ",
   "seed": [
-    55,
-    66,
-    77,
-    88
+    600,
+    601,
+    602,
+    603
   ],
   "format": "gen9customgame",
   "p1": {
     "name": "Player 1",
     "team": [
       {
-        "name": "Scizor",
-        "species": "Scizor",
+        "name": "Rillaboom",
+        "species": "Rillaboom",
         "item": "Choice Band",
-        "ability": "Technician",
+        "ability": "Grassy Surge",
         "moves": [
-          "Bullet Punch",
-          "U-turn",
+          "Grassy Glide",
+          "Wood Hammer",
           "Knock Off",
-          "Superpower"
+          "U-turn"
         ],
         "nature": "Adamant",
         "evs": {
-          "hp": 248,
+          "hp": 0,
           "atk": 252,
           "def": 0,
           "spa": 0,
-          "spd": 8,
-          "spe": 0
+          "spd": 4,
+          "spe": 252
         },
         "ivs": {
           "hp": 31,
@@ -55,15 +55,15 @@
     "name": "Player 2",
     "team": [
       {
-        "name": "Rotom-Wash",
-        "species": "Rotom-Wash",
-        "item": "Leftovers",
-        "ability": "Levitate",
+        "name": "Toxapex",
+        "species": "Toxapex",
+        "item": "Rocky Helmet",
+        "ability": "Regenerator",
         "moves": [
-          "Volt Switch",
-          "Hydro Pump",
-          "Will-O-Wisp",
-          "Pain Split"
+          "Scald",
+          "Toxic",
+          "Recover",
+          "Knock Off"
         ],
         "nature": "Bold",
         "evs": {
@@ -100,23 +100,23 @@
       "turn": 1,
       "source": "p1a",
       "target": "p2a",
-      "move": "Bullet Punch",
-      "damage": 27,
+      "move": "Grassy Glide",
+      "damage": 102,
       "crit": false,
-      "effectiveness": 0.5,
+      "effectiveness": 1,
       "weather": null,
-      "terrain": null,
+      "terrain": "Grassy Terrain",
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Scizor",
+        "species": "Rillaboom",
         "level": 100,
-        "stat_atk": 394,
-        "stat_def": 236,
-        "stat_spa": 131,
-        "ability": "Technician",
+        "stat_atk": 383,
+        "stat_def": 216,
+        "stat_spa": 140,
+        "ability": "Grassy Surge",
         "item": "Choice Band",
         "boosts": {
           "atk": 0,
@@ -129,13 +129,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Rotom-Wash",
+        "species": "Toxapex",
         "level": 100,
-        "stat_atk": 149,
-        "stat_def": 344,
-        "stat_spd": 251,
-        "ability": "Levitate",
-        "item": "Leftovers",
+        "stat_atk": 145,
+        "stat_def": 443,
+        "stat_spd": 321,
+        "ability": "Regenerator",
+        "item": "Rocky Helmet",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -145,87 +145,33 @@
         },
         "status": null,
         "hp_before": 304,
-        "hp_after": 277,
+        "hp_after": 202,
         "max_hp": 304
       }
     },
     {
       "type": "damage",
-      "turn": 2,
-      "source": "p1a",
-      "target": "p2a",
-      "move": "Bullet Punch",
-      "damage": 16,
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Scald",
+      "damage": 39,
       "crit": false,
       "effectiveness": 0.5,
       "weather": null,
-      "terrain": null,
+      "terrain": "Grassy Terrain",
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Scizor",
+        "species": "Toxapex",
         "level": 100,
-        "stat_atk": 394,
-        "stat_def": 236,
-        "stat_spa": 131,
-        "ability": "Technician",
-        "item": "Choice Band",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": "brn",
-        "teraType": null
-      },
-      "defender": {
-        "species": "Rotom-Wash",
-        "level": 100,
-        "stat_atk": 149,
-        "stat_def": 344,
-        "stat_spd": 251,
-        "ability": "Levitate",
-        "item": "Leftovers",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "hp_before": 296,
-        "hp_after": 280,
-        "max_hp": 304
-      }
-    },
-    {
-      "type": "damage",
-      "turn": 2,
-      "source": "p2a",
-      "target": "p1a",
-      "move": "Volt Switch",
-      "damage": 99,
-      "crit": false,
-      "effectiveness": 1,
-      "weather": null,
-      "terrain": null,
-      "screens": {
-        "reflect": false,
-        "lightScreen": false
-      },
-      "attacker": {
-        "species": "Rotom-Wash",
-        "level": 100,
-        "stat_atk": 149,
-        "stat_def": 344,
-        "stat_spa": 246,
-        "ability": "Levitate",
-        "item": "Leftovers",
+        "stat_atk": 145,
+        "stat_def": 443,
+        "stat_spa": 142,
+        "ability": "Regenerator",
+        "item": "Rocky Helmet",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -237,12 +183,12 @@
         "teraType": null
       },
       "defender": {
-        "species": "Scizor",
+        "species": "Rillaboom",
         "level": 100,
-        "stat_atk": 394,
-        "stat_def": 236,
-        "stat_spd": 198,
-        "ability": "Technician",
+        "stat_atk": 383,
+        "stat_def": 216,
+        "stat_spd": 177,
+        "ability": "Grassy Surge",
         "item": "Choice Band",
         "boosts": {
           "atk": 0,
@@ -251,10 +197,10 @@
           "spd": 0,
           "spe": 0
         },
-        "status": "brn",
-        "hp_before": 322,
-        "hp_after": 223,
-        "max_hp": 343
+        "status": null,
+        "hp_before": 285,
+        "hp_after": 246,
+        "max_hp": 341
       }
     }
   ]

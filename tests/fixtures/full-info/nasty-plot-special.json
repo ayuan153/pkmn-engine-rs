@@ -1,33 +1,33 @@
 {
-  "id": "adaptability-stab",
-  "description": "Adaptability gives 2x STAB instead of 1.5x",
+  "id": "nasty-plot-special",
+  "description": "Nasty Plot +2 SpA then attack",
   "seed": [
-    42,
-    84,
-    126,
-    168
+    820,
+    821,
+    822,
+    823
   ],
   "format": "gen9customgame",
   "p1": {
     "name": "Player 1",
     "team": [
       {
-        "name": "Crawdaunt",
-        "species": "Crawdaunt",
-        "item": "Life Orb",
-        "ability": "Adaptability",
+        "name": "Togekiss",
+        "species": "Togekiss",
+        "item": "Leftovers",
+        "ability": "Serene Grace",
         "moves": [
-          "Crabhammer",
-          "Knock Off",
-          "Aqua Jet",
-          "Swords Dance"
+          "Nasty Plot",
+          "Air Slash",
+          "Flamethrower",
+          "Dazzling Gleam"
         ],
-        "nature": "Adamant",
+        "nature": "Timid",
         "evs": {
           "hp": 0,
-          "atk": 252,
+          "atk": 0,
           "def": 0,
-          "spa": 0,
+          "spa": 252,
           "spd": 4,
           "spe": 252
         },
@@ -55,17 +55,17 @@
     "name": "Player 2",
     "team": [
       {
-        "name": "Tangrowth",
-        "species": "Tangrowth",
-        "item": "Assault Vest",
-        "ability": "Regenerator",
+        "name": "Blissey",
+        "species": "Blissey",
+        "item": "Leftovers",
+        "ability": "Natural Cure",
         "moves": [
-          "Giga Drain",
-          "Knock Off",
-          "Earthquake",
-          "Rock Slide"
+          "Seismic Toss",
+          "Soft-Boiled",
+          "Thunder Wave",
+          "Toxic"
         ],
-        "nature": "Relaxed",
+        "nature": "Bold",
         "evs": {
           "hp": 252,
           "atk": 0,
@@ -98,118 +98,10 @@
     {
       "type": "damage",
       "turn": 1,
-      "source": "p1a",
-      "target": "p2a",
-      "move": "Crabhammer",
-      "damage": 101,
-      "crit": false,
-      "effectiveness": 0.5,
-      "weather": null,
-      "terrain": null,
-      "screens": {
-        "reflect": false,
-        "lightScreen": false
-      },
-      "attacker": {
-        "species": "Crawdaunt",
-        "level": 100,
-        "stat_atk": 372,
-        "stat_def": 206,
-        "stat_spa": 194,
-        "ability": "Adaptability",
-        "item": "Life Orb",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "teraType": null
-      },
-      "defender": {
-        "species": "Tangrowth",
-        "level": 100,
-        "stat_atk": 236,
-        "stat_def": 383,
-        "stat_spd": 137,
-        "ability": "Regenerator",
-        "item": "Assault Vest",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "hp_before": 404,
-        "hp_after": 303,
-        "max_hp": 404
-      }
-    },
-    {
-      "type": "damage",
-      "turn": 1,
       "source": "p2a",
       "target": "p1a",
-      "move": "Knock Off",
-      "damage": 41,
-      "crit": false,
-      "effectiveness": 0.5,
-      "weather": null,
-      "terrain": null,
-      "screens": {
-        "reflect": false,
-        "lightScreen": false
-      },
-      "attacker": {
-        "species": "Tangrowth",
-        "level": 100,
-        "stat_atk": 236,
-        "stat_def": 383,
-        "stat_spa": 256,
-        "ability": "Regenerator",
-        "item": "Assault Vest",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "teraType": null
-      },
-      "defender": {
-        "species": "Crawdaunt",
-        "level": 100,
-        "stat_atk": 372,
-        "stat_def": 206,
-        "stat_spd": 147,
-        "ability": "Adaptability",
-        "item": "Life Orb",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "hp_before": 241,
-        "hp_after": 200,
-        "max_hp": 267
-      }
-    },
-    {
-      "type": "damage",
-      "turn": 2,
-      "source": "p1a",
-      "target": "p2a",
-      "move": "Knock Off",
-      "damage": 144,
+      "move": "Seismic Toss",
+      "damage": 100,
       "crit": false,
       "effectiveness": 1,
       "weather": null,
@@ -219,13 +111,13 @@
         "lightScreen": false
       },
       "attacker": {
-        "species": "Crawdaunt",
+        "species": "Blissey",
         "level": 100,
-        "stat_atk": 372,
-        "stat_def": 206,
-        "stat_spa": 194,
-        "ability": "Adaptability",
-        "item": "",
+        "stat_atk": 50,
+        "stat_def": 130,
+        "stat_spa": 186,
+        "ability": "Natural Cure",
+        "item": "Leftovers",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -237,35 +129,35 @@
         "teraType": null
       },
       "defender": {
-        "species": "Tangrowth",
+        "species": "Togekiss",
         "level": 100,
-        "stat_atk": 236,
-        "stat_def": 383,
-        "stat_spd": 137,
-        "ability": "Regenerator",
-        "item": "Assault Vest",
+        "stat_atk": 122,
+        "stat_def": 226,
+        "stat_spd": 267,
+        "ability": "Serene Grace",
+        "item": "Leftovers",
         "boosts": {
           "atk": 0,
           "def": 0,
-          "spa": 0,
+          "spa": 2,
           "spd": 0,
           "spe": 0
         },
         "status": null,
-        "hp_before": 303,
-        "hp_after": 159,
-        "max_hp": 404
+        "hp_before": 311,
+        "hp_after": 211,
+        "max_hp": 311
       }
     },
     {
       "type": "damage",
       "turn": 2,
-      "source": "p2a",
-      "target": "p1a",
-      "move": "Giga Drain",
-      "damage": 200,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Air Slash",
+      "damage": 207,
       "crit": false,
-      "effectiveness": 2,
+      "effectiveness": 1,
       "weather": null,
       "terrain": null,
       "screens": {
@@ -273,13 +165,121 @@
         "lightScreen": false
       },
       "attacker": {
-        "species": "Tangrowth",
+        "species": "Togekiss",
         "level": 100,
-        "stat_atk": 236,
-        "stat_def": 383,
-        "stat_spa": 256,
-        "ability": "Regenerator",
-        "item": "",
+        "stat_atk": 122,
+        "stat_def": 226,
+        "stat_spa": 339,
+        "ability": "Serene Grace",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 2,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Blissey",
+        "level": 100,
+        "stat_atk": 50,
+        "stat_def": 130,
+        "stat_spd": 307,
+        "ability": "Natural Cure",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 714,
+        "hp_after": 507,
+        "max_hp": 714
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Dazzling Gleam",
+      "damage": 207,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Togekiss",
+        "level": 100,
+        "stat_atk": 122,
+        "stat_def": 226,
+        "stat_spa": 339,
+        "ability": "Serene Grace",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 2,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Blissey",
+        "level": 100,
+        "stat_atk": 50,
+        "stat_def": 130,
+        "stat_spd": 307,
+        "ability": "Natural Cure",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 551,
+        "hp_after": 344,
+        "max_hp": 714
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Seismic Toss",
+      "damage": 100,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Blissey",
+        "level": 100,
+        "stat_atk": 50,
+        "stat_def": 130,
+        "stat_spa": 186,
+        "ability": "Natural Cure",
+        "item": "Leftovers",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -291,24 +291,24 @@
         "teraType": null
       },
       "defender": {
-        "species": "Crawdaunt",
+        "species": "Togekiss",
         "level": 100,
-        "stat_atk": 372,
-        "stat_def": 206,
-        "stat_spd": 147,
-        "ability": "Adaptability",
-        "item": "",
+        "stat_atk": 122,
+        "stat_def": 226,
+        "stat_spd": 267,
+        "ability": "Serene Grace",
+        "item": "Leftovers",
         "boosts": {
           "atk": 0,
           "def": 0,
-          "spa": 0,
+          "spa": 2,
           "spd": 0,
           "spe": 0
         },
         "status": null,
-        "hp_before": 200,
-        "hp_after": 0,
-        "max_hp": 267
+        "hp_before": 249,
+        "hp_after": 149,
+        "max_hp": 311
       }
     }
   ]

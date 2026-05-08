@@ -1,31 +1,33 @@
 {
-  "id": "basic-physical",
-  "description": "Basic physical attack, no modifiers",
+  "id": "assault-vest",
+  "description": "Assault Vest 1.5x SpD",
   "seed": [
-    1,
-    2,
-    3,
-    4
+    920,
+    921,
+    922,
+    923
   ],
   "format": "gen9customgame",
   "p1": {
     "name": "Player 1",
     "team": [
       {
-        "name": "Garchomp",
-        "species": "Garchomp",
-        "item": "",
-        "ability": "Rough Skin",
+        "name": "Gengar",
+        "species": "Gengar",
+        "item": "Choice Specs",
+        "ability": "Cursed Body",
         "moves": [
-          "Earthquake",
-          "Dragon Claw"
+          "Shadow Ball",
+          "Sludge Bomb",
+          "Focus Blast",
+          "Thunderbolt"
         ],
-        "nature": "Adamant",
+        "nature": "Timid",
         "evs": {
           "hp": 0,
-          "atk": 252,
+          "atk": 0,
           "def": 0,
-          "spa": 0,
+          "spa": 252,
           "spd": 4,
           "spe": 252
         },
@@ -53,13 +55,15 @@
     "name": "Player 2",
     "team": [
       {
-        "name": "Tyranitar",
-        "species": "Tyranitar",
-        "item": "",
-        "ability": "Sand Stream",
+        "name": "Conkeldurr",
+        "species": "Conkeldurr",
+        "item": "Assault Vest",
+        "ability": "Guts",
         "moves": [
-          "Stone Edge",
-          "Crunch"
+          "Drain Punch",
+          "Mach Punch",
+          "Knock Off",
+          "Ice Punch"
         ],
         "nature": "Adamant",
         "evs": {
@@ -96,24 +100,24 @@
       "turn": 1,
       "source": "p1a",
       "target": "p2a",
-      "move": "Earthquake",
-      "damage": 338,
+      "move": "Shadow Ball",
+      "damage": 211,
       "crit": false,
-      "effectiveness": 2,
-      "weather": "Sandstorm",
+      "effectiveness": 1,
+      "weather": null,
       "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Garchomp",
+        "species": "Gengar",
         "level": 100,
-        "stat_atk": 394,
-        "stat_def": 226,
-        "stat_spa": 176,
-        "ability": "Rough Skin",
-        "item": "",
+        "stat_atk": 149,
+        "stat_def": 156,
+        "stat_spa": 359,
+        "ability": "Cursed Body",
+        "item": "Choice Specs",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -125,13 +129,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Tyranitar",
+        "species": "Conkeldurr",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spd": 237,
-        "ability": "Sand Stream",
-        "item": "",
+        "stat_atk": 416,
+        "stat_def": 226,
+        "stat_spd": 167,
+        "ability": "Guts",
+        "item": "Assault Vest",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -140,9 +144,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 404,
-        "hp_after": 66,
-        "max_hp": 404
+        "hp_before": 414,
+        "hp_after": 203,
+        "max_hp": 414
       }
     },
     {
@@ -150,24 +154,24 @@
       "turn": 1,
       "source": "p2a",
       "target": "p1a",
-      "move": "Stone Edge",
-      "damage": 105,
+      "move": "Knock Off",
+      "damage": 261,
       "crit": false,
-      "effectiveness": 0.5,
-      "weather": "Sandstorm",
+      "effectiveness": 2,
+      "weather": null,
       "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Tyranitar",
+        "species": "Conkeldurr",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spa": 203,
-        "ability": "Sand Stream",
-        "item": "",
+        "stat_atk": 416,
+        "stat_def": 226,
+        "stat_spa": 131,
+        "ability": "Guts",
+        "item": "Assault Vest",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -179,13 +183,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Garchomp",
+        "species": "Gengar",
         "level": 100,
-        "stat_atk": 394,
-        "stat_def": 226,
-        "stat_spd": 207,
-        "ability": "Rough Skin",
-        "item": "",
+        "stat_atk": 149,
+        "stat_def": 156,
+        "stat_spd": 187,
+        "ability": "Cursed Body",
+        "item": "Choice Specs",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -194,63 +198,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 357,
-        "hp_after": 252,
-        "max_hp": 357
-      }
-    },
-    {
-      "type": "damage",
-      "turn": 2,
-      "source": "p1a",
-      "target": "p2a",
-      "move": "Dragon Claw",
-      "damage": 66,
-      "crit": false,
-      "effectiveness": 1,
-      "weather": "Sandstorm",
-      "terrain": null,
-      "screens": {
-        "reflect": false,
-        "lightScreen": false
-      },
-      "attacker": {
-        "species": "Garchomp",
-        "level": 100,
-        "stat_atk": 394,
-        "stat_def": 226,
-        "stat_spa": 176,
-        "ability": "Rough Skin",
-        "item": "",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "teraType": null
-      },
-      "defender": {
-        "species": "Tyranitar",
-        "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spd": 237,
-        "ability": "Sand Stream",
-        "item": "",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "hp_before": 66,
+        "hp_before": 261,
         "hp_after": 0,
-        "max_hp": 404
+        "max_hp": 261
       }
     }
   ]

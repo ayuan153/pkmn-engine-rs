@@ -104,10 +104,17 @@
       "damage": 138,
       "crit": false,
       "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
       "attacker": {
         "species": "Gengar",
         "level": 100,
         "stat_atk": 149,
+        "stat_def": 156,
         "stat_spa": 359,
         "ability": "Cursed Body",
         "item": "Life Orb",
@@ -118,11 +125,13 @@
           "spd": 0,
           "spe": 0
         },
-        "status": null
+        "status": null,
+        "teraType": null
       },
       "defender": {
         "species": "Chansey",
         "level": 100,
+        "stat_atk": 41,
         "stat_def": 119,
         "stat_spd": 247,
         "ability": "Natural Cure",
@@ -138,51 +147,6 @@
         "hp_before": 704,
         "hp_after": 566,
         "max_hp": 704
-      }
-    },
-    {
-      "type": "damage",
-      "turn": 2,
-      "source": "p1a",
-      "target": "p1a",
-      "move": "Sludge Bomb",
-      "damage": 26,
-      "crit": false,
-      "effectiveness": 1,
-      "attacker": {
-        "species": "Gengar",
-        "level": 100,
-        "stat_atk": 149,
-        "stat_spa": 359,
-        "ability": "Cursed Body",
-        "item": "Life Orb",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null
-      },
-      "defender": {
-        "species": "Gengar",
-        "level": 100,
-        "stat_def": 156,
-        "stat_spd": 187,
-        "ability": "Cursed Body",
-        "item": "Life Orb",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "hp_before": 261,
-        "hp_after": 235,
-        "max_hp": 261
       }
     }
   ]

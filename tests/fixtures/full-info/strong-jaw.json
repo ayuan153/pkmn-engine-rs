@@ -1,24 +1,26 @@
 {
-  "id": "basic-physical",
-  "description": "Basic physical attack, no modifiers",
+  "id": "strong-jaw",
+  "description": "Strong Jaw 1.5x on biting moves",
   "seed": [
-    1,
-    2,
-    3,
-    4
+    330,
+    331,
+    332,
+    333
   ],
   "format": "gen9customgame",
   "p1": {
     "name": "Player 1",
     "team": [
       {
-        "name": "Garchomp",
-        "species": "Garchomp",
-        "item": "",
-        "ability": "Rough Skin",
+        "name": "Dracovish",
+        "species": "Dracovish",
+        "item": "Choice Band",
+        "ability": "Strong Jaw",
         "moves": [
-          "Earthquake",
-          "Dragon Claw"
+          "Fishious Rend",
+          "Crunch",
+          "Psychic Fangs",
+          "Ice Fang"
         ],
         "nature": "Adamant",
         "evs": {
@@ -53,19 +55,21 @@
     "name": "Player 2",
     "team": [
       {
-        "name": "Tyranitar",
-        "species": "Tyranitar",
-        "item": "",
-        "ability": "Sand Stream",
+        "name": "Corviknight",
+        "species": "Corviknight",
+        "item": "Leftovers",
+        "ability": "Pressure",
         "moves": [
-          "Stone Edge",
-          "Crunch"
+          "Body Press",
+          "Brave Bird",
+          "Roost",
+          "Defog"
         ],
-        "nature": "Adamant",
+        "nature": "Impish",
         "evs": {
           "hp": 252,
-          "atk": 252,
-          "def": 0,
+          "atk": 0,
+          "def": 252,
           "spa": 0,
           "spd": 4,
           "spe": 0
@@ -96,24 +100,24 @@
       "turn": 1,
       "source": "p1a",
       "target": "p2a",
-      "move": "Earthquake",
-      "damage": 338,
+      "move": "Fishious Rend",
+      "damage": 397,
       "crit": false,
-      "effectiveness": 2,
-      "weather": "Sandstorm",
+      "effectiveness": 1,
+      "weather": null,
       "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Garchomp",
+        "species": "Dracovish",
         "level": 100,
-        "stat_atk": 394,
-        "stat_def": 226,
-        "stat_spa": 176,
-        "ability": "Rough Skin",
-        "item": "",
+        "stat_atk": 306,
+        "stat_def": 236,
+        "stat_spa": 158,
+        "ability": "Strong Jaw",
+        "item": "Choice Band",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -125,13 +129,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Tyranitar",
+        "species": "Corviknight",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spd": 237,
-        "ability": "Sand Stream",
-        "item": "",
+        "stat_atk": 210,
+        "stat_def": 339,
+        "stat_spd": 207,
+        "ability": "Pressure",
+        "item": "Leftovers",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -140,9 +144,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 404,
-        "hp_after": 66,
-        "max_hp": 404
+        "hp_before": 400,
+        "hp_after": 3,
+        "max_hp": 400
       }
     },
     {
@@ -150,78 +154,24 @@
       "turn": 1,
       "source": "p2a",
       "target": "p1a",
-      "move": "Stone Edge",
-      "damage": 105,
-      "crit": false,
-      "effectiveness": 0.5,
-      "weather": "Sandstorm",
-      "terrain": null,
-      "screens": {
-        "reflect": false,
-        "lightScreen": false
-      },
-      "attacker": {
-        "species": "Tyranitar",
-        "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spa": 203,
-        "ability": "Sand Stream",
-        "item": "",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "teraType": null
-      },
-      "defender": {
-        "species": "Garchomp",
-        "level": 100,
-        "stat_atk": 394,
-        "stat_def": 226,
-        "stat_spd": 207,
-        "ability": "Rough Skin",
-        "item": "",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "hp_before": 357,
-        "hp_after": 252,
-        "max_hp": 357
-      }
-    },
-    {
-      "type": "damage",
-      "turn": 2,
-      "source": "p1a",
-      "target": "p2a",
-      "move": "Dragon Claw",
-      "damage": 66,
+      "move": "Brave Bird",
+      "damage": 132,
       "crit": false,
       "effectiveness": 1,
-      "weather": "Sandstorm",
+      "weather": null,
       "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Garchomp",
+        "species": "Corviknight",
         "level": 100,
-        "stat_atk": 394,
-        "stat_def": 226,
-        "stat_spa": 176,
-        "ability": "Rough Skin",
-        "item": "",
+        "stat_atk": 210,
+        "stat_def": 339,
+        "stat_spa": 127,
+        "ability": "Pressure",
+        "item": "Leftovers",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -233,13 +183,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Tyranitar",
+        "species": "Dracovish",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spd": 237,
-        "ability": "Sand Stream",
-        "item": "",
+        "stat_atk": 306,
+        "stat_def": 236,
+        "stat_spd": 197,
+        "ability": "Strong Jaw",
+        "item": "Choice Band",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -248,9 +198,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 66,
-        "hp_after": 0,
-        "max_hp": 404
+        "hp_before": 321,
+        "hp_after": 189,
+        "max_hp": 321
       }
     }
   ]

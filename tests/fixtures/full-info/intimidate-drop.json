@@ -1,24 +1,26 @@
 {
-  "id": "basic-physical",
-  "description": "Basic physical attack, no modifiers",
+  "id": "intimidate-drop",
+  "description": "Intimidate -1 Atk on switch-in",
   "seed": [
-    1,
-    2,
-    3,
-    4
+    810,
+    811,
+    812,
+    813
   ],
   "format": "gen9customgame",
   "p1": {
     "name": "Player 1",
     "team": [
       {
-        "name": "Garchomp",
-        "species": "Garchomp",
-        "item": "",
-        "ability": "Rough Skin",
+        "name": "Dragonite",
+        "species": "Dragonite",
+        "item": "Choice Band",
+        "ability": "Multiscale",
         "moves": [
+          "Outrage",
+          "Extreme Speed",
           "Earthquake",
-          "Dragon Claw"
+          "Fire Punch"
         ],
         "nature": "Adamant",
         "evs": {
@@ -53,19 +55,21 @@
     "name": "Player 2",
     "team": [
       {
-        "name": "Tyranitar",
-        "species": "Tyranitar",
-        "item": "",
-        "ability": "Sand Stream",
+        "name": "Landorus-Therian",
+        "species": "Landorus-Therian",
+        "item": "Rocky Helmet",
+        "ability": "Intimidate",
         "moves": [
+          "Earthquake",
+          "U-turn",
           "Stone Edge",
-          "Crunch"
+          "Stealth Rock"
         ],
-        "nature": "Adamant",
+        "nature": "Impish",
         "evs": {
           "hp": 252,
-          "atk": 252,
-          "def": 0,
+          "atk": 0,
+          "def": 252,
           "spa": 0,
           "spd": 4,
           "spe": 0
@@ -96,26 +100,26 @@
       "turn": 1,
       "source": "p1a",
       "target": "p2a",
-      "move": "Earthquake",
-      "damage": 338,
+      "move": "Extreme Speed",
+      "damage": 89,
       "crit": false,
-      "effectiveness": 2,
-      "weather": "Sandstorm",
+      "effectiveness": 1,
+      "weather": null,
       "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Garchomp",
+        "species": "Dragonite",
         "level": 100,
-        "stat_atk": 394,
+        "stat_atk": 403,
         "stat_def": 226,
-        "stat_spa": 176,
-        "ability": "Rough Skin",
-        "item": "",
+        "stat_spa": 212,
+        "ability": "Multiscale",
+        "item": "Choice Band",
         "boosts": {
-          "atk": 0,
+          "atk": -1,
           "def": 0,
           "spa": 0,
           "spd": 0,
@@ -125,13 +129,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Tyranitar",
+        "species": "Landorus-Therian",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spd": 237,
-        "ability": "Sand Stream",
-        "item": "",
+        "stat_atk": 326,
+        "stat_def": 306,
+        "stat_spd": 197,
+        "ability": "Intimidate",
+        "item": "Rocky Helmet",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -140,63 +144,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 404,
-        "hp_after": 66,
-        "max_hp": 404
-      }
-    },
-    {
-      "type": "damage",
-      "turn": 1,
-      "source": "p2a",
-      "target": "p1a",
-      "move": "Stone Edge",
-      "damage": 105,
-      "crit": false,
-      "effectiveness": 0.5,
-      "weather": "Sandstorm",
-      "terrain": null,
-      "screens": {
-        "reflect": false,
-        "lightScreen": false
-      },
-      "attacker": {
-        "species": "Tyranitar",
-        "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spa": 203,
-        "ability": "Sand Stream",
-        "item": "",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "teraType": null
-      },
-      "defender": {
-        "species": "Garchomp",
-        "level": 100,
-        "stat_atk": 394,
-        "stat_def": 226,
-        "stat_spd": 207,
-        "ability": "Rough Skin",
-        "item": "",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "hp_before": 357,
-        "hp_after": 252,
-        "max_hp": 357
+        "hp_before": 382,
+        "hp_after": 293,
+        "max_hp": 382
       }
     },
     {
@@ -204,26 +154,26 @@
       "turn": 2,
       "source": "p1a",
       "target": "p2a",
-      "move": "Dragon Claw",
-      "damage": 66,
+      "move": "Extreme Speed",
+      "damage": 76,
       "crit": false,
       "effectiveness": 1,
-      "weather": "Sandstorm",
+      "weather": null,
       "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Garchomp",
+        "species": "Dragonite",
         "level": 100,
-        "stat_atk": 394,
+        "stat_atk": 403,
         "stat_def": 226,
-        "stat_spa": 176,
-        "ability": "Rough Skin",
-        "item": "",
+        "stat_spa": 212,
+        "ability": "Multiscale",
+        "item": "Choice Band",
         "boosts": {
-          "atk": 0,
+          "atk": -1,
           "def": 0,
           "spa": 0,
           "spd": 0,
@@ -233,13 +183,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Tyranitar",
+        "species": "Landorus-Therian",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spd": 237,
-        "ability": "Sand Stream",
-        "item": "",
+        "stat_atk": 326,
+        "stat_def": 306,
+        "stat_spd": 197,
+        "ability": "Intimidate",
+        "item": "Rocky Helmet",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -248,9 +198,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 66,
-        "hp_after": 0,
-        "max_hp": 404
+        "hp_before": 293,
+        "hp_after": 217,
+        "max_hp": 382
       }
     }
   ]

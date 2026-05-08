@@ -1,35 +1,35 @@
 {
-  "id": "terrain-electric",
-  "description": "Electric Terrain 1.3x boost for grounded Electric moves",
+  "id": "weather-ball-sun",
+  "description": "Weather Ball becomes Fire-type 100BP in Sun",
   "seed": [
-    100,
-    200,
-    300,
-    400
+    220,
+    221,
+    222,
+    223
   ],
   "format": "gen9customgame",
   "p1": {
     "name": "Player 1",
     "team": [
       {
-        "name": "Tapu Koko",
-        "species": "Tapu Koko",
-        "item": "Life Orb",
-        "ability": "Electric Surge",
+        "name": "Torkoal",
+        "species": "Torkoal",
+        "item": "Charcoal",
+        "ability": "Drought",
         "moves": [
-          "Thunderbolt",
-          "Dazzling Gleam",
-          "U-turn",
-          "Roost"
+          "Weather Ball",
+          "Lava Plume",
+          "Stealth Rock",
+          "Rapid Spin"
         ],
-        "nature": "Timid",
+        "nature": "Modest",
         "evs": {
-          "hp": 0,
+          "hp": 252,
           "atk": 0,
           "def": 0,
           "spa": 252,
           "spd": 4,
-          "spe": 252
+          "spe": 0
         },
         "ivs": {
           "hp": 31,
@@ -55,17 +55,17 @@
     "name": "Player 2",
     "team": [
       {
-        "name": "Hippowdon",
-        "species": "Hippowdon",
+        "name": "Ferrothorn",
+        "species": "Ferrothorn",
         "item": "Leftovers",
-        "ability": "Sand Stream",
+        "ability": "Iron Barbs",
         "moves": [
-          "Earthquake",
-          "Stone Edge",
-          "Slack Off",
-          "Stealth Rock"
+          "Power Whip",
+          "Knock Off",
+          "Stealth Rock",
+          "Leech Seed"
         ],
-        "nature": "Impish",
+        "nature": "Relaxed",
         "evs": {
           "hp": 252,
           "atk": 0,
@@ -98,26 +98,26 @@
     {
       "type": "damage",
       "turn": 1,
-      "source": "p2a",
-      "target": "p1a",
-      "move": "Earthquake",
-      "damage": 281,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Weather Ball",
+      "damage": 352,
       "crit": false,
       "effectiveness": 2,
-      "weather": "Sandstorm",
-      "terrain": "Electric Terrain",
+      "weather": "SunnyDay",
+      "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Hippowdon",
+        "species": "Torkoal",
         "level": 100,
-        "stat_atk": 260,
-        "stat_def": 368,
-        "stat_spa": 154,
-        "ability": "Sand Stream",
-        "item": "Leftovers",
+        "stat_atk": 185,
+        "stat_def": 316,
+        "stat_spa": 295,
+        "ability": "Drought",
+        "item": "Charcoal",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -129,13 +129,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Tapu Koko",
+        "species": "Ferrothorn",
         "level": 100,
-        "stat_atk": 239,
-        "stat_def": 206,
-        "stat_spd": 187,
-        "ability": "Electric Surge",
-        "item": "Life Orb",
+        "stat_atk": 224,
+        "stat_def": 397,
+        "stat_spd": 269,
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -144,9 +144,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 281,
+        "hp_before": 352,
         "hp_after": 0,
-        "max_hp": 281
+        "max_hp": 352
       }
     }
   ]

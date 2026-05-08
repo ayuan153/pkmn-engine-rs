@@ -1,24 +1,26 @@
 {
-  "id": "basic-physical",
-  "description": "Basic physical attack, no modifiers",
+  "id": "tera-stab-same-type",
+  "description": "Tera into same type: STAB becomes 2x (was 1.5x)",
   "seed": [
-    1,
-    2,
-    3,
-    4
+    1000,
+    1001,
+    1002,
+    1003
   ],
   "format": "gen9customgame",
   "p1": {
     "name": "Player 1",
     "team": [
       {
-        "name": "Garchomp",
-        "species": "Garchomp",
-        "item": "",
-        "ability": "Rough Skin",
+        "name": "Dragonite",
+        "species": "Dragonite",
+        "item": "Choice Band",
+        "ability": "Multiscale",
         "moves": [
+          "Outrage",
+          "Extreme Speed",
           "Earthquake",
-          "Dragon Claw"
+          "Fire Punch"
         ],
         "nature": "Adamant",
         "evs": {
@@ -44,7 +46,7 @@
         "pokeball": "",
         "hpType": "",
         "dynamaxLevel": 10,
-        "teraType": "",
+        "teraType": "Dragon",
         "gigantamax": false
       }
     ]
@@ -53,19 +55,21 @@
     "name": "Player 2",
     "team": [
       {
-        "name": "Tyranitar",
-        "species": "Tyranitar",
-        "item": "",
-        "ability": "Sand Stream",
+        "name": "Clefable",
+        "species": "Clefable",
+        "item": "Leftovers",
+        "ability": "Magic Guard",
         "moves": [
-          "Stone Edge",
-          "Crunch"
+          "Moonblast",
+          "Flamethrower",
+          "Calm Mind",
+          "Soft-Boiled"
         ],
-        "nature": "Adamant",
+        "nature": "Bold",
         "evs": {
           "hp": 252,
-          "atk": 252,
-          "def": 0,
+          "atk": 0,
+          "def": 252,
           "spa": 0,
           "spd": 4,
           "spe": 0
@@ -97,23 +101,23 @@
       "source": "p1a",
       "target": "p2a",
       "move": "Earthquake",
-      "damage": 338,
+      "damage": 180,
       "crit": false,
-      "effectiveness": 2,
-      "weather": "Sandstorm",
+      "effectiveness": 1,
+      "weather": null,
       "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Garchomp",
+        "species": "Dragonite",
         "level": 100,
-        "stat_atk": 394,
+        "stat_atk": 403,
         "stat_def": 226,
-        "stat_spa": 176,
-        "ability": "Rough Skin",
-        "item": "",
+        "stat_spa": 212,
+        "ability": "Multiscale",
+        "item": "Choice Band",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -125,13 +129,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Tyranitar",
+        "species": "Clefable",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spd": 237,
-        "ability": "Sand Stream",
-        "item": "",
+        "stat_atk": 158,
+        "stat_def": 269,
+        "stat_spd": 217,
+        "ability": "Magic Guard",
+        "item": "Leftovers",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -140,9 +144,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 404,
-        "hp_after": 66,
-        "max_hp": 404
+        "hp_before": 394,
+        "hp_after": 214,
+        "max_hp": 394
       }
     },
     {
@@ -150,24 +154,24 @@
       "turn": 1,
       "source": "p2a",
       "target": "p1a",
-      "move": "Stone Edge",
-      "damage": 105,
+      "move": "Moonblast",
+      "damage": 99,
       "crit": false,
-      "effectiveness": 0.5,
-      "weather": "Sandstorm",
+      "effectiveness": 2,
+      "weather": null,
       "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Tyranitar",
+        "species": "Clefable",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spa": 203,
-        "ability": "Sand Stream",
-        "item": "",
+        "stat_atk": 158,
+        "stat_def": 269,
+        "stat_spa": 226,
+        "ability": "Magic Guard",
+        "item": "Leftovers",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -179,67 +183,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Garchomp",
-        "level": 100,
-        "stat_atk": 394,
-        "stat_def": 226,
-        "stat_spd": 207,
-        "ability": "Rough Skin",
-        "item": "",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "hp_before": 357,
-        "hp_after": 252,
-        "max_hp": 357
-      }
-    },
-    {
-      "type": "damage",
-      "turn": 2,
-      "source": "p1a",
-      "target": "p2a",
-      "move": "Dragon Claw",
-      "damage": 66,
-      "crit": false,
-      "effectiveness": 1,
-      "weather": "Sandstorm",
-      "terrain": null,
-      "screens": {
-        "reflect": false,
-        "lightScreen": false
-      },
-      "attacker": {
-        "species": "Garchomp",
-        "level": 100,
-        "stat_atk": 394,
-        "stat_def": 226,
-        "stat_spa": 176,
-        "ability": "Rough Skin",
-        "item": "",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "teraType": null
-      },
-      "defender": {
-        "species": "Tyranitar",
+        "species": "Dragonite",
         "level": 100,
         "stat_atk": 403,
-        "stat_def": 256,
+        "stat_def": 226,
         "stat_spd": 237,
-        "ability": "Sand Stream",
-        "item": "",
+        "ability": "Multiscale",
+        "item": "Choice Band",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -248,9 +198,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 66,
-        "hp_after": 0,
-        "max_hp": 404
+        "hp_before": 323,
+        "hp_after": 224,
+        "max_hp": 323
       }
     }
   ]

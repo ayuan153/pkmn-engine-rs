@@ -1,26 +1,26 @@
 {
-  "id": "adaptability-stab",
-  "description": "Adaptability gives 2x STAB instead of 1.5x",
+  "id": "guts-burn-boost",
+  "description": "Guts ignores burn penalty AND gets 1.5x Atk",
   "seed": [
-    42,
-    84,
-    126,
-    168
+    1110,
+    1111,
+    1112,
+    1113
   ],
   "format": "gen9customgame",
   "p1": {
     "name": "Player 1",
     "team": [
       {
-        "name": "Crawdaunt",
-        "species": "Crawdaunt",
-        "item": "Life Orb",
-        "ability": "Adaptability",
+        "name": "Heracross",
+        "species": "Heracross",
+        "item": "Flame Orb",
+        "ability": "Guts",
         "moves": [
-          "Crabhammer",
-          "Knock Off",
-          "Aqua Jet",
-          "Swords Dance"
+          "Close Combat",
+          "Megahorn",
+          "Facade",
+          "Knock Off"
         ],
         "nature": "Adamant",
         "evs": {
@@ -55,17 +55,17 @@
     "name": "Player 2",
     "team": [
       {
-        "name": "Tangrowth",
-        "species": "Tangrowth",
-        "item": "Assault Vest",
+        "name": "Slowbro",
+        "species": "Slowbro",
+        "item": "Heavy-Duty Boots",
         "ability": "Regenerator",
         "moves": [
-          "Giga Drain",
-          "Knock Off",
-          "Earthquake",
-          "Rock Slide"
+          "Scald",
+          "Psychic",
+          "Slack Off",
+          "Thunder Wave"
         ],
-        "nature": "Relaxed",
+        "nature": "Bold",
         "evs": {
           "hp": 252,
           "atk": 0,
@@ -100,116 +100,8 @@
       "turn": 1,
       "source": "p1a",
       "target": "p2a",
-      "move": "Crabhammer",
-      "damage": 101,
-      "crit": false,
-      "effectiveness": 0.5,
-      "weather": null,
-      "terrain": null,
-      "screens": {
-        "reflect": false,
-        "lightScreen": false
-      },
-      "attacker": {
-        "species": "Crawdaunt",
-        "level": 100,
-        "stat_atk": 372,
-        "stat_def": 206,
-        "stat_spa": 194,
-        "ability": "Adaptability",
-        "item": "Life Orb",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "teraType": null
-      },
-      "defender": {
-        "species": "Tangrowth",
-        "level": 100,
-        "stat_atk": 236,
-        "stat_def": 383,
-        "stat_spd": 137,
-        "ability": "Regenerator",
-        "item": "Assault Vest",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "hp_before": 404,
-        "hp_after": 303,
-        "max_hp": 404
-      }
-    },
-    {
-      "type": "damage",
-      "turn": 1,
-      "source": "p2a",
-      "target": "p1a",
-      "move": "Knock Off",
-      "damage": 41,
-      "crit": false,
-      "effectiveness": 0.5,
-      "weather": null,
-      "terrain": null,
-      "screens": {
-        "reflect": false,
-        "lightScreen": false
-      },
-      "attacker": {
-        "species": "Tangrowth",
-        "level": 100,
-        "stat_atk": 236,
-        "stat_def": 383,
-        "stat_spa": 256,
-        "ability": "Regenerator",
-        "item": "Assault Vest",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "teraType": null
-      },
-      "defender": {
-        "species": "Crawdaunt",
-        "level": 100,
-        "stat_atk": 372,
-        "stat_def": 206,
-        "stat_spd": 147,
-        "ability": "Adaptability",
-        "item": "Life Orb",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "hp_before": 241,
-        "hp_after": 200,
-        "max_hp": 267
-      }
-    },
-    {
-      "type": "damage",
-      "turn": 2,
-      "source": "p1a",
-      "target": "p2a",
-      "move": "Knock Off",
-      "damage": 144,
+      "move": "Facade",
+      "damage": 56,
       "crit": false,
       "effectiveness": 1,
       "weather": null,
@@ -219,13 +111,13 @@
         "lightScreen": false
       },
       "attacker": {
-        "species": "Crawdaunt",
+        "species": "Heracross",
         "level": 100,
-        "stat_atk": 372,
-        "stat_def": 206,
-        "stat_spa": 194,
-        "ability": "Adaptability",
-        "item": "",
+        "stat_atk": 383,
+        "stat_def": 186,
+        "stat_spa": 104,
+        "ability": "Guts",
+        "item": "Flame Orb",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -237,13 +129,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Tangrowth",
+        "species": "Slowbro",
         "level": 100,
-        "stat_atk": 236,
-        "stat_def": 383,
-        "stat_spd": 137,
+        "stat_atk": 167,
+        "stat_def": 350,
+        "stat_spd": 197,
         "ability": "Regenerator",
-        "item": "Assault Vest",
+        "item": "Heavy-Duty Boots",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -252,9 +144,63 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 303,
-        "hp_after": 159,
-        "max_hp": 404
+        "hp_before": 394,
+        "hp_after": 338,
+        "max_hp": 394
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Facade",
+      "damage": 186,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Heracross",
+        "level": 100,
+        "stat_atk": 383,
+        "stat_def": 186,
+        "stat_spa": 104,
+        "ability": "Guts",
+        "item": "Flame Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": "par",
+        "teraType": null
+      },
+      "defender": {
+        "species": "Slowbro",
+        "level": 100,
+        "stat_atk": 167,
+        "stat_def": 350,
+        "stat_spd": 197,
+        "ability": "Regenerator",
+        "item": "Heavy-Duty Boots",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 338,
+        "hp_after": 152,
+        "max_hp": 394
       }
     },
     {
@@ -262,8 +208,116 @@
       "turn": 2,
       "source": "p2a",
       "target": "p1a",
-      "move": "Giga Drain",
-      "damage": 200,
+      "move": "Scald",
+      "damage": 94,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Slowbro",
+        "level": 100,
+        "stat_atk": 167,
+        "stat_def": 350,
+        "stat_spa": 236,
+        "ability": "Regenerator",
+        "item": "Heavy-Duty Boots",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Heracross",
+        "level": 100,
+        "stat_atk": 383,
+        "stat_def": 186,
+        "stat_spd": 227,
+        "ability": "Guts",
+        "item": "Flame Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": "par",
+        "hp_before": 301,
+        "hp_after": 207,
+        "max_hp": 301
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Close Combat",
+      "damage": 108,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Heracross",
+        "level": 100,
+        "stat_atk": 383,
+        "stat_def": 186,
+        "stat_spa": 104,
+        "ability": "Guts",
+        "item": "Flame Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": "par",
+        "teraType": null
+      },
+      "defender": {
+        "species": "Slowbro",
+        "level": 100,
+        "stat_atk": 167,
+        "stat_def": 350,
+        "stat_spd": 197,
+        "ability": "Regenerator",
+        "item": "Heavy-Duty Boots",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 152,
+        "hp_after": 44,
+        "max_hp": 394
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Psychic",
+      "damage": 207,
       "crit": false,
       "effectiveness": 2,
       "weather": null,
@@ -273,13 +327,13 @@
         "lightScreen": false
       },
       "attacker": {
-        "species": "Tangrowth",
+        "species": "Slowbro",
         "level": 100,
-        "stat_atk": 236,
-        "stat_def": 383,
-        "stat_spa": 256,
+        "stat_atk": 167,
+        "stat_def": 350,
+        "stat_spa": 236,
         "ability": "Regenerator",
-        "item": "",
+        "item": "Heavy-Duty Boots",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -291,24 +345,24 @@
         "teraType": null
       },
       "defender": {
-        "species": "Crawdaunt",
+        "species": "Heracross",
         "level": 100,
-        "stat_atk": 372,
-        "stat_def": 206,
-        "stat_spd": 147,
-        "ability": "Adaptability",
-        "item": "",
+        "stat_atk": 383,
+        "stat_def": 186,
+        "stat_spd": 227,
+        "ability": "Guts",
+        "item": "Flame Orb",
         "boosts": {
           "atk": 0,
-          "def": 0,
+          "def": -1,
           "spa": 0,
-          "spd": 0,
+          "spd": -1,
           "spe": 0
         },
-        "status": null,
-        "hp_before": 200,
+        "status": "par",
+        "hp_before": 207,
         "hp_after": 0,
-        "max_hp": 267
+        "max_hp": 301
       }
     }
   ]

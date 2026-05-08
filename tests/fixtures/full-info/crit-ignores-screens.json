@@ -1,26 +1,26 @@
 {
-  "id": "choice-band",
-  "description": "Choice Band 1.5x physical boost",
+  "id": "crit-ignores-screens",
+  "description": "Critical hits ignore Reflect/Light Screen",
   "seed": [
-    10,
-    20,
-    30,
-    40
+    710,
+    711,
+    712,
+    713
   ],
   "format": "gen9customgame",
   "p1": {
     "name": "Player 1",
     "team": [
       {
-        "name": "Dragonite",
-        "species": "Dragonite",
+        "name": "Kingambit",
+        "species": "Kingambit",
         "item": "Choice Band",
-        "ability": "Multiscale",
+        "ability": "Supreme Overlord",
         "moves": [
-          "Outrage",
-          "Earthquake",
-          "Extreme Speed",
-          "Ice Punch"
+          "Kowtow Cleave",
+          "Sucker Punch",
+          "Iron Head",
+          "Low Kick"
         ],
         "nature": "Adamant",
         "evs": {
@@ -55,24 +55,24 @@
     "name": "Player 2",
     "team": [
       {
-        "name": "Blissey",
-        "species": "Blissey",
-        "item": "Leftovers",
-        "ability": "Natural Cure",
+        "name": "Grimmsnarl",
+        "species": "Grimmsnarl",
+        "item": "Light Clay",
+        "ability": "Prankster",
         "moves": [
-          "Seismic Toss",
-          "Soft-Boiled",
-          "Thunder Wave",
-          "Toxic"
+          "Reflect",
+          "Light Screen",
+          "Spirit Break",
+          "Thunder Wave"
         ],
-        "nature": "Bold",
+        "nature": "Careful",
         "evs": {
           "hp": 252,
           "atk": 0,
           "def": 252,
           "spa": 0,
-          "spd": 4,
-          "spe": 0
+          "spd": 0,
+          "spe": 4
         },
         "ivs": {
           "hp": 31,
@@ -100,23 +100,23 @@
       "turn": 1,
       "source": "p1a",
       "target": "p2a",
-      "move": "Extreme Speed",
-      "damage": 266,
+      "move": "Kowtow Cleave",
+      "damage": 34,
       "crit": false,
-      "effectiveness": 1,
+      "effectiveness": 0.5,
       "weather": null,
       "terrain": null,
       "screens": {
-        "reflect": false,
+        "reflect": true,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Dragonite",
+        "species": "Kingambit",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 226,
-        "stat_spa": 212,
-        "ability": "Multiscale",
+        "stat_atk": 405,
+        "stat_def": 276,
+        "stat_spa": 140,
+        "ability": "Supreme Overlord",
         "item": "Choice Band",
         "boosts": {
           "atk": 0,
@@ -129,13 +129,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Blissey",
+        "species": "Grimmsnarl",
         "level": 100,
-        "stat_atk": 50,
-        "stat_def": 130,
-        "stat_spd": 307,
-        "ability": "Natural Cure",
-        "item": "Leftovers",
+        "stat_atk": 276,
+        "stat_def": 229,
+        "stat_spd": 204,
+        "ability": "Prankster",
+        "item": "Light Clay",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -144,63 +144,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 714,
-        "hp_after": 448,
-        "max_hp": 714
-      }
-    },
-    {
-      "type": "damage",
-      "turn": 1,
-      "source": "p2a",
-      "target": "p1a",
-      "move": "Seismic Toss",
-      "damage": 100,
-      "crit": false,
-      "effectiveness": 1,
-      "weather": null,
-      "terrain": null,
-      "screens": {
-        "reflect": false,
-        "lightScreen": false
-      },
-      "attacker": {
-        "species": "Blissey",
-        "level": 100,
-        "stat_atk": 50,
-        "stat_def": 130,
-        "stat_spa": 186,
-        "ability": "Natural Cure",
-        "item": "Leftovers",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "teraType": null
-      },
-      "defender": {
-        "species": "Dragonite",
-        "level": 100,
-        "stat_atk": 403,
-        "stat_def": 226,
-        "stat_spd": 237,
-        "ability": "Multiscale",
-        "item": "Choice Band",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "hp_before": 323,
-        "hp_after": 223,
-        "max_hp": 323
+        "hp_before": 394,
+        "hp_after": 360,
+        "max_hp": 394
       }
     },
     {
@@ -208,23 +154,23 @@
       "turn": 2,
       "source": "p1a",
       "target": "p2a",
-      "move": "Extreme Speed",
-      "damage": 282,
+      "move": "Kowtow Cleave",
+      "damage": 32,
       "crit": false,
-      "effectiveness": 1,
+      "effectiveness": 0.5,
       "weather": null,
       "terrain": null,
       "screens": {
-        "reflect": false,
+        "reflect": true,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Dragonite",
+        "species": "Kingambit",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 226,
-        "stat_spa": 212,
-        "ability": "Multiscale",
+        "stat_atk": 405,
+        "stat_def": 276,
+        "stat_spa": 140,
+        "ability": "Supreme Overlord",
         "item": "Choice Band",
         "boosts": {
           "atk": 0,
@@ -237,13 +183,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Blissey",
+        "species": "Grimmsnarl",
         "level": 100,
-        "stat_atk": 50,
-        "stat_def": 130,
-        "stat_spd": 307,
-        "ability": "Natural Cure",
-        "item": "Leftovers",
+        "stat_atk": 276,
+        "stat_def": 229,
+        "stat_spd": 204,
+        "ability": "Prankster",
+        "item": "Light Clay",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -252,9 +198,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 492,
-        "hp_after": 210,
-        "max_hp": 714
+        "hp_before": 360,
+        "hp_after": 328,
+        "max_hp": 394
       }
     },
     {
@@ -262,8 +208,8 @@
       "turn": 2,
       "source": "p2a",
       "target": "p1a",
-      "move": "Seismic Toss",
-      "damage": 100,
+      "move": "Spirit Break",
+      "damage": 91,
       "crit": false,
       "effectiveness": 1,
       "weather": null,
@@ -273,13 +219,13 @@
         "lightScreen": false
       },
       "attacker": {
-        "species": "Blissey",
+        "species": "Grimmsnarl",
         "level": 100,
-        "stat_atk": 50,
-        "stat_def": 130,
-        "stat_spa": 186,
-        "ability": "Natural Cure",
-        "item": "Leftovers",
+        "stat_atk": 276,
+        "stat_def": 229,
+        "stat_spa": 203,
+        "ability": "Prankster",
+        "item": "Light Clay",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -291,12 +237,12 @@
         "teraType": null
       },
       "defender": {
-        "species": "Dragonite",
+        "species": "Kingambit",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 226,
-        "stat_spd": 237,
-        "ability": "Multiscale",
+        "stat_atk": 405,
+        "stat_def": 276,
+        "stat_spd": 207,
+        "ability": "Supreme Overlord",
         "item": "Choice Band",
         "boosts": {
           "atk": 0,
@@ -306,9 +252,117 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 223,
-        "hp_after": 123,
-        "max_hp": 323
+        "hp_before": 341,
+        "hp_after": 250,
+        "max_hp": 341
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Kowtow Cleave",
+      "damage": 91,
+      "crit": true,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": true,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Kingambit",
+        "level": 100,
+        "stat_atk": 405,
+        "stat_def": 276,
+        "stat_spa": 140,
+        "ability": "Supreme Overlord",
+        "item": "Choice Band",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": -1,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Grimmsnarl",
+        "level": 100,
+        "stat_atk": 276,
+        "stat_def": 229,
+        "stat_spd": 204,
+        "ability": "Prankster",
+        "item": "Light Clay",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 328,
+        "hp_after": 237,
+        "max_hp": 394
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Spirit Break",
+      "damage": 87,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Grimmsnarl",
+        "level": 100,
+        "stat_atk": 276,
+        "stat_def": 229,
+        "stat_spa": 203,
+        "ability": "Prankster",
+        "item": "Light Clay",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Kingambit",
+        "level": 100,
+        "stat_atk": 405,
+        "stat_def": 276,
+        "stat_spd": 207,
+        "ability": "Supreme Overlord",
+        "item": "Choice Band",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": -1,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 250,
+        "hp_after": 163,
+        "max_hp": 341
       }
     }
   ]

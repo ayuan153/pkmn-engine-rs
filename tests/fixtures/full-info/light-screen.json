@@ -1,26 +1,69 @@
 {
-  "id": "terrain-electric",
-  "description": "Electric Terrain 1.3x boost for grounded Electric moves",
+  "id": "light-screen",
+  "description": "Light Screen halves special damage",
   "seed": [
-    100,
-    200,
-    300,
-    400
+    700,
+    701,
+    702,
+    703
   ],
   "format": "gen9customgame",
   "p1": {
     "name": "Player 1",
     "team": [
       {
-        "name": "Tapu Koko",
-        "species": "Tapu Koko",
-        "item": "Life Orb",
-        "ability": "Electric Surge",
+        "name": "Grimmsnarl",
+        "species": "Grimmsnarl",
+        "item": "Light Clay",
+        "ability": "Prankster",
         "moves": [
-          "Thunderbolt",
-          "Dazzling Gleam",
-          "U-turn",
-          "Roost"
+          "Light Screen",
+          "Reflect",
+          "Spirit Break",
+          "Thunder Wave"
+        ],
+        "nature": "Careful",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 252,
+          "spe": 4
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Gengar",
+        "species": "Gengar",
+        "item": "Choice Specs",
+        "ability": "Cursed Body",
+        "moves": [
+          "Shadow Ball",
+          "Sludge Bomb",
+          "Focus Blast",
+          "Thunderbolt"
         ],
         "nature": "Timid",
         "evs": {
@@ -51,73 +94,30 @@
       }
     ]
   },
-  "p2": {
-    "name": "Player 2",
-    "team": [
-      {
-        "name": "Hippowdon",
-        "species": "Hippowdon",
-        "item": "Leftovers",
-        "ability": "Sand Stream",
-        "moves": [
-          "Earthquake",
-          "Stone Edge",
-          "Slack Off",
-          "Stealth Rock"
-        ],
-        "nature": "Impish",
-        "evs": {
-          "hp": 252,
-          "atk": 0,
-          "def": 252,
-          "spa": 0,
-          "spd": 4,
-          "spe": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 100,
-        "gender": "",
-        "shiny": false,
-        "happiness": 255,
-        "pokeball": "",
-        "hpType": "",
-        "dynamaxLevel": 10,
-        "teraType": "",
-        "gigantamax": false
-      }
-    ]
-  },
   "events": [
     {
       "type": "damage",
       "turn": 1,
       "source": "p2a",
       "target": "p1a",
-      "move": "Earthquake",
-      "damage": 281,
+      "move": "Shadow Ball",
+      "damage": 48,
       "crit": false,
-      "effectiveness": 2,
-      "weather": "Sandstorm",
-      "terrain": "Electric Terrain",
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Hippowdon",
+        "species": "Gengar",
         "level": 100,
-        "stat_atk": 260,
-        "stat_def": 368,
-        "stat_spa": 154,
-        "ability": "Sand Stream",
-        "item": "Leftovers",
+        "stat_atk": 149,
+        "stat_def": 156,
+        "stat_spa": 359,
+        "ability": "Cursed Body",
+        "item": "Choice Specs",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -129,13 +129,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Tapu Koko",
+        "species": "Grimmsnarl",
         "level": 100,
-        "stat_atk": 239,
-        "stat_def": 206,
-        "stat_spd": 187,
-        "ability": "Electric Surge",
-        "item": "Life Orb",
+        "stat_atk": 276,
+        "stat_def": 166,
+        "stat_spd": 273,
+        "ability": "Prankster",
+        "item": "Light Clay",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -144,9 +144,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 281,
-        "hp_after": 0,
-        "max_hp": 281
+        "hp_before": 394,
+        "hp_after": 346,
+        "max_hp": 394
       }
     }
   ]

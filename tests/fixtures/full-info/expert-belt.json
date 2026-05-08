@@ -1,33 +1,33 @@
 {
-  "id": "terrain-electric",
-  "description": "Electric Terrain 1.3x boost for grounded Electric moves",
+  "id": "expert-belt",
+  "description": "Expert Belt 1.2x on super effective hits only",
   "seed": [
-    100,
-    200,
-    300,
-    400
+    910,
+    911,
+    912,
+    913
   ],
   "format": "gen9customgame",
   "p1": {
     "name": "Player 1",
     "team": [
       {
-        "name": "Tapu Koko",
-        "species": "Tapu Koko",
-        "item": "Life Orb",
-        "ability": "Electric Surge",
+        "name": "Lucario",
+        "species": "Lucario",
+        "item": "Expert Belt",
+        "ability": "Inner Focus",
         "moves": [
-          "Thunderbolt",
-          "Dazzling Gleam",
-          "U-turn",
-          "Roost"
+          "Close Combat",
+          "Meteor Mash",
+          "Ice Punch",
+          "Extreme Speed"
         ],
-        "nature": "Timid",
+        "nature": "Adamant",
         "evs": {
           "hp": 0,
-          "atk": 0,
+          "atk": 252,
           "def": 0,
-          "spa": 252,
+          "spa": 0,
           "spd": 4,
           "spe": 252
         },
@@ -55,21 +55,21 @@
     "name": "Player 2",
     "team": [
       {
-        "name": "Hippowdon",
-        "species": "Hippowdon",
+        "name": "Tyranitar",
+        "species": "Tyranitar",
         "item": "Leftovers",
         "ability": "Sand Stream",
         "moves": [
-          "Earthquake",
           "Stone Edge",
-          "Slack Off",
-          "Stealth Rock"
+          "Crunch",
+          "Earthquake",
+          "Fire Punch"
         ],
-        "nature": "Impish",
+        "nature": "Adamant",
         "evs": {
           "hp": 252,
-          "atk": 0,
-          "def": 252,
+          "atk": 252,
+          "def": 0,
           "spa": 0,
           "spd": 4,
           "spe": 0
@@ -98,26 +98,26 @@
     {
       "type": "damage",
       "turn": 1,
-      "source": "p2a",
-      "target": "p1a",
-      "move": "Earthquake",
-      "damage": 281,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Close Combat",
+      "damage": 404,
       "crit": false,
       "effectiveness": 2,
       "weather": "Sandstorm",
-      "terrain": "Electric Terrain",
+      "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Hippowdon",
+        "species": "Lucario",
         "level": 100,
-        "stat_atk": 260,
-        "stat_def": 368,
-        "stat_spa": 154,
-        "ability": "Sand Stream",
-        "item": "Leftovers",
+        "stat_atk": 350,
+        "stat_def": 176,
+        "stat_spa": 239,
+        "ability": "Inner Focus",
+        "item": "Expert Belt",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -129,13 +129,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Tapu Koko",
+        "species": "Tyranitar",
         "level": 100,
-        "stat_atk": 239,
-        "stat_def": 206,
-        "stat_spd": 187,
-        "ability": "Electric Surge",
-        "item": "Life Orb",
+        "stat_atk": 403,
+        "stat_def": 256,
+        "stat_spd": 237,
+        "ability": "Sand Stream",
+        "item": "Leftovers",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -144,9 +144,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 281,
+        "hp_before": 404,
         "hp_after": 0,
-        "max_hp": 281
+        "max_hp": 404
       }
     }
   ]

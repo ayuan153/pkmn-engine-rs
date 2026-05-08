@@ -104,10 +104,17 @@
       "damage": 252,
       "crit": false,
       "effectiveness": 2,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
       "attacker": {
         "species": "Corviknight",
         "level": 100,
         "stat_atk": 210,
+        "stat_def": 339,
         "stat_spa": 127,
         "ability": "Pressure",
         "item": "Leftovers",
@@ -118,11 +125,13 @@
           "spd": 0,
           "spe": 0
         },
-        "status": null
+        "status": null,
+        "teraType": null
       },
       "defender": {
         "species": "Conkeldurr",
         "level": 100,
+        "stat_atk": 416,
         "stat_def": 226,
         "stat_spd": 167,
         "ability": "Guts",
@@ -143,61 +152,23 @@
     {
       "type": "damage",
       "turn": 1,
-      "source": "p2a",
-      "target": "p2a",
-      "move": "Brave Bird",
-      "damage": 83,
-      "crit": false,
-      "effectiveness": 1,
-      "attacker": {
-        "species": "Corviknight",
-        "level": 100,
-        "stat_atk": 210,
-        "stat_spa": 127,
-        "ability": "Pressure",
-        "item": "Leftovers",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null
-      },
-      "defender": {
-        "species": "Corviknight",
-        "level": 100,
-        "stat_def": 339,
-        "stat_spd": 207,
-        "ability": "Pressure",
-        "item": "Leftovers",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": null,
-        "hp_before": 400,
-        "hp_after": 317,
-        "max_hp": 400
-      }
-    },
-    {
-      "type": "damage",
-      "turn": 1,
       "source": "p1a",
       "target": "p2a",
       "move": "Facade",
       "damage": 34,
       "crit": false,
       "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
       "attacker": {
         "species": "Conkeldurr",
         "level": 100,
         "stat_atk": 416,
+        "stat_def": 226,
         "stat_spa": 131,
         "ability": "Guts",
         "item": "Flame Orb",
@@ -208,11 +179,13 @@
           "spd": 0,
           "spe": 0
         },
-        "status": null
+        "status": null,
+        "teraType": null
       },
       "defender": {
         "species": "Corviknight",
         "level": 100,
+        "stat_atk": 210,
         "stat_def": 339,
         "stat_spd": 207,
         "ability": "Pressure",
@@ -239,10 +212,17 @@
       "damage": 95,
       "crit": false,
       "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
       "attacker": {
         "species": "Corviknight",
         "level": 100,
         "stat_atk": 210,
+        "stat_def": 339,
         "stat_spa": 127,
         "ability": "Pressure",
         "item": "Leftovers",
@@ -253,11 +233,13 @@
           "spd": 0,
           "spe": 0
         },
-        "status": null
+        "status": null,
+        "teraType": null
       },
       "defender": {
         "species": "Conkeldurr",
         "level": 100,
+        "stat_atk": 416,
         "stat_def": 226,
         "stat_spd": 167,
         "ability": "Guts",
@@ -284,10 +266,17 @@
       "damage": 169,
       "crit": false,
       "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
       "attacker": {
         "species": "Conkeldurr",
         "level": 100,
         "stat_atk": 416,
+        "stat_def": 226,
         "stat_spa": 131,
         "ability": "Guts",
         "item": "Flame Orb",
@@ -298,11 +287,13 @@
           "spd": 0,
           "spe": 0
         },
-        "status": "brn"
+        "status": "brn",
+        "teraType": null
       },
       "defender": {
         "species": "Corviknight",
         "level": 100,
+        "stat_atk": 210,
         "stat_def": 339,
         "stat_spd": 207,
         "ability": "Pressure",
@@ -318,51 +309,6 @@
         "hp_before": 308,
         "hp_after": 139,
         "max_hp": 400
-      }
-    },
-    {
-      "type": "damage",
-      "turn": 2,
-      "source": "p1a",
-      "target": "p1a",
-      "move": "Drain Punch",
-      "damage": 25,
-      "crit": false,
-      "effectiveness": 1,
-      "attacker": {
-        "species": "Conkeldurr",
-        "level": 100,
-        "stat_atk": 416,
-        "stat_spa": 131,
-        "ability": "Guts",
-        "item": "Flame Orb",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": "brn"
-      },
-      "defender": {
-        "species": "Conkeldurr",
-        "level": 100,
-        "stat_def": 226,
-        "stat_spd": 167,
-        "ability": "Guts",
-        "item": "Flame Orb",
-        "boosts": {
-          "atk": 0,
-          "def": 0,
-          "spa": 0,
-          "spd": 0,
-          "spe": 0
-        },
-        "status": "brn",
-        "hp_before": 152,
-        "hp_after": 127,
-        "max_hp": 414
       }
     }
   ]

@@ -1,24 +1,26 @@
 {
-  "id": "basic-physical",
-  "description": "Basic physical attack, no modifiers",
+  "id": "acrobatics-no-item",
+  "description": "Acrobatics doubles BP (55->110) when user has no item",
   "seed": [
-    1,
-    2,
-    3,
-    4
+    210,
+    211,
+    212,
+    213
   ],
   "format": "gen9customgame",
   "p1": {
     "name": "Player 1",
     "team": [
       {
-        "name": "Garchomp",
-        "species": "Garchomp",
+        "name": "Hawlucha",
+        "species": "Hawlucha",
         "item": "",
-        "ability": "Rough Skin",
+        "ability": "Unburden",
         "moves": [
-          "Earthquake",
-          "Dragon Claw"
+          "Acrobatics",
+          "Close Combat",
+          "Swords Dance",
+          "Roost"
         ],
         "nature": "Adamant",
         "evs": {
@@ -53,19 +55,21 @@
     "name": "Player 2",
     "team": [
       {
-        "name": "Tyranitar",
-        "species": "Tyranitar",
-        "item": "",
-        "ability": "Sand Stream",
+        "name": "Toxapex",
+        "species": "Toxapex",
+        "item": "Rocky Helmet",
+        "ability": "Regenerator",
         "moves": [
-          "Stone Edge",
-          "Crunch"
+          "Scald",
+          "Toxic",
+          "Recover",
+          "Haze"
         ],
-        "nature": "Adamant",
+        "nature": "Bold",
         "evs": {
           "hp": 252,
-          "atk": 252,
-          "def": 0,
+          "atk": 0,
+          "def": 252,
           "spa": 0,
           "spd": 4,
           "spe": 0
@@ -96,23 +100,23 @@
       "turn": 1,
       "source": "p1a",
       "target": "p2a",
-      "move": "Earthquake",
-      "damage": 338,
+      "move": "Acrobatics",
+      "damage": 99,
       "crit": false,
-      "effectiveness": 2,
-      "weather": "Sandstorm",
+      "effectiveness": 1,
+      "weather": null,
       "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Garchomp",
+        "species": "Hawlucha",
         "level": 100,
-        "stat_atk": 394,
-        "stat_def": 226,
-        "stat_spa": 176,
-        "ability": "Rough Skin",
+        "stat_atk": 311,
+        "stat_def": 186,
+        "stat_spa": 165,
+        "ability": "Unburden",
         "item": "",
         "boosts": {
           "atk": 0,
@@ -125,13 +129,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Tyranitar",
+        "species": "Toxapex",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spd": 237,
-        "ability": "Sand Stream",
-        "item": "",
+        "stat_atk": 145,
+        "stat_def": 443,
+        "stat_spd": 321,
+        "ability": "Regenerator",
+        "item": "Rocky Helmet",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -140,9 +144,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 404,
-        "hp_after": 66,
-        "max_hp": 404
+        "hp_before": 304,
+        "hp_after": 205,
+        "max_hp": 304
       }
     },
     {
@@ -150,24 +154,24 @@
       "turn": 1,
       "source": "p2a",
       "target": "p1a",
-      "move": "Stone Edge",
-      "damage": 105,
+      "move": "Scald",
+      "damage": 79,
       "crit": false,
-      "effectiveness": 0.5,
-      "weather": "Sandstorm",
+      "effectiveness": 1,
+      "weather": null,
       "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Tyranitar",
+        "species": "Toxapex",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spa": 203,
-        "ability": "Sand Stream",
-        "item": "",
+        "stat_atk": 145,
+        "stat_def": 443,
+        "stat_spa": 142,
+        "ability": "Regenerator",
+        "item": "Rocky Helmet",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -179,12 +183,12 @@
         "teraType": null
       },
       "defender": {
-        "species": "Garchomp",
+        "species": "Hawlucha",
         "level": 100,
-        "stat_atk": 394,
-        "stat_def": 226,
-        "stat_spd": 207,
-        "ability": "Rough Skin",
+        "stat_atk": 311,
+        "stat_def": 186,
+        "stat_spd": 163,
+        "ability": "Unburden",
         "item": "",
         "boosts": {
           "atk": 0,
@@ -194,9 +198,9 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 357,
-        "hp_after": 252,
-        "max_hp": 357
+        "hp_before": 248,
+        "hp_after": 169,
+        "max_hp": 297
       }
     },
     {
@@ -204,23 +208,23 @@
       "turn": 2,
       "source": "p1a",
       "target": "p2a",
-      "move": "Dragon Claw",
-      "damage": 66,
-      "crit": false,
-      "effectiveness": 1,
-      "weather": "Sandstorm",
+      "move": "Close Combat",
+      "damage": 77,
+      "crit": true,
+      "effectiveness": 0.5,
+      "weather": null,
       "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Garchomp",
+        "species": "Hawlucha",
         "level": 100,
-        "stat_atk": 394,
-        "stat_def": 226,
-        "stat_spa": 176,
-        "ability": "Rough Skin",
+        "stat_atk": 311,
+        "stat_def": 186,
+        "stat_spa": 165,
+        "ability": "Unburden",
         "item": "",
         "boosts": {
           "atk": 0,
@@ -233,13 +237,13 @@
         "teraType": null
       },
       "defender": {
-        "species": "Tyranitar",
+        "species": "Toxapex",
         "level": 100,
-        "stat_atk": 403,
-        "stat_def": 256,
-        "stat_spd": 237,
-        "ability": "Sand Stream",
-        "item": "",
+        "stat_atk": 145,
+        "stat_def": 443,
+        "stat_spd": 321,
+        "ability": "Regenerator",
+        "item": "Rocky Helmet",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -248,9 +252,63 @@
           "spe": 0
         },
         "status": null,
-        "hp_before": 66,
+        "hp_before": 205,
+        "hp_after": 128,
+        "max_hp": 304
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Scald",
+      "damage": 120,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Toxapex",
+        "level": 100,
+        "stat_atk": 145,
+        "stat_def": 443,
+        "stat_spa": 142,
+        "ability": "Regenerator",
+        "item": "Rocky Helmet",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Hawlucha",
+        "level": 100,
+        "stat_atk": 311,
+        "stat_def": 186,
+        "stat_spd": 163,
+        "ability": "Unburden",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": -1,
+          "spa": 0,
+          "spd": -1,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 120,
         "hp_after": 0,
-        "max_hp": 404
+        "max_hp": 297
       }
     }
   ]

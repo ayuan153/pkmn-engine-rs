@@ -1,11 +1,11 @@
 {
-  "id": "terrain-electric",
-  "description": "Electric Terrain 1.3x boost for grounded Electric moves",
+  "id": "terrain-electric-grounded",
+  "description": "Electric Terrain 1.3x Electric moves for grounded mons only",
   "seed": [
-    100,
-    200,
-    300,
-    400
+    620,
+    621,
+    622,
+    623
   ],
   "format": "gen9customgame",
   "p1": {
@@ -14,13 +14,13 @@
       {
         "name": "Tapu Koko",
         "species": "Tapu Koko",
-        "item": "Life Orb",
+        "item": "Choice Specs",
         "ability": "Electric Surge",
         "moves": [
           "Thunderbolt",
           "Dazzling Gleam",
-          "U-turn",
-          "Roost"
+          "Volt Switch",
+          "Grass Knot"
         ],
         "nature": "Timid",
         "evs": {
@@ -55,17 +55,17 @@
     "name": "Player 2",
     "team": [
       {
-        "name": "Hippowdon",
-        "species": "Hippowdon",
+        "name": "Swampert",
+        "species": "Swampert",
         "item": "Leftovers",
-        "ability": "Sand Stream",
+        "ability": "Torrent",
         "moves": [
           "Earthquake",
-          "Stone Edge",
-          "Slack Off",
-          "Stealth Rock"
+          "Ice Beam",
+          "Stealth Rock",
+          "Flip Turn"
         ],
-        "nature": "Impish",
+        "nature": "Relaxed",
         "evs": {
           "hp": 252,
           "atk": 0,
@@ -104,19 +104,19 @@
       "damage": 281,
       "crit": false,
       "effectiveness": 2,
-      "weather": "Sandstorm",
+      "weather": null,
       "terrain": "Electric Terrain",
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Hippowdon",
+        "species": "Swampert",
         "level": 100,
-        "stat_atk": 260,
-        "stat_def": 368,
-        "stat_spa": 154,
-        "ability": "Sand Stream",
+        "stat_atk": 256,
+        "stat_def": 306,
+        "stat_spa": 206,
+        "ability": "Torrent",
         "item": "Leftovers",
         "boosts": {
           "atk": 0,
@@ -135,7 +135,7 @@
         "stat_def": 206,
         "stat_spd": 187,
         "ability": "Electric Surge",
-        "item": "Life Orb",
+        "item": "Choice Specs",
         "boosts": {
           "atk": 0,
           "def": 0,

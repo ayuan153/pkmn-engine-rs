@@ -1,33 +1,33 @@
 {
-  "id": "terrain-electric",
-  "description": "Electric Terrain 1.3x boost for grounded Electric moves",
+  "id": "swords-dance-stacking",
+  "description": "Swords Dance +2 Atk, stacks to +4",
   "seed": [
-    100,
-    200,
-    300,
-    400
+    800,
+    801,
+    802,
+    803
   ],
   "format": "gen9customgame",
   "p1": {
     "name": "Player 1",
     "team": [
       {
-        "name": "Tapu Koko",
-        "species": "Tapu Koko",
+        "name": "Garchomp",
+        "species": "Garchomp",
         "item": "Life Orb",
-        "ability": "Electric Surge",
+        "ability": "Rough Skin",
         "moves": [
-          "Thunderbolt",
-          "Dazzling Gleam",
-          "U-turn",
-          "Roost"
+          "Swords Dance",
+          "Earthquake",
+          "Scale Shot",
+          "Stone Edge"
         ],
-        "nature": "Timid",
+        "nature": "Jolly",
         "evs": {
           "hp": 0,
-          "atk": 0,
+          "atk": 252,
           "def": 0,
-          "spa": 252,
+          "spa": 0,
           "spd": 4,
           "spe": 252
         },
@@ -55,15 +55,15 @@
     "name": "Player 2",
     "team": [
       {
-        "name": "Hippowdon",
-        "species": "Hippowdon",
-        "item": "Leftovers",
-        "ability": "Sand Stream",
+        "name": "Skarmory",
+        "species": "Skarmory",
+        "item": "Rocky Helmet",
+        "ability": "Sturdy",
         "moves": [
-          "Earthquake",
-          "Stone Edge",
-          "Slack Off",
-          "Stealth Rock"
+          "Body Press",
+          "Iron Head",
+          "Roost",
+          "Whirlwind"
         ],
         "nature": "Impish",
         "evs": {
@@ -97,27 +97,27 @@
   "events": [
     {
       "type": "damage",
-      "turn": 1,
+      "turn": 3,
       "source": "p2a",
       "target": "p1a",
-      "move": "Earthquake",
-      "damage": 281,
-      "crit": false,
-      "effectiveness": 2,
-      "weather": "Sandstorm",
-      "terrain": "Electric Terrain",
+      "move": "Body Press",
+      "damage": 185,
+      "crit": true,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
       "screens": {
         "reflect": false,
         "lightScreen": false
       },
       "attacker": {
-        "species": "Hippowdon",
+        "species": "Skarmory",
         "level": 100,
-        "stat_atk": 260,
-        "stat_def": 368,
-        "stat_spa": 154,
-        "ability": "Sand Stream",
-        "item": "Leftovers",
+        "stat_atk": 196,
+        "stat_def": 416,
+        "stat_spa": 104,
+        "ability": "Sturdy",
+        "item": "Rocky Helmet",
         "boosts": {
           "atk": 0,
           "def": 0,
@@ -129,24 +129,24 @@
         "teraType": null
       },
       "defender": {
-        "species": "Tapu Koko",
+        "species": "Garchomp",
         "level": 100,
-        "stat_atk": 239,
-        "stat_def": 206,
-        "stat_spd": 187,
-        "ability": "Electric Surge",
+        "stat_atk": 359,
+        "stat_def": 226,
+        "stat_spd": 207,
+        "ability": "Rough Skin",
         "item": "Life Orb",
         "boosts": {
-          "atk": 0,
+          "atk": 4,
           "def": 0,
           "spa": 0,
           "spd": 0,
           "spe": 0
         },
         "status": null,
-        "hp_before": 281,
-        "hp_after": 0,
-        "max_hp": 281
+        "hp_before": 357,
+        "hp_after": 172,
+        "max_hp": 357
       }
     }
   ]
