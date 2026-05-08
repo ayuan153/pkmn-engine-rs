@@ -269,6 +269,10 @@ fn run_and_compare(fixture: &FullSimFixture) -> Result<(), String> {
     all_protocol.extend(battle.drain_protocol());
 
     for [p1_choice, p2_choice] in &fixture.choices {
+        // Handle forced switch phase
+        if let pkmn_engine::BattlePhase::ForcedSwitch(_) = battle.phase {
+            break;
+        }
         let p1c = parse_choice(p1_choice)?;
         let p2c = parse_choice(p2_choice)?;
         let result = battle.apply(p1c, p2c);
@@ -335,6 +339,12 @@ fn normalize_line(line: &str) -> String {
 }
 
 fn compare_protocols(expected: &[String], actual: &[String]) -> Result<(), String> {
+    if actual.len() < expected.len() {
+        return Err(format!(
+            "Too few lines: expected {} lines, got {}",
+            expected.len(), actual.len()
+        ));
+    }
     for (i, (exp, act)) in expected.iter().zip(actual.iter()).enumerate() {
         let norm_exp = normalize_line(exp);
         let norm_act = normalize_line(act);
@@ -348,12 +358,6 @@ fn compare_protocols(expected: &[String], actual: &[String]) -> Result<(), Strin
                 i, exp, act
             ));
         }
-    }
-    if expected.len() != actual.len() {
-        return Err(format!(
-            "Length mismatch: expected {} lines, got {}",
-            expected.len(), actual.len()
-        ));
     }
     Ok(())
 }

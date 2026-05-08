@@ -96,6 +96,60 @@ pub fn get_move_by_id(id: u16) -> Option<&'static MoveData> {
         .or_else(|| crate::gen::move_data::get_move_by_id(id))
 }
 
+/// Secondary effect of a move
+#[derive(Debug, Clone, Copy)]
+pub enum SecondaryEffect {
+    /// Inflict a status on the target
+    Status(SecondaryStatus),
+    /// Boost/drop a stat on the target
+    StatDrop(Stat, i8),
+    /// Boost/drop a stat on the user
+    SelfStatBoost(Stat, i8),
+}
+
+#[derive(Debug, Clone, Copy)]
+pub enum SecondaryStatus {
+    Burn,
+    Paralyze,
+    Freeze,
+    Poison,
+    Flinch,
+}
+
+#[derive(Debug, Clone, Copy)]
+pub enum Stat {
+    Atk,
+    Def,
+    Spa,
+    Spd,
+    Spe,
+}
+
+#[derive(Debug, Clone, Copy)]
+pub struct Secondary {
+    pub chance: u32,
+    pub effect: SecondaryEffect,
+}
+
+/// Get secondary effects for a move by ID
+pub fn get_secondaries(id: u16) -> &'static [Secondary] {
+    match id {
+        53 => &[Secondary { chance: 10, effect: SecondaryEffect::Status(SecondaryStatus::Burn) }],       // Flamethrower
+        58 => &[Secondary { chance: 10, effect: SecondaryEffect::Status(SecondaryStatus::Freeze) }],     // Ice Beam
+        85 => &[Secondary { chance: 10, effect: SecondaryEffect::Status(SecondaryStatus::Paralyze) }],   // Thunderbolt
+        94 => &[Secondary { chance: 10, effect: SecondaryEffect::StatDrop(Stat::Spd, -1) }],             // Psychic
+        126 => &[Secondary { chance: 10, effect: SecondaryEffect::Status(SecondaryStatus::Burn) }],      // Fire Blast
+        247 => &[Secondary { chance: 20, effect: SecondaryEffect::StatDrop(Stat::Spd, -1) }],            // Shadow Ball
+        399 => &[Secondary { chance: 20, effect: SecondaryEffect::Status(SecondaryStatus::Flinch) }],    // Dark Pulse
+        442 => &[Secondary { chance: 30, effect: SecondaryEffect::Status(SecondaryStatus::Flinch) }],    // Iron Head
+        503 => &[Secondary { chance: 30, effect: SecondaryEffect::Status(SecondaryStatus::Burn) }],      // Scald
+        585 => &[Secondary { chance: 30, effect: SecondaryEffect::StatDrop(Stat::Spa, -1) }],            // Moonblast
+        583 => &[Secondary { chance: 10, effect: SecondaryEffect::StatDrop(Stat::Atk, -1) }],            // Play Rough
+        789 => &[Secondary { chance: 100, effect: SecondaryEffect::StatDrop(Stat::Spa, -1) }],           // Spirit Break
+        _ => &[],
+    }
+}
+
 #[allow(dead_code)]
 const _: () = {
     // Suppress unused warnings for constants used only in array initialization

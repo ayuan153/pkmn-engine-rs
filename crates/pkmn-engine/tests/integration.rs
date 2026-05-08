@@ -348,7 +348,7 @@ mod tests {
         let clone = battle.clone();
         battle.apply(Choice::Move(0), Choice::Move(0));
         // Clone should be unaffected
-        assert_eq!(clone.turn, 0);
+        assert_eq!(clone.turn, 1);
         assert_eq!(clone.sides[0].active().hp, clone.sides[0].active().max_hp);
     }
 

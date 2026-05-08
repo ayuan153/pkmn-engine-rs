@@ -1,6 +1,6 @@
 use crate::choice::{BattleResult, Choice};
 use crate::field::Field;
-use crate::pokemon::{MoveSlot, Pokemon, Volatiles};
+use crate::pokemon::{MoveSlot, Pokemon, Status, Volatiles};
 use crate::side::Side;
 use pkmn_core::nature::Nature;
 use pkmn_core::species::get_species;
@@ -33,6 +33,8 @@ impl Battle {
             protocol: Vec::new(),
             rng_seed: seed,
         };
+        // PS consumes one RNG call during battle initialization
+        battle.rand();
         // Emit switch-in for leads
         for p in 0..2u8 {
             let name = battle.species_name(p);
@@ -40,7 +42,8 @@ impl Battle {
             let hp = mon.hp;
             let max_hp = mon.max_hp;
             let level = mon.level;
-            battle.emit(format!("|switch|p{}a: {}|{}, L{}|{}/{}", p+1, name, name, level, hp, max_hp));
+            let level_str = if level == 100 { String::new() } else { format!(", L{}", level) };
+            battle.emit(format!("|switch|p{}a: {}|{}{}|{}/{}", p+1, name, name, level_str, hp, max_hp));
         }
         // Trigger abilities for starting leads (weather, terrain, Intimidate)
         // Faster Pokemon's ability triggers first (PS behavior)
@@ -53,11 +56,32 @@ impl Battle {
             battle.trigger_ability_on_switch(0);
             battle.trigger_ability_on_switch(1);
         }
+        // Emit first turn marker
+        battle.turn = 1;
+        battle.emit(format!("|turn|1"));
         battle
     }
 
     pub(crate) fn emit(&mut self, event: String) {
         self.protocol.push(event);
+    }
+
+    /// Format HP display with status suffix (e.g. "250/414 tox")
+    pub(crate) fn hp_display(&self, player: u8) -> String {
+        let mon = self.sides[player as usize].active();
+        let hp = mon.hp;
+        let max_hp = mon.max_hp;
+        if hp == 0 {
+            return "0 fnt".to_string();
+        }
+        let status_str = match mon.status {
+            Status::Toxic => " tox",
+            Status::Burn => " brn",
+            Status::Poison => " psn",
+            Status::Paralyze => " par",
+            _ => "",
+        };
+        format!("{}/{}{}", hp, max_hp, status_str)
     }
 
     pub fn drain_protocol(&mut self) -> Vec<String> {
@@ -141,9 +165,6 @@ impl Battle {
 
     /// Apply both players' choices and advance one turn
     pub fn apply(&mut self, p1_choice: Choice, p2_choice: Choice) -> BattleResult {
-        self.turn += 1;
-        self.emit(format!("|turn|{}", self.turn));
-
         // Clear per-turn volatiles
         for side in &mut self.sides {
             let mon = side.active_mut();
@@ -182,6 +203,9 @@ impl Battle {
                     return BattleResult::Ongoing;
                 }
             }
+            // Emit next turn marker (PS emits this after upkeep)
+            self.turn += 1;
+            self.emit(format!("|turn|{}", self.turn));
         }
 
         self.result
@@ -216,6 +240,7 @@ impl Battle {
     }
 
     /// Random number in [from, to) — matches PS's random(from, to)
+    #[allow(dead_code)]
     pub(crate) fn rand_range(&mut self, min: u8, max: u8) -> u8 {
         let result = self.rand();
         let range = (max - min + 1) as u32;
@@ -237,6 +262,12 @@ impl Battle {
         let result = self.rand();
         let roll = (result as u64 * denominator as u64 / (1u64 << 32)) as u32;
         roll < numerator
+    }
+
+    /// PS-compatible random(n): returns value in [0, n)
+    pub(crate) fn random(&mut self, n: u32) -> u32 {
+        let result = self.rand();
+        (result as u64 * n as u64 / (1u64 << 32)) as u32
     }
 
     /// Create a 6v6 battle with common competitive Pokemon for benchmarking/testing

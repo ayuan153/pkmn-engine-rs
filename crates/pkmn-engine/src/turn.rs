@@ -8,7 +8,14 @@ use pkmn_core::types::Type;
 impl Battle {
     pub fn execute_choice(&mut self, player: u8, choice: Choice) {
         match choice {
-            Choice::Switch(target) => self.execute_switch(player, target),
+            Choice::Switch(target) => {
+                // If switching to already-active Pokemon, fall back to move 0
+                if target as usize == self.sides[player as usize].active_index {
+                    self.execute_move(player, 0);
+                    return;
+                }
+                self.execute_switch(player, target);
+            }
             Choice::Move(idx) => self.execute_move(player, idx),
             Choice::Tera(idx) => {
                 self.apply_tera(player);
@@ -30,6 +37,10 @@ impl Battle {
     }
 
     fn execute_switch(&mut self, player: u8, target: u8) {
+        self.execute_switch_from(player, target, None);
+    }
+
+    fn execute_switch_from(&mut self, player: u8, target: u8, from_move: Option<&str>) {
         // Clear volatiles on switch
         let mon = self.sides[player as usize].active_mut();
         mon.volatiles = Volatiles::empty();
@@ -43,7 +54,12 @@ impl Battle {
         let hp = mon.hp;
         let max_hp = mon.max_hp;
         let level = mon.level;
-        self.emit(format!("|switch|p{}a: {}|{}, L{}|{}/{}", player+1, name, name, level, hp, max_hp));
+        let level_str = if level == 100 { String::new() } else { format!(", L{}", level) };
+        let from_str = match from_move {
+            Some(m) => format!("|[from] {}", m),
+            None => String::new(),
+        };
+        self.emit(format!("|switch|p{}a: {}|{}{}|{}/{}{}", player+1, name, name, level_str, hp, max_hp, from_str));
         if !self.has_heavy_duty_boots(player) {
             self.apply_entry_hazards(player);
         }
@@ -116,8 +132,32 @@ impl Battle {
             .pp
             .saturating_sub(1);
 
-        // Accuracy check
-        if move_data.accuracy > 0 && !self.rand_check(move_data.accuracy) {
+        // Accuracy check (skip for multi-hit moves - they check per hit)
+        let is_multi_hit = self.get_multi_hit_count(player, &move_data).is_some();
+        if !is_multi_hit && move_data.accuracy > 0 && !self.rand_check(move_data.accuracy) {
+            let atk_name = self.species_name(player);
+            let def_name = self.species_name(defender_idx);
+            self.emit(format!("|move|p{}a: {}|{}|p{}a: {}|[miss]", player+1, atk_name, move_data.name, defender_idx+1, def_name));
+            self.emit(format!("|-miss|p{}a: {}|p{}a: {}", player+1, atk_name, defender_idx+1, def_name));
+            return;
+        }
+
+        // Multi-hit moves: handle entirely before normal move announcement
+        if is_multi_hit {
+            // First hit accuracy check
+            if move_data.accuracy > 0 && !self.rand_check(move_data.accuracy) {
+                let atk_name = self.species_name(player);
+                let def_name = self.species_name(defender_idx);
+                self.emit(format!("|move|p{}a: {}|{}|p{}a: {}|[miss]", player+1, atk_name, move_data.name, defender_idx+1, def_name));
+                self.emit(format!("|-miss|p{}a: {}|p{}a: {}", player+1, atk_name, defender_idx+1, def_name));
+                return;
+            }
+            // First hit passed - emit normal move line and execute multi-hit
+            let atk_name = self.species_name(player);
+            let def_name = self.species_name(defender_idx);
+            self.emit(format!("|move|p{}a: {}|{}|p{}a: {}", player+1, atk_name, move_data.name, defender_idx+1, def_name));
+            let max_hits = self.get_multi_hit_count(player, &move_data).unwrap();
+            self.execute_multi_hit(player, defender_idx, &move_data, max_hits);
             return;
         }
 
@@ -230,13 +270,8 @@ impl Battle {
             let damage = self.check_focus_sash(defender_idx, damage);
             self.apply_damage(defender_idx, damage);
             let def_name = self.species_name(defender_idx);
-            let hp = self.sides[defender_idx as usize].active().hp;
-            let max_hp = self.sides[defender_idx as usize].active().max_hp;
-            if hp == 0 {
-                self.emit(format!("|-damage|p{}a: {}|0 fnt", defender_idx+1, def_name));
-            } else {
-                self.emit(format!("|-damage|p{}a: {}|{}/{}", defender_idx+1, def_name, hp, max_hp));
-            }
+            let hp_str = self.hp_display(defender_idx);
+            self.emit(format!("|-damage|p{}a: {}|{}", defender_idx+1, def_name, hp_str));
 
             // Drain moves (Drain Punch, Giga Drain, etc.) — heal 1/2 of damage dealt
             let move_name_lower2 = move_data.name.to_lowercase();
@@ -269,14 +304,9 @@ impl Battle {
                     let recoil = (attacker_max_hp / 8).max(1);
                     self.apply_damage(player, recoil);
                     let atk_name = self.species_name(player);
-                    let atk_hp = self.sides[player as usize].active().hp;
-                    let atk_max = self.sides[player as usize].active().max_hp;
                     let ability_name = if defender_ability == pkmn_core::abilities::AbilityId::RoughSkin { "Rough Skin" } else { "Iron Barbs" };
-                    if atk_hp == 0 {
-                        self.emit(format!("|-damage|p{}a: {}|0 fnt|[from] ability: {}|[of] p{}a: {}", player+1, atk_name, ability_name, defender_idx+1, def_name));
-                    } else {
-                        self.emit(format!("|-damage|p{}a: {}|{}/{}|[from] ability: {}|[of] p{}a: {}", player+1, atk_name, atk_hp, atk_max, ability_name, defender_idx+1, def_name));
-                    }
+                    let hp_str = self.hp_display(player);
+                    self.emit(format!("|-damage|p{}a: {}|{}|[from] ability: {}|[of] p{}a: {}", player+1, atk_name, hp_str, ability_name, defender_idx+1, def_name));
                 }
                 // Rocky Helmet: 1/6 max HP
                 if defender_item == pkmn_core::items::ItemId::RockyHelmet {
@@ -284,13 +314,8 @@ impl Battle {
                     let recoil = (attacker_max_hp / 6).max(1);
                     self.apply_damage(player, recoil);
                     let atk_name = self.species_name(player);
-                    let atk_hp = self.sides[player as usize].active().hp;
-                    let atk_max = self.sides[player as usize].active().max_hp;
-                    if atk_hp == 0 {
-                        self.emit(format!("|-damage|p{}a: {}|0 fnt|[from] item: Rocky Helmet|[of] p{}a: {}", player+1, atk_name, defender_idx+1, def_name));
-                    } else {
-                        self.emit(format!("|-damage|p{}a: {}|{}/{}|[from] item: Rocky Helmet|[of] p{}a: {}", player+1, atk_name, atk_hp, atk_max, defender_idx+1, def_name));
-                    }
+                    let hp_str = self.hp_display(player);
+                    self.emit(format!("|-damage|p{}a: {}|{}|[from] item: Rocky Helmet|[of] p{}a: {}", player+1, atk_name, hp_str, defender_idx+1, def_name));
                 }
             }
 
@@ -301,6 +326,11 @@ impl Battle {
             if self.sides[player as usize].active().hp == 0 && self.sides[player as usize].active().is_fainted {
                 self.emit(format!("|faint|p{}a: {}", player+1, self.species_name(player)));
             }
+        }
+
+        // 4. Secondary effects (RNG consumed after damage)
+        if self.sides[defender_idx as usize].active().is_alive() {
+            self.apply_secondaries(player, defender_idx, &move_data);
         }
 
         // Move recoil (Brave Bird, Flare Blitz, etc.) — 1/3 of damage dealt
@@ -340,6 +370,9 @@ impl Battle {
 
         // Recharge moves
         self.handle_recharge_move(player, &move_data);
+
+        // U-turn / Volt Switch / Flip Turn: switch out after dealing damage
+        self.handle_switch_out_move(player, &move_data);
     }
 
     fn handle_multi_turn(&mut self, player: u8, move_idx: u8, move_data: &MoveData) {
@@ -399,25 +432,136 @@ impl Battle {
         }
     }
 
+    fn apply_secondaries(&mut self, attacker: u8, defender: u8, move_data: &MoveData) {
+        use pkmn_core::moves::{get_secondaries, SecondaryEffect, SecondaryStatus, Stat};
+
+        let secondaries = get_secondaries(move_data.id);
+        for secondary in secondaries {
+            let roll = self.random(100);
+            if roll >= secondary.chance {
+                continue;
+            }
+            let def_name = self.species_name(defender);
+            match secondary.effect {
+                SecondaryEffect::Status(status) => {
+                    let mon = self.sides[defender as usize].active_mut();
+                    if mon.status != Status::None {
+                        continue;
+                    }
+                    match status {
+                        SecondaryStatus::Burn => {
+                            if mon.types.contains(&Type::Fire) { continue; }
+                            mon.status = Status::Burn;
+                            self.emit(format!("|-status|p{}a: {}|brn", defender+1, def_name));
+                        }
+                        SecondaryStatus::Paralyze => {
+                            if mon.types.contains(&Type::Electric) { continue; }
+                            mon.status = Status::Paralyze;
+                            self.emit(format!("|-status|p{}a: {}|par", defender+1, def_name));
+                        }
+                        SecondaryStatus::Freeze => {
+                            if mon.types.contains(&Type::Ice) { continue; }
+                            mon.status = Status::Freeze;
+                            self.emit(format!("|-status|p{}a: {}|frz", defender+1, def_name));
+                        }
+                        SecondaryStatus::Poison => {
+                            if mon.types.contains(&Type::Poison) || mon.types.contains(&Type::Steel) { continue; }
+                            mon.status = Status::Poison;
+                            self.emit(format!("|-status|p{}a: {}|psn", defender+1, def_name));
+                        }
+                        SecondaryStatus::Flinch => {
+                            mon.volatiles.insert(Volatiles::FLINCH);
+                        }
+                    }
+                }
+                SecondaryEffect::StatDrop(stat, amount) => {
+                    let mon = self.sides[defender as usize].active_mut();
+                    match stat {
+                        Stat::Atk => mon.boosts.atk = (mon.boosts.atk + amount).clamp(-6, 6),
+                        Stat::Def => mon.boosts.def = (mon.boosts.def + amount).clamp(-6, 6),
+                        Stat::Spa => mon.boosts.spa = (mon.boosts.spa + amount).clamp(-6, 6),
+                        Stat::Spd => mon.boosts.spd = (mon.boosts.spd + amount).clamp(-6, 6),
+                        Stat::Spe => mon.boosts.spe = (mon.boosts.spe + amount).clamp(-6, 6),
+                    }
+                    let (stat_name, abs_amount) = match stat {
+                        Stat::Atk => ("atk", amount.unsigned_abs()),
+                        Stat::Def => ("def", amount.unsigned_abs()),
+                        Stat::Spa => ("spa", amount.unsigned_abs()),
+                        Stat::Spd => ("spd", amount.unsigned_abs()),
+                        Stat::Spe => ("spe", amount.unsigned_abs()),
+                    };
+                    if amount < 0 {
+                        self.emit(format!("|-unboost|p{}a: {}|{}|{}", defender+1, def_name, stat_name, abs_amount));
+                    } else {
+                        self.emit(format!("|-boost|p{}a: {}|{}|{}", defender+1, def_name, stat_name, abs_amount));
+                    }
+                }
+                SecondaryEffect::SelfStatBoost(stat, amount) => {
+                    let atk_name = self.species_name(attacker);
+                    let mon = self.sides[attacker as usize].active_mut();
+                    match stat {
+                        Stat::Atk => mon.boosts.atk = (mon.boosts.atk + amount).clamp(-6, 6),
+                        Stat::Def => mon.boosts.def = (mon.boosts.def + amount).clamp(-6, 6),
+                        Stat::Spa => mon.boosts.spa = (mon.boosts.spa + amount).clamp(-6, 6),
+                        Stat::Spd => mon.boosts.spd = (mon.boosts.spd + amount).clamp(-6, 6),
+                        Stat::Spe => mon.boosts.spe = (mon.boosts.spe + amount).clamp(-6, 6),
+                    }
+                    let (stat_name, abs_amount) = match stat {
+                        Stat::Atk => ("atk", amount.unsigned_abs()),
+                        Stat::Def => ("def", amount.unsigned_abs()),
+                        Stat::Spa => ("spa", amount.unsigned_abs()),
+                        Stat::Spd => ("spd", amount.unsigned_abs()),
+                        Stat::Spe => ("spe", amount.unsigned_abs()),
+                    };
+                    if amount > 0 {
+                        self.emit(format!("|-boost|p{}a: {}|{}|{}", attacker+1, atk_name, stat_name, abs_amount));
+                    } else {
+                        self.emit(format!("|-unboost|p{}a: {}|{}|{}", attacker+1, atk_name, stat_name, abs_amount));
+                    }
+                }
+            }
+        }
+    }
+
     fn calculate_move_damage(
         &mut self,
         attacker_player: u8,
         defender_player: u8,
         move_data: &MoveData,
     ) -> u16 {
+        // RNG order: 1. crit check, 2. damage roll (random(16))
+        let critical = self.random_chance(1, 24);
+        let roll = self.random(16); // 0-15
+        let random_factor = (100 - roll) as u8; // 85-100
+        self.calculate_damage_with(attacker_player, defender_player, move_data, critical, random_factor)
+    }
+
+    fn calculate_damage_with(
+        &self,
+        attacker_player: u8,
+        defender_player: u8,
+        move_data: &MoveData,
+        critical: bool,
+        random_factor: u8,
+    ) -> u16 {
         let attacker = self.sides[attacker_player as usize].active();
         let defender = self.sides[defender_player as usize].active();
 
         let (atk_stat, def_stat) = match move_data.category {
-            MoveCategory::Physical => (attacker.effective_atk(), defender.effective_def()),
+            MoveCategory::Physical => {
+                let atk = if move_data.name == "Body Press" {
+                    attacker.effective_def()
+                } else {
+                    attacker.effective_atk()
+                };
+                (atk, defender.effective_def())
+            }
             MoveCategory::Special => (attacker.effective_spa(), defender.effective_spd()),
             _ => return 0,
         };
 
-        // Variable base power
         let base_power = self.get_variable_bp(attacker_player, defender_player, move_data);
 
-        // STAB calculation with tera
         let stab = if attacker.is_terastallized {
             self.tera_stab(attacker_player, move_data.move_type)
         } else if attacker.types.contains(&move_data.move_type) {
@@ -435,14 +579,9 @@ impl Battle {
             return 0;
         }
 
-        let critical = self.random_chance(1, 24);
-        let random_factor = self.rand_range(85, 100);
         let weather_boost = self.get_weather_modifier(move_data.move_type);
-
-        // Terrain modifier
         let terrain_mod = self.get_terrain_modifier(attacker_player, move_data.move_type);
 
-        // Burn: halves physical unless Guts
         let burn_mod =
             if attacker_status == Status::Burn
                 && move_data.category == MoveCategory::Physical
@@ -456,7 +595,6 @@ impl Battle {
         let ability_mod = self.ability_damage_modifier(attacker_player, move_data);
         let item_mod = self.item_damage_modifier(attacker_player, move_data);
 
-        // Screen modifier (Reflect/Light Screen) — halves damage in singles, ignored on crit
         let screen_mod = if !critical {
             match move_data.category {
                 MoveCategory::Physical if self.sides[defender_player as usize].side_conditions.reflect > 0 => 0.5,
@@ -802,7 +940,7 @@ impl Battle {
                 }
                 Status::Toxic => {
                     mon.status_turns += 1;
-                    let dmg = (mon.max_hp * mon.status_turns as u16 / 16).max(1);
+                    let dmg = (mon.max_hp / 16).max(1) * mon.status_turns as u16;
                     mon.hp = mon.hp.saturating_sub(dmg);
                 }
                 _ => {}
@@ -822,22 +960,46 @@ impl Battle {
                 .map(|s| s.name)
                 .unwrap_or("Unknown");
 
+            let status_str = match status {
+                Status::Toxic => " tox",
+                Status::Burn => " brn",
+                Status::Poison => " psn",
+                Status::Paralyze => " par",
+                _ => "",
+            };
+
             if weather == Weather::Sand
                 && !self.sides[player].active().types.contains(&Type::Rock)
                 && !self.sides[player].active().types.contains(&Type::Ground)
                 && !self.sides[player].active().types.contains(&Type::Steel)
             {
-                self.emit(format!("|-damage|p{}a: {}|{}/{}|[from] Sandstorm", player+1, name, hp, max_hp));
+                if hp == 0 {
+                    self.emit(format!("|-damage|p{}a: {}|0 fnt|[from] Sandstorm", player+1, name));
+                } else {
+                    self.emit(format!("|-damage|p{}a: {}|{}/{}{}|[from] Sandstorm", player+1, name, hp, max_hp, status_str));
+                }
             }
             match status {
                 Status::Burn => {
-                    self.emit(format!("|-damage|p{}a: {}|{}/{}|[from] brn", player+1, name, hp, max_hp));
+                    if hp == 0 {
+                        self.emit(format!("|-damage|p{}a: {}|0 fnt|[from] brn", player+1, name));
+                    } else {
+                        self.emit(format!("|-damage|p{}a: {}|{}/{} brn|[from] brn", player+1, name, hp, max_hp));
+                    }
                 }
                 Status::Poison => {
-                    self.emit(format!("|-damage|p{}a: {}|{}/{}|[from] psn", player+1, name, hp, max_hp));
+                    if hp == 0 {
+                        self.emit(format!("|-damage|p{}a: {}|0 fnt|[from] psn", player+1, name));
+                    } else {
+                        self.emit(format!("|-damage|p{}a: {}|{}/{} psn|[from] psn", player+1, name, hp, max_hp));
+                    }
                 }
                 Status::Toxic => {
-                    self.emit(format!("|-damage|p{}a: {}|{}/{}|[from] psn", player+1, name, hp, max_hp));
+                    if hp == 0 {
+                        self.emit(format!("|-damage|p{}a: {}|0 fnt|[from] psn", player+1, name));
+                    } else {
+                        self.emit(format!("|-damage|p{}a: {}|{}/{} tox|[from] psn", player+1, name, hp, max_hp));
+                    }
                 }
                 _ => {}
             }
@@ -881,6 +1043,103 @@ impl Battle {
             if side.side_conditions.tailwind > 0 {
                 side.side_conditions.tailwind -= 1;
             }
+        }
+    }
+
+    fn handle_switch_out_move(&mut self, player: u8, move_data: &MoveData) {
+        let name = move_data.name.to_lowercase();
+        let is_switch_out = matches!(name.as_str(), "u-turn" | "volt switch" | "flip turn" | "parting shot" | "teleport");
+        if !is_switch_out {
+            return;
+        }
+        if !self.sides[player as usize].active().is_alive() {
+            return;
+        }
+        if !self.sides[player as usize].has_alive_switch() {
+            return;
+        }
+        let current = self.sides[player as usize].active_index;
+        let target = self.sides[player as usize].team.iter().enumerate()
+            .find(|(i, p)| *i != current && p.is_alive())
+            .map(|(i, _)| i);
+        if let Some(target_idx) = target {
+            self.execute_switch_from(player, target_idx as u8, Some(move_data.name));
+        }
+    }
+
+    fn get_multi_hit_count(&self, player: u8, move_data: &MoveData) -> Option<u8> {
+        match move_data.name {
+            "Double Iron Bash" | "Dual Wingbeat" | "Dragon Darts" => Some(2),
+            "Surging Strikes" | "Triple Axel" | "Triple Kick" => Some(3),
+            "Population Bomb" => Some(10),
+            "Bullet Seed" | "Icicle Spear" | "Rock Blast" | "Scale Shot"
+            | "Pin Missile" | "Tail Slap" | "Bone Rush" | "Arm Thrust"
+            | "Double Slap" | "Comet Punch" => {
+                // 2-5 hits; Skill Link always gives 5
+                if self.sides[player as usize].active().ability_id
+                    == pkmn_core::abilities::AbilityId::SkillLink
+                {
+                    Some(5)
+                } else {
+                    Some(0) // sentinel: roll in execute_multi_hit
+                }
+            }
+            _ => None,
+        }
+    }
+
+    fn execute_multi_hit(&mut self, player: u8, defender: u8, move_data: &MoveData, max_hits: u8) {
+        let hits = if max_hits == 0 {
+            // 2-5 hit distribution: 35/35/15/15
+            let roll = self.random(20);
+            if roll < 7 { 2 } else if roll < 14 { 3 } else if roll < 17 { 4 } else { 5 }
+        } else {
+            // PS still consumes RNG for hit count even with Skill Link
+            let _ = self.random(20);
+            max_hits as u32
+        };
+
+        let mut actual_hits: u32 = 0;
+        for _hit_num in 0..hits {
+            let critical = self.random_chance(1, 24);
+            let roll = self.random(16);
+            let random_factor = (100 - roll) as u8;
+            let damage = self.calculate_damage_with(player, defender, move_data, critical, random_factor);
+
+            if self.sides[defender as usize].active().volatiles.contains(Volatiles::SUBSTITUTE) {
+                let sub_hp = self.sides[defender as usize].active().substitute_hp;
+                if damage >= sub_hp {
+                    self.sides[defender as usize].active_mut().substitute_hp = 0;
+                    self.sides[defender as usize].active_mut().volatiles.remove(Volatiles::SUBSTITUTE);
+                    let def_name = self.species_name(defender);
+                    self.emit(format!("|-end|p{}a: {}|Substitute", defender+1, def_name));
+                } else {
+                    self.sides[defender as usize].active_mut().substitute_hp -= damage;
+                }
+            } else {
+                let damage = self.check_focus_sash(defender, damage);
+                self.apply_damage(defender, damage);
+                let def_name = self.species_name(defender);
+                let hp = self.sides[defender as usize].active().hp;
+                let max_hp = self.sides[defender as usize].active().max_hp;
+                if hp == 0 {
+                    self.emit(format!("|-damage|p{}a: {}|0 fnt", defender+1, def_name));
+                } else {
+                    self.emit(format!("|-damage|p{}a: {}|{}/{}", defender+1, def_name, hp, max_hp));
+                }
+            }
+
+            actual_hits += 1;
+            if self.sides[defender as usize].active().hp == 0 {
+                break;
+            }
+        }
+
+        let def_name = self.species_name(defender);
+        self.emit(format!("|-hitcount|p{}a: {}|{}", defender+1, def_name, actual_hits));
+
+        if self.sides[defender as usize].active().hp == 0 {
+            self.emit(format!("|faint|p{}a: {}", defender+1, def_name));
         }
     }
 

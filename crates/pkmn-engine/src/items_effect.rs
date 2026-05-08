@@ -97,11 +97,19 @@ impl Battle {
     /// Life Orb recoil after dealing damage
     pub fn apply_life_orb_recoil(&mut self, player: u8) {
         let mon = self.sides[player as usize].active_mut();
-        if mon.item_id == ItemId::LifeOrb {
+        if mon.item_id == ItemId::LifeOrb && mon.is_alive() {
             let recoil = (mon.max_hp / 10).max(1);
             mon.hp = mon.hp.saturating_sub(recoil);
             if mon.hp == 0 {
                 mon.is_fainted = true;
+            }
+            let name = self.species_name(player);
+            let hp = self.sides[player as usize].active().hp;
+            let max_hp = self.sides[player as usize].active().max_hp;
+            if hp == 0 {
+                self.emit(format!("|-damage|p{}a: {}|0 fnt|[from] item: Life Orb", player+1, name));
+            } else {
+                self.emit(format!("|-damage|p{}a: {}|{}/{}|[from] item: Life Orb", player+1, name, hp, max_hp));
             }
         }
     }

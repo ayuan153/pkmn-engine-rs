@@ -11,10 +11,11 @@ fn protocol_emits_switch_on_lead() {
 #[test]
 fn protocol_emits_turn_and_move() {
     let mut battle = Battle::default_test_battle([42, 0, 0, 0]);
-    battle.drain_protocol();
+    let init_proto = battle.drain_protocol();
+    // |turn|1 is emitted during Battle::new()
+    assert!(init_proto.iter().any(|e| e == "|turn|1"));
     battle.apply(Choice::Move(0), Choice::Move(0));
     let proto = battle.drain_protocol();
-    assert!(proto.iter().any(|e| e == "|turn|1"));
     assert!(proto.iter().any(|e| e.starts_with("|move|")));
     assert!(proto.iter().any(|e| e == "|upkeep"));
 }
