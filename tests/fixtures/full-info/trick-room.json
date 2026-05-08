@@ -1,0 +1,153 @@
+{
+  "id": "trick-room",
+  "description": "Trick Room inverts speed: slower moves first",
+  "seed": [
+    1910,
+    1911,
+    1912,
+    1913
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Hatterene",
+        "species": "Hatterene",
+        "item": "Life Orb",
+        "ability": "Magic Bounce",
+        "moves": [
+          "Trick Room",
+          "Psychic",
+          "Dazzling Gleam",
+          "Mystical Fire"
+        ],
+        "nature": "Quiet",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 0
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Dragapult",
+        "species": "Dragapult",
+        "item": "Choice Specs",
+        "ability": "Infiltrator",
+        "moves": [
+          "Shadow Ball",
+          "Draco Meteor",
+          "Fire Blast",
+          "Thunderbolt"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Shadow Ball",
+      "damage": 318,
+      "crit": false,
+      "effectiveness": 2,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Dragapult",
+        "level": 100,
+        "stat_atk": 248,
+        "stat_def": 186,
+        "stat_spa": 299,
+        "ability": "Infiltrator",
+        "item": "Choice Specs",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Hatterene",
+        "level": 100,
+        "stat_atk": 185,
+        "stat_def": 226,
+        "stat_spd": 243,
+        "ability": "Magic Bounce",
+        "item": "Life Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 318,
+        "hp_after": 0,
+        "max_hp": 318
+      }
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "id": "outrage-lock",
+  "description": "Outrage locks user for 2-3 turns then confuses",
+  "seed": [
+    1600,
+    1601,
+    1602,
+    1603
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Dragonite",
+        "species": "Dragonite",
+        "item": "Choice Band",
+        "ability": "Multiscale",
+        "moves": [
+          "Outrage",
+          "Extreme Speed",
+          "Earthquake",
+          "Fire Punch"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Skarmory",
+        "species": "Skarmory",
+        "item": "Rocky Helmet",
+        "ability": "Sturdy",
+        "moves": [
+          "Body Press",
+          "Iron Head",
+          "Roost",
+          "Whirlwind"
+        ],
+        "nature": "Impish",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Outrage",
+      "damage": 95,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Dragonite",
+        "level": 100,
+        "stat_atk": 403,
+        "stat_def": 226,
+        "stat_spa": 212,
+        "ability": "Multiscale",
+        "item": "Choice Band",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Skarmory",
+        "level": 100,
+        "stat_atk": 196,
+        "stat_def": 416,
+        "stat_spd": 177,
+        "ability": "Sturdy",
+        "item": "Rocky Helmet",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 334,
+        "hp_after": 239,
+        "max_hp": 334
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Outrage",
+      "damage": 109,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Dragonite",
+        "level": 100,
+        "stat_atk": 403,
+        "stat_def": 226,
+        "stat_spa": 212,
+        "ability": "Multiscale",
+        "item": "Choice Band",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Skarmory",
+        "level": 100,
+        "stat_atk": 196,
+        "stat_def": 416,
+        "stat_spd": 177,
+        "ability": "Sturdy",
+        "item": "Rocky Helmet",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 334,
+        "hp_after": 225,
+        "max_hp": 334
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Outrage",
+      "damage": 96,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Dragonite",
+        "level": 100,
+        "stat_atk": 403,
+        "stat_def": 226,
+        "stat_spa": 212,
+        "ability": "Multiscale",
+        "item": "Choice Band",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Skarmory",
+        "level": 100,
+        "stat_atk": 196,
+        "stat_def": 416,
+        "stat_spd": 177,
+        "ability": "Sturdy",
+        "item": "Rocky Helmet",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 334,
+        "hp_after": 238,
+        "max_hp": 334
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 4,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Iron Head",
+      "damage": 85,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Skarmory",
+        "level": 100,
+        "stat_atk": 196,
+        "stat_def": 416,
+        "stat_spa": 104,
+        "ability": "Sturdy",
+        "item": "Rocky Helmet",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Dragonite",
+        "level": 100,
+        "stat_atk": 403,
+        "stat_def": 226,
+        "stat_spd": 237,
+        "ability": "Multiscale",
+        "item": "Choice Band",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 105,
+        "hp_after": 20,
+        "max_hp": 323
+      }
+    }
+  ]
+}

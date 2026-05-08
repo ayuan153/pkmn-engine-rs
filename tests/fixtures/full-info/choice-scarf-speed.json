@@ -1,0 +1,207 @@
+{
+  "id": "choice-scarf-speed",
+  "description": "Choice Scarf 1.5x speed lets slower mon move first",
+  "seed": [
+    1900,
+    1901,
+    1902,
+    1903
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Landorus-Therian",
+        "species": "Landorus-Therian",
+        "item": "Choice Scarf",
+        "ability": "Intimidate",
+        "moves": [
+          "Earthquake",
+          "U-turn",
+          "Stone Edge",
+          "Knock Off"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Dragapult",
+        "species": "Dragapult",
+        "item": "Choice Specs",
+        "ability": "Infiltrator",
+        "moves": [
+          "Shadow Ball",
+          "Draco Meteor",
+          "Fire Blast",
+          "Thunderbolt"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Earthquake",
+      "damage": 225,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Landorus-Therian",
+        "level": 100,
+        "stat_atk": 389,
+        "stat_def": 216,
+        "stat_spa": 221,
+        "ability": "Intimidate",
+        "item": "Choice Scarf",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Dragapult",
+        "level": 100,
+        "stat_atk": 248,
+        "stat_def": 186,
+        "stat_spd": 187,
+        "ability": "Infiltrator",
+        "item": "Choice Specs",
+        "boosts": {
+          "atk": -1,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 317,
+        "hp_after": 92,
+        "max_hp": 317
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Shadow Ball",
+      "damage": 205,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Dragapult",
+        "level": 100,
+        "stat_atk": 248,
+        "stat_def": 186,
+        "stat_spa": 299,
+        "ability": "Infiltrator",
+        "item": "Choice Specs",
+        "boosts": {
+          "atk": -1,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Landorus-Therian",
+        "level": 100,
+        "stat_atk": 389,
+        "stat_def": 216,
+        "stat_spd": 197,
+        "ability": "Intimidate",
+        "item": "Choice Scarf",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 319,
+        "hp_after": 114,
+        "max_hp": 319
+      }
+    }
+  ]
+}

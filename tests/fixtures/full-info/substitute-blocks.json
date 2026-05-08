@@ -1,0 +1,207 @@
+{
+  "id": "substitute-blocks",
+  "description": "Substitute absorbs damage until broken",
+  "seed": [
+    1300,
+    1301,
+    1302,
+    1303
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Gengar",
+        "species": "Gengar",
+        "item": "Life Orb",
+        "ability": "Cursed Body",
+        "moves": [
+          "Substitute",
+          "Shadow Ball",
+          "Sludge Bomb",
+          "Focus Blast"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Blissey",
+        "species": "Blissey",
+        "item": "Leftovers",
+        "ability": "Natural Cure",
+        "moves": [
+          "Seismic Toss",
+          "Soft-Boiled",
+          "Thunder Wave",
+          "Toxic"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p1a",
+      "move": "Substitute",
+      "damage": 65,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Gengar",
+        "level": 100,
+        "stat_atk": 149,
+        "stat_def": 156,
+        "stat_spa": 359,
+        "ability": "Cursed Body",
+        "item": "Life Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Gengar",
+        "level": 100,
+        "stat_atk": 149,
+        "stat_def": 156,
+        "stat_spd": 187,
+        "ability": "Cursed Body",
+        "item": "Life Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 261,
+        "hp_after": 196,
+        "max_hp": 261
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Sludge Bomb",
+      "damage": 235,
+      "crit": true,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Gengar",
+        "level": 100,
+        "stat_atk": 149,
+        "stat_def": 156,
+        "stat_spa": 359,
+        "ability": "Cursed Body",
+        "item": "Life Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Blissey",
+        "level": 100,
+        "stat_atk": 50,
+        "stat_def": 130,
+        "stat_spd": 307,
+        "ability": "Natural Cure",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 714,
+        "hp_after": 479,
+        "max_hp": 714
+      }
+    }
+  ]
+}

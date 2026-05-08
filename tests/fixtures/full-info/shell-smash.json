@@ -1,0 +1,801 @@
+{
+  "id": "shell-smash",
+  "description": "Shell Smash: +2 Atk/SpA/Spe, -1 Def/SpD",
+  "seed": [
+    1810,
+    1811,
+    1812,
+    1813
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Cloyster",
+        "species": "Cloyster",
+        "item": "White Herb",
+        "ability": "Skill Link",
+        "moves": [
+          "Shell Smash",
+          "Icicle Spear",
+          "Rock Blast",
+          "Hydro Pump"
+        ],
+        "nature": "Naive",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Ferrothorn",
+        "species": "Ferrothorn",
+        "item": "Leftovers",
+        "ability": "Iron Barbs",
+        "moves": [
+          "Power Whip",
+          "Knock Off",
+          "Stealth Rock",
+          "Leech Seed"
+        ],
+        "nature": "Relaxed",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Power Whip",
+      "damage": 158,
+      "crit": false,
+      "effectiveness": 2,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 224,
+        "stat_def": 397,
+        "stat_spa": 144,
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spd": 114,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 2,
+          "def": -1,
+          "spa": 2,
+          "spd": -1,
+          "spe": 2
+        },
+        "status": null,
+        "hp_before": 241,
+        "hp_after": 83,
+        "max_hp": 241
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Icicle Spear",
+      "damage": 48,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spa": 206,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 2,
+          "def": -1,
+          "spa": 2,
+          "spd": -1,
+          "spe": 2
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 224,
+        "stat_def": 397,
+        "stat_spd": 269,
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 352,
+        "hp_after": 304,
+        "max_hp": 352
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Icicle Spear",
+      "damage": 40,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spa": 206,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 2,
+          "def": -1,
+          "spa": 2,
+          "spd": -1,
+          "spe": 2
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 224,
+        "stat_def": 397,
+        "stat_spd": 269,
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 304,
+        "hp_after": 264,
+        "max_hp": 352
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Icicle Spear",
+      "damage": 40,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spa": 206,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 2,
+          "def": -1,
+          "spa": 2,
+          "spd": -1,
+          "spe": 2
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 224,
+        "stat_def": 397,
+        "stat_spd": 269,
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 264,
+        "hp_after": 224,
+        "max_hp": 352
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Icicle Spear",
+      "damage": 43,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spa": 206,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 2,
+          "def": -1,
+          "spa": 2,
+          "spd": -1,
+          "spe": 2
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 224,
+        "stat_def": 397,
+        "stat_spd": 269,
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 224,
+        "hp_after": 181,
+        "max_hp": 352
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Icicle Spear",
+      "damage": 46,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spa": 206,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 2,
+          "def": -1,
+          "spa": 2,
+          "spd": -1,
+          "spe": 2
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 224,
+        "stat_def": 397,
+        "stat_spd": 269,
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 181,
+        "hp_after": 135,
+        "max_hp": 352
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Knock Off",
+      "damage": 31,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 224,
+        "stat_def": 397,
+        "stat_spa": 144,
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spd": 114,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 2,
+          "def": -1,
+          "spa": 2,
+          "spd": -1,
+          "spe": 2
+        },
+        "status": null,
+        "hp_before": 83,
+        "hp_after": 52,
+        "max_hp": 241
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Rock Blast",
+      "damage": 14,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spa": 206,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 2,
+          "def": -1,
+          "spa": 2,
+          "spd": -1,
+          "spe": 2
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 224,
+        "stat_def": 397,
+        "stat_spd": 269,
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 157,
+        "hp_after": 143,
+        "max_hp": 352
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Rock Blast",
+      "damage": 15,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spa": 206,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 2,
+          "def": -1,
+          "spa": 2,
+          "spd": -1,
+          "spe": 2
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 224,
+        "stat_def": 397,
+        "stat_spd": 269,
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 143,
+        "hp_after": 128,
+        "max_hp": 352
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Rock Blast",
+      "damage": 13,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spa": 206,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 2,
+          "def": -1,
+          "spa": 2,
+          "spd": -1,
+          "spe": 2
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 224,
+        "stat_def": 397,
+        "stat_spd": 269,
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 128,
+        "hp_after": 115,
+        "max_hp": 352
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Rock Blast",
+      "damage": 14,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spa": 206,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 2,
+          "def": -1,
+          "spa": 2,
+          "spd": -1,
+          "spe": 2
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 224,
+        "stat_def": 397,
+        "stat_spd": 269,
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 115,
+        "hp_after": 101,
+        "max_hp": 352
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Rock Blast",
+      "damage": 14,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spa": 206,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 2,
+          "def": -1,
+          "spa": 2,
+          "spd": -1,
+          "spe": 2
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 224,
+        "stat_def": 397,
+        "stat_spd": 269,
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 101,
+        "hp_after": 87,
+        "max_hp": 352
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Power Whip",
+      "damage": 52,
+      "crit": false,
+      "effectiveness": 2,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 224,
+        "stat_def": 397,
+        "stat_spa": 144,
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spd": 114,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 2,
+          "def": -1,
+          "spa": 2,
+          "spd": -1,
+          "spe": 2
+        },
+        "status": null,
+        "hp_before": 52,
+        "hp_after": 0,
+        "max_hp": 241
+      }
+    }
+  ]
+}

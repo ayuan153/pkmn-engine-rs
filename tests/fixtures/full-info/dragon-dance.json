@@ -1,0 +1,153 @@
+{
+  "id": "dragon-dance",
+  "description": "Dragon Dance: +1 Atk, +1 Spe",
+  "seed": [
+    1820,
+    1821,
+    1822,
+    1823
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Gyarados",
+        "species": "Gyarados",
+        "item": "Life Orb",
+        "ability": "Intimidate",
+        "moves": [
+          "Dragon Dance",
+          "Waterfall",
+          "Earthquake",
+          "Ice Fang"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Ferrothorn",
+        "species": "Ferrothorn",
+        "item": "Leftovers",
+        "ability": "Iron Barbs",
+        "moves": [
+          "Power Whip",
+          "Knock Off",
+          "Stealth Rock",
+          "Leech Seed"
+        ],
+        "nature": "Relaxed",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 3,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Waterfall",
+      "damage": 107,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Gyarados",
+        "level": 100,
+        "stat_atk": 349,
+        "stat_def": 194,
+        "stat_spa": 140,
+        "ability": "Intimidate",
+        "item": "Life Orb",
+        "boosts": {
+          "atk": 2,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 2
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 224,
+        "stat_def": 397,
+        "stat_spd": 269,
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": -1,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 352,
+        "hp_after": 245,
+        "max_hp": 352
+      }
+    }
+  ]
+}

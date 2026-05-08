@@ -130,6 +130,10 @@ fn get_move_bp(move_name: &str) -> u32 {
         "Headlong Rush" => 120, "Iron Head" => 80, "Meteor Mash" => 90,
         "Energy Ball" => 90, "Power Whip" => 120, "Magma Storm" => 100,
         "Mystical Fire" => 75, "Hyper Voice" => 90,
+        "Ice Spinner" => 80, "Sacred Sword" => 90, "Overheat" => 130,
+        "Dark Pulse" => 80, "Draco Meteor" => 130, "Waterfall" => 80,
+        "Icicle Spear" => 25, "Rock Blast" => 25, "Psyshock" => 80,
+        "Hyper Beam" => 150, "Heat Wave" => 95,
         _ => 80,
     }
 }
@@ -141,30 +145,32 @@ fn is_special(move_name: &str) -> bool {
         "Focus Blast" | "Moonblast" | "Earth Power" | "Sludge Wave" | "Ice Beam" |
         "Fire Blast" | "Bug Buzz" | "Flash Cannon" | "Lava Plume" | "Blizzard" |
         "Torch Song" | "Air Slash" | "Stored Power" | "Weather Ball" | "Flamethrower" |
-        "Energy Ball" | "Magma Storm" | "Mystical Fire" | "Hyper Voice"
+        "Energy Ball" | "Magma Storm" | "Mystical Fire" | "Hyper Voice" |
+        "Overheat" | "Dark Pulse" | "Draco Meteor" | "Psyshock" | "Hyper Beam" |
+        "Heat Wave"
     )
 }
 
 fn get_move_type(move_name: &str) -> &'static str {
     match move_name {
         "Earthquake" | "Earth Power" | "Headlong Rush" => "Ground",
-        "Dragon Claw" | "Outrage" => "Dragon",
-        "Stone Edge" | "Rock Slide" => "Rock",
-        "Crunch" | "Knock Off" | "Kowtow Cleave" | "Foul Play" => "Dark",
-        "Extreme Speed" | "Facade" | "Return" | "Body Slam" | "Hyper Voice" => "Normal",
-        "Surf" | "Scald" | "Crabhammer" | "Aqua Jet" | "Hydro Pump" | "Fishious Rend" | "Liquidation" => "Water",
+        "Dragon Claw" | "Outrage" | "Draco Meteor" => "Dragon",
+        "Stone Edge" | "Rock Slide" | "Rock Blast" => "Rock",
+        "Crunch" | "Knock Off" | "Kowtow Cleave" | "Foul Play" | "Dark Pulse" => "Dark",
+        "Extreme Speed" | "Facade" | "Return" | "Body Slam" | "Hyper Voice" | "Hyper Beam" => "Normal",
+        "Surf" | "Scald" | "Crabhammer" | "Aqua Jet" | "Hydro Pump" | "Fishious Rend" | "Liquidation" | "Waterfall" => "Water",
         "Hurricane" | "Brave Bird" | "Acrobatics" | "Air Slash" => "Flying",
-        "Flare Blitz" | "Fire Fang" | "Fire Blast" | "Lava Plume" | "Torch Song" | "Flamethrower" | "Magma Storm" | "Mystical Fire" => "Fire",
+        "Flare Blitz" | "Fire Fang" | "Fire Blast" | "Lava Plume" | "Torch Song" | "Flamethrower" | "Magma Storm" | "Mystical Fire" | "Overheat" | "Heat Wave" => "Fire",
         "Wild Charge" | "Thunderbolt" | "Volt Switch" => "Electric",
-        "Close Combat" | "Drain Punch" | "Mach Punch" | "Superpower" | "Body Press" | "Focus Blast" => "Fighting",
+        "Close Combat" | "Drain Punch" | "Mach Punch" | "Superpower" | "Body Press" | "Focus Blast" | "Sacred Sword" => "Fighting",
         "Dazzling Gleam" | "Spirit Break" | "Moonblast" | "Play Rough" => "Fairy",
-        "Psychic" | "Stored Power" | "Psychic Fangs" => "Psychic",
+        "Psychic" | "Stored Power" | "Psychic Fangs" | "Psyshock" => "Psychic",
         "Giga Drain" | "Grassy Glide" | "Bullet Seed" | "Wood Hammer" | "Energy Ball" | "Power Whip" => "Grass",
         "Bullet Punch" | "Flash Cannon" | "Double Iron Bash" | "Iron Head" | "Meteor Mash" => "Steel",
         "U-turn" | "Bug Buzz" | "Megahorn" => "Bug",
         "Shadow Ball" => "Ghost",
         "Sludge Bomb" | "Sludge Wave" => "Poison",
-        "Ice Punch" | "Ice Beam" | "Blizzard" | "Triple Axel" | "Ice Shard" => "Ice",
+        "Ice Punch" | "Ice Beam" | "Blizzard" | "Triple Axel" | "Ice Shard" | "Ice Spinner" | "Icicle Spear" => "Ice",
         "Weather Ball" => "Normal", // overridden by weather logic
         _ => "Normal",
     }
@@ -227,6 +233,17 @@ fn species_types(species: &str) -> &'static [&'static str] {
         "Gardevoir" => &["Psychic", "Fairy"],
         "Landorus-Therian" => &["Ground", "Flying"],
         "Alakazam" => &["Psychic"],
+        "Chien-Pao" => &["Dark", "Ice"],
+        "Chi-Yu" => &["Dark", "Fire"],
+        "Jolteon" => &["Electric"],
+        "Porygon-Z" => &["Normal"],
+        "Hatterene" => &["Psychic", "Fairy"],
+        "Dragapult" => &["Dragon", "Ghost"],
+        "Cloyster" => &["Water", "Ice"],
+        "Gyarados" => &["Water", "Flying"],
+        "Tornadus-Therian" => &["Flying"],
+        "Tapu Lele" => &["Psychic", "Fairy"],
+        "Zapdos" => &["Electric", "Flying"],
         _ => &[],
     }
 }
@@ -441,15 +458,41 @@ fn calculate_damage_rolls(_fixture_id: &str, event: &DamageEvent) -> Vec<u32> {
         atk = atk * 3 / 2;
     }
 
-    // Defense stat
-    let def_boost = if special { event.defender.boosts.spd } else { event.defender.boosts.def };
-    let crit_ignore_boost = event.crit && def_boost > 0;
-    let effective_boost = if crit_ignore_boost { 0 } else { def_boost };
+    // Tablets of Ruin (defender's ability): reduces attacker's Atk by 25%
+    if !special && event.defender.ability == "Tablets of Ruin" {
+        atk = atk * 3 / 4;
+    }
+    // Vessel of Ruin (defender's ability): reduces attacker's SpA by 25%
+    if special && event.defender.ability == "Vessel of Ruin" {
+        atk = atk * 3 / 4;
+    }
 
-    let mut raw_def = if special {
-        apply_boost(event.defender.stat_spd, effective_boost)
+    // Defense stat
+    // Psyshock: special move but targets physical Defense
+    let uses_physical_def = !special || move_name == "Psyshock";
+    // Sacred Sword: ignores target's Def boosts
+    let ignore_def_boosts = move_name == "Sacred Sword";
+
+    let def_boost = if uses_physical_def { event.defender.boosts.def } else { event.defender.boosts.spd };
+
+    // Shell Smash + White Herb: if defender has positive offensive boosts and negative
+    // def/spd boosts with empty item, White Herb restored the negative boosts
+    let white_herb_restored = event.defender.item.is_empty()
+        && event.defender.boosts.atk >= 2
+        && def_boost < 0;
+    let effective_def_boost = if ignore_def_boosts || white_herb_restored {
+        0
     } else {
-        apply_boost(event.defender.stat_def, effective_boost)
+        def_boost
+    };
+
+    let crit_ignore_boost = event.crit && effective_def_boost > 0;
+    let final_def_boost = if crit_ignore_boost { 0 } else { effective_def_boost };
+
+    let mut raw_def = if uses_physical_def {
+        apply_boost(event.defender.stat_def, final_def_boost)
+    } else {
+        apply_boost(event.defender.stat_spd, final_def_boost)
     };
 
     // Defensive stat modifiers
@@ -461,6 +504,14 @@ fn calculate_damage_rolls(_fixture_id: &str, event: &DamageEvent) -> Vec<u32> {
     }
     if !special && event.defender.ability == "Fur Coat" {
         raw_def = raw_def * 2;
+    }
+    // Sword of Ruin (attacker's ability): reduces defender's Def by 25%
+    if !special && event.attacker.ability == "Sword of Ruin" {
+        raw_def = raw_def * 3 / 4;
+    }
+    // Beads of Ruin (attacker's ability): reduces defender's SpD by 25%
+    if special && event.attacker.ability == "Beads of Ruin" {
+        raw_def = raw_def * 3 / 4;
     }
     // Sand: 1.5x SpD for Rock-type defenders
     if special && event.weather.as_deref() == Some("Sandstorm") && species_types(&event.defender.species).contains(&"Rock") {

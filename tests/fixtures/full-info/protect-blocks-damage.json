@@ -1,0 +1,207 @@
+{
+  "id": "protect-blocks-damage",
+  "description": "Protect blocks all damage for one turn",
+  "seed": [
+    1310,
+    1311,
+    1312,
+    1313
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Toxapex",
+        "species": "Toxapex",
+        "item": "Rocky Helmet",
+        "ability": "Regenerator",
+        "moves": [
+          "Protect",
+          "Scald",
+          "Toxic",
+          "Recover"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Garchomp",
+        "species": "Garchomp",
+        "item": "Choice Band",
+        "ability": "Rough Skin",
+        "moves": [
+          "Earthquake",
+          "Outrage",
+          "Stone Edge",
+          "Fire Fang"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Earthquake",
+      "damage": 294,
+      "crit": false,
+      "effectiveness": 2,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Garchomp",
+        "level": 100,
+        "stat_atk": 359,
+        "stat_def": 226,
+        "stat_spa": 176,
+        "ability": "Rough Skin",
+        "item": "Choice Band",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Toxapex",
+        "level": 100,
+        "stat_atk": 145,
+        "stat_def": 443,
+        "stat_spd": 321,
+        "ability": "Regenerator",
+        "item": "Rocky Helmet",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 304,
+        "hp_after": 10,
+        "max_hp": 304
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Scald",
+      "damage": 63,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Toxapex",
+        "level": 100,
+        "stat_atk": 145,
+        "stat_def": 443,
+        "stat_spa": 142,
+        "ability": "Regenerator",
+        "item": "Rocky Helmet",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Garchomp",
+        "level": 100,
+        "stat_atk": 359,
+        "stat_def": 226,
+        "stat_spd": 207,
+        "ability": "Rough Skin",
+        "item": "Choice Band",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 357,
+        "hp_after": 294,
+        "max_hp": 357
+      }
+    }
+  ]
+}
