@@ -56,6 +56,8 @@ def parse_protocol_log(log):
     current_turn = 0
     # Track max_hp per player slot for percentage conversion
     known_max_hp = {"p1": None, "p2": None}
+    # Accumulate crit/effectiveness flags for the next damage event
+    pending_flags = {}
 
     for line in log.split("\n"):
         line = line.strip()
@@ -104,6 +106,27 @@ def parse_protocol_log(log):
                     event["target"] = target
                 events.append(event)
 
+        elif cmd == "-crit":
+            if len(parts) >= 3:
+                pending_flags["crit"] = True
+
+        elif cmd == "-supereffective":
+            pending_flags["effectiveness"] = "super"
+
+        elif cmd == "-resisted":
+            pending_flags["effectiveness"] = "resisted"
+
+        elif cmd == "-miss":
+            if len(parts) >= 3:
+                ident = parts[2]
+                player = ident[:2]
+                target = parts[3][:2] if len(parts) >= 4 and parts[3].startswith("p") else None
+                event = {"type": "miss", "player": player}
+                if target:
+                    event["target"] = target
+                events.append(event)
+                pending_flags = {}
+
         elif cmd == "-damage":
             if len(parts) >= 4:
                 ident = parts[2]
@@ -117,6 +140,9 @@ def parse_protocol_log(log):
                 # Source of damage if present
                 if len(parts) >= 5 and parts[4].strip():
                     event["source"] = parts[4].strip()
+                # Merge pending crit/effectiveness flags
+                event.update(pending_flags)
+                pending_flags = {}
                 events.append(event)
 
         elif cmd == "-heal":
