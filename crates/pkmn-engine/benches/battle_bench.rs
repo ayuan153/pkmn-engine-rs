@@ -4,7 +4,7 @@ use pkmn_engine::{Battle, BattleResult};
 fn bench_random_battle(c: &mut Criterion) {
     c.bench_function("play_random_game", |b| {
         b.iter(|| {
-            let mut battle = Battle::default_test_battle(42);
+            let mut battle = Battle::default_test_battle([42, 0, 0, 0]);
             let mut turn = 0;
             while battle.result == BattleResult::Ongoing && turn < 200 {
                 let c1 = battle.choices(0);
@@ -17,12 +17,12 @@ fn bench_random_battle(c: &mut Criterion) {
     });
 
     c.bench_function("clone_battle", |b| {
-        let battle = Battle::default_test_battle(42);
+        let battle = Battle::default_test_battle([42, 0, 0, 0]);
         b.iter(|| battle.clone())
     });
 
     c.bench_function("get_choices", |b| {
-        let battle = Battle::default_test_battle(42);
+        let battle = Battle::default_test_battle([42, 0, 0, 0]);
         b.iter(|| {
             battle.choices(0);
             battle.choices(1);

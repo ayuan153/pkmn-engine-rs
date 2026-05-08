@@ -8,43 +8,58 @@ impl Battle {
     /// Called when a Pokemon switches in
     pub fn trigger_ability_on_switch(&mut self, player: u8) {
         let ability = self.sides[player as usize].active().ability_id;
+        let name = self.species_name(player);
         match ability {
             AbilityId::Intimidate => {
                 let opp = 1 - player;
+                let opp_name = self.species_name(opp);
+                self.emit(format!("|-ability|p{}a: {}|Intimidate|boost", player+1, name));
+                self.emit(format!("|-unboost|p{}a: {}|atk|1", opp+1, opp_name));
                 let cur = self.sides[opp as usize].active().boosts.atk;
                 self.sides[opp as usize].active_mut().boosts.atk = (cur - 1).max(-6);
             }
             AbilityId::Drizzle => {
                 self.field.weather = Weather::Rain;
                 self.field.weather_turns = 5;
+                self.emit(format!("|-weather|RainDance|[from] ability: Drizzle|[of] p{}a: {}", player+1, name));
             }
             AbilityId::Drought => {
                 self.field.weather = Weather::Sun;
                 self.field.weather_turns = 5;
+                self.emit(format!("|-weather|SunnyDay|[from] ability: Drought|[of] p{}a: {}", player+1, name));
             }
             AbilityId::SandStream => {
                 self.field.weather = Weather::Sand;
                 self.field.weather_turns = 5;
+                self.emit(format!("|-weather|Sandstorm|[from] ability: Sand Stream|[of] p{}a: {}", player+1, name));
             }
             AbilityId::SnowWarning => {
                 self.field.weather = Weather::Snow;
                 self.field.weather_turns = 5;
+                self.emit(format!("|-weather|Snow|[from] ability: Snow Warning|[of] p{}a: {}", player+1, name));
             }
             AbilityId::ElectricSurge => {
                 self.field.terrain = Terrain::Electric;
                 self.field.terrain_turns = 5;
+                self.emit(format!("|-fieldstart|move: Electric Terrain|[from] ability: Electric Surge|[of] p{}a: {}", player+1, name));
             }
             AbilityId::GrassySurge => {
                 self.field.terrain = Terrain::Grassy;
                 self.field.terrain_turns = 5;
+                self.emit(format!("|-fieldstart|move: Grassy Terrain|[from] ability: Grassy Surge|[of] p{}a: {}", player+1, name));
             }
             AbilityId::MistySurge => {
                 self.field.terrain = Terrain::Misty;
                 self.field.terrain_turns = 5;
+                self.emit(format!("|-fieldstart|move: Misty Terrain|[from] ability: Misty Surge|[of] p{}a: {}", player+1, name));
             }
             AbilityId::PsychicSurge => {
                 self.field.terrain = Terrain::Psychic;
                 self.field.terrain_turns = 5;
+                self.emit(format!("|-fieldstart|move: Psychic Terrain|[from] ability: Psychic Surge|[of] p{}a: {}", player+1, name));
+            }
+            AbilityId::Pressure => {
+                self.emit(format!("|-ability|p{}a: {}|Pressure", player+1, name));
             }
             _ => {}
         }

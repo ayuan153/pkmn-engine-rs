@@ -18,23 +18,57 @@ pub struct Battle {
     pub turn: u16,
     pub result: BattleResult,
     pub phase: BattlePhase,
-    rng_seed: u64,
+    pub protocol: Vec<String>,
+    rng_seed: [u16; 4],
 }
 
 impl Battle {
-    pub fn new(side1: Side, side2: Side, seed: u64) -> Self {
+    pub fn new(side1: Side, side2: Side, seed: [u16; 4]) -> Self {
         let mut battle = Self {
             sides: [side1, side2],
             field: Field::default(),
             turn: 0,
             result: BattleResult::Ongoing,
             phase: BattlePhase::ActionSelection,
+            protocol: Vec::new(),
             rng_seed: seed,
         };
+        // Emit switch-in for leads
+        for p in 0..2u8 {
+            let name = battle.species_name(p);
+            let mon = battle.sides[p as usize].active();
+            let hp = mon.hp;
+            let max_hp = mon.max_hp;
+            let level = mon.level;
+            battle.emit(format!("|switch|p{}a: {}|{}, L{}|{}/{}", p+1, name, name, level, hp, max_hp));
+        }
         // Trigger abilities for starting leads (weather, terrain, Intimidate)
-        battle.trigger_ability_on_switch(0);
-        battle.trigger_ability_on_switch(1);
+        // Faster Pokemon's ability triggers first (PS behavior)
+        let p1_speed = battle.sides[0].active().effective_speed();
+        let p2_speed = battle.sides[1].active().effective_speed();
+        if p2_speed > p1_speed {
+            battle.trigger_ability_on_switch(1);
+            battle.trigger_ability_on_switch(0);
+        } else {
+            battle.trigger_ability_on_switch(0);
+            battle.trigger_ability_on_switch(1);
+        }
         battle
+    }
+
+    pub(crate) fn emit(&mut self, event: String) {
+        self.protocol.push(event);
+    }
+
+    pub fn drain_protocol(&mut self) -> Vec<String> {
+        std::mem::take(&mut self.protocol)
+    }
+
+    pub(crate) fn species_name(&self, player: u8) -> &'static str {
+        let id = self.sides[player as usize].active().species_id;
+        pkmn_core::species::get_species_by_id(id)
+            .map(|s| s.name)
+            .unwrap_or("Unknown")
     }
 
     /// Get legal choices for a player (0 or 1)
@@ -108,6 +142,7 @@ impl Battle {
     /// Apply both players' choices and advance one turn
     pub fn apply(&mut self, p1_choice: Choice, p2_choice: Choice) -> BattleResult {
         self.turn += 1;
+        self.emit(format!("|turn|{}", self.turn));
 
         // Clear per-turn volatiles
         for side in &mut self.sides {
@@ -123,13 +158,19 @@ impl Battle {
                 break;
             }
             self.execute_choice(player, choice);
+            // Check win after each action (a faint with no backup ends the game)
+            self.check_win();
         }
 
         if self.result == BattleResult::Ongoing {
             self.end_of_turn();
+            self.emit("|upkeep".to_string());
+            self.check_win();
         }
 
-        self.check_win();
+        if let BattleResult::Win(winner) = self.result {
+            self.emit(format!("|win|Player {}", winner + 1));
+        }
 
         // Check for forced switch after faint
         if self.result == BattleResult::Ongoing {
@@ -146,27 +187,60 @@ impl Battle {
         self.result
     }
 
-    /// Simple seeded RNG (xorshift64)
-    pub(crate) fn rand(&mut self) -> u64 {
-        self.rng_seed ^= self.rng_seed << 13;
-        self.rng_seed ^= self.rng_seed >> 7;
-        self.rng_seed ^= self.rng_seed << 17;
-        self.rng_seed
+    /// PS-compatible Gen5 LCG PRNG
+    /// x_{n+1} = (a * x_n + c) mod 2^64
+    /// a = 0x5D588B656C078965, c = 0x00269EC3
+    /// Returns upper 32 bits as output
+    pub(crate) fn rand(&mut self) -> u32 {
+        let a: [u64; 4] = [0x5D58, 0x8B65, 0x6C07, 0x8965];
+        let c: [u64; 4] = [0, 0, 0x0026, 0x9EC3];
+        let seed = [
+            self.rng_seed[0] as u64,
+            self.rng_seed[1] as u64,
+            self.rng_seed[2] as u64,
+            self.rng_seed[3] as u64,
+        ];
+        let mut out = [0u16; 4];
+        let mut carry: u64 = 0;
+        for out_index in (0..4i32).rev() {
+            for b_index in out_index..4 {
+                let a_index = 3 - (b_index - out_index);
+                carry += seed[a_index as usize] * a[b_index as usize];
+            }
+            carry += c[out_index as usize];
+            out[out_index as usize] = (carry & 0xFFFF) as u16;
+            carry >>= 16;
+        }
+        self.rng_seed = out;
+        ((self.rng_seed[0] as u32) << 16) + self.rng_seed[1] as u32
     }
 
-    /// Random u8 in range [min, max] inclusive
+    /// Random number in [from, to) — matches PS's random(from, to)
     pub(crate) fn rand_range(&mut self, min: u8, max: u8) -> u8 {
-        let range = (max - min + 1) as u64;
-        (self.rand() % range) as u8 + min
+        let result = self.rand();
+        let range = (max - min + 1) as u32;
+        // PS: Math.floor(result * range / 2^32) + from
+        ((result as u64 * range as u64 / (1u64 << 32)) as u8) + min
     }
 
-    /// Random check: returns true with probability percent/100
+    /// Random check: returns true with probability numerator/denominator
+    /// Matches PS's randomChance(numerator, denominator)
     pub(crate) fn rand_check(&mut self, percent: u8) -> bool {
-        self.rand_range(1, 100) <= percent
+        // PS: randomChance(percent, 100) => random(100) < percent
+        let result = self.rand();
+        let roll = (result as u64 * 100 / (1u64 << 32)) as u8;
+        roll < percent
+    }
+
+    /// PS-compatible randomChance(numerator, denominator)
+    pub(crate) fn random_chance(&mut self, numerator: u32, denominator: u32) -> bool {
+        let result = self.rand();
+        let roll = (result as u64 * denominator as u64 / (1u64 << 32)) as u32;
+        roll < numerator
     }
 
     /// Create a 6v6 battle with common competitive Pokemon for benchmarking/testing
-    pub fn default_test_battle(seed: u64) -> Self {
+    pub fn default_test_battle(seed: [u16; 4]) -> Self {
         let evs_phys = [0, 252, 0, 0, 0, 252u8];
         let evs_spec = [0, 0, 0, 252, 0, 252u8];
         let ivs = [31u8; 6];

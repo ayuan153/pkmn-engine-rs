@@ -10,7 +10,13 @@ pub struct WasmBattle {
 impl WasmBattle {
     #[wasm_bindgen(constructor)]
     pub fn new(seed: u64) -> Self {
-        Self { inner: Battle::default_test_battle(seed) }
+        let s = [
+            (seed >> 48) as u16,
+            (seed >> 32) as u16,
+            (seed >> 16) as u16,
+            seed as u16,
+        ];
+        Self { inner: Battle::default_test_battle(s) }
     }
 
     /// Get legal choices for a player as JSON array

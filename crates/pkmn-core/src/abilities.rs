@@ -60,6 +60,11 @@ pub enum AbilityId {
     TabletsOfRuin,
     VesselOfRuin,
     BeadsOfRuin,
+    Pressure,
+    Prankster,
+    SupremeOverlord,
+    CursedBody,
+    SkillLink,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -142,6 +147,11 @@ static ABILITY_TABLE: &[AbilityData] = &[
     AbilityData { id: AbilityId::TabletsOfRuin, name: "Tablets of Ruin", triggers: &[AbilityTrigger::Passive] },
     AbilityData { id: AbilityId::VesselOfRuin, name: "Vessel of Ruin", triggers: &[AbilityTrigger::Passive] },
     AbilityData { id: AbilityId::BeadsOfRuin, name: "Beads of Ruin", triggers: &[AbilityTrigger::Passive] },
+    AbilityData { id: AbilityId::Pressure, name: "Pressure", triggers: &[AbilityTrigger::OnSwitchIn] },
+    AbilityData { id: AbilityId::Prankster, name: "Prankster", triggers: &[AbilityTrigger::Passive] },
+    AbilityData { id: AbilityId::SupremeOverlord, name: "Supreme Overlord", triggers: &[AbilityTrigger::Passive] },
+    AbilityData { id: AbilityId::CursedBody, name: "Cursed Body", triggers: &[AbilityTrigger::OnBeingHit] },
+    AbilityData { id: AbilityId::SkillLink, name: "Skill Link", triggers: &[AbilityTrigger::ModifyDamage] },
 ];
 
 pub fn get_ability(id: AbilityId) -> &'static AbilityData {

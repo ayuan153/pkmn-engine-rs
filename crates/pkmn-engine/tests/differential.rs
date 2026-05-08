@@ -138,7 +138,7 @@ fn run_fixture(fixture: &Value) -> Vec<TurnDivergence> {
 
     let side1 = Side::new(p1_team);
     let side2 = Side::new(p2_team);
-    let mut battle = Battle::new(side1, side2, 42);
+    let mut battle = Battle::new(side1, side2, [42, 0, 0, 0]);
 
     // Apply setup conditions
     if let Some(setup) = fixture.get("setup") {

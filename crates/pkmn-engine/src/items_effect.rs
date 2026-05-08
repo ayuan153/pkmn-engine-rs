@@ -71,7 +71,14 @@ impl Battle {
         match mon.item_id {
             ItemId::Leftovers | ItemId::BlackSludge => {
                 let heal = mon.max_hp / 16;
-                mon.hp = (mon.hp + heal).min(mon.max_hp);
+                if mon.hp < mon.max_hp {
+                    mon.hp = (mon.hp + heal).min(mon.max_hp);
+                    let name = self.species_name(player);
+                    let hp = self.sides[player as usize].active().hp;
+                    let max_hp = self.sides[player as usize].active().max_hp;
+                    let item_name = if self.sides[player as usize].active().item_id == ItemId::Leftovers { "Leftovers" } else { "Black Sludge" };
+                    self.emit(format!("|-heal|p{}a: {}|{}/{}|[from] item: {}", player+1, name, hp, max_hp, item_name));
+                }
             }
             ItemId::FlameOrb => {
                 if mon.status == Status::None {

@@ -51,7 +51,7 @@ mod tests {
     fn make_battle(p1: Pokemon, p2: Pokemon) -> Battle {
         let side1 = Side::new(vec![p1]);
         let side2 = Side::new(vec![p2]);
-        Battle::new(side1, side2, 12345)
+        Battle::new(side1, side2, [12, 34, 56, 78])
     }
 
     // === Pokemon tests ===
@@ -130,7 +130,7 @@ mod tests {
     fn test_choices_with_switch() {
         let side1 = Side::new(vec![make_garchomp(), make_dragapult()]);
         let side2 = Side::new(vec![make_blissey()]);
-        let battle = Battle::new(side1, side2, 42);
+        let battle = Battle::new(side1, side2, [42, 0, 0, 0]);
         let choices = battle.choices(0);
         assert!(choices.contains(&Choice::Switch(1)));
     }
@@ -267,7 +267,7 @@ mod tests {
     fn test_stealth_rock_damage() {
         let side1 = Side::new(vec![make_garchomp(), make_dragapult()]);
         let side2 = Side::new(vec![make_blissey()]);
-        let mut battle = Battle::new(side1, side2, 42);
+        let mut battle = Battle::new(side1, side2, [42, 0, 0, 0]);
         battle.sides[0].side_conditions.stealth_rock = true;
         // Switch to Dragapult
         battle.execute_choice(0, Choice::Switch(1));
@@ -281,7 +281,7 @@ mod tests {
     fn test_spikes_damage() {
         let side1 = Side::new(vec![make_garchomp(), make_blissey()]);
         let side2 = Side::new(vec![make_dragapult()]);
-        let mut battle = Battle::new(side1, side2, 42);
+        let mut battle = Battle::new(side1, side2, [42, 0, 0, 0]);
         battle.sides[0].side_conditions.spikes = 1;
         battle.execute_choice(0, Choice::Switch(1));
         // Blissey is Normal, grounded, takes 1/8 from 1 layer
@@ -295,7 +295,7 @@ mod tests {
         let corviknight = make_pokemon("Corviknight", Nature::Impish, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
         let side1 = Side::new(vec![make_garchomp(), corviknight]);
         let side2 = Side::new(vec![make_blissey()]);
-        let mut battle = Battle::new(side1, side2, 42);
+        let mut battle = Battle::new(side1, side2, [42, 0, 0, 0]);
         battle.sides[0].side_conditions.spikes = 3;
         battle.execute_choice(0, Choice::Switch(1));
         // Corviknight is Flying/Steel, immune to spikes
@@ -387,7 +387,7 @@ mod tests {
     fn test_intimidate_lowers_attack_on_switch() {
         let side1 = Side::new(vec![make_garchomp(), make_dragapult()]);
         let side2 = Side::new(vec![make_blissey()]);
-        let mut battle = Battle::new(side1, side2, 42);
+        let mut battle = Battle::new(side1, side2, [42, 0, 0, 0]);
         // Give Dragapult Intimidate
         battle.sides[0].team[1].ability_id = AbilityId::Intimidate;
         assert_eq!(battle.sides[1].active().boosts.atk, 0);
@@ -438,7 +438,7 @@ mod tests {
     fn test_drizzle_sets_rain() {
         let side1 = Side::new(vec![make_garchomp(), make_dragapult()]);
         let side2 = Side::new(vec![make_blissey()]);
-        let mut battle = Battle::new(side1, side2, 42);
+        let mut battle = Battle::new(side1, side2, [42, 0, 0, 0]);
         battle.sides[0].team[1].ability_id = AbilityId::Drizzle;
         assert_eq!(battle.field.weather, Weather::None);
         battle.execute_choice(0, Choice::Switch(1));
@@ -450,7 +450,7 @@ mod tests {
     fn test_drought_sets_sun() {
         let side1 = Side::new(vec![make_garchomp(), make_dragapult()]);
         let side2 = Side::new(vec![make_blissey()]);
-        let mut battle = Battle::new(side1, side2, 42);
+        let mut battle = Battle::new(side1, side2, [42, 0, 0, 0]);
         battle.sides[0].team[1].ability_id = AbilityId::Drought;
         battle.execute_choice(0, Choice::Switch(1));
         assert_eq!(battle.field.weather, Weather::Sun);
@@ -606,7 +606,7 @@ mod tests {
     fn test_heavy_duty_boots_skips_hazards() {
         let side1 = Side::new(vec![make_garchomp(), make_blissey()]);
         let side2 = Side::new(vec![make_dragapult()]);
-        let mut battle = Battle::new(side1, side2, 42);
+        let mut battle = Battle::new(side1, side2, [42, 0, 0, 0]);
         battle.sides[0].side_conditions.stealth_rock = true;
         battle.sides[0].side_conditions.spikes = 3;
         battle.sides[0].team[1].item_id = ItemId::HeavyDutyBoots;
@@ -640,7 +640,7 @@ mod tests {
     fn test_forced_switch_after_faint() {
         let side1 = Side::new(vec![make_garchomp(), make_blissey()]);
         let side2 = Side::new(vec![make_dragapult()]);
-        let mut battle = Battle::new(side1, side2, 42);
+        let mut battle = Battle::new(side1, side2, [42, 0, 0, 0]);
         // Kill p1's active
         battle.sides[0].active_mut().hp = 1;
         battle.sides[0].active_mut().is_fainted = false;
@@ -665,7 +665,7 @@ mod tests {
     fn test_forced_switch_choices_only_switches() {
         let side1 = Side::new(vec![make_garchomp(), make_blissey()]);
         let side2 = Side::new(vec![make_dragapult()]);
-        let mut battle = Battle::new(side1, side2, 42);
+        let mut battle = Battle::new(side1, side2, [42, 0, 0, 0]);
         battle.phase = BattlePhase::ForcedSwitch(0);
         let choices = battle.choices(0);
         for c in &choices {
@@ -835,7 +835,7 @@ mod tests {
         p1.tera_type = Some(Type::Steel);
         let side1 = Side::new(vec![p1, make_blissey()]);
         let side2 = Side::new(vec![make_dragapult()]);
-        let mut battle = Battle::new(side1, side2, 42);
+        let mut battle = Battle::new(side1, side2, [42, 0, 0, 0]);
         // Tera first mon
         battle.execute_choice(0, Choice::Tera(0));
         assert!(battle.sides[0].tera_used);
@@ -894,7 +894,7 @@ mod tests {
 
         let side1 = Side::new(vec![p1_a, p1_b]);
         let side2 = Side::new(vec![p2_a, p2_b]);
-        let mut battle = Battle::new(side1, side2, 99999);
+        let mut battle = Battle::new(side1, side2, [99, 99, 99, 99]);
 
         // Play up to 100 turns or until game ends
         for _ in 0..100 {

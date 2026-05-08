@@ -24,6 +24,9 @@ pub fn calculate_damage(ctx: &DamageContext) -> u16 {
     // Base damage
     let mut damage = ((2 * level / 5 + 2) * power * atk / def) / 50 + 2;
 
+    // Weather (applied early in PS)
+    damage = (damage as f32 * ctx.weather_boost) as u32;
+
     // Critical hit (1.5x in Gen 6+)
     if ctx.critical {
         damage = damage * 3 / 2;
@@ -40,10 +43,7 @@ pub fn calculate_damage(ctx: &DamageContext) -> u16 {
     // Type effectiveness
     damage = (damage as f32 * ctx.type_effectiveness) as u32;
 
-    // Weather
-    damage = (damage as f32 * ctx.weather_boost) as u32;
-
-    // Other modifiers (Life Orb, abilities, etc.)
+    // Other modifiers (burn, abilities, items, screens)
     damage = (damage as f32 * ctx.other_modifiers) as u32;
 
     damage.max(1) as u16

@@ -40,9 +40,18 @@ impl Battle {
             Choice::Move(idx) | Choice::Tera(idx) => {
                 let mon = self.sides[player as usize].active();
                 let move_id = mon.moves[idx as usize].move_id;
-                pkmn_core::moves::get_move_by_id(move_id)
+                let base_priority = pkmn_core::moves::get_move_by_id(move_id)
                     .map(|m| m.priority)
-                    .unwrap_or(0)
+                    .unwrap_or(0);
+                // Prankster: +1 priority for status moves
+                if mon.ability_id == pkmn_core::abilities::AbilityId::Prankster {
+                    if let Some(m) = pkmn_core::moves::get_move_by_id(move_id) {
+                        if m.category == pkmn_core::moves::MoveCategory::Status {
+                            return base_priority + 1;
+                        }
+                    }
+                }
+                base_priority
             }
         }
     }
