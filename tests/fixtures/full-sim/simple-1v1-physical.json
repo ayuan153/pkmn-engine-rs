@@ -1,0 +1,125 @@
+{
+  "id": "simple-1v1-physical",
+  "description": "Simple 1v1: two physical attackers trading hits until one faints",
+  "seed": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "p1": {
+    "team": [
+      {
+        "name": "Garchomp",
+        "species": "Garchomp",
+        "item": "Life Orb",
+        "ability": "Rough Skin",
+        "moves": [
+          "Earthquake",
+          "Dragon Claw",
+          "Stone Edge",
+          "Swords Dance"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "name": "Dragonite",
+        "species": "Dragonite",
+        "item": "Choice Band",
+        "ability": "Multiscale",
+        "moves": [
+          "Outrage",
+          "Extreme Speed",
+          "Earthquake",
+          "Fire Punch"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Garchomp|Garchomp, F|357/357",
+    "|switch|p2a: Dragonite|Dragonite, F|323/323",
+    "|turn|1",
+    "|move|p1a: Garchomp|Earthquake|p2a: Dragonite",
+    "|-immune|p2a: Dragonite",
+    "|move|p2a: Dragonite|Outrage|p1a: Garchomp",
+    "|-supereffective|p1a: Garchomp",
+    "|-damage|p1a: Garchomp|0 fnt",
+    "|-damage|p2a: Dragonite|283/323|[from] ability: Rough Skin|[of] p1a: Garchomp",
+    "|faint|p1a: Garchomp",
+    "|win|Player 2"
+  ]
+}

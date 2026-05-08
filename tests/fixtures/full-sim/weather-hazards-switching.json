@@ -1,0 +1,233 @@
+{
+  "id": "weather-hazards-switching",
+  "description": "Sand + Stealth Rock + switching + Leftovers recovery",
+  "seed": [
+    10,
+    20,
+    30,
+    40
+  ],
+  "p1": {
+    "team": [
+      {
+        "name": "Tyranitar",
+        "species": "Tyranitar",
+        "item": "Leftovers",
+        "ability": "Sand Stream",
+        "moves": [
+          "Stealth Rock",
+          "Crunch",
+          "Earthquake",
+          "Stone Edge"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      },
+      {
+        "name": "Excadrill",
+        "species": "Excadrill",
+        "item": "Choice Band",
+        "ability": "Sand Rush",
+        "moves": [
+          "Earthquake",
+          "Iron Head",
+          "Rock Slide",
+          "Rapid Spin"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "name": "Corviknight",
+        "species": "Corviknight",
+        "item": "Leftovers",
+        "ability": "Pressure",
+        "moves": [
+          "Brave Bird",
+          "Body Press",
+          "Roost",
+          "Defog"
+        ],
+        "nature": "Impish",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      },
+      {
+        "name": "Toxapex",
+        "species": "Toxapex",
+        "item": "Rocky Helmet",
+        "ability": "Regenerator",
+        "moves": [
+          "Scald",
+          "Toxic",
+          "Recover",
+          "Haze"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "switch 2"
+    ],
+    [
+      "switch 2",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Tyranitar|Tyranitar, F|404/404",
+    "|switch|p2a: Corviknight|Corviknight, M|400/400",
+    "|-ability|p2a: Corviknight|Pressure",
+    "|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar",
+    "|turn|1",
+    "|move|p2a: Corviknight|Brave Bird|p1a: Tyranitar",
+    "|-resisted|p1a: Tyranitar",
+    "|-damage|p1a: Tyranitar|346/404",
+    "|-damage|p2a: Corviknight|381/400|[from] Recoil",
+    "|move|p1a: Tyranitar|Stealth Rock|p2a: Corviknight",
+    "|-sidestart|p2: Player 2|move: Stealth Rock",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-heal|p2a: Corviknight|400/400|[from] item: Leftovers",
+    "|-heal|p1a: Tyranitar|371/404|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|2",
+    "|switch|p2a: Toxapex|Toxapex, F|304/304",
+    "|-damage|p2a: Toxapex|266/304|[from] Stealth Rock",
+    "|move|p1a: Tyranitar|Crunch|p2a: Toxapex",
+    "|-damage|p2a: Toxapex|182/304",
+    "|-damage|p1a: Tyranitar|304/404|[from] item: Rocky Helmet|[of] p2a: Toxapex",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-damage|p2a: Toxapex|163/304|[from] Sandstorm",
+    "|-heal|p1a: Tyranitar|329/404|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|3",
+    "|switch|p1a: Excadrill|Excadrill, F|361/361",
+    "|move|p2a: Toxapex|Toxic|p1a: Excadrill",
+    "|-immune|p1a: Excadrill",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-damage|p2a: Toxapex|144/304|[from] Sandstorm",
+    "|upkeep",
+    "|turn|4",
+    "|move|p1a: Excadrill|Earthquake|p2a: Toxapex",
+    "|-supereffective|p2a: Toxapex",
+    "|-damage|p2a: Toxapex|0 fnt",
+    "|faint|p2a: Toxapex",
+    "|-weather|Sandstorm|[upkeep]",
+    "|upkeep"
+  ]
+}

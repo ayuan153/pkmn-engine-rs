@@ -1,0 +1,146 @@
+{
+  "id": "screens-boosts-crit",
+  "description": "Reflect + Swords Dance + critical hit interaction",
+  "seed": [
+    42,
+    42,
+    42,
+    42
+  ],
+  "p1": {
+    "team": [
+      {
+        "name": "Grimmsnarl",
+        "species": "Grimmsnarl",
+        "item": "Light Clay",
+        "ability": "Prankster",
+        "moves": [
+          "Reflect",
+          "Light Screen",
+          "Thunder Wave",
+          "Spirit Break"
+        ],
+        "nature": "Careful",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 252,
+          "spe": 4
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "name": "Kingambit",
+        "species": "Kingambit",
+        "item": "Black Glasses",
+        "ability": "Supreme Overlord",
+        "moves": [
+          "Swords Dance",
+          "Kowtow Cleave",
+          "Iron Head",
+          "Sucker Punch"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Grimmsnarl|Grimmsnarl, M|394/394",
+    "|switch|p2a: Kingambit|Kingambit, M|341/341",
+    "|turn|1",
+    "|move|p1a: Grimmsnarl|Reflect|p1a: Grimmsnarl",
+    "|-sidestart|p1: Player 1|Reflect",
+    "|move|p2a: Kingambit|Swords Dance|p2a: Kingambit",
+    "|-boost|p2a: Kingambit|atk|2",
+    "|upkeep",
+    "|turn|2",
+    "|move|p1a: Grimmsnarl|Thunder Wave|p2a: Kingambit",
+    "|-immune|p2a: Kingambit",
+    "|move|p2a: Kingambit|Kowtow Cleave|p1a: Grimmsnarl",
+    "|-resisted|p1a: Grimmsnarl",
+    "|-damage|p1a: Grimmsnarl|326/394",
+    "|upkeep",
+    "|turn|3",
+    "|move|p2a: Kingambit|Kowtow Cleave|p1a: Grimmsnarl",
+    "|-resisted|p1a: Grimmsnarl",
+    "|-damage|p1a: Grimmsnarl|259/394",
+    "|move|p1a: Grimmsnarl|Spirit Break|p2a: Kingambit",
+    "|-damage|p2a: Kingambit|253/341",
+    "|-unboost|p2a: Kingambit|spa|1",
+    "|upkeep",
+    "|turn|4",
+    "|move|p2a: Kingambit|Kowtow Cleave|p1a: Grimmsnarl",
+    "|-resisted|p1a: Grimmsnarl",
+    "|-damage|p1a: Grimmsnarl|182/394",
+    "|move|p1a: Grimmsnarl|Spirit Break|p2a: Kingambit",
+    "|-damage|p2a: Kingambit|160/341",
+    "|-unboost|p2a: Kingambit|spa|1",
+    "|upkeep",
+    "|turn|5"
+  ]
+}
