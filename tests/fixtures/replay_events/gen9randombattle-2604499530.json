@@ -45,7 +45,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 79,
-      "max_hp": 277
+      "max_hp": 277,
+      "crit": true
     },
     {
       "type": "heal",
@@ -97,7 +98,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 142,
-      "max_hp": 244
+      "max_hp": 244,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",
@@ -121,7 +123,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 200,
-      "max_hp": 225
+      "max_hp": 225,
+      "effectiveness": "resisted"
     },
     {
       "type": "enditem",
@@ -147,7 +150,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -193,7 +197,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 183,
-      "max_hp": 321
+      "max_hp": 321,
+      "effectiveness": "super"
     },
     {
       "type": "enditem",
@@ -243,7 +248,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 33,
-      "max_hp": 321
+      "max_hp": 321,
+      "effectiveness": "super"
     },
     {
       "type": "move",
@@ -270,7 +276,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 130,
-      "max_hp": 310
+      "max_hp": 310,
+      "effectiveness": "super"
     },
     {
       "type": "move",
@@ -296,7 +303,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -398,7 +406,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 142,
-      "max_hp": 216
+      "max_hp": 216,
+      "effectiveness": "resisted"
     },
     {
       "type": "unboost",
@@ -438,7 +447,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "unboost",
@@ -538,6 +548,11 @@
       "target": "p1"
     },
     {
+      "type": "miss",
+      "player": "p2",
+      "target": "p1"
+    },
+    {
       "type": "move",
       "player": "p1",
       "move": "Knock Off",
@@ -591,7 +606,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "resisted"
     },
     {
       "type": "faint",
@@ -629,6 +645,11 @@
       "turn": 16
     },
     {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Water"
+    },
+    {
       "type": "move",
       "player": "p2",
       "move": "Wave Crash",
@@ -638,7 +659,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 24,
-      "max_hp": 246
+      "max_hp": 246,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
@@ -657,7 +679,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 127,
-      "max_hp": 286
+      "max_hp": 286,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
@@ -703,7 +726,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 81,
-      "max_hp": 268
+      "max_hp": 268,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",

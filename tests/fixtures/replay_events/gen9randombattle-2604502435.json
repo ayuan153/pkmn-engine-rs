@@ -43,7 +43,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 208,
-      "max_hp": 280
+      "max_hp": 280,
+      "effectiveness": "super"
     },
     {
       "type": "switch",
@@ -121,7 +122,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 192,
-      "max_hp": 246
+      "max_hp": 246,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",
@@ -164,7 +166,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 46,
-      "max_hp": 246
+      "max_hp": 246,
+      "crit": true
     },
     {
       "type": "move",
@@ -330,7 +333,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 12,
-      "max_hp": 261
+      "max_hp": 261,
+      "effectiveness": "super"
     },
     {
       "type": "heal",
@@ -466,7 +470,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 116,
-      "max_hp": 298
+      "max_hp": 298,
+      "effectiveness": "super"
     },
     {
       "type": "enditem",
@@ -541,7 +546,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 40,
-      "max_hp": 280
+      "max_hp": 280,
+      "effectiveness": "super"
     },
     {
       "type": "switch",
@@ -568,7 +574,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 268,
-      "max_hp": 304
+      "max_hp": 304,
+      "effectiveness": "resisted"
     },
     {
       "type": "enditem",
@@ -819,7 +826,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 66,
-      "max_hp": 247
+      "max_hp": 247,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",
@@ -834,7 +842,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "resisted"
     },
     {
       "type": "faint",
@@ -893,7 +902,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 20,
-      "max_hp": 249
+      "max_hp": 249,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -915,7 +925,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 96,
-      "max_hp": 343
+      "max_hp": 343,
+      "effectiveness": "super"
     },
     {
       "type": "status",
@@ -941,7 +952,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -998,7 +1010,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 130,
-      "max_hp": 248
+      "max_hp": 248,
+      "effectiveness": "resisted"
     },
     {
       "type": "move",
@@ -1009,7 +1022,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -1070,7 +1084,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -1122,7 +1137,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",

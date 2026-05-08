@@ -1,0 +1,1785 @@
+{
+  "id": "gen9randombattle-2604523213",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Decidueye-Hisui",
+      "level": 87,
+      "hp": 295,
+      "max_hp": 295
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Walking Wake",
+      "level": 79,
+      "hp": 286,
+      "max_hp": 286
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Hypno",
+      "level": 95,
+      "hp": 315,
+      "max_hp": 315
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flamethrower",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 244,
+      "max_hp": 315
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 263,
+      "max_hp": 315
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Jirachi",
+      "level": 80,
+      "hp": 291,
+      "max_hp": 291
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Toxic",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 282,
+      "max_hp": 315
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Protect",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Slam",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 301,
+      "max_hp": 315
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ampharos",
+      "level": 88,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Slam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 247,
+      "max_hp": 302
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ting-Lu",
+      "level": 78,
+      "hp": 370,
+      "max_hp": 370
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Vessel of Ruin"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Agility",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dazzling Gleam",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 256,
+      "max_hp": 370,
+      "effectiveness": "super"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 217,
+      "max_hp": 302,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ruination",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 109,
+      "max_hp": 302
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Decidueye-Hisui",
+      "level": 87,
+      "hp": 295,
+      "max_hp": 295
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 247,
+      "max_hp": 295,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 265,
+      "max_hp": 295
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Araquanid",
+      "level": 82,
+      "hp": 246,
+      "max_hp": 246
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leaf Blade",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 131,
+      "max_hp": 246
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 283,
+      "max_hp": 295
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leaf Blade",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "crit": true
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 295,
+      "max_hp": 295
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Rabsca",
+      "level": 91,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Golem",
+      "level": 87,
+      "hp": 281,
+      "max_hp": 281
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 130,
+      "max_hp": 281
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Bug Buzz",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Squawkabilly-Yellow",
+      "level": 89,
+      "hp": 291,
+      "max_hp": 291
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Jirachi",
+      "level": 80,
+      "hp": 291,
+      "max_hp": 291
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Brave Bird",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 153,
+      "max_hp": 291,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 245,
+      "max_hp": 291,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 171,
+      "max_hp": 291
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ampharos",
+      "level": 88,
+      "hp": 109,
+      "max_hp": 302
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wish",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 189,
+      "max_hp": 291
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Ting-Lu",
+      "level": 78,
+      "hp": 256,
+      "max_hp": 370
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Vessel of Ruin"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Focus Blast",
+      "target": "p2"
+    },
+    {
+      "type": "miss",
+      "player": "p1",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 370,
+      "max_hp": 370
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Decidueye-Hisui",
+      "level": 87,
+      "hp": 295,
+      "max_hp": 295
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ruination",
+      "target": "p1"
+    },
+    {
+      "type": "miss",
+      "player": "p2",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Squawkabilly-Yellow",
+      "level": 89,
+      "hp": 245,
+      "max_hp": 291
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ruination",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 123,
+      "max_hp": 291
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Brave Bird",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 91,
+      "max_hp": 370
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 31,
+      "max_hp": 291,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Payback",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Palkia",
+      "level": 75,
+      "hp": 259,
+      "max_hp": 259
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Pressure"
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hydro Pump",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "effectiveness": "super"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Walking Wake",
+      "level": 79,
+      "hp": 286,
+      "max_hp": 286
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Hypno",
+      "level": 95,
+      "hp": 301,
+      "max_hp": 315
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Draco Meteor",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 135,
+      "max_hp": 315
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 154,
+      "max_hp": 315
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Jirachi",
+      "level": 80,
+      "hp": 189,
+      "max_hp": 291
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ampharos",
+      "level": 88,
+      "hp": 109,
+      "max_hp": 302
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 207,
+      "max_hp": 291
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunderbolt",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 50,
+      "max_hp": 291
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 79,
+      "max_hp": 302,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Wish",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 68,
+      "max_hp": 291
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Agility",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 213,
+      "max_hp": 291
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 231,
+      "max_hp": 291
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunderbolt",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 95,
+      "max_hp": 291
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 49,
+      "max_hp": 302,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Slam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 113,
+      "max_hp": 291
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Palkia",
+      "level": 75,
+      "hp": 259,
+      "max_hp": 259
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Pressure"
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Fire Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "effectiveness": "super"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Walking Wake",
+      "level": 79,
+      "hp": 286,
+      "max_hp": 286
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flip Turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 246,
+      "max_hp": 259,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Rabsca",
+      "level": 91,
+      "hp": 284,
+      "max_hp": 284
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spacial Rend",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 163,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Fire Blast",
+      "target": "p2"
+    },
+    {
+      "type": "miss",
+      "player": "p1",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Revival Blessing",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 145,
+      "max_hp": 291
+    },
+    {
+      "type": "turn",
+      "turn": 27
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Fire Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 1,
+      "max_hp": 284,
+      "effectiveness": "super"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 143,
+      "max_hp": 284
+    },
+    {
+      "type": "turn",
+      "turn": 28
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Fire Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "effectiveness": "super"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Crabominable",
+      "level": 90,
+      "hp": 321,
+      "max_hp": 321
+    },
+    {
+      "type": "turn",
+      "turn": 29
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Fire Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 173,
+      "max_hp": 321,
+      "effectiveness": "super"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Hammer",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 57,
+      "max_hp": 259
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 30
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spacial Rend",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 52,
+      "max_hp": 321
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Ice Hammer",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Decidueye-Hisui",
+      "level": 87,
+      "hp": 295,
+      "max_hp": 295
+    },
+    {
+      "type": "turn",
+      "turn": 31
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Leaf Blade",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Jirachi",
+      "level": 80,
+      "hp": 145,
+      "max_hp": 291
+    },
+    {
+      "type": "turn",
+      "turn": 32
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Protect",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Triple Arrows",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 163,
+      "max_hp": 291
+    },
+    {
+      "type": "turn",
+      "turn": 33
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Body Slam",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 231,
+      "max_hp": 295
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Triple Arrows",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "crit": true
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 249,
+      "max_hp": 295
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Walking Wake",
+      "level": 79,
+      "hp": 286,
+      "max_hp": 286
+    },
+    {
+      "type": "turn",
+      "turn": 34
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Hypno",
+      "level": 95,
+      "hp": 154,
+      "max_hp": 315
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Fire"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flamethrower",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 49,
+      "max_hp": 315
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 68,
+      "max_hp": 315
+    },
+    {
+      "type": "turn",
+      "turn": 35
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Protect",
+      "target": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flamethrower",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 87,
+      "max_hp": 315
+    },
+    {
+      "type": "turn",
+      "turn": 36
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flamethrower",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Decidueye-Hisui",
+      "level": 87,
+      "hp": 249,
+      "max_hp": 295
+    },
+    {
+      "type": "turn",
+      "turn": 37
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Water"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flamethrower",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 173,
+      "max_hp": 295,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Triple Arrows",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 177,
+      "max_hp": 286
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 191,
+      "max_hp": 295
+    },
+    {
+      "type": "turn",
+      "turn": 38
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flamethrower",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 117,
+      "max_hp": 295,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 265,
+      "max_hp": 295
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 283,
+      "max_hp": 295
+    },
+    {
+      "type": "turn",
+      "turn": 39
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flamethrower",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 218,
+      "max_hp": 295,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Triple Arrows",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 12,
+      "max_hp": 286,
+      "crit": true
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 236,
+      "max_hp": 295
+    },
+    {
+      "type": "turn",
+      "turn": 40
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Flamethrower",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 165,
+      "max_hp": 295,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Triple Arrows",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "win",
+      "player": "Cowman25!"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,a4530e8de7b9cc053229d55a2d480bbd\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Cowman25!\",\"avatar\":\"roark\",\"rating\":1911,\"seed\":\"sodium,be809ec3c1a071c9d54432e42e5c4bd0\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"tamgur\",\"avatar\":\"acetrainercouple\",\"rating\":1910,\"seed\":\"sodium,b6564887799d8461b93419d6ed59d3cf\"}"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flamethrower"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "agility"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dazzlinggleam"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ruination"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafblade"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafblade"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stickyweb"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychic"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bugbuzz"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "focusblast"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ruination"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ruination"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "payback"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hydropump"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "ruination"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dracometeor"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "agility"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderbolt"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "wish"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spacialrend"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "revivalblessing"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icehammer"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spacialrend"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icehammer"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "leafblade"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "icehammer"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "triplearrows"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "triplearrows"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "bodyslam"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flamethrower terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "protect"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flamethrower"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "toxic"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flamethrower"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "triplearrows terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flamethrower"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flamethrower"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "triplearrows"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flamethrower"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "triplearrows"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "flamethrower"
+    }
+  ],
+  "winner": "Cowman25!"
+}

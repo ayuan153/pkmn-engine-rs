@@ -45,7 +45,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 213,
-      "max_hp": 297
+      "max_hp": 297,
+      "effectiveness": "super"
     },
     {
       "type": "boost",
@@ -56,6 +57,11 @@
     {
       "type": "turn",
       "turn": 2
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Grass"
     },
     {
       "type": "move",
@@ -84,7 +90,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "crit": true
     },
     {
       "type": "faint",
@@ -153,7 +160,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 104,
-      "max_hp": 290
+      "max_hp": 290,
+      "crit": true
     },
     {
       "type": "move",
@@ -181,7 +189,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 73,
-      "max_hp": 270
+      "max_hp": 270,
+      "effectiveness": "resisted"
     },
     {
       "type": "move",
@@ -192,7 +201,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "crit": true
     },
     {
       "type": "faint",
@@ -225,7 +235,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 232,
-      "max_hp": 288
+      "max_hp": 288,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
@@ -464,7 +475,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 314,
-      "max_hp": 328
+      "max_hp": 328,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
@@ -574,7 +586,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "crit": true
     },
     {
       "type": "faint",
@@ -640,6 +653,11 @@
       "type": "move",
       "player": "p2",
       "move": "Hurricane",
+      "target": "p1"
+    },
+    {
+      "type": "miss",
+      "player": "p2",
       "target": "p1"
     },
     {

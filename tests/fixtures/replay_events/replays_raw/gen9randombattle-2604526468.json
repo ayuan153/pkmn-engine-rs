@@ -1,0 +1,16 @@
+{
+  "id": "gen9randombattle-2604526468",
+  "format": "[Gen 9] Random Battle",
+  "players": [
+    "Gshs1",
+    "Flamerangel"
+  ],
+  "log": "|j|\u2606Gshs1\n|j|\u2606Flamerangel\n|t:|1778211647\n|gametype|singles\n|player|p1|Gshs1|bugsy|1248\n|player|p2|Flamerangel|170|1262\n|gen|9\n|tier|[Gen 9] Random Battle\n|rated|\n|rule|Species Clause: Limit one of each Pok\u00e9mon\n|rule|HP Percentage Mod: HP is shown in percentages\n|rule|Sleep Clause Mod: Limit one foe put to sleep\n|rule|Illusion Level Mod: Illusion disguises the Pok\u00e9mon's true level\n|\n|t:|1778211647\n|teamsize|p1|6\n|teamsize|p2|6\n|start\n|switch|p1a: Amoonguss|Amoonguss, L82, F|321/321\n|switch|p2a: Iron Moth|Iron Moth, L78|253/253\n|turn|1\n|\n|t:|1778211653\n|move|p2a: Iron Moth|Fire Blast|p1a: Amoonguss\n|-supereffective|p1a: Amoonguss\n|-damage|p1a: Amoonguss|0 fnt\n|faint|p1a: Amoonguss\n|\n|upkeep\n|\n|t:|1778211657\n|switch|p1a: Floatzel|Floatzel, L86, F|286/286\n|turn|2\n|\n|t:|1778211661\n|-end|p2a: Iron Moth|Quark Drive|[silent]\n|switch|p2a: Trevenant|Trevenant, L89, F|296/296\n|move|p1a: Floatzel|Wave Crash|p2a: Trevenant\n|-resisted|p2a: Trevenant\n|-damage|p2a: Trevenant|182/296\n|-damage|p1a: Floatzel|248/286|[from] Recoil\n|\n|upkeep\n|turn|3\n|inactive|Battle timer is ON: inactive players will automatically lose when time's up. (requested by Gshs1)\n|l|\u2606Flamerangel\n|inactive|Flamerangel disconnected and has a minute to reconnect!\n|player|p2|\n|inactive|Flamerangel has 30 seconds to reconnect!\n|inactive|Flamerangel has 20 seconds to reconnect!\n|inactive|Flamerangel has 15 seconds to reconnect!\n|inactive|Flamerangel has 10 seconds to reconnect!\n|inactive|Flamerangel has 5 seconds to reconnect!\n|-message|Flamerangel lost due to inactivity.\n|\n|win|Gshs1\n|raw|Gshs1's rating: 1248 &rarr; <strong>1274</strong><br />(+26 for winning)\n|raw|Flamerangel's rating: 1262 &rarr; <strong>1236</strong><br />(-26 for losing)\n",
+  "inputlog": ">version d3c0b4cf388ee6ae107ccf7216674edd176762ce\n>start {\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,66c24ad1cc7bc480a7b12a846016a701\",\"rated\":\"Rated battle\"}\n>player p1 {\"name\":\"Gshs1\",\"avatar\":\"bugsy\",\"rating\":1248,\"seed\":\"sodium,9798948839b8965c372ad26f24f1e48e\"}\n>player p2 {\"name\":\"Flamerangel\",\"avatar\":\"170\",\"rating\":1262,\"seed\":\"sodium,c6ae12bc153c087200eb923bd583f94d\"}\n>p1 move spore\n>p2 move fireblast\n>p1 switch 4\n>p1 move wavecrash\n>p2 switch 6\n>forcelose p2",
+  "uploadtime": 1778211787,
+  "views": 1,
+  "formatid": "gen9randombattle",
+  "rating": 1236,
+  "private": 0,
+  "password": null
+}

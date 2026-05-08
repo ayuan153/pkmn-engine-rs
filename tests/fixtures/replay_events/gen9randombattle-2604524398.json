@@ -1,0 +1,73 @@
+{
+  "id": "gen9randombattle-2604524398",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Floatzel",
+      "level": 86,
+      "hp": 286,
+      "max_hp": 286
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Calyrex-Shadow",
+      "level": 64,
+      "hp": 235,
+      "max_hp": 235
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "As One"
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Unnerve"
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "win",
+      "player": "Bigoleg"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,a3f9d0c07b0c6975cd658649ab82a49c\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Bigoleg\",\"avatar\":\"ethan\",\"rating\":1905,\"seed\":\"sodium,655b14c88971394a4b7e1d4259346532\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"rubiixen\",\"avatar\":\"jacinthe\",\"rating\":1938,\"seed\":\"sodium,12e87c4bd85e2cced210c1d8c800f962\"}"
+    },
+    {
+      "player": "chat",
+      "action": "\u2606Bigoleg|Gg",
+      "args": ""
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
+    }
+  ],
+  "winner": "Bigoleg"
+}

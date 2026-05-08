@@ -31,7 +31,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "enditem",
@@ -154,7 +155,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 111,
-      "max_hp": 235
+      "max_hp": 235,
+      "effectiveness": "super"
     },
     {
       "type": "turn",
@@ -227,7 +229,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 118,
-      "max_hp": 263
+      "max_hp": 263,
+      "crit": true
     },
     {
       "type": "turn",
@@ -268,6 +271,11 @@
     {
       "type": "turn",
       "turn": 9
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Dark"
     },
     {
       "type": "move",
@@ -340,7 +348,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "enditem",
@@ -381,6 +390,11 @@
       "turn": 12
     },
     {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Water"
+    },
+    {
       "type": "move",
       "player": "p2",
       "move": "Flare Blitz",
@@ -390,7 +404,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 33,
-      "max_hp": 263
+      "max_hp": 263,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
@@ -415,7 +430,9 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super",
+      "crit": true
     },
     {
       "type": "faint",
@@ -451,7 +468,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 191,
-      "max_hp": 261
+      "max_hp": 261,
+      "crit": true
     },
     {
       "type": "damage",
@@ -491,7 +509,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 63,
-      "max_hp": 239
+      "max_hp": 239,
+      "effectiveness": "super"
     },
     {
       "type": "turn",
@@ -540,18 +559,21 @@
       "type": "damage",
       "player": "p2",
       "hp": 161,
-      "max_hp": 241
+      "max_hp": 241,
+      "effectiveness": "super"
     },
     {
       "type": "damage",
       "player": "p2",
       "hp": 15,
-      "max_hp": 241
+      "max_hp": 241,
+      "effectiveness": "super"
     },
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -579,12 +601,14 @@
       "type": "damage",
       "player": "p2",
       "hp": 204,
-      "max_hp": 328
+      "max_hp": 328,
+      "effectiveness": "super"
     },
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -630,6 +654,11 @@
       "type": "move",
       "player": "p2",
       "move": "Thunder Wave",
+      "target": "p1"
+    },
+    {
+      "type": "miss",
+      "player": "p2",
       "target": "p1"
     },
     {

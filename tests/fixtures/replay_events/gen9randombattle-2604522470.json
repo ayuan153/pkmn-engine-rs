@@ -1,0 +1,1088 @@
+{
+  "id": "gen9randombattle-2604522470",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Chesnaught",
+      "level": 84,
+      "hp": 285,
+      "max_hp": 285
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toxapex",
+      "level": 82,
+      "hp": 216,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Wood Hammer",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 128,
+      "max_hp": 216
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 256,
+      "max_hp": 285,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Toxic Spikes",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Toxic Spikes"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 273,
+      "max_hp": 285
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 141,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Tropius",
+      "level": 91,
+      "hp": 328,
+      "max_hp": 328
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Wood Hammer",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 297,
+      "max_hp": 328,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 263,
+      "max_hp": 285,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 280,
+      "max_hp": 285
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dragonite",
+      "level": 74,
+      "hp": 257,
+      "max_hp": 257
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dragon Dance",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toxapex",
+      "level": 82,
+      "hp": 213,
+      "max_hp": 216
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Outrage",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 126,
+      "max_hp": 216
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 139,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Florges-Orange",
+      "level": 85,
+      "hp": 271,
+      "max_hp": 271
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Outrage",
+      "target": "p2"
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Gengar",
+      "level": 81,
+      "hp": 230,
+      "max_hp": 230
+    },
+    {
+      "type": "sideend",
+      "player": "p1",
+      "condition": "Toxic Spikes"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Calm Mind",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Ground"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sludge Wave",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 234,
+      "max_hp": 271,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Tera Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0,
+      "effectiveness": "super"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 250,
+      "max_hp": 271
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Chesnaught",
+      "level": 84,
+      "hp": 280,
+      "max_hp": 285
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Tropius",
+      "level": 91,
+      "hp": 297,
+      "max_hp": 328
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Wood Hammer",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 262,
+      "max_hp": 328,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 268,
+      "max_hp": 285,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 285,
+      "max_hp": 285
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dragonite",
+      "level": 74,
+      "hp": 257,
+      "max_hp": 257
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Dual Wingbeat",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 238,
+      "max_hp": 257
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 199,
+      "max_hp": 257
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Avalugg-Hisui",
+      "level": 90,
+      "hp": 317,
+      "max_hp": 317
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toxapex",
+      "level": 82,
+      "hp": 211,
+      "max_hp": 216
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 216,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Dragonite",
+      "level": 74,
+      "hp": 199,
+      "max_hp": 257
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Liquidation",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 168,
+      "max_hp": 257,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 116,
+      "max_hp": 216,
+      "effectiveness": "super"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Toxic Spikes",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Toxic Spikes"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 129,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Avalugg-Hisui",
+      "level": 90,
+      "hp": 317,
+      "max_hp": 317
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Florges-Orange",
+      "level": 85,
+      "hp": 250,
+      "max_hp": 271
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 266,
+      "max_hp": 271
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Tera Blast",
+      "target": "p1"
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Sturdy"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 1,
+      "max_hp": 317,
+      "effectiveness": "super"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Rapid Spin",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 204,
+      "max_hp": 271
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "sideend",
+      "player": "p1",
+      "condition": "Toxic Spikes"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 220,
+      "max_hp": 271
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Moonblast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 236,
+      "max_hp": 271
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Magnezone",
+      "level": 85,
+      "hp": 258,
+      "max_hp": 258
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Flash Cannon",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 164,
+      "max_hp": 271
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Tera Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0,
+      "effectiveness": "super"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 180,
+      "max_hp": 271
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Gyarados",
+      "level": 79,
+      "hp": 280,
+      "max_hp": 280
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Toxapex",
+      "level": 82,
+      "hp": 201,
+      "max_hp": 216
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dragon Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 214,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 62,
+      "max_hp": 216,
+      "effectiveness": "super"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Haze",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 75,
+      "max_hp": 216
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "effectiveness": "super"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Moxie"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Tropius",
+      "level": 91,
+      "hp": 262,
+      "max_hp": 328
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Flying"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Dragon Dance",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Leaf Blade",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 228,
+      "max_hp": 280,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Tera Blast",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0,
+      "effectiveness": "super"
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "ability",
+      "player": "p1",
+      "ability": "Moxie"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Moltres-Galar",
+      "level": 79,
+      "hp": 271,
+      "max_hp": 271
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Waterfall",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 27,
+      "max_hp": 271
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Berserk"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hurricane",
+      "target": "p1"
+    },
+    {
+      "type": "miss",
+      "player": "p2",
+      "target": "p1"
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "win",
+      "player": "UzUrFeetz"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,3d1bf8af90a82ec0eea031e1b8fac75a\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"UzUrFeetz\",\"avatar\":\"pokefan-gen4\",\"rating\":1218,\"seed\":\"sodium,5fcfa3734da9d759660f8ae2a926efb9\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"gradivussg\",\"avatar\":\"170\",\"rating\":1191,\"seed\":\"sodium,37b9be94b2a4921e789b44cf311cec45\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "woodhammer"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "toxicspikes"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "woodhammer"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "outrage"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "sludgewave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "terablast terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "woodhammer"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dualwingbeat"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "liquidation"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "toxicspikes"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "terablast"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "avalanche"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "moonblast"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flashcannon"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "terablast"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "haze"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "haze"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "dragondance terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "leafblade"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "terablast"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragondance"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "waterfall"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
+    }
+  ],
+  "winner": "UzUrFeetz"
+}

@@ -32,7 +32,9 @@
       "type": "damage",
       "player": "p1",
       "hp": 28,
-      "max_hp": 312
+      "max_hp": 312,
+      "effectiveness": "super",
+      "crit": true
     },
     {
       "type": "move",
@@ -43,7 +45,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -79,7 +82,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 248,
-      "max_hp": 281
+      "max_hp": 281,
+      "effectiveness": "resisted"
     },
     {
       "type": "switch",
@@ -210,7 +214,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -237,7 +242,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "resisted"
     },
     {
       "type": "faint",
@@ -330,6 +336,16 @@
     {
       "type": "turn",
       "turn": 10
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Flying"
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Poison"
     },
     {
       "type": "move",
@@ -474,7 +490,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 41,
-      "max_hp": 323
+      "max_hp": 323,
+      "effectiveness": "super"
     },
     {
       "type": "turn",
@@ -516,7 +533,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "resisted"
     },
     {
       "type": "faint",

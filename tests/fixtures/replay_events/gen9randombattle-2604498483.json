@@ -36,7 +36,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -79,7 +80,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 216,
-      "max_hp": 236
+      "max_hp": 236,
+      "effectiveness": "resisted"
     },
     {
       "type": "switch",
@@ -109,7 +111,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 126,
-      "max_hp": 236
+      "max_hp": 236,
+      "effectiveness": "super"
     },
     {
       "type": "move",
@@ -358,7 +361,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 16,
-      "max_hp": 270
+      "max_hp": 270,
+      "effectiveness": "super"
     },
     {
       "type": "heal",
@@ -425,7 +429,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 154,
-      "max_hp": 236
+      "max_hp": 236,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -459,7 +464,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 153,
-      "max_hp": 236
+      "max_hp": 236,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -493,7 +499,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 127,
-      "max_hp": 236
+      "max_hp": 236,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -533,7 +540,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 131,
-      "max_hp": 236
+      "max_hp": 236,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -635,7 +643,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 146,
-      "max_hp": 236
+      "max_hp": 236,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -669,7 +678,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 148,
-      "max_hp": 236
+      "max_hp": 236,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -727,6 +737,16 @@
       "turn": 20
     },
     {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Fighting"
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Steel"
+    },
+    {
       "type": "move",
       "player": "p1",
       "move": "Body Press",
@@ -735,7 +755,9 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super",
+      "crit": true
     },
     {
       "type": "faint",
@@ -816,7 +838,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 270,
-      "max_hp": 330
+      "max_hp": 330,
+      "effectiveness": "resisted"
     },
     {
       "type": "move",
@@ -828,7 +851,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 138,
-      "max_hp": 236
+      "max_hp": 236,
+      "effectiveness": "super"
     },
     {
       "type": "heal",

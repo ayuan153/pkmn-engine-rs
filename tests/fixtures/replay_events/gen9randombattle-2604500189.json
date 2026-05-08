@@ -90,7 +90,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 230,
-      "max_hp": 266
+      "max_hp": 266,
+      "effectiveness": "resisted"
     },
     {
       "type": "switch",
@@ -168,7 +169,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 156,
-      "max_hp": 246
+      "max_hp": 246,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",

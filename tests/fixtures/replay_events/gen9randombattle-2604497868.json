@@ -170,7 +170,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 189,
-      "max_hp": 261
+      "max_hp": 261,
+      "effectiveness": "resisted"
     },
     {
       "type": "switch",
@@ -434,7 +435,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 72,
-      "max_hp": 300
+      "max_hp": 300,
+      "crit": true
     },
     {
       "type": "damage",
@@ -498,6 +500,11 @@
       "type": "move",
       "player": "p2",
       "move": "Will-O-Wisp",
+      "target": "p1"
+    },
+    {
+      "type": "miss",
+      "player": "p2",
       "target": "p1"
     },
     {
@@ -722,7 +729,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 152,
-      "max_hp": 268
+      "max_hp": 268,
+      "effectiveness": "super"
     },
     {
       "type": "switch",
@@ -908,7 +916,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 24,
-      "max_hp": 268
+      "max_hp": 268,
+      "effectiveness": "super"
     },
     {
       "type": "unboost",
@@ -953,7 +962,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "unboost",
@@ -1012,7 +1022,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 129,
-      "max_hp": 256
+      "max_hp": 256,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
@@ -1034,7 +1045,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -1094,7 +1106,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 48,
-      "max_hp": 238
+      "max_hp": 238,
+      "effectiveness": "super"
     },
     {
       "type": "turn",
@@ -1235,7 +1248,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 167,
-      "max_hp": 275
+      "max_hp": 275,
+      "effectiveness": "super"
     },
     {
       "type": "enditem",
@@ -1291,7 +1305,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",

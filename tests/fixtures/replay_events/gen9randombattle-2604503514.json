@@ -32,7 +32,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 186,
-      "max_hp": 300
+      "max_hp": 300,
+      "effectiveness": "super"
     },
     {
       "type": "damage",
@@ -176,7 +177,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -223,7 +225,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 194,
-      "max_hp": 277
+      "max_hp": 277,
+      "effectiveness": "resisted"
     },
     {
       "type": "move",
@@ -234,7 +237,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -512,7 +516,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 128,
-      "max_hp": 261
+      "max_hp": 261,
+      "effectiveness": "resisted"
     },
     {
       "type": "status",
@@ -564,7 +569,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "resisted"
     },
     {
       "type": "faint",
@@ -686,7 +692,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 189,
-      "max_hp": 235
+      "max_hp": 235,
+      "effectiveness": "resisted"
     },
     {
       "type": "weather",
@@ -759,7 +766,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 146,
-      "max_hp": 235
+      "max_hp": 235,
+      "effectiveness": "resisted"
     },
     {
       "type": "weather",
@@ -862,7 +870,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "crit": true
     },
     {
       "type": "faint",
@@ -947,7 +956,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -975,7 +985,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 139,
-      "max_hp": 325
+      "max_hp": 325,
+      "effectiveness": "super"
     },
     {
       "type": "enditem",

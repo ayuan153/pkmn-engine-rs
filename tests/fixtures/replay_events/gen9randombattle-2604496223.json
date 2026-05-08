@@ -136,7 +136,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 228,
-      "max_hp": 258
+      "max_hp": 258,
+      "effectiveness": "resisted"
     },
     {
       "type": "weather",
@@ -169,7 +170,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 108,
-      "max_hp": 258
+      "max_hp": 258,
+      "effectiveness": "super"
     },
     {
       "type": "weather",
@@ -216,7 +218,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 239,
-      "max_hp": 321
+      "max_hp": 321,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",
@@ -286,7 +289,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "crit": true
     },
     {
       "type": "faint",
@@ -355,7 +359,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 76,
-      "max_hp": 258
+      "max_hp": 258,
+      "effectiveness": "resisted"
     },
     {
       "type": "switch",
@@ -435,7 +440,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "heal",
@@ -536,7 +542,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 102,
-      "max_hp": 250
+      "max_hp": 250,
+      "effectiveness": "super"
     },
     {
       "type": "damage",
@@ -635,6 +642,11 @@
     {
       "type": "turn",
       "turn": 18
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Dragon"
     },
     {
       "type": "move",
@@ -747,7 +759,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 54,
-      "max_hp": 274
+      "max_hp": 274,
+      "effectiveness": "resisted"
     },
     {
       "type": "unboost",
@@ -921,6 +934,11 @@
     {
       "type": "turn",
       "turn": 25
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Flying"
     },
     {
       "type": "move",

@@ -69,7 +69,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 210,
-      "max_hp": 270
+      "max_hp": 270,
+      "effectiveness": "resisted"
     },
     {
       "type": "move",
@@ -187,7 +188,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 38,
-      "max_hp": 266
+      "max_hp": 266,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -214,7 +216,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "resisted"
     },
     {
       "type": "faint",

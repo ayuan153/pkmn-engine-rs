@@ -141,7 +141,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 117,
-      "max_hp": 293
+      "max_hp": 293,
+      "effectiveness": "resisted"
     },
     {
       "type": "enditem",
@@ -304,7 +305,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -372,7 +374,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "crit": true
     },
     {
       "type": "faint",
@@ -596,7 +599,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 66,
-      "max_hp": 315
+      "max_hp": 315,
+      "effectiveness": "super"
     },
     {
       "type": "enditem",
@@ -886,7 +890,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 109,
-      "max_hp": 337
+      "max_hp": 337,
+      "effectiveness": "super"
     },
     {
       "type": "enditem",
@@ -902,7 +907,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 22,
-      "max_hp": 288
+      "max_hp": 288,
+      "effectiveness": "super"
     },
     {
       "type": "turn",
@@ -917,7 +923,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -1009,6 +1016,11 @@
     {
       "type": "turn",
       "turn": 25
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Ice"
     },
     {
       "type": "move",

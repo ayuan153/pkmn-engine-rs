@@ -150,7 +150,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 132,
-      "max_hp": 235
+      "max_hp": 235,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",
@@ -333,7 +334,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "crit": true
     },
     {
       "type": "faint",
@@ -369,7 +371,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 140,
-      "max_hp": 216
+      "max_hp": 216,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",
@@ -414,7 +417,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -453,7 +457,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -568,7 +573,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 35,
-      "max_hp": 271
+      "max_hp": 271,
+      "effectiveness": "super"
     },
     {
       "type": "ability",
@@ -606,7 +612,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -691,7 +698,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -719,7 +727,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 154,
-      "max_hp": 268
+      "max_hp": 268,
+      "effectiveness": "super"
     },
     {
       "type": "ability",
@@ -748,7 +757,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -776,7 +786,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 136,
-      "max_hp": 268
+      "max_hp": 268,
+      "effectiveness": "resisted"
     },
     {
       "type": "ability",

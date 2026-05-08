@@ -110,7 +110,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 204,
-      "max_hp": 249
+      "max_hp": 249,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",
@@ -197,7 +198,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 98,
-      "max_hp": 272
+      "max_hp": 272,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
@@ -312,7 +314,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 167,
-      "max_hp": 362
+      "max_hp": 362,
+      "effectiveness": "super"
     },
     {
       "type": "enditem",
@@ -334,7 +337,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -411,7 +415,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 272,
-      "max_hp": 362
+      "max_hp": 362,
+      "effectiveness": "resisted"
     },
     {
       "type": "move",
@@ -499,7 +504,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 57,
-      "max_hp": 362
+      "max_hp": 362,
+      "effectiveness": "resisted"
     },
     {
       "type": "move",
@@ -571,7 +577,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 58,
-      "max_hp": 272
+      "max_hp": 272,
+      "effectiveness": "super"
     },
     {
       "type": "status",
@@ -603,7 +610,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -630,7 +638,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "unboost",
@@ -886,7 +895,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 45,
-      "max_hp": 263
+      "max_hp": 263,
+      "effectiveness": "resisted"
     },
     {
       "type": "weather",
@@ -1027,7 +1037,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 54,
-      "max_hp": 325
+      "max_hp": 325,
+      "crit": true
     },
     {
       "type": "damage",

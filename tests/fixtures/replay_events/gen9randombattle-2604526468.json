@@ -1,0 +1,143 @@
+{
+  "id": "gen9randombattle-2604526468",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Amoonguss",
+      "level": 82,
+      "hp": 321,
+      "max_hp": 321
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Iron Moth",
+      "level": 78,
+      "hp": 253,
+      "max_hp": 253
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Fire Blast",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0,
+      "effectiveness": "super"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Floatzel",
+      "level": 86,
+      "hp": 286,
+      "max_hp": 286
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Trevenant",
+      "level": 89,
+      "hp": 296,
+      "max_hp": 296
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Wave Crash",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 182,
+      "max_hp": 296,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 248,
+      "max_hp": 286,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "win",
+      "player": "Gshs1"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,66c24ad1cc7bc480a7b12a846016a701\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Gshs1\",\"avatar\":\"bugsy\",\"rating\":1248,\"seed\":\"sodium,9798948839b8965c372ad26f24f1e48e\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"Flamerangel\",\"avatar\":\"170\",\"rating\":1262,\"seed\":\"sodium,c6ae12bc153c087200eb923bd583f94d\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spore"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "fireblast"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "wavecrash"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
+    }
+  ],
+  "winner": "Gshs1"
+}

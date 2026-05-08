@@ -1,1 +1,1381 @@
-{"id": "gen9randombattle-2604502898", "events": [{"type": "switch", "player": "p1", "species": "Golem-Alola", "level": 93, "hp": 300, "max_hp": 300}, {"type": "switch", "player": "p2", "species": "Terrakion", "level": 79, "hp": 273, "max_hp": 273}, {"type": "turn", "turn": 1}, {"type": "move", "player": "p2", "move": "Earthquake", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 0, "max_hp": 100}, {"type": "faint", "player": "p1"}, {"type": "switch", "player": "p1", "species": "Barraskewda", "level": 81, "hp": 231, "max_hp": 231}, {"type": "turn", "turn": 2}, {"type": "switch", "player": "p2", "species": "Bronzong", "level": 88, "hp": 261, "max_hp": 261}, {"type": "move", "player": "p1", "move": "Flip Turn", "target": "p2"}, {"type": "damage", "player": "p2", "hp": 173, "max_hp": 261}, {"type": "switch", "player": "p1", "species": "Galvantula", "level": 82, "hp": 249, "max_hp": 249}, {"type": "heal", "player": "p2", "hp": 189, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 3}, {"type": "move", "player": "p1", "move": "Sticky Web", "target": "p2"}, {"type": "move", "player": "p2", "move": "Hypnosis", "target": "p1"}, {"type": "heal", "player": "p2", "hp": 205, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 4}, {"type": "move", "player": "p1", "move": "Volt Switch", "target": "p2"}, {"type": "damage", "player": "p2", "hp": 154, "max_hp": 261}, {"type": "switch", "player": "p1", "species": "Altaria", "level": 89, "hp": 278, "max_hp": 278}, {"type": "move", "player": "p2", "move": "Stealth Rock", "target": "p1"}, {"type": "heal", "player": "p2", "hp": 170, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 5}, {"type": "move", "player": "p1", "move": "Defog", "target": "p2"}, {"type": "unboost", "player": "p2", "stat": "evasion", "amount": 1}, {"type": "move", "player": "p2", "move": "Psychic Noise", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 211, "max_hp": 278}, {"type": "heal", "player": "p2", "hp": 186, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 6}, {"type": "switch", "player": "p1", "species": "Registeel", "level": 81, "hp": 262, "max_hp": 262}, {"type": "move", "player": "p2", "move": "Hypnosis", "target": "p1"}, {"type": "status", "player": "p1", "status": "slp"}, {"type": "heal", "player": "p2", "hp": 202, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 7}, {"type": "move", "player": "p2", "move": "Earthquake", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 166, "max_hp": 262}, {"type": "heal", "player": "p1", "hp": 182, "max_hp": 262, "source": "[from] item: Leftovers"}, {"type": "heal", "player": "p2", "hp": 218, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 8}, {"type": "move", "player": "p1", "move": "Thunder Wave", "target": "p2"}, {"type": "status", "player": "p2", "status": "par"}, {"type": "move", "player": "p2", "move": "Earthquake", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 88, "max_hp": 262}, {"type": "heal", "player": "p1", "hp": 104, "max_hp": 262, "source": "[from] item: Leftovers"}, {"type": "heal", "player": "p2", "hp": 234, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 9}, {"type": "switch", "player": "p1", "species": "Altaria", "level": 89, "hp": 211, "max_hp": 278}, {"type": "heal", "player": "p2", "hp": 250, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 10}, {"type": "move", "player": "p1", "move": "Brave Bird", "target": "p2"}, {"type": "damage", "player": "p2", "hp": 182, "max_hp": 261}, {"type": "damage", "player": "p1", "hp": 189, "max_hp": 278, "source": "[from] Recoil"}, {"type": "move", "player": "p2", "move": "Psychic Noise", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 90, "max_hp": 278}, {"type": "heal", "player": "p2", "hp": 198, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 11}, {"type": "switch", "player": "p1", "species": "Galvantula", "level": 82, "hp": 249, "max_hp": 249}, {"type": "move", "player": "p2", "move": "Psychic Noise", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 141, "max_hp": 249}, {"type": "heal", "player": "p2", "hp": 214, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 12}, {"type": "move", "player": "p1", "move": "Volt Switch", "target": "p2"}, {"type": "damage", "player": "p2", "hp": 163, "max_hp": 261}, {"type": "switch", "player": "p1", "species": "Altaria", "level": 89, "hp": 90, "max_hp": 278}, {"type": "move", "player": "p2", "move": "Stealth Rock", "target": "p1"}, {"type": "heal", "player": "p2", "hp": 179, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 13}, {"type": "move", "player": "p1", "move": "Roost", "target": "p1"}, {"type": "heal", "player": "p1", "hp": 229, "max_hp": 278}, {"type": "move", "player": "p2", "move": "Earthquake", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 164, "max_hp": 278}, {"type": "heal", "player": "p2", "hp": 195, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 14}, {"type": "move", "player": "p1", "move": "Roost", "target": "p1"}, {"type": "heal", "player": "p1", "hp": 278, "max_hp": 278}, {"type": "move", "player": "p2", "move": "Psychic Noise", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 211, "max_hp": 278}, {"type": "heal", "player": "p2", "hp": 211, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 15}, {"type": "switch", "player": "p1", "species": "Barraskewda", "level": 81, "hp": 231, "max_hp": 231}, {"type": "damage", "player": "p1", "hp": 203, "max_hp": 231, "source": "[from] Stealth Rock"}, {"type": "move", "player": "p2", "move": "Hypnosis", "target": "p1"}, {"type": "heal", "player": "p2", "hp": 227, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 16}, {"type": "move", "player": "p1", "move": "Waterfall", "target": "p2"}, {"type": "damage", "player": "p2", "hp": 122, "max_hp": 261}, {"type": "move", "player": "p2", "move": "Psychic Noise", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 94, "max_hp": 231}, {"type": "heal", "player": "p2", "hp": 138, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 17}, {"type": "move", "player": "p1", "move": "Waterfall", "target": "p2"}, {"type": "damage", "player": "p2", "hp": 35, "max_hp": 261}, {"type": "heal", "player": "p2", "hp": 51, "max_hp": 261, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 18}, {"type": "move", "player": "p1", "move": "Waterfall", "target": "p2"}, {"type": "damage", "player": "p2", "hp": 0, "max_hp": 100}, {"type": "faint", "player": "p2"}, {"type": "switch", "player": "p2", "species": "Miraidon", "level": 65, "hp": 238, "max_hp": 238}, {"type": "turn", "turn": 19}, {"type": "switch", "player": "p1", "species": "Registeel", "level": 81, "hp": 104, "max_hp": 262}, {"type": "damage", "player": "p1", "hp": 88, "max_hp": 262, "source": "[from] Stealth Rock"}, {"type": "move", "player": "p2", "move": "Calm Mind", "target": "p2"}, {"type": "boost", "player": "p2", "stat": "spa", "amount": 1}, {"type": "boost", "player": "p2", "stat": "spd", "amount": 1}, {"type": "heal", "player": "p1", "hp": 104, "max_hp": 262, "source": "[from] item: Leftovers"}, {"type": "turn", "turn": 20}, {"type": "move", "player": "p2", "move": "Electro Drift", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 0, "max_hp": 100}, {"type": "faint", "player": "p1"}, {"type": "damage", "player": "p2", "hp": 215, "max_hp": 238, "source": "[from] item: Life Orb"}, {"type": "switch", "player": "p1", "species": "Cobalion", "level": 80, "hp": 277, "max_hp": 277}, {"type": "damage", "player": "p1", "hp": 269, "max_hp": 277, "source": "[from] Stealth Rock"}, {"type": "turn", "turn": 21}, {"type": "terastallize", "player": "p2", "tera_type": "Electric"}, {"type": "move", "player": "p1", "move": "Calm Mind", "target": "p1"}, {"type": "boost", "player": "p1", "stat": "spa", "amount": 1}, {"type": "boost", "player": "p1", "stat": "spd", "amount": 1}, {"type": "move", "player": "p2", "move": "Electro Drift", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 0, "max_hp": 100}, {"type": "faint", "player": "p1"}, {"type": "damage", "player": "p2", "hp": 192, "max_hp": 238, "source": "[from] item: Life Orb"}, {"type": "switch", "player": "p1", "species": "Barraskewda", "level": 81, "hp": 94, "max_hp": 231}, {"type": "damage", "player": "p1", "hp": 66, "max_hp": 231, "source": "[from] Stealth Rock"}, {"type": "turn", "turn": 22}, {"type": "terastallize", "player": "p1", "tera_type": "Fighting"}, {"type": "move", "player": "p1", "move": "Close Combat", "target": "p2"}, {"type": "damage", "player": "p2", "hp": 0, "max_hp": 100}, {"type": "unboost", "player": "p1", "stat": "def", "amount": 1}, {"type": "unboost", "player": "p1", "stat": "spd", "amount": 1}, {"type": "faint", "player": "p2"}, {"type": "switch", "player": "p2", "species": "Pelipper", "level": 86, "hp": 243, "max_hp": 243}, {"type": "weather", "weather": "RainDance"}, {"type": "turn", "turn": 23}, {"type": "switch", "player": "p1", "species": "Altaria", "level": 89, "hp": 211, "max_hp": 278}, {"type": "move", "player": "p2", "move": "U-turn", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 197, "max_hp": 278}, {"type": "switch", "player": "p2", "species": "Mightyena", "level": 96, "hp": 290, "max_hp": 290}, {"type": "ability", "player": "p2", "ability": "Intimidate"}, {"type": "unboost", "player": "p1", "stat": "atk", "amount": 1}, {"type": "weather", "weather": "RainDance"}, {"type": "turn", "turn": 24}, {"type": "move", "player": "p1", "move": "Defog", "target": "p2"}, {"type": "unboost", "player": "p2", "stat": "evasion", "amount": 1}, {"type": "move", "player": "p2", "move": "Play Rough", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 45, "max_hp": 278}, {"type": "weather", "weather": "RainDance"}, {"type": "turn", "turn": 25}, {"type": "switch", "player": "p1", "species": "Galvantula", "level": 82, "hp": 141, "max_hp": 249}, {"type": "move", "player": "p2", "move": "Throat Chop", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 0, "max_hp": 100}, {"type": "faint", "player": "p1"}, {"type": "weather", "weather": "RainDance"}, {"type": "switch", "player": "p1", "species": "Barraskewda", "level": 81, "hp": 66, "max_hp": 231}, {"type": "turn", "turn": 26}, {"type": "move", "player": "p2", "move": "Sucker Punch", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 1, "max_hp": 231}, {"type": "move", "player": "p1", "move": "Waterfall", "target": "p2"}, {"type": "damage", "player": "p2", "hp": 61, "max_hp": 290}, {"type": "weather", "weather": "RainDance"}, {"type": "turn", "turn": 27}, {"type": "switch", "player": "p1", "species": "Altaria", "level": 89, "hp": 45, "max_hp": 278}, {"type": "move", "player": "p2", "move": "Poison Fang", "target": "p1"}, {"type": "damage", "player": "p1", "hp": 5, "max_hp": 278}, {"type": "status", "player": "p1", "status": "tox"}, {"type": "weather", "weather": "none"}, {"type": "damage", "player": "p1", "hp": 0, "max_hp": 100, "source": "[from] psn"}, {"type": "faint", "player": "p1"}, {"type": "win", "player": "Oh didufgh"}], "winner": "Oh didufgh"}
+{
+  "id": "gen9randombattle-2604502898",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Golem-Alola",
+      "level": 93,
+      "hp": 300,
+      "max_hp": 300
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Terrakion",
+      "level": 79,
+      "hp": 273,
+      "max_hp": 273
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0,
+      "effectiveness": "super"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Barraskewda",
+      "level": 81,
+      "hp": 231,
+      "max_hp": 231
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Bronzong",
+      "level": 88,
+      "hp": 261,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Flip Turn",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 173,
+      "max_hp": 261
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Galvantula",
+      "level": 82,
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 189,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sticky Web",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Sticky Web"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hypnosis",
+      "target": "p1"
+    },
+    {
+      "type": "miss",
+      "player": "p2",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 205,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Volt Switch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 154,
+      "max_hp": 261
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Altaria",
+      "level": 89,
+      "hp": 278,
+      "max_hp": 278
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stealth Rock",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 170,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Defog",
+      "target": "p2"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "evasion",
+      "amount": 1
+    },
+    {
+      "type": "sideend",
+      "player": "p2",
+      "condition": "Sticky Web"
+    },
+    {
+      "type": "sideend",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic Noise",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 211,
+      "max_hp": 278
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 186,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Registeel",
+      "level": 81,
+      "hp": 262,
+      "max_hp": 262
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hypnosis",
+      "target": "p1"
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "slp"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 202,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 166,
+      "max_hp": 262,
+      "effectiveness": "super"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 182,
+      "max_hp": 262
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 218,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "curestatus",
+      "player": "p1"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Thunder Wave",
+      "target": "p2"
+    },
+    {
+      "type": "status",
+      "player": "p2",
+      "status": "par"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 88,
+      "max_hp": 262,
+      "effectiveness": "super"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 104,
+      "max_hp": 262
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 234,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Altaria",
+      "level": 89,
+      "hp": 211,
+      "max_hp": 278
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 250,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Brave Bird",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 182,
+      "max_hp": 261,
+      "effectiveness": "resisted",
+      "crit": true
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 189,
+      "max_hp": 278,
+      "source": "[from] Recoil"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic Noise",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 90,
+      "max_hp": 278,
+      "crit": true
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 198,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Galvantula",
+      "level": 82,
+      "hp": 249,
+      "max_hp": 249
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic Noise",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 141,
+      "max_hp": 249
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 214,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Volt Switch",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 163,
+      "max_hp": 261
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Altaria",
+      "level": 89,
+      "hp": 90,
+      "max_hp": 278
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stealth Rock",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 179,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 229,
+      "max_hp": 278
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Earthquake",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 164,
+      "max_hp": 278
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 195,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roost",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 278,
+      "max_hp": 278
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic Noise",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 211,
+      "max_hp": 278
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 211,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 15
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Barraskewda",
+      "level": 81,
+      "hp": 231,
+      "max_hp": 231
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 203,
+      "max_hp": 231,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Hypnosis",
+      "target": "p1"
+    },
+    {
+      "type": "miss",
+      "player": "p2",
+      "target": "p1"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 227,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 16
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Waterfall",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 122,
+      "max_hp": 261
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Psychic Noise",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 94,
+      "max_hp": 231
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 138,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 17
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Waterfall",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 35,
+      "max_hp": 261
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 51,
+      "max_hp": 261
+    },
+    {
+      "type": "turn",
+      "turn": 18
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Waterfall",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Miraidon",
+      "level": 65,
+      "hp": 238,
+      "max_hp": 238
+    },
+    {
+      "type": "turn",
+      "turn": 19
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Registeel",
+      "level": 81,
+      "hp": 104,
+      "max_hp": 262
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 88,
+      "max_hp": 262,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Calm Mind",
+      "target": "p2"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 104,
+      "max_hp": 262
+    },
+    {
+      "type": "turn",
+      "turn": 20
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Electro Drift",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 215,
+      "max_hp": 238,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Cobalion",
+      "level": 80,
+      "hp": 277,
+      "max_hp": 277
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 269,
+      "max_hp": 277,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 21
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Electric"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Calm Mind",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Electro Drift",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 192,
+      "max_hp": 238,
+      "source": "[from] item: Life Orb"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Barraskewda",
+      "level": 81,
+      "hp": 94,
+      "max_hp": 231
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 66,
+      "max_hp": 231,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 22
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Fighting"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Close Combat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 0
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "def",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spd",
+      "amount": 1
+    },
+    {
+      "type": "faint",
+      "player": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Pelipper",
+      "level": 86,
+      "hp": 243,
+      "max_hp": 243
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[from] ability: Drizzle"
+    },
+    {
+      "type": "turn",
+      "turn": 23
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Altaria",
+      "level": 89,
+      "hp": 211,
+      "max_hp": 278
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "U-turn",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 197,
+      "max_hp": 278,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Mightyena",
+      "level": 96,
+      "hp": 290,
+      "max_hp": 290
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 24
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Defog",
+      "target": "p2"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "evasion",
+      "amount": 1
+    },
+    {
+      "type": "sideend",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Play Rough",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 45,
+      "max_hp": 278,
+      "effectiveness": "super"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 25
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Galvantula",
+      "level": 82,
+      "hp": 141,
+      "max_hp": 249
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Throat Chop",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Barraskewda",
+      "level": 81,
+      "hp": 66,
+      "max_hp": 231
+    },
+    {
+      "type": "turn",
+      "turn": 26
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Sucker Punch",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 1,
+      "max_hp": 231,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Waterfall",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 61,
+      "max_hp": 290
+    },
+    {
+      "type": "weather",
+      "weather": "RainDance",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "turn",
+      "turn": 27
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Altaria",
+      "level": 89,
+      "hp": 45,
+      "max_hp": 278
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Poison Fang",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 5,
+      "max_hp": 278
+    },
+    {
+      "type": "status",
+      "player": "p1",
+      "status": "tox"
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0,
+      "source": "[from] psn"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "win",
+      "player": "Oh didufgh"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,a48a22c243cfa7e110dc63d694b2774b\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Earlydinner2\",\"avatar\":\"gentleman\",\"rating\":1764,\"seed\":\"sodium,1f50ac88f0caa940b49fc4536c61e4ca\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"Oh didufgh\",\"avatar\":\"1\",\"rating\":1838,\"seed\":\"sodium,aa8f6d9e68fdc744e043f9e84d68e832\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "rockpolish"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "flipturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stickyweb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hypnosis"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "voltswitch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "defog"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hypnosis"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hypnosis"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bravebird"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "voltswitch"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roost"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "hypnosis"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "waterfall"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "waterfall"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "waterfall"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "psychicnoise"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "bodypress"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "electrodrift"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "calmmind"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "electrodrift terastallize"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "closecombat terastallize"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "dragonpulse"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "uturn"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "defog"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "playrough"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "throatchop"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "waterfall"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "suckerpunch"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "poisonfang"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
+    }
+  ],
+  "winner": "Oh didufgh"
+}

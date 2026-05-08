@@ -108,7 +108,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -262,7 +263,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 309,
-      "max_hp": 330
+      "max_hp": 330,
+      "effectiveness": "resisted"
     },
     {
       "type": "unboost",
@@ -311,7 +313,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 97,
-      "max_hp": 234
+      "max_hp": 234,
+      "effectiveness": "super"
     },
     {
       "type": "heal",
@@ -347,7 +350,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 213,
-      "max_hp": 270
+      "max_hp": 270,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -387,7 +391,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 173,
-      "max_hp": 270
+      "max_hp": 270,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -543,7 +548,9 @@
       "type": "damage",
       "player": "p2",
       "hp": 53,
-      "max_hp": 257
+      "max_hp": 257,
+      "effectiveness": "super",
+      "crit": true
     },
     {
       "type": "damage",
@@ -612,6 +619,11 @@
     {
       "type": "turn",
       "turn": 16
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Flying"
     },
     {
       "type": "move",

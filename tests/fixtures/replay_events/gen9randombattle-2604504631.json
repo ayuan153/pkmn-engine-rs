@@ -146,7 +146,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 25,
-      "max_hp": 315
+      "max_hp": 315,
+      "effectiveness": "super"
     },
     {
       "type": "enditem",
@@ -163,6 +164,11 @@
       "target": "p2"
     },
     {
+      "type": "miss",
+      "player": "p1",
+      "target": "p2"
+    },
+    {
       "type": "move",
       "player": "p2",
       "move": "Superpower",
@@ -171,7 +177,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "resisted"
     },
     {
       "type": "boost",
@@ -216,7 +223,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 18,
-      "max_hp": 275
+      "max_hp": 275,
+      "effectiveness": "super"
     },
     {
       "type": "move",
@@ -415,7 +423,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 187,
-      "max_hp": 229
+      "max_hp": 229,
+      "effectiveness": "resisted"
     },
     {
       "type": "enditem",
@@ -586,7 +595,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 62,
-      "max_hp": 242
+      "max_hp": 242,
+      "effectiveness": "resisted"
     },
     {
       "type": "enditem",
@@ -654,7 +664,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 195,
-      "max_hp": 256
+      "max_hp": 256,
+      "effectiveness": "resisted"
     },
     {
       "type": "weather",
@@ -727,7 +738,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 36,
-      "max_hp": 256
+      "max_hp": 256,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
@@ -769,7 +781,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 107,
-      "max_hp": 229
+      "max_hp": 229,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",
@@ -784,7 +797,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "unboost",
@@ -829,7 +843,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 245,
-      "max_hp": 280
+      "max_hp": 280,
+      "effectiveness": "resisted"
     },
     {
       "type": "switch",
@@ -883,7 +898,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 173,
-      "max_hp": 280
+      "max_hp": 280,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",
@@ -893,6 +909,11 @@
       "type": "move",
       "player": "p2",
       "move": "Stone Edge",
+      "target": "p1"
+    },
+    {
+      "type": "miss",
+      "player": "p2",
       "target": "p1"
     },
     {
@@ -927,7 +948,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "resisted"
     },
     {
       "type": "faint",
@@ -1000,7 +1022,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",

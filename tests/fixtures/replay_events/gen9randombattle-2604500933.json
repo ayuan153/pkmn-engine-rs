@@ -223,7 +223,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -326,7 +327,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 174,
-      "max_hp": 326
+      "max_hp": 326,
+      "effectiveness": "super"
     },
     {
       "type": "switch",
@@ -360,6 +362,11 @@
       "type": "move",
       "player": "p1",
       "move": "Toxic",
+      "target": "p2"
+    },
+    {
+      "type": "miss",
+      "player": "p1",
       "target": "p2"
     },
     {
@@ -436,7 +443,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 229,
-      "max_hp": 266
+      "max_hp": 266,
+      "effectiveness": "resisted"
     },
     {
       "type": "switch",
@@ -488,7 +496,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 94,
-      "max_hp": 266
+      "max_hp": 266,
+      "effectiveness": "super"
     },
     {
       "type": "damage",
@@ -526,7 +535,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -651,6 +661,11 @@
       "target": "p2"
     },
     {
+      "type": "miss",
+      "player": "p1",
+      "target": "p2"
+    },
+    {
       "type": "move",
       "player": "p2",
       "move": "Tri Attack",
@@ -717,7 +732,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 127,
-      "max_hp": 238
+      "max_hp": 238,
+      "crit": true
     },
     {
       "type": "turn",

@@ -37,7 +37,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 23,
-      "max_hp": 349
+      "max_hp": 349,
+      "effectiveness": "super"
     },
     {
       "type": "move",
@@ -129,6 +130,11 @@
       "target": "p1"
     },
     {
+      "type": "miss",
+      "player": "p2",
+      "target": "p1"
+    },
+    {
       "type": "move",
       "player": "p1",
       "move": "Icicle Crash",
@@ -176,7 +182,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 135,
-      "max_hp": 311
+      "max_hp": 311,
+      "effectiveness": "super"
     },
     {
       "type": "status",
@@ -215,7 +222,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -256,7 +264,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 188,
-      "max_hp": 349
+      "max_hp": 349,
+      "crit": true
     },
     {
       "type": "damage",
@@ -400,7 +409,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "resisted"
     },
     {
       "type": "faint",

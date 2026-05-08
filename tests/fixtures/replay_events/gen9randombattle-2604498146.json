@@ -40,31 +40,36 @@
       "type": "damage",
       "player": "p2",
       "hp": 248,
-      "max_hp": 263
+      "max_hp": 263,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
       "player": "p2",
       "hp": 233,
-      "max_hp": 263
+      "max_hp": 263,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
       "player": "p2",
       "hp": 219,
-      "max_hp": 263
+      "max_hp": 263,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
       "player": "p2",
       "hp": 203,
-      "max_hp": 263
+      "max_hp": 263,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
       "player": "p2",
       "hp": 188,
-      "max_hp": 263
+      "max_hp": 263,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",
@@ -130,7 +135,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 3,
-      "max_hp": 269
+      "max_hp": 269,
+      "effectiveness": "super"
     },
     {
       "type": "turn",
@@ -230,7 +236,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 206,
-      "max_hp": 278
+      "max_hp": 278,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",
@@ -339,7 +346,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -387,7 +395,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 231,
-      "max_hp": 290
+      "max_hp": 290,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",
@@ -446,7 +455,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "resisted"
     },
     {
       "type": "faint",
@@ -480,6 +490,11 @@
     {
       "type": "turn",
       "turn": 13
+    },
+    {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Grass"
     },
     {
       "type": "move",
@@ -554,6 +569,11 @@
       "type": "move",
       "player": "p2",
       "move": "Brave Bird",
+      "target": "p1"
+    },
+    {
+      "type": "miss",
+      "player": "p2",
       "target": "p1"
     },
     {

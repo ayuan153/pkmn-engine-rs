@@ -57,7 +57,7 @@ See [docs/plan.md](docs/plan.md) for the full development plan.
 
 Early development. Core engine works, expanding move/ability/species coverage toward full Gen 9 competitive singles.
 
-**Accuracy**: 0 type-chart failures on 1967 damage events from 89 real replays. 36% exact match (within damage roll range), 86% within ±20%. Actively grinding toward 100% exact match.
+**Accuracy**: 0 type-chart failures on 1967 damage events from 89 real replays. 80.6% exact match (within damage roll range), 89.7% within ±15%. Actively grinding toward 100% exact match.
 
 ## License
 

@@ -123,7 +123,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 14,
-      "max_hp": 326
+      "max_hp": 326,
+      "crit": true
     },
     {
       "type": "move",
@@ -225,7 +226,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 193,
-      "max_hp": 307
+      "max_hp": 307,
+      "crit": true
     },
     {
       "type": "switch",
@@ -281,6 +283,11 @@
       "target": "p1"
     },
     {
+      "type": "miss",
+      "player": "p2",
+      "target": "p1"
+    },
+    {
       "type": "turn",
       "turn": 10
     },
@@ -327,12 +334,14 @@
       "type": "damage",
       "player": "p2",
       "hp": 15,
-      "max_hp": 246
+      "max_hp": 246,
+      "effectiveness": "super"
     },
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -419,7 +428,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -608,6 +618,11 @@
       "target": "p2"
     },
     {
+      "type": "miss",
+      "player": "p1",
+      "target": "p2"
+    },
+    {
       "type": "move",
       "player": "p2",
       "move": "Ice Beam",
@@ -616,7 +631,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -666,7 +682,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -699,7 +716,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -851,7 +869,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "crit": true
     },
     {
       "type": "faint",
@@ -953,7 +972,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 98,
-      "max_hp": 312
+      "max_hp": 312,
+      "effectiveness": "resisted"
     },
     {
       "type": "move",

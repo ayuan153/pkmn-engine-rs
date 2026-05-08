@@ -32,7 +32,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 220,
-      "max_hp": 312
+      "max_hp": 312,
+      "effectiveness": "super"
     },
     {
       "type": "switch",
@@ -57,6 +58,11 @@
     {
       "type": "turn",
       "turn": 2
+    },
+    {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Steel"
     },
     {
       "type": "move",

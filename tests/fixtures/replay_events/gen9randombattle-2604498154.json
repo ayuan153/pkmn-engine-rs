@@ -82,7 +82,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 162,
-      "max_hp": 307
+      "max_hp": 307,
+      "effectiveness": "super"
     },
     {
       "type": "heal",
@@ -142,7 +143,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -210,7 +212,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -481,7 +484,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 128,
-      "max_hp": 238
+      "max_hp": 238,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
@@ -531,7 +535,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",

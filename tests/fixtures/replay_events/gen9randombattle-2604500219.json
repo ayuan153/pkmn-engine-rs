@@ -36,7 +36,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -112,7 +113,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -155,7 +157,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 66,
-      "max_hp": 231
+      "max_hp": 231,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
@@ -201,7 +204,9 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "resisted",
+      "crit": true
     },
     {
       "type": "faint",
@@ -395,6 +400,11 @@
       "turn": 11
     },
     {
+      "type": "terastallize",
+      "player": "p1",
+      "tera_type": "Dark"
+    },
+    {
       "type": "move",
       "player": "p2",
       "move": "Shadow Ball",
@@ -404,7 +414,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 204,
-      "max_hp": 275
+      "max_hp": 275,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
@@ -455,7 +466,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -529,7 +541,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",

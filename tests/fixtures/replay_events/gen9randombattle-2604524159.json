@@ -1,0 +1,866 @@
+{
+  "id": "gen9randombattle-2604524159",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Morpeko",
+      "level": 88,
+      "hp": 245,
+      "max_hp": 245
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Delibird",
+      "level": 100,
+      "hp": 252,
+      "max_hp": 252
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Hippowdon",
+      "level": 82,
+      "hp": 311,
+      "max_hp": 311
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[from] ability: Sand Stream"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Parting Shot",
+      "target": "p2"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Brute Bonnet",
+      "level": 80,
+      "hp": 309,
+      "max_hp": 309
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 290,
+      "max_hp": 309,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 309,
+      "max_hp": 309
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Garganacl",
+      "level": 80,
+      "hp": 291,
+      "max_hp": 291
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Spore",
+      "target": "p2"
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 290,
+      "max_hp": 309,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 309,
+      "max_hp": 309
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ariados",
+      "level": 95,
+      "hp": 287,
+      "max_hp": 287
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Salt Cure",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 209,
+      "max_hp": 287,
+      "effectiveness": "super"
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 192,
+      "max_hp": 287,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 157,
+      "max_hp": 287,
+      "source": "[from] Salt Cure"
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Sticky Web",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Sticky Web"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Salt Cure",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 77,
+      "max_hp": 287,
+      "effectiveness": "super"
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 60,
+      "max_hp": 287,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 25,
+      "max_hp": 287,
+      "source": "[from] Salt Cure"
+    },
+    {
+      "type": "turn",
+      "turn": 5
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Megahorn",
+      "target": "p2"
+    },
+    {
+      "type": "miss",
+      "player": "p1",
+      "target": "p2"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Salt Cure",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 0,
+      "effectiveness": "super"
+    },
+    {
+      "type": "faint",
+      "player": "p1"
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Camerupt",
+      "level": 91,
+      "hp": 275,
+      "max_hp": 275
+    },
+    {
+      "type": "turn",
+      "turn": 6
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Stealth Rock",
+      "target": "p2"
+    },
+    {
+      "type": "sidestart",
+      "player": "p2",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Salt Cure",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 233,
+      "max_hp": 275
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 250,
+      "max_hp": 275
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 216,
+      "max_hp": 275,
+      "source": "[from] Salt Cure"
+    },
+    {
+      "type": "turn",
+      "turn": 7
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Recover"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roar",
+      "target": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Eiscue",
+      "level": 88,
+      "hp": 274,
+      "max_hp": 274
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 206,
+      "max_hp": 274,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 233,
+      "max_hp": 275
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 199,
+      "max_hp": 275,
+      "source": "[from] Salt Cure"
+    },
+    {
+      "type": "turn",
+      "turn": 8
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Hippowdon",
+      "level": 82,
+      "hp": 311,
+      "max_hp": 311
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 292,
+      "max_hp": 311,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[from] ability: Sand Stream"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Overheat",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 85,
+      "max_hp": 311
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "spa",
+      "amount": 2
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 216,
+      "max_hp": 275
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 104,
+      "max_hp": 311
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 182,
+      "max_hp": 275,
+      "source": "[from] Salt Cure"
+    },
+    {
+      "type": "turn",
+      "turn": 9
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Earthquake",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 8,
+      "max_hp": 311
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Slack Off",
+      "target": "p2"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 164,
+      "max_hp": 311
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 199,
+      "max_hp": 275
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 183,
+      "max_hp": 311
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 165,
+      "max_hp": 275,
+      "source": "[from] Salt Cure"
+    },
+    {
+      "type": "turn",
+      "turn": 10
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stealth Rock",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Roar",
+      "target": "p2"
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Delibird",
+      "level": 100,
+      "hp": 252,
+      "max_hp": 252
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 237,
+      "max_hp": 252,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "heal",
+      "player": "p1",
+      "hp": 182,
+      "max_hp": 275
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 148,
+      "max_hp": 275,
+      "source": "[from] Salt Cure"
+    },
+    {
+      "type": "turn",
+      "turn": 11
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Magearna-Original",
+      "level": 77,
+      "hp": 250,
+      "max_hp": 250
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 235,
+      "max_hp": 250,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Rapid Spin",
+      "target": "p1"
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 221,
+      "max_hp": 250,
+      "effectiveness": "resisted"
+    },
+    {
+      "type": "boost",
+      "player": "p2",
+      "stat": "spe",
+      "amount": 1
+    },
+    {
+      "type": "sideend",
+      "player": "p2",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "sideend",
+      "player": "p2",
+      "condition": "Sticky Web"
+    },
+    {
+      "type": "weather",
+      "weather": "Sandstorm",
+      "source": "[upkeep]"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 222,
+      "max_hp": 252,
+      "source": "[from] Sandstorm"
+    },
+    {
+      "type": "turn",
+      "turn": 12
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Hippowdon",
+      "level": 82,
+      "hp": 183,
+      "max_hp": 311
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Shift Gear",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "weather",
+      "weather": "none"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 202,
+      "max_hp": 311
+    },
+    {
+      "type": "turn",
+      "turn": 13
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Shift Gear",
+      "target": "p1"
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "spe",
+      "amount": 2
+    },
+    {
+      "type": "boost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Whirlwind",
+      "target": "p1"
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Morpeko",
+      "level": 88,
+      "hp": 245,
+      "max_hp": 245
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 221,
+      "max_hp": 311
+    },
+    {
+      "type": "turn",
+      "turn": 14
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Parting Shot",
+      "target": "p2"
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "unboost",
+      "player": "p2",
+      "stat": "spa",
+      "amount": 1
+    },
+    {
+      "type": "win",
+      "player": "RealDereshiHours"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,51503058802658b754a252693ac5fe71\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Kvngnick18\",\"avatar\":\"169\",\"rating\":2043,\"seed\":\"sodium,5b2bc05e379ee90f38fccbf50b9bf573\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"RealDereshiHours\",\"avatar\":\"aromalady\",\"rating\":2038,\"seed\":\"sodium,3a4b04b46d779d44fc94b16bae39c7dc\"}"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "partingshot"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "spore"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "6"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "saltcure"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stickyweb"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "saltcure"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "megahorn"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "saltcure"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "2"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "saltcure"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roar"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "recover"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "overheat"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "slackoff"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "roar"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "3"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "rapidspin"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shiftgear"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "shiftgear"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "whirlwind"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "partingshot"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "earthquake"
+    },
+    {
+      "player": "forcelose",
+      "action": "p1",
+      "args": ""
+    }
+  ],
+  "winner": "RealDereshiHours"
+}

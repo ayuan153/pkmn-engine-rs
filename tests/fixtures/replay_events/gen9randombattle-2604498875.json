@@ -65,7 +65,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -106,6 +107,11 @@
       "type": "move",
       "player": "p1",
       "move": "Gunk Shot",
+      "target": "p2"
+    },
+    {
+      "type": "miss",
+      "player": "p1",
       "target": "p2"
     },
     {
@@ -446,7 +452,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 83,
-      "max_hp": 300
+      "max_hp": 300,
+      "crit": true
     },
     {
       "type": "heal",
@@ -715,7 +722,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 48,
-      "max_hp": 302
+      "max_hp": 302,
+      "effectiveness": "super"
     },
     {
       "type": "turn",
@@ -742,7 +750,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",

@@ -32,7 +32,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 91,
-      "max_hp": 271
+      "max_hp": 271,
+      "effectiveness": "super"
     },
     {
       "type": "enditem",
@@ -133,7 +134,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -192,7 +194,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 236,
-      "max_hp": 362
+      "max_hp": 362,
+      "effectiveness": "super"
     },
     {
       "type": "enditem",
@@ -224,7 +227,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 132,
-      "max_hp": 362
+      "max_hp": 362,
+      "effectiveness": "super"
     },
     {
       "type": "switch",
@@ -323,7 +327,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 146,
-      "max_hp": 235
+      "max_hp": 235,
+      "effectiveness": "resisted"
     },
     {
       "type": "switch",
@@ -390,7 +395,8 @@
       "player": "p1",
       "hp": 123,
       "max_hp": 254,
-      "source": "[from] Leech Seed"
+      "source": "[from] Leech Seed",
+      "effectiveness": "super"
     },
     {
       "type": "heal",
@@ -547,7 +553,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 59,
-      "max_hp": 235
+      "max_hp": 235,
+      "effectiveness": "resisted"
     },
     {
       "type": "status",
@@ -607,7 +614,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 212,
-      "max_hp": 278
+      "max_hp": 278,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
@@ -641,7 +649,9 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "resisted",
+      "crit": true
     },
     {
       "type": "faint",
@@ -692,7 +702,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 48,
-      "max_hp": 278
+      "max_hp": 278,
+      "effectiveness": "resisted"
     },
     {
       "type": "unboost",
@@ -715,7 +726,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "resisted"
     },
     {
       "type": "enditem",

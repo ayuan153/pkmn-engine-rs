@@ -265,7 +265,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "crit": true
     },
     {
       "type": "enditem",
@@ -383,7 +384,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 197,
-      "max_hp": 275
+      "max_hp": 275,
+      "effectiveness": "super"
     },
     {
       "type": "enditem",
@@ -473,7 +475,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 179,
-      "max_hp": 275
+      "max_hp": 275,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",
@@ -488,7 +491,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "resisted"
     },
     {
       "type": "faint",

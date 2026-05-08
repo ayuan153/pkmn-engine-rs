@@ -50,7 +50,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 218,
-      "max_hp": 295
+      "max_hp": 295,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",
@@ -154,7 +155,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -190,7 +192,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 253,
-      "max_hp": 284
+      "max_hp": 284,
+      "effectiveness": "resisted"
     },
     {
       "type": "unboost",
@@ -286,7 +289,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 206,
-      "max_hp": 292
+      "max_hp": 292,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
@@ -403,7 +407,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 20,
-      "max_hp": 292
+      "max_hp": 292,
+      "effectiveness": "super"
     },
     {
       "type": "heal",
@@ -442,7 +447,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -516,7 +522,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 203,
-      "max_hp": 284
+      "max_hp": 284,
+      "effectiveness": "resisted"
     },
     {
       "type": "unboost",
@@ -539,7 +546,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -566,7 +574,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -646,7 +655,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 244,
-      "max_hp": 290
+      "max_hp": 290,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -741,7 +751,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 197,
-      "max_hp": 367
+      "max_hp": 367,
+      "effectiveness": "super"
     },
     {
       "type": "move",
@@ -766,6 +777,11 @@
       "turn": 22
     },
     {
+      "type": "terastallize",
+      "player": "p2",
+      "tera_type": "Steel"
+    },
+    {
       "type": "move",
       "player": "p1",
       "move": "Icicle Spear",
@@ -775,31 +791,36 @@
       "type": "damage",
       "player": "p2",
       "hp": 274,
-      "max_hp": 290
+      "max_hp": 290,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
       "player": "p2",
       "hp": 259,
-      "max_hp": 290
+      "max_hp": 290,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
       "player": "p2",
       "hp": 243,
-      "max_hp": 290
+      "max_hp": 290,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
       "player": "p2",
       "hp": 227,
-      "max_hp": 290
+      "max_hp": 290,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
       "player": "p2",
       "hp": 210,
-      "max_hp": 290
+      "max_hp": 290,
+      "effectiveness": "resisted"
     },
     {
       "type": "move",
@@ -891,7 +912,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",

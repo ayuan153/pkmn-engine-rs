@@ -1,0 +1,184 @@
+{
+  "id": "gen9randombattle-2604526969",
+  "format": "[Gen 9] Random Battle",
+  "events": [
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ampharos",
+      "level": 88,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Landorus-Therian",
+      "level": 76,
+      "hp": 260,
+      "max_hp": 260
+    },
+    {
+      "type": "ability",
+      "player": "p2",
+      "ability": "Intimidate"
+    },
+    {
+      "type": "unboost",
+      "player": "p1",
+      "stat": "atk",
+      "amount": 1
+    },
+    {
+      "type": "turn",
+      "turn": 1
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Noivern",
+      "level": 82,
+      "hp": 274,
+      "max_hp": 274
+    },
+    {
+      "type": "move",
+      "player": "p2",
+      "move": "Stealth Rock",
+      "target": "p1"
+    },
+    {
+      "type": "sidestart",
+      "player": "p1",
+      "condition": "Stealth Rock"
+    },
+    {
+      "type": "turn",
+      "turn": 2
+    },
+    {
+      "type": "switch",
+      "player": "p2",
+      "species": "Blissey",
+      "level": 85,
+      "hp": 572,
+      "max_hp": 572
+    },
+    {
+      "type": "move",
+      "player": "p1",
+      "move": "Hurricane",
+      "target": "p2"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 488,
+      "max_hp": 572
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 523,
+      "max_hp": 572
+    },
+    {
+      "type": "turn",
+      "turn": 3
+    },
+    {
+      "type": "switch",
+      "player": "p1",
+      "species": "Ampharos",
+      "level": 88,
+      "hp": 302,
+      "max_hp": 302
+    },
+    {
+      "type": "damage",
+      "player": "p1",
+      "hp": 265,
+      "max_hp": 302,
+      "source": "[from] Stealth Rock"
+    },
+    {
+      "type": "damage",
+      "player": "p2",
+      "hp": 513,
+      "max_hp": 572,
+      "source": "[from] confusion"
+    },
+    {
+      "type": "heal",
+      "player": "p2",
+      "hp": 548,
+      "max_hp": 572
+    },
+    {
+      "type": "turn",
+      "turn": 4
+    },
+    {
+      "type": "win",
+      "player": "Kcser"
+    }
+  ],
+  "inputlog": [
+    {
+      "player": "version",
+      "action": "d3c0b4cf388ee6ae107ccf7216674edd176762ce",
+      "args": ""
+    },
+    {
+      "player": "start",
+      "action": "{\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,cfab28a266d26087b7a852a91e55db85\",\"rated\":\"Rated",
+      "args": "battle\"}"
+    },
+    {
+      "player": "player",
+      "action": "p1",
+      "args": "{\"name\":\"Kcser\",\"avatar\":\"ruinmaniac\",\"rating\":1247,\"seed\":\"sodium,4dd032109578b4566131bb9fed249f2f\"}"
+    },
+    {
+      "player": "player",
+      "action": "p2",
+      "args": "{\"name\":\"Yurcji\",\"avatar\":\"265\",\"rating\":1203,\"seed\":\"sodium,a345119decfda2a7bce235804e9356b3\"}"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "stealthrock"
+    },
+    {
+      "player": "p1",
+      "action": "move",
+      "args": "hurricane"
+    },
+    {
+      "player": "p2",
+      "action": "switch",
+      "args": "4"
+    },
+    {
+      "player": "p1",
+      "action": "switch",
+      "args": "5"
+    },
+    {
+      "player": "p2",
+      "action": "move",
+      "args": "thunderwave"
+    },
+    {
+      "player": "forcelose",
+      "action": "p2",
+      "args": ""
+    }
+  ],
+  "winner": "Kcser"
+}

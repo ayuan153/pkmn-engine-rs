@@ -60,7 +60,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 236,
-      "max_hp": 290
+      "max_hp": 290,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -129,7 +130,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 117,
-      "max_hp": 245
+      "max_hp": 245,
+      "effectiveness": "super"
     },
     {
       "type": "switch",
@@ -226,7 +228,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -302,7 +305,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 187,
-      "max_hp": 277
+      "max_hp": 277,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -323,7 +327,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "crit": true
     },
     {
       "type": "faint",
@@ -399,7 +404,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 100,
-      "max_hp": 274
+      "max_hp": 274,
+      "crit": true
     },
     {
       "type": "status",
@@ -536,7 +542,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 117,
-      "max_hp": 279
+      "max_hp": 279,
+      "effectiveness": "super"
     },
     {
       "type": "weather",
@@ -570,7 +577,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 220,
-      "max_hp": 290
+      "max_hp": 290,
+      "effectiveness": "resisted"
     },
     {
       "type": "weather",
@@ -597,7 +605,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 205,
-      "max_hp": 290
+      "max_hp": 290,
+      "effectiveness": "resisted"
     },
     {
       "type": "status",
@@ -618,7 +627,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 53,
-      "max_hp": 279
+      "max_hp": 279,
+      "effectiveness": "super"
     },
     {
       "type": "weather",
@@ -668,6 +678,11 @@
       "type": "move",
       "player": "p2",
       "move": "Gunk Shot",
+      "target": "p1"
+    },
+    {
+      "type": "miss",
+      "player": "p2",
       "target": "p1"
     },
     {
@@ -751,6 +766,11 @@
       "target": "p1"
     },
     {
+      "type": "miss",
+      "player": "p2",
+      "target": "p1"
+    },
+    {
       "type": "turn",
       "turn": 22
     },
@@ -802,7 +822,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "crit": true
     },
     {
       "type": "faint",
@@ -869,6 +890,11 @@
       "type": "move",
       "player": "p2",
       "move": "Brave Bird",
+      "target": "p1"
+    },
+    {
+      "type": "miss",
+      "player": "p2",
       "target": "p1"
     },
     {

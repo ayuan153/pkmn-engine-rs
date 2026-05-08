@@ -1,0 +1,16 @@
+{
+  "id": "gen9randombattle-2604524398",
+  "format": "[Gen 9] Random Battle",
+  "players": [
+    "Bigoleg",
+    "rubiixen"
+  ],
+  "log": "|j|\u2606Bigoleg\n|j|\u2606rubiixen\n|t:|1778211396\n|gametype|singles\n|player|p1|Bigoleg|ethan|1905\n|player|p2|rubiixen|jacinthe|1938\n|gen|9\n|tier|[Gen 9] Random Battle\n|rated|\n|rule|Species Clause: Limit one of each Pok\u00e9mon\n|rule|HP Percentage Mod: HP is shown in percentages\n|rule|Sleep Clause Mod: Limit one foe put to sleep\n|rule|Illusion Level Mod: Illusion disguises the Pok\u00e9mon's true level\n|\n|t:|1778211396\n|teamsize|p1|6\n|teamsize|p2|6\n|start\n|switch|p1a: Floatzel|Floatzel, L86, F|286/286\n|switch|p2a: Calyrex|Calyrex-Shadow, L64|235/235\n|-ability|p2a: Calyrex|As One\n|-ability|p2a: Calyrex|Unnerve\n|turn|1\n|inactive|Battle timer is ON: inactive players will automatically lose when time's up. (requested by Bigoleg)\n|inactive|rubiixen has 120 seconds left.\n|l|\u2606Bigoleg\n|inactive|Bigoleg disconnected and has a minute to reconnect!\n|player|p1|\n|j|\u2606Bigoleg\n|inactive|Bigoleg reconnected.\n|player|p1|Bigoleg|ethan|\n|inactive|rubiixen has 90 seconds left.\n|inactive|rubiixen has 60 seconds left.\n|inactive|rubiixen has 30 seconds left.\n|inactive|rubiixen has 20 seconds left.\n|inactive|rubiixen has 15 seconds left.\n|inactive|rubiixen has 10 seconds left.\n|c|\u2606Bigoleg|Gg\n|inactive|rubiixen has 5 seconds left.\n|-message|rubiixen lost due to inactivity.\n|\n|win|Bigoleg\n|raw|Bigoleg's rating: 1905 &rarr; <strong>1927</strong><br />(+22 for winning)\n|raw|rubiixen's rating: 1938 &rarr; <strong>1916</strong><br />(-22 for losing)\n",
+  "inputlog": ">version d3c0b4cf388ee6ae107ccf7216674edd176762ce\n>start {\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,a3f9d0c07b0c6975cd658649ab82a49c\",\"rated\":\"Rated battle\"}\n>player p1 {\"name\":\"Bigoleg\",\"avatar\":\"ethan\",\"rating\":1905,\"seed\":\"sodium,655b14c88971394a4b7e1d4259346532\"}\n>player p2 {\"name\":\"rubiixen\",\"avatar\":\"jacinthe\",\"rating\":1938,\"seed\":\"sodium,12e87c4bd85e2cced210c1d8c800f962\"}\n>chat \u2606Bigoleg|Gg\n>forcelose p2",
+  "uploadtime": 1778211553,
+  "views": 2,
+  "formatid": "gen9randombattle",
+  "rating": 1916,
+  "private": 0,
+  "password": null
+}

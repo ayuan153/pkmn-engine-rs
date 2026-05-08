@@ -267,7 +267,8 @@
       "player": "p2",
       "hp": 235,
       "max_hp": 268,
-      "source": "[from] Leech Seed"
+      "source": "[from] Leech Seed",
+      "effectiveness": "super"
     },
     {
       "type": "heal",
@@ -315,6 +316,11 @@
       "target": "p1"
     },
     {
+      "type": "miss",
+      "player": "p2",
+      "target": "p1"
+    },
+    {
       "type": "move",
       "player": "p1",
       "move": "Flamethrower",
@@ -346,7 +352,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -535,7 +542,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 67,
-      "max_hp": 277
+      "max_hp": 277,
+      "effectiveness": "super"
     },
     {
       "type": "heal",
@@ -556,7 +564,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -734,7 +743,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 143,
-      "max_hp": 314
+      "max_hp": 314,
+      "effectiveness": "super"
     },
     {
       "type": "boost",
@@ -762,7 +772,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 262,
-      "max_hp": 325
+      "max_hp": 325,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -811,7 +822,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 205,
-      "max_hp": 325
+      "max_hp": 325,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -902,7 +914,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 112,
-      "max_hp": 325
+      "max_hp": 325,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -978,6 +991,11 @@
       "type": "move",
       "player": "p2",
       "move": "Sleep Powder",
+      "target": "p1"
+    },
+    {
+      "type": "miss",
+      "player": "p2",
       "target": "p1"
     },
     {

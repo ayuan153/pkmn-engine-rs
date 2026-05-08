@@ -40,7 +40,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 215,
-      "max_hp": 261
+      "max_hp": 261,
+      "effectiveness": "resisted"
     },
     {
       "type": "unboost",
@@ -135,6 +136,11 @@
       "target": "p2"
     },
     {
+      "type": "miss",
+      "player": "p1",
+      "target": "p2"
+    },
+    {
       "type": "move",
       "player": "p2",
       "move": "Earthquake",
@@ -143,7 +149,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",

@@ -1,0 +1,16 @@
+{
+  "id": "gen9randombattle-2604526969",
+  "format": "[Gen 9] Random Battle",
+  "players": [
+    "Kcser",
+    "Yurcji"
+  ],
+  "log": "|j|\u2606Kcser\n|j|\u2606Yurcji\n|t:|1778211709\n|gametype|singles\n|player|p1|Kcser|ruinmaniac|1247\n|player|p2|Yurcji|265|1203\n|gen|9\n|tier|[Gen 9] Random Battle\n|rated|\n|rule|Species Clause: Limit one of each Pok\u00e9mon\n|rule|HP Percentage Mod: HP is shown in percentages\n|rule|Sleep Clause Mod: Limit one foe put to sleep\n|rule|Illusion Level Mod: Illusion disguises the Pok\u00e9mon's true level\n|\n|t:|1778211709\n|teamsize|p1|6\n|teamsize|p2|6\n|start\n|switch|p1a: Ampharos|Ampharos, L88, F|302/302\n|switch|p2a: Landorus|Landorus-Therian, L76, M|260/260\n|-ability|p2a: Landorus|Intimidate|boost\n|-unboost|p1a: Ampharos|atk|1\n|turn|1\n|inactive|Battle timer is ON: inactive players will automatically lose when time's up. (requested by Kcser)\n|\n|t:|1778211771\n|switch|p1a: Noivern|Noivern, L82, F|274/274\n|move|p2a: Landorus|Stealth Rock|p1a: Noivern\n|-sidestart|p1: Kcser|move: Stealth Rock\n|\n|upkeep\n|turn|2\n|\n|t:|1778211786\n|switch|p2a: Blissey|Blissey, L85, F|572/572\n|move|p1a: Noivern|Hurricane|p2a: Blissey\n|-damage|p2a: Blissey|488/572\n|-start|p2a: Blissey|confusion\n|\n|-heal|p2a: Blissey|523/572|[from] item: Leftovers\n|upkeep\n|turn|3\n|\n|t:|1778211804\n|switch|p1a: Ampharos|Ampharos, L88, F|302/302\n|-damage|p1a: Ampharos|265/302|[from] Stealth Rock\n|-activate|p2a: Blissey|confusion\n|-damage|p2a: Blissey|513/572|[from] confusion\n|\n|-heal|p2a: Blissey|548/572|[from] item: Leftovers\n|upkeep\n|turn|4\n|inactive|Yurcji has 120 seconds left.\n|inactive|Yurcji has 90 seconds left.\n|inactive|Yurcji has 60 seconds left.\n|inactive|Kcser has 120 seconds left.\n|inactive|Yurcji has 30 seconds left.\n|inactive|Yurcji has 20 seconds left.\n|inactive|Kcser has 90 seconds left.\n|inactive|Yurcji has 15 seconds left.\n|inactive|Yurcji has 10 seconds left.\n|inactive|Yurcji has 5 seconds left.\n|-message|Yurcji lost due to inactivity.\n|\n|win|Kcser\n|raw|Kcser's rating: 1247 &rarr; <strong>1269</strong><br />(+22 for winning)\n|raw|Yurcji's rating: 1203 &rarr; <strong>1181</strong><br />(-22 for losing)\n",
+  "inputlog": ">version d3c0b4cf388ee6ae107ccf7216674edd176762ce\n>start {\"formatid\":\"gen9randombattle\",\"seed\":\"sodium,cfab28a266d26087b7a852a91e55db85\",\"rated\":\"Rated battle\"}\n>player p1 {\"name\":\"Kcser\",\"avatar\":\"ruinmaniac\",\"rating\":1247,\"seed\":\"sodium,4dd032109578b4566131bb9fed249f2f\"}\n>player p2 {\"name\":\"Yurcji\",\"avatar\":\"265\",\"rating\":1203,\"seed\":\"sodium,a345119decfda2a7bce235804e9356b3\"}\n>p1 switch 5\n>p2 move stealthrock\n>p1 move hurricane\n>p2 switch 4\n>p1 switch 5\n>p2 move thunderwave\n>forcelose p2",
+  "uploadtime": 1778211963,
+  "views": 1,
+  "formatid": "gen9randombattle",
+  "rating": 1181,
+  "private": 0,
+  "password": null
+}

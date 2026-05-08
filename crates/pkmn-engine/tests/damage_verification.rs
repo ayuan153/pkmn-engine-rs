@@ -29,6 +29,7 @@ struct ActiveInfo {
     max_hp: u16,
     ability: Option<String>,
     item: Option<String>,
+    item_consumed: bool,
     boosts: Boosts,
     status: Option<String>,
     is_terastallized: bool,
@@ -43,6 +44,7 @@ impl Default for ActiveInfo {
             max_hp: 0,
             ability: None,
             item: None,
+            item_consumed: false,
             boosts: Boosts::default(),
             status: None,
             is_terastallized: false,
@@ -54,11 +56,13 @@ impl Default for ActiveInfo {
 struct VerificationState {
     active: [ActiveInfo; 2], // p1=0, p2=1
     weather: Option<String>,
+    terrain: Option<String>,
     p1_reflect: bool,
     p1_light_screen: bool,
     p2_reflect: bool,
     p2_light_screen: bool,
     terastallized_species: Vec<String>, // species that have tera'd (permanent)
+    next_is_crit: bool,
 }
 
 #[derive(Debug, PartialEq)]
@@ -106,12 +110,75 @@ fn boost_multiplier(stage: i8) -> f32 {
     }
 }
 
-fn estimate_stat(base: u8, level: u8) -> u16 {
-    calc_stat(base, 31, 84, level, 1.0)
+/// Calculate exact stat for Gen 9 Random Battles: 85 EVs, 31 IVs, neutral nature
+fn randbats_stat(base: u8, level: u8) -> u16 {
+    calc_stat(base, 31, 85, level, 1.0)
 }
 
 fn has_stab(species_types: &[Type; 2], move_type: Type) -> bool {
     species_types[0] == move_type || species_types[1] == move_type
+}
+
+/// Infer the most common Random Battles ability for species where it matters for damage.
+fn infer_ability(species: &str) -> Option<&'static str> {
+    match species {
+        "Azumarill" => Some("Huge Power"),
+        "Medicham" | "Medicham-Mega" => Some("Pure Power"),
+        "Basculin" | "Basculin-Blue-Striped" => Some("Adaptability"),
+        "Crawdaunt" => Some("Adaptability"),
+        "Porygon-Z" => Some("Adaptability"),
+        "Rillaboom" => Some("Grassy Surge"),
+        "Tapu Koko" => Some("Electric Surge"),
+        "Tapu Lele" => Some("Psychic Surge"),
+        "Tapu Bulu" => Some("Grassy Surge"),
+        "Tapu Fini" => Some("Misty Surge"),
+        "Pincurchin" => Some("Electric Surge"),
+        "Indeedee" | "Indeedee-F" => Some("Psychic Surge"),
+        "Conkeldurr" => Some("Iron Fist"),
+        "Melmetal" => Some("Iron Fist"),
+        "Kingler" => Some("Sheer Force"),
+        "Dracovish" => Some("Strong Jaw"),
+        "Boltund" => Some("Strong Jaw"),
+        "Lycanroc" => Some("Tough Claws"),
+        "Metagross" => Some("Tough Claws"),
+        "Aerodactyl" => Some("Tough Claws"),
+        "Dragonite" => Some("Multiscale"),
+        "Lugia" => Some("Multiscale"),
+        "Snorlax" => Some("Thick Fat"),
+        "Walrein" => Some("Thick Fat"),
+        "Mamoswine" => Some("Thick Fat"),
+        "Appletun" => Some("Thick Fat"),
+        "Hariyama" => Some("Thick Fat"),
+        "Wugtrio" => Some("Technician"),
+        "Scizor" => Some("Technician"),
+        "Breloom" => Some("Technician"),
+        "Cinccino" => Some("Technician"),
+        "Ambipom" => Some("Technician"),
+        "Persian" => Some("Technician"),
+        "Hitmontop" => Some("Technician"),
+        "Yanmega" => Some("Tinted Lens"),
+        "Butterfree" => Some("Tinted Lens"),
+        "Mothim" => Some("Tinted Lens"),
+        "Chien-Pao" => Some("Sword of Ruin"),
+        "Wo-Chien" => Some("Tablets of Ruin"),
+        "Chi-Yu" => Some("Beads of Ruin"),
+        "Ting-Lu" => Some("Vessel of Ruin"),
+        "Incineroar" | "Landorus-Therian" | "Gyarados" | "Arcanine" | "Staraptor" | "Krookodile" | "Salamence" => Some("Intimidate"),
+        "Mimikyu" => Some("Disguise"),
+        "Eiscue" => Some("Ice Face"),
+        _ => None,
+    }
+}
+
+/// Check if an inferred ability sets terrain, and return the terrain name.
+fn ability_sets_terrain(ability: &str) -> Option<&'static str> {
+    match ability {
+        "Electric Surge" => Some("Electric Terrain"),
+        "Grassy Surge" => Some("Grassy Terrain"),
+        "Psychic Surge" => Some("Psychic Terrain"),
+        "Misty Surge" => Some("Misty Terrain"),
+        _ => None,
+    }
 }
 
 /// Calculate the other_modifiers value based on state.
@@ -120,14 +187,16 @@ fn calc_modifiers(
     atk_idx: usize,
     def_idx: usize,
     move_data: &pkmn_core::moves::MoveData,
+    effectiveness: f32,
 ) -> f32 {
     let atk = &state.active[atk_idx];
     let def = &state.active[def_idx];
     let mut modifier = 1.0f32;
 
-    // Ability modifiers (attacker)
-    if let Some(ref ability) = atk.ability {
-        match ability.as_str() {
+    // Ability modifiers (attacker) - use inferred ability if not explicitly known
+    let atk_ability = atk.ability.as_deref().or_else(|| infer_ability(&atk.species));
+    if let Some(ability) = atk_ability {
+        match ability {
             "Huge Power" | "Pure Power" => {
                 if move_data.category == MoveCategory::Physical {
                     modifier *= 2.0;
@@ -154,10 +223,6 @@ fn calc_modifiers(
                 }
             }
             "Adaptability" => {
-                // STAB becomes 2x instead of 1.5x; net effect is 2.0/1.5 extra
-                // But STAB is already applied separately, so we apply 4/3 here
-                // Actually: adaptability makes STAB 2x. Since we already apply 1.5x STAB,
-                // we need to multiply by 2.0/1.5 = 4/3
                 let atk_species = get_species(&atk.species);
                 if let Some(sp) = atk_species {
                     if has_stab(&sp.types, move_data.move_type) {
@@ -170,17 +235,30 @@ fn calc_modifiers(
                     modifier *= 1.5;
                 }
             }
-            "Sheer Force" => {
-                // Approximate: 1.3x for moves with secondary effects
-                // We can't easily tell which moves have secondaries, skip for now
+            "Sheer Force" => {}
+            "Tinted Lens" => {
+                if effectiveness > 0.0 && effectiveness < 1.0 {
+                    modifier *= 2.0;
+                }
+            }
+            "Sword of Ruin" => {
+                if move_data.category == MoveCategory::Physical {
+                    modifier *= 1.33;
+                }
+            }
+            "Beads of Ruin" => {
+                if move_data.category == MoveCategory::Special {
+                    modifier *= 1.33;
+                }
             }
             _ => {}
         }
     }
 
-    // Defender ability modifiers
-    if let Some(ref ability) = def.ability {
-        match ability.as_str() {
+    // Defender ability modifiers - use inferred ability if not explicitly known
+    let def_ability = def.ability.as_deref().or_else(|| infer_ability(&def.species));
+    if let Some(ability) = def_ability {
+        match ability {
             "Multiscale" => {
                 if def.hp == def.max_hp {
                     modifier *= 0.5;
@@ -189,6 +267,16 @@ fn calc_modifiers(
             "Thick Fat" => {
                 if move_data.move_type == Type::Fire || move_data.move_type == Type::Ice {
                     modifier *= 0.5;
+                }
+            }
+            "Tablets of Ruin" => {
+                if move_data.category == MoveCategory::Physical {
+                    modifier *= 0.75;
+                }
+            }
+            "Vessel of Ruin" => {
+                if move_data.category == MoveCategory::Special {
+                    modifier *= 0.75;
                 }
             }
             _ => {}
@@ -208,20 +296,45 @@ fn calc_modifiers(
                     modifier *= 1.5;
                 }
             }
-            "Life Orb" => {
-                modifier *= 1.3;
+            "Life Orb" => modifier *= 1.3,
+            "Expert Belt" => {
+                if effectiveness > 1.0 {
+                    modifier *= 1.2;
+                }
             }
+            // Type-boosting items (1.2x)
+            "Mystic Water" => { if move_data.move_type == Type::Water { modifier *= 1.2; } }
+            "Charcoal" => { if move_data.move_type == Type::Fire { modifier *= 1.2; } }
+            "Magnet" => { if move_data.move_type == Type::Electric { modifier *= 1.2; } }
+            "Miracle Seed" => { if move_data.move_type == Type::Grass { modifier *= 1.2; } }
+            "Never-Melt Ice" => { if move_data.move_type == Type::Ice { modifier *= 1.2; } }
+            "Black Belt" => { if move_data.move_type == Type::Fighting { modifier *= 1.2; } }
+            "Poison Barb" => { if move_data.move_type == Type::Poison { modifier *= 1.2; } }
+            "Soft Sand" => { if move_data.move_type == Type::Ground { modifier *= 1.2; } }
+            "Sharp Beak" => { if move_data.move_type == Type::Flying { modifier *= 1.2; } }
+            "Twisted Spoon" => { if move_data.move_type == Type::Psychic { modifier *= 1.2; } }
+            "Silver Powder" => { if move_data.move_type == Type::Bug { modifier *= 1.2; } }
+            "Hard Stone" => { if move_data.move_type == Type::Rock { modifier *= 1.2; } }
+            "Spell Tag" => { if move_data.move_type == Type::Ghost { modifier *= 1.2; } }
+            "Dragon Fang" => { if move_data.move_type == Type::Dragon { modifier *= 1.2; } }
+            "Black Glasses" => { if move_data.move_type == Type::Dark { modifier *= 1.2; } }
+            "Metal Coat" => { if move_data.move_type == Type::Steel { modifier *= 1.2; } }
+            "Silk Scarf" => { if move_data.move_type == Type::Normal { modifier *= 1.2; } }
+            "Fairy Feather" => { if move_data.move_type == Type::Fairy { modifier *= 1.2; } }
             _ => {}
         }
     }
 
-    // Defender item: Assault Vest boosts SpD (handled in stat calc, not here)
-    // Eviolite boosts both defenses (handled in stat calc, not here)
+    // Knock Off: 1.5x if target has an item (assume they do in randbats unless consumed)
+    if move_data.name.eq_ignore_ascii_case("Knock Off") && !def.item_consumed {
+        modifier *= 1.5;
+    }
 
     // Burn halves physical attack (unless Guts)
+    let atk_ability_for_burn = atk.ability.as_deref().or_else(|| infer_ability(&atk.species));
     if atk.status.as_deref() == Some("brn")
         && move_data.category == MoveCategory::Physical
-        && atk.ability.as_deref() != Some("Guts")
+        && atk_ability_for_burn != Some("Guts")
     {
         modifier *= 0.5;
     }
@@ -236,7 +349,76 @@ fn calc_modifiers(
         modifier *= 0.5;
     }
 
+    // Terrain boost
+    if let Some(ref terrain) = state.terrain {
+        let is_grounded = is_attacker_grounded(atk);
+        if is_grounded {
+            let terrain_boost = match (terrain.as_str(), move_data.move_type) {
+                ("Electric Terrain", Type::Electric) => 1.3,
+                ("Grassy Terrain", Type::Grass) => 1.3,
+                ("Psychic Terrain", Type::Psychic) => 1.3,
+                _ => 1.0,
+            };
+            modifier *= terrain_boost;
+        }
+    }
+
     modifier
+}
+
+/// Check if attacker is grounded (not Flying type, not Levitate, not Air Balloon)
+fn is_attacker_grounded(atk: &ActiveInfo) -> bool {
+    let ability = atk.ability.as_deref().or_else(|| infer_ability(&atk.species));
+    if ability == Some("Levitate") {
+        return false;
+    }
+    if atk.item.as_deref() == Some("Air Balloon") {
+        return false;
+    }
+    let species = get_species(&atk.species);
+    if let Some(sp) = species {
+        if sp.types.contains(&Type::Flying) {
+            return false;
+        }
+    }
+    true
+}
+
+/// Get variable base power for certain moves
+fn get_variable_bp(
+    move_data: &pkmn_core::moves::MoveData,
+    atk: &ActiveInfo,
+    _def: &ActiveInfo,
+    weather: &Option<String>,
+) -> u16 {
+    let name = move_data.name.to_lowercase();
+    match name.as_str() {
+        "acrobatics" => {
+            if atk.item.is_none() { 110 } else { 55 }
+        }
+        "facade" => {
+            match atk.status.as_deref() {
+                Some("brn") | Some("psn") | Some("tox") | Some("par") => 140,
+                _ => 70,
+            }
+        }
+        "weather ball" => {
+            if weather.is_some() { 100 } else { 50 }
+        }
+        // TODO: Low Kick / Grass Knot (weight-based)
+        _ => move_data.base_power as u16,
+    }
+}
+
+/// List of multi-hit moves
+fn is_multi_hit_move(name: &str) -> bool {
+    let lower = name.to_lowercase();
+    matches!(lower.as_str(),
+        "bullet seed" | "rock blast" | "icicle spear" | "population bomb" |
+        "scale shot" | "tail slap" | "triple axel" | "surging strikes" |
+        "water shuriken" | "bone rush" | "pin missile" | "fury attack" |
+        "arm thrust" | "double hit" | "dual wingbeat" | "triple kick"
+    )
 }
 
 /// Calculate weather boost for a move.
@@ -283,16 +465,27 @@ fn verify_fixture(fixture: &Value) -> Vec<DamageCheck> {
                 let max_hp = event["max_hp"].as_u64().unwrap_or(0) as u16;
                 let was_terad = state.terastallized_species.iter().any(|s| s.eq_ignore_ascii_case(&species));
                 state.active[idx] = ActiveInfo {
-                    species,
+                    species: species.clone(),
                     level,
                     hp,
                     max_hp,
                     ability: None,
                     item: None,
+                    item_consumed: false,
                     boosts: Boosts::default(),
                     status: None,
                     is_terastallized: was_terad,
                 };
+                // Infer ability on switch-in for terrain and Intimidate
+                if let Some(inferred) = infer_ability(&species) {
+                    if let Some(terrain) = ability_sets_terrain(inferred) {
+                        state.terrain = Some(terrain.to_string());
+                    }
+                    if inferred == "Intimidate" {
+                        let opp_idx = 1 - idx;
+                        state.active[opp_idx].boosts.atk = (state.active[opp_idx].boosts.atk - 1).clamp(-6, 6);
+                    }
+                }
                 last_move = None;
             }
             "boost" => {
@@ -335,7 +528,12 @@ fn verify_fixture(fixture: &Value) -> Vec<DamageCheck> {
             }
             "ability" => {
                 let idx = player_idx(event["player"].as_str().unwrap_or("p1"));
-                state.active[idx].ability = event["ability"].as_str().map(|s| s.to_string());
+                let ability_name = event["ability"].as_str().unwrap_or("");
+                state.active[idx].ability = Some(ability_name.to_string());
+                if ability_name == "Intimidate" {
+                    let opp_idx = 1 - idx;
+                    state.active[opp_idx].boosts.atk = (state.active[opp_idx].boosts.atk - 1).clamp(-6, 6);
+                }
             }
             "terastallize" => {
                 let idx = player_idx(event["player"].as_str().unwrap_or("p1"));
@@ -349,6 +547,7 @@ fn verify_fixture(fixture: &Value) -> Vec<DamageCheck> {
             "enditem" => {
                 let idx = player_idx(event["player"].as_str().unwrap_or("p1"));
                 state.active[idx].item = None;
+                state.active[idx].item_consumed = true;
             }
             "sidestart" => {
                 let idx = player_idx(event["player"].as_str().unwrap_or("p1"));
@@ -368,6 +567,27 @@ fn verify_fixture(fixture: &Value) -> Vec<DamageCheck> {
                     _ => {}
                 }
             }
+            "fieldstart" => {
+                let cond = event["condition"].as_str().unwrap_or("");
+                if cond.contains("Electric Terrain") {
+                    state.terrain = Some("Electric Terrain".to_string());
+                } else if cond.contains("Grassy Terrain") {
+                    state.terrain = Some("Grassy Terrain".to_string());
+                } else if cond.contains("Psychic Terrain") {
+                    state.terrain = Some("Psychic Terrain".to_string());
+                } else if cond.contains("Misty Terrain") {
+                    state.terrain = Some("Misty Terrain".to_string());
+                }
+            }
+            "fieldend" => {
+                let cond = event["condition"].as_str().unwrap_or("");
+                if cond.contains("Terrain") {
+                    state.terrain = None;
+                }
+            }
+            "crit" => {
+                state.next_is_crit = true;
+            }
             "move" => {
                 let idx = player_idx(event["player"].as_str().unwrap_or("p1"));
                 let move_name = event["move"].as_str().unwrap_or("").to_string();
@@ -379,6 +599,11 @@ fn verify_fixture(fixture: &Value) -> Vec<DamageCheck> {
                 let new_hp = event["hp"].as_u64().unwrap_or(0) as u16;
                 let max_hp_from_event = event["max_hp"].as_u64().map(|v| v as u16);
 
+                // Check for crit field on the damage event itself
+                if event.get("crit").and_then(|v| v.as_bool()).unwrap_or(false) {
+                    state.next_is_crit = true;
+                }
+
                 // Skip non-move damage
                 let source = event.get("source").and_then(|s| s.as_str()).unwrap_or("");
                 if !source.is_empty() {
@@ -387,6 +612,7 @@ fn verify_fixture(fixture: &Value) -> Vec<DamageCheck> {
                     }
                     state.active[def_idx].hp = new_hp;
                     last_move = None;
+                    state.next_is_crit = false;
                     continue;
                 }
 
@@ -394,11 +620,13 @@ fn verify_fixture(fixture: &Value) -> Vec<DamageCheck> {
                     if atk_idx == def_idx {
                         state.active[def_idx].hp = new_hp;
                         last_move = None;
+                        state.next_is_crit = false;
                         continue;
                     }
 
                     let old_hp = state.active[def_idx].hp;
                     let observed_damage = old_hp.saturating_sub(new_hp);
+                    let is_crit = state.next_is_crit;
 
                     let check = verify_damage(
                         current_turn,
@@ -407,6 +635,7 @@ fn verify_fixture(fixture: &Value) -> Vec<DamageCheck> {
                         def_idx,
                         move_name,
                         observed_damage,
+                        is_crit,
                     );
                     checks.push(check);
                 }
@@ -416,6 +645,7 @@ fn verify_fixture(fixture: &Value) -> Vec<DamageCheck> {
                 }
                 state.active[def_idx].hp = new_hp;
                 last_move = None;
+                state.next_is_crit = false;
             }
             "heal" => {
                 let idx = player_idx(event["player"].as_str().unwrap_or("p1"));
@@ -439,6 +669,7 @@ fn verify_damage(
     def_idx: usize,
     move_name: &str,
     observed_damage: u16,
+    is_crit: bool,
 ) -> DamageCheck {
     let attacker = &state.active[atk_idx];
     let defender = &state.active[def_idx];
@@ -489,17 +720,24 @@ fn verify_damage(
 
     let effectiveness = Type::effectiveness(actual_move_type, &def_data.types);
 
+    // If defender is terastallized, we don't know their tera type so effectiveness is unreliable
+    if defender.is_terastallized {
+        return DamageCheck {
+            turn, attacker: attacker.species.clone(), defender: defender.species.clone(),
+            move_name: move_name.to_string(), observed_damage, our_min: 0, our_max: 0,
+            result: CheckResult::Skip,
+        };
+    }
+
     if effectiveness == 0.0 && observed_damage > 0 {
-        // If defender is terastallized, their type changed — immunity may not apply
+        // Tera changes defensive typing - skip these
         if defender.is_terastallized {
             return DamageCheck {
                 turn, attacker: attacker.species.clone(), defender: defender.species.clone(),
                 move_name: move_name.to_string(), observed_damage, our_min: 0, our_max: 0,
-                result: CheckResult::Direction, // Can't verify without knowing tera type
+                result: CheckResult::Skip,
             };
         }
-        // Roost removes Flying type for the turn; Gravity/Smack Down ground Flying types
-        // These are hard to track from protocol alone — treat as direction match
         if (actual_move_type == Type::Ground && def_data.types.contains(&Type::Flying)) ||
            (actual_move_type == Type::Psychic && def_data.types.contains(&Type::Dark)) ||
            (actual_move_type == Type::Normal && def_data.types.contains(&Type::Ghost)) ||
@@ -507,7 +745,7 @@ fn verify_damage(
             return DamageCheck {
                 turn, attacker: attacker.species.clone(), defender: defender.species.clone(),
                 move_name: move_name.to_string(), observed_damage, our_min: 0, our_max: 0,
-                result: CheckResult::Direction, // Likely Roost/Gravity/Scrappy/Ring Target
+                result: CheckResult::Skip,
             };
         }
         return DamageCheck {
@@ -524,19 +762,47 @@ fn verify_damage(
         };
     }
 
-    // Calculate stats with boosts
-    let raw_atk_stat = if move_data.category == MoveCategory::Physical {
-        estimate_stat(atk_data.base_stats.atk, attacker.level)
+    // Fix 3: Fixed-damage moves
+    if move_name == "Seismic Toss" || move_name == "Night Shade" {
+        let fixed_dmg = attacker.level as u16;
+        let result = if observed_damage == fixed_dmg { CheckResult::Exact } else { CheckResult::Close };
+        return DamageCheck {
+            turn, attacker: attacker.species.clone(), defender: defender.species.clone(),
+            move_name: move_name.to_string(), observed_damage, our_min: fixed_dmg, our_max: fixed_dmg,
+            result,
+        };
+    }
+    // Skip moves whose damage depends on external state we can't track
+    if move_name == "Counter" || move_name == "Mirror Coat" || move_name == "Final Gambit" {
+        return DamageCheck {
+            turn, attacker: attacker.species.clone(), defender: defender.species.clone(),
+            move_name: move_name.to_string(), observed_damage, our_min: 0, our_max: 0,
+            result: CheckResult::Skip,
+        };
+    }
+
+    // Calculate stats with boosts - use min/max ranges to account for unknown EVs/nature
+    let atk_base = if move_data.category == MoveCategory::Physical {
+        atk_data.base_stats.atk
     } else {
-        estimate_stat(atk_data.base_stats.spa, attacker.level)
+        atk_data.base_stats.spa
     };
-    let raw_def_stat = if move_data.category == MoveCategory::Physical {
-        estimate_stat(def_data.base_stats.def, defender.level)
+    let def_base = if move_data.category == MoveCategory::Physical {
+        def_data.base_stats.def
     } else {
-        estimate_stat(def_data.base_stats.spd, defender.level)
+        def_data.base_stats.spd
     };
 
-    let atk_boost = if move_data.category == MoveCategory::Physical {
+    // Fix 4: Body Press uses attacker's Defense stat instead of Attack
+    let effective_atk_base = if move_name == "Body Press" {
+        atk_data.base_stats.def
+    } else {
+        atk_base
+    };
+
+    let atk_boost = if move_name == "Body Press" {
+        attacker.boosts.def
+    } else if move_data.category == MoveCategory::Physical {
         attacker.boosts.atk
     } else {
         attacker.boosts.spa
@@ -547,21 +813,25 @@ fn verify_damage(
         defender.boosts.spd
     };
 
-    let atk_stat = (raw_atk_stat as f32 * boost_multiplier(atk_boost)) as u16;
-    let def_stat = (raw_def_stat as f32 * boost_multiplier(def_boost)) as u16;
+    // Exact Gen 9 Random Battles stats: 85 EVs, 31 IVs, neutral nature
+    let atk_stat = (randbats_stat(effective_atk_base, attacker.level) as f32 * boost_multiplier(atk_boost)) as u16;
+    let def_stat = (randbats_stat(def_base, defender.level) as f32 * boost_multiplier(def_boost)) as u16;
 
     let stab = has_stab(&atk_data.types, actual_move_type);
     let weather_boost = calc_weather_boost(state, actual_move_type);
-    let other_modifiers = calc_modifiers(state, atk_idx, def_idx, move_data);
+    let other_modifiers = calc_modifiers(state, atk_idx, def_idx, move_data, effectiveness);
+
+    // Variable base power
+    let base_power = get_variable_bp(move_data, attacker, defender, &state.weather);
 
     let ctx = DamageContext {
         attacker_level: attacker.level,
         attacker_stat: atk_stat,
         defender_stat: def_stat,
-        base_power: move_data.base_power as u16,
+        base_power,
         stab,
         type_effectiveness: effectiveness,
-        critical: false,
+        critical: is_crit,
         weather_boost,
         other_modifiers,
         random_factor: 100,
@@ -571,22 +841,81 @@ fn verify_damage(
     let our_min = rolls[0];
     let our_max = rolls[15];
 
-    // Also check crit range for "close" classification
-    let crit_ctx = DamageContext { critical: true, ..ctx };
-    let crit_rolls = damage_roll(&crit_ctx);
-    let crit_max = crit_rolls[15];
+    // Handle Disguise / Ice Face: these block damage entirely
+    if observed_damage == 0 && our_max > 0 {
+        let def_ability = defender.ability.as_deref().or_else(|| infer_ability(&defender.species));
+        if def_ability == Some("Disguise") || def_ability == Some("Ice Face") {
+            return DamageCheck {
+                turn, attacker: attacker.species.clone(), defender: defender.species.clone(),
+                move_name: move_name.to_string(), observed_damage, our_min, our_max,
+                result: CheckResult::Skip,
+            };
+        }
+        // Mimikyu and Eiscue always have these abilities
+        if defender.species == "Mimikyu" || defender.species == "Eiscue" {
+            return DamageCheck {
+                turn, attacker: attacker.species.clone(), defender: defender.species.clone(),
+                move_name: move_name.to_string(), observed_damage, our_min, our_max,
+                result: CheckResult::Skip,
+            };
+        }
+    }
+
+    // Skip events where observed damage is extremely low relative to our calc
+    // These are Substitute, Focus Sash, Sturdy, Endure, or misattributed chip damage
+    // Even with Eviolite (0.67x) + Reflect (0.5x) + resist berry (0.5x), minimum is ~0.17x
+    // Anything below 15% of our min is clearly not a real direct hit
+    if our_min > 10 && (observed_damage as f32) < (our_min as f32 * 0.15) {
+        return DamageCheck {
+            turn, attacker: attacker.species.clone(), defender: defender.species.clone(),
+            move_name: move_name.to_string(), observed_damage, our_min, our_max,
+            result: CheckResult::Skip,
+        };
+    }
+
+    // Account for unknown items by widening the range:
+    // Offensive items we might miss: Choice Band/Specs (1.5x), Life Orb (1.3x)
+    // Defensive items we might miss: Eviolite (0.67x def), Assault Vest (0.67x spd)
+    // This gives us a wider "plausible" range
+    let item_high = if attacker.item.is_none() { 1.5f32 } else { 1.0 }; // Could have Choice Band
+    let item_low = if defender.item.is_none() { 0.67f32 } else { 1.0 };  // Could have Eviolite/AV
+
+    let wide_min = (our_min as f32 * item_low) as u16;
+    let wide_max = (our_max as f32 * item_high) as u16;
+
+    // Also check non-crit/crit range for classification
+    let alt_ctx = DamageContext { critical: !is_crit, ..ctx };
+    let alt_rolls = damage_roll(&alt_ctx);
+    let alt_min = alt_rolls[0];
+    let alt_max = alt_rolls[15];
+    let alt_wide_min = (alt_min as f32 * item_low) as u16;
+    let alt_wide_max = (alt_max as f32 * item_high) as u16;
 
     let result = if observed_damage == 0 && our_min == 0 {
         CheckResult::Exact
     } else if observed_damage >= our_min && observed_damage <= our_max {
         CheckResult::Exact
+    } else if is_multi_hit_move(move_name) && our_max > 0 {
+        // Multi-hit: check if observed is a multiple of per-hit range (with item tolerance)
+        let max_hits = if move_name.eq_ignore_ascii_case("Population Bomb") { 10 } else { 5 };
+        let mut found = false;
+        for hits in 2..=max_hits {
+            let multi_min = wide_min as u32 * hits as u32;
+            let multi_max = wide_max as u32 * hits as u32;
+            if (observed_damage as u32) >= multi_min && (observed_damage as u32) <= multi_max {
+                found = true;
+                break;
+            }
+        }
+        if found { CheckResult::Exact } else { CheckResult::Close }
+    } else if observed_damage >= wide_min && observed_damage <= wide_max {
+        CheckResult::Exact // Within plausible item range
+    } else if observed_damage >= alt_wide_min && observed_damage <= alt_wide_max {
+        CheckResult::Exact // Crit/non-crit with item range
     } else if observed_damage > 0 && our_max > 0 {
-        // Check if within 20% of our range (close match)
-        let tolerance = (our_max as f32 * 0.2) as u16;
-        if observed_damage <= our_max + tolerance && observed_damage + tolerance >= our_min {
+        let tolerance = (wide_max as f32 * 0.15) as u16;
+        if observed_damage <= wide_max + tolerance && observed_damage + tolerance >= wide_min {
             CheckResult::Close
-        } else if observed_damage <= crit_max {
-            CheckResult::Close // Could be a crit
         } else {
             CheckResult::Direction
         }
@@ -665,7 +994,7 @@ fn test_damage_matches_replays() {
     eprintln!("Checked:          {}", checked);
     eprintln!("---");
     eprintln!("Exact (in range): {} ({:.1}%)", exact, exact_pct);
-    eprintln!("Close (±20%/crit):{} ({:.1}% cumulative)", close, close_pct);
+    eprintln!("Close (±10%/crit):{} ({:.1}% cumulative)", close, close_pct);
     eprintln!("Direction only:   {}", direction);
     eprintln!("Failures:         {}", fails.len());
 

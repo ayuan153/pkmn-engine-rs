@@ -40,7 +40,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 216,
-      "max_hp": 262
+      "max_hp": 262,
+      "effectiveness": "resisted"
     },
     {
       "type": "turn",
@@ -100,7 +101,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 166,
-      "max_hp": 262
+      "max_hp": 262,
+      "effectiveness": "resisted"
     },
     {
       "type": "status",
@@ -136,6 +138,11 @@
       "type": "move",
       "player": "p1",
       "move": "Fire Blast",
+      "target": "p2"
+    },
+    {
+      "type": "miss",
+      "player": "p1",
       "target": "p2"
     },
     {
@@ -446,7 +453,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -497,7 +505,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -529,7 +538,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -570,7 +580,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 252,
-      "max_hp": 262
+      "max_hp": 262,
+      "effectiveness": "resisted"
     },
     {
       "type": "switch",
@@ -620,6 +631,11 @@
       "target": "p1"
     },
     {
+      "type": "miss",
+      "player": "p2",
+      "target": "p1"
+    },
+    {
       "type": "weather",
       "weather": "RainDance",
       "source": "[upkeep]"
@@ -650,7 +666,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 280,
-      "max_hp": 302
+      "max_hp": 302,
+      "effectiveness": "resisted"
     },
     {
       "type": "enditem",
@@ -707,7 +724,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 14,
-      "max_hp": 302
+      "max_hp": 302,
+      "effectiveness": "super"
     },
     {
       "type": "damage",
@@ -741,7 +759,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",

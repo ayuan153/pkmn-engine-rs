@@ -186,7 +186,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 218,
-      "max_hp": 275
+      "max_hp": 275,
+      "effectiveness": "resisted"
     },
     {
       "type": "heal",
@@ -270,7 +271,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 211,
-      "max_hp": 265
+      "max_hp": 265,
+      "effectiveness": "resisted"
     },
     {
       "type": "switch",
@@ -317,7 +319,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 180,
-      "max_hp": 266
+      "max_hp": 266,
+      "effectiveness": "super"
     },
     {
       "type": "weather",
@@ -346,7 +349,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 200,
-      "max_hp": 286
+      "max_hp": 286,
+      "effectiveness": "resisted"
     },
     {
       "type": "weather",
@@ -367,7 +371,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 114,
-      "max_hp": 266
+      "max_hp": 266,
+      "effectiveness": "super"
     },
     {
       "type": "switch",
@@ -415,7 +420,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 199,
-      "max_hp": 265
+      "max_hp": 265,
+      "effectiveness": "resisted"
     },
     {
       "type": "switch",
@@ -448,7 +454,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -601,7 +608,8 @@
     {
       "type": "damage",
       "player": "p2",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -641,7 +649,8 @@
       "type": "damage",
       "player": "p2",
       "hp": 224,
-      "max_hp": 275
+      "max_hp": 275,
+      "effectiveness": "resisted"
     },
     {
       "type": "damage",
@@ -659,7 +668,8 @@
     {
       "type": "damage",
       "player": "p1",
-      "hp": 0
+      "hp": 0,
+      "effectiveness": "super"
     },
     {
       "type": "faint",
@@ -721,7 +731,8 @@
       "type": "damage",
       "player": "p1",
       "hp": 129,
-      "max_hp": 234
+      "max_hp": 234,
+      "effectiveness": "resisted"
     },
     {
       "type": "unboost",
