@@ -65,6 +65,10 @@ pub enum AbilityId {
     SupremeOverlord,
     CursedBody,
     SkillLink,
+    Unnerve,
+    CloudNine,
+    Turboblaze,
+    Teravolt,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

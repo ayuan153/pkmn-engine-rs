@@ -61,6 +61,21 @@ impl Battle {
             AbilityId::Pressure => {
                 self.emit(format!("|-ability|p{}a: {}|Pressure", player+1, name));
             }
+            AbilityId::Unnerve => {
+                self.emit(format!("|-ability|p{}a: {}|Unnerve", player+1, name));
+            }
+            AbilityId::CloudNine => {
+                self.emit(format!("|-ability|p{}a: {}|Cloud Nine", player+1, name));
+            }
+            AbilityId::MoldBreaker => {
+                self.emit(format!("|-ability|p{}a: {}|Mold Breaker", player+1, name));
+            }
+            AbilityId::Turboblaze => {
+                self.emit(format!("|-ability|p{}a: {}|Turboblaze", player+1, name));
+            }
+            AbilityId::Teravolt => {
+                self.emit(format!("|-ability|p{}a: {}|Teravolt", player+1, name));
+            }
             _ => {}
         }
     }
@@ -99,7 +114,13 @@ impl Battle {
                     1.0
                 }
             }
-            AbilityId::SheerForce => 1.3,
+            AbilityId::SheerForce => {
+                if !pkmn_core::moves::get_secondaries(move_data.id).is_empty() {
+                    1.3
+                } else {
+                    1.0
+                }
+            }
             AbilityId::ToughClaws => {
                 if move_data.flags.has(MoveFlags::CONTACT) {
                     1.3

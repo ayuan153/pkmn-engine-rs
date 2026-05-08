@@ -39,6 +39,12 @@ fn parse_ability(s: &str) -> AbilityId {
         "Levitate" => AbilityId::Levitate,
         "Rough Skin" => AbilityId::RoughSkin,
         "Technician" => AbilityId::Technician,
+        "Unnerve" => AbilityId::Unnerve,
+        "Cloud Nine" => AbilityId::CloudNine,
+        "Turboblaze" => AbilityId::Turboblaze,
+        "Teravolt" => AbilityId::Teravolt,
+        "Mold Breaker" => AbilityId::MoldBreaker,
+        "Pressure" => AbilityId::Pressure,
         _ => AbilityId::None,
     }
 }

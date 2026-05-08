@@ -164,6 +164,10 @@ fn parse_ability(name: &str) -> AbilityId {
         "Supreme Overlord" => AbilityId::SupremeOverlord,
         "Cursed Body" => AbilityId::CursedBody,
         "Skill Link" => AbilityId::SkillLink,
+        "Unnerve" => AbilityId::Unnerve,
+        "Cloud Nine" => AbilityId::CloudNine,
+        "Turboblaze" => AbilityId::Turboblaze,
+        "Teravolt" => AbilityId::Teravolt,
         _ => AbilityId::None,
     }
 }
@@ -295,38 +299,135 @@ fn is_pivot_move(name: &str) -> bool {
     matches!(name.to_lowercase().as_str(), "u-turn" | "volt switch" | "flip turn" | "parting shot" | "teleport")
 }
 
+/// Extract pivot switch targets from the expected protocol.
+fn extract_pivot_targets_from_protocol(protocol: &[String], p1_team: &[PokemonSetData], p2_team: &[PokemonSetData]) -> [Vec<u8>; 2] {
+    let mut targets: [Vec<u8>; 2] = [Vec::new(), Vec::new()];
+    for line in protocol.iter() {
+        if !line.starts_with("|switch|") { continue; }
+        let is_pivot = line.contains("[from] U-turn") || line.contains("[from] Volt Switch")
+            || line.contains("[from] Flip Turn") || line.contains("[from] Parting Shot") || line.contains("[from] Teleport");
+        if !is_pivot { continue; }
+        let player = if line.contains("|p1a:") { 0u8 } else if line.contains("|p2a:") { 1u8 } else { continue; };
+        let parts: Vec<&str> = line.split('|').collect();
+        if parts.len() < 4 { continue; }
+        let details = parts[3];
+        let species_name = details.split(',').next().unwrap_or("").trim();
+        let team = if player == 0 { p1_team } else { p2_team };
+        let slot = team.iter().position(|p| p.species == species_name)
+            .unwrap_or(0) as u8;
+        targets[player as usize].push(slot);
+    }
+    targets
+}
+
+/// Extract forced switch targets from the expected protocol (switches after faint, not from pivots)
+fn extract_forced_switch_targets(protocol: &[String], p1_team: &[PokemonSetData], p2_team: &[PokemonSetData]) -> [Vec<u8>; 2] {
+    let mut targets: [Vec<u8>; 2] = [Vec::new(), Vec::new()];
+    let mut last_faint_player: Option<u8> = None;
+    for line in protocol.iter() {
+        if line.starts_with("|faint|") {
+            if line.contains("|p1a:") {
+                last_faint_player = Some(0);
+            } else if line.contains("|p2a:") {
+                last_faint_player = Some(1);
+            }
+        }
+        if line.starts_with("|switch|") && last_faint_player.is_some() {
+            if line.contains("[from]") {
+                continue; // Pivot switch, not forced
+            }
+            let player = if line.contains("|p1a:") { 0u8 } else if line.contains("|p2a:") { 1u8 } else { continue; };
+            if Some(player) == last_faint_player {
+                let parts: Vec<&str> = line.split('|').collect();
+                if parts.len() >= 4 {
+                    let details = parts[3];
+                    let species_name = details.split(',').next().unwrap_or("").trim();
+                    let team = if player == 0 { p1_team } else { p2_team };
+                    let slot = team.iter().position(|p| p.species == species_name)
+                        .unwrap_or(0) as u8;
+                    targets[player as usize].push(slot);
+                }
+                last_faint_player = None;
+            }
+        }
+        if line.starts_with("|turn|") || line.starts_with("|win|") {
+            last_faint_player = None;
+        }
+    }
+    targets
+}
+
 fn run_and_compare(fixture: &FullSimFixture) -> Result<(), String> {
     let mut battle = build_battle(fixture)?;
+
+    // Pre-extract pivot switch targets from expected protocol
+    let mut pivot_targets = extract_pivot_targets_from_protocol(
+        &fixture.protocol, &fixture.p1.team, &fixture.p2.team
+    );
+
+    // Pre-extract forced switch targets from expected protocol
+    let mut forced_switch_targets = extract_forced_switch_targets(
+        &fixture.protocol, &fixture.p1.team, &fixture.p2.team
+    );
 
     let mut all_protocol: Vec<String> = Vec::new();
     all_protocol.extend(battle.drain_protocol());
 
     let mut i = 0;
+    // Saved choice for the non-pivot player from a skipped pivot entry
+    let mut saved_choice: Option<(u8, String)> = None; // (player, choice_str)
+
     while i < fixture.choices.len() {
-        // Stop at forced switch phase (complex choice format not fully supported)
-        if let pkmn_engine::BattlePhase::ForcedSwitch(_) = battle.phase {
+        // Handle forced switch phase using pre-extracted targets
+        if let pkmn_engine::BattlePhase::ForcedSwitch(p) = battle.phase {
+            if !forced_switch_targets[p as usize].is_empty() {
+                let target = forced_switch_targets[p as usize].remove(0);
+                battle.apply_switch(p, target);
+                all_protocol.extend(battle.drain_protocol());
+                continue;
+            }
             break;
         }
-        let [p1_choice, p2_choice] = &fixture.choices[i];
-        let p1c = resolve_move_choice(p1_choice, &battle, 0);
-        let p2c = resolve_move_choice(p2_choice, &battle, 1);
 
-        // Detect pivot moves and queue switch targets from next choice entry
-        let mut pivot_queued = false;
-        if i + 1 < fixture.choices.len() {
-            for player in 0..2u8 {
-                let choice = if player == 0 { &p1c } else { &p2c };
-                if let Choice::Move(move_idx) = choice {
-                    let team = if player == 0 { &fixture.p1.team } else { &fixture.p2.team };
-                    let active_idx = battle.sides[player as usize].active_index;
-                    if let Some(move_name) = team[active_idx].moves.get(*move_idx as usize) {
-                        if is_pivot_move(move_name) && battle.sides[player as usize].has_alive_switch() {
-                            let next = &fixture.choices[i + 1];
-                            let next_choice_str = &next[player as usize];
-                            if let Some(idx) = next_choice_str.strip_prefix("switch ") {
-                                if let Ok(target) = idx.parse::<u8>() {
-                                    battle.pivot_switch_targets[player as usize].push(target - 1);
-                                    pivot_queued = true;
+        // Determine choices for this turn
+        let (p1_choice_str, p2_choice_str) = if let Some((player, ref choice)) = saved_choice {
+            // Use saved choice for the non-pivot player, current entry for the pivot player
+            if player == 0 {
+                (choice.clone(), fixture.choices[i][1].clone())
+            } else {
+                (fixture.choices[i][0].clone(), choice.clone())
+            }
+        } else {
+            (fixture.choices[i][0].clone(), fixture.choices[i][1].clone())
+        };
+        saved_choice = None;
+
+        let p1c = resolve_move_choice(&p1_choice_str, &battle, 0);
+        let p2c = resolve_move_choice(&p2_choice_str, &battle, 1);
+
+        // Detect pivot moves and queue switch targets from protocol
+        for player in 0..2u8 {
+            let choice = if player == 0 { &p1c } else { &p2c };
+            if let Choice::Move(move_idx) = choice {
+                let active_idx = battle.sides[player as usize].active_index;
+                let team = if player == 0 { &fixture.p1.team } else { &fixture.p2.team };
+                if let Some(move_name) = team[active_idx].moves.get(*move_idx as usize) {
+                    if is_pivot_move(move_name) && battle.sides[player as usize].has_alive_switch() {
+                        if !pivot_targets[player as usize].is_empty() {
+                            let target = pivot_targets[player as usize].remove(0);
+                            battle.pivot_switch_targets[player as usize].push(target);
+                            // Check if next entry has the switch target for this player
+                            if i + 1 < fixture.choices.len() {
+                                let next_choice = &fixture.choices[i + 1][player as usize];
+                                if let Some(idx_str) = next_choice.strip_prefix("switch ") {
+                                    if let Ok(idx) = idx_str.parse::<u8>() {
+                                        if (idx - 1) == target {
+                                            // Save the OTHER player's choice from the skipped entry
+                                            let other = 1 - player;
+                                            saved_choice = Some((other, fixture.choices[i + 1][other as usize].clone()));
+                                            i += 1; // Skip the pivot switch entry
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -339,11 +440,6 @@ fn run_and_compare(fixture: &FullSimFixture) -> Result<(), String> {
         all_protocol.extend(battle.drain_protocol());
         if result != pkmn_engine::BattleResult::Ongoing {
             break;
-        }
-
-        // Skip the pivot switch entry if we queued one
-        if pivot_queued {
-            i += 1;
         }
 
         i += 1;

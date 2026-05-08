@@ -134,20 +134,35 @@ pub struct Secondary {
 /// Get secondary effects for a move by ID
 pub fn get_secondaries(id: u16) -> &'static [Secondary] {
     match id {
+        7 => &[Secondary { chance: 10, effect: SecondaryEffect::Status(SecondaryStatus::Burn) }],        // Fire Punch
+        8 => &[Secondary { chance: 10, effect: SecondaryEffect::Status(SecondaryStatus::Freeze) }],      // Ice Punch
+        9 => &[Secondary { chance: 10, effect: SecondaryEffect::Status(SecondaryStatus::Paralyze) }],    // Thunder Punch
         53 => &[Secondary { chance: 10, effect: SecondaryEffect::Status(SecondaryStatus::Burn) }],       // Flamethrower
         58 => &[Secondary { chance: 10, effect: SecondaryEffect::Status(SecondaryStatus::Freeze) }],     // Ice Beam
         85 => &[Secondary { chance: 10, effect: SecondaryEffect::Status(SecondaryStatus::Paralyze) }],   // Thunderbolt
         94 => &[Secondary { chance: 10, effect: SecondaryEffect::StatDrop(Stat::Spd, -1) }],             // Psychic
         126 => &[Secondary { chance: 10, effect: SecondaryEffect::Status(SecondaryStatus::Burn) }],      // Fire Blast
+        127 => &[Secondary { chance: 20, effect: SecondaryEffect::Status(SecondaryStatus::Flinch) }],    // Waterfall
+        157 => &[Secondary { chance: 30, effect: SecondaryEffect::Status(SecondaryStatus::Flinch) }],    // Rock Slide
+        242 => &[Secondary { chance: 20, effect: SecondaryEffect::StatDrop(Stat::Def, -1) }],            // Crunch
         247 => &[Secondary { chance: 20, effect: SecondaryEffect::StatDrop(Stat::Spd, -1) }],            // Shadow Ball
+        252 => &[Secondary { chance: 100, effect: SecondaryEffect::Status(SecondaryStatus::Flinch) }],   // Fake Out
+        394 => &[Secondary { chance: 10, effect: SecondaryEffect::Status(SecondaryStatus::Burn) }],      // Flare Blitz
         399 => &[Secondary { chance: 20, effect: SecondaryEffect::Status(SecondaryStatus::Flinch) }],    // Dark Pulse
         403 => &[Secondary { chance: 30, effect: SecondaryEffect::Status(SecondaryStatus::Flinch) }],    // Air Slash
         414 => &[Secondary { chance: 10, effect: SecondaryEffect::StatDrop(Stat::Spd, -1) }],            // Earth Power
+        428 => &[Secondary { chance: 20, effect: SecondaryEffect::Status(SecondaryStatus::Flinch) }],    // Zen Headbutt
+        436 => &[Secondary { chance: 30, effect: SecondaryEffect::Status(SecondaryStatus::Burn) }],      // Lava Plume
         442 => &[Secondary { chance: 30, effect: SecondaryEffect::Status(SecondaryStatus::Flinch) }],    // Iron Head
+        491 => &[Secondary { chance: 100, effect: SecondaryEffect::StatDrop(Stat::Spd, -2) }],           // Acid Spray
         503 => &[Secondary { chance: 30, effect: SecondaryEffect::Status(SecondaryStatus::Burn) }],      // Scald
-        585 => &[Secondary { chance: 30, effect: SecondaryEffect::StatDrop(Stat::Spa, -1) }],            // Moonblast
+        556 => &[Secondary { chance: 30, effect: SecondaryEffect::Status(SecondaryStatus::Flinch) }],    // Icicle Crash
         583 => &[Secondary { chance: 10, effect: SecondaryEffect::StatDrop(Stat::Atk, -1) }],            // Play Rough
+        585 => &[Secondary { chance: 30, effect: SecondaryEffect::StatDrop(Stat::Spa, -1) }],            // Moonblast
+        710 => &[Secondary { chance: 20, effect: SecondaryEffect::StatDrop(Stat::Def, -1) }],            // Liquidation
         789 => &[Secondary { chance: 100, effect: SecondaryEffect::StatDrop(Stat::Spa, -1) }],           // Spirit Break
+        799 => &[Secondary { chance: 100, effect: SecondaryEffect::SelfStatBoost(Stat::Def, -1) },
+                 Secondary { chance: 100, effect: SecondaryEffect::SelfStatBoost(Stat::Spe, 1) }],       // Scale Shot
         _ => &[],
     }
 }

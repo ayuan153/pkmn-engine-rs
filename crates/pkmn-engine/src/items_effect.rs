@@ -62,8 +62,8 @@ impl Battle {
         }
     }
 
-    /// End-of-turn item effects
-    pub fn trigger_item_end_of_turn(&mut self, player: u8) {
+    /// End-of-turn item effects: healing (Leftovers, Black Sludge)
+    pub fn trigger_item_heal_eot(&mut self, player: u8) {
         let mon = self.sides[player as usize].active_mut();
         if !mon.is_alive() {
             return;
@@ -80,24 +80,47 @@ impl Battle {
                     self.emit(format!("|-heal|p{}a: {}|{}/{}|[from] item: {}", player+1, name, hp, max_hp, item_name));
                 }
             }
+            _ => {}
+        }
+    }
+
+    /// End-of-turn item effects: status orbs (Flame Orb, Toxic Orb)
+    pub fn trigger_item_orb_eot(&mut self, player: u8) {
+        let mon = self.sides[player as usize].active_mut();
+        if !mon.is_alive() {
+            return;
+        }
+        match mon.item_id {
             ItemId::FlameOrb => {
                 if mon.status == Status::None {
                     mon.status = Status::Burn;
+                    let name = self.species_name(player);
+                    self.emit(format!("|-status|p{}a: {}|brn|[from] item: Flame Orb", player+1, name));
                 }
             }
             ItemId::ToxicOrb => {
                 if mon.status == Status::None {
                     mon.status = Status::Toxic;
+                    let name = self.species_name(player);
+                    self.emit(format!("|-status|p{}a: {}|tox|[from] item: Toxic Orb", player+1, name));
                 }
             }
             _ => {}
         }
     }
 
+    /// End-of-turn item effects (legacy, calls both)
+    pub fn trigger_item_end_of_turn(&mut self, player: u8) {
+        self.trigger_item_heal_eot(player);
+        self.trigger_item_orb_eot(player);
+    }
+
     /// Life Orb recoil after dealing damage
     pub fn apply_life_orb_recoil(&mut self, player: u8) {
         let mon = self.sides[player as usize].active_mut();
-        if mon.item_id == ItemId::LifeOrb && mon.is_alive() {
+        if mon.item_id == ItemId::LifeOrb && mon.is_alive()
+            && mon.ability_id != pkmn_core::abilities::AbilityId::MagicGuard
+        {
             let recoil = (mon.max_hp / 10).max(1);
             mon.hp = mon.hp.saturating_sub(recoil);
             if mon.hp == 0 {
