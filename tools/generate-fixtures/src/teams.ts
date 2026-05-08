@@ -561,4 +561,281 @@ export const scenarios: BattleScenario[] = [
     ],
     turns: [['move 4', 'move 3'], ['move 1', 'move 1'], ['move 1', 'move 2']],
   },
+  // === ENTRY HAZARDS ===
+  {
+    id: 'stealth-rock-damage',
+    description: 'Stealth Rock deals type-effectiveness-scaled damage on switch-in',
+    seed: [1200, 1201, 1202, 1203],
+    p1: [
+      set({ species: 'Hippowdon', ability: 'Sand Stream', item: 'Leftovers', moves: ['Stealth Rock', 'Earthquake', 'Slack Off', 'Whirlwind'], nature: 'Impish', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Volcarona', ability: 'Flame Body', item: 'Heavy-Duty Boots', moves: ['Fire Blast', 'Bug Buzz', 'Quiver Dance', 'Roost'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+      set({ species: 'Charizard', ability: 'Blaze', item: 'Choice Specs', moves: ['Fire Blast', 'Air Slash', 'Focus Blast', 'Dragon Pulse'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 3'], ['move 2', 'switch 2'], ['move 2', 'move 1']],
+  },
+  {
+    id: 'spikes-layers',
+    description: 'Spikes deal 1/8, 1/6, 1/4 HP based on layers',
+    seed: [1210, 1211, 1212, 1213],
+    p1: [
+      set({ species: 'Skarmory', ability: 'Sturdy', item: 'Rocky Helmet', moves: ['Spikes', 'Body Press', 'Roost', 'Whirlwind'], nature: 'Impish', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Blissey', ability: 'Natural Cure', item: 'Leftovers', moves: ['Seismic Toss', 'Soft-Boiled', 'Thunder Wave', 'Toxic'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+      set({ species: 'Chansey', ability: 'Natural Cure', item: 'Eviolite', moves: ['Seismic Toss', 'Soft-Boiled', 'Thunder Wave', 'Stealth Rock'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 2'], ['move 1', 'move 2'], ['move 1', 'switch 2'], ['move 2', 'switch 1']],
+  },
+  {
+    id: 'heavy-duty-boots-bypass',
+    description: 'Heavy-Duty Boots prevents hazard damage on switch-in',
+    seed: [1220, 1221, 1222, 1223],
+    p1: [
+      set({ species: 'Hippowdon', ability: 'Sand Stream', item: 'Leftovers', moves: ['Stealth Rock', 'Earthquake', 'Slack Off', 'Toxic'], nature: 'Impish', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Tornadus-Therian', ability: 'Regenerator', item: 'Heavy-Duty Boots', moves: ['Hurricane', 'U-turn', 'Knock Off', 'Heat Wave'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+      set({ species: 'Zapdos', ability: 'Static', item: 'Heavy-Duty Boots', moves: ['Thunderbolt', 'Hurricane', 'Roost', 'Volt Switch'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 2'], ['move 2', 'switch 2'], ['move 2', 'move 4']],
+  },
+  // === SUBSTITUTE + PROTECT + CONFUSION ===
+  {
+    id: 'substitute-blocks',
+    description: 'Substitute absorbs damage until broken',
+    seed: [1300, 1301, 1302, 1303],
+    p1: [
+      set({ species: 'Gengar', ability: 'Cursed Body', item: 'Life Orb', moves: ['Substitute', 'Shadow Ball', 'Sludge Bomb', 'Focus Blast'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Blissey', ability: 'Natural Cure', item: 'Leftovers', moves: ['Seismic Toss', 'Soft-Boiled', 'Thunder Wave', 'Toxic'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 1'], ['move 2', 'move 1'], ['move 3', 'move 2']],
+  },
+  {
+    id: 'protect-blocks-damage',
+    description: 'Protect blocks all damage for one turn',
+    seed: [1310, 1311, 1312, 1313],
+    p1: [
+      set({ species: 'Toxapex', ability: 'Regenerator', item: 'Rocky Helmet', moves: ['Protect', 'Scald', 'Toxic', 'Recover'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Garchomp', ability: 'Rough Skin', item: 'Choice Band', moves: ['Earthquake', 'Outrage', 'Stone Edge', 'Fire Fang'], nature: 'Jolly', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 1'], ['move 2', 'move 1'], ['move 1', 'move 1']],
+  },
+  // === RUIN ABILITIES ===
+  {
+    id: 'sword-of-ruin',
+    description: 'Sword of Ruin reduces opponent Def by 25% (1.33x physical damage)',
+    seed: [1400, 1401, 1402, 1403],
+    p1: [
+      set({ species: 'Chien-Pao', ability: 'Sword of Ruin', item: 'Choice Band', moves: ['Ice Spinner', 'Crunch', 'Sacred Sword', 'Ice Shard'], nature: 'Jolly', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Slowbro', ability: 'Regenerator', item: 'Heavy-Duty Boots', moves: ['Scald', 'Psychic', 'Slack Off', 'Thunder Wave'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 1'], ['move 2', 'move 2']],
+  },
+  {
+    id: 'beads-of-ruin',
+    description: 'Beads of Ruin reduces opponent SpD by 25% (1.33x special damage)',
+    seed: [1410, 1411, 1412, 1413],
+    p1: [
+      set({ species: 'Chi-Yu', ability: 'Beads of Ruin', item: 'Choice Specs', moves: ['Overheat', 'Dark Pulse', 'Psychic', 'Flamethrower'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Blissey', ability: 'Natural Cure', item: 'Leftovers', moves: ['Seismic Toss', 'Soft-Boiled', 'Thunder Wave', 'Toxic'], nature: 'Calm', evs: { hp: 252, atk: 0, def: 4, spa: 0, spd: 252, spe: 0 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 1'], ['move 4', 'move 2']],
+  },
+  // === ABILITY IMMUNITIES ===
+  {
+    id: 'flash-fire-immunity',
+    description: 'Flash Fire absorbs Fire moves and boosts own Fire damage',
+    seed: [1500, 1501, 1502, 1503],
+    p1: [
+      set({ species: 'Volcarona', ability: 'Flame Body', item: 'Heavy-Duty Boots', moves: ['Fire Blast', 'Bug Buzz', 'Psychic', 'Quiver Dance'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Heatran', ability: 'Flash Fire', item: 'Leftovers', moves: ['Magma Storm', 'Earth Power', 'Flash Cannon', 'Stealth Rock'], nature: 'Modest', evs: { hp: 252, atk: 0, def: 0, spa: 252, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 2'], ['move 2', 'move 1']],
+  },
+  {
+    id: 'volt-absorb-immunity',
+    description: 'Volt Absorb heals from Electric moves instead of taking damage',
+    seed: [1510, 1511, 1512, 1513],
+    p1: [
+      set({ species: 'Tapu Koko', ability: 'Electric Surge', item: 'Choice Specs', moves: ['Thunderbolt', 'Dazzling Gleam', 'Volt Switch', 'Grass Knot'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Jolteon', ability: 'Volt Absorb', item: 'Leftovers', moves: ['Thunderbolt', 'Shadow Ball', 'Volt Switch', 'Yawn'], nature: 'Timid', evs: { hp: 252, atk: 0, def: 0, spa: 252, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 2'], ['move 2', 'move 1']],
+  },
+  {
+    id: 'water-absorb-immunity',
+    description: 'Water Absorb heals from Water moves',
+    seed: [1520, 1521, 1522, 1523],
+    p1: [
+      set({ species: 'Pelipper', ability: 'Drizzle', item: 'Damp Rock', moves: ['Surf', 'Hurricane', 'U-turn', 'Roost'], nature: 'Modest', evs: { hp: 248, atk: 0, def: 0, spa: 252, spd: 0, spe: 8 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Vaporeon', ability: 'Water Absorb', item: 'Leftovers', moves: ['Scald', 'Ice Beam', 'Wish', 'Protect'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 2'], ['move 2', 'move 1']],
+  },
+  // === MULTI-TURN MOVES ===
+  {
+    id: 'outrage-lock',
+    description: 'Outrage locks user for 2-3 turns then confuses',
+    seed: [1600, 1601, 1602, 1603],
+    p1: [
+      set({ species: 'Dragonite', ability: 'Multiscale', item: 'Choice Band', moves: ['Outrage', 'Extreme Speed', 'Earthquake', 'Fire Punch'], nature: 'Adamant', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Skarmory', ability: 'Sturdy', item: 'Rocky Helmet', moves: ['Body Press', 'Iron Head', 'Roost', 'Whirlwind'], nature: 'Impish', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 3'], ['move 1', 'move 3'], ['move 1', 'move 3'], ['move 1', 'move 2']],
+  },
+  {
+    id: 'recharge-move',
+    description: 'Hyper Beam forces recharge on next turn',
+    seed: [1610, 1611, 1612, 1613],
+    p1: [
+      set({ species: 'Porygon-Z', ability: 'Adaptability', item: 'Choice Specs', moves: ['Hyper Beam', 'Thunderbolt', 'Ice Beam', 'Shadow Ball'], nature: 'Modest', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Blissey', ability: 'Natural Cure', item: 'Leftovers', moves: ['Seismic Toss', 'Soft-Boiled', 'Thunder Wave', 'Toxic'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 2'], ['move 1', 'move 1'], ['move 1', 'move 1']],
+  },
+  // === TERRAIN GROUNDED BYPASS ===
+  {
+    id: 'terrain-flying-no-boost',
+    description: 'Flying-type does NOT get terrain boost (not grounded)',
+    seed: [1700, 1701, 1702, 1703],
+    p1: [
+      set({ species: 'Zapdos', ability: 'Static', item: 'Choice Specs', moves: ['Thunderbolt', 'Hurricane', 'Volt Switch', 'Heat Wave'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+      set({ species: 'Tapu Koko', ability: 'Electric Surge', item: 'Life Orb', moves: ['Thunderbolt', 'Dazzling Gleam', 'U-turn', 'Roost'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Hippowdon', ability: 'Sand Stream', item: 'Leftovers', moves: ['Earthquake', 'Stone Edge', 'Slack Off', 'Stealth Rock'], nature: 'Impish', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    turns: [['switch 2', 'move 1'], ['switch 1', 'move 1'], ['move 1', 'move 2']],
+  },
+  {
+    id: 'levitate-no-terrain',
+    description: 'Levitate user does NOT get terrain boost',
+    seed: [1710, 1711, 1712, 1713],
+    p1: [
+      set({ species: 'Tapu Lele', ability: 'Psychic Surge', item: 'Choice Scarf', moves: ['Psychic', 'Moonblast', 'Focus Blast', 'Psyshock'], nature: 'Modest', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Gengar', ability: 'Cursed Body', item: 'Choice Specs', moves: ['Shadow Ball', 'Sludge Bomb', 'Focus Blast', 'Thunderbolt'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 1'], ['move 2', 'move 2']],
+  },
+  // === SELF-STAT-CHANGE MOVES ===
+  {
+    id: 'close-combat-drops',
+    description: 'Close Combat drops user Def and SpD by 1 each',
+    seed: [1800, 1801, 1802, 1803],
+    p1: [
+      set({ species: 'Lucario', ability: 'Inner Focus', item: 'Life Orb', moves: ['Close Combat', 'Meteor Mash', 'Extreme Speed', 'Swords Dance'], nature: 'Adamant', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Slowbro', ability: 'Regenerator', item: 'Heavy-Duty Boots', moves: ['Scald', 'Psychic', 'Slack Off', 'Thunder Wave'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 2'], ['move 1', 'move 2'], ['move 3', 'move 1']],
+  },
+  {
+    id: 'shell-smash',
+    description: 'Shell Smash: +2 Atk/SpA/Spe, -1 Def/SpD',
+    seed: [1810, 1811, 1812, 1813],
+    p1: [
+      set({ species: 'Cloyster', ability: 'Skill Link', item: 'White Herb', moves: ['Shell Smash', 'Icicle Spear', 'Rock Blast', 'Hydro Pump'], nature: 'Naive', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Ferrothorn', ability: 'Iron Barbs', item: 'Leftovers', moves: ['Power Whip', 'Knock Off', 'Stealth Rock', 'Leech Seed'], nature: 'Relaxed', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 1'], ['move 2', 'move 2'], ['move 3', 'move 1']],
+  },
+  {
+    id: 'dragon-dance',
+    description: 'Dragon Dance: +1 Atk, +1 Spe',
+    seed: [1820, 1821, 1822, 1823],
+    p1: [
+      set({ species: 'Gyarados', ability: 'Intimidate', item: 'Life Orb', moves: ['Dragon Dance', 'Waterfall', 'Earthquake', 'Ice Fang'], nature: 'Jolly', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Ferrothorn', ability: 'Iron Barbs', item: 'Leftovers', moves: ['Power Whip', 'Knock Off', 'Stealth Rock', 'Leech Seed'], nature: 'Relaxed', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 3'], ['move 1', 'move 4'], ['move 2', 'move 1']],
+  },
+  // === SPEED MECHANICS ===
+  {
+    id: 'choice-scarf-speed',
+    description: 'Choice Scarf 1.5x speed lets slower mon move first',
+    seed: [1900, 1901, 1902, 1903],
+    p1: [
+      set({ species: 'Landorus-Therian', ability: 'Intimidate', item: 'Choice Scarf', moves: ['Earthquake', 'U-turn', 'Stone Edge', 'Knock Off'], nature: 'Jolly', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Dragapult', ability: 'Infiltrator', item: 'Choice Specs', moves: ['Shadow Ball', 'Draco Meteor', 'Fire Blast', 'Thunderbolt'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 1'], ['move 2', 'move 2']],
+  },
+  {
+    id: 'trick-room',
+    description: 'Trick Room inverts speed: slower moves first',
+    seed: [1910, 1911, 1912, 1913],
+    p1: [
+      set({ species: 'Hatterene', ability: 'Magic Bounce', item: 'Life Orb', moves: ['Trick Room', 'Psychic', 'Dazzling Gleam', 'Mystical Fire'], nature: 'Quiet', evs: { hp: 252, atk: 0, def: 0, spa: 252, spd: 4, spe: 0 }, ivs: { hp: 31, atk: 0, def: 31, spa: 31, spd: 31, spe: 0 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Dragapult', ability: 'Infiltrator', item: 'Choice Specs', moves: ['Shadow Ball', 'Draco Meteor', 'Fire Blast', 'Thunderbolt'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 1'], ['move 2', 'move 1'], ['move 3', 'move 2']],
+  },
+  // === END-OF-TURN EFFECTS ===
+  {
+    id: 'sandstorm-chip',
+    description: 'Sandstorm deals 1/16 HP to non-Rock/Ground/Steel each turn',
+    seed: [2000, 2001, 2002, 2003],
+    p1: [
+      set({ species: 'Tyranitar', ability: 'Sand Stream', item: 'Leftovers', moves: ['Stone Edge', 'Crunch', 'Earthquake', 'Stealth Rock'], nature: 'Adamant', evs: { hp: 252, atk: 252, def: 0, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Gengar', ability: 'Cursed Body', item: 'Life Orb', moves: ['Shadow Ball', 'Sludge Bomb', 'Focus Blast', 'Thunderbolt'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    turns: [['move 2', 'move 1'], ['move 2', 'move 2'], ['move 3', 'move 3']],
+  },
+  {
+    id: 'toxic-escalating',
+    description: 'Toxic damage escalates: 1/16, 2/16, 3/16... each turn',
+    seed: [2010, 2011, 2012, 2013],
+    p1: [
+      set({ species: 'Toxapex', ability: 'Regenerator', item: 'Rocky Helmet', moves: ['Toxic', 'Scald', 'Recover', 'Haze'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Blissey', ability: 'Natural Cure', item: 'Leftovers', moves: ['Seismic Toss', 'Soft-Boiled', 'Thunder Wave', 'Heal Bell'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 1'], ['move 3', 'move 2'], ['move 3', 'move 2'], ['move 3', 'move 2'], ['move 2', 'move 1']],
+  },
+  {
+    id: 'leftovers-heal',
+    description: 'Leftovers heals 1/16 HP at end of turn',
+    seed: [2020, 2021, 2022, 2023],
+    p1: [
+      set({ species: 'Garchomp', ability: 'Rough Skin', item: 'Choice Band', moves: ['Earthquake', 'Outrage', 'Stone Edge', 'Fire Fang'], nature: 'Jolly', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Skarmory', ability: 'Sturdy', item: 'Leftovers', moves: ['Body Press', 'Iron Head', 'Roost', 'Whirlwind'], nature: 'Impish', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    turns: [['move 1', 'move 2'], ['move 1', 'move 2'], ['move 1', 'move 3']],
+  },
 ];
