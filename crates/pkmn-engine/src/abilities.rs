@@ -67,7 +67,9 @@ impl Battle {
     /// Get damage modifier from attacker's ability
     pub fn ability_damage_modifier(&self, attacker_player: u8, move_data: &MoveData) -> f32 {
         let mon = self.sides[attacker_player as usize].active();
-        match mon.ability_id {
+        let defender_player = 1 - attacker_player;
+        let defender = self.sides[defender_player as usize].active();
+        let mut modifier = match mon.ability_id {
             AbilityId::HugePower | AbilityId::PurePower => {
                 if move_data.category == MoveCategory::Physical {
                     2.0
@@ -104,8 +106,68 @@ impl Battle {
                     1.0
                 }
             }
+            AbilityId::Adaptability => {
+                // STAB becomes 2.0x; since STAB 1.5x is applied separately, multiply by 4/3
+                let species = pkmn_core::species::get_species_by_id(mon.species_id);
+                let has_stab = species
+                    .map(|s| s.types.contains(&move_data.move_type))
+                    .unwrap_or(false);
+                if has_stab {
+                    4.0 / 3.0
+                } else {
+                    1.0
+                }
+            }
+            AbilityId::Guts => {
+                if mon.status != crate::pokemon::Status::None
+                    && move_data.category == MoveCategory::Physical
+                {
+                    1.5
+                } else {
+                    1.0
+                }
+            }
+            AbilityId::TintedLens => {
+                let effectiveness =
+                    Type::effectiveness(move_data.move_type, &defender.types);
+                if effectiveness < 1.0 && effectiveness > 0.0 {
+                    2.0
+                } else {
+                    1.0
+                }
+            }
+            AbilityId::SwordOfRuin => {
+                if move_data.category == MoveCategory::Physical {
+                    1.33
+                } else {
+                    1.0
+                }
+            }
             _ => 1.0,
+        };
+
+        // Defender's Ruin abilities
+        match defender.ability_id {
+            AbilityId::TabletsOfRuin => {
+                if move_data.category == MoveCategory::Physical {
+                    modifier *= 0.75;
+                }
+            }
+            AbilityId::VesselOfRuin => {
+                if move_data.category == MoveCategory::Special {
+                    modifier *= 0.75;
+                }
+            }
+            _ => {}
         }
+        // Attacker's Beads of Ruin boosts special damage (reduces opponent SpD)
+        if mon.ability_id == AbilityId::BeadsOfRuin
+            && move_data.category == MoveCategory::Special
+        {
+            modifier *= 1.33;
+        }
+
+        modifier
     }
 
     /// End-of-turn ability effects

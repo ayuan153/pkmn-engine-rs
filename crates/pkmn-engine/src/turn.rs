@@ -245,6 +245,9 @@ impl Battle {
             _ => return 0,
         };
 
+        // Variable base power
+        let base_power = self.get_variable_bp(attacker_player, defender_player, move_data);
+
         // STAB calculation with tera
         let stab = if attacker.is_terastallized {
             self.tera_stab(attacker_player, move_data.move_type)
@@ -257,6 +260,7 @@ impl Battle {
         let effectiveness = Type::effectiveness(move_data.move_type, &defender.types);
         let attacker_level = attacker.level;
         let attacker_status = attacker.status;
+        let attacker_ability = attacker.ability_id;
 
         if effectiveness == 0.0 {
             return 0;
@@ -266,8 +270,15 @@ impl Battle {
         let random_factor = self.rand_range(85, 100);
         let weather_boost = self.get_weather_modifier(move_data.move_type);
 
+        // Terrain modifier
+        let terrain_mod = self.get_terrain_modifier(attacker_player, move_data.move_type);
+
+        // Burn: halves physical unless Guts
         let burn_mod =
-            if attacker_status == Status::Burn && move_data.category == MoveCategory::Physical {
+            if attacker_status == Status::Burn
+                && move_data.category == MoveCategory::Physical
+                && attacker_ability != pkmn_core::abilities::AbilityId::Guts
+            {
                 0.5
             } else {
                 1.0
@@ -280,16 +291,59 @@ impl Battle {
             attacker_level,
             attacker_stat: atk_stat,
             defender_stat: def_stat,
-            base_power: move_data.base_power as u16,
+            base_power,
             stab: stab > 1.0,
             type_effectiveness: effectiveness,
             critical,
-            weather_boost,
+            weather_boost: weather_boost * terrain_mod,
             other_modifiers: burn_mod * ability_mod * item_mod * (stab / if stab > 1.0 { 1.5 } else { 1.0 }),
             random_factor,
         };
 
         pkmn_core::damage::calculate_damage(&ctx)
+    }
+
+    fn get_variable_bp(&self, attacker_player: u8, defender_player: u8, move_data: &MoveData) -> u16 {
+        let name = move_data.name.to_lowercase();
+        let attacker = self.sides[attacker_player as usize].active();
+        let _defender = self.sides[defender_player as usize].active();
+        match name.as_str() {
+            "acrobatics" => {
+                if attacker.item_id == pkmn_core::items::ItemId::None { 110 } else { 55 }
+            }
+            "facade" => {
+                if attacker.status == Status::Burn
+                    || attacker.status == Status::Poison
+                    || attacker.status == Status::Toxic
+                    || attacker.status == Status::Paralyze
+                {
+                    140
+                } else {
+                    70
+                }
+            }
+            "weather ball" => {
+                if self.field.weather != crate::field::Weather::None { 100 } else { 50 }
+            }
+            _ => move_data.base_power as u16,
+        }
+    }
+
+    fn get_terrain_modifier(&self, attacker_player: u8, move_type: Type) -> f32 {
+        let attacker = self.sides[attacker_player as usize].active();
+        // Check if grounded (not Flying type, not Levitate, not Air Balloon)
+        let is_grounded = !attacker.types.contains(&Type::Flying)
+            && attacker.ability_id != pkmn_core::abilities::AbilityId::Levitate
+            && attacker.item_id != pkmn_core::items::ItemId::AirBalloon;
+        if !is_grounded {
+            return 1.0;
+        }
+        match (self.field.terrain, move_type) {
+            (Terrain::Electric, Type::Electric) => 1.3,
+            (Terrain::Grassy, Type::Grass) => 1.3,
+            (Terrain::Psychic, Type::Psychic) => 1.3,
+            _ => 1.0,
+        }
     }
 
     pub fn tera_stab(&self, player: u8, move_type: Type) -> f32 {
