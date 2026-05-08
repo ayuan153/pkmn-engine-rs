@@ -1,0 +1,324 @@
+{
+  "id": "knock-off-item",
+  "description": "Knock Off 1.5x when target has item",
+  "seed": [
+    7,
+    14,
+    21,
+    28
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Krookodile",
+        "species": "Krookodile",
+        "item": "Choice Scarf",
+        "ability": "Intimidate",
+        "moves": [
+          "Knock Off",
+          "Earthquake",
+          "Stone Edge",
+          "U-turn"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Slowbro",
+        "species": "Slowbro",
+        "item": "Heavy-Duty Boots",
+        "ability": "Regenerator",
+        "moves": [
+          "Scald",
+          "Psychic",
+          "Slack Off",
+          "Thunder Wave"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Knock Off",
+      "damage": 228,
+      "crit": false,
+      "effectiveness": 2,
+      "attacker": {
+        "species": "Krookodile",
+        "level": 100,
+        "stat_atk": 333,
+        "stat_spa": 149,
+        "ability": "Intimidate",
+        "item": "Choice Scarf",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Slowbro",
+        "level": 100,
+        "stat_def": 350,
+        "stat_spd": 197,
+        "ability": "Regenerator",
+        "item": "Heavy-Duty Boots",
+        "boosts": {
+          "atk": -1,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 394,
+        "hp_after": 166,
+        "max_hp": 394
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Scald",
+      "damage": 234,
+      "crit": false,
+      "effectiveness": 2,
+      "attacker": {
+        "species": "Slowbro",
+        "level": 100,
+        "stat_atk": 167,
+        "stat_spa": 236,
+        "ability": "Regenerator",
+        "item": "",
+        "boosts": {
+          "atk": -1,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Krookodile",
+        "level": 100,
+        "stat_def": 196,
+        "stat_spd": 177,
+        "ability": "Intimidate",
+        "item": "Choice Scarf",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 331,
+        "hp_after": 97,
+        "max_hp": 331
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Scald",
+      "damage": 20,
+      "crit": false,
+      "effectiveness": 1,
+      "attacker": {
+        "species": "Slowbro",
+        "level": 100,
+        "stat_atk": 167,
+        "stat_spa": 236,
+        "ability": "Regenerator",
+        "item": "",
+        "boosts": {
+          "atk": -1,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Krookodile",
+        "level": 100,
+        "stat_def": 196,
+        "stat_spd": 177,
+        "ability": "Intimidate",
+        "item": "Choice Scarf",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": "brn",
+        "hp_before": 97,
+        "hp_after": 77,
+        "max_hp": 331
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Knock Off",
+      "damage": 73,
+      "crit": false,
+      "effectiveness": 2,
+      "attacker": {
+        "species": "Krookodile",
+        "level": 100,
+        "stat_atk": 333,
+        "stat_spa": 149,
+        "ability": "Intimidate",
+        "item": "Choice Scarf",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": "brn"
+      },
+      "defender": {
+        "species": "Slowbro",
+        "level": 100,
+        "stat_def": 350,
+        "stat_spd": 197,
+        "ability": "Regenerator",
+        "item": "",
+        "boosts": {
+          "atk": -1,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 166,
+        "hp_after": 93,
+        "max_hp": 394
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Scald",
+      "damage": 77,
+      "crit": false,
+      "effectiveness": 2,
+      "attacker": {
+        "species": "Slowbro",
+        "level": 100,
+        "stat_atk": 167,
+        "stat_spa": 236,
+        "ability": "Regenerator",
+        "item": "",
+        "boosts": {
+          "atk": -1,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Krookodile",
+        "level": 100,
+        "stat_def": 196,
+        "stat_spd": 177,
+        "ability": "Intimidate",
+        "item": "Choice Scarf",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": "brn",
+        "hp_before": 77,
+        "hp_after": 0,
+        "max_hp": 331
+      }
+    }
+  ]
+}

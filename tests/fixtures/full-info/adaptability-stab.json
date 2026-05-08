@@ -1,0 +1,324 @@
+{
+  "id": "adaptability-stab",
+  "description": "Adaptability gives 2x STAB instead of 1.5x",
+  "seed": [
+    42,
+    84,
+    126,
+    168
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Crawdaunt",
+        "species": "Crawdaunt",
+        "item": "Life Orb",
+        "ability": "Adaptability",
+        "moves": [
+          "Crabhammer",
+          "Knock Off",
+          "Aqua Jet",
+          "Swords Dance"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Tangrowth",
+        "species": "Tangrowth",
+        "item": "Assault Vest",
+        "ability": "Regenerator",
+        "moves": [
+          "Giga Drain",
+          "Knock Off",
+          "Earthquake",
+          "Rock Slide"
+        ],
+        "nature": "Relaxed",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Crabhammer",
+      "damage": 101,
+      "crit": false,
+      "effectiveness": 0.5,
+      "attacker": {
+        "species": "Crawdaunt",
+        "level": 100,
+        "stat_atk": 372,
+        "stat_spa": 194,
+        "ability": "Adaptability",
+        "item": "Life Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Tangrowth",
+        "level": 100,
+        "stat_def": 383,
+        "stat_spd": 137,
+        "ability": "Regenerator",
+        "item": "Assault Vest",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 404,
+        "hp_after": 303,
+        "max_hp": 404
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p1a",
+      "move": "Crabhammer",
+      "damage": 26,
+      "crit": false,
+      "effectiveness": 1,
+      "attacker": {
+        "species": "Crawdaunt",
+        "level": 100,
+        "stat_atk": 372,
+        "stat_spa": 194,
+        "ability": "Adaptability",
+        "item": "Life Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Crawdaunt",
+        "level": 100,
+        "stat_def": 206,
+        "stat_spd": 147,
+        "ability": "Adaptability",
+        "item": "Life Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 267,
+        "hp_after": 241,
+        "max_hp": 267
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Knock Off",
+      "damage": 41,
+      "crit": false,
+      "effectiveness": 0.5,
+      "attacker": {
+        "species": "Tangrowth",
+        "level": 100,
+        "stat_atk": 236,
+        "stat_spa": 256,
+        "ability": "Regenerator",
+        "item": "Assault Vest",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Crawdaunt",
+        "level": 100,
+        "stat_def": 206,
+        "stat_spd": 147,
+        "ability": "Adaptability",
+        "item": "Life Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 241,
+        "hp_after": 200,
+        "max_hp": 267
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Knock Off",
+      "damage": 144,
+      "crit": false,
+      "effectiveness": 1,
+      "attacker": {
+        "species": "Crawdaunt",
+        "level": 100,
+        "stat_atk": 372,
+        "stat_spa": 194,
+        "ability": "Adaptability",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Tangrowth",
+        "level": 100,
+        "stat_def": 383,
+        "stat_spd": 137,
+        "ability": "Regenerator",
+        "item": "Assault Vest",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 303,
+        "hp_after": 159,
+        "max_hp": 404
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Giga Drain",
+      "damage": 200,
+      "crit": false,
+      "effectiveness": 2,
+      "attacker": {
+        "species": "Tangrowth",
+        "level": 100,
+        "stat_atk": 236,
+        "stat_spa": 256,
+        "ability": "Regenerator",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Crawdaunt",
+        "level": 100,
+        "stat_def": 206,
+        "stat_spd": 147,
+        "ability": "Adaptability",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 200,
+        "hp_after": 0,
+        "max_hp": 267
+      }
+    }
+  ]
+}

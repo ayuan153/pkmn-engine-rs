@@ -1,0 +1,144 @@
+{
+  "id": "terrain-electric",
+  "description": "Electric Terrain 1.3x boost for grounded Electric moves",
+  "seed": [
+    100,
+    200,
+    300,
+    400
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Tapu Koko",
+        "species": "Tapu Koko",
+        "item": "Life Orb",
+        "ability": "Electric Surge",
+        "moves": [
+          "Thunderbolt",
+          "Dazzling Gleam",
+          "U-turn",
+          "Roost"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Hippowdon",
+        "species": "Hippowdon",
+        "item": "Leftovers",
+        "ability": "Sand Stream",
+        "moves": [
+          "Earthquake",
+          "Stone Edge",
+          "Slack Off",
+          "Stealth Rock"
+        ],
+        "nature": "Impish",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Earthquake",
+      "damage": 281,
+      "crit": false,
+      "effectiveness": 2,
+      "attacker": {
+        "species": "Hippowdon",
+        "level": 100,
+        "stat_atk": 260,
+        "stat_spa": 154,
+        "ability": "Sand Stream",
+        "item": "Leftovers",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Tapu Koko",
+        "level": 100,
+        "stat_def": 206,
+        "stat_spd": 187,
+        "ability": "Electric Surge",
+        "item": "Life Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 281,
+        "hp_after": 0,
+        "max_hp": 281
+      }
+    }
+  ]
+}

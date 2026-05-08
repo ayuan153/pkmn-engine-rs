@@ -1,0 +1,279 @@
+{
+  "id": "screens-reflect",
+  "description": "Reflect halves physical damage",
+  "seed": [
+    11,
+    22,
+    33,
+    44
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Grimmsnarl",
+        "species": "Grimmsnarl",
+        "item": "Light Clay",
+        "ability": "Prankster",
+        "moves": [
+          "Reflect",
+          "Light Screen",
+          "Spirit Break",
+          "Thunder Wave"
+        ],
+        "nature": "Careful",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 252,
+          "spe": 4
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Garchomp",
+        "species": "Garchomp",
+        "item": "Choice Band",
+        "ability": "Rough Skin",
+        "moves": [
+          "Earthquake",
+          "Outrage",
+          "Stone Edge",
+          "Fire Fang"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Earthquake",
+      "damage": 205,
+      "crit": false,
+      "effectiveness": 1,
+      "attacker": {
+        "species": "Garchomp",
+        "level": 100,
+        "stat_atk": 359,
+        "stat_spa": 176,
+        "ability": "Rough Skin",
+        "item": "Choice Band",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Grimmsnarl",
+        "level": 100,
+        "stat_def": 166,
+        "stat_spd": 273,
+        "ability": "Prankster",
+        "item": "Light Clay",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 394,
+        "hp_after": 189,
+        "max_hp": 394
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Earthquake",
+      "damage": 186,
+      "crit": false,
+      "effectiveness": 1,
+      "attacker": {
+        "species": "Garchomp",
+        "level": 100,
+        "stat_atk": 359,
+        "stat_spa": 176,
+        "ability": "Rough Skin",
+        "item": "Choice Band",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Grimmsnarl",
+        "level": 100,
+        "stat_def": 166,
+        "stat_spd": 273,
+        "ability": "Prankster",
+        "item": "Light Clay",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 189,
+        "hp_after": 3,
+        "max_hp": 394
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Spirit Break",
+      "damage": 230,
+      "crit": false,
+      "effectiveness": 2,
+      "attacker": {
+        "species": "Grimmsnarl",
+        "level": 100,
+        "stat_atk": 276,
+        "stat_spa": 203,
+        "ability": "Prankster",
+        "item": "Light Clay",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Garchomp",
+        "level": 100,
+        "stat_def": 226,
+        "stat_spd": 207,
+        "ability": "Rough Skin",
+        "item": "Choice Band",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 357,
+        "hp_after": 127,
+        "max_hp": 357
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p1a",
+      "move": "Spirit Break",
+      "damage": 3,
+      "crit": false,
+      "effectiveness": 1,
+      "attacker": {
+        "species": "Grimmsnarl",
+        "level": 100,
+        "stat_atk": 276,
+        "stat_spa": 203,
+        "ability": "Prankster",
+        "item": "Light Clay",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Grimmsnarl",
+        "level": 100,
+        "stat_def": 166,
+        "stat_spd": 273,
+        "ability": "Prankster",
+        "item": "Light Clay",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 3,
+        "hp_after": 0,
+        "max_hp": 394
+      }
+    }
+  ]
+}

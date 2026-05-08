@@ -1,0 +1,230 @@
+{
+  "id": "basic-physical",
+  "description": "Basic physical attack, no modifiers",
+  "seed": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Garchomp",
+        "species": "Garchomp",
+        "item": "",
+        "ability": "Rough Skin",
+        "moves": [
+          "Earthquake",
+          "Dragon Claw"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Tyranitar",
+        "species": "Tyranitar",
+        "item": "",
+        "ability": "Sand Stream",
+        "moves": [
+          "Stone Edge",
+          "Crunch"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Earthquake",
+      "damage": 338,
+      "crit": false,
+      "effectiveness": 2,
+      "attacker": {
+        "species": "Garchomp",
+        "level": 100,
+        "stat_atk": 394,
+        "stat_spa": 176,
+        "ability": "Rough Skin",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Tyranitar",
+        "level": 100,
+        "stat_def": 256,
+        "stat_spd": 237,
+        "ability": "Sand Stream",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 404,
+        "hp_after": 66,
+        "max_hp": 404
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Stone Edge",
+      "damage": 105,
+      "crit": false,
+      "effectiveness": 0.5,
+      "attacker": {
+        "species": "Tyranitar",
+        "level": 100,
+        "stat_atk": 403,
+        "stat_spa": 203,
+        "ability": "Sand Stream",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Garchomp",
+        "level": 100,
+        "stat_def": 226,
+        "stat_spd": 207,
+        "ability": "Rough Skin",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 357,
+        "hp_after": 252,
+        "max_hp": 357
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Dragon Claw",
+      "damage": 66,
+      "crit": false,
+      "effectiveness": 1,
+      "attacker": {
+        "species": "Garchomp",
+        "level": 100,
+        "stat_atk": 394,
+        "stat_spa": 176,
+        "ability": "Rough Skin",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null
+      },
+      "defender": {
+        "species": "Tyranitar",
+        "level": 100,
+        "stat_def": 256,
+        "stat_spd": 237,
+        "ability": "Sand Stream",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 66,
+        "hp_after": 0,
+        "max_hp": 404
+      }
+    }
+  ]
+}
