@@ -125,10 +125,12 @@ pub const SPECIES: &[SpeciesData] = &[
 
 pub fn get_species(name: &str) -> Option<&'static SpeciesData> {
     SPECIES.iter().find(|s| s.name.eq_ignore_ascii_case(name))
+        .or_else(|| crate::gen::species_data::get_species_by_name(name))
 }
 
 pub fn get_species_by_id(id: u16) -> Option<&'static SpeciesData> {
     SPECIES.iter().find(|s| s.id == id)
+        .or_else(|| crate::gen::species_data::get_species_by_id(id))
 }
 
 #[cfg(test)]

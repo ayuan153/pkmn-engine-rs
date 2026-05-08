@@ -6,3 +6,4 @@ pub mod damage;
 pub mod nature;
 pub mod abilities;
 pub mod items;
+pub mod gen;

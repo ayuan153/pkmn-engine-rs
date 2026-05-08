@@ -88,10 +88,12 @@ pub const MOVES: &[MoveData] = &[
 
 pub fn get_move(name: &str) -> Option<&'static MoveData> {
     MOVES.iter().find(|m| m.name.eq_ignore_ascii_case(name))
+        .or_else(|| crate::gen::move_data::get_move_by_name(name))
 }
 
 pub fn get_move_by_id(id: u16) -> Option<&'static MoveData> {
     MOVES.iter().find(|m| m.id == id)
+        .or_else(|| crate::gen::move_data::get_move_by_id(id))
 }
 
 #[allow(dead_code)]
