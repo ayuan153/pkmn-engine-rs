@@ -1,5 +1,49 @@
 # pkmn-engine-rs — Development Plan
 
+## Current Progress (2026-05-07)
+
+### What's Built
+- Complete Rust workspace: pkmn-core (data) + pkmn-engine (simulation) + pkmn-wasm (bindings)
+- Full Gen 9 data: 1330 species, 950 moves, 310 abilities (auto-generated from PS source)
+- Battle engine: turn execution, priority, damage, switching, hazards, weather, status, boosts, abilities (50+), items (30+), volatiles, Terastallization, multi-turn moves
+- Performance: 192,000 games/sec, 130ns clone cost
+- Differential testing: 89 real replay fixtures, 1967 damage events, 0 type-chart failures
+
+### Accuracy Status
+- **Exact match (within 16-roll range): 36.4% (704/1967)**
+- Close (±20% or crit): 85.5% cumulative (952/1967)
+- Direction only (both predict damage, magnitude off): 14.5% (280/1967)
+- Type chart failures: 0
+
+### Why 36% Exact Instead of 100%
+The 64% non-exact matches are caused by modifiers we DON'T track in the verification test context:
+1. **Abilities affecting stats before the move** — e.g., Intimidate lowers Atk on switch-in, but the verification doesn't always see the `-unboost` event before the damage event
+2. **Items consumed/activated mid-turn** — e.g., Weakness Policy doubles Atk/SpA after taking SE damage
+3. **Ability-based damage modifiers not yet wired** — e.g., Adaptability (2x STAB), Tinted Lens (2x on resisted), Sniper (3x crit)
+4. **Multi-hit moves** — Bullet Seed hits 2-5 times, we calculate single-hit damage
+5. **Moves with variable base power** — Knock Off (1.5x if target has item), Acrobatics (2x if no item), Facade (2x if statused)
+6. **Terrain/ability interactions** — Electric Terrain boosts Electric moves 1.3x, Grassy Terrain heals
+
+### Next Steps (for continuing agent)
+1. Wire ALL ability damage modifiers into `damage_verification.rs` verification context
+2. Wire ALL item damage modifiers (including consumed items like Weakness Policy)
+3. Handle variable-BP moves (Knock Off, Acrobatics, Facade, Stored Power, etc.)
+4. Handle multi-hit moves in verification
+5. Track Intimidate `-unboost` events and apply them to the attacker's effective stat
+6. Handle terrain damage boosts
+7. Target: push exact match from 36% → 90%+, then grind remaining edge cases to 100%
+
+### Key Files
+- `crates/pkmn-engine/tests/damage_verification.rs` — THE file to modify for accuracy
+- `crates/pkmn-engine/src/abilities.rs` — Ability effects in the engine
+- `crates/pkmn-engine/src/items_effect.rs` — Item effects in the engine
+- `crates/pkmn-engine/src/turn.rs` — Turn execution (where damage is calculated)
+- `crates/pkmn-core/src/gen/move_data.rs` — All move data (BP, type, flags)
+- `tools/fetch-fixtures.py` — Downloads and parses replay fixtures
+- `tests/fixtures/replay_events/` — 89 real replay fixtures (JSON)
+
+---
+
 ## Vision
 A 100% accurate, high-performance Pokemon battle simulator in Rust. Targets 100x speedup over @pkmn/sim (JS) while maintaining byte-for-byte protocol compatibility with Pokemon Showdown.
 

@@ -63,3 +63,23 @@ After each major milestone or substantive progress:
 1. Update `docs/plan.md` milestone checkboxes
 2. Update `README.md` "Status" section to reflect what's built
 3. Commit the doc updates alongside the code
+
+## Accuracy Work (Current Priority)
+
+The goal is 100% exact match on damage verification against real PS replays.
+
+Workflow:
+1. Run `cargo test -p pkmn-engine damage_matches -- --nocapture` to see current stats
+2. Look at "Direction only" cases — these are the ones to fix
+3. The fix is usually in `tests/damage_verification.rs` (the verification context needs to track more modifiers)
+4. Sometimes the fix is in the engine itself (missing ability/item/move effect)
+5. After fixing, run tests again to confirm improvement
+6. To add more fixtures: `cd tools && python3 fetch-fixtures.py --count 50 --output ../tests/fixtures/replay_events/`
+
+Common causes of non-exact matches:
+- Missing ability modifier (check `ability_damage_modifier` in verification)
+- Missing item modifier (check `item_damage_modifier` in verification)
+- Variable base power move (Knock Off = 97.5 BP if target has item, not 65)
+- Multi-hit move (total damage = per-hit × hits)
+- Terrain boost (1.3x for matching terrain + type)
+- Untracked stat changes (Intimidate, Download, etc.)
