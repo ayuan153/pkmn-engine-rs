@@ -1,0 +1,169 @@
+{
+  "id": "sticky-web-speed",
+  "description": "Sticky Web drops Speed by 1 on switch-in (grounded only)",
+  "seed": [
+    2210,
+    2211,
+    2212,
+    2213
+  ],
+  "p1": {
+    "team": [
+      {
+        "name": "Ribombee",
+        "species": "Ribombee",
+        "item": "Focus Sash",
+        "ability": "Shield Dust",
+        "moves": [
+          "Sticky Web",
+          "Moonblast",
+          "Energy Ball",
+          "Psychic"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "name": "Garchomp",
+        "species": "Garchomp",
+        "item": "Choice Scarf",
+        "ability": "Rough Skin",
+        "moves": [
+          "Earthquake",
+          "Outrage",
+          "Stone Edge",
+          "Fire Fang"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      },
+      {
+        "name": "Dragonite",
+        "species": "Dragonite",
+        "item": "Choice Band",
+        "ability": "Multiscale",
+        "moves": [
+          "Outrage",
+          "Extreme Speed",
+          "Earthquake",
+          "Fire Punch"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "switch 2"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Ribombee|Ribombee, F|261/261",
+    "|switch|p2a: Garchomp|Garchomp, M|357/357",
+    "|turn|1",
+    "|move|p2a: Garchomp|Earthquake|p1a: Ribombee",
+    "|-resisted|p1a: Ribombee",
+    "|-damage|p1a: Ribombee|121/261",
+    "|move|p1a: Ribombee|Sticky Web|p2a: Garchomp",
+    "|-sidestart|p2: Player 2|move: Sticky Web",
+    "|upkeep",
+    "|turn|2",
+    "|switch|p2a: Dragonite|Dragonite, M|323/323",
+    "|move|p1a: Ribombee|Moonblast|p2a: Dragonite",
+    "|-supereffective|p2a: Dragonite",
+    "|-damage|p2a: Dragonite|176/323",
+    "|-unboost|p2a: Dragonite|spa|1",
+    "|upkeep",
+    "|turn|3",
+    "|move|p2a: Dragonite|Extreme Speed|p1a: Ribombee",
+    "|-damage|p1a: Ribombee|0 fnt",
+    "|faint|p1a: Ribombee",
+    "|win|Player 2"
+  ]
+}

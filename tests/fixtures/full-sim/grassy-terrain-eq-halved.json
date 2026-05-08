@@ -1,0 +1,120 @@
+{
+  "id": "grassy-terrain-eq-halved",
+  "description": "Grassy Terrain halves Earthquake damage to grounded targets",
+  "seed": [
+    2500,
+    2501,
+    2502,
+    2503
+  ],
+  "p1": {
+    "team": [
+      {
+        "name": "Rillaboom",
+        "species": "Rillaboom",
+        "item": "Choice Band",
+        "ability": "Grassy Surge",
+        "moves": [
+          "Grassy Glide",
+          "Wood Hammer",
+          "Earthquake",
+          "U-turn"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "name": "Toxapex",
+        "species": "Toxapex",
+        "item": "Rocky Helmet",
+        "ability": "Regenerator",
+        "moves": [
+          "Scald",
+          "Toxic",
+          "Recover",
+          "Knock Off"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Rillaboom|Rillaboom, M|341/341",
+    "|switch|p2a: Toxapex|Toxapex, M|304/304",
+    "|-fieldstart|move: Grassy Terrain|[from] ability: Grassy Surge|[of] p1a: Rillaboom",
+    "|turn|1",
+    "|move|p1a: Rillaboom|Earthquake|p2a: Toxapex",
+    "|-supereffective|p2a: Toxapex",
+    "|-damage|p2a: Toxapex|208/304",
+    "|move|p2a: Toxapex|Scald|p1a: Rillaboom",
+    "|-resisted|p1a: Rillaboom",
+    "|-damage|p1a: Rillaboom|302/341",
+    "|-heal|p1a: Rillaboom|323/341|[from] Grassy Terrain",
+    "|-heal|p2a: Toxapex|227/304|[from] Grassy Terrain",
+    "|upkeep",
+    "|turn|2"
+  ]
+}

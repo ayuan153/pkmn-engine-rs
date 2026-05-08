@@ -27,10 +27,15 @@ impl Type {
     /// Get type effectiveness multiplier for an attacking type vs one or more defending types.
     /// Returns 0.0, 0.25, 0.5, 1.0, 2.0, or 4.0.
     pub fn effectiveness(attacking: Type, defending: &[Type]) -> f32 {
-        defending
-            .iter()
-            .map(|d| single_effectiveness(attacking, *d))
-            .product()
+        if defending.len() >= 2 && defending[0] == defending[1] {
+            // Mono-type: only apply once
+            single_effectiveness(attacking, defending[0])
+        } else {
+            defending
+                .iter()
+                .map(|d| single_effectiveness(attacking, *d))
+                .product()
+        }
     }
 }
 

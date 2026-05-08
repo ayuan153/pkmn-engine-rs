@@ -3,7 +3,7 @@ use crate::choice::Choice;
 
 impl Battle {
     /// Determine action order based on priority and speed
-    pub fn determine_order(&self, p1: Choice, p2: Choice) -> Vec<(u8, Choice)> {
+    pub fn determine_order(&mut self, p1: Choice, p2: Choice) -> Vec<(u8, Choice)> {
         let p1_priority = self.get_priority(0, p1);
         let p2_priority = self.get_priority(1, p2);
 
@@ -14,8 +14,8 @@ impl Battle {
                 vec![(1, p2), (0, p1)]
             }
         } else {
-            let p1_speed = self.sides[0].active().effective_speed();
-            let p2_speed = self.sides[1].active().effective_speed();
+            let p1_speed = (self.sides[0].active().effective_speed() as f32 * self.item_speed_modifier(0)) as u16;
+            let p2_speed = (self.sides[1].active().effective_speed() as f32 * self.item_speed_modifier(1)) as u16;
 
             if p1_speed == p2_speed {
                 return vec![(0, p1), (1, p2)];

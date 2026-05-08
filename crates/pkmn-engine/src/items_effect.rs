@@ -120,6 +120,8 @@ impl Battle {
         if mon.item_id == ItemId::FocusSash && mon.hp == mon.max_hp && damage >= mon.hp {
             let adjusted = mon.hp - 1;
             self.sides[player as usize].active_mut().item_id = ItemId::None;
+            let name = self.species_name(player);
+            self.emit(format!("|-enditem|p{}a: {}|Focus Sash", player+1, name));
             return adjusted;
         }
         damage

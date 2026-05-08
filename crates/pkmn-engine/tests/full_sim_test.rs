@@ -438,3 +438,4 @@ fn full_sim_protocol_matches() {
     // Report only — don't assert until divergences are fixed
     // assert_eq!(failures.len(), 0);
 }
+

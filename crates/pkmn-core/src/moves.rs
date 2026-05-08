@@ -141,6 +141,8 @@ pub fn get_secondaries(id: u16) -> &'static [Secondary] {
         126 => &[Secondary { chance: 10, effect: SecondaryEffect::Status(SecondaryStatus::Burn) }],      // Fire Blast
         247 => &[Secondary { chance: 20, effect: SecondaryEffect::StatDrop(Stat::Spd, -1) }],            // Shadow Ball
         399 => &[Secondary { chance: 20, effect: SecondaryEffect::Status(SecondaryStatus::Flinch) }],    // Dark Pulse
+        403 => &[Secondary { chance: 30, effect: SecondaryEffect::Status(SecondaryStatus::Flinch) }],    // Air Slash
+        414 => &[Secondary { chance: 10, effect: SecondaryEffect::StatDrop(Stat::Spd, -1) }],            // Earth Power
         442 => &[Secondary { chance: 30, effect: SecondaryEffect::Status(SecondaryStatus::Flinch) }],    // Iron Head
         503 => &[Secondary { chance: 30, effect: SecondaryEffect::Status(SecondaryStatus::Burn) }],      // Scald
         585 => &[Secondary { chance: 30, effect: SecondaryEffect::StatDrop(Stat::Spa, -1) }],            // Moonblast

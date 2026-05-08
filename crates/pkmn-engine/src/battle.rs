@@ -33,8 +33,12 @@ impl Battle {
             protocol: Vec::new(),
             rng_seed: seed,
         };
-        // PS consumes one RNG call during battle initialization
-        battle.rand();
+        // PS consumes one RNG call per Pokemon during team initialization
+        // (battle.sample in new Pokemon for gender determination)
+        let total_pokemon = battle.sides[0].team.len() + battle.sides[1].team.len();
+        for _ in 0..total_pokemon {
+            battle.rand();
+        }
         // Emit switch-in for leads
         for p in 0..2u8 {
             let name = battle.species_name(p);

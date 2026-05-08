@@ -220,6 +220,180 @@ const scenarios: FullSimScenario[] = [
       ['move 1', 'move 2'],  // T3: Rotom Volt Switches, Ferro Knock Offs
     ],
   },
+  {
+    id: 'blaze-pinch',
+    description: 'Blaze activates at <1/3 HP, boosting Fire moves 1.5x',
+    seed: [2100, 2101, 2102, 2103],
+    p1: [
+      set({ species: 'Charizard', ability: 'Blaze', item: 'Heavy-Duty Boots', moves: ['Flamethrower', 'Air Slash', 'Dragon Pulse', 'Roost'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Swampert', ability: 'Torrent', item: 'Leftovers', moves: ['Earthquake', 'Ice Beam', 'Stealth Rock', 'Flip Turn'], nature: 'Relaxed', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    choices: [
+      ['move 2', 'move 1'],  // T1: Air Slash vs EQ (Charizard takes big damage)
+      ['move 1', 'move 1'],  // T2: Flamethrower (Blaze active) vs EQ
+    ],
+  },
+  {
+    id: 'flash-fire-boost',
+    description: 'Flash Fire absorbs Fire move then boosts own Fire damage 1.5x',
+    seed: [2110, 2111, 2112, 2113],
+    p1: [
+      set({ species: 'Arcanine', ability: 'Intimidate', item: 'Choice Band', moves: ['Flare Blitz', 'Extreme Speed', 'Close Combat', 'Wild Charge'], nature: 'Adamant', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Heatran', ability: 'Flash Fire', item: 'Leftovers', moves: ['Magma Storm', 'Earth Power', 'Flash Cannon', 'Stealth Rock'], nature: 'Modest', evs: { hp: 252, atk: 0, def: 0, spa: 252, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    choices: [
+      ['move 1', 'move 2'],  // T1: Flare Blitz (absorbed by Flash Fire) vs Earth Power
+      ['move 2', 'move 1'],  // T2: Extreme Speed vs Magma Storm (Flash Fire boosted)
+    ],
+  },
+  {
+    id: 'defeatist-halved',
+    description: 'Defeatist halves Atk+SpA below 50% HP',
+    seed: [2120, 2121, 2122, 2123],
+    p1: [
+      set({ species: 'Archeops', ability: 'Defeatist', item: 'Choice Scarf', moves: ['Stone Edge', 'Earthquake', 'U-turn', 'Head Smash'], nature: 'Jolly', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Slowbro', ability: 'Regenerator', item: 'Heavy-Duty Boots', moves: ['Scald', 'Psychic', 'Slack Off', 'Thunder Wave'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    choices: [
+      ['move 4', 'move 1'],  // T1: Head Smash (recoil drops below 50%) vs Scald
+      ['move 1', 'move 2'],  // T2: Stone Edge (Defeatist halved) vs Psychic
+    ],
+  },
+  {
+    id: 'toxic-spikes-poison',
+    description: 'Toxic Spikes: 1 layer poisons, 2 layers badly poisons, Poison-type absorbs',
+    seed: [2200, 2201, 2202, 2203],
+    p1: [
+      set({ species: 'Toxapex', ability: 'Regenerator', item: 'Rocky Helmet', moves: ['Toxic Spikes', 'Scald', 'Recover', 'Haze'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Garchomp', ability: 'Rough Skin', item: 'Choice Band', moves: ['Earthquake', 'Outrage', 'Stone Edge', 'Fire Fang'], nature: 'Jolly', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+      set({ species: 'Excadrill', ability: 'Sand Rush', item: 'Choice Scarf', moves: ['Earthquake', 'Iron Head', 'Rock Slide', 'Rapid Spin'], nature: 'Jolly', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    choices: [
+      ['move 1', 'move 1'],  // T1: Toxic Spikes vs EQ
+      ['move 1', 'move 1'],  // T2: Toxic Spikes (2nd layer) vs EQ
+      ['move 3', 'switch 2'],  // T3: Recover vs switch to Excadrill (takes toxic poison)
+      ['move 2', 'move 1'],  // T4: Scald vs EQ
+    ],
+  },
+  {
+    id: 'sticky-web-speed',
+    description: 'Sticky Web drops Speed by 1 on switch-in (grounded only)',
+    seed: [2210, 2211, 2212, 2213],
+    p1: [
+      set({ species: 'Ribombee', ability: 'Shield Dust', item: 'Focus Sash', moves: ['Sticky Web', 'Moonblast', 'Energy Ball', 'Psychic'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Garchomp', ability: 'Rough Skin', item: 'Choice Scarf', moves: ['Earthquake', 'Outrage', 'Stone Edge', 'Fire Fang'], nature: 'Jolly', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+      set({ species: 'Dragonite', ability: 'Multiscale', item: 'Choice Band', moves: ['Outrage', 'Extreme Speed', 'Earthquake', 'Fire Punch'], nature: 'Adamant', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    choices: [
+      ['move 1', 'move 1'],  // T1: Sticky Web vs EQ (Sash saves)
+      ['move 2', 'switch 2'],  // T2: Moonblast vs switch Dragonite (takes Sticky Web -1 Spe)
+      ['move 2', 'move 2'],  // T3: Moonblast vs Extreme Speed
+    ],
+  },
+  {
+    id: 'hex-doubled-status',
+    description: 'Hex doubles BP (65->130) when target has a status condition',
+    seed: [2300, 2301, 2302, 2303],
+    p1: [
+      set({ species: 'Gengar', ability: 'Cursed Body', item: 'Choice Specs', moves: ['Hex', 'Shadow Ball', 'Sludge Bomb', 'Focus Blast'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Blissey', ability: 'Natural Cure', item: 'Leftovers', moves: ['Seismic Toss', 'Soft-Boiled', 'Thunder Wave', 'Toxic'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    choices: [
+      ['move 1', 'move 4'],  // T1: Hex (normal BP) vs Toxic (poisons Gengar)
+      ['move 1', 'move 2'],  // T2: Hex (doubled, Blissey has... wait Blissey isn't statused)
+    ],
+  },
+  {
+    id: 'pixilate-type-change',
+    description: 'Pixilate changes Normal moves to Fairy + 1.2x boost',
+    seed: [2400, 2401, 2402, 2403],
+    p1: [
+      set({ species: 'Sylveon', ability: 'Pixilate', item: 'Choice Specs', moves: ['Hyper Voice', 'Mystical Fire', 'Shadow Ball', 'Psyshock'], nature: 'Modest', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Garchomp', ability: 'Rough Skin', item: 'Choice Band', moves: ['Earthquake', 'Outrage', 'Stone Edge', 'Fire Fang'], nature: 'Jolly', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    choices: [
+      ['move 1', 'move 1'],  // T1: Hyper Voice (becomes Fairy via Pixilate) vs EQ
+      ['move 1', 'move 1'],  // T2: Hyper Voice again vs EQ
+    ],
+  },
+  {
+    id: 'grassy-terrain-eq-halved',
+    description: 'Grassy Terrain halves Earthquake damage to grounded targets',
+    seed: [2500, 2501, 2502, 2503],
+    p1: [
+      set({ species: 'Rillaboom', ability: 'Grassy Surge', item: 'Choice Band', moves: ['Grassy Glide', 'Wood Hammer', 'Earthquake', 'U-turn'], nature: 'Adamant', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Toxapex', ability: 'Regenerator', item: 'Rocky Helmet', moves: ['Scald', 'Toxic', 'Recover', 'Knock Off'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    choices: [
+      ['move 3', 'move 1'],  // T1: EQ (halved by Grassy Terrain) vs Scald
+      ['move 1', 'move 4'],  // T2: Grassy Glide (boosted by terrain) vs Knock Off
+    ],
+  },
+  {
+    id: 'misty-terrain-dragon-halved',
+    description: 'Misty Terrain halves Dragon moves against grounded targets',
+    seed: [2510, 2511, 2512, 2513],
+    p1: [
+      set({ species: 'Tapu Fini', ability: 'Misty Surge', item: 'Leftovers', moves: ['Moonblast', 'Surf', 'Calm Mind', 'Taunt'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Garchomp', ability: 'Rough Skin', item: 'Choice Band', moves: ['Outrage', 'Earthquake', 'Stone Edge', 'Fire Fang'], nature: 'Jolly', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    choices: [
+      ['move 1', 'move 1'],  // T1: Moonblast vs Outrage (halved by Misty Terrain)
+      ['move 2', 'move 1'],  // T2: Surf vs Outrage (still halved)
+    ],
+  },
+  {
+    id: 'moxie-ko-boost',
+    description: 'Moxie gives +1 Atk after KOing an opponent',
+    seed: [2600, 2601, 2602, 2603],
+    p1: [
+      set({ species: 'Gyarados', ability: 'Moxie', item: 'Choice Scarf', moves: ['Waterfall', 'Earthquake', 'Bounce', 'Ice Fang'], nature: 'Jolly', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Jolteon', ability: 'Volt Absorb', item: 'Focus Sash', moves: ['Thunderbolt', 'Shadow Ball', 'Volt Switch', 'Yawn'], nature: 'Timid', evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252 }, level: 100 }),
+      set({ species: 'Blissey', ability: 'Natural Cure', item: 'Leftovers', moves: ['Seismic Toss', 'Soft-Boiled', 'Thunder Wave', 'Toxic'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    choices: [
+      ['move 2', 'move 1'],  // T1: EQ vs Tbolt (Jolteon faster, Sash saves if needed)
+      ['move 2', 'move 2'],  // T2: EQ (KOs Jolteon, Moxie +1) vs Shadow Ball
+      ['move 1', 'move 1'],  // T3: Waterfall (Moxie boosted) vs Seismic Toss
+    ],
+  },
+  {
+    id: 'regenerator-switch-heal',
+    description: 'Regenerator heals 1/3 HP on switch-out',
+    seed: [2610, 2611, 2612, 2613],
+    p1: [
+      set({ species: 'Garchomp', ability: 'Rough Skin', item: 'Choice Band', moves: ['Earthquake', 'Outrage', 'Stone Edge', 'Fire Fang'], nature: 'Jolly', evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252 }, level: 100 }),
+    ],
+    p2: [
+      set({ species: 'Slowbro', ability: 'Regenerator', item: 'Heavy-Duty Boots', moves: ['Scald', 'Psychic', 'Slack Off', 'Teleport'], nature: 'Bold', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+      set({ species: 'Ferrothorn', ability: 'Iron Barbs', item: 'Leftovers', moves: ['Power Whip', 'Knock Off', 'Stealth Rock', 'Leech Seed'], nature: 'Relaxed', evs: { hp: 252, atk: 0, def: 252, spa: 0, spd: 4, spe: 0 }, level: 100 }),
+    ],
+    choices: [
+      ['move 1', 'move 1'],  // T1: EQ vs Scald (Slowbro takes damage)
+      ['move 1', 'switch 2'],  // T2: EQ vs switch to Ferro (Slowbro heals via Regen)
+      ['move 1', 'move 1'],  // T3: EQ vs Power Whip
+    ],
+  },
 ];
 
 async function runFullSimBattle(scenario: FullSimScenario): Promise<FullSimFixture> {

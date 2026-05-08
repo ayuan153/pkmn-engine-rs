@@ -1,0 +1,160 @@
+{
+  "id": "moxie-ko-boost",
+  "description": "Moxie gives +1 Atk after KOing an opponent",
+  "seed": [
+    2600,
+    2601,
+    2602,
+    2603
+  ],
+  "p1": {
+    "team": [
+      {
+        "name": "Gyarados",
+        "species": "Gyarados",
+        "item": "Choice Scarf",
+        "ability": "Moxie",
+        "moves": [
+          "Waterfall",
+          "Earthquake",
+          "Bounce",
+          "Ice Fang"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "name": "Jolteon",
+        "species": "Jolteon",
+        "item": "Focus Sash",
+        "ability": "Volt Absorb",
+        "moves": [
+          "Thunderbolt",
+          "Shadow Ball",
+          "Volt Switch",
+          "Yawn"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      },
+      {
+        "name": "Blissey",
+        "species": "Blissey",
+        "item": "Leftovers",
+        "ability": "Natural Cure",
+        "moves": [
+          "Seismic Toss",
+          "Soft-Boiled",
+          "Thunder Wave",
+          "Toxic"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Gyarados|Gyarados, F|331/331",
+    "|switch|p2a: Jolteon|Jolteon, M|271/271",
+    "|turn|1",
+    "|move|p1a: Gyarados|Earthquake|p2a: Jolteon",
+    "|-supereffective|p2a: Jolteon",
+    "|-enditem|p2a: Jolteon|Focus Sash",
+    "|-damage|p2a: Jolteon|1/271",
+    "|move|p2a: Jolteon|Thunderbolt|p1a: Gyarados",
+    "|-supereffective|p1a: Gyarados",
+    "|-damage|p1a: Gyarados|0 fnt",
+    "|faint|p1a: Gyarados",
+    "|win|Player 2"
+  ]
+}

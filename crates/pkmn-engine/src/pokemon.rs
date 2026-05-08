@@ -31,6 +31,7 @@ bitflags::bitflags! {
         const LOCKED_MOVE = 0x100;
         const RECHARGING = 0x200;
         const MUST_RECHARGE = 0x400;
+        const FLASH_FIRE = 0x800;
     }
 }
 

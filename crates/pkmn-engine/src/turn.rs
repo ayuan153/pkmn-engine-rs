@@ -229,7 +229,13 @@ impl Battle {
         // Check ability immunity
         if self.check_ability_immunity(defender_idx, move_data.move_type) {
             let def_name = self.species_name(defender_idx);
-            self.emit(format!("|-immune|p{}a: {}", defender_idx+1, def_name));
+            let defender_ability = self.sides[defender_idx as usize].active().ability_id;
+            if defender_ability == pkmn_core::abilities::AbilityId::FlashFire {
+                self.emit(format!("|-start|p{}a: {}|ability: Flash Fire", defender_idx+1, def_name));
+                self.sides[defender_idx as usize].active_mut().volatiles.insert(Volatiles::FLASH_FIRE);
+            } else {
+                self.emit(format!("|-immune|p{}a: {}", defender_idx+1, def_name));
+            }
             return;
         }
 
@@ -624,8 +630,8 @@ impl Battle {
     fn get_variable_bp(&self, attacker_player: u8, defender_player: u8, move_data: &MoveData) -> u16 {
         let name = move_data.name.to_lowercase();
         let attacker = self.sides[attacker_player as usize].active();
-        let _defender = self.sides[defender_player as usize].active();
-        match name.as_str() {
+        let defender = self.sides[defender_player as usize].active();
+        let mut bp = match name.as_str() {
             "acrobatics" => {
                 if attacker.item_id == pkmn_core::items::ItemId::None { 110 } else { 55 }
             }
@@ -644,7 +650,27 @@ impl Battle {
                 if self.field.weather != crate::field::Weather::None { 100 } else { 50 }
             }
             _ => move_data.base_power as u16,
+        };
+
+        // Grassy Terrain halves Earthquake/Bulldoze/Magnitude BP against grounded targets
+        if self.field.terrain == Terrain::Grassy
+            && matches!(move_data.name, "Earthquake" | "Bulldoze" | "Magnitude")
+        {
+            let def_grounded = !defender.types.contains(&Type::Flying)
+                && defender.ability_id != pkmn_core::abilities::AbilityId::Levitate
+                && defender.item_id != pkmn_core::items::ItemId::AirBalloon;
+            if def_grounded { bp /= 2; }
         }
+
+        // Misty Terrain halves Dragon move BP against grounded targets
+        if self.field.terrain == Terrain::Misty && move_data.move_type == Type::Dragon {
+            let def_grounded = !defender.types.contains(&Type::Flying)
+                && defender.ability_id != pkmn_core::abilities::AbilityId::Levitate
+                && defender.item_id != pkmn_core::items::ItemId::AirBalloon;
+            if def_grounded { bp /= 2; }
+        }
+
+        bp
     }
 
     fn get_terrain_modifier(&self, attacker_player: u8, move_type: Type) -> f32 {
@@ -871,6 +897,17 @@ impl Battle {
                 self.sides[defender as usize].side_conditions.stealth_rock = true;
                 self.emit(format!("|-sidestart|p{}: Player {}|move: Stealth Rock", defender+1, defender+1));
             }
+            "toxic spikes" => {
+                let layers = &mut self.sides[defender as usize].side_conditions.toxic_spikes;
+                if *layers < 2 {
+                    *layers += 1;
+                }
+                self.emit(format!("|-sidestart|p{}: Player {}|move: Toxic Spikes", defender+1, defender+1));
+            }
+            "sticky web" => {
+                self.sides[defender as usize].side_conditions.sticky_web = true;
+                self.emit(format!("|-sidestart|p{}: Player {}|move: Sticky Web", defender+1, defender+1));
+            }
             "recover" | "soft-boiled" | "roost" | "slack off" => {
                 let mon = self.sides[attacker as usize].active_mut();
                 if mon.hp >= mon.max_hp {
@@ -899,7 +936,7 @@ impl Battle {
             self.trigger_ability_end_of_turn(player);
         }
 
-        // Weather upkeep emission (before item healing)
+        // Weather upkeep emission
         if self.field.weather != Weather::None && self.field.weather_turns > 0 {
             let weather_str = match self.field.weather {
                 Weather::Rain => "RainDance",
@@ -911,74 +948,89 @@ impl Battle {
             self.emit(format!("|-weather|{}|[upkeep]", weather_str));
         }
 
+        // Sandstorm damage
         for player in 0..2 {
-            let weather = self.field.weather;
             let mon = self.sides[player].active_mut();
-            if !mon.is_alive() {
-                continue;
-            }
-
-            // Sandstorm damage
-            if weather == Weather::Sand
+            if !mon.is_alive() { continue; }
+            if self.field.weather == Weather::Sand
                 && !mon.types.contains(&Type::Rock)
                 && !mon.types.contains(&Type::Ground)
                 && !mon.types.contains(&Type::Steel)
             {
                 let dmg = (mon.max_hp / 16).max(1);
                 mon.hp = mon.hp.saturating_sub(dmg);
+                if mon.hp == 0 { mon.is_fainted = true; }
+                let name = pkmn_core::species::get_species_by_id(mon.species_id).map(|s| s.name).unwrap_or("Unknown");
+                let hp = mon.hp;
+                let max_hp = mon.max_hp;
+                if hp == 0 {
+                    self.emit(format!("|-damage|p{}a: {}|0 fnt|[from] Sandstorm", player+1, name));
+                    self.emit(format!("|faint|p{}a: {}", player+1, name));
+                } else {
+                    let status_str = match mon.status {
+                        Status::Toxic => " tox", Status::Burn => " brn", Status::Poison => " psn", Status::Paralyze => " par", _ => "",
+                    };
+                    self.emit(format!("|-damage|p{}a: {}|{}/{}{}|[from] Sandstorm", player+1, name, hp, max_hp, status_str));
+                }
             }
+        }
 
-            // Status damage
-            match mon.status {
+        // Grassy Terrain EOT heal (1/16 HP to grounded Pokemon)
+        if self.field.terrain == Terrain::Grassy {
+            for player in 0..2u8 {
+                let mon = self.sides[player as usize].active();
+                if !mon.is_alive() { continue; }
+                let is_grounded = !mon.types.contains(&Type::Flying)
+                    && mon.ability_id != pkmn_core::abilities::AbilityId::Levitate
+                    && mon.item_id != pkmn_core::items::ItemId::AirBalloon;
+                if is_grounded && mon.hp < mon.max_hp {
+                    let heal = (mon.max_hp / 16).max(1);
+                    let mon = self.sides[player as usize].active_mut();
+                    mon.hp = (mon.hp + heal).min(mon.max_hp);
+                    let name = self.species_name(player);
+                    let hp = self.sides[player as usize].active().hp;
+                    let max_hp = self.sides[player as usize].active().max_hp;
+                    self.emit(format!("|-heal|p{}a: {}|{}/{}|[from] Grassy Terrain", player+1, name, hp, max_hp));
+                }
+            }
+        }
+
+        // Item end-of-turn (Leftovers, etc.) — faster first
+        let p1_speed = self.sides[0].active().effective_speed();
+        let p2_speed = self.sides[1].active().effective_speed();
+        let item_order: [u8; 2] = if p2_speed > p1_speed { [1, 0] } else { [0, 1] };
+        for &player in &item_order {
+            self.trigger_item_end_of_turn(player);
+        }
+
+        // Status damage (burn/poison/toxic) — after items
+        for player in 0..2 {
+            let mon = self.sides[player].active_mut();
+            if !mon.is_alive() { continue; }
+            let status = mon.status;
+            match status {
                 Status::Burn => {
                     let dmg = (mon.max_hp / 16).max(1);
                     mon.hp = mon.hp.saturating_sub(dmg);
+                    if mon.hp == 0 { mon.is_fainted = true; }
                 }
                 Status::Poison => {
                     let dmg = (mon.max_hp / 8).max(1);
                     mon.hp = mon.hp.saturating_sub(dmg);
+                    if mon.hp == 0 { mon.is_fainted = true; }
                 }
                 Status::Toxic => {
                     mon.status_turns += 1;
                     let dmg = (mon.max_hp / 16).max(1) * mon.status_turns as u16;
                     mon.hp = mon.hp.saturating_sub(dmg);
+                    if mon.hp == 0 { mon.is_fainted = true; }
                 }
                 _ => {}
             }
-
-            if mon.hp == 0 {
-                mon.is_fainted = true;
-            }
-
-            // Emit damage from weather/status
-            let species_id = mon.species_id;
+            let name = pkmn_core::species::get_species_by_id(mon.species_id).map(|s| s.name).unwrap_or("Unknown");
             let hp = mon.hp;
             let max_hp = mon.max_hp;
-            let status = mon.status;
             let is_fainted = mon.is_fainted;
-            let name = pkmn_core::species::get_species_by_id(species_id)
-                .map(|s| s.name)
-                .unwrap_or("Unknown");
-
-            let status_str = match status {
-                Status::Toxic => " tox",
-                Status::Burn => " brn",
-                Status::Poison => " psn",
-                Status::Paralyze => " par",
-                _ => "",
-            };
-
-            if weather == Weather::Sand
-                && !self.sides[player].active().types.contains(&Type::Rock)
-                && !self.sides[player].active().types.contains(&Type::Ground)
-                && !self.sides[player].active().types.contains(&Type::Steel)
-            {
-                if hp == 0 {
-                    self.emit(format!("|-damage|p{}a: {}|0 fnt|[from] Sandstorm", player+1, name));
-                } else {
-                    self.emit(format!("|-damage|p{}a: {}|{}/{}{}|[from] Sandstorm", player+1, name, hp, max_hp, status_str));
-                }
-            }
             match status {
                 Status::Burn => {
                     if hp == 0 {
@@ -1006,14 +1058,6 @@ impl Battle {
             if is_fainted {
                 self.emit(format!("|faint|p{}a: {}", player+1, name));
             }
-        }
-
-        // Item end-of-turn (Leftovers, etc.) — after weather/status damage, faster first
-        let p1_speed = self.sides[0].active().effective_speed();
-        let p2_speed = self.sides[1].active().effective_speed();
-        let item_order: [u8; 2] = if p2_speed > p1_speed { [1, 0] } else { [0, 1] };
-        for &player in &item_order {
-            self.trigger_item_end_of_turn(player);
         }
 
         // Decrement field turns
@@ -1094,8 +1138,6 @@ impl Battle {
             let roll = self.random(20);
             if roll < 7 { 2 } else if roll < 14 { 3 } else if roll < 17 { 4 } else { 5 }
         } else {
-            // PS still consumes RNG for hit count even with Skill Link
-            let _ = self.random(20);
             max_hits as u32
         };
 

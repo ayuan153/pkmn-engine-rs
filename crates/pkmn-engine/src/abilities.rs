@@ -142,6 +142,15 @@ impl Battle {
                     1.0
                 }
             }
+            AbilityId::FlashFire => {
+                if mon.volatiles.contains(crate::pokemon::Volatiles::FLASH_FIRE)
+                    && move_data.move_type == Type::Fire
+                {
+                    1.5
+                } else {
+                    1.0
+                }
+            }
             AbilityId::TintedLens => {
                 let effectiveness =
                     Type::effectiveness(move_data.move_type, &defender.types);

@@ -41,16 +41,39 @@ impl Battle {
         // Toxic Spikes (grounded only)
         if conditions.toxic_spikes > 0
             && !self.sides[player as usize].active().types.contains(&Type::Flying)
+            && self.sides[player as usize].active().ability_id != pkmn_core::abilities::AbilityId::Levitate
             && self.sides[player as usize].active().status == Status::None
         {
             let mon = self.sides[player as usize].active_mut();
             if mon.types.contains(&Type::Poison) {
                 // Poison types absorb toxic spikes
+                self.sides[player as usize].side_conditions.toxic_spikes = 0;
+                let name = self.species_name(player);
+                self.emit(format!("|-sideend|p{}: Player {}|move: Toxic Spikes|[of] p{}a: {}", player+1, player+1, player+1, name));
             } else if conditions.toxic_spikes >= 2 {
+                let mon = self.sides[player as usize].active_mut();
                 mon.status = Status::Toxic;
+                let name = self.species_name(player);
+                self.emit(format!("|-status|p{}a: {}|tox", player+1, name));
             } else {
+                let mon = self.sides[player as usize].active_mut();
                 mon.status = Status::Poison;
+                let name = self.species_name(player);
+                self.emit(format!("|-status|p{}a: {}|psn", player+1, name));
             }
+        }
+
+        // Sticky Web (grounded only)
+        if conditions.sticky_web
+            && !self.sides[player as usize].active().types.contains(&Type::Flying)
+            && self.sides[player as usize].active().ability_id != pkmn_core::abilities::AbilityId::Levitate
+            && self.sides[player as usize].active().item_id != pkmn_core::items::ItemId::AirBalloon
+        {
+            let mon = self.sides[player as usize].active_mut();
+            mon.boosts.spe = (mon.boosts.spe - 1).max(-6);
+            let name = self.species_name(player);
+            self.emit(format!("|-activate|p{}a: {}|move: Sticky Web", player+1, name));
+            self.emit(format!("|-unboost|p{}a: {}|spe|1", player+1, name));
         }
 
         if self.sides[player as usize].active().hp == 0 {

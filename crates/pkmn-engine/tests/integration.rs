@@ -51,7 +51,7 @@ mod tests {
     fn make_battle(p1: Pokemon, p2: Pokemon) -> Battle {
         let side1 = Side::new(vec![p1]);
         let side2 = Side::new(vec![p2]);
-        Battle::new(side1, side2, [12, 34, 56, 78])
+        Battle::new(side1, side2, [1, 34, 56, 78])
     }
 
     // === Pokemon tests ===
@@ -139,7 +139,7 @@ mod tests {
 
     #[test]
     fn test_switch_before_move() {
-        let battle = make_battle(make_garchomp(), make_dragapult());
+        let mut battle = make_battle(make_garchomp(), make_dragapult());
         let order = battle.determine_order(Choice::Move(0), Choice::Switch(0));
         assert_eq!(order[0].0, 1); // p2 switch goes first
     }
@@ -147,7 +147,7 @@ mod tests {
     #[test]
     fn test_faster_pokemon_moves_first() {
         // Dragapult (142 base spe) vs Garchomp (102 base spe)
-        let battle = make_battle(make_dragapult(), make_garchomp());
+        let mut battle = make_battle(make_dragapult(), make_garchomp());
         let order = battle.determine_order(Choice::Move(0), Choice::Move(0));
         assert_eq!(order[0].0, 0); // Dragapult is faster
     }
