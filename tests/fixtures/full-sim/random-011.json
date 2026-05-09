@@ -11,14 +11,14 @@
   "p1": {
     "team": [
       {
-        "species": "Piloswine",
-        "ability": "Thick Fat",
-        "item": "Eviolite",
+        "species": "Wyrdeer",
+        "ability": "Intimidate",
+        "item": "Leftovers",
         "moves": [
-          "Ice Shard",
-          "Stealth Rock",
           "Earthquake",
-          "Icicle Crash"
+          "Psychic Noise",
+          "Body Slam",
+          "Thunder Wave"
         ],
         "nature": "Hardy",
         "evs": {
@@ -37,78 +37,18 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 85,
-        "gender": "F"
+        "level": 87,
+        "gender": "M"
       },
       {
-        "species": "Volcanion",
-        "ability": "Water Absorb",
-        "item": "Assault Vest",
+        "species": "Weezing-Galar",
+        "ability": "Levitate",
+        "item": "Leftovers",
         "moves": [
-          "Flame Charge",
-          "Steam Eruption",
-          "Flamethrower",
-          "Sludge Bomb"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 81,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 79,
-        "gender": "N"
-      },
-      {
-        "species": "Breloom",
-        "ability": "Technician",
-        "item": "Life Orb",
-        "moves": [
-          "Bullet Seed",
-          "Spore",
-          "Swords Dance",
-          "Mach Punch"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 83,
-        "gender": "F"
-      },
-      {
-        "species": "Medicham",
-        "ability": "Pure Power",
-        "item": "Choice Band",
-        "moves": [
-          "Ice Punch",
-          "Zen Headbutt",
-          "Close Combat",
-          "Poison Jab"
+          "Defog",
+          "Strange Steam",
+          "Gunk Shot",
+          "Pain Split"
         ],
         "nature": "Hardy",
         "evs": {
@@ -128,47 +68,17 @@
           "spe": 31
         },
         "level": 86,
-        "gender": "F"
-      },
-      {
-        "species": "Kingambit",
-        "ability": "Supreme Overlord",
-        "item": "Leftovers",
-        "moves": [
-          "Swords Dance",
-          "Iron Head",
-          "Sucker Punch",
-          "Kowtow Cleave"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 74,
         "gender": "M"
       },
       {
-        "species": "Iron Boulder",
-        "ability": "Quark Drive",
-        "item": "Booster Energy",
+        "species": "Articuno",
+        "ability": "Pressure",
+        "item": "Heavy-Duty Boots",
         "moves": [
-          "Mighty Cleave",
-          "Close Combat",
-          "Zen Headbutt",
-          "Swords Dance"
+          "Substitute",
+          "Freeze-Dry",
+          "Roost",
+          "Brave Bird"
         ],
         "nature": "Hardy",
         "evs": {
@@ -187,7 +97,97 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 77,
+        "level": 86,
+        "gender": "N"
+      },
+      {
+        "species": "Latios",
+        "ability": "Levitate",
+        "item": "Soul Dew",
+        "moves": [
+          "Calm Mind",
+          "Draco Meteor",
+          "Recover",
+          "Psyshock"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 78,
+        "gender": "M"
+      },
+      {
+        "species": "Sandslash-Alola",
+        "ability": "Slush Rush",
+        "item": "Choice Band",
+        "moves": [
+          "Triple Axel",
+          "Iron Head",
+          "Knock Off",
+          "Earthquake"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "M"
+      },
+      {
+        "species": "Electrode",
+        "ability": "Static",
+        "item": "Life Orb",
+        "moves": [
+          "Volt Switch",
+          "Thunderbolt",
+          "Taunt",
+          "Tera Blast"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 92,
         "gender": "N"
       }
     ]
@@ -195,14 +195,14 @@
   "p2": {
     "team": [
       {
-        "species": "Torterra",
-        "ability": "Overgrow",
-        "item": "Loaded Dice",
+        "species": "Meowscarada",
+        "ability": "Protean",
+        "item": "Heavy-Duty Boots",
         "moves": [
-          "Headlong Rush",
-          "Shell Smash",
-          "Rock Blast",
-          "Bullet Seed"
+          "Toxic Spikes",
+          "Flower Trick",
+          "Knock Off",
+          "U-turn"
         ],
         "nature": "Hardy",
         "evs": {
@@ -225,19 +225,19 @@
         "gender": "M"
       },
       {
-        "species": "Pecharunt",
-        "ability": "Poison Puppeteer",
-        "item": "Leftovers",
+        "species": "Baxcalibur",
+        "ability": "Thermal Exchange",
+        "item": "Choice Band",
         "moves": [
-          "Recover",
-          "Nasty Plot",
-          "Malignant Chain",
-          "Shadow Ball"
+          "Ice Shard",
+          "Glaive Rush",
+          "Icicle Crash",
+          "Earthquake"
         ],
         "nature": "Hardy",
         "evs": {
-          "hp": 85,
-          "atk": 0,
+          "hp": 81,
+          "atk": 85,
           "def": 85,
           "spa": 85,
           "spd": 85,
@@ -245,29 +245,29 @@
         },
         "ivs": {
           "hp": 31,
-          "atk": 0,
+          "atk": 31,
           "def": 31,
           "spa": 31,
           "spd": 31,
           "spe": 31
         },
-        "level": 77,
-        "gender": "N"
+        "level": 75,
+        "gender": "M"
       },
       {
-        "species": "Lanturn",
-        "ability": "Volt Absorb",
-        "item": "Heavy-Duty Boots",
+        "species": "Ursaluna",
+        "ability": "Guts",
+        "item": "Flame Orb",
         "moves": [
-          "Thunder Wave",
-          "Thunderbolt",
-          "Scald",
-          "Volt Switch"
+          "Headlong Rush",
+          "Trailblaze",
+          "Facade",
+          "Throat Chop"
         ],
         "nature": "Hardy",
         "evs": {
           "hp": 85,
-          "atk": 0,
+          "atk": 85,
           "def": 85,
           "spa": 85,
           "spd": 85,
@@ -275,84 +275,84 @@
         },
         "ivs": {
           "hp": 31,
-          "atk": 0,
+          "atk": 31,
           "def": 31,
           "spa": 31,
           "spd": 31,
           "spe": 31
         },
-        "level": 89,
+        "level": 79,
+        "gender": "M"
+      },
+      {
+        "species": "Qwilfish",
+        "ability": "Intimidate",
+        "item": "Leftovers",
+        "moves": [
+          "Waterfall",
+          "Gunk Shot",
+          "Destiny Bond",
+          "Taunt"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 86,
         "gender": "F"
       },
       {
-        "species": "Toxicroak",
-        "ability": "Dry Skin",
-        "item": "Choice Band",
-        "moves": [
-          "Close Combat",
-          "Gunk Shot",
-          "Earthquake",
-          "Knock Off"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 84,
-        "gender": "M"
-      },
-      {
-        "species": "Ambipom",
-        "ability": "Technician",
-        "item": "Silk Scarf",
-        "moves": [
-          "Low Kick",
-          "Double-Edge",
-          "Knock Off",
-          "Fake Out"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 84,
-        "gender": "M"
-      },
-      {
-        "species": "Regigigas",
-        "ability": "Slow Start",
+        "species": "Jolteon",
+        "ability": "Volt Absorb",
         "item": "Leftovers",
         "moves": [
-          "Protect",
+          "Tera Blast",
+          "Calm Mind",
+          "Thunderbolt",
+          "Substitute"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "F"
+      },
+      {
+        "species": "Metagross",
+        "ability": "Clear Body",
+        "item": "Weakness Policy",
+        "moves": [
+          "Heavy Slam",
           "Knock Off",
-          "Substitute",
-          "Body Slam"
+          "Earthquake",
+          "Agility"
         ],
         "nature": "Hardy",
         "evs": {
@@ -371,67 +371,59 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 84,
+        "level": 79,
         "gender": "N"
       }
     ]
   },
   "choices": [
     [
+      "move 1",
+      "move 4"
+    ],
+    [
       "move 2",
-      "move 3"
+      "switch 6"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "switch 4",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "switch 3"
+    ],
+    [
+      "switch 3",
+      "move 1"
     ],
     [
       "move 4",
       "move 1"
     ],
     [
-      "move 1",
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
       "switch 2"
     ],
     [
       "move 4",
-      "move 3"
-    ],
-    [
-      "move 1",
-      "move 4"
-    ],
-    [
-      "move 2",
-      "move 4"
-    ],
-    [
-      "switch 2",
-      "move 4"
-    ],
-    [
-      "move 1",
-      "move 4"
-    ],
-    [
-      "move 2",
       "move 2"
-    ],
-    [
-      "move 2",
-      "move 2"
-    ],
-    [
-      "move 4",
-      "switch 6"
-    ],
-    [
-      "move 4",
-      "move 4"
-    ],
-    [
-      "move 4",
-      "move 4"
-    ],
-    [
-      "move 2",
-      "move 4"
     ],
     [
       "switch 5",
@@ -439,248 +431,302 @@
     ],
     [
       "move 4",
-      "move 4"
-    ],
-    [
-      "move 2",
       "switch 4"
     ],
     [
-      "move 1",
-      "move 4"
+      "move 4",
+      "move 1"
     ],
     [
-      "move 3",
-      "move 4"
+      "move 4",
+      "switch 1"
     ],
     [
-      "move 2",
-      "move 4"
-    ],
-    [
-      "move 3",
-      "switch 3"
-    ],
-    [
-      "move 1",
+      "move 4",
       "move 2"
     ],
     [
-      "switch 6",
-      "move 3"
-    ],
-    [
-      "move 3",
-      "move 4"
-    ],
-    [
-      "move 3",
+      "move 4",
       "switch 5"
     ],
     [
+      "switch 2",
+      "move 3"
+    ],
+    [
       "move 2",
-      "move 2"
+      "move 4"
     ],
     [
       "move 1",
-      "switch 3"
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "switch 1"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 2"
     ]
   ],
   "protocol": [
-    "|switch|p1a: Piloswine|Piloswine, L85, F|309/309",
-    "|switch|p2a: Torterra|Torterra, L78, M|276/276",
+    "|switch|p1a: Wyrdeer|Wyrdeer, L87, M|321/321",
+    "|switch|p2a: Meowscarada|Meowscarada, L78, M|247/247",
+    "|-ability|p1a: Wyrdeer|Intimidate|boost",
+    "|-unboost|p2a: Meowscarada|atk|1",
     "|turn|1",
-    "|move|p1a: Piloswine|Stealth Rock|p2a: Torterra",
-    "|-sidestart|p2: Player 2|move: Stealth Rock",
-    "|move|p2a: Torterra|Rock Blast|p1a: Piloswine",
-    "|-damage|p1a: Piloswine|296/309",
-    "|-damage|p1a: Piloswine|283/309",
-    "|-damage|p1a: Piloswine|270/309",
-    "|-damage|p1a: Piloswine|257/309",
-    "|-hitcount|p1a: Piloswine|4",
+    "|move|p2a: Meowscarada|U-turn|p1a: Wyrdeer",
+    "|-start|p2a: Meowscarada|typechange|Bug|[from] ability: Protean",
+    "|-supereffective|p1a: Wyrdeer",
+    "|-damage|p1a: Wyrdeer|217/321",
+    "|switch|p2a: Metagross|Metagross, L79|256/256|[from] U-turn",
+    "|move|p1a: Wyrdeer|Earthquake|p2a: Metagross",
+    "|-supereffective|p2a: Metagross",
+    "|-damage|p2a: Metagross|132/256",
+    "|-enditem|p2a: Metagross|Weakness Policy",
+    "|-boost|p2a: Metagross|atk|2|[from] item: Weakness Policy",
+    "|-boost|p2a: Metagross|spa|2|[from] item: Weakness Policy",
+    "|-heal|p1a: Wyrdeer|237/321|[from] item: Leftovers",
     "|upkeep",
     "|turn|2",
-    "|move|p1a: Piloswine|Icicle Crash|p2a: Torterra",
-    "|-supereffective|p2a: Torterra",
-    "|-damage|p2a: Torterra|0 fnt",
-    "|faint|p2a: Torterra",
+    "|move|p1a: Wyrdeer|Psychic Noise|p2a: Metagross",
+    "|-resisted|p2a: Metagross",
+    "|-damage|p2a: Metagross|109/256",
+    "|-start|p2a: Metagross|move: Heal Block",
+    "|move|p2a: Metagross|Agility|p2a: Metagross",
+    "|-boost|p2a: Metagross|spe|2",
+    "|-heal|p1a: Wyrdeer|257/321|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p2a: Pecharunt|Pecharunt, L77|262/262",
-    "|-damage|p2a: Pecharunt|230/262|[from] Stealth Rock",
     "|turn|3",
-    "|move|p1a: Piloswine|Ice Shard|p2a: Pecharunt",
-    "|-damage|p2a: Pecharunt|197/262",
-    "|move|p2a: Pecharunt|Malignant Chain|p1a: Piloswine",
-    "|-resisted|p1a: Piloswine",
-    "|-damage|p1a: Piloswine|224/309",
-    "|-status|p1a: Piloswine|tox",
-    "|-start|p1a: Piloswine|confusion|[from] ability: Poison Puppeteer|[of] p2a: Pecharunt",
-    "|-heal|p2a: Pecharunt|213/262|[from] item: Leftovers",
-    "|-damage|p1a: Piloswine|205/309 tox|[from] psn",
+    "|move|p2a: Metagross|Knock Off|p1a: Wyrdeer",
+    "|-supereffective|p1a: Wyrdeer",
+    "|-damage|p1a: Wyrdeer|0 fnt",
+    "|-enditem|p1a: Wyrdeer|Leftovers|[from] move: Knock Off|[of] p2a: Metagross",
+    "|faint|p1a: Wyrdeer",
+    "|-end|p2a: Metagross|move: Heal Block",
     "|upkeep",
+    "|switch|p1a: Latios|Latios, L78, M|253/253",
     "|turn|4",
-    "|move|p2a: Pecharunt|Shadow Ball|p1a: Piloswine",
-    "|-damage|p1a: Piloswine|151/309 tox",
-    "|-activate|p1a: Piloswine|confusion",
-    "|move|p1a: Piloswine|Icicle Crash|p2a: Pecharunt",
-    "|-damage|p2a: Pecharunt|144/262",
-    "|-heal|p2a: Pecharunt|160/262|[from] item: Leftovers",
-    "|-damage|p1a: Piloswine|113/309 tox|[from] psn",
+    "|move|p2a: Metagross|Heavy Slam|p1a: Latios",
+    "|-damage|p1a: Latios|0 fnt",
+    "|faint|p1a: Latios",
     "|upkeep",
+    "|switch|p1a: Electrode|Electrode, L92|260/260",
     "|turn|5",
-    "|-activate|p1a: Piloswine|confusion",
-    "|move|p1a: Piloswine|Ice Shard|p2a: Pecharunt",
-    "|-damage|p2a: Pecharunt|132/262",
-    "|move|p2a: Pecharunt|Shadow Ball|p1a: Piloswine",
-    "|-damage|p1a: Piloswine|61/309 tox",
-    "|-heal|p2a: Pecharunt|148/262|[from] item: Leftovers",
-    "|-damage|p1a: Piloswine|4/309 tox|[from] psn",
+    "|move|p1a: Electrode|Thunderbolt|p2a: Metagross",
+    "|-damage|p2a: Metagross|0 fnt",
+    "|faint|p2a: Metagross",
+    "|-damage|p1a: Electrode|234/260|[from] item: Life Orb",
     "|upkeep",
+    "|switch|p2a: Ursaluna|Ursaluna, L79, M|335/335",
     "|turn|6",
-    "|move|p2a: Pecharunt|Shadow Ball|p1a: Piloswine",
-    "|-damage|p1a: Piloswine|0 fnt",
-    "|faint|p1a: Piloswine",
-    "|-heal|p2a: Pecharunt|164/262|[from] item: Leftovers",
+    "|move|p1a: Electrode|Volt Switch|p2a: Ursaluna",
+    "|-immune|p2a: Ursaluna",
+    "|move|p2a: Ursaluna|Headlong Rush|p1a: Electrode",
+    "|-supereffective|p1a: Electrode",
+    "|-damage|p1a: Electrode|0 fnt",
+    "|-unboost|p2a: Ursaluna|def|1",
+    "|-unboost|p2a: Ursaluna|spd|1",
+    "|-status|p2a: Ursaluna|par|[from] ability: Static|[of] p1a: Electrode",
+    "|faint|p1a: Electrode",
     "|upkeep",
-    "|switch|p1a: Volcanion|Volcanion, L79|255/255",
+    "|switch|p1a: Articuno|Articuno, L86|295/295",
+    "|-ability|p1a: Articuno|Pressure",
     "|turn|7",
-    "|move|p2a: Pecharunt|Shadow Ball|p1a: Volcanion",
-    "|-damage|p1a: Volcanion|209/255",
-    "|move|p1a: Volcanion|Flame Charge|p2a: Pecharunt",
-    "|-damage|p2a: Pecharunt|128/262",
-    "|-boost|p1a: Volcanion|spe|1",
-    "|-heal|p2a: Pecharunt|144/262|[from] item: Leftovers",
+    "|move|p1a: Articuno|Brave Bird|p2a: Ursaluna",
+    "|-damage|p2a: Ursaluna|163/335 par",
+    "|-damage|p1a: Articuno|238/295|[from] Recoil",
+    "|move|p2a: Ursaluna|Headlong Rush|p1a: Articuno",
+    "|-immune|p1a: Articuno",
     "|upkeep",
     "|turn|8",
-    "|move|p1a: Volcanion|Steam Eruption|p2a: Pecharunt",
-    "|-damage|p2a: Pecharunt|12/262",
-    "|move|p2a: Pecharunt|Nasty Plot|p2a: Pecharunt",
-    "|-boost|p2a: Pecharunt|spa|2",
-    "|-heal|p2a: Pecharunt|28/262|[from] item: Leftovers",
+    "|move|p1a: Articuno|Freeze-Dry|p2a: Ursaluna",
+    "|-supereffective|p2a: Ursaluna",
+    "|-damage|p2a: Ursaluna|0 fnt",
+    "|faint|p2a: Ursaluna",
     "|upkeep",
+    "|switch|p2a: Baxcalibur|Baxcalibur, L75, M|295/295",
     "|turn|9",
-    "|move|p1a: Volcanion|Steam Eruption|p2a: Pecharunt",
-    "|-damage|p2a: Pecharunt|0 fnt",
-    "|faint|p2a: Pecharunt",
+    "|move|p1a: Articuno|Freeze-Dry|p2a: Baxcalibur",
+    "|-damage|p2a: Baxcalibur|214/295",
+    "|move|p2a: Baxcalibur|Glaive Rush|p1a: Articuno",
+    "|-damage|p1a: Articuno|48/295",
+    "|-singlemove|p2a: Baxcalibur|Glaive Rush|[silent]",
     "|upkeep",
-    "|switch|p2a: Regigigas|Regigigas, L84|322/322",
-    "|-damage|p2a: Regigigas|282/322|[from] Stealth Rock",
-    "|-start|p2a: Regigigas|ability: Slow Start",
     "|turn|10",
-    "|move|p1a: Volcanion|Sludge Bomb|p2a: Regigigas",
-    "|-damage|p2a: Regigigas|225/322",
-    "|move|p2a: Regigigas|Body Slam|p1a: Volcanion",
-    "|-damage|p1a: Volcanion|155/255",
-    "|-heal|p2a: Regigigas|245/322|[from] item: Leftovers",
+    "|move|p1a: Articuno|Brave Bird|p2a: Baxcalibur",
+    "|-damage|p2a: Baxcalibur|0 fnt",
+    "|faint|p2a: Baxcalibur",
+    "|-damage|p1a: Articuno|0 fnt|[from] Recoil",
+    "|faint|p1a: Articuno",
     "|upkeep",
+    "|switch|p1a: Sandslash|Sandslash-Alola, L88, M|275/275",
+    "|switch|p2a: Qwilfish|Qwilfish, L86, F|252/252",
+    "|-ability|p2a: Qwilfish|Intimidate|boost",
+    "|-unboost|p1a: Sandslash|atk|1",
     "|turn|11",
-    "|move|p1a: Volcanion|Sludge Bomb|p2a: Regigigas",
-    "|-damage|p2a: Regigigas|189/322",
-    "|move|p2a: Regigigas|Body Slam|p1a: Volcanion",
-    "|-damage|p1a: Volcanion|95/255",
-    "|-heal|p2a: Regigigas|209/322|[from] item: Leftovers",
+    "|move|p2a: Qwilfish|Waterfall|p1a: Sandslash",
+    "|-damage|p1a: Sandslash|211/275",
+    "|move|p1a: Sandslash|Earthquake|p2a: Qwilfish",
+    "|-supereffective|p2a: Qwilfish",
+    "|-damage|p2a: Qwilfish|102/252",
+    "|-heal|p2a: Qwilfish|117/252|[from] item: Leftovers",
     "|upkeep",
     "|turn|12",
-    "|move|p1a: Volcanion|Sludge Bomb|p2a: Regigigas",
-    "|-damage|p2a: Regigigas|152/322",
-    "|move|p2a: Regigigas|Body Slam|p1a: Volcanion",
-    "|-damage|p1a: Volcanion|37/255",
-    "|-heal|p2a: Regigigas|172/322|[from] item: Leftovers",
+    "|move|p2a: Qwilfish|Waterfall|p1a: Sandslash",
+    "|-damage|p1a: Sandslash|139/275",
+    "|move|p1a: Sandslash|Earthquake|p2a: Qwilfish",
+    "|-supereffective|p2a: Qwilfish",
+    "|-damage|p2a: Qwilfish|0 fnt",
+    "|faint|p2a: Qwilfish",
     "|upkeep",
+    "|switch|p2a: Meowscarada|Meowscarada, L78, M|247/247",
     "|turn|13",
-    "|move|p1a: Volcanion|Steam Eruption|p2a: Regigigas",
-    "|-damage|p2a: Regigigas|54/322",
-    "|move|p2a: Regigigas|Knock Off|p1a: Volcanion",
-    "|-damage|p1a: Volcanion|0 fnt",
-    "|-enditem|p1a: Volcanion|Assault Vest|[from] move: Knock Off|[of] p2a: Regigigas",
-    "|faint|p1a: Volcanion",
-    "|-heal|p2a: Regigigas|74/322|[from] item: Leftovers",
+    "|move|p2a: Meowscarada|Flower Trick|p1a: Sandslash",
+    "|-start|p2a: Meowscarada|typechange|Grass|[from] ability: Protean",
+    "|-resisted|p1a: Sandslash",
+    "|-crit|p1a: Sandslash",
+    "|-damage|p1a: Sandslash|96/275",
+    "|move|p1a: Sandslash|Earthquake|p2a: Meowscarada",
+    "|-resisted|p2a: Meowscarada",
+    "|-damage|p2a: Meowscarada|195/247",
     "|upkeep",
-    "|switch|p1a: Kingambit|Kingambit, L74, M|270/270",
-    "|-activate|p1a: Kingambit|ability: Supreme Overlord",
-    "|-start|p1a: Kingambit|fallen2|[silent]",
     "|turn|14",
-    "|move|p1a: Kingambit|Kowtow Cleave|p2a: Regigigas",
-    "|-damage|p2a: Regigigas|0 fnt",
-    "|faint|p2a: Regigigas",
-    "|-end|p2a: Regigigas|Slow Start|[silent]",
+    "|move|p2a: Meowscarada|U-turn|p1a: Sandslash",
+    "|-resisted|p1a: Sandslash",
+    "|-damage|p1a: Sandslash|79/275",
+    "|switch|p2a: Jolteon|Jolteon, L84, F|246/246|[from] U-turn",
+    "|move|p1a: Sandslash|Earthquake|p2a: Jolteon",
+    "|-supereffective|p2a: Jolteon",
+    "|-damage|p2a: Jolteon|44/246",
+    "|-heal|p2a: Jolteon|59/246|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p2a: Toxicroak|Toxicroak, L84, M|277/277",
-    "|-damage|p2a: Toxicroak|260/277|[from] Stealth Rock",
     "|turn|15",
-    "|move|p2a: Toxicroak|Knock Off|p1a: Kingambit",
-    "|-resisted|p1a: Kingambit",
-    "|-damage|p1a: Kingambit|217/270",
-    "|-enditem|p1a: Kingambit|Leftovers|[from] move: Knock Off|[of] p2a: Toxicroak",
-    "|move|p1a: Kingambit|Iron Head|p2a: Toxicroak",
-    "|-damage|p2a: Toxicroak|121/277",
+    "|move|p2a: Jolteon|Thunderbolt|p1a: Sandslash",
+    "|-damage|p1a: Sandslash|0 fnt",
+    "|faint|p1a: Sandslash",
+    "|-heal|p2a: Jolteon|74/246|[from] item: Leftovers",
     "|upkeep",
+    "|switch|p1a: Weezing|Weezing-Galar, L86, M|252/252",
     "|turn|16",
-    "|move|p2a: Toxicroak|Knock Off|p1a: Kingambit",
-    "|-resisted|p1a: Kingambit",
-    "|-damage|p1a: Kingambit|187/270",
-    "|move|p1a: Kingambit|Swords Dance|p1a: Kingambit",
-    "|-boost|p1a: Kingambit|atk|2",
+    "|move|p2a: Jolteon|Substitute|p2a: Jolteon",
+    "|-start|p2a: Jolteon|Substitute",
+    "|-damage|p2a: Jolteon|13/246",
+    "|move|p1a: Weezing|Strange Steam|p2a: Jolteon",
+    "|-end|p2a: Jolteon|Substitute",
+    "|-heal|p2a: Jolteon|28/246|[from] item: Leftovers",
     "|upkeep",
     "|turn|17",
-    "|move|p1a: Kingambit|Sucker Punch|p2a: Toxicroak",
-    "|-resisted|p2a: Toxicroak",
-    "|-damage|p2a: Toxicroak|16/277",
-    "|move|p2a: Toxicroak|Knock Off|p1a: Kingambit",
-    "|-resisted|p1a: Kingambit",
-    "|-damage|p1a: Kingambit|153/270",
+    "|move|p2a: Jolteon|Tera Blast|p1a: Weezing",
+    "|-damage|p1a: Weezing|182/252",
+    "|move|p1a: Weezing|Defog|p2a: Jolteon",
+    "|-unboost|p2a: Jolteon|evasion|1",
+    "|-heal|p2a: Jolteon|43/246|[from] item: Leftovers",
+    "|-heal|p1a: Weezing|197/252|[from] item: Leftovers",
     "|upkeep",
     "|turn|18",
-    "|move|p2a: Toxicroak|Knock Off|p1a: Kingambit",
-    "|-resisted|p1a: Kingambit",
-    "|-damage|p1a: Kingambit|119/270",
-    "|move|p1a: Kingambit|Iron Head|p2a: Toxicroak",
-    "|-damage|p2a: Toxicroak|0 fnt",
-    "|faint|p2a: Toxicroak",
+    "|move|p2a: Jolteon|Tera Blast|p1a: Weezing",
+    "|-damage|p1a: Weezing|128/252",
+    "|move|p1a: Weezing|Defog|p2a: Jolteon",
+    "|-unboost|p2a: Jolteon|evasion|1",
+    "|-heal|p2a: Jolteon|58/246|[from] item: Leftovers",
+    "|-heal|p1a: Weezing|143/252|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p2a: Lanturn|Lanturn, L89, F|367/367",
     "|turn|19",
-    "|move|p1a: Kingambit|Sucker Punch|p2a: Lanturn",
-    "|-damage|p2a: Lanturn|156/367",
-    "|move|p2a: Lanturn|Thunderbolt|p1a: Kingambit",
-    "|-damage|p1a: Kingambit|11/270",
+    "|move|p2a: Jolteon|Substitute|p2a: Jolteon",
+    "|-fail|p2a: Jolteon|move: Substitute|[weak]",
+    "|move|p1a: Weezing|Strange Steam|p2a: Jolteon",
+    "|-damage|p2a: Jolteon|0 fnt",
+    "|faint|p2a: Jolteon",
+    "|-heal|p1a: Weezing|158/252|[from] item: Leftovers",
     "|upkeep",
+    "|switch|p2a: Meowscarada|Meowscarada, L78, M|195/247",
     "|turn|20",
-    "|move|p2a: Lanturn|Scald|p1a: Kingambit",
-    "|-damage|p1a: Kingambit|0 fnt",
-    "|faint|p1a: Kingambit",
-    "|-end|p1a: Kingambit|fallen2|[silent]",
+    "|move|p2a: Meowscarada|Toxic Spikes|p1a: Weezing",
+    "|-start|p2a: Meowscarada|typechange|Poison|[from] ability: Protean",
+    "|-sidestart|p1: Player 1|move: Toxic Spikes",
+    "|move|p1a: Weezing|Strange Steam|p2a: Meowscarada",
+    "|-resisted|p2a: Meowscarada",
+    "|-damage|p2a: Meowscarada|133/247",
+    "|-heal|p1a: Weezing|173/252|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p1a: Iron Boulder|Iron Boulder, L77|265/265",
-    "|-enditem|p1a: Iron Boulder|Booster Energy",
-    "|-activate|p1a: Iron Boulder|ability: Quark Drive|[fromitem]",
-    "|-start|p1a: Iron Boulder|quarkdrivespe",
     "|turn|21",
-    "|move|p1a: Iron Boulder|Zen Headbutt|p2a: Lanturn",
-    "|-damage|p2a: Lanturn|41/367",
-    "|move|p2a: Lanturn|Volt Switch|p1a: Iron Boulder",
-    "|-damage|p1a: Iron Boulder|202/265",
-    "|switch|p2a: Ambipom|Ambipom, L84, M|263/263|[from] Volt Switch",
-    "|-damage|p2a: Ambipom|231/263|[from] Stealth Rock",
+    "|move|p2a: Meowscarada|U-turn|p1a: Weezing",
+    "|-resisted|p1a: Weezing",
+    "|-damage|p1a: Weezing|163/252",
+    "|move|p1a: Weezing|Pain Split|p2a: Meowscarada",
+    "|-heal|p1a: Weezing|163/252|[from] item: Leftovers",
     "|upkeep",
     "|turn|22",
-    "|move|p1a: Iron Boulder|Zen Headbutt|p2a: Ambipom",
-    "|-damage|p2a: Ambipom|131/263",
-    "|cant|p2a: Ambipom|flinch",
+    "|move|p2a: Meowscarada|Toxic Spikes|p1a: Weezing",
+    "|-sidestart|p1: Player 1|move: Toxic Spikes",
+    "|move|p1a: Weezing|Strange Steam|p2a: Meowscarada",
+    "|-resisted|p2a: Meowscarada",
+    "|-damage|p2a: Meowscarada|88/247",
+    "|-start|p2a: Meowscarada|confusion",
+    "|-heal|p1a: Weezing|178/252|[from] item: Leftovers",
     "|upkeep",
     "|turn|23",
-    "|move|p1a: Iron Boulder|Close Combat|p2a: Ambipom",
-    "|-supereffective|p2a: Ambipom",
-    "|-damage|p2a: Ambipom|0 fnt",
-    "|-unboost|p1a: Iron Boulder|def|1",
-    "|-unboost|p1a: Iron Boulder|spd|1",
-    "|faint|p2a: Ambipom",
+    "|-activate|p2a: Meowscarada|confusion",
+    "|-damage|p2a: Meowscarada|52/247|[from] confusion",
+    "|move|p1a: Weezing|Pain Split|p2a: Meowscarada",
+    "|-heal|p1a: Weezing|130/252|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p2a: Lanturn|Lanturn, L89, F|41/367",
     "|turn|24",
-    "|move|p1a: Iron Boulder|Mighty Cleave|p2a: Lanturn",
-    "|-damage|p2a: Lanturn|0 fnt",
-    "|faint|p2a: Lanturn",
+    "|-end|p2a: Meowscarada|confusion",
+    "|move|p2a: Meowscarada|Flower Trick|p1a: Weezing",
+    "|-resisted|p1a: Weezing",
+    "|-crit|p1a: Weezing",
+    "|-damage|p1a: Weezing|100/252",
+    "|move|p1a: Weezing|Pain Split|p2a: Meowscarada",
+    "|-heal|p1a: Weezing|122/252|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|25",
+    "|move|p2a: Meowscarada|Flower Trick|p1a: Weezing",
+    "|-resisted|p1a: Weezing",
+    "|-crit|p1a: Weezing",
+    "|-damage|p1a: Weezing|93/252",
+    "|move|p1a: Weezing|Gunk Shot|p2a: Meowscarada",
+    "|-resisted|p2a: Meowscarada",
+    "|-damage|p2a: Meowscarada|32/247",
+    "|-heal|p1a: Weezing|108/252|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|26",
+    "|move|p2a: Meowscarada|Toxic Spikes||[still]",
+    "|-fail|p2a: Meowscarada",
+    "|move|p1a: Weezing|Gunk Shot|p2a: Meowscarada",
+    "|-resisted|p2a: Meowscarada",
+    "|-damage|p2a: Meowscarada|0 fnt",
+    "|faint|p2a: Meowscarada",
     "|win|Player 1"
   ]
 }

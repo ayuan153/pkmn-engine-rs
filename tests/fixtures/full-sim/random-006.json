@@ -11,14 +11,104 @@
   "p1": {
     "team": [
       {
-        "species": "Arceus-Fairy",
-        "ability": "Multitype",
-        "item": "Pixie Plate",
+        "species": "Hippowdon",
+        "ability": "Sand Stream",
+        "item": "Leftovers",
         "moves": [
-          "Judgment",
-          "Calm Mind",
-          "Earth Power",
-          "Recover"
+          "Whirlwind",
+          "Earthquake",
+          "Stealth Rock",
+          "Slack Off"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 82,
+        "gender": "F"
+      },
+      {
+        "species": "Tinkaton",
+        "ability": "Mold Breaker",
+        "item": "Leftovers",
+        "moves": [
+          "Play Rough",
+          "Thunder Wave",
+          "Encore",
+          "Gigaton Hammer"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 82,
+        "gender": "F"
+      },
+      {
+        "species": "Giratina-Origin",
+        "ability": "Levitate",
+        "item": "Griseous Core",
+        "moves": [
+          "Draco Meteor",
+          "Poltergeist",
+          "Defog",
+          "Dragon Tail"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 72,
+        "gender": "N"
+      },
+      {
+        "species": "Pyroar",
+        "ability": "Unnerve",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Work Up",
+          "Hyper Voice",
+          "Fire Blast",
+          "Dark Pulse"
         ],
         "nature": "Hardy",
         "evs": {
@@ -37,18 +127,172 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 69,
+        "level": 88,
+        "gender": "F"
+      },
+      {
+        "species": "Regigigas",
+        "ability": "Slow Start",
+        "item": "Leftovers",
+        "moves": [
+          "Body Slam",
+          "Knock Off",
+          "Protect",
+          "Substitute"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
         "gender": "N"
       },
       {
-        "species": "Granbull",
-        "ability": "Intimidate",
+        "species": "Vespiquen",
+        "ability": "Pressure",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Spikes",
+          "Toxic",
+          "Air Slash",
+          "Roost"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 99,
+        "gender": "F"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Farigiraf",
+        "ability": "Sap Sipper",
+        "item": "Leftovers",
+        "moves": [
+          "Wish",
+          "Psychic Noise",
+          "Body Slam",
+          "Protect"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 90,
+        "gender": "F"
+      },
+      {
+        "species": "Gogoat",
+        "ability": "Sap Sipper",
         "item": "Leftovers",
         "moves": [
           "Earthquake",
-          "Roar",
-          "Play Rough",
-          "Thunder Wave"
+          "Horn Leech",
+          "Milk Drink",
+          "Bulk Up"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "M"
+      },
+      {
+        "species": "Masquerain",
+        "ability": "Intimidate",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Stun Spore",
+          "Hurricane",
+          "Bug Buzz",
+          "Sticky Web"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 87,
+        "gender": "F"
+      },
+      {
+        "species": "Komala",
+        "ability": "Comatose",
+        "item": "Assault Vest",
+        "moves": [
+          "Rapid Spin",
+          "Knock Off",
+          "Body Slam",
+          "Earthquake"
         ],
         "nature": "Hardy",
         "evs": {
@@ -71,228 +315,14 @@
         "gender": "F"
       },
       {
-        "species": "Conkeldurr",
-        "ability": "Guts",
-        "item": "Flame Orb",
-        "moves": [
-          "Knock Off",
-          "Facade",
-          "Close Combat",
-          "Mach Punch"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 80,
-        "gender": "M"
-      },
-      {
-        "species": "Spectrier",
-        "ability": "Grim Neigh",
-        "item": "Life Orb",
-        "moves": [
-          "Draining Kiss",
-          "Dark Pulse",
-          "Shadow Ball",
-          "Nasty Plot"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 75,
-        "gender": "N"
-      },
-      {
-        "species": "Illumise",
-        "ability": "Prankster",
-        "item": "Heavy-Duty Boots",
-        "moves": [
-          "Thunder Wave",
-          "Roost",
-          "Encore",
-          "Bug Buzz"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 91,
-        "gender": "F"
-      },
-      {
-        "species": "Drednaw",
-        "ability": "Strong Jaw",
-        "item": "White Herb",
-        "moves": [
-          "Liquidation",
-          "Shell Smash",
-          "Crunch",
-          "Stone Edge"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 81,
-        "gender": "M"
-      }
-    ]
-  },
-  "p2": {
-    "team": [
-      {
-        "species": "Azumarill",
-        "ability": "Huge Power",
+        "species": "Arbok",
+        "ability": "Intimidate",
         "item": "Choice Band",
         "moves": [
-          "Play Rough",
-          "Ice Spinner",
-          "Liquidation",
-          "Aqua Jet"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 82,
-        "gender": "M"
-      },
-      {
-        "species": "Carbink",
-        "ability": "Sturdy",
-        "item": "Leftovers",
-        "moves": [
-          "Moonblast",
-          "Rock Polish",
-          "Iron Defense",
-          "Body Press"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 90,
-        "gender": "N"
-      },
-      {
-        "species": "Kingambit",
-        "ability": "Supreme Overlord",
-        "item": "Leftovers",
-        "moves": [
-          "Kowtow Cleave",
-          "Iron Head",
           "Sucker Punch",
-          "Swords Dance"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 74,
-        "gender": "M"
-      },
-      {
-        "species": "Hypno",
-        "ability": "Insomnia",
-        "item": "Leftovers",
-        "moves": [
-          "Encore",
-          "Thunder Wave",
           "Knock Off",
-          "Psychic Noise"
+          "Earthquake",
+          "Gunk Shot"
         ],
         "nature": "Hardy",
         "evs": {
@@ -311,48 +341,18 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 95,
+        "level": 87,
         "gender": "M"
       },
       {
-        "species": "Lanturn",
-        "ability": "Volt Absorb",
-        "item": "Leftovers",
+        "species": "Flapple",
+        "ability": "Hustle",
+        "item": "Wide Lens",
         "moves": [
-          "Thunder Wave",
-          "Thunderbolt",
-          "Scald",
-          "Ice Beam"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 89,
-        "gender": "M"
-      },
-      {
-        "species": "Gogoat",
-        "ability": "Sap Sipper",
-        "item": "Leftovers",
-        "moves": [
-          "Horn Leech",
-          "Earthquake",
-          "Milk Drink",
-          "Bulk Up"
+          "Outrage",
+          "Dragon Dance",
+          "Tera Blast",
+          "Grav Apple"
         ],
         "nature": "Hardy",
         "evs": {
@@ -378,63 +378,135 @@
   },
   "choices": [
     [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
       "move 4",
-      "move 3"
+      "move earthquake"
     ],
     [
       "move 4",
-      "move 3"
-    ],
-    [
-      "move 2",
-      "move 3"
-    ],
-    [
-      "move 2",
-      "move 3"
-    ],
-    [
-      "move 1",
-      "move 3"
-    ],
-    [
-      "move 1",
-      "move 3"
-    ],
-    [
-      "move 1",
-      "move 3"
-    ],
-    [
-      "move 2",
-      "move 3"
+      "move bulkup"
     ],
     [
       "move 3",
-      "move 3"
+      "move milkdrink"
+    ],
+    [
+      "move 4",
+      "move bulkup"
+    ],
+    [
+      "move 3",
+      "move hornleech"
+    ],
+    [
+      "move 3",
+      "move earthquake"
+    ],
+    [
+      "move 4",
+      "move hornleech"
+    ],
+    [
+      "move 2",
+      "move earthquake"
+    ],
+    [
+      "move 3",
+      "move earthquake"
+    ],
+    [
+      "move 2",
+      "move hornleech"
+    ],
+    [
+      "move 2",
+      "move hornleech"
+    ],
+    [
+      "move 1",
+      "move hornleech"
+    ],
+    [
+      "move 1",
+      "move hornleech"
+    ],
+    [
+      "move 4",
+      "move hornleech"
+    ],
+    [
+      "move 3",
+      "move hornleech"
+    ],
+    [
+      "move 1",
+      "move bulkup"
+    ],
+    [
+      "move 2",
+      "move earthquake"
+    ],
+    [
+      "move 2",
+      "move bulkup"
+    ],
+    [
+      "move 3",
+      "move earthquake"
+    ],
+    [
+      "move 4",
+      "move bulkup"
+    ],
+    [
+      "move 4",
+      "move earthquake"
+    ],
+    [
+      "move 3",
+      "move earthquake"
     ],
     [
       "move 4",
       "switch 5"
     ],
     [
-      "move 1",
-      "move 1"
+      "move 3",
+      "move 4"
     ],
     [
-      "move 2",
-      "move 1"
+      "move 3",
+      "move 4"
     ],
     [
       "move 3",
       "switch 3"
     ],
     [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "switch 3",
+      "move 2"
+    ],
+    [
       "move 4",
+      "move 4"
+    ],
+    [
+      "move 1",
       "switch 4"
     ],
     [
-      "switch 4",
+      "move 3",
       "move 3"
     ],
     [
@@ -442,229 +514,641 @@
       "move 4"
     ],
     [
-      "move 3",
-      "move 1"
+      "move 1",
+      "move 3"
     ],
     [
       "move 1",
-      "switch 2"
+      "move wish"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move wish"
+    ],
+    [
+      "move 2",
+      "move psychicnoise"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 3"
     ],
     [
       "move 2",
       "move 4"
     ],
     [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
       "move 1",
-      "move 4"
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 3"
     ],
     [
       "move 4",
       "move 1"
     ],
     [
-      "move 2",
-      "move 4"
+      "move 3",
+      "switch 2"
+    ],
+    [
+      "move 4",
+      "move protect"
     ],
     [
       "move 3",
+      "move bodyslam"
+    ],
+    [
+      "move 4",
+      "move dragondance"
+    ],
+    [
+      "move 1",
+      "move dragondance"
+    ],
+    [
+      "move 2",
+      "move bodyslam"
+    ],
+    [
+      "move 4",
+      "move bodyslam"
+    ],
+    [
+      "move 1",
+      "move bodyslam"
+    ],
+    [
+      "move 4",
+      "move terablast"
+    ],
+    [
+      "move 4",
       "switch 6"
+    ],
+    [
+      "switch 4",
+      "move psychicnoise"
+    ],
+    [
+      "move 2",
+      "move bodyslam"
+    ],
+    [
+      "move 1",
+      "move psychicnoise"
+    ],
+    [
+      "move 3",
+      "move protect"
+    ],
+    [
+      "move 1",
+      "move wish"
+    ],
+    [
+      "move 2",
+      "move psychicnoise"
     ]
   ],
   "protocol": [
-    "|switch|p1a: Arceus|Arceus-Fairy, L69|280/280",
-    "|switch|p2a: Azumarill|Azumarill, L82, M|298/298",
+    "|switch|p1a: Hippowdon|Hippowdon, L82, F|311/311",
+    "|switch|p2a: Farigiraf|Farigiraf, L90, F|362/362",
+    "|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Hippowdon",
     "|turn|1",
-    "|move|p1a: Arceus|Recover||[still]",
-    "|-fail|p1a: Arceus|heal",
-    "|move|p2a: Azumarill|Liquidation|p1a: Arceus",
-    "|-damage|p1a: Arceus|132/280",
-    "|-unboost|p1a: Arceus|def|1",
+    "|move|p2a: Farigiraf|Psychic Noise|p1a: Hippowdon",
+    "|-damage|p1a: Hippowdon|193/311",
+    "|-start|p1a: Hippowdon|move: Heal Block",
+    "|move|p1a: Hippowdon|Earthquake|p2a: Farigiraf",
+    "|-damage|p2a: Farigiraf|230/362",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-damage|p2a: Farigiraf|208/362|[from] Sandstorm",
+    "|-heal|p2a: Farigiraf|230/362|[from] item: Leftovers",
     "|upkeep",
     "|turn|2",
-    "|move|p1a: Arceus|Recover|p1a: Arceus",
-    "|-heal|p1a: Arceus|272/280",
-    "|move|p2a: Azumarill|Liquidation|p1a: Arceus",
-    "|-damage|p1a: Arceus|31/280",
+    "|move|p2a: Farigiraf|Body Slam|p1a: Hippowdon",
+    "|-damage|p1a: Hippowdon|111/311",
+    "|move|p1a: Hippowdon|Whirlwind|p2a: Farigiraf",
+    "|drag|p2a: Gogoat|Gogoat, L88, M|360/360",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-damage|p2a: Gogoat|338/360|[from] Sandstorm",
+    "|-heal|p2a: Gogoat|360/360|[from] item: Leftovers",
+    "|-end|p1a: Hippowdon|move: Heal Block",
     "|upkeep",
     "|turn|3",
-    "|move|p1a: Arceus|Calm Mind|p1a: Arceus",
-    "|-boost|p1a: Arceus|spa|1",
-    "|-boost|p1a: Arceus|spd|1",
-    "|move|p2a: Azumarill|Liquidation|p1a: Arceus",
-    "|-damage|p1a: Arceus|0 fnt",
-    "|faint|p1a: Arceus",
+    "|move|p2a: Gogoat|Earthquake|p1a: Hippowdon",
+    "|-damage|p1a: Hippowdon|41/311",
+    "|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon",
+    "|-heal|p1a: Hippowdon|197/311",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-damage|p2a: Gogoat|338/360|[from] Sandstorm",
+    "|-heal|p2a: Gogoat|360/360|[from] item: Leftovers",
+    "|-heal|p1a: Hippowdon|216/311|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p1a: Drednaw|Drednaw, L81, M|278/278",
     "|turn|4",
-    "|move|p1a: Drednaw|Shell Smash|p1a: Drednaw",
-    "|-unboost|p1a: Drednaw|def|1",
-    "|-unboost|p1a: Drednaw|spd|1",
-    "|-boost|p1a: Drednaw|atk|2",
-    "|-boost|p1a: Drednaw|spa|2",
-    "|-boost|p1a: Drednaw|spe|2",
-    "|-enditem|p1a: Drednaw|White Herb",
-    "|move|p2a: Azumarill|Liquidation|p1a: Drednaw",
-    "|-damage|p1a: Drednaw|104/278",
+    "|move|p2a: Gogoat|Bulk Up|p2a: Gogoat",
+    "|-boost|p2a: Gogoat|atk|1",
+    "|-boost|p2a: Gogoat|def|1",
+    "|move|p1a: Hippowdon|Slack Off|p1a: Hippowdon",
+    "|-heal|p1a: Hippowdon|311/311",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-damage|p2a: Gogoat|338/360|[from] Sandstorm",
+    "|-heal|p2a: Gogoat|360/360|[from] item: Leftovers",
     "|upkeep",
     "|turn|5",
-    "|move|p1a: Drednaw|Liquidation|p2a: Azumarill",
-    "|-resisted|p2a: Azumarill",
-    "|-damage|p2a: Azumarill|193/298",
-    "|-unboost|p2a: Azumarill|def|1",
-    "|move|p2a: Azumarill|Liquidation|p1a: Drednaw",
-    "|-damage|p1a: Drednaw|0 fnt",
-    "|faint|p1a: Drednaw",
+    "|move|p2a: Gogoat|Milk Drink||[still]",
+    "|-fail|p2a: Gogoat|heal",
+    "|move|p1a: Hippowdon|Stealth Rock|p2a: Gogoat",
+    "|-sidestart|p2: Player 2|move: Stealth Rock",
+    "|-weather|none",
     "|upkeep",
-    "|switch|p1a: Illumise|Illumise, L91, F|266/266",
     "|turn|6",
-    "|move|p1a: Illumise|Thunder Wave|p2a: Azumarill",
-    "|-status|p2a: Azumarill|par",
-    "|move|p2a: Azumarill|Liquidation|p1a: Illumise",
-    "|-damage|p1a: Illumise|89/266",
+    "|move|p2a: Gogoat|Bulk Up|p2a: Gogoat",
+    "|-boost|p2a: Gogoat|atk|1",
+    "|-boost|p2a: Gogoat|def|1",
+    "|move|p1a: Hippowdon|Slack Off||[still]",
+    "|-fail|p1a: Hippowdon|heal",
     "|upkeep",
     "|turn|7",
-    "|move|p1a: Illumise|Thunder Wave|p2a: Azumarill",
-    "|-fail|p2a: Azumarill|par",
-    "|move|p2a: Azumarill|Liquidation|p1a: Illumise",
-    "|-damage|p1a: Illumise|0 fnt",
-    "|faint|p1a: Illumise",
+    "|move|p2a: Gogoat|Horn Leech|p1a: Hippowdon",
+    "|-supereffective|p1a: Hippowdon",
+    "|-damage|p1a: Hippowdon|41/311",
+    "|move|p1a: Hippowdon|Stealth Rock||[still]",
+    "|-fail|p1a: Hippowdon",
+    "|-heal|p1a: Hippowdon|60/311|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p1a: Conkeldurr|Conkeldurr, L80, M|299/299",
     "|turn|8",
-    "|move|p1a: Conkeldurr|Facade|p2a: Azumarill",
-    "|-damage|p2a: Azumarill|100/298 par",
-    "|move|p2a: Azumarill|Liquidation|p1a: Conkeldurr",
-    "|-damage|p1a: Conkeldurr|139/299",
-    "|-status|p1a: Conkeldurr|brn|[from] item: Flame Orb",
+    "|move|p2a: Gogoat|Earthquake|p1a: Hippowdon",
+    "|-damage|p1a: Hippowdon|0 fnt",
+    "|faint|p1a: Hippowdon",
     "|upkeep",
+    "|switch|p1a: Tinkaton|Tinkaton, L82, F|274/274",
+    "|-ability|p1a: Tinkaton|Mold Breaker",
     "|turn|9",
-    "|move|p1a: Conkeldurr|Close Combat|p2a: Azumarill",
-    "|-resisted|p2a: Azumarill",
-    "|-damage|p2a: Azumarill|0 fnt",
-    "|-unboost|p1a: Conkeldurr|def|1",
-    "|-unboost|p1a: Conkeldurr|spd|1",
-    "|faint|p2a: Azumarill",
-    "|-damage|p1a: Conkeldurr|121/299 brn|[from] brn",
+    "|move|p1a: Tinkaton|Gigaton Hammer|p2a: Gogoat",
+    "|-damage|p2a: Gogoat|284/360",
+    "|move|p2a: Gogoat|Horn Leech|p1a: Tinkaton",
+    "|-resisted|p1a: Tinkaton",
+    "|-damage|p1a: Tinkaton|178/274",
+    "|-heal|p2a: Gogoat|332/360|[from] drain|[of] p1a: Tinkaton",
+    "|-heal|p1a: Tinkaton|195/274|[from] item: Leftovers",
+    "|-heal|p2a: Gogoat|354/360|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p2a: Lanturn|Lanturn, L89, M|367/367",
     "|turn|10",
-    "|move|p1a: Conkeldurr|Mach Punch|p2a: Lanturn",
-    "|-damage|p2a: Lanturn|259/367",
-    "|move|p2a: Lanturn|Thunder Wave||[still]",
-    "|-fail|p2a: Lanturn",
-    "|-heal|p2a: Lanturn|281/367|[from] item: Leftovers",
-    "|-damage|p1a: Conkeldurr|103/299 brn|[from] brn",
+    "|move|p1a: Tinkaton|Thunder Wave|p2a: Gogoat",
+    "|-status|p2a: Gogoat|par",
+    "|cant|p2a: Gogoat|par",
+    "|-heal|p1a: Tinkaton|212/274|[from] item: Leftovers",
+    "|-heal|p2a: Gogoat|360/360 par|[from] item: Leftovers",
     "|upkeep",
     "|turn|11",
-    "|move|p2a: Lanturn|Thunder Wave||[still]",
-    "|-fail|p2a: Lanturn",
-    "|move|p1a: Conkeldurr|Knock Off|p2a: Lanturn",
-    "|-damage|p2a: Lanturn|117/367",
-    "|-enditem|p2a: Lanturn|Leftovers|[from] move: Knock Off|[of] p1a: Conkeldurr",
-    "|-damage|p1a: Conkeldurr|85/299 brn|[from] brn",
+    "|move|p1a: Tinkaton|Encore|p2a: Gogoat",
+    "|-start|p2a: Gogoat|Encore",
+    "|move|p2a: Gogoat|Horn Leech|p1a: Tinkaton",
+    "|-resisted|p1a: Tinkaton",
+    "|-damage|p1a: Tinkaton|117/274",
+    "|-heal|p1a: Tinkaton|134/274|[from] item: Leftovers",
     "|upkeep",
     "|turn|12",
-    "|move|p2a: Lanturn|Thunder Wave||[still]",
-    "|-fail|p2a: Lanturn",
-    "|move|p1a: Conkeldurr|Facade|p2a: Lanturn",
-    "|-damage|p2a: Lanturn|0 fnt",
-    "|faint|p2a: Lanturn",
-    "|-damage|p1a: Conkeldurr|67/299 brn|[from] brn",
+    "|move|p1a: Tinkaton|Thunder Wave|p2a: Gogoat",
+    "|-fail|p2a: Gogoat|par",
+    "|move|p2a: Gogoat|Horn Leech|p1a: Tinkaton",
+    "|-resisted|p1a: Tinkaton",
+    "|-damage|p1a: Tinkaton|41/274",
+    "|-heal|p1a: Tinkaton|58/274|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p2a: Kingambit|Kingambit, L74, M|270/270",
-    "|-activate|p2a: Kingambit|ability: Supreme Overlord",
-    "|-start|p2a: Kingambit|fallen2|[silent]",
     "|turn|13",
-    "|move|p1a: Conkeldurr|Close Combat|p2a: Kingambit",
-    "|-supereffective|p2a: Kingambit",
-    "|-damage|p2a: Kingambit|0 fnt",
-    "|-unboost|p1a: Conkeldurr|def|1",
-    "|-unboost|p1a: Conkeldurr|spd|1",
-    "|faint|p2a: Kingambit",
-    "|-end|p2a: Kingambit|fallen2|[silent]",
-    "|-damage|p1a: Conkeldurr|49/299 brn|[from] brn",
+    "|move|p1a: Tinkaton|Thunder Wave|p2a: Gogoat",
+    "|-fail|p2a: Gogoat|par",
+    "|move|p2a: Gogoat|Horn Leech|p1a: Tinkaton",
+    "|-resisted|p1a: Tinkaton",
+    "|-damage|p1a: Tinkaton|0 fnt",
+    "|faint|p1a: Tinkaton",
+    "|-end|p2a: Gogoat|Encore",
     "|upkeep",
-    "|switch|p2a: Hypno|Hypno, L95, M|315/315",
+    "|switch|p1a: Vespiquen|Vespiquen, L99, F|299/299",
+    "|-ability|p1a: Vespiquen|Pressure",
     "|turn|14",
-    "|move|p1a: Conkeldurr|Mach Punch|p2a: Hypno",
-    "|-resisted|p2a: Hypno",
-    "|-damage|p2a: Hypno|270/315",
-    "|move|p2a: Hypno|Knock Off|p1a: Conkeldurr",
-    "|-resisted|p1a: Conkeldurr",
-    "|-damage|p1a: Conkeldurr|0 fnt",
-    "|-enditem|p1a: Conkeldurr|Flame Orb|[from] move: Knock Off|[of] p2a: Hypno",
-    "|faint|p1a: Conkeldurr",
-    "|-heal|p2a: Hypno|289/315|[from] item: Leftovers",
+    "|move|p1a: Vespiquen|Spikes|p2a: Gogoat",
+    "|-sidestart|p2: Player 2|Spikes",
+    "|move|p2a: Gogoat|Horn Leech|p1a: Vespiquen",
+    "|-resisted|p1a: Vespiquen",
+    "|-crit|p1a: Vespiquen",
+    "|-damage|p1a: Vespiquen|246/299",
     "|upkeep",
-    "|switch|p1a: Spectrier|Spectrier, L75|274/274",
     "|turn|15",
-    "|move|p1a: Spectrier|Nasty Plot|p1a: Spectrier",
-    "|-boost|p1a: Spectrier|spa|2",
-    "|move|p2a: Hypno|Psychic Noise|p1a: Spectrier",
-    "|-damage|p1a: Spectrier|169/274",
-    "|-start|p1a: Spectrier|move: Heal Block",
-    "|-heal|p2a: Hypno|308/315|[from] item: Leftovers",
+    "|move|p1a: Vespiquen|Spikes|p2a: Gogoat",
+    "|-sidestart|p2: Player 2|Spikes",
+    "|cant|p2a: Gogoat|par",
     "|upkeep",
     "|turn|16",
-    "|move|p1a: Spectrier|Shadow Ball|p2a: Hypno",
-    "|-supereffective|p2a: Hypno",
-    "|-damage|p2a: Hypno|0 fnt",
-    "|faint|p2a: Hypno",
-    "|-ability|p1a: Spectrier|Grim Neigh|boost",
-    "|-boost|p1a: Spectrier|spa|1",
-    "|-damage|p1a: Spectrier|142/274|[from] item: Life Orb",
-    "|-end|p1a: Spectrier|move: Heal Block",
+    "|move|p1a: Vespiquen|Roost|p1a: Vespiquen",
+    "|-heal|p1a: Vespiquen|299/299",
+    "|-singleturn|p1a: Vespiquen|move: Roost",
+    "|move|p2a: Gogoat|Horn Leech|p1a: Vespiquen",
+    "|-resisted|p1a: Vespiquen",
+    "|-damage|p1a: Vespiquen|228/299",
     "|upkeep",
-    "|switch|p2a: Carbink|Carbink, L90|236/236",
     "|turn|17",
-    "|move|p1a: Spectrier|Draining Kiss|p2a: Carbink",
-    "|-damage|p2a: Carbink|155/236",
-    "|-heal|p1a: Spectrier|203/274|[from] drain|[of] p2a: Carbink",
-    "|-damage|p1a: Spectrier|176/274|[from] item: Life Orb",
-    "|move|p2a: Carbink|Body Press|p1a: Spectrier",
-    "|-immune|p1a: Spectrier",
-    "|-heal|p2a: Carbink|169/236|[from] item: Leftovers",
+    "|move|p1a: Vespiquen|Air Slash|p2a: Gogoat",
+    "|-supereffective|p2a: Gogoat",
+    "|-damage|p2a: Gogoat|166/360 par",
+    "|cant|p2a: Gogoat|flinch",
+    "|-heal|p2a: Gogoat|188/360 par|[from] item: Leftovers",
     "|upkeep",
     "|turn|18",
-    "|move|p1a: Spectrier|Dark Pulse|p2a: Carbink",
-    "|-resisted|p2a: Carbink",
-    "|-damage|p2a: Carbink|111/236",
-    "|-damage|p1a: Spectrier|149/274|[from] item: Life Orb",
-    "|move|p2a: Carbink|Body Press|p1a: Spectrier",
-    "|-immune|p1a: Spectrier",
-    "|-heal|p2a: Carbink|125/236|[from] item: Leftovers",
+    "|move|p1a: Vespiquen|Spikes|p2a: Gogoat",
+    "|-sidestart|p2: Player 2|Spikes",
+    "|move|p2a: Gogoat|Bulk Up|p2a: Gogoat",
+    "|-boost|p2a: Gogoat|atk|1",
+    "|-boost|p2a: Gogoat|def|1",
+    "|-heal|p2a: Gogoat|210/360 par|[from] item: Leftovers",
     "|upkeep",
     "|turn|19",
-    "|move|p1a: Spectrier|Draining Kiss|p2a: Carbink",
-    "|-damage|p2a: Carbink|47/236",
-    "|-heal|p1a: Spectrier|208/274|[from] drain|[of] p2a: Carbink",
-    "|-damage|p1a: Spectrier|181/274|[from] item: Life Orb",
-    "|move|p2a: Carbink|Moonblast|p1a: Spectrier",
-    "|-damage|p1a: Spectrier|97/274",
-    "|-heal|p2a: Carbink|61/236|[from] item: Leftovers",
+    "|move|p1a: Vespiquen|Toxic||[still]",
+    "|-fail|p1a: Vespiquen",
+    "|move|p2a: Gogoat|Earthquake|p1a: Vespiquen",
+    "|-immune|p1a: Vespiquen",
+    "|-heal|p2a: Gogoat|232/360 par|[from] item: Leftovers",
     "|upkeep",
     "|turn|20",
-    "|move|p1a: Spectrier|Nasty Plot|p1a: Spectrier",
-    "|-boost|p1a: Spectrier|spa|2",
-    "|move|p2a: Carbink|Body Press|p1a: Spectrier",
-    "|-immune|p1a: Spectrier",
-    "|-heal|p2a: Carbink|75/236|[from] item: Leftovers",
+    "|move|p1a: Vespiquen|Toxic||[still]",
+    "|-fail|p1a: Vespiquen",
+    "|move|p2a: Gogoat|Bulk Up|p2a: Gogoat",
+    "|-boost|p2a: Gogoat|atk|1",
+    "|-boost|p2a: Gogoat|def|1",
+    "|-heal|p2a: Gogoat|254/360 par|[from] item: Leftovers",
     "|upkeep",
     "|turn|21",
-    "|move|p1a: Spectrier|Dark Pulse|p2a: Carbink",
-    "|-resisted|p2a: Carbink",
-    "|-damage|p2a: Carbink|0 fnt",
-    "|faint|p2a: Carbink",
-    "|-ability|p1a: Spectrier|Grim Neigh|boost",
-    "|-boost|p1a: Spectrier|spa|1",
-    "|-damage|p1a: Spectrier|70/274|[from] item: Life Orb",
+    "|move|p1a: Vespiquen|Air Slash|p2a: Gogoat",
+    "|-supereffective|p2a: Gogoat",
+    "|-damage|p2a: Gogoat|62/360 par",
+    "|cant|p2a: Gogoat|par",
+    "|-heal|p2a: Gogoat|84/360 par|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p2a: Gogoat|Gogoat, L88, F|360/360",
     "|turn|22",
-    "|move|p1a: Spectrier|Shadow Ball|p2a: Gogoat",
+    "|move|p1a: Vespiquen|Roost|p1a: Vespiquen",
+    "|-heal|p1a: Vespiquen|299/299",
+    "|-singleturn|p1a: Vespiquen|move: Roost",
+    "|cant|p2a: Gogoat|par",
+    "|-heal|p2a: Gogoat|106/360 par|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|23",
+    "|move|p1a: Vespiquen|Roost||[still]",
+    "|-fail|p1a: Vespiquen|heal",
+    "|move|p2a: Gogoat|Earthquake|p1a: Vespiquen",
+    "|-immune|p1a: Vespiquen",
+    "|-heal|p2a: Gogoat|128/360 par|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|24",
+    "|move|p1a: Vespiquen|Air Slash|p2a: Gogoat",
+    "|-supereffective|p2a: Gogoat",
     "|-damage|p2a: Gogoat|0 fnt",
     "|faint|p2a: Gogoat",
-    "|-damage|p1a: Spectrier|43/274|[from] item: Life Orb",
+    "|upkeep",
+    "|switch|p2a: Arbok|Arbok, L87, M|246/246",
+    "|-damage|p2a: Arbok|216/246|[from] Stealth Rock",
+    "|-damage|p2a: Arbok|155/246|[from] Spikes",
+    "|-ability|p2a: Arbok|Intimidate|boost",
+    "|-unboost|p1a: Vespiquen|atk|1",
+    "|turn|25",
+    "|move|p2a: Arbok|Gunk Shot|p1a: Vespiquen",
+    "|-damage|p1a: Vespiquen|148/299",
+    "|move|p1a: Vespiquen|Roost|p1a: Vespiquen",
+    "|-heal|p1a: Vespiquen|298/299",
+    "|-singleturn|p1a: Vespiquen|move: Roost",
+    "|upkeep",
+    "|turn|26",
+    "|move|p2a: Arbok|Gunk Shot|p1a: Vespiquen",
+    "|-damage|p1a: Vespiquen|160/299",
+    "|move|p1a: Vespiquen|Air Slash|p2a: Arbok",
+    "|-damage|p2a: Arbok|64/246",
+    "|upkeep",
+    "|turn|27",
+    "|move|p2a: Arbok|Gunk Shot|p1a: Vespiquen",
+    "|-damage|p1a: Vespiquen|12/299",
+    "|move|p1a: Vespiquen|Air Slash|p2a: Arbok",
+    "|-damage|p2a: Arbok|0 fnt",
+    "|faint|p2a: Arbok",
+    "|upkeep",
+    "|switch|p2a: Masquerain|Masquerain, L87, F|264/264",
+    "|-ability|p2a: Masquerain|Intimidate|boost",
+    "|-unboost|p1a: Vespiquen|atk|1",
+    "|turn|28",
+    "|move|p2a: Masquerain|Sticky Web|p1a: Vespiquen",
+    "|-sidestart|p1: Player 1|move: Sticky Web",
+    "|move|p1a: Vespiquen|Air Slash|p2a: Masquerain",
+    "|-supereffective|p2a: Masquerain",
+    "|-damage|p2a: Masquerain|76/264",
+    "|upkeep",
+    "|turn|29",
+    "|move|p2a: Masquerain|Hurricane|p1a: Vespiquen",
+    "|-supereffective|p1a: Vespiquen",
+    "|-damage|p1a: Vespiquen|0 fnt",
+    "|faint|p1a: Vespiquen",
+    "|upkeep",
+    "|switch|p1a: Giratina|Giratina-Origin, L72|335/335",
+    "|turn|30",
+    "|move|p2a: Masquerain|Sticky Web||[still]",
+    "|-fail|p2a: Masquerain",
+    "|move|p1a: Giratina|Dragon Tail|p2a: Masquerain",
+    "|-damage|p2a: Masquerain|0 fnt",
+    "|faint|p2a: Masquerain",
+    "|upkeep",
+    "|switch|p2a: Komala|Komala, L88, F|258/258",
+    "|-damage|p2a: Komala|226/258|[from] Stealth Rock",
+    "|-damage|p2a: Komala|162/258|[from] Spikes",
+    "|-ability|p2a: Komala|Comatose",
+    "|turn|31",
+    "|move|p1a: Giratina|Draco Meteor|p2a: Komala",
+    "|-damage|p2a: Komala|81/258",
+    "|-unboost|p1a: Giratina|spa|2",
+    "|move|p2a: Komala|Body Slam|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|upkeep",
+    "|turn|32",
+    "|move|p1a: Giratina|Defog|p2a: Komala",
+    "|-unboost|p2a: Komala|evasion|1",
+    "|-sideend|p2: Player 2|Spikes|[from] move: Defog|[of] p1a: Giratina",
+    "|-sideend|p2: Player 2|Stealth Rock|[from] move: Defog|[of] p1a: Giratina",
+    "|-sideend|p1: Player 1|Sticky Web|[from] move: Defog|[of] p1a: Giratina",
+    "|move|p2a: Komala|Earthquake|p1a: Giratina",
+    "|-immune|p1a: Giratina|[from] ability: Levitate",
+    "|upkeep",
+    "|turn|33",
+    "|move|p2a: Komala|Body Slam|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|move|p1a: Giratina|Dragon Tail|p2a: Komala",
+    "|-damage|p2a: Komala|5/258",
+    "|drag|p2a: Farigiraf|Farigiraf, L90, F|230/362",
+    "|-heal|p2a: Farigiraf|252/362|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|34",
+    "|move|p1a: Giratina|Draco Meteor|p2a: Farigiraf",
+    "|-damage|p2a: Farigiraf|167/362",
+    "|-unboost|p1a: Giratina|spa|2",
+    "|move|p2a: Farigiraf|Wish|p2a: Farigiraf",
+    "|-heal|p2a: Farigiraf|189/362|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|35",
+    "|move|p1a: Giratina|Draco Meteor|p2a: Farigiraf",
+    "|-damage|p2a: Farigiraf|135/362",
+    "|-unboost|p1a: Giratina|spa|2",
+    "|move|p2a: Farigiraf|Body Slam|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|-heal|p2a: Farigiraf|316/362|[from] move: Wish|[wisher] Farigiraf",
+    "|-heal|p2a: Farigiraf|338/362|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|36",
+    "|move|p1a: Giratina|Defog|p2a: Farigiraf",
+    "|-unboost|p2a: Farigiraf|evasion|1",
+    "|move|p2a: Farigiraf|Wish|p2a: Farigiraf",
+    "|-heal|p2a: Farigiraf|360/362|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|37",
+    "|move|p2a: Farigiraf|Psychic Noise|p1a: Giratina",
+    "|-damage|p1a: Giratina|230/335",
+    "|-start|p1a: Giratina|move: Heal Block",
+    "|move|p1a: Giratina|Dragon Tail|p2a: Farigiraf",
+    "|-damage|p2a: Farigiraf|287/362",
+    "|drag|p2a: Komala|Komala, L88, F|5/258",
+    "|-ability|p2a: Komala|Comatose",
+    "|-heal|p2a: Komala|186/258|[from] move: Wish|[wisher] Farigiraf",
+    "|upkeep",
+    "|turn|38",
+    "|move|p1a: Giratina|Poltergeist|p2a: Komala",
+    "|-immune|p2a: Komala",
+    "|move|p2a: Komala|Earthquake|p1a: Giratina",
+    "|-immune|p1a: Giratina|[from] ability: Levitate",
+    "|-end|p1a: Giratina|move: Heal Block",
+    "|upkeep",
+    "|turn|39",
+    "|move|p1a: Giratina|Defog|p2a: Komala",
+    "|-unboost|p2a: Komala|evasion|1",
+    "|move|p2a: Komala|Rapid Spin|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|upkeep",
+    "|turn|40",
+    "|move|p1a: Giratina|Draco Meteor|p2a: Komala",
+    "|-damage|p2a: Komala|162/258",
+    "|move|p2a: Komala|Body Slam|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|upkeep",
+    "|turn|41",
+    "|move|p1a: Giratina|Defog|p2a: Komala",
+    "|-unboost|p2a: Komala|evasion|1",
+    "|move|p2a: Komala|Body Slam|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|upkeep",
+    "|turn|42",
+    "|move|p2a: Komala|Body Slam|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|move|p1a: Giratina|Dragon Tail|p2a: Komala",
+    "|-damage|p2a: Komala|80/258",
+    "|drag|p2a: Farigiraf|Farigiraf, L90, F|287/362",
+    "|-heal|p2a: Farigiraf|309/362|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|43",
+    "|move|p2a: Farigiraf|Body Slam|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|move|p1a: Giratina|Dragon Tail|p2a: Farigiraf",
+    "|-damage|p2a: Farigiraf|237/362",
+    "|drag|p2a: Komala|Komala, L88, F|80/258",
+    "|-ability|p2a: Komala|Comatose",
+    "|upkeep",
+    "|turn|44",
+    "|move|p1a: Giratina|Defog|p2a: Komala",
+    "|-unboost|p2a: Komala|evasion|1",
+    "|move|p2a: Komala|Earthquake|p1a: Giratina",
+    "|-immune|p1a: Giratina|[from] ability: Levitate",
+    "|upkeep",
+    "|turn|45",
+    "|move|p1a: Giratina|Poltergeist|p2a: Komala",
+    "|-immune|p2a: Komala",
+    "|move|p2a: Komala|Rapid Spin|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|upkeep",
+    "|turn|46",
+    "|move|p1a: Giratina|Defog|p2a: Komala",
+    "|-unboost|p2a: Komala|evasion|1",
+    "|move|p2a: Komala|Knock Off|p1a: Giratina",
+    "|-supereffective|p1a: Giratina",
+    "|-damage|p1a: Giratina|114/335",
+    "|upkeep",
+    "|turn|47",
+    "|move|p1a: Giratina|Defog|p2a: Komala",
+    "|-unboost|p2a: Komala|evasion|1",
+    "|move|p2a: Komala|Rapid Spin|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|upkeep",
+    "|turn|48",
+    "|move|p1a: Giratina|Draco Meteor|p2a: Komala",
+    "|-damage|p2a: Komala|59/258",
+    "|move|p2a: Komala|Body Slam|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|upkeep",
+    "|turn|49",
+    "|move|p1a: Giratina|Defog|p2a: Komala",
+    "|-unboost|p2a: Komala|evasion|1",
+    "|move|p2a: Komala|Rapid Spin|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|upkeep",
+    "|turn|50",
+    "|move|p2a: Komala|Earthquake|p1a: Giratina",
+    "|-immune|p1a: Giratina|[from] ability: Levitate",
+    "|move|p1a: Giratina|Dragon Tail|p2a: Komala",
+    "|-damage|p2a: Komala|0 fnt",
+    "|faint|p2a: Komala",
+    "|upkeep",
+    "|switch|p2a: Farigiraf|Farigiraf, L90, F|237/362",
+    "|turn|51",
+    "|move|p2a: Farigiraf|Protect|p2a: Farigiraf",
+    "|-singleturn|p2a: Farigiraf|Protect",
+    "|move|p1a: Giratina|Defog|p2a: Farigiraf",
+    "|-activate|p2a: Farigiraf|move: Protect",
+    "|-heal|p2a: Farigiraf|259/362|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|52",
+    "|move|p2a: Farigiraf|Body Slam|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|move|p1a: Giratina|Dragon Tail|p2a: Farigiraf",
+    "|-damage|p2a: Farigiraf|190/362",
+    "|drag|p2a: Flapple|Flapple, L88, F|266/266",
+    "|upkeep",
+    "|turn|53",
+    "|move|p2a: Flapple|Dragon Dance|p2a: Flapple",
+    "|-boost|p2a: Flapple|atk|1",
+    "|-boost|p2a: Flapple|spe|1",
+    "|move|p1a: Giratina|Defog|p2a: Flapple",
+    "|-unboost|p2a: Flapple|evasion|1",
+    "|upkeep",
+    "|turn|54",
+    "|move|p2a: Flapple|Dragon Dance|p2a: Flapple",
+    "|-boost|p2a: Flapple|atk|1",
+    "|-boost|p2a: Flapple|spe|1",
+    "|move|p1a: Giratina|Dragon Tail|p2a: Flapple",
+    "|-supereffective|p2a: Flapple",
+    "|-damage|p2a: Flapple|132/266",
+    "|drag|p2a: Farigiraf|Farigiraf, L90, F|190/362",
+    "|-heal|p2a: Farigiraf|212/362|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|55",
+    "|move|p1a: Giratina|Draco Meteor|p2a: Farigiraf",
+    "|-damage|p2a: Farigiraf|172/362",
+    "|move|p2a: Farigiraf|Body Slam|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|-heal|p2a: Farigiraf|194/362|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|56",
+    "|move|p1a: Giratina|Poltergeist|p2a: Farigiraf",
+    "|-immune|p2a: Farigiraf",
+    "|move|p2a: Farigiraf|Body Slam|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|-heal|p2a: Farigiraf|216/362|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|57",
+    "|move|p2a: Farigiraf|Body Slam|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|move|p1a: Giratina|Dragon Tail|p2a: Farigiraf",
+    "|-damage|p2a: Farigiraf|141/362",
+    "|drag|p2a: Flapple|Flapple, L88, F|132/266",
+    "|upkeep",
+    "|turn|58",
+    "|move|p2a: Flapple|Tera Blast|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|move|p1a: Giratina|Draco Meteor|p2a: Flapple",
+    "|-supereffective|p2a: Flapple",
+    "|-damage|p2a: Flapple|36/266",
+    "|upkeep",
+    "|turn|59",
+    "|move|p2a: Flapple|Tera Blast|p1a: Giratina",
+    "|-immune|p1a: Giratina",
+    "|move|p1a: Giratina|Dragon Tail|p2a: Flapple",
+    "|-supereffective|p2a: Flapple",
+    "|-crit|p2a: Flapple",
+    "|-damage|p2a: Flapple|0 fnt",
+    "|faint|p2a: Flapple",
+    "|upkeep",
+    "|switch|p2a: Farigiraf|Farigiraf, L90, F|141/362",
+    "|turn|60",
+    "|move|p2a: Farigiraf|Psychic Noise|p1a: Giratina",
+    "|-crit|p1a: Giratina",
+    "|-damage|p1a: Giratina|0 fnt",
+    "|faint|p1a: Giratina",
+    "|-heal|p2a: Farigiraf|163/362|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p1a: Pyroar|Pyroar, L88, F|295/295",
+    "|-ability|p1a: Pyroar|Unnerve",
+    "|turn|61",
+    "|move|p1a: Pyroar|Hyper Voice|p2a: Farigiraf",
+    "|-damage|p2a: Farigiraf|39/362",
+    "|move|p2a: Farigiraf|Body Slam|p1a: Pyroar",
+    "|-damage|p1a: Pyroar|192/295",
+    "|-heal|p2a: Farigiraf|61/362|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|62",
+    "|move|p1a: Pyroar|Work Up|p1a: Pyroar",
+    "|-boost|p1a: Pyroar|atk|1",
+    "|-boost|p1a: Pyroar|spa|1",
+    "|move|p2a: Farigiraf|Psychic Noise|p1a: Pyroar",
+    "|-damage|p1a: Pyroar|83/295",
+    "|-start|p1a: Pyroar|move: Heal Block",
+    "|-heal|p2a: Farigiraf|83/362|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|63",
+    "|move|p2a: Farigiraf|Protect|p2a: Farigiraf",
+    "|-singleturn|p2a: Farigiraf|Protect",
+    "|move|p1a: Pyroar|Fire Blast|p2a: Farigiraf",
+    "|-activate|p2a: Farigiraf|move: Protect",
+    "|-heal|p2a: Farigiraf|105/362|[from] item: Leftovers",
+    "|-end|p1a: Pyroar|move: Heal Block",
+    "|upkeep",
+    "|turn|64",
+    "|move|p1a: Pyroar|Work Up|p1a: Pyroar",
+    "|-boost|p1a: Pyroar|atk|1",
+    "|-boost|p1a: Pyroar|spa|1",
+    "|move|p2a: Farigiraf|Wish|p2a: Farigiraf",
+    "|-heal|p2a: Farigiraf|127/362|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|65",
+    "|move|p1a: Pyroar|Hyper Voice|p2a: Farigiraf",
+    "|-damage|p2a: Farigiraf|0 fnt",
+    "|faint|p2a: Farigiraf",
     "|win|Player 1"
   ]
 }

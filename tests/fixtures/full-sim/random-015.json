@@ -11,14 +11,14 @@
   "p1": {
     "team": [
       {
-        "species": "Pikachu-Unova",
-        "ability": "Lightning Rod",
-        "item": "Light Ball",
+        "species": "Zarude",
+        "ability": "Leaf Guard",
+        "item": "Choice Band",
         "moves": [
-          "Fake Out",
-          "Volt Tackle",
-          "Surf",
-          "Volt Switch"
+          "Close Combat",
+          "Power Whip",
+          "Knock Off",
+          "U-turn"
         ],
         "nature": "Hardy",
         "evs": {
@@ -37,18 +37,202 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 93,
+        "level": 77,
+        "gender": "N"
+      },
+      {
+        "species": "Rampardos",
+        "ability": "Sheer Force",
+        "item": "Life Orb",
+        "moves": [
+          "Zen Headbutt",
+          "Rock Slide",
+          "Fire Punch",
+          "Earthquake"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 90,
+        "gender": "F"
+      },
+      {
+        "species": "Deoxys",
+        "ability": "Pressure",
+        "item": "Life Orb",
+        "moves": [
+          "Knock Off",
+          "Psycho Boost",
+          "Superpower",
+          "Extreme Speed"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 74,
+        "gender": "N"
+      },
+      {
+        "species": "Fezandipiti",
+        "ability": "Toxic Chain",
+        "item": "Leftovers",
+        "moves": [
+          "Gunk Shot",
+          "Swords Dance",
+          "Tera Blast",
+          "Play Rough"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 82,
         "gender": "M"
       },
       {
-        "species": "Kyogre",
-        "ability": "Drizzle",
-        "item": "Choice Scarf",
+        "species": "Giratina-Origin",
+        "ability": "Levitate",
+        "item": "Griseous Core",
         "moves": [
-          "Ice Beam",
-          "Water Spout",
-          "Origin Pulse",
-          "Thunder"
+          "Draco Meteor",
+          "Dragon Tail",
+          "Poltergeist",
+          "Shadow Sneak"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 72,
+        "gender": "N"
+      },
+      {
+        "species": "Glalie",
+        "ability": "Inner Focus",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Taunt",
+          "Earthquake",
+          "Freeze-Dry",
+          "Spikes"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 96,
+        "gender": "M"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Forretress",
+        "ability": "Sturdy",
+        "item": "Leftovers",
+        "moves": [
+          "Stealth Rock",
+          "Thunder Wave",
+          "Iron Head",
+          "Rapid Spin"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "M"
+      },
+      {
+        "species": "Iron Crown",
+        "ability": "Quark Drive",
+        "item": "Choice Specs",
+        "moves": [
+          "Psyshock",
+          "Focus Blast",
+          "Tachyon Cutter",
+          "Volt Switch"
         ],
         "nature": "Hardy",
         "evs": {
@@ -67,16 +251,46 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 71,
+        "level": 78,
         "gender": "N"
       },
       {
-        "species": "Skuntank",
-        "ability": "Aftermath",
+        "species": "Chimecho",
+        "ability": "Levitate",
+        "item": "Leftovers",
+        "moves": [
+          "Psyshock",
+          "Dazzling Gleam",
+          "Recover",
+          "Calm Mind"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 93,
+        "gender": "M"
+      },
+      {
+        "species": "Cacturne",
+        "ability": "Water Absorb",
         "item": "Life Orb",
         "moves": [
-          "Gunk Shot",
-          "Toxic Spikes",
+          "Leaf Storm",
+          "Spikes",
           "Sucker Punch",
           "Knock Off"
         ],
@@ -97,18 +311,18 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 84,
-        "gender": "F"
+        "level": 92,
+        "gender": "M"
       },
       {
-        "species": "Lilligant-Hisui",
-        "ability": "Hustle",
+        "species": "Feraligatr",
+        "ability": "Sheer Force",
         "item": "Life Orb",
         "moves": [
-          "Close Combat",
-          "Sleep Powder",
-          "Leaf Blade",
-          "Victory Dance"
+          "Dragon Dance",
+          "Liquidation",
+          "Trailblaze",
+          "Ice Punch"
         ],
         "nature": "Hardy",
         "evs": {
@@ -131,168 +345,14 @@
         "gender": "F"
       },
       {
-        "species": "Leafeon",
-        "ability": "Chlorophyll",
-        "item": "Life Orb",
-        "moves": [
-          "Synthesis",
-          "Swords Dance",
-          "Leaf Blade",
-          "Knock Off"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 88,
-        "gender": "M"
-      },
-      {
-        "species": "Haxorus",
-        "ability": "Mold Breaker",
-        "item": "Lum Berry",
-        "moves": [
-          "Outrage",
-          "Iron Head",
-          "Close Combat",
-          "Dragon Dance"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 77,
-        "gender": "F"
-      }
-    ]
-  },
-  "p2": {
-    "team": [
-      {
-        "species": "Thundurus-Therian",
-        "ability": "Volt Absorb",
-        "item": "Heavy-Duty Boots",
-        "moves": [
-          "Focus Blast",
-          "Nasty Plot",
-          "Thunderbolt",
-          "Tera Blast"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 80,
-        "gender": "M"
-      },
-      {
-        "species": "Chansey",
-        "ability": "Natural Cure",
-        "item": "Eviolite",
-        "moves": [
-          "Thunder Wave",
-          "Seismic Toss",
-          "Soft-Boiled",
-          "Heal Bell"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 85,
-        "gender": "F"
-      },
-      {
-        "species": "Cresselia",
-        "ability": "Levitate",
+        "species": "Regirock",
+        "ability": "Clear Body",
         "item": "Leftovers",
         "moves": [
-          "Moonlight",
-          "Calm Mind",
-          "Psyshock",
-          "Thunderbolt"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 80,
-        "gender": "F"
-      },
-      {
-        "species": "Kommo-o",
-        "ability": "Soundproof",
-        "item": "Loaded Dice",
-        "moves": [
-          "Swords Dance",
-          "Iron Head",
-          "Close Combat",
-          "Scale Shot"
+          "Iron Defense",
+          "Thunder Wave",
+          "Stone Edge",
+          "Body Press"
         ],
         "nature": "Hardy",
         "evs": {
@@ -311,182 +371,30 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 78,
-        "gender": "F"
-      },
-      {
-        "species": "Electrode",
-        "ability": "Aftermath",
-        "item": "Heavy-Duty Boots",
-        "moves": [
-          "Taunt",
-          "Foul Play",
-          "Volt Switch",
-          "Thunderbolt"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 92,
+        "level": 83,
         "gender": "N"
-      },
-      {
-        "species": "Eiscue",
-        "ability": "Ice Face",
-        "item": "Sitrus Berry",
-        "moves": [
-          "Liquidation",
-          "Zen Headbutt",
-          "Belly Drum",
-          "Ice Spinner"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 81,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 88,
-        "gender": "M"
       }
     ]
   },
   "choices": [
     [
       "move 4",
-      "move 4"
-    ],
-    [
-      "move 4",
-      "move 2"
-    ],
-    [
-      "move 2",
-      "move 3"
-    ],
-    [
-      "move 4",
-      "move 2"
-    ],
-    [
-      "move 2",
-      "move 3"
-    ],
-    [
-      "move 2",
-      "move 2"
-    ],
-    [
-      "move 3",
-      "move 2"
-    ],
-    [
-      "move 3",
-      "move 4"
-    ],
-    [
-      "move 3",
-      "switch 2"
-    ],
-    [
-      "move 2",
-      "move 2"
-    ],
-    [
-      "switch 2",
-      "move 4"
-    ],
-    [
-      "move 4",
-      "switch 3"
-    ],
-    [
-      "move 4",
-      "move 3"
-    ],
-    [
-      "move 4",
-      "move 3"
-    ],
-    [
-      "move 4",
       "move 1"
-    ],
-    [
-      "move 4",
-      "move 1"
-    ],
-    [
-      "move 4",
-      "move 3"
-    ],
-    [
-      "switch 5",
-      "move 4"
-    ],
-    [
-      "move 4",
-      "move 4"
-    ],
-    [
-      "move 2",
-      "move 4"
     ],
     [
       "move 1",
-      "move 3"
+      "move 2"
     ],
     [
       "move 2",
-      "move 1"
-    ],
-    [
-      "move 2",
-      "move 4"
-    ],
-    [
-      "move 3",
       "move 2"
     ],
     [
       "move 1",
-      "switch 5"
-    ],
-    [
-      "move 3",
       "move 1"
     ],
     [
-      "move 3",
-      "switch 4"
-    ],
-    [
-      "switch 4",
+      "move 4",
       "move 1"
     ],
     [
@@ -494,255 +402,358 @@
       "switch 6"
     ],
     [
-      "move 1",
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 4",
       "move 1"
     ],
     [
       "switch 3",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "switch 4"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "switch 4",
+      "move 1"
+    ],
+    [
+      "move 1",
       "move 2"
     ],
     [
       "move 1",
+      "switch 5"
+    ],
+    [
+      "move 4",
       "move 4"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "switch 2"
+    ],
+    [
+      "switch 6",
+      "switch 3"
+    ],
+    [
+      "move 2",
+      "move 2"
     ],
     [
       "move 4",
       "move 2"
     ],
     [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
       "move 3",
-      "move 1"
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 2"
     ]
   ],
   "protocol": [
-    "|switch|p1a: Pikachu|Pikachu-Unova, L93, M|216/216",
-    "|switch|p2a: Thundurus|Thundurus-Therian, L80, M|258/258",
+    "|switch|p1a: Zarude|Zarude, L77|288/288",
+    "|switch|p2a: Forretress|Forretress, L84, M|263/263",
     "|turn|1",
-    "|move|p1a: Pikachu|Volt Switch|p2a: Thundurus",
-    "|-immune|p2a: Thundurus|[from] ability: Volt Absorb",
-    "|move|p2a: Thundurus|Tera Blast|p1a: Pikachu",
-    "|-damage|p1a: Pikachu|117/216",
+    "|move|p1a: Zarude|U-turn|p2a: Forretress",
+    "|-resisted|p2a: Forretress",
+    "|-damage|p2a: Forretress|237/263",
+    "|switch|p1a: Rampardos|Rampardos, L90, F|321/321|[from] U-turn",
+    "|move|p2a: Forretress|Stealth Rock|p1a: Rampardos",
+    "|-sidestart|p1: Player 1|move: Stealth Rock",
+    "|-heal|p2a: Forretress|253/263|[from] item: Leftovers",
     "|upkeep",
     "|turn|2",
-    "|move|p1a: Pikachu|Volt Switch|p2a: Thundurus",
-    "|-immune|p2a: Thundurus|[from] ability: Volt Absorb",
-    "|move|p2a: Thundurus|Nasty Plot|p2a: Thundurus",
-    "|-boost|p2a: Thundurus|spa|2",
+    "|move|p1a: Rampardos|Zen Headbutt|p2a: Forretress",
+    "|-resisted|p2a: Forretress",
+    "|-damage|p2a: Forretress|193/263",
+    "|move|p2a: Forretress|Thunder Wave|p1a: Rampardos",
+    "|-status|p1a: Rampardos|par",
+    "|-heal|p2a: Forretress|209/263|[from] item: Leftovers",
     "|upkeep",
     "|turn|3",
-    "|move|p1a: Pikachu|Volt Tackle|p2a: Thundurus",
-    "|-immune|p2a: Thundurus|[from] ability: Volt Absorb",
-    "|move|p2a: Thundurus|Thunderbolt|p1a: Pikachu",
-    "|-ability|p1a: Pikachu|Lightning Rod|boost",
-    "|-boost|p1a: Pikachu|spa|1",
+    "|move|p2a: Forretress|Thunder Wave|p1a: Rampardos",
+    "|-fail|p1a: Rampardos|par",
+    "|move|p1a: Rampardos|Rock Slide|p2a: Forretress",
+    "|-damage|p2a: Forretress|45/263",
+    "|-heal|p2a: Forretress|61/263|[from] item: Leftovers",
     "|upkeep",
     "|turn|4",
-    "|move|p1a: Pikachu|Volt Switch|p2a: Thundurus",
-    "|-immune|p2a: Thundurus|[from] ability: Volt Absorb",
-    "|move|p2a: Thundurus|Nasty Plot|p2a: Thundurus",
-    "|-boost|p2a: Thundurus|spa|2",
+    "|move|p2a: Forretress|Stealth Rock||[still]",
+    "|-fail|p2a: Forretress",
+    "|move|p1a: Rampardos|Zen Headbutt|p2a: Forretress",
+    "|-resisted|p2a: Forretress",
+    "|-damage|p2a: Forretress|3/263",
+    "|-heal|p2a: Forretress|19/263|[from] item: Leftovers",
     "|upkeep",
     "|turn|5",
-    "|move|p1a: Pikachu|Volt Tackle|p2a: Thundurus",
-    "|-immune|p2a: Thundurus|[from] ability: Volt Absorb",
-    "|move|p2a: Thundurus|Thunderbolt|p1a: Pikachu",
-    "|-ability|p1a: Pikachu|Lightning Rod|boost",
-    "|-boost|p1a: Pikachu|spa|1",
+    "|move|p2a: Forretress|Stealth Rock||[still]",
+    "|-fail|p2a: Forretress",
+    "|move|p1a: Rampardos|Earthquake|p2a: Forretress",
+    "|-damage|p2a: Forretress|0 fnt",
+    "|faint|p2a: Forretress",
+    "|-damage|p1a: Rampardos|289/321 par|[from] item: Life Orb",
     "|upkeep",
+    "|switch|p2a: Regirock|Regirock, L83|268/268",
     "|turn|6",
-    "|move|p1a: Pikachu|Volt Tackle|p2a: Thundurus",
-    "|-immune|p2a: Thundurus|[from] ability: Volt Absorb",
-    "|move|p2a: Thundurus|Nasty Plot|p2a: Thundurus",
-    "|-boost|p2a: Thundurus|spa|2",
+    "|move|p2a: Regirock|Thunder Wave|p1a: Rampardos",
+    "|-fail|p1a: Rampardos|par",
+    "|cant|p1a: Rampardos|par",
     "|upkeep",
     "|turn|7",
-    "|move|p1a: Pikachu|Surf|p2a: Thundurus",
-    "|-damage|p2a: Thundurus|36/258",
-    "|move|p2a: Thundurus|Nasty Plot|p2a: Thundurus",
-    "|-boost|p2a: Thundurus|spa|0",
+    "|move|p2a: Regirock|Iron Defense|p2a: Regirock",
+    "|-boost|p2a: Regirock|def|2",
+    "|move|p1a: Rampardos|Earthquake|p2a: Regirock",
+    "|-supereffective|p2a: Regirock",
+    "|-damage|p2a: Regirock|182/268",
+    "|-damage|p1a: Rampardos|257/321 par|[from] item: Life Orb",
+    "|-heal|p2a: Regirock|198/268|[from] item: Leftovers",
     "|upkeep",
     "|turn|8",
-    "|move|p1a: Pikachu|Surf|p2a: Thundurus",
-    "|-damage|p2a: Thundurus|0 fnt",
-    "|faint|p2a: Thundurus",
+    "|move|p2a: Regirock|Body Press|p1a: Rampardos",
+    "|-supereffective|p1a: Rampardos",
+    "|-damage|p1a: Rampardos|0 fnt",
+    "|faint|p1a: Rampardos",
+    "|-heal|p2a: Regirock|214/268|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p2a: Chansey|Chansey, L85, F|564/564",
+    "|switch|p1a: Deoxys|Deoxys, L74|196/196",
+    "|-damage|p1a: Deoxys|172/196|[from] Stealth Rock",
+    "|-ability|p1a: Deoxys|Pressure",
     "|turn|9",
-    "|move|p1a: Pikachu|Surf|p2a: Chansey",
-    "|-damage|p2a: Chansey|453/564",
-    "|move|p2a: Chansey|Seismic Toss|p1a: Pikachu",
-    "|-damage|p1a: Pikachu|32/216",
+    "|move|p1a: Deoxys|Psycho Boost|p2a: Regirock",
+    "|-damage|p2a: Regirock|35/268",
+    "|-unboost|p1a: Deoxys|spa|2",
+    "|-damage|p1a: Deoxys|153/196|[from] item: Life Orb",
+    "|move|p2a: Regirock|Iron Defense|p2a: Regirock",
+    "|-boost|p2a: Regirock|def|2",
+    "|-heal|p2a: Regirock|51/268|[from] item: Leftovers",
     "|upkeep",
     "|turn|10",
-    "|move|p1a: Pikachu|Volt Tackle|p2a: Chansey",
-    "|-damage|p2a: Chansey|0 fnt",
-    "|faint|p2a: Chansey",
-    "|-damage|p1a: Pikachu|0 fnt|[from] Recoil",
-    "|faint|p1a: Pikachu",
+    "|move|p1a: Deoxys|Extreme Speed|p2a: Regirock",
+    "|-resisted|p2a: Regirock",
+    "|-damage|p2a: Regirock|45/268",
+    "|-damage|p1a: Deoxys|134/196|[from] item: Life Orb",
+    "|move|p2a: Regirock|Body Press|p1a: Deoxys",
+    "|-resisted|p1a: Deoxys",
+    "|-damage|p1a: Deoxys|0 fnt",
+    "|faint|p1a: Deoxys",
+    "|-heal|p2a: Regirock|61/268|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p1a: Kyogre|Kyogre, L71|259/259",
-    "|switch|p2a: Cresselia|Cresselia, L80, F|323/323",
-    "|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Kyogre",
+    "|switch|p1a: Zarude|Zarude, L77|288/288",
+    "|-damage|p1a: Zarude|252/288|[from] Stealth Rock",
     "|turn|11",
-    "|move|p1a: Kyogre|Thunder|p2a: Cresselia",
-    "|-damage|p2a: Cresselia|254/323",
-    "|-status|p2a: Cresselia|par",
-    "|move|p2a: Cresselia|Psyshock|p1a: Kyogre",
-    "|-damage|p1a: Kyogre|183/259",
-    "|-weather|RainDance|[upkeep]",
-    "|-heal|p2a: Cresselia|274/323 par|[from] item: Leftovers",
+    "|move|p1a: Zarude|Knock Off|p2a: Regirock",
+    "|-damage|p2a: Regirock|33/268",
+    "|-enditem|p2a: Regirock|Leftovers|[from] move: Knock Off|[of] p1a: Zarude",
+    "|move|p2a: Regirock|Stone Edge|p1a: Zarude",
+    "|-damage|p1a: Zarude|159/288",
     "|upkeep",
     "|turn|12",
-    "|move|p1a: Kyogre|Thunder|p2a: Cresselia",
-    "|-damage|p2a: Cresselia|207/323 par",
-    "|move|p2a: Cresselia|Psyshock|p1a: Kyogre",
-    "|-damage|p1a: Kyogre|111/259",
-    "|-weather|RainDance|[upkeep]",
-    "|-heal|p2a: Cresselia|227/323 par|[from] item: Leftovers",
+    "|move|p1a: Zarude|Knock Off|p2a: Regirock",
+    "|-damage|p2a: Regirock|17/268",
+    "|move|p2a: Regirock|Iron Defense|p2a: Regirock",
+    "|-boost|p2a: Regirock|def|2",
     "|upkeep",
     "|turn|13",
-    "|move|p1a: Kyogre|Thunder|p2a: Cresselia",
-    "|-damage|p2a: Cresselia|166/323 par",
-    "|move|p2a: Cresselia|Moonlight|p2a: Cresselia",
-    "|-heal|p2a: Cresselia|247/323 par",
-    "|-weather|RainDance|[upkeep]",
-    "|-heal|p2a: Cresselia|267/323 par|[from] item: Leftovers",
+    "|move|p1a: Zarude|Knock Off|p2a: Regirock",
+    "|-damage|p2a: Regirock|2/268",
+    "|move|p2a: Regirock|Body Press|p1a: Zarude",
+    "|-supereffective|p1a: Zarude",
+    "|-damage|p1a: Zarude|0 fnt",
+    "|faint|p1a: Zarude",
     "|upkeep",
+    "|switch|p1a: Giratina|Giratina-Origin, L72|335/335",
+    "|-damage|p1a: Giratina|294/335|[from] Stealth Rock",
     "|turn|14",
-    "|move|p1a: Kyogre|Thunder|p2a: Cresselia",
-    "|-damage|p2a: Cresselia|206/323 par",
-    "|move|p2a: Cresselia|Moonlight|p2a: Cresselia",
-    "|-heal|p2a: Cresselia|287/323 par",
-    "|-weather|RainDance|[upkeep]",
-    "|-heal|p2a: Cresselia|307/323 par|[from] item: Leftovers",
+    "|move|p1a: Giratina|Poltergeist||[still]",
+    "|-fail|p1a: Giratina",
+    "|move|p2a: Regirock|Body Press|p1a: Giratina",
+    "|-immune|p1a: Giratina",
     "|upkeep",
     "|turn|15",
-    "|move|p1a: Kyogre|Thunder|p2a: Cresselia",
-    "|-damage|p2a: Cresselia|236/323 par",
-    "|move|p2a: Cresselia|Psyshock|p1a: Kyogre",
-    "|-damage|p1a: Kyogre|36/259",
-    "|-weather|none",
-    "|-heal|p2a: Cresselia|256/323 par|[from] item: Leftovers",
+    "|move|p1a: Giratina|Draco Meteor|p2a: Regirock",
+    "|-damage|p2a: Regirock|0 fnt",
+    "|-unboost|p1a: Giratina|spa|2",
+    "|faint|p2a: Regirock",
     "|upkeep",
+    "|switch|p2a: Cacturne|Cacturne, L92, M|278/278",
     "|turn|16",
-    "|move|p1a: Kyogre|Thunder|p2a: Cresselia",
-    "|-damage|p2a: Cresselia|184/323 par",
-    "|move|p2a: Cresselia|Thunderbolt|p1a: Kyogre",
-    "|-supereffective|p1a: Kyogre",
-    "|-damage|p1a: Kyogre|0 fnt",
-    "|faint|p1a: Kyogre",
-    "|-heal|p2a: Cresselia|204/323 par|[from] item: Leftovers",
+    "|move|p1a: Giratina|Shadow Sneak|p2a: Cacturne",
+    "|-resisted|p2a: Cacturne",
+    "|-damage|p2a: Cacturne|249/278",
+    "|move|p2a: Cacturne|Knock Off|p1a: Giratina",
+    "|-supereffective|p1a: Giratina",
+    "|-damage|p1a: Giratina|44/335",
+    "|-damage|p2a: Cacturne|222/278|[from] item: Life Orb",
     "|upkeep",
-    "|switch|p1a: Leafeon|Leafeon, L88, M|258/258",
     "|turn|17",
-    "|move|p1a: Leafeon|Knock Off|p2a: Cresselia",
-    "|-supereffective|p2a: Cresselia",
-    "|-damage|p2a: Cresselia|22/323 par",
-    "|-enditem|p2a: Cresselia|Leftovers|[from] move: Knock Off|[of] p1a: Leafeon",
-    "|-damage|p1a: Leafeon|233/258|[from] item: Life Orb",
-    "|cant|p2a: Cresselia|par",
+    "|move|p1a: Giratina|Poltergeist|p2a: Cacturne",
+    "|-activate|p2a: Cacturne|move: Poltergeist|Life Orb",
+    "|-resisted|p2a: Cacturne",
+    "|-damage|p2a: Cacturne|148/278",
+    "|move|p2a: Cacturne|Spikes|p1a: Giratina",
+    "|-sidestart|p1: Player 1|Spikes",
     "|upkeep",
     "|turn|18",
-    "|move|p1a: Leafeon|Swords Dance|p1a: Leafeon",
-    "|-boost|p1a: Leafeon|atk|2",
-    "|move|p2a: Cresselia|Thunderbolt|p1a: Leafeon",
-    "|-resisted|p1a: Leafeon",
-    "|-damage|p1a: Leafeon|206/258",
+    "|move|p2a: Cacturne|Leaf Storm|p1a: Giratina",
+    "|-resisted|p1a: Giratina",
+    "|-damage|p1a: Giratina|0 fnt",
+    "|-unboost|p2a: Cacturne|spa|2",
+    "|faint|p1a: Giratina",
+    "|-damage|p2a: Cacturne|121/278|[from] item: Life Orb",
     "|upkeep",
+    "|switch|p1a: Fezandipiti|Fezandipiti, L82, M|278/278",
+    "|-damage|p1a: Fezandipiti|244/278|[from] Stealth Rock",
+    "|-damage|p1a: Fezandipiti|210/278|[from] Spikes",
     "|turn|19",
-    "|move|p1a: Leafeon|Synthesis|p1a: Leafeon",
-    "|-heal|p1a: Leafeon|258/258",
-    "|move|p2a: Cresselia|Psyshock|p1a: Leafeon",
-    "|-damage|p1a: Leafeon|213/258",
+    "|move|p1a: Fezandipiti|Gunk Shot|p2a: Cacturne",
+    "|-supereffective|p2a: Cacturne",
+    "|-damage|p2a: Cacturne|0 fnt",
+    "|faint|p2a: Cacturne",
+    "|-heal|p1a: Fezandipiti|227/278|[from] item: Leftovers",
     "|upkeep",
+    "|switch|p2a: Feraligatr|Feraligatr, L79, F|264/264",
     "|turn|20",
-    "|move|p1a: Leafeon|Swords Dance|p1a: Leafeon",
-    "|-boost|p1a: Leafeon|atk|2",
-    "|move|p2a: Cresselia|Moonlight|p2a: Cresselia",
-    "|-heal|p2a: Cresselia|183/323 par",
+    "|move|p1a: Fezandipiti|Gunk Shot|p2a: Feraligatr",
+    "|-damage|p2a: Feraligatr|144/264",
+    "|move|p2a: Feraligatr|Ice Punch|p1a: Fezandipiti",
+    "|-damage|p1a: Fezandipiti|141/278",
+    "|-heal|p1a: Fezandipiti|158/278|[from] item: Leftovers",
     "|upkeep",
     "|turn|21",
-    "|move|p1a: Leafeon|Swords Dance|p1a: Leafeon",
-    "|-boost|p1a: Leafeon|atk|2",
-    "|move|p2a: Cresselia|Thunderbolt|p1a: Leafeon",
-    "|-resisted|p1a: Leafeon",
-    "|-damage|p1a: Leafeon|185/258",
+    "|move|p1a: Fezandipiti|Play Rough|p2a: Feraligatr",
+    "|-damage|p2a: Feraligatr|59/264",
+    "|-unboost|p2a: Feraligatr|atk|1",
+    "|move|p2a: Feraligatr|Dragon Dance|p2a: Feraligatr",
+    "|-boost|p2a: Feraligatr|atk|1",
+    "|-boost|p2a: Feraligatr|spe|1",
+    "|-heal|p1a: Fezandipiti|175/278|[from] item: Leftovers",
     "|upkeep",
     "|turn|22",
-    "|move|p1a: Leafeon|Leaf Blade|p2a: Cresselia",
-    "|-damage|p2a: Cresselia|0 fnt",
-    "|faint|p2a: Cresselia",
-    "|-damage|p1a: Leafeon|160/258|[from] item: Life Orb",
+    "|move|p2a: Feraligatr|Liquidation|p1a: Fezandipiti",
+    "|-damage|p1a: Fezandipiti|18/278",
+    "|move|p1a: Fezandipiti|Gunk Shot|p2a: Feraligatr",
+    "|-crit|p2a: Feraligatr",
+    "|-damage|p2a: Feraligatr|0 fnt",
+    "|faint|p2a: Feraligatr",
+    "|-heal|p1a: Fezandipiti|35/278|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p2a: Electrode|Electrode, L92|260/260",
+    "|switch|p2a: Iron Crown|Iron Crown, L78|268/268",
     "|turn|23",
-    "|move|p2a: Electrode|Taunt|p1a: Leafeon",
-    "|-start|p1a: Leafeon|move: Taunt",
-    "|cant|p1a: Leafeon|move: Taunt|Synthesis",
+    "|move|p1a: Fezandipiti|Gunk Shot|p2a: Iron Crown",
+    "|-immune|p2a: Iron Crown",
+    "|move|p2a: Iron Crown|Volt Switch|p1a: Fezandipiti",
+    "|-damage|p1a: Fezandipiti|0 fnt",
+    "|faint|p1a: Fezandipiti",
+    "|-end|p2a: Iron Crown|Quark Drive|[silent]",
+    "|switch|p2a: Chimecho|Chimecho, L93, M|290/290|[from] Volt Switch",
     "|upkeep",
+    "|switch|p1a: Glalie|Glalie, L96, M|309/309",
     "|turn|24",
-    "|move|p2a: Electrode|Thunderbolt|p1a: Leafeon",
-    "|-resisted|p1a: Leafeon",
-    "|-damage|p1a: Leafeon|106/258",
-    "|move|p1a: Leafeon|Leaf Blade|p2a: Electrode",
-    "|-damage|p2a: Electrode|0 fnt",
-    "|-damage|p1a: Leafeon|42/258|[from] ability: Aftermath|[of] p2a: Electrode",
-    "|faint|p2a: Electrode",
-    "|-damage|p1a: Leafeon|17/258|[from] item: Life Orb",
+    "|move|p1a: Glalie|Earthquake|p2a: Chimecho",
+    "|-immune|p2a: Chimecho|[from] ability: Levitate",
+    "|move|p2a: Chimecho|Dazzling Gleam|p1a: Glalie",
+    "|-damage|p1a: Glalie|244/309",
     "|upkeep",
-    "|switch|p2a: Kommo-o|Kommo-o, L78, F|245/245",
     "|turn|25",
-    "|move|p1a: Leafeon|Leaf Blade|p2a: Kommo-o",
-    "|-resisted|p2a: Kommo-o",
-    "|-damage|p2a: Kommo-o|0 fnt",
-    "|faint|p2a: Kommo-o",
-    "|-damage|p1a: Leafeon|0 fnt|[from] item: Life Orb",
-    "|faint|p1a: Leafeon",
+    "|move|p1a: Glalie|Spikes|p2a: Chimecho",
+    "|-sidestart|p2: Player 2|Spikes",
+    "|move|p2a: Chimecho|Dazzling Gleam|p1a: Glalie",
+    "|-damage|p1a: Glalie|176/309",
     "|upkeep",
-    "|switch|p1a: Lilligant|Lilligant-Hisui, L79, F|240/240",
-    "|switch|p2a: Eiscue|Eiscue, L88, M|274/274",
     "|turn|26",
-    "|move|p1a: Lilligant|Sleep Powder|p2a: Eiscue|[miss]",
-    "|-miss|p1a: Lilligant|p2a: Eiscue",
-    "|move|p2a: Eiscue|Liquidation|p1a: Lilligant",
-    "|-resisted|p1a: Lilligant",
-    "|-damage|p1a: Lilligant|205/240",
-    "|-unboost|p1a: Lilligant|def|1",
+    "|move|p1a: Glalie|Earthquake|p2a: Chimecho",
+    "|-immune|p2a: Chimecho|[from] ability: Levitate",
+    "|move|p2a: Chimecho|Dazzling Gleam|p1a: Glalie",
+    "|-damage|p1a: Glalie|110/309",
     "|upkeep",
     "|turn|27",
-    "|move|p1a: Lilligant|Close Combat|p2a: Eiscue",
-    "|-activate|p2a: Eiscue|ability: Ice Face",
-    "|-damage|p2a: Eiscue|274/274",
-    "|-unboost|p1a: Lilligant|def|1",
-    "|-unboost|p1a: Lilligant|spd|1",
-    "|-damage|p1a: Lilligant|181/240|[from] item: Life Orb",
-    "|move|p2a: Eiscue|Zen Headbutt|p1a: Lilligant",
-    "|-supereffective|p1a: Lilligant",
-    "|-damage|p1a: Lilligant|0 fnt",
-    "|faint|p1a: Lilligant",
+    "|move|p1a: Glalie|Earthquake|p2a: Chimecho",
+    "|-immune|p2a: Chimecho|[from] ability: Levitate",
+    "|move|p2a: Chimecho|Calm Mind|p2a: Chimecho",
+    "|-boost|p2a: Chimecho|spa|1",
+    "|-boost|p2a: Chimecho|spd|1",
     "|upkeep",
-    "|switch|p1a: Skuntank|Skuntank, L84, F|310/310",
     "|turn|28",
-    "|move|p2a: Eiscue|Ice Spinner|p1a: Skuntank",
-    "|-damage|p1a: Skuntank|214/310",
-    "|move|p1a: Skuntank|Gunk Shot|p2a: Eiscue",
-    "|-damage|p2a: Eiscue|91/274",
-    "|-enditem|p2a: Eiscue|Sitrus Berry|[eat]",
-    "|-heal|p2a: Eiscue|159/274|[from] item: Sitrus Berry",
-    "|-damage|p1a: Skuntank|183/310|[from] item: Life Orb",
+    "|move|p1a: Glalie|Freeze-Dry|p2a: Chimecho",
+    "|-damage|p2a: Chimecho|244/290",
+    "|move|p2a: Chimecho|Dazzling Gleam|p1a: Glalie",
+    "|-damage|p1a: Glalie|15/309",
+    "|-heal|p2a: Chimecho|262/290|[from] item: Leftovers",
     "|upkeep",
     "|turn|29",
-    "|move|p2a: Eiscue|Zen Headbutt|p1a: Skuntank",
-    "|-immune|p1a: Skuntank",
-    "|move|p1a: Skuntank|Knock Off|p2a: Eiscue",
-    "|-damage|p2a: Eiscue|62/274",
-    "|-damage|p1a: Skuntank|152/310|[from] item: Life Orb",
+    "|move|p1a: Glalie|Earthquake|p2a: Chimecho",
+    "|-immune|p2a: Chimecho|[from] ability: Levitate",
+    "|move|p2a: Chimecho|Calm Mind|p2a: Chimecho",
+    "|-boost|p2a: Chimecho|spa|1",
+    "|-boost|p2a: Chimecho|spd|1",
+    "|-heal|p2a: Chimecho|280/290|[from] item: Leftovers",
     "|upkeep",
     "|turn|30",
-    "|move|p1a: Skuntank|Sucker Punch|p2a: Eiscue",
-    "|-damage|p2a: Eiscue|0 fnt",
-    "|faint|p2a: Eiscue",
-    "|-damage|p1a: Skuntank|121/310|[from] item: Life Orb",
-    "|win|Player 1"
+    "|move|p1a: Glalie|Spikes|p2a: Chimecho",
+    "|-sidestart|p2: Player 2|Spikes",
+    "|move|p2a: Chimecho|Dazzling Gleam|p1a: Glalie",
+    "|-damage|p1a: Glalie|0 fnt",
+    "|faint|p1a: Glalie",
+    "|win|Player 2"
   ]
 }

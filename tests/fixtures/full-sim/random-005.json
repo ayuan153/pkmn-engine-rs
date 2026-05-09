@@ -11,14 +11,14 @@
   "p1": {
     "team": [
       {
-        "species": "Hariyama",
-        "ability": "Guts",
-        "item": "Flame Orb",
+        "species": "Toxicroak",
+        "ability": "Dry Skin",
+        "item": "Life Orb",
         "moves": [
-          "Fake Out",
-          "Knock Off",
-          "Close Combat",
-          "Facade"
+          "Swords Dance",
+          "Earthquake",
+          "Gunk Shot",
+          "Close Combat"
         ],
         "nature": "Hardy",
         "evs": {
@@ -37,23 +37,23 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 87,
-        "gender": "M"
+        "level": 84,
+        "gender": "F"
       },
       {
-        "species": "Lugia",
-        "ability": "Multiscale",
-        "item": "Heavy-Duty Boots",
+        "species": "Hatterene",
+        "ability": "Magic Bounce",
+        "item": "Assault Vest",
         "moves": [
-          "Psychic Noise",
-          "Recover",
-          "Calm Mind",
-          "Aeroblast"
+          "Nuzzle",
+          "Mystical Fire",
+          "Draining Kiss",
+          "Psychic"
         ],
         "nature": "Hardy",
         "evs": {
           "hp": 85,
-          "atk": 0,
+          "atk": 85,
           "def": 85,
           "spa": 85,
           "spd": 85,
@@ -61,23 +61,23 @@
         },
         "ivs": {
           "hp": 31,
-          "atk": 0,
+          "atk": 31,
           "def": 31,
           "spa": 31,
           "spd": 31,
           "spe": 31
         },
-        "level": 73,
-        "gender": "N"
+        "level": 85,
+        "gender": "F"
       },
       {
-        "species": "Iron Valiant",
-        "ability": "Quark Drive",
-        "item": "Life Orb",
+        "species": "Arceus-Rock",
+        "ability": "Multitype",
+        "item": "Stone Plate",
         "moves": [
-          "Spirit Break",
-          "Knock Off",
-          "Close Combat",
+          "Earthquake",
+          "Stone Edge",
+          "Recover",
           "Swords Dance"
         ],
         "nature": "Hardy",
@@ -97,172 +97,48 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 78,
+        "level": 74,
         "gender": "N"
       },
       {
-        "species": "Maushold",
-        "ability": "Technician",
-        "item": "Wide Lens",
-        "moves": [
-          "Population Bomb",
-          "Bite",
-          "Encore",
-          "Tidy Up"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 76,
-        "gender": "N"
-      },
-      {
-        "species": "Dusknoir",
-        "ability": "Frisk",
-        "item": "Leftovers",
-        "moves": [
-          "Will-O-Wisp",
-          "Earthquake",
-          "Poltergeist",
-          "Pain Split"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 89,
-        "gender": "M"
-      },
-      {
-        "species": "Dondozo",
-        "ability": "Unaware",
-        "item": "Leftovers",
+        "species": "Orthworm",
+        "ability": "Earth Eater",
+        "item": "Chesto Berry",
         "moves": [
           "Rest",
-          "Sleep Talk",
-          "Wave Crash",
-          "Curse"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 78,
-        "gender": "M"
-      }
-    ]
-  },
-  "p2": {
-    "team": [
-      {
-        "species": "Mamoswine",
-        "ability": "Thick Fat",
-        "item": "Choice Band",
-        "moves": [
-          "Knock Off",
-          "Earthquake",
-          "Icicle Crash",
-          "Ice Shard"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 81,
-        "gender": "F"
-      },
-      {
-        "species": "Ogerpon-Wellspring",
-        "ability": "Water Absorb",
-        "item": "Wellspring Mask",
-        "moves": [
-          "Horn Leech",
-          "Swords Dance",
-          "Play Rough",
-          "Ivy Cudgel"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 76,
-        "gender": "F"
-      },
-      {
-        "species": "Sandaconda",
-        "ability": "Shed Skin",
-        "item": "Loaded Dice",
-        "moves": [
-          "Rock Blast",
           "Coil",
+          "Body Press",
+          "Iron Tail"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 88,
+        "gender": "F"
+      },
+      {
+        "species": "Donphan",
+        "ability": "Sturdy",
+        "item": "Assault Vest",
+        "moves": [
+          "Ice Shard",
           "Earthquake",
-          "Scale Shot"
+          "Rapid Spin",
+          "Knock Off"
         ],
         "nature": "Hardy",
         "evs": {
@@ -285,19 +161,19 @@
         "gender": "M"
       },
       {
-        "species": "Chandelure",
-        "ability": "Flash Fire",
-        "item": "Choice Scarf",
+        "species": "Greedent",
+        "ability": "Cheek Pouch",
+        "item": "Sitrus Berry",
         "moves": [
-          "Shadow Ball",
-          "Trick",
-          "Fire Blast",
-          "Energy Ball"
+          "Double-Edge",
+          "Knock Off",
+          "Swords Dance",
+          "Earthquake"
         ],
         "nature": "Hardy",
         "evs": {
           "hp": 85,
-          "atk": 0,
+          "atk": 85,
           "def": 85,
           "spa": 85,
           "spd": 85,
@@ -305,29 +181,33 @@
         },
         "ivs": {
           "hp": 31,
-          "atk": 0,
+          "atk": 31,
           "def": 31,
           "spa": 31,
           "spd": 31,
           "spe": 31
         },
-        "level": 83,
+        "level": 86,
         "gender": "M"
-      },
+      }
+    ]
+  },
+  "p2": {
+    "team": [
       {
-        "species": "Clawitzer",
-        "ability": "Mega Launcher",
-        "item": "Choice Specs",
+        "species": "Magearna-Original",
+        "ability": "Soul-Heart",
+        "item": "Weakness Policy",
         "moves": [
-          "Water Pulse",
-          "Ice Beam",
-          "Aura Sphere",
-          "Dark Pulse"
+          "Iron Head",
+          "Shift Gear",
+          "Tera Blast",
+          "Fleur Cannon"
         ],
         "nature": "Hardy",
         "evs": {
           "hp": 85,
-          "atk": 0,
+          "atk": 85,
           "def": 85,
           "spa": 85,
           "spd": 85,
@@ -335,23 +215,83 @@
         },
         "ivs": {
           "hp": 31,
-          "atk": 0,
+          "atk": 31,
           "def": 31,
           "spa": 31,
           "spd": 31,
           "spe": 31
         },
-        "level": 87,
-        "gender": "M"
+        "level": 77,
+        "gender": "N"
       },
       {
-        "species": "Hitmontop",
-        "ability": "Technician",
+        "species": "Lycanroc",
+        "ability": "Sand Rush",
+        "item": "Choice Band",
+        "moves": [
+          "Accelerock",
+          "Crunch",
+          "Close Combat",
+          "Stone Edge"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 86,
+        "gender": "F"
+      },
+      {
+        "species": "Shaymin",
+        "ability": "Natural Cure",
         "item": "Leftovers",
         "moves": [
-          "Triple Axel",
-          "Bulk Up",
-          "Close Combat",
+          "Substitute",
+          "Leech Seed",
+          "Seed Flare",
+          "Air Slash"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 82,
+        "gender": "N"
+      },
+      {
+        "species": "Avalugg",
+        "ability": "Sturdy",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Avalanche",
+          "Recover",
+          "Body Press",
           "Rapid Spin"
         ],
         "nature": "Hardy",
@@ -373,6 +313,66 @@
         },
         "level": 88,
         "gender": "M"
+      },
+      {
+        "species": "Persian",
+        "ability": "Technician",
+        "item": "Silk Scarf",
+        "moves": [
+          "Fake Out",
+          "Knock Off",
+          "U-turn",
+          "Double-Edge"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 92,
+        "gender": "M"
+      },
+      {
+        "species": "Iron Valiant",
+        "ability": "Quark Drive",
+        "item": "Life Orb",
+        "moves": [
+          "Close Combat",
+          "Psychic",
+          "Moonblast",
+          "Calm Mind"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 78,
+        "gender": "N"
       }
     ]
   },
@@ -382,87 +382,31 @@
       "move 3"
     ],
     [
-      "move 4",
-      "move 3"
+      "move 3",
+      "move 2"
     ],
     [
       "move 3",
-      "move 3"
-    ],
-    [
-      "move 3",
-      "move 3"
-    ],
-    [
-      "move 1",
-      "move 3"
-    ],
-    [
-      "move 3",
-      "move 3"
+      "move 2"
     ],
     [
       "move 4",
       "move 3"
     ],
     [
-      "move 1",
-      "move 3"
-    ],
-    [
-      "move 2",
-      "move 3"
-    ],
-    [
-      "move 1",
-      "move 3"
-    ],
-    [
-      "move 4",
-      "move 3"
-    ],
-    [
-      "move 1",
-      "move 3"
-    ],
-    [
-      "move 3",
-      "move 3"
-    ],
-    [
-      "move 1",
+      "switch 2",
       "switch 4"
     ],
     [
-      "move 2",
-      "move 1"
-    ],
-    [
       "move 4",
       "move 1"
     ],
     [
-      "switch 4",
-      "move 1"
+      "move 3",
+      "move 2"
     ],
     [
       "move 4",
-      "move 1"
-    ],
-    [
-      "move 4",
-      "move 1"
-    ],
-    [
-      "move 2",
-      "move 1"
-    ],
-    [
-      "move 4",
-      "move 1"
-    ],
-    [
-      "move 2",
       "move 1"
     ],
     [
@@ -471,15 +415,39 @@
     ],
     [
       "move 1",
-      "switch 2"
+      "move 2"
     ],
     [
-      "move 3",
-      "switch 6"
+      "move 4",
+      "move 3"
     ],
     [
       "move 2",
-      "move 4"
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "switch 2"
+    ],
+    [
+      "switch 4",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 2"
     ],
     [
       "move 3",
@@ -487,314 +455,271 @@
     ],
     [
       "move 2",
-      "move 4"
-    ],
-    [
-      "move 1",
-      "move 4"
+      "move 2"
     ],
     [
       "move 3",
-      "move 4"
+      "move 2"
     ],
     [
-      "switch 3",
-      "move 4"
+      "move 2",
+      "move 2"
     ],
     [
-      "move 3",
-      "move 4"
+      "move 4",
+      "move 1"
     ],
     [
       "move 2",
       "switch 5"
     ],
     [
-      "switch 2",
-      "move 1"
-    ],
-    [
-      "move 4",
-      "move 4"
+      "move 3",
+      "switch 6"
     ],
     [
       "move 1",
-      "move 1"
+      "move 2"
+    ],
+    [
+      "move 4",
+      "switch 5"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "switch 5",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 3"
     ]
   ],
   "protocol": [
-    "|switch|p1a: Hariyama|Hariyama, L87, M|392/392",
-    "|switch|p2a: Mamoswine|Mamoswine, L81, F|311/311",
+    "|switch|p1a: Toxicroak|Toxicroak, L84, F|277/277",
+    "|switch|p2a: Magearna|Magearna-Original, L77|250/250",
     "|turn|1",
-    "|move|p2a: Mamoswine|Icicle Crash|p1a: Hariyama|[miss]",
-    "|-miss|p2a: Mamoswine|p1a: Hariyama",
-    "|move|p1a: Hariyama|Facade|p2a: Mamoswine",
-    "|-damage|p2a: Mamoswine|241/311",
-    "|-status|p1a: Hariyama|brn|[from] item: Flame Orb",
+    "|move|p1a: Toxicroak|Close Combat|p2a: Magearna",
+    "|-damage|p2a: Magearna|86/250",
+    "|-unboost|p1a: Toxicroak|def|1",
+    "|-unboost|p1a: Toxicroak|spd|1",
+    "|-damage|p1a: Toxicroak|250/277|[from] item: Life Orb",
+    "|move|p2a: Magearna|Tera Blast|p1a: Toxicroak",
+    "|-damage|p1a: Toxicroak|138/277",
     "|upkeep",
     "|turn|2",
-    "|move|p2a: Mamoswine|Icicle Crash|p1a: Hariyama",
-    "|-damage|p1a: Hariyama|191/392 brn",
-    "|cant|p1a: Hariyama|flinch",
-    "|-damage|p1a: Hariyama|167/392 brn|[from] brn",
+    "|move|p1a: Toxicroak|Gunk Shot|p2a: Magearna",
+    "|-immune|p2a: Magearna",
+    "|move|p2a: Magearna|Shift Gear|p2a: Magearna",
+    "|-boost|p2a: Magearna|spe|2",
+    "|-boost|p2a: Magearna|atk|1",
     "|upkeep",
     "|turn|3",
-    "|move|p2a: Mamoswine|Icicle Crash|p1a: Hariyama",
-    "|-damage|p1a: Hariyama|0 fnt",
-    "|faint|p1a: Hariyama",
+    "|move|p2a: Magearna|Shift Gear|p2a: Magearna",
+    "|-boost|p2a: Magearna|spe|2",
+    "|-boost|p2a: Magearna|atk|1",
+    "|move|p1a: Toxicroak|Gunk Shot|p2a: Magearna",
+    "|-immune|p2a: Magearna",
     "|upkeep",
-    "|switch|p1a: Dondozo|Dondozo, L78, M|362/362",
     "|turn|4",
-    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo|[miss]",
-    "|-miss|p2a: Mamoswine|p1a: Dondozo",
-    "|move|p1a: Dondozo|Wave Crash|p2a: Mamoswine",
-    "|-supereffective|p2a: Mamoswine",
-    "|-damage|p2a: Mamoswine|7/311",
-    "|-damage|p1a: Dondozo|285/362|[from] Recoil",
-    "|-heal|p1a: Dondozo|307/362|[from] item: Leftovers",
+    "|move|p2a: Magearna|Tera Blast|p1a: Toxicroak",
+    "|-damage|p1a: Toxicroak|20/277",
+    "|move|p1a: Toxicroak|Close Combat|p2a: Magearna",
+    "|-damage|p2a: Magearna|0 fnt",
+    "|-unboost|p1a: Toxicroak|def|1",
+    "|-unboost|p1a: Toxicroak|spd|1",
+    "|faint|p2a: Magearna",
+    "|-damage|p1a: Toxicroak|0 fnt|[from] item: Life Orb",
+    "|faint|p1a: Toxicroak",
     "|upkeep",
+    "|switch|p1a: Hatterene|Hatterene, L85, F|236/236",
+    "|switch|p2a: Avalugg|Avalugg, L88, M|310/310",
     "|turn|5",
-    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
-    "|-resisted|p1a: Dondozo",
-    "|-damage|p1a: Dondozo|238/362",
-    "|move|p1a: Dondozo|Rest|p1a: Dondozo",
-    "|-status|p1a: Dondozo|slp|[from] move: Rest",
-    "|-heal|p1a: Dondozo|362/362 slp|[silent]",
+    "|move|p1a: Hatterene|Psychic|p2a: Avalugg",
+    "|-damage|p2a: Avalugg|118/310",
+    "|move|p2a: Avalugg|Avalanche|p1a: Hatterene",
+    "|-damage|p1a: Hatterene|80/236",
     "|upkeep",
     "|turn|6",
-    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
-    "|-resisted|p1a: Dondozo",
-    "|-damage|p1a: Dondozo|296/362 slp",
-    "|cant|p1a: Dondozo|slp",
-    "|-heal|p1a: Dondozo|318/362 slp|[from] item: Leftovers",
+    "|move|p2a: Avalugg|Recover|p2a: Avalugg",
+    "|-heal|p2a: Avalugg|273/310",
+    "|move|p1a: Hatterene|Draining Kiss|p2a: Avalugg",
+    "|-damage|p2a: Avalugg|171/310",
+    "|-heal|p1a: Hatterene|157/236|[from] drain|[of] p2a: Avalugg",
     "|upkeep",
     "|turn|7",
-    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
-    "|-resisted|p1a: Dondozo",
-    "|-damage|p1a: Dondozo|245/362 slp",
-    "|cant|p1a: Dondozo|slp",
-    "|-heal|p1a: Dondozo|267/362 slp|[from] item: Leftovers",
+    "|move|p1a: Hatterene|Psychic|p2a: Avalugg",
+    "|-damage|p2a: Avalugg|0 fnt",
+    "|faint|p2a: Avalugg",
     "|upkeep",
+    "|switch|p2a: Shaymin|Shaymin, L82|298/298",
     "|turn|8",
-    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
-    "|-resisted|p1a: Dondozo",
-    "|-damage|p1a: Dondozo|196/362 slp",
-    "|-curestatus|p1a: Dondozo|slp|[msg]",
-    "|move|p1a: Dondozo|Rest|p1a: Dondozo",
-    "|-status|p1a: Dondozo|slp|[from] move: Rest",
-    "|-heal|p1a: Dondozo|362/362 slp|[silent]",
+    "|move|p2a: Shaymin|Leech Seed|p1a: Hatterene",
+    "|move|p1a: Hatterene|Leech Seed|p2a: Shaymin|[from] ability: Magic Bounce",
+    "|-immune|p2a: Shaymin",
+    "|move|p1a: Hatterene|Nuzzle|p2a: Shaymin",
+    "|-resisted|p2a: Shaymin",
+    "|-damage|p2a: Shaymin|292/298",
+    "|-status|p2a: Shaymin|par",
+    "|-heal|p2a: Shaymin|298/298 par|[from] item: Leftovers",
     "|upkeep",
     "|turn|9",
-    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
-    "|-resisted|p1a: Dondozo",
-    "|-crit|p1a: Dondozo",
-    "|-damage|p1a: Dondozo|257/362 slp",
-    "|cant|p1a: Dondozo|slp",
-    "|cant|p1a: Dondozo|flinch",
-    "|-heal|p1a: Dondozo|279/362 slp|[from] item: Leftovers",
+    "|move|p2a: Shaymin|Seed Flare|p1a: Hatterene",
+    "|-damage|p1a: Hatterene|78/236",
+    "|move|p1a: Hatterene|Nuzzle|p2a: Shaymin",
+    "|-resisted|p2a: Shaymin",
+    "|-damage|p2a: Shaymin|292/298 par",
+    "|-heal|p2a: Shaymin|298/298 par|[from] item: Leftovers",
     "|upkeep",
     "|turn|10",
-    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
-    "|-resisted|p1a: Dondozo",
-    "|-damage|p1a: Dondozo|210/362 slp",
-    "|cant|p1a: Dondozo|slp",
-    "|-heal|p1a: Dondozo|232/362 slp|[from] item: Leftovers",
+    "|move|p2a: Shaymin|Substitute|p2a: Shaymin",
+    "|-start|p2a: Shaymin|Substitute",
+    "|-damage|p2a: Shaymin|224/298 par",
+    "|move|p1a: Hatterene|Psychic|p2a: Shaymin",
+    "|-end|p2a: Shaymin|Substitute",
+    "|-heal|p2a: Shaymin|242/298 par|[from] item: Leftovers",
     "|upkeep",
     "|turn|11",
-    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
-    "|-resisted|p1a: Dondozo",
-    "|-damage|p1a: Dondozo|157/362 slp",
-    "|-curestatus|p1a: Dondozo|slp|[msg]",
-    "|move|p1a: Dondozo|Curse|p1a: Dondozo",
-    "|-unboost|p1a: Dondozo|spe|1",
-    "|-boost|p1a: Dondozo|atk|1",
-    "|-boost|p1a: Dondozo|def|1",
-    "|-heal|p1a: Dondozo|179/362|[from] item: Leftovers",
+    "|move|p2a: Shaymin|Leech Seed|p1a: Hatterene",
+    "|move|p1a: Hatterene|Leech Seed|p2a: Shaymin|[from] ability: Magic Bounce",
+    "|-immune|p2a: Shaymin",
+    "|move|p1a: Hatterene|Mystical Fire|p2a: Shaymin",
+    "|-supereffective|p2a: Shaymin",
+    "|-damage|p2a: Shaymin|112/298 par",
+    "|-unboost|p2a: Shaymin|spa|1",
+    "|-heal|p2a: Shaymin|130/298 par|[from] item: Leftovers",
     "|upkeep",
     "|turn|12",
-    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo",
-    "|-resisted|p1a: Dondozo",
-    "|-damage|p1a: Dondozo|134/362",
-    "|cant|p1a: Dondozo|flinch",
-    "|-heal|p1a: Dondozo|156/362|[from] item: Leftovers",
+    "|move|p2a: Shaymin|Seed Flare|p1a: Hatterene|[miss]",
+    "|-miss|p2a: Shaymin|p1a: Hatterene",
+    "|move|p1a: Hatterene|Draining Kiss|p2a: Shaymin",
+    "|-damage|p2a: Shaymin|61/298 par",
+    "|-heal|p1a: Hatterene|130/236|[from] drain|[of] p2a: Shaymin",
+    "|-heal|p2a: Shaymin|79/298 par|[from] item: Leftovers",
     "|upkeep",
     "|turn|13",
-    "|move|p2a: Mamoswine|Icicle Crash|p1a: Dondozo|[miss]",
-    "|-miss|p2a: Mamoswine|p1a: Dondozo",
-    "|move|p1a: Dondozo|Wave Crash|p2a: Mamoswine",
-    "|-supereffective|p2a: Mamoswine",
-    "|-damage|p2a: Mamoswine|0 fnt",
-    "|faint|p2a: Mamoswine",
-    "|-damage|p1a: Dondozo|154/362|[from] Recoil",
-    "|-heal|p1a: Dondozo|176/362|[from] item: Leftovers",
+    "|move|p2a: Shaymin|Seed Flare|p1a: Hatterene",
+    "|-damage|p1a: Hatterene|82/236",
+    "|move|p1a: Hatterene|Nuzzle|p2a: Shaymin",
+    "|-resisted|p2a: Shaymin",
+    "|-damage|p2a: Shaymin|72/298 par",
+    "|-heal|p2a: Shaymin|90/298 par|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p2a: Chandelure|Chandelure, L83, M|235/235",
     "|turn|14",
-    "|move|p2a: Chandelure|Shadow Ball|p1a: Dondozo",
-    "|-damage|p1a: Dondozo|11/362",
-    "|move|p1a: Dondozo|Rest|p1a: Dondozo",
-    "|-status|p1a: Dondozo|slp|[from] move: Rest",
-    "|-heal|p1a: Dondozo|362/362 slp|[silent]",
+    "|move|p2a: Shaymin|Leech Seed|p1a: Hatterene",
+    "|move|p1a: Hatterene|Leech Seed|p2a: Shaymin|[from] ability: Magic Bounce",
+    "|-immune|p2a: Shaymin",
+    "|move|p1a: Hatterene|Mystical Fire|p2a: Shaymin",
+    "|-supereffective|p2a: Shaymin",
+    "|-damage|p2a: Shaymin|0 fnt",
+    "|faint|p2a: Shaymin",
     "|upkeep",
+    "|switch|p2a: Lycanroc|Lycanroc, L86, F|269/269",
     "|turn|15",
-    "|move|p2a: Chandelure|Shadow Ball|p1a: Dondozo",
-    "|-damage|p1a: Dondozo|211/362 slp",
-    "|-unboost|p1a: Dondozo|spd|1",
-    "|cant|p1a: Dondozo|slp",
-    "|move|p1a: Dondozo|Sleep Talk|p1a: Dondozo",
-    "|move|p1a: Dondozo|Rest||[from] move: Sleep Talk|[still]",
-    "|-fail|p1a: Dondozo",
-    "|-heal|p1a: Dondozo|233/362 slp|[from] item: Leftovers",
+    "|move|p2a: Lycanroc|Crunch|p1a: Hatterene",
+    "|-damage|p1a: Hatterene|0 fnt",
+    "|faint|p1a: Hatterene",
     "|upkeep",
+    "|switch|p1a: Orthworm|Orthworm, L88, F|266/266",
     "|turn|16",
-    "|move|p2a: Chandelure|Shadow Ball|p1a: Dondozo",
-    "|-damage|p1a: Dondozo|0 fnt",
-    "|faint|p1a: Dondozo",
+    "|move|p2a: Lycanroc|Crunch|p1a: Orthworm",
+    "|-damage|p1a: Orthworm|200/266",
+    "|-unboost|p1a: Orthworm|def|1",
+    "|move|p1a: Orthworm|Rest|p1a: Orthworm",
+    "|-status|p1a: Orthworm|slp|[from] move: Rest",
+    "|-heal|p1a: Orthworm|266/266 slp|[silent]",
+    "|-enditem|p1a: Orthworm|Chesto Berry|[eat]",
+    "|-curestatus|p1a: Orthworm|slp|[msg]",
     "|upkeep",
-    "|switch|p1a: Maushold|Maushold, L76|238/238",
     "|turn|17",
-    "|move|p2a: Chandelure|Shadow Ball|p1a: Maushold",
-    "|-immune|p1a: Maushold",
-    "|move|p1a: Maushold|Tidy Up|p1a: Maushold",
-    "|-boost|p1a: Maushold|atk|1",
-    "|-boost|p1a: Maushold|spe|1",
+    "|move|p2a: Lycanroc|Crunch|p1a: Orthworm",
+    "|-damage|p1a: Orthworm|175/266",
+    "|move|p1a: Orthworm|Body Press|p2a: Lycanroc",
+    "|-supereffective|p2a: Lycanroc",
+    "|-damage|p2a: Lycanroc|123/269",
     "|upkeep",
     "|turn|18",
-    "|move|p1a: Maushold|Tidy Up|p1a: Maushold",
-    "|-boost|p1a: Maushold|atk|1",
-    "|-boost|p1a: Maushold|spe|1",
-    "|move|p2a: Chandelure|Shadow Ball|p1a: Maushold",
-    "|-immune|p1a: Maushold",
+    "|move|p2a: Lycanroc|Crunch|p1a: Orthworm",
+    "|-crit|p1a: Orthworm",
+    "|-damage|p1a: Orthworm|21/266",
+    "|-unboost|p1a: Orthworm|def|1",
+    "|move|p1a: Orthworm|Coil|p1a: Orthworm",
+    "|-boost|p1a: Orthworm|atk|1",
+    "|-boost|p1a: Orthworm|def|1",
+    "|-boost|p1a: Orthworm|accuracy|1",
     "|upkeep",
     "|turn|19",
-    "|move|p1a: Maushold|Bite|p2a: Chandelure",
-    "|-supereffective|p2a: Chandelure",
-    "|-damage|p2a: Chandelure|59/235",
-    "|move|p2a: Chandelure|Shadow Ball|p1a: Maushold",
-    "|-immune|p1a: Maushold",
+    "|move|p2a: Lycanroc|Crunch|p1a: Orthworm",
+    "|-damage|p1a: Orthworm|0 fnt",
+    "|faint|p1a: Orthworm",
     "|upkeep",
+    "|switch|p1a: Greedent|Greedent, L86, M|347/347",
     "|turn|20",
-    "|move|p1a: Maushold|Tidy Up|p1a: Maushold",
-    "|-boost|p1a: Maushold|atk|1",
-    "|-boost|p1a: Maushold|spe|1",
-    "|move|p2a: Chandelure|Shadow Ball|p1a: Maushold",
-    "|-immune|p1a: Maushold",
+    "|move|p2a: Lycanroc|Crunch|p1a: Greedent",
+    "|-damage|p1a: Greedent|256/347",
+    "|move|p1a: Greedent|Knock Off|p2a: Lycanroc",
+    "|-damage|p2a: Lycanroc|36/269",
+    "|-enditem|p2a: Lycanroc|Choice Band|[from] move: Knock Off|[of] p1a: Greedent",
     "|upkeep",
     "|turn|21",
-    "|move|p1a: Maushold|Bite|p2a: Chandelure",
-    "|-supereffective|p2a: Chandelure",
-    "|-damage|p2a: Chandelure|0 fnt",
-    "|faint|p2a: Chandelure",
+    "|move|p2a: Lycanroc|Accelerock|p1a: Greedent",
+    "|-damage|p1a: Greedent|213/347",
+    "|move|p1a: Greedent|Earthquake|p2a: Lycanroc",
+    "|-supereffective|p2a: Lycanroc",
+    "|-damage|p2a: Lycanroc|0 fnt",
+    "|faint|p2a: Lycanroc",
     "|upkeep",
-    "|switch|p2a: Sandaconda|Sandaconda, L84, M|258/258",
+    "|switch|p2a: Persian|Persian, L92, M|269/269",
     "|turn|22",
-    "|move|p1a: Maushold|Population Bomb|p2a: Sandaconda",
-    "|-damage|p2a: Sandaconda|216/258",
-    "|-damage|p2a: Sandaconda|173/258",
-    "|-damage|p2a: Sandaconda|128/258",
-    "|-crit|p2a: Sandaconda",
-    "|-damage|p2a: Sandaconda|62/258",
-    "|-damage|p2a: Sandaconda|20/258",
-    "|-damage|p2a: Sandaconda|0 fnt",
-    "|faint|p2a: Sandaconda",
-    "|-hitcount|p2: Sandaconda|6",
+    "|move|p2a: Persian|U-turn|p1a: Greedent",
+    "|-damage|p1a: Greedent|172/347",
+    "|-enditem|p1a: Greedent|Sitrus Berry|[eat]",
+    "|-heal|p1a: Greedent|258/347|[from] item: Sitrus Berry",
+    "|-heal|p1a: Greedent|347/347|[from] ability: Cheek Pouch",
+    "|switch|p2a: Iron Valiant|Iron Valiant, L78|244/244|[from] U-turn",
+    "|move|p1a: Greedent|Knock Off|p2a: Iron Valiant",
+    "|-resisted|p2a: Iron Valiant",
+    "|-damage|p2a: Iron Valiant|226/244",
+    "|-enditem|p2a: Iron Valiant|Life Orb|[from] move: Knock Off|[of] p1a: Greedent",
     "|upkeep",
-    "|switch|p2a: Ogerpon|Ogerpon-Wellspring, L76, F|247/247",
     "|turn|23",
-    "|move|p1a: Maushold|Population Bomb|p2a: Ogerpon",
-    "|-damage|p2a: Ogerpon|189/247",
-    "|-damage|p2a: Ogerpon|126/247",
-    "|-damage|p2a: Ogerpon|68/247",
-    "|-damage|p2a: Ogerpon|4/247",
-    "|-damage|p2a: Ogerpon|0 fnt",
-    "|faint|p2a: Ogerpon",
-    "|-hitcount|p2: Ogerpon|5",
+    "|move|p2a: Iron Valiant|Psychic|p1a: Greedent",
+    "|-damage|p1a: Greedent|268/347",
+    "|move|p1a: Greedent|Swords Dance|p1a: Greedent",
+    "|-boost|p1a: Greedent|atk|2",
     "|upkeep",
-    "|switch|p2a: Hitmontop|Hitmontop, L88, M|231/231",
     "|turn|24",
-    "|move|p1a: Maushold|Encore||[still]",
-    "|-fail|p1a: Maushold",
-    "|move|p2a: Hitmontop|Rapid Spin|p1a: Maushold",
-    "|-damage|p1a: Maushold|161/238",
-    "|-boost|p2a: Hitmontop|spe|1",
+    "|move|p2a: Iron Valiant|Psychic|p1a: Greedent",
+    "|-damage|p1a: Greedent|200/347",
+    "|move|p1a: Greedent|Double-Edge|p2a: Iron Valiant",
+    "|-damage|p2a: Iron Valiant|0 fnt",
+    "|faint|p2a: Iron Valiant",
+    "|-end|p2a: Iron Valiant|Quark Drive|[silent]",
+    "|-damage|p1a: Greedent|125/347|[from] Recoil",
     "|upkeep",
+    "|switch|p2a: Persian|Persian, L92, M|269/269",
     "|turn|25",
-    "|move|p1a: Maushold|Bite|p2a: Hitmontop",
-    "|-resisted|p2a: Hitmontop",
-    "|-damage|p2a: Hitmontop|183/231",
-    "|cant|p2a: Hitmontop|flinch",
-    "|-heal|p2a: Hitmontop|197/231|[from] item: Leftovers",
+    "|move|p2a: Persian|Knock Off|p1a: Greedent",
+    "|-damage|p1a: Greedent|85/347",
+    "|move|p1a: Greedent|Earthquake|p2a: Persian",
+    "|-damage|p2a: Persian|87/269",
     "|upkeep",
     "|turn|26",
-    "|move|p1a: Maushold|Encore|p2a: Hitmontop",
-    "|-start|p2a: Hitmontop|Encore",
-    "|move|p2a: Hitmontop|Rapid Spin|p1a: Maushold",
-    "|-damage|p1a: Maushold|88/238",
-    "|-boost|p2a: Hitmontop|spe|1",
-    "|-heal|p2a: Hitmontop|211/231|[from] item: Leftovers",
+    "|move|p2a: Persian|Double-Edge|p1a: Greedent",
+    "|-damage|p1a: Greedent|0 fnt",
+    "|faint|p1a: Greedent",
+    "|-damage|p2a: Persian|59/269|[from] Recoil",
     "|upkeep",
+    "|switch|p1a: Donphan|Donphan, L84, M|288/288",
     "|turn|27",
-    "|move|p1a: Maushold|Bite|p2a: Hitmontop",
-    "|-resisted|p2a: Hitmontop",
-    "|-damage|p2a: Hitmontop|162/231",
-    "|cant|p2a: Hitmontop|flinch",
-    "|-heal|p2a: Hitmontop|176/231|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|28",
-    "|move|p1a: Maushold|Population Bomb|p2a: Hitmontop",
-    "|-damage|p2a: Hitmontop|130/231",
-    "|-hitcount|p2a: Hitmontop|1",
-    "|move|p2a: Hitmontop|Rapid Spin|p1a: Maushold",
-    "|-damage|p1a: Maushold|15/238",
-    "|-boost|p2a: Hitmontop|spe|1",
-    "|-heal|p2a: Hitmontop|144/231|[from] item: Leftovers",
-    "|-end|p2a: Hitmontop|Encore",
-    "|upkeep",
-    "|turn|29",
-    "|move|p1a: Maushold|Encore|p2a: Hitmontop",
-    "|-start|p2a: Hitmontop|Encore",
-    "|move|p2a: Hitmontop|Rapid Spin|p1a: Maushold",
-    "|-damage|p1a: Maushold|0 fnt",
-    "|-boost|p2a: Hitmontop|spe|1",
-    "|faint|p1a: Maushold",
-    "|-heal|p2a: Hitmontop|158/231|[from] item: Leftovers",
-    "|upkeep",
-    "|switch|p1a: Iron Valiant|Iron Valiant, L78|244/244",
-    "|turn|30",
-    "|move|p2a: Hitmontop|Rapid Spin|p1a: Iron Valiant",
-    "|-damage|p1a: Iron Valiant|180/244",
-    "|-boost|p2a: Hitmontop|spe|1",
-    "|move|p1a: Iron Valiant|Close Combat|p2a: Hitmontop",
-    "|-damage|p2a: Hitmontop|0 fnt",
-    "|-unboost|p1a: Iron Valiant|def|1",
-    "|-unboost|p1a: Iron Valiant|spd|1",
-    "|faint|p2a: Hitmontop",
-    "|-damage|p1a: Iron Valiant|156/244|[from] item: Life Orb",
-    "|upkeep",
-    "|switch|p2a: Clawitzer|Clawitzer, L87, M|265/265",
-    "|turn|31",
-    "|move|p1a: Iron Valiant|Knock Off|p2a: Clawitzer",
-    "|-damage|p2a: Clawitzer|173/265",
-    "|-enditem|p2a: Clawitzer|Choice Specs|[from] move: Knock Off|[of] p1a: Iron Valiant",
-    "|-damage|p1a: Iron Valiant|132/244|[from] item: Life Orb",
-    "|move|p2a: Clawitzer|Water Pulse|p1a: Iron Valiant",
-    "|-damage|p1a: Iron Valiant|0 fnt",
-    "|faint|p1a: Iron Valiant",
-    "|-end|p1a: Iron Valiant|Quark Drive|[silent]",
-    "|upkeep",
-    "|switch|p1a: Lugia|Lugia, L73|275/275",
-    "|turn|32",
-    "|move|p1a: Lugia|Aeroblast|p2a: Clawitzer",
-    "|-crit|p2a: Clawitzer",
-    "|-damage|p2a: Clawitzer|59/265",
-    "|move|p2a: Clawitzer|Dark Pulse|p1a: Lugia",
-    "|-supereffective|p1a: Lugia",
-    "|-damage|p1a: Lugia|196/275",
-    "|upkeep",
-    "|turn|33",
-    "|move|p1a: Lugia|Psychic Noise|p2a: Clawitzer",
-    "|-damage|p2a: Clawitzer|0 fnt",
-    "|faint|p2a: Clawitzer",
+    "|move|p2a: Persian|U-turn|p1a: Donphan",
+    "|-damage|p1a: Donphan|253/288",
+    "|move|p1a: Donphan|Earthquake|p2a: Persian",
+    "|-damage|p2a: Persian|0 fnt",
+    "|faint|p2a: Persian",
     "|win|Player 1"
   ]
 }

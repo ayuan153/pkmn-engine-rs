@@ -146,7 +146,7 @@ impl Battle {
 
         // Accuracy check (skip for multi-hit moves - they check per hit)
         let is_multi_hit = self.get_multi_hit_count(player, &move_data).is_some();
-        if !is_multi_hit && move_data.accuracy > 0 && !self.rand_check(move_data.accuracy) {
+        if !is_multi_hit && move_data.accuracy > 0 && move_data.accuracy < 100 && !self.rand_check(move_data.accuracy) {
             let atk_name = self.species_name(player);
             let def_name = self.species_name(defender_idx);
             self.emit(format!("|move|p{}a: {}|{}|p{}a: {}|[miss]", player+1, atk_name, move_data.name, defender_idx+1, def_name));
@@ -157,7 +157,7 @@ impl Battle {
         // Multi-hit moves: handle entirely before normal move announcement
         if is_multi_hit {
             // First hit accuracy check
-            if move_data.accuracy > 0 && !self.rand_check(move_data.accuracy) {
+            if move_data.accuracy > 0 && move_data.accuracy < 100 && !self.rand_check(move_data.accuracy) {
                 let atk_name = self.species_name(player);
                 let def_name = self.species_name(defender_idx);
                 self.emit(format!("|move|p{}a: {}|{}|p{}a: {}|[miss]", player+1, atk_name, move_data.name, defender_idx+1, def_name));

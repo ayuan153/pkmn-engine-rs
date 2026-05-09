@@ -11,14 +11,288 @@
   "p1": {
     "team": [
       {
-        "species": "Brambleghast",
-        "ability": "Wind Rider",
+        "species": "Dragapult",
+        "ability": "Clear Body",
+        "item": "Life Orb",
+        "moves": [
+          "Fire Blast",
+          "Dragon Dance",
+          "Tera Blast",
+          "Dragon Darts"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 77,
+        "gender": "M"
+      },
+      {
+        "species": "Chesnaught",
+        "ability": "Bulletproof",
         "item": "Leftovers",
         "moves": [
-          "Poltergeist",
-          "Substitute",
-          "Power Whip",
-          "Leech Seed"
+          "Body Press",
+          "Spikes",
+          "Synthesis",
+          "Wood Hammer"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "M"
+      },
+      {
+        "species": "Eternatus",
+        "ability": "Pressure",
+        "item": "Leftovers",
+        "moves": [
+          "Dynamax Cannon",
+          "Recover",
+          "Sludge Bomb",
+          "Fire Blast"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 69,
+        "gender": "N"
+      },
+      {
+        "species": "Crawdaunt",
+        "ability": "Adaptability",
+        "item": "Life Orb",
+        "moves": [
+          "Crabhammer",
+          "Knock Off",
+          "Dragon Dance",
+          "Aqua Jet"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "M"
+      },
+      {
+        "species": "Slaking",
+        "ability": "Truant",
+        "item": "Choice Band",
+        "moves": [
+          "Double-Edge",
+          "Earthquake",
+          "Giga Impact",
+          "Knock Off"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "F"
+      },
+      {
+        "species": "Toxicroak",
+        "ability": "Dry Skin",
+        "item": "Life Orb",
+        "moves": [
+          "Close Combat",
+          "Gunk Shot",
+          "Swords Dance",
+          "Sucker Punch"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "M"
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Serperior",
+        "ability": "Contrary",
+        "item": "Life Orb",
+        "moves": [
+          "Glare",
+          "Synthesis",
+          "Leaf Storm",
+          "Dragon Pulse"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "M"
+      },
+      {
+        "species": "Sandaconda",
+        "ability": "Shed Skin",
+        "item": "Loaded Dice",
+        "moves": [
+          "Scale Shot",
+          "Earthquake",
+          "Rock Blast",
+          "Coil"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "M"
+      },
+      {
+        "species": "Lugia",
+        "ability": "Multiscale",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Recover",
+          "Aeroblast",
+          "Psychic Noise",
+          "Calm Mind"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 73,
+        "gender": "N"
+      },
+      {
+        "species": "Hitmontop",
+        "ability": "Intimidate",
+        "item": "Assault Vest",
+        "moves": [
+          "Close Combat",
+          "Sucker Punch",
+          "Rapid Spin",
+          "Stone Edge"
         ],
         "nature": "Hardy",
         "evs": {
@@ -41,166 +315,12 @@
         "gender": "M"
       },
       {
-        "species": "Golduck",
-        "ability": "Cloud Nine",
-        "item": "Leftovers",
+        "species": "Houndoom",
+        "ability": "Flash Fire",
+        "item": "Heavy-Duty Boots",
         "moves": [
-          "Ice Beam",
-          "Nasty Plot",
-          "Grass Knot",
-          "Hydro Pump"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 90,
-        "gender": "M"
-      },
-      {
-        "species": "Scream Tail",
-        "ability": "Protosynthesis",
-        "item": "Leftovers",
-        "moves": [
-          "Dazzling Gleam",
-          "Protect",
-          "Thunder Wave",
-          "Wish"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 84,
-        "gender": "N"
-      },
-      {
-        "species": "Tinkaton",
-        "ability": "Mold Breaker",
-        "item": "Leftovers",
-        "moves": [
-          "Gigaton Hammer",
-          "Play Rough",
-          "Encore",
-          "Thunder Wave"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 82,
-        "gender": "F"
-      },
-      {
-        "species": "Groudon",
-        "ability": "Drought",
-        "item": "Leftovers",
-        "moves": [
-          "Heat Crash",
-          "Stone Edge",
-          "Swords Dance",
-          "Precipice Blades"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 72,
-        "gender": "N"
-      },
-      {
-        "species": "Dudunsparce-Three-Segment",
-        "ability": "Rattled",
-        "item": "Leftovers",
-        "moves": [
-          "Roost",
-          "Calm Mind",
-          "Earth Power",
-          "Boomburst"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 83,
-        "gender": "F"
-      }
-    ]
-  },
-  "p2": {
-    "team": [
-      {
-        "species": "Hydreigon",
-        "ability": "Levitate",
-        "item": "Choice Specs",
-        "moves": [
-          "Draco Meteor",
-          "U-turn",
+          "Sucker Punch",
+          "Sludge Bomb",
           "Dark Pulse",
           "Fire Blast"
         ],
@@ -221,143 +341,23 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 79,
-        "gender": "F"
-      },
-      {
-        "species": "Okidogi",
-        "ability": "Toxic Chain",
-        "item": "Assault Vest",
-        "moves": [
-          "Knock Off",
-          "Gunk Shot",
-          "High Horsepower",
-          "Drain Punch"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 77,
+        "level": 87,
         "gender": "M"
       },
       {
-        "species": "Necrozma-Dusk-Mane",
-        "ability": "Prism Armor",
-        "item": "Weakness Policy",
-        "moves": [
-          "Sunsteel Strike",
-          "Dragon Dance",
-          "Morning Sun",
-          "Earthquake"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 69,
-        "gender": "N"
-      },
-      {
-        "species": "Hydrapple",
-        "ability": "Regenerator",
-        "item": "Assault Vest",
-        "moves": [
-          "Fickle Beam",
-          "Giga Drain",
-          "Dragon Tail",
-          "Earth Power"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 83,
-        "gender": "F"
-      },
-      {
-        "species": "Terapagos",
-        "ability": "Tera Shift",
-        "item": "Heavy-Duty Boots",
-        "moves": [
-          "Rapid Spin",
-          "Tera Starstorm",
-          "Earth Power",
-          "Calm Mind"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 77,
-        "gender": "F"
-      },
-      {
-        "species": "Iron Leaves",
-        "ability": "Quark Drive",
+        "species": "Indeedee-F",
+        "ability": "Psychic Surge",
         "item": "Life Orb",
         "moves": [
-          "Leaf Blade",
-          "Psyblade",
-          "Close Combat",
-          "Swords Dance"
+          "Psyshock",
+          "Hyper Voice",
+          "Calm Mind",
+          "Dazzling Gleam"
         ],
         "nature": "Hardy",
         "evs": {
           "hp": 85,
-          "atk": 85,
+          "atk": 0,
           "def": 85,
           "spa": 85,
           "spd": 85,
@@ -365,850 +365,326 @@
         },
         "ivs": {
           "hp": 31,
-          "atk": 31,
+          "atk": 0,
           "def": 31,
           "spa": 31,
           "spd": 31,
           "spe": 31
         },
-        "level": 80,
-        "gender": "N"
+        "level": 90,
+        "gender": "F"
       }
     ]
   },
   "choices": [
     [
-      "move 4",
+      "move 2",
       "move 2"
     ],
     [
       "move 2",
-      "switch 4"
+      "move 1"
     ],
     [
-      "move 2",
+      "move 4",
       "move 2"
     ],
     [
       "move 3",
-      "move 1"
-    ],
-    [
-      "move 4",
-      "move 4"
-    ],
-    [
-      "move 2",
-      "move 4"
-    ],
-    [
-      "move 1",
-      "move 3"
-    ],
-    [
-      "switch 3",
-      "move 1"
-    ],
-    [
-      "move 4",
-      "move 4"
-    ],
-    [
-      "move 1",
-      "move 2"
-    ],
-    [
-      "move 2",
-      "move 1"
-    ],
-    [
-      "move 4",
-      "move 3"
-    ],
-    [
-      "move 1",
-      "move 4"
-    ],
-    [
-      "move 1",
-      "move 1"
-    ],
-    [
-      "move 2",
-      "move 3"
-    ],
-    [
-      "move 1",
-      "move 3"
-    ],
-    [
-      "move 1",
       "switch 5"
     ],
     [
-      "move 3",
-      "move 3"
-    ],
-    [
-      "move 2",
-      "move 1"
-    ],
-    [
-      "move 3",
-      "move 1"
-    ],
-    [
-      "move 1",
-      "move 3"
-    ],
-    [
-      "move 1",
+      "switch 2",
       "move 3"
     ],
     [
       "move 3",
-      "move 2"
-    ],
-    [
-      "move 3",
-      "move 3"
-    ],
-    [
-      "move 3",
-      "move 1"
-    ],
-    [
-      "move 2",
-      "move 1"
-    ],
-    [
-      "move 4",
-      "move 1"
-    ],
-    [
-      "move 3",
-      "move 2"
-    ],
-    [
-      "move 2",
-      "move 3"
-    ],
-    [
-      "move 2",
-      "move 3"
-    ],
-    [
-      "move 3",
-      "move 1"
-    ],
-    [
-      "move 4",
-      "move 1"
-    ],
-    [
-      "move 4",
-      "move 1"
-    ],
-    [
-      "move 3",
-      "move 2"
-    ],
-    [
-      "move 2",
-      "move 4"
-    ],
-    [
-      "move 4",
-      "move 1"
-    ],
-    [
-      "move 2",
-      "move 4"
-    ],
-    [
-      "move 1",
-      "move 4"
-    ],
-    [
-      "move 3",
-      "move 3"
-    ],
-    [
-      "move 1",
-      "move 4"
-    ],
-    [
-      "move 2",
-      "move 3"
-    ],
-    [
-      "move 1",
-      "move 4"
-    ],
-    [
-      "move 2",
-      "move 1"
-    ],
-    [
-      "move 4",
-      "move 3"
-    ],
-    [
-      "move 4",
       "move 4"
     ],
     [
       "move 1",
       "move 1"
-    ],
-    [
-      "move 2",
-      "move 2"
-    ],
-    [
-      "move 4",
-      "move 2"
-    ],
-    [
-      "move 4",
-      "move 1"
-    ],
-    [
-      "move 4",
-      "move 4"
-    ],
-    [
-      "move 3",
-      "move 3"
-    ],
-    [
-      "switch 5",
-      "move 2"
-    ],
-    [
-      "move 4",
-      "move 4"
-    ],
-    [
-      "move 1",
-      "switch 2"
-    ],
-    [
-      "move 2",
-      "move 2"
-    ],
-    [
-      "move 4",
-      "move 2"
     ],
     [
       "move 1",
       "switch 6"
     ],
     [
-      "move 1",
-      "switch 3"
-    ],
-    [
       "move 4",
-      "move 2"
-    ],
-    [
-      "move 1",
       "move 3"
     ],
     [
-      "move 1",
-      "move 3"
-    ],
-    [
-      "switch 2",
+      "switch 5",
       "move 1"
     ],
     [
-      "move 3",
-      "move 4"
-    ],
-    [
-      "move 3",
-      "move 2"
-    ],
-    [
-      "move 4",
-      "move 2"
-    ],
-    [
-      "move 4",
-      "move 4"
-    ],
-    [
-      "move 4",
-      "move 2"
-    ],
-    [
-      "move 4",
-      "switch 1"
-    ],
-    [
-      "move 3",
+      "move 1",
       "move 3"
     ],
     [
-      "move 2",
-      "move 3"
+      "move 1",
+      "switch 2"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 4"
     ],
     [
       "switch 4",
-      "move 3"
-    ],
-    [
-      "move 3",
-      "move 3"
+      "move 1"
     ],
     [
       "move 4",
-      "move 3"
+      "move 2"
+    ],
+    [
+      "move 4",
+      "switch 3"
     ],
     [
       "move 2",
       "move 3"
+    ],
+    [
+      "move 4",
+      "switch 4"
+    ],
+    [
+      "switch 3",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 4"
     ]
   ],
   "protocol": [
-    "|switch|p1a: Brambleghast|Brambleghast, L88, M|240/240",
-    "|switch|p2a: Hydreigon|Hydreigon, L79, F|275/275",
+    "|switch|p1a: Dragapult|Dragapult, L77, M|262/262",
+    "|switch|p2a: Serperior|Serperior, L79, M|248/248",
     "|turn|1",
-    "|move|p1a: Brambleghast|Leech Seed|p2a: Hydreigon",
-    "|-start|p2a: Hydreigon|move: Leech Seed",
-    "|move|p2a: Hydreigon|U-turn|p1a: Brambleghast",
-    "|-damage|p1a: Brambleghast|188/240",
-    "|switch|p2a: Hydrapple|Hydrapple, L83, F|312/312|[from] U-turn",
-    "|-heal|p1a: Brambleghast|203/240|[from] item: Leftovers",
+    "|move|p1a: Dragapult|Dragon Dance|p1a: Dragapult",
+    "|-boost|p1a: Dragapult|atk|1",
+    "|-boost|p1a: Dragapult|spe|1",
+    "|move|p2a: Serperior|Synthesis|p2a: Serperior",
+    "|-fail|p2a: Serperior|heal",
     "|upkeep",
     "|turn|2",
-    "|move|p1a: Brambleghast|Substitute|p1a: Brambleghast",
-    "|-start|p1a: Brambleghast|Substitute",
-    "|-damage|p1a: Brambleghast|143/240",
-    "|move|p2a: Hydrapple|Giga Drain|p1a: Brambleghast",
-    "|-resisted|p1a: Brambleghast",
-    "|-activate|p1a: Brambleghast|move: Substitute|[damage]",
-    "|-heal|p1a: Brambleghast|158/240|[from] item: Leftovers",
+    "|move|p1a: Dragapult|Dragon Dance|p1a: Dragapult",
+    "|-boost|p1a: Dragapult|atk|1",
+    "|-boost|p1a: Dragapult|spe|1",
+    "|move|p2a: Serperior|Glare|p1a: Dragapult",
+    "|-status|p1a: Dragapult|par",
     "|upkeep",
     "|turn|3",
-    "|move|p1a: Brambleghast|Substitute|p1a: Brambleghast",
-    "|-fail|p1a: Brambleghast|move: Substitute",
-    "|move|p2a: Hydrapple|Fickle Beam|p1a: Brambleghast",
-    "|-end|p1a: Brambleghast|Substitute",
-    "|-heal|p1a: Brambleghast|173/240|[from] item: Leftovers",
+    "|move|p1a: Dragapult|Dragon Darts|p2a: Serperior",
+    "|-damage|p2a: Serperior|106/248",
+    "|-damage|p2a: Serperior|0 fnt",
+    "|faint|p2a: Serperior",
+    "|-damage|p1a: Dragapult|236/262 par|[from] item: Life Orb",
     "|upkeep",
+    "|switch|p2a: Houndoom|Houndoom, L87, M|272/272",
     "|turn|4",
-    "|move|p1a: Brambleghast|Power Whip|p2a: Hydrapple",
-    "|-resisted|p2a: Hydrapple",
-    "|-damage|p2a: Hydrapple|275/312",
-    "|move|p2a: Hydrapple|Earth Power|p1a: Brambleghast",
-    "|-resisted|p1a: Brambleghast",
-    "|-damage|p1a: Brambleghast|129/240",
-    "|-heal|p1a: Brambleghast|144/240|[from] item: Leftovers",
+    "|move|p1a: Dragapult|Tera Blast|p2a: Houndoom",
+    "|-damage|p2a: Houndoom|210/272",
+    "|-damage|p1a: Dragapult|210/262 par|[from] item: Life Orb",
+    "|move|p2a: Houndoom|Dark Pulse|p1a: Dragapult",
+    "|-supereffective|p1a: Dragapult",
+    "|-damage|p1a: Dragapult|0 fnt",
+    "|faint|p1a: Dragapult",
     "|upkeep",
+    "|switch|p1a: Chesnaught|Chesnaught, L84, M|285/285",
     "|turn|5",
-    "|move|p1a: Brambleghast|Leech Seed|p2a: Hydrapple",
-    "|-immune|p2a: Hydrapple",
-    "|move|p2a: Hydrapple|Earth Power|p1a: Brambleghast",
-    "|-resisted|p1a: Brambleghast",
-    "|-damage|p1a: Brambleghast|103/240",
-    "|-heal|p1a: Brambleghast|118/240|[from] item: Leftovers",
+    "|move|p2a: Houndoom|Fire Blast|p1a: Chesnaught",
+    "|-supereffective|p1a: Chesnaught",
+    "|-damage|p1a: Chesnaught|0 fnt",
+    "|faint|p1a: Chesnaught",
     "|upkeep",
+    "|switch|p1a: Toxicroak|Toxicroak, L84, M|277/277",
     "|turn|6",
-    "|move|p1a: Brambleghast|Substitute|p1a: Brambleghast",
-    "|-start|p1a: Brambleghast|Substitute",
-    "|-damage|p1a: Brambleghast|58/240",
-    "|move|p2a: Hydrapple|Dragon Tail|p1a: Brambleghast",
-    "|-end|p1a: Brambleghast|Substitute",
-    "|-heal|p1a: Brambleghast|73/240|[from] item: Leftovers",
+    "|move|p2a: Houndoom|Sucker Punch|p1a: Toxicroak",
+    "|-resisted|p1a: Toxicroak",
+    "|-damage|p1a: Toxicroak|230/277",
+    "|move|p1a: Toxicroak|Close Combat|p2a: Houndoom",
+    "|-supereffective|p2a: Houndoom",
+    "|-damage|p2a: Houndoom|0 fnt",
+    "|-unboost|p1a: Toxicroak|def|1",
+    "|-unboost|p1a: Toxicroak|spd|1",
+    "|faint|p2a: Houndoom",
+    "|-damage|p1a: Toxicroak|203/277|[from] item: Life Orb",
     "|upkeep",
+    "|switch|p2a: Indeedee|Indeedee-F, L90, F|272/272",
+    "|-fieldstart|move: Psychic Terrain|[from] ability: Psychic Surge|[of] p2a: Indeedee",
     "|turn|7",
-    "|move|p1a: Brambleghast|Poltergeist|p2a: Hydrapple|[miss]",
-    "|-miss|p1a: Brambleghast|p2a: Hydrapple",
-    "|move|p2a: Hydrapple|Fickle Beam|p1a: Brambleghast",
-    "|-damage|p1a: Brambleghast|0 fnt",
-    "|faint|p1a: Brambleghast",
+    "|move|p2a: Indeedee|Calm Mind|p2a: Indeedee",
+    "|-boost|p2a: Indeedee|spa|1",
+    "|-boost|p2a: Indeedee|spd|1",
+    "|move|p1a: Toxicroak|Close Combat|p2a: Indeedee",
+    "|-damage|p2a: Indeedee|72/272",
+    "|-unboost|p1a: Toxicroak|def|1",
+    "|-unboost|p1a: Toxicroak|spd|1",
+    "|-damage|p1a: Toxicroak|176/277|[from] item: Life Orb",
     "|upkeep",
-    "|switch|p1a: Scream Tail|Scream Tail, L84|330/330",
     "|turn|8",
-    "|move|p1a: Scream Tail|Wish|p1a: Scream Tail",
-    "|move|p2a: Hydrapple|Earth Power|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|272/330",
-    "|-heal|p1a: Scream Tail|292/330|[from] item: Leftovers",
+    "|move|p1a: Toxicroak|Sucker Punch|p2a: Indeedee",
+    "|-activate|p2a: Indeedee|move: Psychic Terrain",
+    "|move|p2a: Indeedee|Psyshock|p1a: Toxicroak",
+    "|-supereffective|p1a: Toxicroak",
+    "|-damage|p1a: Toxicroak|0 fnt",
+    "|faint|p1a: Toxicroak",
+    "|-damage|p2a: Indeedee|45/272|[from] item: Life Orb",
     "|upkeep",
+    "|switch|p1a: Slaking|Slaking, L84, F|389/389",
     "|turn|9",
-    "|move|p1a: Scream Tail|Dazzling Gleam|p2a: Hydrapple",
-    "|-supereffective|p2a: Hydrapple",
-    "|-damage|p2a: Hydrapple|185/312",
-    "|move|p2a: Hydrapple|Giga Drain|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|210/330",
-    "|-heal|p2a: Hydrapple|226/312|[from] drain|[of] p1a: Scream Tail",
-    "|-heal|p1a: Scream Tail|330/330|[from] move: Wish|[wisher] Scream Tail",
+    "|move|p1a: Slaking|Double-Edge|p2a: Indeedee",
+    "|-damage|p2a: Indeedee|0 fnt",
+    "|faint|p2a: Indeedee",
+    "|-damage|p1a: Slaking|374/389|[from] Recoil",
     "|upkeep",
+    "|switch|p2a: Sandaconda|Sandaconda, L84, M|258/258",
     "|turn|10",
-    "|move|p1a: Scream Tail|Protect|p1a: Scream Tail",
-    "|-singleturn|p1a: Scream Tail|Protect",
-    "|move|p2a: Hydrapple|Fickle Beam|p1a: Scream Tail",
-    "|-activate|p1a: Scream Tail|move: Protect",
+    "|cant|p1a: Slaking|ability: Truant",
+    "|move|p2a: Sandaconda|Coil|p2a: Sandaconda",
+    "|-boost|p2a: Sandaconda|atk|1",
+    "|-boost|p2a: Sandaconda|def|1",
+    "|-boost|p2a: Sandaconda|accuracy|1",
     "|upkeep",
     "|turn|11",
-    "|move|p1a: Scream Tail|Wish|p1a: Scream Tail",
-    "|move|p2a: Hydrapple|Dragon Tail|p1a: Scream Tail",
-    "|-immune|p1a: Scream Tail",
+    "|move|p1a: Slaking|Double-Edge|p2a: Sandaconda",
+    "|-damage|p2a: Sandaconda|111/258",
+    "|-damage|p1a: Slaking|325/389|[from] Recoil",
+    "|move|p2a: Sandaconda|Scale Shot|p1a: Slaking",
+    "|-damage|p1a: Slaking|299/389",
+    "|-damage|p1a: Slaking|275/389",
+    "|-damage|p1a: Slaking|247/389",
+    "|-damage|p1a: Slaking|220/389",
+    "|-hitcount|p1a: Slaking|4",
+    "|-unboost|p2a: Sandaconda|def|1",
+    "|-boost|p2a: Sandaconda|spe|1",
+    "|-fieldend|move: Psychic Terrain",
     "|upkeep",
     "|turn|12",
-    "|move|p1a: Scream Tail|Dazzling Gleam|p2a: Hydrapple",
-    "|-supereffective|p2a: Hydrapple",
-    "|-damage|p2a: Hydrapple|130/312",
-    "|move|p2a: Hydrapple|Earth Power|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|266/330",
-    "|-heal|p1a: Scream Tail|330/330|[from] move: Wish|[wisher] Scream Tail",
+    "|move|p2a: Sandaconda|Coil|p2a: Sandaconda",
+    "|-boost|p2a: Sandaconda|atk|1",
+    "|-boost|p2a: Sandaconda|def|1",
+    "|-boost|p2a: Sandaconda|accuracy|1",
+    "|cant|p1a: Slaking|ability: Truant",
     "|upkeep",
     "|turn|13",
-    "|move|p1a: Scream Tail|Dazzling Gleam|p2a: Hydrapple",
-    "|-supereffective|p2a: Hydrapple",
-    "|-damage|p2a: Hydrapple|34/312",
-    "|move|p2a: Hydrapple|Fickle Beam|p1a: Scream Tail",
-    "|-immune|p1a: Scream Tail",
+    "|move|p2a: Sandaconda|Coil|p2a: Sandaconda",
+    "|-boost|p2a: Sandaconda|atk|1",
+    "|-boost|p2a: Sandaconda|def|1",
+    "|-boost|p2a: Sandaconda|accuracy|1",
+    "|move|p1a: Slaking|Double-Edge|p2a: Sandaconda",
+    "|-damage|p2a: Sandaconda|9/258",
+    "|-damage|p1a: Slaking|186/389|[from] Recoil",
     "|upkeep",
     "|turn|14",
-    "|move|p1a: Scream Tail|Protect|p1a: Scream Tail",
-    "|-singleturn|p1a: Scream Tail|Protect",
-    "|move|p2a: Hydrapple|Dragon Tail|p1a: Scream Tail",
-    "|-activate|p1a: Scream Tail|move: Protect",
+    "|move|p2a: Sandaconda|Scale Shot|p1a: Slaking",
+    "|-damage|p1a: Slaking|141/389",
+    "|-damage|p1a: Slaking|95/389",
+    "|-damage|p1a: Slaking|53/389",
+    "|-damage|p1a: Slaking|11/389",
+    "|-damage|p1a: Slaking|0 fnt",
+    "|faint|p1a: Slaking",
+    "|-hitcount|p1: Slaking|5",
+    "|-unboost|p2a: Sandaconda|def|1",
+    "|-boost|p2a: Sandaconda|spe|1",
     "|upkeep",
+    "|switch|p1a: Crawdaunt|Crawdaunt, L84, M|243/243",
     "|turn|15",
-    "|move|p1a: Scream Tail|Dazzling Gleam|p2a: Hydrapple",
-    "|-supereffective|p2a: Hydrapple",
-    "|-damage|p2a: Hydrapple|0 fnt",
-    "|faint|p2a: Hydrapple",
+    "|move|p1a: Crawdaunt|Aqua Jet|p2a: Sandaconda",
+    "|-supereffective|p2a: Sandaconda",
+    "|-damage|p2a: Sandaconda|0 fnt",
+    "|faint|p2a: Sandaconda",
+    "|-damage|p1a: Crawdaunt|219/243|[from] item: Life Orb",
     "|upkeep",
-    "|switch|p2a: Terapagos|Terapagos, L77, F|265/265",
-    "|-activate|p2a: Terapagos|ability: Tera Shift",
-    "|-heal|p2a: Terapagos|273/273|[silent]",
+    "|switch|p2a: Lugia|Lugia, L73|275/275",
     "|turn|16",
-    "|move|p1a: Scream Tail|Dazzling Gleam|p2a: Terapagos",
-    "|-activate|p2a: Terapagos|ability: Tera Shell",
-    "|-resisted|p2a: Terapagos",
-    "|-damage|p2a: Terapagos|244/273",
-    "|move|p2a: Terapagos|Earth Power|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|286/330",
-    "|-heal|p1a: Scream Tail|306/330|[from] item: Leftovers",
+    "|move|p1a: Crawdaunt|Aqua Jet|p2a: Lugia",
+    "|-damage|p2a: Lugia|239/275",
+    "|-damage|p1a: Crawdaunt|195/243|[from] item: Life Orb",
+    "|move|p2a: Lugia|Psychic Noise|p1a: Crawdaunt",
+    "|-immune|p1a: Crawdaunt",
     "|upkeep",
     "|turn|17",
-    "|move|p1a: Scream Tail|Thunder Wave|p2a: Terapagos",
-    "|-status|p2a: Terapagos|par",
-    "|move|p2a: Terapagos|Rapid Spin|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|266/330",
-    "|-boost|p2a: Terapagos|spe|1",
-    "|-heal|p1a: Scream Tail|286/330|[from] item: Leftovers",
+    "|move|p2a: Lugia|Calm Mind|p2a: Lugia",
+    "|-boost|p2a: Lugia|spa|1",
+    "|-boost|p2a: Lugia|spd|1",
+    "|move|p1a: Crawdaunt|Knock Off|p2a: Lugia",
+    "|-supereffective|p2a: Lugia",
+    "|-damage|p2a: Lugia|0 fnt",
+    "|-enditem|p2a: Lugia|Heavy-Duty Boots|[from] move: Knock Off|[of] p1a: Crawdaunt",
+    "|faint|p2a: Lugia",
+    "|-damage|p1a: Crawdaunt|171/243|[from] item: Life Orb",
     "|upkeep",
+    "|switch|p2a: Hitmontop|Hitmontop, L88, M|231/231",
+    "|-ability|p2a: Hitmontop|Intimidate|boost",
+    "|-unboost|p1a: Crawdaunt|atk|1",
     "|turn|18",
-    "|move|p1a: Scream Tail|Protect|p1a: Scream Tail",
-    "|-singleturn|p1a: Scream Tail|Protect",
-    "|cant|p2a: Terapagos|par",
-    "|-heal|p1a: Scream Tail|306/330|[from] item: Leftovers",
+    "|move|p1a: Crawdaunt|Aqua Jet|p2a: Hitmontop",
+    "|-damage|p2a: Hitmontop|179/231",
+    "|-damage|p1a: Crawdaunt|147/243|[from] item: Life Orb",
+    "|move|p2a: Hitmontop|Close Combat|p1a: Crawdaunt",
+    "|-supereffective|p1a: Crawdaunt",
+    "|-damage|p1a: Crawdaunt|0 fnt",
+    "|-unboost|p2a: Hitmontop|def|1",
+    "|-unboost|p2a: Hitmontop|spd|1",
+    "|faint|p1a: Crawdaunt",
     "|upkeep",
+    "|switch|p1a: Eternatus|Eternatus, L69|308/308",
+    "|-ability|p1a: Eternatus|Pressure",
     "|turn|19",
-    "|move|p1a: Scream Tail|Thunder Wave|p2a: Terapagos",
-    "|-fail|p2a: Terapagos|par",
-    "|move|p2a: Terapagos|Earth Power|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|258/330",
-    "|-heal|p1a: Scream Tail|278/330|[from] item: Leftovers",
+    "|move|p2a: Hitmontop|Sucker Punch|p1a: Eternatus",
+    "|-damage|p1a: Eternatus|250/308",
+    "|move|p1a: Eternatus|Dynamax Cannon|p2a: Hitmontop",
+    "|-damage|p2a: Hitmontop|98/231",
+    "|-heal|p1a: Eternatus|269/308|[from] item: Leftovers",
     "|upkeep",
     "|turn|20",
-    "|move|p1a: Scream Tail|Dazzling Gleam|p2a: Terapagos",
-    "|-damage|p2a: Terapagos|187/273 par",
-    "|cant|p2a: Terapagos|par",
-    "|-heal|p1a: Scream Tail|298/330|[from] item: Leftovers",
+    "|move|p1a: Eternatus|Sludge Bomb|p2a: Hitmontop",
+    "|-damage|p2a: Hitmontop|26/231",
+    "|move|p2a: Hitmontop|Close Combat|p1a: Eternatus",
+    "|-resisted|p1a: Eternatus",
+    "|-damage|p1a: Eternatus|184/308",
+    "|-unboost|p2a: Hitmontop|def|1",
+    "|-unboost|p2a: Hitmontop|spd|1",
+    "|-heal|p1a: Eternatus|203/308|[from] item: Leftovers",
     "|upkeep",
     "|turn|21",
-    "|move|p1a: Scream Tail|Dazzling Gleam|p2a: Terapagos",
-    "|-damage|p2a: Terapagos|129/273 par",
-    "|move|p2a: Terapagos|Tera Starstorm|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|207/330",
-    "|-heal|p1a: Scream Tail|227/330|[from] item: Leftovers",
+    "|move|p1a: Eternatus|Recover|p1a: Eternatus",
+    "|-heal|p1a: Eternatus|308/308",
+    "|move|p2a: Hitmontop|Stone Edge|p1a: Eternatus",
+    "|-damage|p1a: Eternatus|213/308",
+    "|-heal|p1a: Eternatus|232/308|[from] item: Leftovers",
     "|upkeep",
     "|turn|22",
-    "|move|p1a: Scream Tail|Thunder Wave|p2a: Terapagos",
-    "|-fail|p2a: Terapagos|par",
-    "|move|p2a: Terapagos|Earth Power|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|180/330",
-    "|-heal|p1a: Scream Tail|200/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|23",
-    "|move|p1a: Scream Tail|Thunder Wave|p2a: Terapagos",
-    "|-fail|p2a: Terapagos|par",
-    "|move|p2a: Terapagos|Rapid Spin|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|155/330",
-    "|-boost|p2a: Terapagos|spe|1",
-    "|-heal|p1a: Scream Tail|175/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|24",
-    "|move|p1a: Scream Tail|Thunder Wave|p2a: Terapagos",
-    "|-fail|p2a: Terapagos|par",
-    "|move|p2a: Terapagos|Rapid Spin|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|136/330",
-    "|-boost|p2a: Terapagos|spe|1",
-    "|-heal|p1a: Scream Tail|156/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|25",
-    "|move|p1a: Scream Tail|Protect|p1a: Scream Tail",
-    "|-singleturn|p1a: Scream Tail|Protect",
-    "|move|p2a: Terapagos|Rapid Spin|p1a: Scream Tail",
-    "|-activate|p1a: Scream Tail|move: Protect",
-    "|-heal|p1a: Scream Tail|176/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|26",
-    "|move|p1a: Scream Tail|Wish|p1a: Scream Tail",
-    "|move|p2a: Terapagos|Tera Starstorm|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|89/330",
-    "|-heal|p1a: Scream Tail|109/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|27",
-    "|move|p1a: Scream Tail|Thunder Wave|p2a: Terapagos",
-    "|-fail|p2a: Terapagos|par",
-    "|cant|p2a: Terapagos|par",
-    "|-heal|p1a: Scream Tail|274/330|[from] move: Wish|[wisher] Scream Tail",
-    "|-heal|p1a: Scream Tail|294/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|28",
-    "|move|p1a: Scream Tail|Protect|p1a: Scream Tail",
-    "|-singleturn|p1a: Scream Tail|Protect",
-    "|cant|p2a: Terapagos|par",
-    "|-heal|p1a: Scream Tail|314/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|29",
-    "|move|p1a: Scream Tail|Protect||[still]",
-    "|-fail|p1a: Scream Tail",
-    "|move|p2a: Terapagos|Rapid Spin|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|272/330",
-    "|-boost|p2a: Terapagos|spe|1",
-    "|-heal|p1a: Scream Tail|292/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|30",
-    "|move|p2a: Terapagos|Rapid Spin|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|247/330",
-    "|-boost|p2a: Terapagos|spe|1",
-    "|move|p1a: Scream Tail|Thunder Wave|p2a: Terapagos",
-    "|-fail|p2a: Terapagos|par",
-    "|-heal|p1a: Scream Tail|267/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|31",
-    "|move|p2a: Terapagos|Rapid Spin|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|222/330",
-    "|-boost|p2a: Terapagos|spe|1",
-    "|move|p1a: Scream Tail|Wish|p1a: Scream Tail",
-    "|-heal|p1a: Scream Tail|242/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|32",
-    "|cant|p2a: Terapagos|par",
-    "|move|p1a: Scream Tail|Wish||[still]",
-    "|-fail|p1a: Scream Tail",
-    "|-heal|p1a: Scream Tail|330/330|[from] move: Wish|[wisher] Scream Tail",
-    "|upkeep",
-    "|turn|33",
-    "|move|p2a: Terapagos|Calm Mind|p2a: Terapagos",
-    "|-boost|p2a: Terapagos|spa|1",
-    "|-boost|p2a: Terapagos|spd|1",
-    "|move|p1a: Scream Tail|Thunder Wave|p2a: Terapagos",
-    "|-fail|p2a: Terapagos|par",
-    "|upkeep",
-    "|turn|34",
-    "|move|p1a: Scream Tail|Protect|p1a: Scream Tail",
-    "|-singleturn|p1a: Scream Tail|Protect",
-    "|move|p2a: Terapagos|Rapid Spin|p1a: Scream Tail",
-    "|-activate|p1a: Scream Tail|move: Protect",
-    "|upkeep",
-    "|turn|35",
-    "|move|p2a: Terapagos|Calm Mind|p2a: Terapagos",
-    "|-boost|p2a: Terapagos|spa|1",
-    "|-boost|p2a: Terapagos|spd|1",
-    "|move|p1a: Scream Tail|Wish|p1a: Scream Tail",
-    "|upkeep",
-    "|turn|36",
-    "|move|p1a: Scream Tail|Protect|p1a: Scream Tail",
-    "|-singleturn|p1a: Scream Tail|Protect",
-    "|move|p2a: Terapagos|Calm Mind|p2a: Terapagos",
-    "|-boost|p2a: Terapagos|spa|1",
-    "|-boost|p2a: Terapagos|spd|1",
-    "|upkeep",
-    "|turn|37",
-    "|move|p2a: Terapagos|Earth Power|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|213/330",
-    "|move|p1a: Scream Tail|Dazzling Gleam|p2a: Terapagos",
-    "|-damage|p2a: Terapagos|104/273 par",
-    "|-heal|p1a: Scream Tail|233/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|38",
-    "|move|p2a: Terapagos|Calm Mind|p2a: Terapagos",
-    "|-boost|p2a: Terapagos|spa|1",
-    "|-boost|p2a: Terapagos|spd|1",
-    "|move|p1a: Scream Tail|Thunder Wave|p2a: Terapagos",
-    "|-fail|p2a: Terapagos|par",
-    "|-heal|p1a: Scream Tail|253/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|39",
-    "|move|p2a: Terapagos|Earth Power|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|104/330",
-    "|move|p1a: Scream Tail|Dazzling Gleam|p2a: Terapagos",
-    "|-damage|p2a: Terapagos|86/273 par",
-    "|-heal|p1a: Scream Tail|124/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|40",
-    "|move|p1a: Scream Tail|Protect|p1a: Scream Tail",
-    "|-singleturn|p1a: Scream Tail|Protect",
-    "|move|p2a: Terapagos|Calm Mind|p2a: Terapagos",
-    "|-boost|p2a: Terapagos|spa|1",
-    "|-boost|p2a: Terapagos|spd|1",
-    "|-heal|p1a: Scream Tail|144/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|41",
-    "|move|p2a: Terapagos|Rapid Spin|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|105/330",
-    "|move|p1a: Scream Tail|Dazzling Gleam|p2a: Terapagos",
-    "|-damage|p2a: Terapagos|68/273 par",
-    "|-heal|p1a: Scream Tail|125/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|42",
-    "|move|p1a: Scream Tail|Protect|p1a: Scream Tail",
-    "|-singleturn|p1a: Scream Tail|Protect",
-    "|move|p2a: Terapagos|Earth Power|p1a: Scream Tail",
-    "|-activate|p1a: Scream Tail|move: Protect",
-    "|-heal|p1a: Scream Tail|145/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|43",
-    "|cant|p2a: Terapagos|par",
-    "|move|p1a: Scream Tail|Wish|p1a: Scream Tail",
-    "|-heal|p1a: Scream Tail|165/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|44",
-    "|move|p2a: Terapagos|Rapid Spin|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|126/330",
-    "|move|p1a: Scream Tail|Wish||[still]",
-    "|-fail|p1a: Scream Tail",
-    "|-heal|p1a: Scream Tail|291/330|[from] move: Wish|[wisher] Scream Tail",
-    "|-heal|p1a: Scream Tail|311/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|45",
-    "|cant|p2a: Terapagos|par",
-    "|move|p1a: Scream Tail|Dazzling Gleam|p2a: Terapagos",
-    "|-damage|p2a: Terapagos|49/273 par",
-    "|-heal|p1a: Scream Tail|330/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|46",
-    "|move|p1a: Scream Tail|Protect|p1a: Scream Tail",
-    "|-singleturn|p1a: Scream Tail|Protect",
-    "|move|p2a: Terapagos|Tera Starstorm|p1a: Scream Tail",
-    "|-activate|p1a: Scream Tail|move: Protect",
-    "|upkeep",
-    "|turn|47",
-    "|move|p2a: Terapagos|Rapid Spin|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|287/330",
-    "|move|p1a: Scream Tail|Wish|p1a: Scream Tail",
-    "|-heal|p1a: Scream Tail|307/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|48",
-    "|move|p2a: Terapagos|Calm Mind|p2a: Terapagos",
-    "|-boost|p2a: Terapagos|spa|1",
-    "|-boost|p2a: Terapagos|spd|1",
-    "|move|p1a: Scream Tail|Wish||[still]",
-    "|-fail|p1a: Scream Tail",
-    "|-heal|p1a: Scream Tail|330/330|[from] move: Wish|[wisher] Scream Tail",
-    "|upkeep",
-    "|turn|49",
-    "|move|p2a: Terapagos|Earth Power|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|148/330",
-    "|move|p1a: Scream Tail|Wish|p1a: Scream Tail",
-    "|-heal|p1a: Scream Tail|168/330|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|50",
-    "|move|p2a: Terapagos|Tera Starstorm|p1a: Scream Tail",
-    "|-damage|p1a: Scream Tail|0 fnt",
-    "|faint|p1a: Scream Tail",
-    "|-end|p1a: Scream Tail|Protosynthesis|[silent]",
-    "|upkeep",
-    "|switch|p1a: Groudon|Groudon, L72|263/263",
-    "|-weather|SunnyDay|[from] ability: Drought|[of] p1a: Groudon",
-    "|turn|51",
-    "|move|p2a: Terapagos|Calm Mind|p2a: Terapagos",
-    "|-boost|p2a: Terapagos|spa|0",
-    "|-boost|p2a: Terapagos|spd|0",
-    "|move|p1a: Groudon|Precipice Blades|p2a: Terapagos",
-    "|-damage|p2a: Terapagos|0 fnt",
-    "|faint|p2a: Terapagos",
-    "|-weather|SunnyDay|[upkeep]",
-    "|upkeep",
-    "|switch|p2a: Okidogi|Okidogi, L77, M|262/262",
-    "|turn|52",
-    "|move|p1a: Groudon|Heat Crash|p2a: Okidogi",
-    "|-damage|p2a: Okidogi|141/262",
-    "|move|p2a: Okidogi|Gunk Shot|p1a: Groudon|[miss]",
-    "|-miss|p2a: Okidogi|p1a: Groudon",
-    "|-weather|SunnyDay|[upkeep]",
-    "|upkeep",
-    "|turn|53",
-    "|move|p1a: Groudon|Stone Edge|p2a: Okidogi",
-    "|-resisted|p2a: Okidogi",
-    "|-damage|p2a: Okidogi|110/262",
-    "|move|p2a: Okidogi|Gunk Shot|p1a: Groudon",
-    "|-resisted|p1a: Groudon",
-    "|-damage|p1a: Groudon|206/263",
-    "|-weather|SunnyDay|[upkeep]",
-    "|-heal|p1a: Groudon|222/263|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|54",
-    "|move|p1a: Groudon|Precipice Blades|p2a: Okidogi",
-    "|-supereffective|p2a: Okidogi",
-    "|-damage|p2a: Okidogi|0 fnt",
-    "|faint|p2a: Okidogi",
-    "|-weather|SunnyDay|[upkeep]",
-    "|-heal|p1a: Groudon|238/263|[from] item: Leftovers",
-    "|upkeep",
-    "|switch|p2a: Iron Leaves|Iron Leaves, L80|275/275",
-    "|turn|55",
-    "|move|p2a: Iron Leaves|Leaf Blade|p1a: Groudon",
-    "|-supereffective|p1a: Groudon",
-    "|-damage|p1a: Groudon|9/263",
-    "|-damage|p2a: Iron Leaves|248/275|[from] item: Life Orb",
-    "|move|p1a: Groudon|Heat Crash|p2a: Iron Leaves",
-    "|-supereffective|p2a: Iron Leaves",
-    "|-damage|p2a: Iron Leaves|0 fnt",
-    "|faint|p2a: Iron Leaves",
-    "|-end|p2a: Iron Leaves|Quark Drive|[silent]",
-    "|-weather|none",
-    "|-heal|p1a: Groudon|25/263|[from] item: Leftovers",
-    "|upkeep",
-    "|switch|p2a: Necrozma|Necrozma-Dusk-Mane, L69|248/248",
-    "|turn|56",
-    "|move|p1a: Groudon|Heat Crash|p2a: Necrozma",
-    "|-supereffective|p2a: Necrozma",
-    "|-damage|p2a: Necrozma|187/248",
-    "|-enditem|p2a: Necrozma|Weakness Policy",
-    "|-boost|p2a: Necrozma|atk|2|[from] item: Weakness Policy",
-    "|-boost|p2a: Necrozma|spa|2|[from] item: Weakness Policy",
-    "|move|p2a: Necrozma|Dragon Dance|p2a: Necrozma",
-    "|-boost|p2a: Necrozma|atk|1",
-    "|-boost|p2a: Necrozma|spe|1",
-    "|-heal|p1a: Groudon|41/263|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|57",
-    "|move|p2a: Necrozma|Morning Sun|p2a: Necrozma",
-    "|-heal|p2a: Necrozma|248/248",
-    "|move|p1a: Groudon|Precipice Blades|p2a: Necrozma",
-    "|-supereffective|p2a: Necrozma",
-    "|-damage|p2a: Necrozma|68/248",
-    "|-heal|p1a: Groudon|57/263|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|58",
-    "|move|p2a: Necrozma|Morning Sun|p2a: Necrozma",
-    "|-heal|p2a: Necrozma|192/248",
-    "|move|p1a: Groudon|Heat Crash|p2a: Necrozma",
-    "|-supereffective|p2a: Necrozma",
-    "|-damage|p2a: Necrozma|135/248",
-    "|-heal|p1a: Groudon|73/263|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|59",
-    "|move|p2a: Necrozma|Sunsteel Strike|p1a: Groudon",
-    "|-damage|p1a: Groudon|0 fnt",
-    "|faint|p1a: Groudon",
-    "|upkeep",
-    "|switch|p1a: Golduck|Golduck, L90, M|290/290",
-    "|-ability|p1a: Golduck|Cloud Nine",
-    "|turn|60",
-    "|move|p2a: Necrozma|Earthquake|p1a: Golduck",
-    "|-damage|p1a: Golduck|121/290",
-    "|move|p1a: Golduck|Grass Knot|p2a: Necrozma",
-    "|-resisted|p2a: Necrozma",
-    "|-damage|p2a: Necrozma|89/248",
-    "|-heal|p1a: Golduck|139/290|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|61",
-    "|move|p2a: Necrozma|Dragon Dance|p2a: Necrozma",
-    "|-boost|p2a: Necrozma|atk|1",
-    "|-boost|p2a: Necrozma|spe|1",
-    "|move|p1a: Golduck|Grass Knot|p2a: Necrozma",
-    "|-resisted|p2a: Necrozma",
-    "|-damage|p2a: Necrozma|36/248",
-    "|-heal|p1a: Golduck|157/290|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|62",
-    "|move|p2a: Necrozma|Dragon Dance|p2a: Necrozma",
-    "|-boost|p2a: Necrozma|atk|1",
-    "|-boost|p2a: Necrozma|spe|1",
-    "|move|p1a: Golduck|Hydro Pump|p2a: Necrozma|[miss]",
-    "|-miss|p1a: Golduck|p2a: Necrozma",
-    "|-heal|p1a: Golduck|175/290|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|63",
-    "|move|p2a: Necrozma|Earthquake|p1a: Golduck",
-    "|-damage|p1a: Golduck|0 fnt",
-    "|faint|p1a: Golduck",
-    "|upkeep",
-    "|switch|p1a: Dudunsparce|Dudunsparce-Three-Segment, L83, F|343/343",
-    "|turn|64",
-    "|move|p2a: Necrozma|Dragon Dance|p2a: Necrozma",
-    "|-boost|p2a: Necrozma|atk|1",
-    "|-boost|p2a: Necrozma|spe|1",
-    "|move|p1a: Dudunsparce|Boomburst|p2a: Necrozma",
-    "|-resisted|p2a: Necrozma",
-    "|-damage|p2a: Necrozma|0 fnt",
-    "|faint|p2a: Necrozma",
-    "|upkeep",
-    "|switch|p2a: Hydreigon|Hydreigon, L79, F|275/275",
-    "|turn|65",
-    "|move|p2a: Hydreigon|Dark Pulse|p1a: Dudunsparce",
-    "|-damage|p1a: Dudunsparce|189/343",
-    "|-ability|p1a: Dudunsparce|Rattled|boost",
-    "|-boost|p1a: Dudunsparce|spe|1",
-    "|move|p1a: Dudunsparce|Boomburst|p2a: Hydreigon",
-    "|-damage|p2a: Hydreigon|146/275",
-    "|-heal|p1a: Dudunsparce|210/343|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|66",
-    "|move|p1a: Dudunsparce|Earth Power|p2a: Hydreigon",
-    "|-immune|p2a: Hydreigon|[from] ability: Levitate",
-    "|move|p2a: Hydreigon|Dark Pulse|p1a: Dudunsparce",
-    "|-damage|p1a: Dudunsparce|59/343",
-    "|-ability|p1a: Dudunsparce|Rattled|boost",
-    "|-boost|p1a: Dudunsparce|spe|1",
-    "|-heal|p1a: Dudunsparce|80/343|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|67",
-    "|move|p1a: Dudunsparce|Calm Mind|p1a: Dudunsparce",
-    "|-boost|p1a: Dudunsparce|spa|1",
-    "|-boost|p1a: Dudunsparce|spd|1",
-    "|move|p2a: Hydreigon|Dark Pulse|p1a: Dudunsparce",
-    "|-damage|p1a: Dudunsparce|0 fnt",
-    "|faint|p1a: Dudunsparce",
-    "|upkeep",
-    "|switch|p1a: Tinkaton|Tinkaton, L82, F|274/274",
-    "|-ability|p1a: Tinkaton|Mold Breaker",
-    "|turn|68",
-    "|move|p1a: Tinkaton|Encore|p2a: Hydreigon",
-    "|-start|p2a: Hydreigon|Encore",
-    "|move|p2a: Hydreigon|Dark Pulse|p1a: Tinkaton",
-    "|-resisted|p1a: Tinkaton",
-    "|-damage|p1a: Tinkaton|213/274",
-    "|-heal|p1a: Tinkaton|230/274|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|69",
-    "|move|p1a: Tinkaton|Thunder Wave|p2a: Hydreigon",
-    "|-status|p2a: Hydreigon|par",
-    "|move|p2a: Hydreigon|Dark Pulse|p1a: Tinkaton",
-    "|-resisted|p1a: Tinkaton",
-    "|-damage|p1a: Tinkaton|170/274",
-    "|-heal|p1a: Tinkaton|187/274|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|70",
-    "|move|p1a: Tinkaton|Play Rough|p2a: Hydreigon",
-    "|-supereffective|p2a: Hydreigon",
-    "|-damage|p2a: Hydreigon|0 fnt",
-    "|faint|p2a: Hydreigon",
+    "|move|p1a: Eternatus|Fire Blast|p2a: Hitmontop",
+    "|-damage|p2a: Hitmontop|0 fnt",
+    "|faint|p2a: Hitmontop",
     "|win|Player 1"
   ]
 }

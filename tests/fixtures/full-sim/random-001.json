@@ -11,14 +11,44 @@
   "p1": {
     "team": [
       {
-        "species": "Alomomola",
-        "ability": "Regenerator",
+        "species": "Braviary-Hisui",
+        "ability": "Tinted Lens",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Hurricane",
+          "Roost",
+          "Defog",
+          "Esper Wing"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 85,
+        "gender": "M"
+      },
+      {
+        "species": "Landorus-Therian",
+        "ability": "Intimidate",
         "item": "Leftovers",
         "moves": [
-          "Wish",
-          "Protect",
-          "Flip Turn",
-          "Scald"
+          "Taunt",
+          "Earthquake",
+          "U-turn",
+          "Stealth Rock"
         ],
         "nature": "Hardy",
         "evs": {
@@ -37,23 +67,23 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 87,
-        "gender": "F"
+        "level": 76,
+        "gender": "M"
       },
       {
-        "species": "Houndstone",
-        "ability": "Fluffy",
-        "item": "Choice Band",
+        "species": "Klefki",
+        "ability": "Prankster",
+        "item": "Leftovers",
         "moves": [
-          "Body Press",
-          "Shadow Sneak",
-          "Poltergeist",
-          "Play Rough"
+          "Thunder Wave",
+          "Spikes",
+          "Foul Play",
+          "Dazzling Gleam"
         ],
         "nature": "Hardy",
         "evs": {
           "hp": 85,
-          "atk": 85,
+          "atk": 0,
           "def": 85,
           "spa": 85,
           "spd": 85,
@@ -61,37 +91,7 @@
         },
         "ivs": {
           "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 86,
-        "gender": "F"
-      },
-      {
-        "species": "Crawdaunt",
-        "ability": "Adaptability",
-        "item": "Life Orb",
-        "moves": [
-          "Knock Off",
-          "Dragon Dance",
-          "Crabhammer",
-          "Close Combat"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
+          "atk": 0,
           "def": 31,
           "spa": 31,
           "spd": 31,
@@ -101,14 +101,44 @@
         "gender": "M"
       },
       {
-        "species": "Typhlosion-Hisui",
-        "ability": "Blaze",
+        "species": "Terapagos",
+        "ability": "Tera Shift",
+        "item": "Chesto Berry",
+        "moves": [
+          "Tera Starstorm",
+          "Calm Mind",
+          "Earth Power",
+          "Rest"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 77,
+        "gender": "M"
+      },
+      {
+        "species": "Vikavolt",
+        "ability": "Levitate",
         "item": "Heavy-Duty Boots",
         "moves": [
-          "Shadow Ball",
-          "Focus Blast",
-          "Calm Mind",
-          "Fire Blast"
+          "Thunderbolt",
+          "Bug Buzz",
+          "Sticky Web",
+          "Energy Ball"
         ],
         "nature": "Hardy",
         "evs": {
@@ -128,52 +158,22 @@
           "spe": 31
         },
         "level": 83,
-        "gender": "M"
-      },
-      {
-        "species": "Dipplin",
-        "ability": "Sticky Hold",
-        "item": "Eviolite",
-        "moves": [
-          "Recover",
-          "Dragon Pulse",
-          "Dragon Tail",
-          "Giga Drain"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 88,
         "gender": "F"
       },
       {
-        "species": "Roaring Moon",
-        "ability": "Protosynthesis",
-        "item": "Choice Band",
+        "species": "Gardevoir",
+        "ability": "Trace",
+        "item": "Choice Scarf",
         "moves": [
-          "U-turn",
-          "Outrage",
-          "Iron Head",
-          "Knock Off"
+          "Psychic",
+          "Mystical Fire",
+          "Trick",
+          "Moonblast"
         ],
         "nature": "Hardy",
         "evs": {
           "hp": 85,
-          "atk": 85,
+          "atk": 0,
           "def": 85,
           "spa": 85,
           "spd": 85,
@@ -181,28 +181,28 @@
         },
         "ivs": {
           "hp": 31,
-          "atk": 31,
+          "atk": 0,
           "def": 31,
           "spa": 31,
           "spd": 31,
           "spe": 31
         },
-        "level": 72,
-        "gender": "N"
+        "level": 83,
+        "gender": "F"
       }
     ]
   },
   "p2": {
     "team": [
       {
-        "species": "Vivillon-Continental",
-        "ability": "Compound Eyes",
-        "item": "Heavy-Duty Boots",
+        "species": "Empoleon",
+        "ability": "Competitive",
+        "item": "Leftovers",
         "moves": [
-          "Tera Blast",
-          "Hurricane",
-          "Quiver Dance",
-          "Sleep Powder"
+          "Surf",
+          "Stealth Rock",
+          "Roost",
+          "Ice Beam"
         ],
         "nature": "Hardy",
         "evs": {
@@ -221,17 +221,137 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 83,
+        "level": 84,
+        "gender": "M"
+      },
+      {
+        "species": "Skeledirge",
+        "ability": "Unaware",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Slack Off",
+          "Torch Song",
+          "Hex",
+          "Will-O-Wisp"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
         "gender": "F"
       },
       {
-        "species": "Dunsparce",
-        "ability": "Serene Grace",
-        "item": "Eviolite",
+        "species": "Iron Hands",
+        "ability": "Quark Drive",
+        "item": "Leftovers",
         "moves": [
-          "Roost",
-          "Coil",
-          "Body Slam",
+          "Swords Dance",
+          "Drain Punch",
+          "Ice Punch",
+          "Wild Charge"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 79,
+        "gender": "N"
+      },
+      {
+        "species": "Drifblim",
+        "ability": "Aftermath",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Strength Sap",
+          "Defog",
+          "Shadow Ball",
+          "Air Slash"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 86,
+        "gender": "M"
+      },
+      {
+        "species": "Glaceon",
+        "ability": "Ice Body",
+        "item": "Heavy-Duty Boots",
+        "moves": [
+          "Protect",
+          "Wish",
+          "Calm Mind",
+          "Freeze-Dry"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 94,
+        "gender": "M"
+      },
+      {
+        "species": "Ting-Lu",
+        "ability": "Vessel of Ruin",
+        "item": "Leftovers",
+        "moves": [
+          "Spikes",
+          "Throat Chop",
+          "Whirlwind",
           "Earthquake"
         ],
         "nature": "Hardy",
@@ -251,150 +371,26 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 86,
-        "gender": "F"
-      },
-      {
-        "species": "Milotic",
-        "ability": "Competitive",
-        "item": "Leftovers",
-        "moves": [
-          "Scald",
-          "Recover",
-          "Ice Beam",
-          "Dragon Tail"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 83,
-        "gender": "M"
-      },
-      {
-        "species": "Hypno",
-        "ability": "Insomnia",
-        "item": "Leftovers",
-        "moves": [
-          "Encore",
-          "Knock Off",
-          "Psychic Noise",
-          "Thunder Wave"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 95,
-        "gender": "F"
-      },
-      {
-        "species": "Noivern",
-        "ability": "Infiltrator",
-        "item": "Choice Specs",
-        "moves": [
-          "Hurricane",
-          "Boomburst",
-          "Draco Meteor",
-          "Flamethrower"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 82,
-        "gender": "M"
-      },
-      {
-        "species": "Spectrier",
-        "ability": "Grim Neigh",
-        "item": "Leftovers",
-        "moves": [
-          "Draining Kiss",
-          "Substitute",
-          "Nasty Plot",
-          "Shadow Ball"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 75,
+        "level": 78,
         "gender": "N"
       }
     ]
   },
   "choices": [
     [
-      "move 4",
+      "move 3",
       "move 3"
     ],
     [
-      "move 1",
-      "move 3"
-    ],
-    [
-      "move 4",
-      "move 3"
-    ],
-    [
-      "move 1",
+      "move 2",
       "move 1"
     ],
     [
-      "move 4",
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 1",
       "move 2"
     ],
     [
@@ -403,54 +399,58 @@
     ],
     [
       "move 4",
-      "move 2"
+      "move 3"
     ],
     [
-      "move 4",
-      "switch 5"
+      "move 3",
+      "move 3"
     ],
     [
-      "switch 6",
+      "move 1",
       "move 1"
     ],
     [
-      "move 4",
+      "move 3",
       "move 1"
     ],
     [
-      "move 4",
-      "move 2"
+      "move 3",
+      "move 1"
     ],
     [
-      "move 4",
-      "move 4"
-    ],
-    [
-      "move 4",
+      "move 3",
       "switch 4"
     ],
     [
       "move 4",
-      "move 1"
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 2"
     ],
     [
       "move 4",
-      "move 1"
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 2"
     ],
     [
       "move 4",
-      "switch 2"
+      "move 2"
     ],
     [
-      "move 4",
-      "move 1"
-    ],
-    [
-      "move 4",
-      "move 1"
-    ],
-    [
-      "switch 4",
+      "move 3",
       "move 4"
     ],
     [
@@ -458,7 +458,43 @@
       "move 3"
     ],
     [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
       "move 3",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 1",
       "move 3"
     ],
     [
@@ -466,12 +502,20 @@
       "move 1"
     ],
     [
-      "move 4",
-      "switch 6"
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 4"
     ],
     [
       "move 3",
-      "move 2"
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 4"
     ],
     [
       "move 4",
@@ -479,245 +523,1204 @@
     ],
     [
       "move 2",
-      "move 2"
-    ],
-    [
-      "move 1",
-      "move 4"
-    ],
-    [
-      "move 1",
-      "switch 3"
-    ],
-    [
-      "switch 3",
       "move 4"
     ],
     [
       "move 1",
       "move 1"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "switch 2",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "switch 6",
+      "switch 6"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move thunderbolt",
+      "move 4"
+    ],
+    [
+      "move stickyweb",
+      "move 1"
+    ],
+    [
+      "move thunderbolt",
+      "move 4"
+    ],
+    [
+      "move stickyweb",
+      "move 1"
+    ],
+    [
+      "move thunderbolt",
+      "move 4"
+    ],
+    [
+      "move bugbuzz",
+      "move 4"
+    ],
+    [
+      "move energyball",
+      "move 1"
+    ],
+    [
+      "move bugbuzz",
+      "switch 3"
+    ],
+    [
+      "move energyball",
+      "move 2"
+    ],
+    [
+      "move bugbuzz",
+      "move 1"
+    ],
+    [
+      "move bugbuzz",
+      "move 2"
+    ],
+    [
+      "move stickyweb",
+      "move 2"
+    ],
+    [
+      "switch 5",
+      "move 3"
+    ],
+    [
+      "move mysticalfire",
+      "move 1"
+    ],
+    [
+      "move mysticalfire",
+      "move 2"
+    ],
+    [
+      "move mysticalfire",
+      "move 3"
     ]
   ],
   "protocol": [
-    "|switch|p1a: Alomomola|Alomomola, L87, F|429/429",
-    "|switch|p2a: Vivillon|Vivillon-Continental, L83, F|268/268",
+    "|switch|p1a: Braviary|Braviary-Hisui, L85, M|326/326",
+    "|switch|p2a: Empoleon|Empoleon, L84, M|278/278",
     "|turn|1",
-    "|move|p2a: Vivillon|Quiver Dance|p2a: Vivillon",
-    "|-boost|p2a: Vivillon|spa|1",
-    "|-boost|p2a: Vivillon|spd|1",
-    "|-boost|p2a: Vivillon|spe|1",
-    "|move|p1a: Alomomola|Scald|p2a: Vivillon",
-    "|-damage|p2a: Vivillon|220/268",
+    "|move|p1a: Braviary|Defog|p2a: Empoleon",
+    "|-unboost|p2a: Empoleon|evasion|1",
+    "|-ability|p2a: Empoleon|Competitive|boost",
+    "|-boost|p2a: Empoleon|spa|2",
+    "|move|p2a: Empoleon|Roost||[still]",
+    "|-fail|p2a: Empoleon|heal",
     "|upkeep",
     "|turn|2",
-    "|move|p2a: Vivillon|Quiver Dance|p2a: Vivillon",
-    "|-boost|p2a: Vivillon|spa|1",
-    "|-boost|p2a: Vivillon|spd|1",
-    "|-boost|p2a: Vivillon|spe|1",
-    "|move|p1a: Alomomola|Wish|p1a: Alomomola",
+    "|move|p1a: Braviary|Roost||[still]",
+    "|-fail|p1a: Braviary|heal",
+    "|move|p2a: Empoleon|Surf|p1a: Braviary",
+    "|-damage|p1a: Braviary|85/326",
     "|upkeep",
     "|turn|3",
-    "|move|p2a: Vivillon|Quiver Dance|p2a: Vivillon",
-    "|-boost|p2a: Vivillon|spa|1",
-    "|-boost|p2a: Vivillon|spd|1",
-    "|-boost|p2a: Vivillon|spe|1",
-    "|move|p1a: Alomomola|Scald|p2a: Vivillon",
-    "|-damage|p2a: Vivillon|187/268",
+    "|move|p1a: Braviary|Hurricane|p2a: Empoleon|[miss]",
+    "|-miss|p1a: Braviary|p2a: Empoleon",
+    "|move|p2a: Empoleon|Roost||[still]",
+    "|-fail|p2a: Empoleon|heal",
     "|upkeep",
     "|turn|4",
-    "|move|p2a: Vivillon|Tera Blast|p1a: Alomomola",
-    "|-damage|p1a: Alomomola|228/429",
-    "|move|p1a: Alomomola|Wish|p1a: Alomomola",
-    "|-heal|p1a: Alomomola|254/429|[from] item: Leftovers",
+    "|move|p1a: Braviary|Hurricane|p2a: Empoleon",
+    "|-resisted|p2a: Empoleon",
+    "|-damage|p2a: Empoleon|146/278",
+    "|move|p2a: Empoleon|Stealth Rock|p1a: Braviary",
+    "|-sidestart|p1: Player 1|move: Stealth Rock",
+    "|-heal|p2a: Empoleon|163/278|[from] item: Leftovers",
     "|upkeep",
     "|turn|5",
-    "|move|p2a: Vivillon|Hurricane|p1a: Alomomola|[miss]",
-    "|-miss|p2a: Vivillon|p1a: Alomomola",
-    "|move|p1a: Alomomola|Scald|p2a: Vivillon",
-    "|-damage|p2a: Vivillon|159/268",
-    "|-heal|p1a: Alomomola|429/429|[from] move: Wish|[wisher] Alomomola",
+    "|move|p1a: Braviary|Defog|p2a: Empoleon",
+    "|-unboost|p2a: Empoleon|evasion|1",
+    "|-ability|p2a: Empoleon|Competitive|boost",
+    "|-boost|p2a: Empoleon|spa|2",
+    "|-sideend|p1: Player 1|Stealth Rock|[from] move: Defog|[of] p1a: Braviary",
+    "|move|p2a: Empoleon|Stealth Rock|p1a: Braviary",
+    "|-sidestart|p1: Player 1|move: Stealth Rock",
+    "|-heal|p2a: Empoleon|180/278|[from] item: Leftovers",
     "|upkeep",
     "|turn|6",
-    "|move|p2a: Vivillon|Hurricane|p1a: Alomomola",
-    "|-damage|p1a: Alomomola|0 fnt",
-    "|faint|p1a: Alomomola",
+    "|move|p1a: Braviary|Esper Wing|p2a: Empoleon",
+    "|-resisted|p2a: Empoleon",
+    "|-damage|p2a: Empoleon|90/278",
+    "|-boost|p1a: Braviary|spe|1",
+    "|move|p2a: Empoleon|Roost|p2a: Empoleon",
+    "|-heal|p2a: Empoleon|229/278",
+    "|-singleturn|p2a: Empoleon|move: Roost",
+    "|-heal|p2a: Empoleon|246/278|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p1a: Houndstone|Houndstone, L86, F|264/264",
     "|turn|7",
-    "|move|p2a: Vivillon|Hurricane|p1a: Houndstone",
-    "|-damage|p1a: Houndstone|21/264",
-    "|-start|p1a: Houndstone|confusion",
-    "|-activate|p1a: Houndstone|confusion",
-    "|move|p1a: Houndstone|Play Rough|p2a: Vivillon",
-    "|-crit|p2a: Vivillon",
-    "|-damage|p2a: Vivillon|0 fnt",
-    "|faint|p2a: Vivillon",
+    "|move|p1a: Braviary|Defog|p2a: Empoleon",
+    "|-unboost|p2a: Empoleon|evasion|1",
+    "|-ability|p2a: Empoleon|Competitive|boost",
+    "|-boost|p2a: Empoleon|spa|2",
+    "|-sideend|p1: Player 1|Stealth Rock|[from] move: Defog|[of] p1a: Braviary",
+    "|move|p2a: Empoleon|Roost|p2a: Empoleon",
+    "|-heal|p2a: Empoleon|278/278",
+    "|-singleturn|p2a: Empoleon|move: Roost",
     "|upkeep",
-    "|switch|p2a: Noivern|Noivern, L82, M|274/274",
     "|turn|8",
-    "|move|p2a: Noivern|Hurricane|p1a: Houndstone",
-    "|-damage|p1a: Houndstone|0 fnt",
-    "|faint|p1a: Houndstone",
+    "|move|p1a: Braviary|Hurricane|p2a: Empoleon",
+    "|-resisted|p2a: Empoleon",
+    "|-damage|p2a: Empoleon|162/278",
+    "|move|p2a: Empoleon|Surf|p1a: Braviary",
+    "|-damage|p1a: Braviary|0 fnt",
+    "|faint|p1a: Braviary",
+    "|-heal|p2a: Empoleon|179/278|[from] item: Leftovers",
     "|upkeep",
-    "|switch|p1a: Roaring Moon|Roaring Moon, L72|270/270",
+    "|switch|p1a: Terapagos|Terapagos, L77, M|265/265",
+    "|-activate|p1a: Terapagos|ability: Tera Shift",
+    "|-heal|p1a: Terapagos|273/273|[silent]",
     "|turn|9",
-    "|move|p2a: Noivern|Hurricane|p1a: Roaring Moon|[miss]",
-    "|-miss|p2a: Noivern|p1a: Roaring Moon",
-    "|move|p1a: Roaring Moon|Knock Off|p2a: Noivern",
-    "|-damage|p2a: Noivern|121/274",
-    "|-enditem|p2a: Noivern|Choice Specs|[from] move: Knock Off|[of] p1a: Roaring Moon",
+    "|move|p1a: Terapagos|Earth Power|p2a: Empoleon",
+    "|-supereffective|p2a: Empoleon",
+    "|-damage|p2a: Empoleon|83/278",
+    "|move|p2a: Empoleon|Surf|p1a: Terapagos",
+    "|-activate|p1a: Terapagos|ability: Tera Shell",
+    "|-resisted|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|96/273",
+    "|-heal|p2a: Empoleon|100/278|[from] item: Leftovers",
     "|upkeep",
     "|turn|10",
-    "|move|p2a: Noivern|Boomburst|p1a: Roaring Moon",
-    "|-damage|p1a: Roaring Moon|166/270",
-    "|move|p1a: Roaring Moon|Knock Off|p2a: Noivern",
-    "|-damage|p2a: Noivern|12/274",
+    "|move|p1a: Terapagos|Earth Power|p2a: Empoleon",
+    "|-supereffective|p2a: Empoleon",
+    "|-crit|p2a: Empoleon",
+    "|-damage|p2a: Empoleon|0 fnt",
+    "|faint|p2a: Empoleon",
     "|upkeep",
+    "|switch|p2a: Drifblim|Drifblim, L86, M|398/398",
     "|turn|11",
-    "|move|p2a: Noivern|Flamethrower|p1a: Roaring Moon",
-    "|-resisted|p1a: Roaring Moon",
-    "|-damage|p1a: Roaring Moon|135/270",
-    "|-status|p1a: Roaring Moon|brn",
-    "|move|p1a: Roaring Moon|Knock Off|p2a: Noivern",
-    "|-damage|p2a: Noivern|0 fnt",
-    "|faint|p2a: Noivern",
-    "|-damage|p1a: Roaring Moon|119/270 brn|[from] brn",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|move|p1a: Terapagos|Earth Power|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
     "|upkeep",
-    "|switch|p2a: Hypno|Hypno, L95, F|315/315",
     "|turn|12",
-    "|move|p1a: Roaring Moon|Knock Off|p2a: Hypno",
-    "|-supereffective|p2a: Hypno",
-    "|-damage|p2a: Hypno|165/315",
-    "|-enditem|p2a: Hypno|Leftovers|[from] move: Knock Off|[of] p1a: Roaring Moon",
-    "|move|p2a: Hypno|Encore|p1a: Roaring Moon",
-    "|-start|p1a: Roaring Moon|Encore",
-    "|-damage|p1a: Roaring Moon|103/270 brn|[from] brn",
+    "|move|p2a: Drifblim|Defog|p1a: Terapagos",
+    "|-unboost|p1a: Terapagos|evasion|1",
+    "|move|p1a: Terapagos|Rest|p1a: Terapagos",
+    "|-status|p1a: Terapagos|slp|[from] move: Rest",
+    "|-heal|p1a: Terapagos|273/273 slp|[silent]",
+    "|-enditem|p1a: Terapagos|Chesto Berry|[eat]",
+    "|-curestatus|p1a: Terapagos|slp|[msg]",
     "|upkeep",
     "|turn|13",
-    "|move|p1a: Roaring Moon|Knock Off|p2a: Hypno",
-    "|-supereffective|p2a: Hypno",
-    "|-damage|p2a: Hypno|54/315",
-    "|move|p2a: Hypno|Encore||[still]",
-    "|-fail|p2a: Hypno",
-    "|-damage|p1a: Roaring Moon|87/270 brn|[from] brn",
+    "|move|p2a: Drifblim|Defog|p1a: Terapagos",
+    "|-unboost|p1a: Terapagos|evasion|1",
+    "|move|p1a: Terapagos|Tera Starstorm|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
     "|upkeep",
     "|turn|14",
-    "|move|p1a: Roaring Moon|Knock Off|p2a: Hypno",
-    "|-supereffective|p2a: Hypno",
-    "|-damage|p2a: Hypno|0 fnt",
-    "|faint|p2a: Hypno",
-    "|-damage|p1a: Roaring Moon|71/270 brn|[from] brn",
+    "|move|p2a: Drifblim|Defog|p1a: Terapagos",
+    "|-unboost|p1a: Terapagos|evasion|1",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|1",
+    "|-boost|p1a: Terapagos|spd|1",
     "|upkeep",
-    "|switch|p2a: Dunsparce|Dunsparce, L86, F|312/312",
     "|turn|15",
-    "|move|p1a: Roaring Moon|Knock Off|p2a: Dunsparce",
-    "|-damage|p2a: Dunsparce|254/312",
-    "|-enditem|p2a: Dunsparce|Eviolite|[from] move: Knock Off|[of] p1a: Roaring Moon",
-    "|move|p2a: Dunsparce|Roost|p2a: Dunsparce",
-    "|-heal|p2a: Dunsparce|312/312",
-    "|-singleturn|p2a: Dunsparce|move: Roost",
-    "|-damage|p1a: Roaring Moon|55/270 brn|[from] brn",
-    "|-end|p1a: Roaring Moon|Encore",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|move|p1a: Terapagos|Rest|p1a: Terapagos",
+    "|-fail|p1a: Terapagos|heal",
     "|upkeep",
     "|turn|16",
-    "|move|p1a: Roaring Moon|Knock Off|p2a: Dunsparce",
-    "|-damage|p2a: Dunsparce|258/312",
-    "|move|p2a: Dunsparce|Roost|p2a: Dunsparce",
-    "|-heal|p2a: Dunsparce|312/312",
-    "|-singleturn|p2a: Dunsparce|move: Roost",
-    "|-damage|p1a: Roaring Moon|39/270 brn|[from] brn",
+    "|move|p2a: Drifblim|Defog|p1a: Terapagos",
+    "|-unboost|p1a: Terapagos|evasion|1",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|1",
+    "|-boost|p1a: Terapagos|spd|1",
     "|upkeep",
     "|turn|17",
-    "|move|p1a: Roaring Moon|Knock Off|p2a: Dunsparce",
-    "|-damage|p2a: Dunsparce|253/312",
-    "|move|p2a: Dunsparce|Earthquake|p1a: Roaring Moon",
-    "|-damage|p1a: Roaring Moon|0 fnt",
-    "|faint|p1a: Roaring Moon",
-    "|-end|p1a: Roaring Moon|Protosynthesis|[silent]",
+    "|move|p2a: Drifblim|Defog|p1a: Terapagos",
+    "|-unboost|p1a: Terapagos|evasion|1",
+    "|move|p1a: Terapagos|Tera Starstorm|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
     "|upkeep",
-    "|switch|p1a: Typhlosion|Typhlosion-Hisui, L83, M|257/257",
     "|turn|18",
-    "|move|p1a: Typhlosion|Fire Blast|p2a: Dunsparce",
-    "|-damage|p2a: Dunsparce|82/312",
-    "|move|p2a: Dunsparce|Body Slam|p1a: Typhlosion",
-    "|-immune|p1a: Typhlosion",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-activate|p1a: Terapagos|ability: Tera Shell",
+    "|-resisted|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|255/273",
+    "|move|p1a: Terapagos|Rest|p1a: Terapagos",
+    "|-status|p1a: Terapagos|slp|[from] move: Rest",
+    "|-heal|p1a: Terapagos|273/273 slp|[silent]",
     "|upkeep",
     "|turn|19",
-    "|move|p1a: Typhlosion|Calm Mind|p1a: Typhlosion",
-    "|-boost|p1a: Typhlosion|spa|1",
-    "|-boost|p1a: Typhlosion|spd|1",
-    "|move|p2a: Dunsparce|Body Slam|p1a: Typhlosion",
-    "|-immune|p1a: Typhlosion",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|cant|p1a: Terapagos|slp",
     "|upkeep",
     "|turn|20",
-    "|move|p1a: Typhlosion|Fire Blast|p2a: Dunsparce",
-    "|-damage|p2a: Dunsparce|0 fnt",
-    "|faint|p2a: Dunsparce",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|cant|p1a: Terapagos|slp",
     "|upkeep",
-    "|switch|p2a: Spectrier|Spectrier, L75|274/274",
     "|turn|21",
-    "|move|p2a: Spectrier|Substitute|p2a: Spectrier",
-    "|-start|p2a: Spectrier|Substitute",
-    "|-damage|p2a: Spectrier|206/274",
-    "|move|p1a: Typhlosion|Fire Blast|p2a: Spectrier",
-    "|-end|p2a: Spectrier|Substitute",
-    "|-heal|p2a: Spectrier|223/274|[from] item: Leftovers",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-activate|p1a: Terapagos|ability: Tera Shell",
+    "|-resisted|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|257/273 slp",
+    "|-curestatus|p1a: Terapagos|slp|[msg]",
+    "|cant|p1a: Terapagos|flinch",
     "|upkeep",
     "|turn|22",
-    "|move|p2a: Spectrier|Draining Kiss|p1a: Typhlosion",
-    "|-resisted|p1a: Typhlosion",
-    "|-damage|p1a: Typhlosion|244/257",
-    "|-heal|p2a: Spectrier|233/274|[from] drain|[of] p1a: Typhlosion",
-    "|move|p1a: Typhlosion|Calm Mind|p1a: Typhlosion",
-    "|-boost|p1a: Typhlosion|spa|1",
-    "|-boost|p1a: Typhlosion|spd|1",
-    "|-heal|p2a: Spectrier|250/274|[from] item: Leftovers",
+    "|move|p2a: Drifblim|Defog|p1a: Terapagos",
+    "|-unboost|p1a: Terapagos|evasion|1",
+    "|move|p1a: Terapagos|Rest|p1a: Terapagos",
+    "|-status|p1a: Terapagos|slp|[from] move: Rest",
+    "|-heal|p1a: Terapagos|273/273 slp|[silent]",
     "|upkeep",
     "|turn|23",
-    "|move|p2a: Spectrier|Substitute|p2a: Spectrier",
-    "|-start|p2a: Spectrier|Substitute",
-    "|-damage|p2a: Spectrier|182/274",
-    "|move|p1a: Typhlosion|Fire Blast|p2a: Spectrier",
-    "|-end|p2a: Spectrier|Substitute",
-    "|-heal|p2a: Spectrier|199/274|[from] item: Leftovers",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-activate|p1a: Terapagos|ability: Tera Shell",
+    "|-resisted|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|255/273 slp",
+    "|cant|p1a: Terapagos|slp",
     "|upkeep",
     "|turn|24",
-    "|move|p2a: Spectrier|Shadow Ball|p1a: Typhlosion",
-    "|-supereffective|p1a: Typhlosion",
-    "|-damage|p1a: Typhlosion|140/257",
-    "|-unboost|p1a: Typhlosion|spd|1",
-    "|move|p1a: Typhlosion|Focus Blast|p2a: Spectrier",
-    "|-immune|p2a: Spectrier",
-    "|-heal|p2a: Spectrier|216/274|[from] item: Leftovers",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|cant|p1a: Terapagos|slp",
     "|upkeep",
     "|turn|25",
-    "|move|p2a: Spectrier|Shadow Ball|p1a: Typhlosion",
-    "|-supereffective|p1a: Typhlosion",
-    "|-damage|p1a: Typhlosion|8/257",
-    "|move|p1a: Typhlosion|Shadow Ball|p2a: Spectrier",
-    "|-supereffective|p2a: Spectrier",
-    "|-damage|p2a: Spectrier|0 fnt",
-    "|faint|p2a: Spectrier",
+    "|move|p2a: Drifblim|Strength Sap|p1a: Terapagos",
+    "|-unboost|p1a: Terapagos|atk|1",
+    "|-curestatus|p1a: Terapagos|slp|[msg]",
+    "|move|p1a: Terapagos|Rest|p1a: Terapagos",
+    "|-status|p1a: Terapagos|slp|[from] move: Rest",
+    "|-heal|p1a: Terapagos|273/273 slp|[silent]",
     "|upkeep",
-    "|switch|p2a: Milotic|Milotic, L83, M|293/293",
     "|turn|26",
-    "|move|p1a: Typhlosion|Shadow Ball|p2a: Milotic",
-    "|-damage|p2a: Milotic|154/293",
-    "|move|p2a: Milotic|Dragon Tail|p1a: Typhlosion",
-    "|-damage|p1a: Typhlosion|0 fnt",
-    "|faint|p1a: Typhlosion",
-    "|-heal|p2a: Milotic|172/293|[from] item: Leftovers",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|cant|p1a: Terapagos|slp",
     "|upkeep",
-    "|switch|p1a: Crawdaunt|Crawdaunt, L84, M|243/243",
     "|turn|27",
-    "|move|p2a: Milotic|Scald|p1a: Crawdaunt",
-    "|-resisted|p1a: Crawdaunt",
-    "|-damage|p1a: Crawdaunt|186/243",
-    "|move|p1a: Crawdaunt|Knock Off|p2a: Milotic",
-    "|-damage|p2a: Milotic|0 fnt",
-    "|-enditem|p2a: Milotic|Leftovers|[from] move: Knock Off|[of] p1a: Crawdaunt",
-    "|faint|p2a: Milotic",
-    "|-damage|p1a: Crawdaunt|162/243|[from] item: Life Orb",
-    "|win|Player 1"
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|cant|p1a: Terapagos|slp",
+    "|upkeep",
+    "|turn|28",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|-curestatus|p1a: Terapagos|slp|[msg]",
+    "|move|p1a: Terapagos|Tera Starstorm|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|29",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|move|p1a: Terapagos|Rest|p1a: Terapagos",
+    "|-fail|p1a: Terapagos|heal",
+    "|upkeep",
+    "|turn|30",
+    "|move|p2a: Drifblim|Strength Sap|p1a: Terapagos",
+    "|-unboost|p1a: Terapagos|atk|1",
+    "|move|p1a: Terapagos|Tera Starstorm|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|31",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-activate|p1a: Terapagos|ability: Tera Shell",
+    "|-resisted|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|256/273",
+    "|move|p1a: Terapagos|Rest|p1a: Terapagos",
+    "|-status|p1a: Terapagos|slp|[from] move: Rest",
+    "|-heal|p1a: Terapagos|273/273 slp|[silent]",
+    "|upkeep",
+    "|turn|32",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-activate|p1a: Terapagos|ability: Tera Shell",
+    "|-resisted|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|255/273 slp",
+    "|cant|p1a: Terapagos|slp",
+    "|upkeep",
+    "|turn|33",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|cant|p1a: Terapagos|slp",
+    "|upkeep",
+    "|turn|34",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|216/273 slp",
+    "|-curestatus|p1a: Terapagos|slp|[msg]",
+    "|cant|p1a: Terapagos|flinch",
+    "|upkeep",
+    "|turn|35",
+    "|move|p2a: Drifblim|Strength Sap|p1a: Terapagos",
+    "|-unboost|p1a: Terapagos|atk|1",
+    "|move|p1a: Terapagos|Tera Starstorm|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|36",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|179/273",
+    "|cant|p1a: Terapagos|flinch",
+    "|upkeep",
+    "|turn|37",
+    "|move|p2a: Drifblim|Strength Sap|p1a: Terapagos",
+    "|-unboost|p1a: Terapagos|atk|1",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|1",
+    "|-boost|p1a: Terapagos|spd|1",
+    "|upkeep",
+    "|turn|38",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|151/273",
+    "|move|p1a: Terapagos|Tera Starstorm|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|39",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|1",
+    "|-boost|p1a: Terapagos|spd|1",
+    "|upkeep",
+    "|turn|40",
+    "|move|p2a: Drifblim|Strength Sap|p1a: Terapagos",
+    "|-unboost|p1a: Terapagos|atk|1",
+    "|move|p1a: Terapagos|Tera Starstorm|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|41",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|1",
+    "|-boost|p1a: Terapagos|spd|1",
+    "|upkeep",
+    "|turn|42",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Rest|p1a: Terapagos",
+    "|-status|p1a: Terapagos|slp|[from] move: Rest",
+    "|-heal|p1a: Terapagos|273/273 slp|[silent]",
+    "|upkeep",
+    "|turn|43",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|cant|p1a: Terapagos|slp",
+    "|upkeep",
+    "|turn|44",
+    "|move|p2a: Drifblim|Strength Sap|p1a: Terapagos",
+    "|-unboost|p1a: Terapagos|atk|1",
+    "|cant|p1a: Terapagos|slp",
+    "|upkeep",
+    "|turn|45",
+    "|move|p2a: Drifblim|Strength Sap||[still]",
+    "|-fail|p2a: Drifblim",
+    "|-curestatus|p1a: Terapagos|slp|[msg]",
+    "|move|p1a: Terapagos|Earth Power|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|46",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|1",
+    "|-boost|p1a: Terapagos|spd|1",
+    "|upkeep",
+    "|turn|47",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Earth Power|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|48",
+    "|move|p2a: Drifblim|Strength Sap||[still]",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Tera Starstorm|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|49",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|50",
+    "|move|p2a: Drifblim|Strength Sap||[still]",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|51",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|move|p1a: Terapagos|Earth Power|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|52",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-activate|p1a: Terapagos|ability: Tera Shell",
+    "|-resisted|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|264/273",
+    "|cant|p1a: Terapagos|flinch",
+    "|upkeep",
+    "|turn|53",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|move|p1a: Terapagos|Earth Power|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|54",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|move|p1a: Terapagos|Earth Power|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|55",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|246/273",
+    "|cant|p1a: Terapagos|flinch",
+    "|upkeep",
+    "|turn|56",
+    "|move|p2a: Drifblim|Strength Sap||[still]",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|57",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Earth Power|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|58",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|228/273",
+    "|cant|p1a: Terapagos|flinch",
+    "|upkeep",
+    "|turn|59",
+    "|move|p2a: Drifblim|Strength Sap||[still]",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|60",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|61",
+    "|move|p2a: Drifblim|Strength Sap||[still]",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Earth Power|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|62",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|63",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|move|p1a: Terapagos|Earth Power|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|64",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|move|p1a: Terapagos|Earth Power|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|65",
+    "|move|p2a: Drifblim|Strength Sap||[still]",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Earth Power|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|66",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|67",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|209/273",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|68",
+    "|move|p2a: Drifblim|Strength Sap||[still]",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Earth Power|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|69",
+    "|move|p2a: Drifblim|Strength Sap||[still]",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|70",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Earth Power|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|71",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|191/273",
+    "|move|p1a: Terapagos|Earth Power|p2a: Drifblim",
+    "|-immune|p2a: Drifblim",
+    "|upkeep",
+    "|turn|72",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|172/273",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|73",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|153/273",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|74",
+    "|move|p2a: Drifblim|Strength Sap||[still]",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|75",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|135/273",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|76",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|77",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|78",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|79",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|80",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|81",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|119/273",
+    "|cant|p1a: Terapagos|flinch",
+    "|upkeep",
+    "|turn|82",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|101/273",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|83",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|84",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|85",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|86",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|87",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|83/273",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|88",
+    "|move|p2a: Drifblim|Defog||[still]",
+    "|-unboost|p1a: Terapagos|evasion|0",
+    "|-fail|p2a: Drifblim",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|89",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Terapagos",
+    "|-immune|p1a: Terapagos",
+    "|move|p1a: Terapagos|Calm Mind|p1a: Terapagos",
+    "|-boost|p1a: Terapagos|spa|0",
+    "|-boost|p1a: Terapagos|spd|0",
+    "|upkeep",
+    "|turn|90",
+    "|move|p2a: Drifblim|Air Slash|p1a: Terapagos",
+    "|-damage|p1a: Terapagos|64/273",
+    "|-activate|p1a: Terapagos|move: Struggle",
+    "|move|p1a: Terapagos|Struggle|p2a: Drifblim",
+    "|-damage|p2a: Drifblim|388/398",
+    "|-damage|p1a: Terapagos|0 fnt|[from] recoil",
+    "|faint|p1a: Terapagos",
+    "|upkeep",
+    "|switch|p1a: Landorus|Landorus-Therian, L76, M|260/260",
+    "|-ability|p1a: Landorus|Intimidate|boost",
+    "|-unboost|p2a: Drifblim|atk|1",
+    "|turn|91",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Landorus",
+    "|-damage|p1a: Landorus|161/260",
+    "|move|p1a: Landorus|Stealth Rock|p2a: Drifblim",
+    "|-sidestart|p2: Player 2|move: Stealth Rock",
+    "|-heal|p1a: Landorus|177/260|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|92",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Landorus",
+    "|-damage|p1a: Landorus|80/260",
+    "|move|p1a: Landorus|Stealth Rock||[still]",
+    "|-fail|p1a: Landorus",
+    "|-heal|p1a: Landorus|96/260|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|93",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Landorus",
+    "|-damage|p1a: Landorus|0 fnt",
+    "|faint|p1a: Landorus",
+    "|upkeep",
+    "|switch|p1a: Klefki|Klefki, L84, M|233/233",
+    "|turn|94",
+    "|move|p2a: Drifblim|Shadow Ball|p1a: Klefki",
+    "|-damage|p1a: Klefki|146/233",
+    "|-unboost|p1a: Klefki|spd|1",
+    "|move|p1a: Klefki|Dazzling Gleam|p2a: Drifblim",
+    "|-damage|p2a: Drifblim|282/398",
+    "|-heal|p1a: Klefki|160/233|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|95",
+    "|move|p2a: Drifblim|Air Slash|p1a: Klefki",
+    "|-resisted|p1a: Klefki",
+    "|-damage|p1a: Klefki|100/233",
+    "|move|p1a: Klefki|Foul Play|p2a: Drifblim",
+    "|-supereffective|p2a: Drifblim",
+    "|-damage|p2a: Drifblim|190/398",
+    "|-heal|p1a: Klefki|114/233|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|96",
+    "|move|p1a: Klefki|Spikes|p2a: Drifblim",
+    "|-sidestart|p2: Player 2|Spikes",
+    "|move|p2a: Drifblim|Air Slash|p1a: Klefki",
+    "|-resisted|p1a: Klefki",
+    "|-damage|p1a: Klefki|60/233",
+    "|-heal|p1a: Klefki|74/233|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|97",
+    "|move|p1a: Klefki|Thunder Wave|p2a: Drifblim",
+    "|-status|p2a: Drifblim|par",
+    "|cant|p2a: Drifblim|par",
+    "|-heal|p1a: Klefki|88/233|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|98",
+    "|move|p1a: Klefki|Thunder Wave|p2a: Drifblim",
+    "|-fail|p2a: Drifblim|par",
+    "|move|p2a: Drifblim|Air Slash|p1a: Klefki",
+    "|-resisted|p1a: Klefki",
+    "|-damage|p1a: Klefki|28/233",
+    "|-heal|p1a: Klefki|42/233|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|99",
+    "|move|p1a: Klefki|Dazzling Gleam|p2a: Drifblim",
+    "|-damage|p2a: Drifblim|91/398 par",
+    "|cant|p2a: Drifblim|par",
+    "|-heal|p1a: Klefki|56/233|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|100",
+    "|move|p1a: Klefki|Foul Play|p2a: Drifblim",
+    "|-supereffective|p2a: Drifblim",
+    "|-damage|p2a: Drifblim|0 fnt",
+    "|-damage|p1a: Klefki|0 fnt|[from] ability: Aftermath|[of] p2a: Drifblim",
+    "|faint|p2a: Drifblim",
+    "|faint|p1a: Klefki",
+    "|upkeep",
+    "|switch|p2a: Ting-Lu|Ting-Lu, L78|370/370",
+    "|switch|p1a: Gardevoir|Gardevoir, L83, F|249/249",
+    "|-ability|p1a: Gardevoir|Vessel of Ruin",
+    "|-ability|p1a: Gardevoir|Vessel of Ruin|[from] ability: Trace|[of] p2a: Ting-Lu",
+    "|-damage|p2a: Ting-Lu|347/370|[from] Stealth Rock",
+    "|-damage|p2a: Ting-Lu|301/370|[from] Spikes",
+    "|-ability|p2a: Ting-Lu|Vessel of Ruin",
+    "|turn|101",
+    "|move|p1a: Gardevoir|Psychic|p2a: Ting-Lu",
+    "|-immune|p2a: Ting-Lu",
+    "|move|p2a: Ting-Lu|Spikes|p1a: Gardevoir",
+    "|-sidestart|p1: Player 1|Spikes",
+    "|-heal|p2a: Ting-Lu|324/370|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|102",
+    "|move|p1a: Gardevoir|Psychic|p2a: Ting-Lu",
+    "|-immune|p2a: Ting-Lu",
+    "|move|p2a: Ting-Lu|Spikes|p1a: Gardevoir",
+    "|-sidestart|p1: Player 1|Spikes",
+    "|-heal|p2a: Ting-Lu|347/370|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|103",
+    "|move|p1a: Gardevoir|Psychic|p2a: Ting-Lu",
+    "|-immune|p2a: Ting-Lu",
+    "|move|p2a: Ting-Lu|Whirlwind|p1a: Gardevoir",
+    "|drag|p1a: Vikavolt|Vikavolt, L83, F|263/263",
+    "|-heal|p2a: Ting-Lu|370/370|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|104",
+    "|move|p1a: Vikavolt|Thunderbolt|p2a: Ting-Lu",
+    "|-immune|p2a: Ting-Lu",
+    "|move|p2a: Ting-Lu|Earthquake|p1a: Vikavolt",
+    "|-immune|p1a: Vikavolt|[from] ability: Levitate",
+    "|upkeep",
+    "|turn|105",
+    "|move|p1a: Vikavolt|Sticky Web|p2a: Ting-Lu",
+    "|-sidestart|p2: Player 2|move: Sticky Web",
+    "|move|p2a: Ting-Lu|Spikes|p1a: Vikavolt",
+    "|-sidestart|p1: Player 1|Spikes",
+    "|upkeep",
+    "|turn|106",
+    "|move|p1a: Vikavolt|Thunderbolt|p2a: Ting-Lu",
+    "|-immune|p2a: Ting-Lu",
+    "|move|p2a: Ting-Lu|Earthquake|p1a: Vikavolt",
+    "|-immune|p1a: Vikavolt|[from] ability: Levitate",
+    "|upkeep",
+    "|turn|107",
+    "|move|p1a: Vikavolt|Sticky Web||[still]",
+    "|-fail|p1a: Vikavolt",
+    "|move|p2a: Ting-Lu|Spikes||[still]",
+    "|-fail|p2a: Ting-Lu",
+    "|upkeep",
+    "|turn|108",
+    "|move|p1a: Vikavolt|Thunderbolt|p2a: Ting-Lu",
+    "|-immune|p2a: Ting-Lu",
+    "|move|p2a: Ting-Lu|Earthquake|p1a: Vikavolt",
+    "|-immune|p1a: Vikavolt|[from] ability: Levitate",
+    "|upkeep",
+    "|turn|109",
+    "|move|p1a: Vikavolt|Bug Buzz|p2a: Ting-Lu",
+    "|-supereffective|p2a: Ting-Lu",
+    "|-crit|p2a: Ting-Lu",
+    "|-damage|p2a: Ting-Lu|32/370",
+    "|-unboost|p2a: Ting-Lu|spd|1",
+    "|move|p2a: Ting-Lu|Earthquake|p1a: Vikavolt",
+    "|-immune|p1a: Vikavolt|[from] ability: Levitate",
+    "|-heal|p2a: Ting-Lu|55/370|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|110",
+    "|move|p1a: Vikavolt|Energy Ball|p2a: Ting-Lu",
+    "|-supereffective|p2a: Ting-Lu",
+    "|-damage|p2a: Ting-Lu|0 fnt",
+    "|faint|p2a: Ting-Lu",
+    "|upkeep",
+    "|switch|p2a: Iron Hands|Iron Hands, L79, shiny|373/373",
+    "|-damage|p2a: Iron Hands|350/373|[from] Stealth Rock",
+    "|-damage|p2a: Iron Hands|304/373|[from] Spikes",
+    "|-activate|p2a: Iron Hands|move: Sticky Web",
+    "|-unboost|p2a: Iron Hands|spe|1",
+    "|turn|111",
+    "|move|p1a: Vikavolt|Bug Buzz|p2a: Iron Hands",
+    "|-resisted|p2a: Iron Hands",
+    "|-damage|p2a: Iron Hands|216/373",
+    "|move|p2a: Iron Hands|Drain Punch|p1a: Vikavolt",
+    "|-resisted|p1a: Vikavolt",
+    "|-damage|p1a: Vikavolt|216/263",
+    "|-heal|p2a: Iron Hands|240/373|[from] drain|[of] p1a: Vikavolt",
+    "|-heal|p2a: Iron Hands|263/373|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|112",
+    "|move|p1a: Vikavolt|Energy Ball|p2a: Iron Hands",
+    "|-damage|p2a: Iron Hands|153/373",
+    "|move|p2a: Iron Hands|Swords Dance|p2a: Iron Hands",
+    "|-boost|p2a: Iron Hands|atk|2",
+    "|-heal|p2a: Iron Hands|176/373|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|113",
+    "|move|p1a: Vikavolt|Bug Buzz|p2a: Iron Hands",
+    "|-resisted|p2a: Iron Hands",
+    "|-damage|p2a: Iron Hands|89/373",
+    "|move|p2a: Iron Hands|Drain Punch|p1a: Vikavolt",
+    "|-resisted|p1a: Vikavolt",
+    "|-damage|p1a: Vikavolt|124/263",
+    "|-heal|p2a: Iron Hands|135/373|[from] drain|[of] p1a: Vikavolt",
+    "|-heal|p2a: Iron Hands|158/373|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|114",
+    "|move|p1a: Vikavolt|Bug Buzz|p2a: Iron Hands",
+    "|-resisted|p2a: Iron Hands",
+    "|-damage|p2a: Iron Hands|81/373",
+    "|move|p2a: Iron Hands|Drain Punch|p1a: Vikavolt",
+    "|-resisted|p1a: Vikavolt",
+    "|-damage|p1a: Vikavolt|33/263",
+    "|-heal|p2a: Iron Hands|127/373|[from] drain|[of] p1a: Vikavolt",
+    "|-heal|p2a: Iron Hands|150/373|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|115",
+    "|move|p1a: Vikavolt|Sticky Web||[still]",
+    "|-fail|p1a: Vikavolt",
+    "|move|p2a: Iron Hands|Ice Punch|p1a: Vikavolt",
+    "|-damage|p1a: Vikavolt|0 fnt",
+    "|faint|p1a: Vikavolt",
+    "|-heal|p2a: Iron Hands|173/373|[from] item: Leftovers",
+    "|upkeep",
+    "|switch|p1a: Gardevoir|Gardevoir, L83, F|249/249",
+    "|-damage|p1a: Gardevoir|187/249|[from] Spikes",
+    "|turn|116",
+    "|move|p1a: Gardevoir|Mystical Fire|p2a: Iron Hands",
+    "|-damage|p2a: Iron Hands|97/373",
+    "|-unboost|p2a: Iron Hands|spa|1",
+    "|move|p2a: Iron Hands|Swords Dance|p2a: Iron Hands",
+    "|-boost|p2a: Iron Hands|atk|2",
+    "|-heal|p2a: Iron Hands|120/373|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|117",
+    "|move|p1a: Gardevoir|Mystical Fire|p2a: Iron Hands",
+    "|-damage|p2a: Iron Hands|32/373",
+    "|-unboost|p2a: Iron Hands|spa|1",
+    "|move|p2a: Iron Hands|Drain Punch|p1a: Gardevoir",
+    "|-resisted|p1a: Gardevoir",
+    "|-damage|p1a: Gardevoir|99/249",
+    "|-heal|p2a: Iron Hands|76/373|[from] drain|[of] p1a: Gardevoir",
+    "|-heal|p2a: Iron Hands|99/373|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|118",
+    "|move|p1a: Gardevoir|Mystical Fire|p2a: Iron Hands",
+    "|-damage|p2a: Iron Hands|15/373",
+    "|-unboost|p2a: Iron Hands|spa|1",
+    "|move|p2a: Iron Hands|Ice Punch|p1a: Gardevoir",
+    "|-damage|p1a: Gardevoir|0 fnt",
+    "|faint|p1a: Gardevoir",
+    "|win|Player 2"
   ]
 }

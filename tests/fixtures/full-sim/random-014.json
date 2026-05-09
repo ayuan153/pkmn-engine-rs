@@ -11,104 +11,14 @@
   "p1": {
     "team": [
       {
-        "species": "Hydreigon",
-        "ability": "Levitate",
-        "item": "Life Orb",
+        "species": "Entei",
+        "ability": "Inner Focus",
+        "item": "Choice Band",
         "moves": [
-          "Dark Pulse",
-          "Fire Blast",
-          "Draco Meteor",
-          "Nasty Plot"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 79,
-        "gender": "F"
-      },
-      {
-        "species": "Reuniclus",
-        "ability": "Magic Guard",
-        "item": "Life Orb",
-        "moves": [
-          "Focus Blast",
-          "Calm Mind",
-          "Psychic",
-          "Recover"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 88,
-        "gender": "M"
-      },
-      {
-        "species": "Girafarig",
-        "ability": "Sap Sipper",
-        "item": "Eviolite",
-        "moves": [
-          "Nasty Plot",
-          "Thunderbolt",
-          "Dazzling Gleam",
-          "Psychic"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 0,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 0,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 89,
-        "gender": "F"
-      },
-      {
-        "species": "Gliscor",
-        "ability": "Poison Heal",
-        "item": "Toxic Orb",
-        "moves": [
-          "Protect",
-          "Earthquake",
-          "Knock Off",
-          "Toxic"
+          "Sacred Fire",
+          "Extreme Speed",
+          "Stomping Tantrum",
+          "Flare Blitz"
         ],
         "nature": "Hardy",
         "evs": {
@@ -127,17 +37,17 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 76,
-        "gender": "M"
+        "level": 78,
+        "gender": "N"
       },
       {
-        "species": "Komala",
-        "ability": "Comatose",
-        "item": "Assault Vest",
+        "species": "Persian-Alola",
+        "ability": "Fur Coat",
+        "item": "Heavy-Duty Boots",
         "moves": [
-          "Rapid Spin",
-          "Body Slam",
-          "U-turn",
+          "Taunt",
+          "Parting Shot",
+          "Thunder Wave",
           "Knock Off"
         ],
         "nature": "Hardy",
@@ -157,18 +67,78 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 88,
+        "level": 86,
         "gender": "F"
       },
       {
-        "species": "Chesnaught",
-        "ability": "Bulletproof",
-        "item": "Leftovers",
+        "species": "Iron Jugulis",
+        "ability": "Quark Drive",
+        "item": "Power Herb",
         "moves": [
-          "Trailblaze",
-          "Iron Defense",
-          "Body Press",
-          "Synthesis"
+          "Hurricane",
+          "Earth Power",
+          "Meteor Beam",
+          "Dark Pulse"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 77,
+        "gender": "N"
+      },
+      {
+        "species": "Jolteon",
+        "ability": "Volt Absorb",
+        "item": "Choice Specs",
+        "moves": [
+          "Shadow Ball",
+          "Volt Switch",
+          "Thunderbolt",
+          "Alluring Voice"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 84,
+        "gender": "M"
+      },
+      {
+        "species": "Revavroom",
+        "ability": "Filter",
+        "item": "Life Orb",
+        "moves": [
+          "Gunk Shot",
+          "Shift Gear",
+          "High Horsepower",
+          "Iron Head"
         ],
         "nature": "Hardy",
         "evs": {
@@ -187,27 +157,57 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 84,
+        "level": 79,
         "gender": "F"
+      },
+      {
+        "species": "Torterra",
+        "ability": "Overgrow",
+        "item": "Loaded Dice",
+        "moves": [
+          "Bullet Seed",
+          "Rock Blast",
+          "Headlong Rush",
+          "Shell Smash"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 78,
+        "gender": "M"
       }
     ]
   },
   "p2": {
     "team": [
       {
-        "species": "Dragonite",
-        "ability": "Multiscale",
+        "species": "Venomoth",
+        "ability": "Tinted Lens",
         "item": "Heavy-Duty Boots",
         "moves": [
-          "Tera Blast",
-          "Outrage",
-          "Earthquake",
-          "Dragon Dance"
+          "Bug Buzz",
+          "Quiver Dance",
+          "Sleep Powder",
+          "Sludge Wave"
         ],
         "nature": "Hardy",
         "evs": {
           "hp": 85,
-          "atk": 85,
+          "atk": 0,
           "def": 85,
           "spa": 85,
           "spd": 85,
@@ -215,54 +215,24 @@
         },
         "ivs": {
           "hp": 31,
-          "atk": 31,
+          "atk": 0,
           "def": 31,
           "spa": 31,
           "spd": 31,
           "spe": 31
         },
-        "level": 74,
-        "gender": "F"
+        "level": 84,
+        "gender": "M"
       },
       {
-        "species": "Brute Bonnet",
-        "ability": "Protosynthesis",
-        "item": "Leftovers",
+        "species": "Emboar",
+        "ability": "Reckless",
+        "item": "Choice Scarf",
         "moves": [
-          "Close Combat",
-          "Sucker Punch",
-          "Crunch",
-          "Spore"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 80,
-        "gender": "N"
-      },
-      {
-        "species": "Empoleon",
-        "ability": "Competitive",
-        "item": "Leftovers",
-        "moves": [
-          "Surf",
-          "Stealth Rock",
-          "Flip Turn",
-          "Roost"
+          "Knock Off",
+          "Head Smash",
+          "Flare Blitz",
+          "Close Combat"
         ],
         "nature": "Hardy",
         "evs": {
@@ -285,74 +255,14 @@
         "gender": "F"
       },
       {
-        "species": "Wigglytuff",
-        "ability": "Competitive",
-        "item": "Leftovers",
-        "moves": [
-          "Knock Off",
-          "Wish",
-          "Dazzling Gleam",
-          "Protect"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 96,
-        "gender": "F"
-      },
-      {
-        "species": "Piloswine",
-        "ability": "Thick Fat",
-        "item": "Eviolite",
-        "moves": [
-          "Ice Shard",
-          "Roar",
-          "Icicle Crash",
-          "Earthquake"
-        ],
-        "nature": "Hardy",
-        "evs": {
-          "hp": 85,
-          "atk": 85,
-          "def": 85,
-          "spa": 85,
-          "spd": 85,
-          "spe": 85
-        },
-        "ivs": {
-          "hp": 31,
-          "atk": 31,
-          "def": 31,
-          "spa": 31,
-          "spd": 31,
-          "spe": 31
-        },
-        "level": 85,
-        "gender": "M"
-      },
-      {
-        "species": "Granbull",
-        "ability": "Intimidate",
+        "species": "Tinkaton",
+        "ability": "Mold Breaker",
         "item": "Leftovers",
         "moves": [
           "Play Rough",
-          "Roar",
-          "Earthquake",
-          "Thunder Wave"
+          "Gigaton Hammer",
+          "Thunder Wave",
+          "Stealth Rock"
         ],
         "nature": "Hardy",
         "evs": {
@@ -371,30 +281,108 @@
           "spd": 31,
           "spe": 31
         },
-        "level": 88,
-        "gender": "M"
+        "level": 82,
+        "gender": "F"
+      },
+      {
+        "species": "Zebstrika",
+        "ability": "Sap Sipper",
+        "item": "Life Orb",
+        "moves": [
+          "Volt Switch",
+          "Overheat",
+          "Supercell Slam",
+          "High Horsepower"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 87,
+        "gender": "F"
+      },
+      {
+        "species": "Misdreavus",
+        "ability": "Levitate",
+        "item": "Eviolite",
+        "moves": [
+          "Shadow Ball",
+          "Draining Kiss",
+          "Calm Mind",
+          "Will-O-Wisp"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 0,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 90,
+        "gender": "F"
+      },
+      {
+        "species": "Crabominable",
+        "ability": "Iron Fist",
+        "item": "Assault Vest",
+        "moves": [
+          "Knock Off",
+          "Earthquake",
+          "Drain Punch",
+          "Ice Hammer"
+        ],
+        "nature": "Hardy",
+        "evs": {
+          "hp": 85,
+          "atk": 85,
+          "def": 85,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 90,
+        "gender": "F"
       }
     ]
   },
   "choices": [
     [
-      "move 2",
-      "move 3"
-    ],
-    [
-      "move 1",
-      "move 1"
-    ],
-    [
       "move 4",
-      "move 1"
-    ],
-    [
-      "move 2",
       "move 4"
     ],
     [
-      "move 2",
+      "move 4",
       "switch 3"
     ],
     [
@@ -402,507 +390,289 @@
       "switch 2"
     ],
     [
-      "move 3",
-      "move 2"
-    ],
-    [
-      "move 4",
-      "switch 6"
+      "switch 6",
+      "move 4"
     ],
     [
       "move 3",
       "move 4"
     ],
     [
-      "move 1",
-      "move 3"
-    ],
-    [
-      "switch 4",
-      "move 1"
-    ],
-    [
-      "move 4",
-      "move 2"
-    ],
-    [
-      "move dazzlinggleam",
-      "move 2"
-    ],
-    [
       "move 2",
-      "move 2"
-    ],
-    [
-      "move psychic",
-      "move 2"
-    ],
-    [
-      "move calmmind",
       "switch 4"
     ],
     [
-      "move recover",
-      "move 4"
-    ],
-    [
-      "move calmmind",
-      "move 4"
-    ],
-    [
-      "move calmmind",
-      "move 3"
-    ],
-    [
-      "move calmmind",
-      "move 1"
-    ],
-    [
-      "move focusblast",
-      "move 3"
-    ],
-    [
-      "move psychic",
-      "move 4"
-    ],
-    [
-      "move calmmind",
-      "switch 3"
-    ],
-    [
-      "move focusblast",
-      "move 1"
-    ],
-    [
-      "switch 3",
-      "move 1"
-    ],
-    [
       "move 3",
-      "move 4"
+      "move 1"
     ],
     [
       "move 1",
-      "move 2"
-    ],
-    [
-      "move 4",
-      "move 3"
-    ],
-    [
-      "move 3",
       "switch 5"
     ],
     [
-      "move 2",
+      "move 4",
       "move 4"
-    ],
-    [
-      "move uturn",
-      "move 2"
     ],
     [
       "switch 5",
       "move 1"
     ],
     [
-      "move nastyplot",
+      "move 3",
       "move 3"
     ],
     [
-      "move psychic",
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 1",
       "move 1"
     ],
     [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
       "move 2",
-      "move 4"
+      "move 2"
     ],
     [
       "move 1",
       "move 4"
     ],
     [
-      "move 4",
-      "move 2"
-    ],
-    [
-      "move knockoff",
-      "move 2"
-    ],
-    [
-      "move 3",
-      "move 1"
-    ],
-    [
       "move 1",
-      "switch 3"
-    ],
-    [
-      "move 4",
-      "move 2"
-    ],
-    [
-      "move 4",
-      "move 2"
-    ],
-    [
-      "move 2",
-      "move 2"
-    ],
-    [
-      "move 4",
-      "move 1"
-    ],
-    [
-      "move 2",
-      "move 1"
-    ],
-    [
-      "move 4",
       "move 3"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ],
+    [
+      "switch 2",
+      "switch 6"
     ],
     [
       "move 3",
       "move 3"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 1"
     ]
   ],
   "protocol": [
-    "|switch|p1a: Hydreigon|Hydreigon, L79, F|275/275",
-    "|switch|p2a: Dragonite|Dragonite, L74, F|257/257",
+    "|switch|p1a: Entei|Entei, L78|307/307",
+    "|switch|p2a: Venomoth|Venomoth, L84, M|255/255",
     "|turn|1",
-    "|move|p1a: Hydreigon|Fire Blast|p2a: Dragonite",
-    "|-resisted|p2a: Dragonite",
-    "|-damage|p2a: Dragonite|231/257",
-    "|-damage|p1a: Hydreigon|248/275|[from] item: Life Orb",
-    "|move|p2a: Dragonite|Earthquake|p1a: Hydreigon",
-    "|-immune|p1a: Hydreigon|[from] ability: Levitate",
+    "|move|p1a: Entei|Flare Blitz|p2a: Venomoth",
+    "|-supereffective|p2a: Venomoth",
+    "|-damage|p2a: Venomoth|0 fnt",
+    "|faint|p2a: Venomoth",
+    "|-damage|p1a: Entei|223/307|[from] Recoil",
     "|upkeep",
+    "|switch|p2a: Tinkaton|Tinkaton, L82, F|274/274",
+    "|-ability|p2a: Tinkaton|Mold Breaker",
     "|turn|2",
-    "|move|p1a: Hydreigon|Dark Pulse|p2a: Dragonite",
-    "|-damage|p2a: Dragonite|101/257",
-    "|-damage|p1a: Hydreigon|221/275|[from] item: Life Orb",
-    "|move|p2a: Dragonite|Tera Blast|p1a: Hydreigon",
-    "|-damage|p1a: Hydreigon|172/275",
+    "|move|p1a: Entei|Flare Blitz|p2a: Tinkaton",
+    "|-supereffective|p2a: Tinkaton",
+    "|-damage|p2a: Tinkaton|0 fnt",
+    "|faint|p2a: Tinkaton",
+    "|-damage|p1a: Entei|133/307|[from] Recoil",
     "|upkeep",
+    "|switch|p2a: Emboar|Emboar, L84, F|322/322",
     "|turn|3",
-    "|move|p1a: Hydreigon|Nasty Plot|p1a: Hydreigon",
-    "|-boost|p1a: Hydreigon|spa|2",
-    "|move|p2a: Dragonite|Tera Blast|p1a: Hydreigon",
-    "|-damage|p1a: Hydreigon|126/275",
+    "|move|p2a: Emboar|Close Combat|p1a: Entei",
+    "|-damage|p1a: Entei|0 fnt",
+    "|-unboost|p2a: Emboar|def|1",
+    "|-unboost|p2a: Emboar|spd|1",
+    "|faint|p1a: Entei",
     "|upkeep",
+    "|switch|p1a: Torterra|Torterra, L78, M|276/276",
     "|turn|4",
-    "|move|p1a: Hydreigon|Fire Blast|p2a: Dragonite",
-    "|-resisted|p2a: Dragonite",
-    "|-damage|p2a: Dragonite|0 fnt",
-    "|faint|p2a: Dragonite",
-    "|-damage|p1a: Hydreigon|99/275|[from] item: Life Orb",
+    "|move|p2a: Emboar|Close Combat|p1a: Torterra",
+    "|-damage|p1a: Torterra|123/276",
+    "|-unboost|p2a: Emboar|def|1",
+    "|-unboost|p2a: Emboar|spd|1",
+    "|move|p1a: Torterra|Headlong Rush|p2a: Emboar",
+    "|-supereffective|p2a: Emboar",
+    "|-damage|p2a: Emboar|0 fnt",
+    "|-unboost|p1a: Torterra|def|1",
+    "|-unboost|p1a: Torterra|spd|1",
+    "|faint|p2a: Emboar",
     "|upkeep",
-    "|switch|p2a: Empoleon|Empoleon, L84, F|278/278",
+    "|switch|p2a: Zebstrika|Zebstrika, L87, F|272/272",
     "|turn|5",
-    "|move|p1a: Hydreigon|Fire Blast|p2a: Empoleon",
-    "|-damage|p2a: Empoleon|84/278",
-    "|-damage|p1a: Hydreigon|72/275|[from] item: Life Orb",
-    "|move|p2a: Empoleon|Flip Turn|p1a: Hydreigon",
-    "|-resisted|p1a: Hydreigon",
-    "|-damage|p1a: Hydreigon|40/275",
-    "|switch|p2a: Brute Bonnet|Brute Bonnet, L80|309/309|[from] Flip Turn",
+    "|move|p2a: Zebstrika|Volt Switch|p1a: Torterra",
+    "|-immune|p1a: Torterra",
+    "|move|p1a: Torterra|Rock Blast|p2a: Zebstrika",
+    "|-damage|p2a: Zebstrika|252/272",
+    "|-damage|p2a: Zebstrika|229/272",
+    "|-damage|p2a: Zebstrika|206/272",
+    "|-damage|p2a: Zebstrika|185/272",
+    "|-damage|p2a: Zebstrika|162/272",
+    "|-hitcount|p2a: Zebstrika|5",
     "|upkeep",
     "|turn|6",
-    "|move|p2a: Brute Bonnet|Sucker Punch||[still]",
-    "|-fail|p2a: Brute Bonnet",
-    "|move|p1a: Hydreigon|Nasty Plot|p1a: Hydreigon",
-    "|-boost|p1a: Hydreigon|spa|2",
+    "|move|p2a: Zebstrika|Supercell Slam|p1a: Torterra",
+    "|-immune|p1a: Torterra",
+    "|-damage|p2a: Zebstrika|26/272|[from] supercellslam",
+    "|move|p1a: Torterra|Headlong Rush|p2a: Zebstrika",
+    "|-supereffective|p2a: Zebstrika",
+    "|-damage|p2a: Zebstrika|0 fnt",
+    "|-unboost|p1a: Torterra|def|1",
+    "|-unboost|p1a: Torterra|spd|1",
+    "|faint|p2a: Zebstrika",
     "|upkeep",
+    "|switch|p2a: Misdreavus|Misdreavus, L90, F|254/254",
     "|turn|7",
-    "|move|p1a: Hydreigon|Draco Meteor|p2a: Brute Bonnet",
-    "|-damage|p2a: Brute Bonnet|0 fnt",
-    "|-unboost|p1a: Hydreigon|spa|2",
-    "|faint|p2a: Brute Bonnet",
-    "|-end|p2a: Brute Bonnet|Protosynthesis|[silent]",
-    "|-damage|p1a: Hydreigon|13/275|[from] item: Life Orb",
+    "|move|p2a: Misdreavus|Will-O-Wisp|p1a: Torterra",
+    "|-status|p1a: Torterra|brn",
+    "|move|p1a: Torterra|Bullet Seed|p2a: Misdreavus",
+    "|-damage|p2a: Misdreavus|244/254",
+    "|-damage|p2a: Misdreavus|234/254",
+    "|-damage|p2a: Misdreavus|224/254",
+    "|-damage|p2a: Misdreavus|214/254",
+    "|-damage|p2a: Misdreavus|204/254",
+    "|-hitcount|p2a: Misdreavus|5",
+    "|-damage|p1a: Torterra|106/276 brn|[from] brn",
     "|upkeep",
-    "|switch|p2a: Granbull|Granbull, L88, M|302/302",
-    "|-ability|p2a: Granbull|Intimidate|boost",
-    "|-unboost|p1a: Hydreigon|atk|1",
     "|turn|8",
-    "|move|p1a: Hydreigon|Nasty Plot|p1a: Hydreigon",
-    "|-boost|p1a: Hydreigon|spa|2",
-    "|move|p2a: Granbull|Thunder Wave|p1a: Hydreigon",
-    "|-status|p1a: Hydreigon|par",
+    "|move|p2a: Misdreavus|Shadow Ball|p1a: Torterra",
+    "|-damage|p1a: Torterra|0 fnt",
+    "|faint|p1a: Torterra",
     "|upkeep",
+    "|switch|p1a: Revavroom|Revavroom, L79, F|256/256",
     "|turn|9",
-    "|move|p2a: Granbull|Earthquake|p1a: Hydreigon",
-    "|-immune|p1a: Hydreigon|[from] ability: Levitate",
-    "|cant|p1a: Hydreigon|par",
+    "|move|p2a: Misdreavus|Calm Mind|p2a: Misdreavus",
+    "|-boost|p2a: Misdreavus|spa|1",
+    "|-boost|p2a: Misdreavus|spd|1",
+    "|move|p1a: Revavroom|High Horsepower|p2a: Misdreavus",
+    "|-immune|p2a: Misdreavus|[from] ability: Levitate",
     "|upkeep",
     "|turn|10",
-    "|move|p2a: Granbull|Play Rough|p1a: Hydreigon",
-    "|-supereffective|p1a: Hydreigon",
-    "|-damage|p1a: Hydreigon|0 fnt",
-    "|faint|p1a: Hydreigon",
+    "|move|p2a: Misdreavus|Calm Mind|p2a: Misdreavus",
+    "|-boost|p2a: Misdreavus|spa|1",
+    "|-boost|p2a: Misdreavus|spd|1",
+    "|move|p1a: Revavroom|High Horsepower|p2a: Misdreavus",
+    "|-immune|p2a: Misdreavus|[from] ability: Levitate",
     "|upkeep",
-    "|switch|p1a: Gliscor|Gliscor, L76, M|239/239",
     "|turn|11",
-    "|move|p1a: Gliscor|Toxic|p2a: Granbull|[miss]",
-    "|-miss|p1a: Gliscor|p2a: Granbull",
-    "|move|p2a: Granbull|Roar|p1a: Gliscor",
-    "|drag|p1a: Girafarig|Girafarig, L89, F|269/269",
+    "|move|p2a: Misdreavus|Shadow Ball|p1a: Revavroom",
+    "|-damage|p1a: Revavroom|40/256",
+    "|-unboost|p1a: Revavroom|spd|1",
+    "|move|p1a: Revavroom|Gunk Shot|p2a: Misdreavus|[miss]",
+    "|-miss|p1a: Revavroom|p2a: Misdreavus",
     "|upkeep",
     "|turn|12",
-    "|move|p1a: Girafarig|Dazzling Gleam|p2a: Granbull",
-    "|-damage|p2a: Granbull|230/302",
-    "|move|p2a: Granbull|Roar|p1a: Girafarig",
-    "|drag|p1a: Gliscor|Gliscor, L76, M|239/239",
-    "|-heal|p2a: Granbull|248/302|[from] item: Leftovers",
-    "|-status|p1a: Gliscor|tox|[from] item: Toxic Orb",
+    "|move|p2a: Misdreavus|Calm Mind|p2a: Misdreavus",
+    "|-boost|p2a: Misdreavus|spa|1",
+    "|-boost|p2a: Misdreavus|spd|1",
+    "|move|p1a: Revavroom|Gunk Shot|p2a: Misdreavus",
+    "|-resisted|p2a: Misdreavus",
+    "|-damage|p2a: Misdreavus|133/254",
+    "|-status|p2a: Misdreavus|psn",
+    "|-damage|p1a: Revavroom|15/256|[from] item: Life Orb",
+    "|-damage|p2a: Misdreavus|102/254 psn|[from] psn",
     "|upkeep",
     "|turn|13",
-    "|move|p1a: Gliscor|Earthquake|p2a: Granbull",
-    "|-damage|p2a: Granbull|157/302",
-    "|move|p2a: Granbull|Roar|p1a: Gliscor",
-    "|drag|p1a: Reuniclus|Reuniclus, L88, M|337/337",
-    "|-heal|p2a: Granbull|175/302|[from] item: Leftovers",
+    "|move|p2a: Misdreavus|Draining Kiss|p1a: Revavroom",
+    "|-resisted|p1a: Revavroom",
+    "|-damage|p1a: Revavroom|0 fnt",
+    "|-heal|p2a: Misdreavus|113/254 psn|[from] drain|[of] p1a: Revavroom",
+    "|faint|p1a: Revavroom",
+    "|-damage|p2a: Misdreavus|82/254 psn|[from] psn",
     "|upkeep",
+    "|switch|p1a: Jolteon|Jolteon, L84, M|246/246",
     "|turn|14",
-    "|move|p1a: Reuniclus|Psychic|p2a: Granbull",
-    "|-damage|p2a: Granbull|0 fnt",
-    "|faint|p2a: Granbull",
+    "|move|p1a: Jolteon|Volt Switch|p2a: Misdreavus",
+    "|-damage|p2a: Misdreavus|49/254 psn",
+    "|switch|p1a: Iron Jugulis|Iron Jugulis, L77|271/271|[from] Volt Switch",
+    "|move|p2a: Misdreavus|Draining Kiss|p1a: Iron Jugulis",
+    "|-supereffective|p1a: Iron Jugulis",
+    "|-damage|p1a: Iron Jugulis|63/271",
+    "|-heal|p2a: Misdreavus|205/254 psn|[from] drain|[of] p1a: Iron Jugulis",
+    "|-damage|p2a: Misdreavus|174/254 psn|[from] psn",
     "|upkeep",
-    "|switch|p2a: Wigglytuff|Wigglytuff, L96, F|424/424",
     "|turn|15",
-    "|move|p2a: Wigglytuff|Protect|p2a: Wigglytuff",
-    "|-singleturn|p2a: Wigglytuff|Protect",
-    "|move|p1a: Reuniclus|Calm Mind|p1a: Reuniclus",
-    "|-boost|p1a: Reuniclus|spa|1",
-    "|-boost|p1a: Reuniclus|spd|1",
+    "|move|p1a: Iron Jugulis|Hurricane|p2a: Misdreavus",
+    "|-damage|p2a: Misdreavus|144/254 psn",
+    "|move|p2a: Misdreavus|Will-O-Wisp|p1a: Iron Jugulis",
+    "|-status|p1a: Iron Jugulis|brn",
+    "|-damage|p2a: Misdreavus|113/254 psn|[from] psn",
+    "|-damage|p1a: Iron Jugulis|47/271 brn|[from] brn",
     "|upkeep",
     "|turn|16",
-    "|move|p2a: Wigglytuff|Protect||[still]",
-    "|-fail|p2a: Wigglytuff",
-    "|move|p1a: Reuniclus|Recover||[still]",
-    "|-fail|p1a: Reuniclus|heal",
+    "|move|p1a: Iron Jugulis|Hurricane|p2a: Misdreavus|[miss]",
+    "|-miss|p1a: Iron Jugulis|p2a: Misdreavus",
+    "|move|p2a: Misdreavus|Calm Mind|p2a: Misdreavus",
+    "|-boost|p2a: Misdreavus|spa|1",
+    "|-boost|p2a: Misdreavus|spd|1",
+    "|-damage|p2a: Misdreavus|82/254 psn|[from] psn",
+    "|-damage|p1a: Iron Jugulis|31/271 brn|[from] brn",
     "|upkeep",
     "|turn|17",
-    "|move|p2a: Wigglytuff|Dazzling Gleam|p1a: Reuniclus",
-    "|-damage|p1a: Reuniclus|274/337",
-    "|move|p1a: Reuniclus|Calm Mind|p1a: Reuniclus",
-    "|-boost|p1a: Reuniclus|spa|1",
-    "|-boost|p1a: Reuniclus|spd|1",
+    "|move|p1a: Iron Jugulis|Dark Pulse|p2a: Misdreavus",
+    "|-supereffective|p2a: Misdreavus",
+    "|-damage|p2a: Misdreavus|46/254 psn",
+    "|move|p2a: Misdreavus|Shadow Ball|p1a: Iron Jugulis",
+    "|-resisted|p1a: Iron Jugulis",
+    "|-damage|p1a: Iron Jugulis|0 fnt",
+    "|faint|p1a: Iron Jugulis",
+    "|-end|p1a: Iron Jugulis|Quark Drive|[silent]",
+    "|-damage|p2a: Misdreavus|15/254 psn|[from] psn",
     "|upkeep",
+    "|switch|p1a: Jolteon|Jolteon, L84, M|246/246",
     "|turn|18",
-    "|move|p2a: Wigglytuff|Knock Off|p1a: Reuniclus",
-    "|-supereffective|p1a: Reuniclus",
-    "|-damage|p1a: Reuniclus|124/337",
-    "|-enditem|p1a: Reuniclus|Life Orb|[from] move: Knock Off|[of] p2a: Wigglytuff",
-    "|move|p1a: Reuniclus|Calm Mind|p1a: Reuniclus",
-    "|-boost|p1a: Reuniclus|spa|1",
-    "|-boost|p1a: Reuniclus|spd|1",
+    "|move|p1a: Jolteon|Volt Switch|p2a: Misdreavus",
+    "|-damage|p2a: Misdreavus|0 fnt",
+    "|faint|p2a: Misdreavus",
+    "|switch|p1a: Persian|Persian-Alola, L86, F|252/252|[from] Volt Switch",
     "|upkeep",
+    "|switch|p2a: Crabominable|Crabominable, L90, F|321/321",
     "|turn|19",
-    "|move|p2a: Wigglytuff|Dazzling Gleam|p1a: Reuniclus",
-    "|-damage|p1a: Reuniclus|87/337",
-    "|move|p1a: Reuniclus|Calm Mind|p1a: Reuniclus",
-    "|-boost|p1a: Reuniclus|spa|1",
-    "|-boost|p1a: Reuniclus|spd|1",
+    "|move|p1a: Persian|Thunder Wave|p2a: Crabominable",
+    "|-status|p2a: Crabominable|par",
+    "|move|p2a: Crabominable|Drain Punch|p1a: Persian",
+    "|-supereffective|p1a: Persian",
+    "|-damage|p1a: Persian|54/252",
     "|upkeep",
     "|turn|20",
-    "|move|p2a: Wigglytuff|Protect|p2a: Wigglytuff",
-    "|-singleturn|p2a: Wigglytuff|Protect",
-    "|move|p1a: Reuniclus|Focus Blast|p2a: Wigglytuff",
-    "|-activate|p2a: Wigglytuff|move: Protect",
+    "|move|p1a: Persian|Knock Off|p2a: Crabominable",
+    "|-resisted|p2a: Crabominable",
+    "|-damage|p2a: Crabominable|283/321 par",
+    "|-enditem|p2a: Crabominable|Assault Vest|[from] move: Knock Off|[of] p1a: Persian",
+    "|move|p2a: Crabominable|Earthquake|p1a: Persian",
+    "|-damage|p1a: Persian|0 fnt",
+    "|faint|p1a: Persian",
     "|upkeep",
+    "|switch|p1a: Jolteon|Jolteon, L84, M|246/246",
     "|turn|21",
-    "|move|p2a: Wigglytuff|Dazzling Gleam|p1a: Reuniclus",
-    "|-damage|p1a: Reuniclus|56/337",
-    "|move|p1a: Reuniclus|Psychic|p2a: Wigglytuff",
-    "|-damage|p2a: Wigglytuff|0 fnt",
-    "|faint|p2a: Wigglytuff",
+    "|move|p1a: Jolteon|Volt Switch|p2a: Crabominable",
+    "|-damage|p2a: Crabominable|132/321 par",
+    "|cant|p2a: Crabominable|par",
     "|upkeep",
-    "|switch|p2a: Empoleon|Empoleon, L84, F|84/278",
     "|turn|22",
-    "|move|p2a: Empoleon|Surf|p1a: Reuniclus",
-    "|-damage|p1a: Reuniclus|20/337",
-    "|move|p1a: Reuniclus|Calm Mind|p1a: Reuniclus",
-    "|-boost|p1a: Reuniclus|spa|1",
-    "|-boost|p1a: Reuniclus|spd|1",
-    "|-heal|p2a: Empoleon|101/278|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|23",
-    "|move|p2a: Empoleon|Surf|p1a: Reuniclus",
-    "|-damage|p1a: Reuniclus|0 fnt",
-    "|faint|p1a: Reuniclus",
-    "|-heal|p2a: Empoleon|118/278|[from] item: Leftovers",
-    "|upkeep",
-    "|switch|p1a: Girafarig|Girafarig, L89, F|269/269",
-    "|turn|24",
-    "|move|p1a: Girafarig|Dazzling Gleam|p2a: Empoleon",
-    "|-resisted|p2a: Empoleon",
-    "|-damage|p2a: Empoleon|93/278",
-    "|move|p2a: Empoleon|Roost|p2a: Empoleon",
-    "|-heal|p2a: Empoleon|232/278",
-    "|-singleturn|p2a: Empoleon|move: Roost",
-    "|-heal|p2a: Empoleon|249/278|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|25",
-    "|move|p1a: Girafarig|Nasty Plot|p1a: Girafarig",
-    "|-boost|p1a: Girafarig|spa|2",
-    "|move|p2a: Empoleon|Stealth Rock|p1a: Girafarig",
-    "|-sidestart|p1: Player 1|move: Stealth Rock",
-    "|-heal|p2a: Empoleon|266/278|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|26",
-    "|move|p1a: Girafarig|Psychic|p2a: Empoleon",
-    "|-resisted|p2a: Empoleon",
-    "|-damage|p2a: Empoleon|174/278",
-    "|move|p2a: Empoleon|Flip Turn|p1a: Girafarig",
-    "|-damage|p1a: Girafarig|224/269",
-    "|switch|p2a: Piloswine|Piloswine, L85, M|309/309|[from] Flip Turn",
-    "|upkeep",
-    "|turn|27",
-    "|move|p1a: Girafarig|Dazzling Gleam|p2a: Piloswine",
-    "|-damage|p2a: Piloswine|211/309",
-    "|move|p2a: Piloswine|Earthquake|p1a: Girafarig",
-    "|-damage|p1a: Girafarig|136/269",
-    "|upkeep",
-    "|turn|28",
-    "|move|p1a: Girafarig|Thunderbolt|p2a: Piloswine",
-    "|-immune|p2a: Piloswine",
-    "|move|p2a: Piloswine|Roar|p1a: Girafarig",
-    "|drag|p1a: Komala|Komala, L88, F|258/258",
-    "|-damage|p1a: Komala|226/258|[from] Stealth Rock",
-    "|-ability|p1a: Komala|Comatose",
-    "|upkeep",
-    "|turn|29",
-    "|move|p2a: Piloswine|Ice Shard|p1a: Komala",
-    "|-damage|p1a: Komala|174/258",
-    "|move|p1a: Komala|U-turn|p2a: Piloswine",
-    "|-damage|p2a: Piloswine|165/309",
-    "|switch|p1a: Girafarig|Girafarig, L89, F|136/269|[from] U-turn",
-    "|-damage|p1a: Girafarig|103/269|[from] Stealth Rock",
-    "|upkeep",
-    "|turn|30",
-    "|move|p1a: Girafarig|Nasty Plot|p1a: Girafarig",
-    "|-boost|p1a: Girafarig|spa|2",
-    "|move|p2a: Piloswine|Icicle Crash|p1a: Girafarig",
-    "|-damage|p1a: Girafarig|28/269",
-    "|upkeep",
-    "|turn|31",
-    "|move|p2a: Piloswine|Ice Shard|p1a: Girafarig",
-    "|-damage|p1a: Girafarig|0 fnt",
-    "|faint|p1a: Girafarig",
-    "|upkeep",
-    "|switch|p1a: Chesnaught|Chesnaught, L84, F|285/285",
-    "|-damage|p1a: Chesnaught|268/285|[from] Stealth Rock",
-    "|turn|32",
-    "|move|p1a: Chesnaught|Iron Defense|p1a: Chesnaught",
-    "|-boost|p1a: Chesnaught|def|2",
-    "|move|p2a: Piloswine|Earthquake|p1a: Chesnaught",
-    "|-resisted|p1a: Chesnaught",
-    "|-damage|p1a: Chesnaught|247/285",
-    "|-heal|p1a: Chesnaught|264/285|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|33",
-    "|move|p1a: Chesnaught|Trailblaze|p2a: Piloswine",
-    "|-supereffective|p2a: Piloswine",
-    "|-damage|p2a: Piloswine|81/309",
-    "|-boost|p1a: Chesnaught|spe|1",
-    "|move|p2a: Piloswine|Earthquake|p1a: Chesnaught",
-    "|-resisted|p1a: Chesnaught",
-    "|-damage|p1a: Chesnaught|240/285",
-    "|-heal|p1a: Chesnaught|257/285|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|34",
-    "|move|p1a: Chesnaught|Synthesis|p1a: Chesnaught",
-    "|-heal|p1a: Chesnaught|285/285",
-    "|move|p2a: Piloswine|Roar|p1a: Chesnaught",
-    "|drag|p1a: Komala|Komala, L88, F|174/258",
-    "|-damage|p1a: Komala|142/258|[from] Stealth Rock",
-    "|-ability|p1a: Komala|Comatose",
-    "|upkeep",
-    "|turn|35",
-    "|move|p1a: Komala|Knock Off|p2a: Piloswine",
-    "|-damage|p2a: Piloswine|23/309",
-    "|-enditem|p2a: Piloswine|Eviolite|[from] move: Knock Off|[of] p1a: Komala",
-    "|move|p2a: Piloswine|Roar|p1a: Komala",
-    "|drag|p1a: Chesnaught|Chesnaught, L84, F|285/285",
-    "|-damage|p1a: Chesnaught|268/285|[from] Stealth Rock",
-    "|-heal|p1a: Chesnaught|285/285|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|36",
-    "|move|p2a: Piloswine|Ice Shard|p1a: Chesnaught",
-    "|-supereffective|p1a: Chesnaught",
-    "|-damage|p1a: Chesnaught|217/285",
-    "|move|p1a: Chesnaught|Body Press|p2a: Piloswine",
-    "|-supereffective|p2a: Piloswine",
-    "|-damage|p2a: Piloswine|0 fnt",
-    "|faint|p2a: Piloswine",
-    "|-heal|p1a: Chesnaught|234/285|[from] item: Leftovers",
-    "|upkeep",
-    "|switch|p2a: Empoleon|Empoleon, L84, F|174/278",
-    "|turn|37",
-    "|move|p1a: Chesnaught|Trailblaze|p2a: Empoleon",
-    "|-damage|p2a: Empoleon|119/278",
-    "|-boost|p1a: Chesnaught|spe|1",
-    "|move|p2a: Empoleon|Stealth Rock||[still]",
-    "|-fail|p2a: Empoleon",
-    "|-heal|p1a: Chesnaught|251/285|[from] item: Leftovers",
-    "|-heal|p2a: Empoleon|136/278|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|38",
-    "|move|p1a: Chesnaught|Synthesis|p1a: Chesnaught",
-    "|-heal|p1a: Chesnaught|285/285",
-    "|move|p2a: Empoleon|Stealth Rock||[still]",
-    "|-fail|p2a: Empoleon",
-    "|-heal|p2a: Empoleon|153/278|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|39",
-    "|move|p1a: Chesnaught|Synthesis|p1a: Chesnaught",
-    "|-fail|p1a: Chesnaught|heal",
-    "|move|p2a: Empoleon|Stealth Rock||[still]",
-    "|-fail|p2a: Empoleon",
-    "|-heal|p2a: Empoleon|170/278|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|40",
-    "|move|p1a: Chesnaught|Iron Defense|p1a: Chesnaught",
-    "|-boost|p1a: Chesnaught|def|2",
-    "|move|p2a: Empoleon|Surf|p1a: Chesnaught",
-    "|-resisted|p1a: Chesnaught",
-    "|-damage|p1a: Chesnaught|226/285",
-    "|-heal|p1a: Chesnaught|243/285|[from] item: Leftovers",
-    "|-heal|p2a: Empoleon|187/278|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|41",
-    "|move|p1a: Chesnaught|Synthesis|p1a: Chesnaught",
-    "|-heal|p1a: Chesnaught|285/285",
-    "|move|p2a: Empoleon|Surf|p1a: Chesnaught",
-    "|-resisted|p1a: Chesnaught",
-    "|-damage|p1a: Chesnaught|228/285",
-    "|-heal|p1a: Chesnaught|245/285|[from] item: Leftovers",
-    "|-heal|p2a: Empoleon|204/278|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|42",
-    "|move|p1a: Chesnaught|Iron Defense|p1a: Chesnaught",
-    "|-boost|p1a: Chesnaught|def|2",
-    "|move|p2a: Empoleon|Flip Turn|p1a: Chesnaught",
-    "|-resisted|p1a: Chesnaught",
-    "|-damage|p1a: Chesnaught|238/285",
-    "|-heal|p1a: Chesnaught|255/285|[from] item: Leftovers",
-    "|-heal|p2a: Empoleon|221/278|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|43",
-    "|move|p1a: Chesnaught|Synthesis|p1a: Chesnaught",
-    "|-heal|p1a: Chesnaught|285/285",
-    "|move|p2a: Empoleon|Flip Turn|p1a: Chesnaught",
-    "|-resisted|p1a: Chesnaught",
-    "|-damage|p1a: Chesnaught|277/285",
-    "|-heal|p1a: Chesnaught|285/285|[from] item: Leftovers",
-    "|-heal|p2a: Empoleon|238/278|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|44",
-    "|move|p1a: Chesnaught|Body Press|p2a: Empoleon",
-    "|-supereffective|p2a: Empoleon",
-    "|-damage|p2a: Empoleon|0 fnt",
-    "|faint|p2a: Empoleon",
+    "|move|p1a: Jolteon|Volt Switch|p2a: Crabominable",
+    "|-damage|p2a: Crabominable|0 fnt",
+    "|faint|p2a: Crabominable",
     "|win|Player 1"
   ]
 }
