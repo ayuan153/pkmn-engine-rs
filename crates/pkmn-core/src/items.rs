@@ -48,6 +48,8 @@ pub enum ItemId {
     MetalCoat,
     SilkScarf,
     FairyFeather,
+    LightBall,
+    PixiePlate,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -119,6 +121,8 @@ static ITEM_TABLE: &[ItemData] = &[
     ItemData { id: ItemId::MetalCoat, name: "Metal Coat", effect: ItemEffect::NoEffect },
     ItemData { id: ItemId::SilkScarf, name: "Silk Scarf", effect: ItemEffect::NoEffect },
     ItemData { id: ItemId::FairyFeather, name: "Fairy Feather", effect: ItemEffect::NoEffect },
+    ItemData { id: ItemId::LightBall, name: "Light Ball", effect: ItemEffect::NoEffect },
+    ItemData { id: ItemId::PixiePlate, name: "Pixie Plate", effect: ItemEffect::NoEffect },
 ];
 
 pub fn get_item(id: ItemId) -> &'static ItemData {

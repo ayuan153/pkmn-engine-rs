@@ -11,20 +11,8 @@ impl Battle {
         let defender_player = 1 - attacker_player;
         let defender = self.sides[defender_player as usize].active();
         let modifier = match item {
-            ItemId::ChoiceBand => {
-                if move_data.category == MoveCategory::Physical {
-                    1.5
-                } else {
-                    1.0
-                }
-            }
-            ItemId::ChoiceSpecs => {
-                if move_data.category == MoveCategory::Special {
-                    1.5
-                } else {
-                    1.0
-                }
-            }
+            ItemId::ChoiceBand => 1.0,
+            ItemId::ChoiceSpecs => 1.0,
             ItemId::LifeOrb => 1.3,
             ItemId::ExpertBelt => {
                 let effectiveness = Type::effectiveness(move_data.move_type, &defender.types);

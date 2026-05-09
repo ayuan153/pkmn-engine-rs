@@ -18,7 +18,12 @@ impl Battle {
             let p2_speed = (self.sides[1].active().effective_speed() as f32 * self.item_speed_modifier(1)) as u16;
 
             if p1_speed == p2_speed {
-                return vec![(0, p1), (1, p2)];
+                // Speed tie: use RNG to determine order (PS behavior)
+                if self.random_chance(1, 2) {
+                    return vec![(0, p1), (1, p2)];
+                } else {
+                    return vec![(1, p2), (0, p1)];
+                }
             }
 
             let (faster, slower) = if self.field.trick_room > 0 {

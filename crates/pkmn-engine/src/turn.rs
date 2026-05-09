@@ -384,6 +384,15 @@ impl Battle {
             }
 
             // Emit faint after contact recoil
+            // Self-stat drops (Close Combat, Superpower) emit BEFORE faint per PS protocol
+            if matches!(move_data.name, "Close Combat" | "Superpower") {
+                let atk_name = self.species_name(player);
+                let mon = self.sides[player as usize].active_mut();
+                mon.boosts.def = (mon.boosts.def - 1).max(-6);
+                mon.boosts.spd = (mon.boosts.spd - 1).max(-6);
+                self.emit(format!("|-unboost|p{}a: {}|def|1", player+1, atk_name));
+                self.emit(format!("|-unboost|p{}a: {}|spd|1", player+1, atk_name));
+            }
             if self.sides[defender_idx as usize].active().hp == 0 {
                 self.emit(format!("|faint|p{}a: {}", defender_idx+1, self.species_name(defender_idx)));
             }
@@ -500,13 +509,6 @@ impl Battle {
         let pname = self.species_name(player);
         let name = move_data.name.to_lowercase();
         match name.as_str() {
-            "close combat" => {
-                let mon = self.sides[player as usize].active_mut();
-                mon.boosts.def = (mon.boosts.def - 1).max(-6);
-                mon.boosts.spd = (mon.boosts.spd - 1).max(-6);
-                self.emit(format!("|-unboost|p{}a: {}|def|1", player+1, pname));
-                self.emit(format!("|-unboost|p{}a: {}|spd|1", player+1, pname));
-            }
             "superpower" => {
                 let mon = self.sides[player as usize].active_mut();
                 mon.boosts.atk = (mon.boosts.atk - 1).max(-6);
@@ -643,7 +645,7 @@ impl Battle {
         let attacker = self.sides[attacker_player as usize].active();
         let defender = self.sides[defender_player as usize].active();
 
-        let (atk_stat, def_stat) = match move_data.category {
+        let (mut atk_stat, mut def_stat) = match move_data.category {
             MoveCategory::Physical => {
                 let atk = if move_data.name == "Body Press" {
                     attacker.effective_def()
@@ -655,6 +657,42 @@ impl Battle {
             MoveCategory::Special => (attacker.effective_spa(), defender.effective_spd()),
             _ => return 0,
         };
+
+        // Stat-modifying items/abilities (applied to stat, not final damage)
+        // Attacker: Choice Band, Choice Specs, Light Ball, Huge Power
+        let atk_item = attacker.item_id;
+        let atk_ability = attacker.ability_id;
+        match move_data.category {
+            MoveCategory::Physical => {
+                if atk_item == pkmn_core::items::ItemId::ChoiceBand {
+                    atk_stat = (atk_stat as u32 * 3 / 2) as u16;
+                }
+                if atk_item == pkmn_core::items::ItemId::LightBall {
+                    atk_stat = (atk_stat as u32 * 2) as u16;
+                }
+                if matches!(atk_ability, pkmn_core::abilities::AbilityId::HugePower | pkmn_core::abilities::AbilityId::PurePower) {
+                    atk_stat = (atk_stat as u32 * 2) as u16;
+                }
+            }
+            MoveCategory::Special => {
+                if atk_item == pkmn_core::items::ItemId::ChoiceSpecs {
+                    atk_stat = (atk_stat as u32 * 3 / 2) as u16;
+                }
+                if atk_item == pkmn_core::items::ItemId::LightBall {
+                    atk_stat = (atk_stat as u32 * 2) as u16;
+                }
+            }
+            _ => {}
+        }
+
+        // Defender: Eviolite (1.5x Def and SpD), Assault Vest (1.5x SpD)
+        let def_item = defender.item_id;
+        if def_item == pkmn_core::items::ItemId::Eviolite {
+            def_stat = (def_stat as u32 * 3 / 2) as u16;
+        }
+        if def_item == pkmn_core::items::ItemId::AssaultVest && move_data.category == MoveCategory::Special {
+            def_stat = (def_stat as u32 * 3 / 2) as u16;
+        }
 
         let base_power = self.get_variable_bp(attacker_player, defender_player, move_data);
 
@@ -713,6 +751,15 @@ impl Battle {
             other_modifiers: burn_mod * ability_mod * item_mod * screen_mod * (stab / if stab > 1.0 { 1.5 } else { 1.0 }),
             random_factor,
         };
+
+        if move_data.name == "Sacred Fire" || move_data.name == "Double-Edge" {
+            eprintln!("DEBUG {}: atk={} def={} bp={} stab={} eff={} crit={} weather={} other={} roll={} def_types={:?} atk_item={:?} => {}",
+                move_data.name, atk_stat, def_stat, base_power, stab > 1.0, effectiveness, critical,
+                weather_boost * terrain_mod,
+                burn_mod * ability_mod * item_mod * screen_mod * (stab / if stab > 1.0 { 1.5 } else { 1.0 }),
+                random_factor, defender.types, attacker.item_id,
+                pkmn_core::damage::calculate_damage(&ctx));
+        }
 
         pkmn_core::damage::calculate_damage(&ctx)
     }
@@ -1056,6 +1103,34 @@ impl Battle {
                     let hp = self.sides[attacker as usize].active().hp;
                     let max_hp = self.sides[attacker as usize].active().max_hp;
                     self.emit(format!("|-heal|p{}a: {}|{}/{}", attacker+1, atk_name, hp, max_hp));
+                }
+            }
+            "belly drum" => {
+                let mon = self.sides[attacker as usize].active_mut();
+                let cost = mon.max_hp / 2;
+                if mon.hp > cost {
+                    mon.hp -= cost;
+                    mon.boosts.atk = 6;
+                    let atk_name = self.species_name(attacker);
+                    let hp = self.sides[attacker as usize].active().hp;
+                    let max_hp = self.sides[attacker as usize].active().max_hp;
+                    self.emit(format!("|-damage|p{}a: {}|{}/{}", attacker+1, atk_name, hp, max_hp));
+                    self.emit(format!("|-setboost|p{}a: {}|atk|6|[from] move: Belly Drum", attacker+1, atk_name));
+                    // Trigger Sitrus Berry if applicable
+                    if self.sides[attacker as usize].active().item_id == pkmn_core::items::ItemId::SitrusBerry {
+                        let mon = self.sides[attacker as usize].active_mut();
+                        let heal = mon.max_hp / 4;
+                        mon.hp = (mon.hp + heal).min(mon.max_hp);
+                        mon.item_id = pkmn_core::items::ItemId::None;
+                        let atk_name = self.species_name(attacker);
+                        self.emit(format!("|-enditem|p{}a: {}|Sitrus Berry|[eat]", attacker+1, atk_name));
+                        let hp = self.sides[attacker as usize].active().hp;
+                        let max_hp = self.sides[attacker as usize].active().max_hp;
+                        self.emit(format!("|-heal|p{}a: {}|{}/{}|[from] item: Sitrus Berry", attacker+1, atk_name, hp, max_hp));
+                    }
+                } else {
+                    let atk_name = self.species_name(attacker);
+                    self.emit(format!("|-fail|p{}a: {}|move: Belly Drum", attacker+1, atk_name));
                 }
             }
             _ => {}

@@ -15,6 +15,7 @@ pub struct DamageContext {
 
 /// Gen 9 damage formula.
 /// damage = ((2*level/5 + 2) * power * atk/def) / 50 + 2) * modifiers
+/// Modifiers applied as: floor(damage * modifier / 4096) per PS convention.
 pub fn calculate_damage(ctx: &DamageContext) -> u16 {
     let level = ctx.attacker_level as u32;
     let power = ctx.base_power as u32;
@@ -24,27 +25,30 @@ pub fn calculate_damage(ctx: &DamageContext) -> u16 {
     // Base damage
     let mut damage = ((2 * level / 5 + 2) * power * atk / def) / 50 + 2;
 
-    // Weather (applied early in PS)
-    damage = (damage as f32 * ctx.weather_boost) as u32;
+    // Weather: convert f32 to 4096-based
+    let weather_mod = (ctx.weather_boost * 4096.0) as u32;
+    damage = damage * weather_mod / 4096;
 
-    // Critical hit (1.5x in Gen 6+)
+    // Critical hit: 6144/4096 = 1.5x
     if ctx.critical {
-        damage = damage * 3 / 2;
+        damage = damage * 6144 / 4096;
     }
 
     // Random factor (85-100)
     damage = damage * ctx.random_factor as u32 / 100;
 
-    // STAB (1.5x)
+    // STAB: 6144/4096 = 1.5x
     if ctx.stab {
-        damage = damage * 3 / 2;
+        damage = damage * 6144 / 4096;
     }
 
-    // Type effectiveness
-    damage = (damage as f32 * ctx.type_effectiveness) as u32;
+    // Type effectiveness: convert to integer (2.0 -> 8192/4096, 4.0 -> 16384/4096, 0.5 -> 2048/4096)
+    let type_mod = (ctx.type_effectiveness * 4096.0) as u32;
+    damage = damage * type_mod / 4096;
 
-    // Other modifiers (burn, abilities, items, screens)
-    damage = (damage as f32 * ctx.other_modifiers) as u32;
+    // Other modifiers: convert f32 to 4096-based
+    let other_mod = (ctx.other_modifiers * 4096.0) as u32;
+    damage = damage * other_mod / 4096;
 
     damage.max(1) as u16
 }

@@ -100,13 +100,7 @@ impl Battle {
         let defender_player = 1 - attacker_player;
         let defender = self.sides[defender_player as usize].active();
         let mut modifier = match mon.ability_id {
-            AbilityId::HugePower | AbilityId::PurePower => {
-                if move_data.category == MoveCategory::Physical {
-                    2.0
-                } else {
-                    1.0
-                }
-            }
+            AbilityId::HugePower | AbilityId::PurePower => 1.0,
             AbilityId::Technician => {
                 if move_data.base_power <= 60 {
                     1.5
