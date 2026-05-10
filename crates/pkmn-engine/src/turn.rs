@@ -171,8 +171,10 @@ impl Battle {
         };
 
         // Accuracy check (skip for multi-hit moves and moves that will fail)
+        // accuracy=0 means "never miss" (PS accuracy: true), no RNG consumed
+        // accuracy=100 means "always hits" — PS still consumes RNG via randomChance(100, 100)
         let is_multi_hit = self.get_multi_hit_count(player, &move_data).is_some();
-        if !will_fail_still && !is_multi_hit && move_data.accuracy > 0 && move_data.accuracy < 100 {
+        if !will_fail_still && !is_multi_hit && move_data.accuracy > 0 {
             if !self.rand_check(move_data.accuracy) {
                 let atk_name = self.species_name(player);
                 let def_name = self.species_name(defender_idx);
@@ -185,7 +187,7 @@ impl Battle {
         // Multi-hit moves: handle entirely before normal move announcement
         if is_multi_hit {
             // First hit accuracy check
-            if move_data.accuracy > 0 && move_data.accuracy < 100 && !self.rand_check(move_data.accuracy) {
+            if move_data.accuracy > 0 && !self.rand_check(move_data.accuracy) {
                 let atk_name = self.species_name(player);
                 let def_name = self.species_name(defender_idx);
                 self.emit(format!("|move|p{}a: {}|{}|p{}a: {}|[miss]", player+1, atk_name, move_data.name, defender_idx+1, def_name));
@@ -355,8 +357,9 @@ impl Battle {
         // Calculate and apply damage
         let damage = self.calculate_move_damage(player, defender_idx, &move_data);
 
-        // Emit effectiveness messages
-        {
+        // Emit effectiveness messages (skip for fixed-damage moves like Seismic Toss/Night Shade)
+        let is_fixed_damage = matches!(move_data.name, "Seismic Toss" | "Night Shade");
+        if !is_fixed_damage {
             let defender = self.sides[defender_idx as usize].active();
             let effectiveness = Type::effectiveness(move_data.move_type, &defender.types);
             let def_name = self.species_name(defender_idx);
@@ -421,6 +424,14 @@ impl Battle {
                 self.emit(format!("|-boost|p{}a: {}|spe|1", player+1, atk_name));
             }
 
+            // Secondary effects: must come BEFORE self-stat drops and contact recoil (PS order)
+            // Only apply if target is alive (skip RNG consumption on KO)
+            let has_secondaries = !pkmn_core::moves::get_secondaries(move_data.id).is_empty();
+            let sheer_force_active = self.sides[player as usize].active().ability_id == pkmn_core::abilities::AbilityId::SheerForce && has_secondaries;
+            if self.sides[defender_idx as usize].active().is_alive() && !sheer_force_active {
+                self.apply_secondaries(player, defender_idx, &move_data);
+            }
+
             // Self-stat drops (Close Combat, Superpower) emit BEFORE contact recoil per PS protocol
             if matches!(move_data.name, "Close Combat") {
                 let atk_name = self.species_name(player);
@@ -439,7 +450,7 @@ impl Battle {
                 self.emit(format!("|-unboost|p{}a: {}|def|1", player+1, atk_name));
             }
 
-            // Contact recoil abilities (Rough Skin, Iron Barbs)
+            // Contact recoil abilities (Rough Skin, Iron Barbs) — triggers even if defender fainted
             if move_data.flags.has(MoveFlags::CONTACT) {
                 let defender_ability = self.sides[defender_idx as usize].active().ability_id;
                 let defender_item = self.sides[defender_idx as usize].active().item_id;
@@ -471,13 +482,9 @@ impl Battle {
             }
         }
 
-        // 4. Secondary effects (RNG consumed after damage)
-        // Sheer Force suppresses secondary effects and Life Orb recoil
+        // Sheer Force / secondary tracking for Life Orb
         let has_secondaries = !pkmn_core::moves::get_secondaries(move_data.id).is_empty();
         let sheer_force_active = self.sides[player as usize].active().ability_id == pkmn_core::abilities::AbilityId::SheerForce && has_secondaries;
-        if self.sides[defender_idx as usize].active().is_alive() && !sheer_force_active {
-            self.apply_secondaries(player, defender_idx, &move_data);
-        }
 
         // Knock Off: remove target's item
         if move_data.name == "Knock Off" && self.sides[defender_idx as usize].active().is_alive() {
@@ -763,8 +770,9 @@ impl Battle {
         let base_power = self.get_variable_bp(attacker_player, defender_player, move_data);
 
         // Terrain boost: applied to base power (onBasePower in Showdown)
-        let terrain_bp_mod = self.get_terrain_modifier(attacker_player, move_data.move_type);
-        let base_power = (base_power as u32 * (terrain_bp_mod * 4096.0) as u32 / 4096) as u16;
+        // PS uses modify(bp, num, denom) = Math.floor(bp * num / denom)
+        let (terrain_num, terrain_denom) = self.get_terrain_modifier(attacker_player, move_data.move_type);
+        let base_power = (base_power as u32 * terrain_num / terrain_denom) as u16;
 
         let stab = if attacker.is_terastallized {
             self.tera_stab(attacker_player, move_data.move_type)
@@ -879,20 +887,21 @@ impl Battle {
         bp
     }
 
-    fn get_terrain_modifier(&self, attacker_player: u8, move_type: Type) -> f32 {
+    /// Returns terrain modifier as (numerator, 4096) pair matching PS's chainModify values.
+    fn get_terrain_modifier(&self, attacker_player: u8, move_type: Type) -> (u32, u32) {
         let attacker = self.sides[attacker_player as usize].active();
         // Check if grounded (not Flying type, not Levitate, not Air Balloon)
         let is_grounded = !attacker.types.contains(&Type::Flying)
             && attacker.ability_id != pkmn_core::abilities::AbilityId::Levitate
             && attacker.item_id != pkmn_core::items::ItemId::AirBalloon;
         if !is_grounded {
-            return 1.0;
+            return (4096, 4096);
         }
         match (self.field.terrain, move_type) {
-            (Terrain::Electric, Type::Electric) => 1.3,
-            (Terrain::Grassy, Type::Grass) => 1.3,
-            (Terrain::Psychic, Type::Psychic) => 1.3,
-            _ => 1.0,
+            (Terrain::Electric, Type::Electric) => (5325, 4096),
+            (Terrain::Grassy, Type::Grass) => (5325, 4096),
+            (Terrain::Psychic, Type::Psychic) => (5325, 4096),
+            _ => (4096, 4096),
         }
     }
 
@@ -1296,16 +1305,22 @@ impl Battle {
             self.trigger_ability_end_of_turn(player);
         }
 
-        // Weather upkeep emission
+        // Weather upkeep: decrement first, then emit (PS order)
         if self.field.weather != Weather::None && self.field.weather_turns > 0 {
-            let weather_str = match self.field.weather {
-                Weather::Rain => "RainDance",
-                Weather::Sun => "SunnyDay",
-                Weather::Sand => "Sandstorm",
-                Weather::Snow => "Snowscape",
-                _ => "none",
-            };
-            self.emit(format!("|-weather|{}|[upkeep]", weather_str));
+            self.field.weather_turns -= 1;
+            if self.field.weather_turns == 0 {
+                self.field.weather = Weather::None;
+                self.emit("|-weather|none".to_string());
+            } else {
+                let weather_str = match self.field.weather {
+                    Weather::Rain => "RainDance",
+                    Weather::Sun => "SunnyDay",
+                    Weather::Sand => "Sandstorm",
+                    Weather::Snow => "Snowscape",
+                    _ => "none",
+                };
+                self.emit(format!("|-weather|{}|[upkeep]", weather_str));
+            }
         }
 
         // Sandstorm damage
@@ -1459,12 +1474,6 @@ impl Battle {
         }
 
         // Decrement field turns
-        if self.field.weather_turns > 0 {
-            self.field.weather_turns -= 1;
-            if self.field.weather_turns == 0 {
-                self.field.weather = Weather::None;
-            }
-        }
         if self.field.terrain_turns > 0 {
             self.field.terrain_turns -= 1;
             if self.field.terrain_turns == 0 {

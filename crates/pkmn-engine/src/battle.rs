@@ -38,6 +38,7 @@ pub struct Battle {
     pub phase: BattlePhase,
     pub protocol: Vec<String>,
     rng_seed: [u16; 4],
+    pub rng_call_count: u32,
     /// Queued pivot switch targets per player (set externally by test runner)
     pub pivot_switch_targets: [Vec<u8>; 2],
 }
@@ -52,6 +53,7 @@ impl Battle {
             phase: BattlePhase::ActionSelection,
             protocol: Vec::new(),
             rng_seed: seed,
+            rng_call_count: 0,
             pivot_switch_targets: [Vec::new(), Vec::new()],
         };
         // PS consumes exactly one RNG call during battle initialization
@@ -258,6 +260,7 @@ impl Battle {
     /// a = 0x5D588B656C078965, c = 0x00269EC3
     /// Returns upper 32 bits as output
     pub(crate) fn rand(&mut self) -> u32 {
+        self.rng_call_count += 1;
         let a: [u64; 4] = [0x5D58, 0x8B65, 0x6C07, 0x8965];
         let c: [u64; 4] = [0, 0, 0x0026, 0x9EC3];
         let seed = [
@@ -278,7 +281,8 @@ impl Battle {
             carry >>= 16;
         }
         self.rng_seed = out;
-        ((self.rng_seed[0] as u32) << 16) + self.rng_seed[1] as u32
+        let result = ((self.rng_seed[0] as u32) << 16) + self.rng_seed[1] as u32;
+        result
     }
 
     /// Random number in [from, to) — matches PS's random(from, to)

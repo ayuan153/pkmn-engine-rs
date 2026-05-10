@@ -83,42 +83,46 @@
     ],
     [
       "move 3",
-      "move 4"
-    ],
-    [
-      "move 3",
-      "move 3"
-    ],
-    [
-      "move 3",
-      "move 4"
-    ],
-    [
-      "move 1",
-      "move 3"
-    ],
-    [
-      "move 3",
-      "move 4"
-    ],
-    [
-      "move 4",
-      "move 2"
-    ],
-    [
-      "move 2",
       "move 1"
     ],
     [
-      "move 1",
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 3",
       "move 2"
     ],
     [
       "move 2",
-      "move 2"
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 1"
     ],
     [
       "move 4",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 3",
       "move 1"
     ]
   ],
@@ -144,75 +148,74 @@
     "|turn|3",
     "|move|p1a: Blissey|Thunder Wave|p2a: Ferrothorn",
     "|-fail|p2a: Ferrothorn|par",
-    "|move|p2a: Ferrothorn|Stealth Rock||[still]",
-    "|-fail|p2a: Ferrothorn",
-    "|-heal|p1a: Blissey|714/714|[from] item: Leftovers",
+    "|move|p2a: Ferrothorn|Knock Off|p1a: Blissey",
+    "|-damage|p1a: Blissey|580/714",
+    "|-enditem|p1a: Blissey|Leftovers|[from] move: Knock Off|[of] p2a: Ferrothorn",
     "|-heal|p2a: Ferrothorn|318/352 par|[from] item: Leftovers",
     "|upkeep",
     "|turn|4",
     "|move|p1a: Blissey|Thunder Wave|p2a: Ferrothorn",
     "|-fail|p2a: Ferrothorn|par",
-    "|move|p2a: Ferrothorn|Leech Seed|p1a: Blissey",
-    "|-start|p1a: Blissey|move: Leech Seed",
+    "|cant|p2a: Ferrothorn|par",
     "|-heal|p2a: Ferrothorn|340/352 par|[from] item: Leftovers",
-    "|-damage|p1a: Blissey|625/714|[from] Leech Seed|[of] p2a: Ferrothorn",
-    "|-heal|p2a: Ferrothorn|352/352 par|[silent]",
     "|upkeep",
     "|turn|5",
-    "|move|p1a: Blissey|Seismic Toss|p2a: Ferrothorn",
-    "|-damage|p2a: Ferrothorn|252/352 par",
-    "|-damage|p1a: Blissey|536/714|[from] ability: Iron Barbs|[of] p2a: Ferrothorn",
+    "|move|p1a: Blissey|Soft-Boiled|p1a: Blissey",
+    "|-heal|p1a: Blissey|714/714",
     "|cant|p2a: Ferrothorn|par",
-    "|-heal|p1a: Blissey|580/714|[from] item: Leftovers",
-    "|-heal|p2a: Ferrothorn|274/352 par|[from] item: Leftovers",
-    "|-damage|p1a: Blissey|491/714|[from] Leech Seed|[of] p2a: Ferrothorn",
-    "|-heal|p2a: Ferrothorn|352/352 par|[silent]",
+    "|-heal|p2a: Ferrothorn|352/352 par|[from] item: Leftovers",
     "|upkeep",
     "|turn|6",
-    "|move|p1a: Blissey|Thunder Wave|p2a: Ferrothorn",
-    "|-fail|p2a: Ferrothorn|par",
-    "|move|p2a: Ferrothorn|Leech Seed||[still]",
-    "|-fail|p2a: Ferrothorn",
-    "|-heal|p1a: Blissey|535/714|[from] item: Leftovers",
-    "|-damage|p1a: Blissey|446/714|[from] Leech Seed|[of] p2a: Ferrothorn",
+    "|move|p1a: Blissey|Seismic Toss|p2a: Ferrothorn",
+    "|-damage|p2a: Ferrothorn|252/352 par",
+    "|-damage|p1a: Blissey|625/714|[from] ability: Iron Barbs|[of] p2a: Ferrothorn",
+    "|cant|p2a: Ferrothorn|par",
+    "|-heal|p2a: Ferrothorn|274/352 par|[from] item: Leftovers",
     "|upkeep",
     "|turn|7",
     "|move|p1a: Blissey|Toxic||[still]",
     "|-fail|p1a: Blissey",
-    "|move|p2a: Ferrothorn|Knock Off|p1a: Blissey",
-    "|-damage|p1a: Blissey|310/714",
-    "|-enditem|p1a: Blissey|Leftovers|[from] move: Knock Off|[of] p2a: Ferrothorn",
-    "|-damage|p1a: Blissey|221/714|[from] Leech Seed|[of] p2a: Ferrothorn",
+    "|move|p2a: Ferrothorn|Stealth Rock||[still]",
+    "|-fail|p2a: Ferrothorn",
+    "|-heal|p2a: Ferrothorn|296/352 par|[from] item: Leftovers",
     "|upkeep",
     "|turn|8",
-    "|move|p1a: Blissey|Soft-Boiled|p1a: Blissey",
-    "|-heal|p1a: Blissey|578/714",
-    "|move|p2a: Ferrothorn|Power Whip|p1a: Blissey",
-    "|-damage|p1a: Blissey|340/714",
-    "|-damage|p1a: Blissey|251/714|[from] Leech Seed|[of] p2a: Ferrothorn",
+    "|move|p1a: Blissey|Toxic||[still]",
+    "|-fail|p1a: Blissey",
+    "|cant|p2a: Ferrothorn|par",
+    "|-heal|p2a: Ferrothorn|318/352 par|[from] item: Leftovers",
     "|upkeep",
     "|turn|9",
-    "|move|p1a: Blissey|Seismic Toss|p2a: Ferrothorn",
-    "|-damage|p2a: Ferrothorn|252/352 par",
-    "|-damage|p1a: Blissey|162/714|[from] ability: Iron Barbs|[of] p2a: Ferrothorn",
-    "|cant|p2a: Ferrothorn|par",
-    "|-heal|p2a: Ferrothorn|274/352 par|[from] item: Leftovers",
-    "|-damage|p1a: Blissey|73/714|[from] Leech Seed|[of] p2a: Ferrothorn",
+    "|move|p1a: Blissey|Toxic||[still]",
+    "|-fail|p1a: Blissey",
+    "|move|p2a: Ferrothorn|Leech Seed|p1a: Blissey",
+    "|-start|p1a: Blissey|move: Leech Seed",
+    "|-heal|p2a: Ferrothorn|340/352 par|[from] item: Leftovers",
+    "|-damage|p1a: Blissey|536/714|[from] Leech Seed|[of] p2a: Ferrothorn",
     "|-heal|p2a: Ferrothorn|352/352 par|[silent]",
     "|upkeep",
     "|turn|10",
-    "|move|p1a: Blissey|Soft-Boiled|p1a: Blissey",
-    "|-heal|p1a: Blissey|430/714",
-    "|move|p2a: Ferrothorn|Knock Off|p1a: Blissey",
-    "|-damage|p1a: Blissey|343/714",
-    "|-damage|p1a: Blissey|254/714|[from] Leech Seed|[of] p2a: Ferrothorn",
+    "|move|p1a: Blissey|Seismic Toss|p2a: Ferrothorn",
+    "|-damage|p2a: Ferrothorn|252/352 par",
+    "|-damage|p1a: Blissey|447/714|[from] ability: Iron Barbs|[of] p2a: Ferrothorn",
+    "|move|p2a: Ferrothorn|Leech Seed||[still]",
+    "|-fail|p2a: Ferrothorn",
+    "|-heal|p2a: Ferrothorn|274/352 par|[from] item: Leftovers",
+    "|-damage|p1a: Blissey|358/714|[from] Leech Seed|[of] p2a: Ferrothorn",
+    "|-heal|p2a: Ferrothorn|352/352 par|[silent]",
     "|upkeep",
     "|turn|11",
     "|move|p1a: Blissey|Toxic||[still]",
     "|-fail|p1a: Blissey",
+    "|move|p2a: Ferrothorn|Knock Off|p1a: Blissey",
+    "|-damage|p1a: Blissey|271/714",
+    "|-damage|p1a: Blissey|182/714|[from] Leech Seed|[of] p2a: Ferrothorn",
+    "|upkeep",
+    "|turn|12",
+    "|move|p1a: Blissey|Thunder Wave|p2a: Ferrothorn",
+    "|-fail|p2a: Ferrothorn|par",
     "|move|p2a: Ferrothorn|Power Whip|p1a: Blissey",
-    "|-damage|p1a: Blissey|13/714",
-    "|-damage|p1a: Blissey|0 fnt|[from] Leech Seed|[of] p2a: Ferrothorn",
+    "|-damage|p1a: Blissey|0 fnt",
     "|faint|p1a: Blissey",
     "|win|Player 2"
   ]

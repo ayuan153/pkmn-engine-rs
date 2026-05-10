@@ -79,11 +79,11 @@
   "choices": [
     [
       "move 1",
-      "move 3"
+      "move 2"
     ],
     [
-      "move 3",
-      "move 3"
+      "move 1",
+      "move 2"
     ]
   ],
   "protocol": [
@@ -91,21 +91,20 @@
     "|switch|p2a: Excadrill|Excadrill, F|361/361",
     "|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar",
     "|turn|1",
-    "|move|p2a: Excadrill|Rock Slide|p1a: Tyranitar",
-    "|-damage|p1a: Tyranitar|312/404",
+    "|move|p2a: Excadrill|Iron Head|p1a: Tyranitar",
+    "|-supereffective|p1a: Tyranitar",
+    "|-damage|p1a: Tyranitar|110/404",
     "|move|p1a: Tyranitar|Stone Edge|p2a: Excadrill",
     "|-resisted|p2a: Excadrill",
     "|-damage|p2a: Excadrill|290/361",
     "|-weather|Sandstorm|[upkeep]",
-    "|-heal|p1a: Tyranitar|337/404|[from] item: Leftovers",
+    "|-heal|p1a: Tyranitar|135/404|[from] item: Leftovers",
     "|upkeep",
     "|turn|2",
-    "|move|p2a: Excadrill|Rock Slide|p1a: Tyranitar",
-    "|-damage|p1a: Tyranitar|246/404",
-    "|move|p1a: Tyranitar|Earthquake|p2a: Excadrill",
-    "|-supereffective|p2a: Excadrill",
-    "|-damage|p2a: Excadrill|0 fnt",
-    "|faint|p2a: Excadrill",
-    "|win|Player 1"
+    "|move|p2a: Excadrill|Iron Head|p1a: Tyranitar",
+    "|-supereffective|p1a: Tyranitar",
+    "|-damage|p1a: Tyranitar|0 fnt",
+    "|faint|p1a: Tyranitar",
+    "|win|Player 2"
   ]
 }

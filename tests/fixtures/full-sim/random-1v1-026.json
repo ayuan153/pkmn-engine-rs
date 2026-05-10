@@ -78,24 +78,8 @@
   },
   "choices": [
     [
-      "move 3",
-      "move 3"
-    ],
-    [
-      "move 3",
-      "move 4"
-    ],
-    [
-      "move 3",
-      "move 4"
-    ],
-    [
-      "move 3",
+      "move 4",
       "move 2"
-    ],
-    [
-      "move 3",
-      "move 1"
     ]
   ],
   "protocol": [
@@ -103,47 +87,12 @@
     "|switch|p2a: Tyranitar|Tyranitar, F|404/404",
     "|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar",
     "|turn|1",
-    "|move|p1a: Scizor|Knock Off|p2a: Tyranitar",
-    "|-resisted|p2a: Tyranitar",
-    "|-damage|p2a: Tyranitar|317/404",
-    "|-enditem|p2a: Tyranitar|Leftovers|[from] move: Knock Off|[of] p1a: Scizor",
-    "|move|p2a: Tyranitar|Earthquake|p1a: Scizor",
-    "|-damage|p1a: Scizor|219/343",
-    "|-weather|Sandstorm|[upkeep]",
-    "|upkeep",
-    "|turn|2",
-    "|move|p1a: Scizor|Knock Off|p2a: Tyranitar",
-    "|-resisted|p2a: Tyranitar",
-    "|-damage|p2a: Tyranitar|255/404",
-    "|move|p2a: Tyranitar|Stealth Rock|p1a: Scizor",
-    "|-sidestart|p1: Player 1|move: Stealth Rock",
-    "|-weather|Sandstorm|[upkeep]",
-    "|upkeep",
-    "|turn|3",
-    "|move|p1a: Scizor|Knock Off|p2a: Tyranitar",
-    "|-resisted|p2a: Tyranitar",
-    "|-damage|p2a: Tyranitar|191/404",
-    "|move|p2a: Tyranitar|Stealth Rock||[still]",
-    "|-fail|p2a: Tyranitar",
-    "|-weather|Sandstorm|[upkeep]",
-    "|upkeep",
-    "|turn|4",
-    "|move|p1a: Scizor|Knock Off|p2a: Tyranitar",
-    "|-resisted|p2a: Tyranitar",
-    "|-damage|p2a: Tyranitar|132/404",
-    "|move|p2a: Tyranitar|Crunch|p1a: Scizor",
-    "|-damage|p1a: Scizor|62/343",
+    "|move|p1a: Scizor|Superpower|p2a: Tyranitar",
+    "|-supereffective|p2a: Tyranitar",
+    "|-damage|p2a: Tyranitar|0 fnt",
+    "|-unboost|p1a: Scizor|atk|1",
     "|-unboost|p1a: Scizor|def|1",
-    "|-weather|Sandstorm|[upkeep]",
-    "|upkeep",
-    "|turn|5",
-    "|move|p1a: Scizor|Knock Off|p2a: Tyranitar",
-    "|-resisted|p2a: Tyranitar",
-    "|-damage|p2a: Tyranitar|72/404",
-    "|move|p2a: Tyranitar|Stone Edge|p1a: Scizor",
-    "|-crit|p1a: Scizor",
-    "|-damage|p1a: Scizor|0 fnt",
-    "|faint|p1a: Scizor",
-    "|win|Player 2"
+    "|faint|p2a: Tyranitar",
+    "|win|Player 1"
   ]
 }

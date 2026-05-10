@@ -15,40 +15,55 @@ pub struct DamageContext {
 
 /// Gen 9 damage formula.
 /// damage = ((2*level/5 + 2) * power * atk/def) / 50 + 2) * modifiers
-/// Modifiers applied as: floor(damage * modifier / 4096) per PS convention.
+/// Modifiers applied via PS's modify(): floor((value * modifier + 2047) / 4096)
+/// Random factor and crit use simple truncation (not modify).
 pub fn calculate_damage(ctx: &DamageContext) -> u16 {
     let level = ctx.attacker_level as u32;
     let power = ctx.base_power as u32;
     let atk = ctx.attacker_stat as u32;
     let def = ctx.defender_stat as u32;
 
-    // Base damage
+    // Base damage: tr(tr(tr(2*L/5+2) * BP * Atk) / Def) / 50) + 2
     let mut damage = ((2 * level / 5 + 2) * power * atk / def) / 50 + 2;
 
-    // Weather: convert f32 to 4096-based
+    // Weather: applied via modify
     let weather_mod = (ctx.weather_boost * 4096.0) as u32;
-    damage = damage * weather_mod / 4096;
+    damage = (damage * weather_mod + 2047) / 4096;
 
-    // Critical hit: 6144/4096 = 1.5x
+    // Critical hit: tr(damage * 1.5) — NOT modify, simple truncation
     if ctx.critical {
-        damage = damage * 6144 / 4096;
+        damage = damage * 3 / 2;
     }
 
-    // Random factor (85-100)
+    // Random factor (85-100): tr(tr(damage * factor) / 100)
     damage = damage * ctx.random_factor as u32 / 100;
 
-    // STAB: 6144/4096 = 1.5x
+    // STAB: applied via modify (6144/4096)
     if ctx.stab {
-        damage = damage * 6144 / 4096;
+        damage = (damage * 6144 + 2047) / 4096;
     }
 
-    // Type effectiveness: convert to integer (2.0 -> 8192/4096, 4.0 -> 16384/4096, 0.5 -> 2048/4096)
-    let type_mod = (ctx.type_effectiveness * 4096.0) as u32;
-    damage = damage * type_mod / 4096;
+    // Type effectiveness: direct multiplication/division (not modify)
+    // Convert f32 effectiveness to integer operations
+    if ctx.type_effectiveness == 0.0 {
+        return 1; // Immune — but caller should check before calling
+    } else if ctx.type_effectiveness > 1.0 {
+        let mut eff = ctx.type_effectiveness;
+        while eff >= 2.0 {
+            damage *= 2;
+            eff /= 2.0;
+        }
+    } else if ctx.type_effectiveness < 1.0 {
+        let mut eff = ctx.type_effectiveness;
+        while eff <= 0.5 {
+            damage /= 2;
+            eff *= 2.0;
+        }
+    }
 
-    // Other modifiers: convert f32 to 4096-based
+    // Other modifiers (burn, ability, item, screens): applied via modify
     let other_mod = (ctx.other_modifiers * 4096.0) as u32;
-    damage = damage * other_mod / 4096;
+    damage = (damage * other_mod + 2047) / 4096;
 
     damage.max(1) as u16
 }
