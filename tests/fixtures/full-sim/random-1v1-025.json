@@ -1,0 +1,251 @@
+{
+  "id": "random-1v1-025",
+  "description": "1v1 random battle: Rotom-Wash vs Corviknight",
+  "seed": [
+    5096,
+    5097,
+    5098,
+    5099
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "team": [
+      {
+        "species": "Rotom-Wash",
+        "ability": "Levitate",
+        "item": "Leftovers",
+        "moves": [
+          "Hydro Pump",
+          "Volt Switch",
+          "Will-O-Wisp",
+          "Pain Split"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Corviknight",
+        "ability": "Pressure",
+        "item": "Leftovers",
+        "moves": [
+          "Brave Bird",
+          "Body Press",
+          "Roost",
+          "Defog"
+        ],
+        "nature": "Impish",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Rotom|Rotom-Wash|304/304",
+    "|switch|p2a: Corviknight|Corviknight, M|400/400",
+    "|-ability|p2a: Corviknight|Pressure",
+    "|turn|1",
+    "|move|p1a: Rotom|Will-O-Wisp|p2a: Corviknight",
+    "|-status|p2a: Corviknight|brn",
+    "|move|p2a: Corviknight|Defog|p1a: Rotom",
+    "|-unboost|p1a: Rotom|evasion|1",
+    "|-damage|p2a: Corviknight|375/400 brn|[from] brn",
+    "|upkeep",
+    "|turn|2",
+    "|move|p1a: Rotom|Volt Switch|p2a: Corviknight",
+    "|-supereffective|p2a: Corviknight",
+    "|-damage|p2a: Corviknight|171/400 brn",
+    "|move|p2a: Corviknight|Defog|p1a: Rotom",
+    "|-unboost|p1a: Rotom|evasion|1",
+    "|-heal|p2a: Corviknight|196/400 brn|[from] item: Leftovers",
+    "|-damage|p2a: Corviknight|171/400 brn|[from] brn",
+    "|upkeep",
+    "|turn|3",
+    "|move|p1a: Rotom|Will-O-Wisp|p2a: Corviknight",
+    "|-fail|p2a: Corviknight|brn",
+    "|move|p2a: Corviknight|Roost|p2a: Corviknight",
+    "|-heal|p2a: Corviknight|371/400 brn",
+    "|-singleturn|p2a: Corviknight|move: Roost",
+    "|-heal|p2a: Corviknight|396/400 brn|[from] item: Leftovers",
+    "|-damage|p2a: Corviknight|371/400 brn|[from] brn",
+    "|upkeep",
+    "|turn|4",
+    "|move|p1a: Rotom|Hydro Pump|p2a: Corviknight",
+    "|-damage|p2a: Corviknight|214/400 brn",
+    "|move|p2a: Corviknight|Roost|p2a: Corviknight",
+    "|-heal|p2a: Corviknight|400/400 brn",
+    "|-singleturn|p2a: Corviknight|move: Roost",
+    "|-damage|p2a: Corviknight|375/400 brn|[from] brn",
+    "|upkeep",
+    "|turn|5",
+    "|move|p1a: Rotom|Pain Split|p2a: Corviknight",
+    "|move|p2a: Corviknight|Defog|p1a: Rotom",
+    "|-unboost|p1a: Rotom|evasion|1",
+    "|-heal|p2a: Corviknight|364/400 brn|[from] item: Leftovers",
+    "|-damage|p2a: Corviknight|339/400 brn|[from] brn",
+    "|upkeep",
+    "|turn|6",
+    "|move|p1a: Rotom|Will-O-Wisp|p2a: Corviknight",
+    "|-fail|p2a: Corviknight|brn",
+    "|move|p2a: Corviknight|Brave Bird|p1a: Rotom",
+    "|-resisted|p1a: Rotom",
+    "|-damage|p1a: Rotom|282/304",
+    "|-damage|p2a: Corviknight|332/400 brn|[from] Recoil",
+    "|-heal|p1a: Rotom|301/304|[from] item: Leftovers",
+    "|-heal|p2a: Corviknight|357/400 brn|[from] item: Leftovers",
+    "|-damage|p2a: Corviknight|332/400 brn|[from] brn",
+    "|upkeep",
+    "|turn|7",
+    "|move|p1a: Rotom|Pain Split|p2a: Corviknight",
+    "|move|p2a: Corviknight|Defog|p1a: Rotom",
+    "|-unboost|p1a: Rotom|evasion|1",
+    "|-heal|p2a: Corviknight|341/400 brn|[from] item: Leftovers",
+    "|-damage|p2a: Corviknight|316/400 brn|[from] brn",
+    "|upkeep",
+    "|turn|8",
+    "|move|p1a: Rotom|Hydro Pump|p2a: Corviknight|[miss]",
+    "|-miss|p1a: Rotom|p2a: Corviknight",
+    "|move|p2a: Corviknight|Brave Bird|p1a: Rotom",
+    "|-resisted|p1a: Rotom",
+    "|-damage|p1a: Rotom|284/304",
+    "|-damage|p2a: Corviknight|309/400 brn|[from] Recoil",
+    "|-heal|p1a: Rotom|303/304|[from] item: Leftovers",
+    "|-heal|p2a: Corviknight|334/400 brn|[from] item: Leftovers",
+    "|-damage|p2a: Corviknight|309/400 brn|[from] brn",
+    "|upkeep",
+    "|turn|9",
+    "|move|p1a: Rotom|Hydro Pump|p2a: Corviknight",
+    "|-crit|p2a: Corviknight",
+    "|-damage|p2a: Corviknight|66/400 brn",
+    "|move|p2a: Corviknight|Defog|p1a: Rotom",
+    "|-unboost|p1a: Rotom|evasion|1",
+    "|-heal|p1a: Rotom|304/304|[from] item: Leftovers",
+    "|-heal|p2a: Corviknight|91/400 brn|[from] item: Leftovers",
+    "|-damage|p2a: Corviknight|66/400 brn|[from] brn",
+    "|upkeep",
+    "|turn|10",
+    "|move|p1a: Rotom|Pain Split|p2a: Corviknight",
+    "|move|p2a: Corviknight|Body Press|p1a: Rotom",
+    "|-damage|p1a: Rotom|154/304",
+    "|-heal|p1a: Rotom|173/304|[from] item: Leftovers",
+    "|-heal|p2a: Corviknight|210/400 brn|[from] item: Leftovers",
+    "|-damage|p2a: Corviknight|185/400 brn|[from] brn",
+    "|upkeep",
+    "|turn|11",
+    "|move|p1a: Rotom|Will-O-Wisp|p2a: Corviknight",
+    "|-fail|p2a: Corviknight|brn",
+    "|move|p2a: Corviknight|Brave Bird|p1a: Rotom",
+    "|-resisted|p1a: Rotom",
+    "|-damage|p1a: Rotom|150/304",
+    "|-damage|p2a: Corviknight|177/400 brn|[from] Recoil",
+    "|-heal|p1a: Rotom|169/304|[from] item: Leftovers",
+    "|-heal|p2a: Corviknight|202/400 brn|[from] item: Leftovers",
+    "|-damage|p2a: Corviknight|177/400 brn|[from] brn",
+    "|upkeep",
+    "|turn|12",
+    "|move|p1a: Rotom|Hydro Pump|p2a: Corviknight",
+    "|-damage|p2a: Corviknight|32/400 brn",
+    "|move|p2a: Corviknight|Body Press|p1a: Rotom",
+    "|-damage|p1a: Rotom|138/304",
+    "|-heal|p1a: Rotom|157/304|[from] item: Leftovers",
+    "|-heal|p2a: Corviknight|57/400 brn|[from] item: Leftovers",
+    "|-damage|p2a: Corviknight|32/400 brn|[from] brn",
+    "|upkeep",
+    "|turn|13",
+    "|move|p1a: Rotom|Volt Switch|p2a: Corviknight",
+    "|-supereffective|p2a: Corviknight",
+    "|-damage|p2a: Corviknight|0 fnt",
+    "|faint|p2a: Corviknight",
+    "|win|Player 1"
+  ]
+}

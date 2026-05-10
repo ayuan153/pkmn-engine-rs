@@ -5,6 +5,24 @@ use crate::side::Side;
 use pkmn_core::nature::Nature;
 use pkmn_core::species::get_species;
 
+/// Strip form suffix for display name (PS uses base name as nickname).
+/// "Rotom-Wash" → "Rotom", "Landorus-Therian" → "Landorus"
+/// Exception: names where hyphen is part of the base (Ho-Oh, Porygon-Z, etc.)
+fn display_name(species: &'static str) -> &'static str {
+    const HYPHENATED_BASE: &[&str] = &[
+        "Ho-Oh", "Porygon-Z", "Jangmo-o", "Hakamo-o", "Kommo-o",
+        "Wo-Chien", "Chien-Pao", "Ting-Lu", "Chi-Yu",
+        "Type: Null", "Mr. Mime", "Mime Jr.", "Nidoran-F", "Nidoran-M",
+    ];
+    if HYPHENATED_BASE.contains(&species) {
+        return species;
+    }
+    match species.find('-') {
+        Some(pos) => &species[..pos],
+        None => species,
+    }
+}
+
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum BattlePhase {
     ActionSelection,
@@ -36,21 +54,18 @@ impl Battle {
             rng_seed: seed,
             pivot_switch_targets: [Vec::new(), Vec::new()],
         };
-        // PS consumes one RNG call per Pokemon during team initialization
-        // (battle.sample in new Pokemon for gender determination)
-        let total_pokemon = battle.sides[0].team.len() + battle.sides[1].team.len();
-        for _ in 0..total_pokemon {
-            battle.rand();
-        }
+        // PS consumes exactly one RNG call during battle initialization
+        battle.rand();
         // Emit switch-in for leads
         for p in 0..2u8 {
             let name = battle.species_name(p);
+            let full_name = battle.full_species_name(p);
             let mon = battle.sides[p as usize].active();
             let hp = mon.hp;
             let max_hp = mon.max_hp;
             let level = mon.level;
             let level_str = if level == 100 { String::new() } else { format!(", L{}", level) };
-            battle.emit(format!("|switch|p{}a: {}|{}{}|{}/{}", p+1, name, name, level_str, hp, max_hp));
+            battle.emit(format!("|switch|p{}a: {}|{}{}|{}/{}", p+1, name, full_name, level_str, hp, max_hp));
         }
         // Trigger abilities for starting leads (weather, terrain, Intimidate)
         // Faster Pokemon's ability triggers first (PS behavior)
@@ -96,6 +111,14 @@ impl Battle {
     }
 
     pub(crate) fn species_name(&self, player: u8) -> &'static str {
+        let id = self.sides[player as usize].active().species_id;
+        let full_name = pkmn_core::species::get_species_by_id(id)
+            .map(|s| s.name)
+            .unwrap_or("Unknown");
+        display_name(full_name)
+    }
+
+    pub(crate) fn full_species_name(&self, player: u8) -> &'static str {
         let id = self.sides[player as usize].active().species_id;
         pkmn_core::species::get_species_by_id(id)
             .map(|s| s.name)
@@ -164,12 +187,13 @@ impl Battle {
         self.sides[player as usize].active_index = target as usize;
         // Emit switch line
         let name = self.species_name(player);
+        let full_name = self.full_species_name(player);
         let mon = self.sides[player as usize].active();
         let hp = mon.hp;
         let max_hp = mon.max_hp;
         let level = mon.level;
         let level_str = if level == 100 { String::new() } else { format!(", L{}", level) };
-        self.emit(format!("|switch|p{}a: {}|{}{}|{}/{}", player+1, name, name, level_str, hp, max_hp));
+        self.emit(format!("|switch|p{}a: {}|{}{}|{}/{}", player+1, name, full_name, level_str, hp, max_hp));
         if !self.has_heavy_duty_boots(player) {
             self.apply_entry_hazards(player);
         }

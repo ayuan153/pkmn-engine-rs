@@ -1,0 +1,111 @@
+{
+  "id": "random-1v1-009",
+  "description": "1v1 random battle: Tyranitar vs Excadrill",
+  "seed": [
+    5032,
+    5033,
+    5034,
+    5035
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "team": [
+      {
+        "species": "Tyranitar",
+        "ability": "Sand Stream",
+        "item": "Leftovers",
+        "moves": [
+          "Stone Edge",
+          "Crunch",
+          "Earthquake",
+          "Stealth Rock"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Excadrill",
+        "ability": "Sand Rush",
+        "item": "Choice Scarf",
+        "moves": [
+          "Earthquake",
+          "Iron Head",
+          "Rock Slide",
+          "Rapid Spin"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Tyranitar|Tyranitar, F|404/404",
+    "|switch|p2a: Excadrill|Excadrill, F|361/361",
+    "|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar",
+    "|turn|1",
+    "|move|p2a: Excadrill|Rock Slide|p1a: Tyranitar",
+    "|-damage|p1a: Tyranitar|312/404",
+    "|move|p1a: Tyranitar|Stone Edge|p2a: Excadrill",
+    "|-resisted|p2a: Excadrill",
+    "|-damage|p2a: Excadrill|290/361",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-heal|p1a: Tyranitar|337/404|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|2",
+    "|move|p2a: Excadrill|Rock Slide|p1a: Tyranitar",
+    "|-damage|p1a: Tyranitar|246/404",
+    "|move|p1a: Tyranitar|Earthquake|p2a: Excadrill",
+    "|-supereffective|p2a: Excadrill",
+    "|-damage|p2a: Excadrill|0 fnt",
+    "|faint|p2a: Excadrill",
+    "|win|Player 1"
+  ]
+}

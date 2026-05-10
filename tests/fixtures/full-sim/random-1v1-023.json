@@ -1,0 +1,120 @@
+{
+  "id": "random-1v1-023",
+  "description": "1v1 random battle: Ferrothorn vs Scizor",
+  "seed": [
+    5088,
+    5089,
+    5090,
+    5091
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "team": [
+      {
+        "species": "Ferrothorn",
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "moves": [
+          "Power Whip",
+          "Knock Off",
+          "Stealth Rock",
+          "Leech Seed"
+        ],
+        "nature": "Relaxed",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Scizor",
+        "ability": "Technician",
+        "item": "Choice Band",
+        "moves": [
+          "Bullet Punch",
+          "U-turn",
+          "Knock Off",
+          "Superpower"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 248,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 8,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Ferrothorn|Ferrothorn, M|352/352",
+    "|switch|p2a: Scizor|Scizor, F|343/343",
+    "|turn|1",
+    "|move|p2a: Scizor|U-turn|p1a: Ferrothorn",
+    "|-damage|p1a: Ferrothorn|238/352",
+    "|-damage|p2a: Scizor|301/343|[from] ability: Iron Barbs|[of] p1a: Ferrothorn",
+    "|move|p1a: Ferrothorn|Stealth Rock|p2a: Scizor",
+    "|-sidestart|p2: Player 2|move: Stealth Rock",
+    "|-heal|p1a: Ferrothorn|260/352|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|2",
+    "|move|p2a: Scizor|U-turn|p1a: Ferrothorn",
+    "|-damage|p1a: Ferrothorn|131/352",
+    "|-damage|p2a: Scizor|259/343|[from] ability: Iron Barbs|[of] p1a: Ferrothorn",
+    "|move|p1a: Ferrothorn|Stealth Rock||[still]",
+    "|-fail|p1a: Ferrothorn",
+    "|-heal|p1a: Ferrothorn|153/352|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|3",
+    "|move|p2a: Scizor|U-turn|p1a: Ferrothorn",
+    "|-crit|p1a: Ferrothorn",
+    "|-damage|p1a: Ferrothorn|0 fnt",
+    "|-damage|p2a: Scizor|217/343|[from] ability: Iron Barbs|[of] p1a: Ferrothorn",
+    "|faint|p1a: Ferrothorn",
+    "|win|Player 2"
+  ]
+}

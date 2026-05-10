@@ -1,0 +1,107 @@
+{
+  "id": "random-1v1-005",
+  "description": "1v1 random battle: Excadrill vs Garchomp",
+  "seed": [
+    5016,
+    5017,
+    5018,
+    5019
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "team": [
+      {
+        "species": "Excadrill",
+        "ability": "Sand Rush",
+        "item": "Choice Scarf",
+        "moves": [
+          "Earthquake",
+          "Iron Head",
+          "Rock Slide",
+          "Rapid Spin"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Garchomp",
+        "ability": "Rough Skin",
+        "item": "Life Orb",
+        "moves": [
+          "Earthquake",
+          "Dragon Claw",
+          "Stone Edge",
+          "Swords Dance"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 2"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Excadrill|Excadrill, F|361/361",
+    "|switch|p2a: Garchomp|Garchomp, F|357/357",
+    "|turn|1",
+    "|move|p1a: Excadrill|Iron Head|p2a: Garchomp",
+    "|-damage|p2a: Garchomp|197/357",
+    "|-damage|p1a: Excadrill|316/361|[from] ability: Rough Skin|[of] p2a: Garchomp",
+    "|move|p2a: Garchomp|Swords Dance|p2a: Garchomp",
+    "|-boost|p2a: Garchomp|atk|2",
+    "|upkeep",
+    "|turn|2",
+    "|move|p1a: Excadrill|Iron Head|p2a: Garchomp",
+    "|-crit|p2a: Garchomp",
+    "|-damage|p2a: Garchomp|0 fnt",
+    "|-damage|p1a: Excadrill|271/361|[from] ability: Rough Skin|[of] p2a: Garchomp",
+    "|faint|p2a: Garchomp",
+    "|win|Player 1"
+  ]
+}

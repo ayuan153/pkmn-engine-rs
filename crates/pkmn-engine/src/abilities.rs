@@ -36,7 +36,7 @@ impl Battle {
             AbilityId::SnowWarning => {
                 self.field.weather = Weather::Snow;
                 self.field.weather_turns = 5;
-                self.emit(format!("|-weather|Snow|[from] ability: Snow Warning|[of] p{}a: {}", player+1, name));
+                self.emit(format!("|-weather|Snowscape|[from] ability: Snow Warning|[of] p{}a: {}", player+1, name));
             }
             AbilityId::ElectricSurge => {
                 self.field.terrain = Terrain::Electric;

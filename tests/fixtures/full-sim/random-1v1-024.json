@@ -1,0 +1,132 @@
+{
+  "id": "random-1v1-024",
+  "description": "1v1 random battle: Scizor vs Rotom-Wash",
+  "seed": [
+    5092,
+    5093,
+    5094,
+    5095
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "team": [
+      {
+        "species": "Scizor",
+        "ability": "Technician",
+        "item": "Choice Band",
+        "moves": [
+          "Bullet Punch",
+          "U-turn",
+          "Knock Off",
+          "Superpower"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 248,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 8,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Rotom-Wash",
+        "ability": "Levitate",
+        "item": "Leftovers",
+        "moves": [
+          "Hydro Pump",
+          "Volt Switch",
+          "Will-O-Wisp",
+          "Pain Split"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 1"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Scizor|Scizor, F|343/343",
+    "|switch|p2a: Rotom|Rotom-Wash|304/304",
+    "|turn|1",
+    "|move|p2a: Rotom|Volt Switch|p1a: Scizor",
+    "|-damage|p1a: Scizor|247/343",
+    "|move|p1a: Scizor|Superpower|p2a: Rotom",
+    "|-damage|p2a: Rotom|152/304",
+    "|-unboost|p1a: Scizor|atk|1",
+    "|-unboost|p1a: Scizor|def|1",
+    "|-heal|p2a: Rotom|171/304|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|2",
+    "|move|p2a: Rotom|Hydro Pump|p1a: Scizor",
+    "|-damage|p1a: Scizor|84/343",
+    "|move|p1a: Scizor|Superpower|p2a: Rotom",
+    "|-damage|p2a: Rotom|66/304",
+    "|-unboost|p1a: Scizor|atk|1",
+    "|-unboost|p1a: Scizor|def|1",
+    "|-heal|p2a: Rotom|85/304|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|3",
+    "|move|p2a: Rotom|Pain Split|p1a: Scizor",
+    "|move|p1a: Scizor|Superpower|p2a: Rotom",
+    "|-damage|p2a: Rotom|4/304",
+    "|-unboost|p1a: Scizor|atk|1",
+    "|-unboost|p1a: Scizor|def|1",
+    "|-heal|p2a: Rotom|23/304|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|4",
+    "|move|p2a: Rotom|Hydro Pump|p1a: Scizor",
+    "|-damage|p1a: Scizor|0 fnt",
+    "|faint|p1a: Scizor",
+    "|win|Player 2"
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "id": "random-1v1-020",
+  "description": "1v1 random battle: Tyranitar vs Corviknight",
+  "seed": [
+    5076,
+    5077,
+    5078,
+    5079
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "team": [
+      {
+        "species": "Tyranitar",
+        "ability": "Sand Stream",
+        "item": "Leftovers",
+        "moves": [
+          "Stone Edge",
+          "Crunch",
+          "Earthquake",
+          "Stealth Rock"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Corviknight",
+        "ability": "Pressure",
+        "item": "Leftovers",
+        "moves": [
+          "Brave Bird",
+          "Body Press",
+          "Roost",
+          "Defog"
+        ],
+        "nature": "Impish",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Tyranitar|Tyranitar, F|404/404",
+    "|switch|p2a: Corviknight|Corviknight, F|400/400",
+    "|-ability|p2a: Corviknight|Pressure",
+    "|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar",
+    "|turn|1",
+    "|move|p2a: Corviknight|Roost||[still]",
+    "|-fail|p2a: Corviknight|heal",
+    "|move|p1a: Tyranitar|Earthquake|p2a: Corviknight",
+    "|-immune|p2a: Corviknight",
+    "|-weather|Sandstorm|[upkeep]",
+    "|upkeep",
+    "|turn|2",
+    "|move|p2a: Corviknight|Defog|p1a: Tyranitar",
+    "|-unboost|p1a: Tyranitar|evasion|1",
+    "|move|p1a: Tyranitar|Earthquake|p2a: Corviknight",
+    "|-immune|p2a: Corviknight",
+    "|-weather|Sandstorm|[upkeep]",
+    "|upkeep",
+    "|turn|3",
+    "|move|p2a: Corviknight|Body Press|p1a: Tyranitar",
+    "|-supereffective|p1a: Tyranitar",
+    "|-damage|p1a: Tyranitar|60/404",
+    "|move|p1a: Tyranitar|Stealth Rock|p2a: Corviknight",
+    "|-sidestart|p2: Player 2|move: Stealth Rock",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-heal|p1a: Tyranitar|85/404|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|4",
+    "|move|p2a: Corviknight|Defog|p1a: Tyranitar",
+    "|-unboost|p1a: Tyranitar|evasion|1",
+    "|-sideend|p2: Player 2|Stealth Rock|[from] move: Defog|[of] p2a: Corviknight",
+    "|move|p1a: Tyranitar|Stealth Rock|p2a: Corviknight",
+    "|-sidestart|p2: Player 2|move: Stealth Rock",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-heal|p1a: Tyranitar|110/404|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|5",
+    "|move|p2a: Corviknight|Defog|p1a: Tyranitar",
+    "|-unboost|p1a: Tyranitar|evasion|1",
+    "|-sideend|p2: Player 2|Stealth Rock|[from] move: Defog|[of] p2a: Corviknight",
+    "|move|p1a: Tyranitar|Earthquake|p2a: Corviknight",
+    "|-immune|p2a: Corviknight",
+    "|-weather|none",
+    "|-heal|p1a: Tyranitar|135/404|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|6",
+    "|move|p2a: Corviknight|Roost||[still]",
+    "|-fail|p2a: Corviknight|heal",
+    "|move|p1a: Tyranitar|Stone Edge|p2a: Corviknight",
+    "|-damage|p2a: Corviknight|262/400",
+    "|-heal|p2a: Corviknight|287/400|[from] item: Leftovers",
+    "|-heal|p1a: Tyranitar|160/404|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|7",
+    "|move|p2a: Corviknight|Body Press|p1a: Tyranitar",
+    "|-supereffective|p1a: Tyranitar",
+    "|-damage|p1a: Tyranitar|0 fnt",
+    "|faint|p1a: Tyranitar",
+    "|win|Player 2"
+  ]
+}

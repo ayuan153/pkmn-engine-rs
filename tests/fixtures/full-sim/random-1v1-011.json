@@ -1,0 +1,112 @@
+{
+  "id": "random-1v1-011",
+  "description": "1v1 random battle: Tyranitar vs Garchomp",
+  "seed": [
+    5040,
+    5041,
+    5042,
+    5043
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "team": [
+      {
+        "species": "Tyranitar",
+        "ability": "Sand Stream",
+        "item": "Leftovers",
+        "moves": [
+          "Stone Edge",
+          "Crunch",
+          "Earthquake",
+          "Stealth Rock"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Garchomp",
+        "ability": "Rough Skin",
+        "item": "Life Orb",
+        "moves": [
+          "Earthquake",
+          "Dragon Claw",
+          "Stone Edge",
+          "Swords Dance"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 2",
+      "move 4"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Tyranitar|Tyranitar, M|404/404",
+    "|switch|p2a: Garchomp|Garchomp, M|357/357",
+    "|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar",
+    "|turn|1",
+    "|move|p2a: Garchomp|Swords Dance|p2a: Garchomp",
+    "|-boost|p2a: Garchomp|atk|2",
+    "|move|p1a: Tyranitar|Crunch|p2a: Garchomp",
+    "|-damage|p2a: Garchomp|189/357",
+    "|-unboost|p2a: Garchomp|def|1",
+    "|-damage|p1a: Tyranitar|354/404|[from] ability: Rough Skin|[of] p2a: Garchomp",
+    "|-weather|Sandstorm|[upkeep]",
+    "|-heal|p1a: Tyranitar|379/404|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|2",
+    "|move|p2a: Garchomp|Swords Dance|p2a: Garchomp",
+    "|-boost|p2a: Garchomp|atk|2",
+    "|move|p1a: Tyranitar|Crunch|p2a: Garchomp",
+    "|-damage|p2a: Garchomp|0 fnt",
+    "|-damage|p1a: Tyranitar|329/404|[from] ability: Rough Skin|[of] p2a: Garchomp",
+    "|faint|p2a: Garchomp",
+    "|win|Player 1"
+  ]
+}

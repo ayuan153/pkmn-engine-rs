@@ -1,0 +1,119 @@
+{
+  "id": "random-1v1-030",
+  "description": "1v1 random battle: Blissey vs Gengar",
+  "seed": [
+    5116,
+    5117,
+    5118,
+    5119
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "team": [
+      {
+        "species": "Blissey",
+        "ability": "Natural Cure",
+        "item": "Leftovers",
+        "moves": [
+          "Seismic Toss",
+          "Soft-Boiled",
+          "Thunder Wave",
+          "Toxic"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Gengar",
+        "ability": "Cursed Body",
+        "item": "Choice Specs",
+        "moves": [
+          "Shadow Ball",
+          "Sludge Bomb",
+          "Focus Blast",
+          "Thunderbolt"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Blissey|Blissey, F|714/714",
+    "|switch|p2a: Gengar|Gengar, M|261/261",
+    "|turn|1",
+    "|move|p2a: Gengar|Focus Blast|p1a: Blissey",
+    "|-supereffective|p1a: Blissey",
+    "|-damage|p1a: Blissey|394/714",
+    "|move|p1a: Blissey|Seismic Toss|p2a: Gengar",
+    "|-immune|p2a: Gengar",
+    "|-heal|p1a: Blissey|438/714|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|2",
+    "|move|p2a: Gengar|Focus Blast|p1a: Blissey",
+    "|-supereffective|p1a: Blissey",
+    "|-damage|p1a: Blissey|90/714",
+    "|move|p1a: Blissey|Seismic Toss|p2a: Gengar",
+    "|-immune|p2a: Gengar",
+    "|-heal|p1a: Blissey|134/714|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|3",
+    "|move|p2a: Gengar|Focus Blast|p1a: Blissey",
+    "|-supereffective|p1a: Blissey",
+    "|-damage|p1a: Blissey|0 fnt",
+    "|faint|p1a: Blissey",
+    "|win|Player 2"
+  ]
+}

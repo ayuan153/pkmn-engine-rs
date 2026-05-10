@@ -1,0 +1,99 @@
+{
+  "id": "random-1v1-014",
+  "description": "1v1 random battle: Tyranitar vs Gengar",
+  "seed": [
+    5052,
+    5053,
+    5054,
+    5055
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "team": [
+      {
+        "species": "Tyranitar",
+        "ability": "Sand Stream",
+        "item": "Leftovers",
+        "moves": [
+          "Stone Edge",
+          "Crunch",
+          "Earthquake",
+          "Stealth Rock"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Gengar",
+        "ability": "Cursed Body",
+        "item": "Choice Specs",
+        "moves": [
+          "Shadow Ball",
+          "Sludge Bomb",
+          "Focus Blast",
+          "Thunderbolt"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 3",
+      "move 2"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Tyranitar|Tyranitar, F|404/404",
+    "|switch|p2a: Gengar|Gengar, M|261/261",
+    "|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar",
+    "|turn|1",
+    "|move|p2a: Gengar|Sludge Bomb|p1a: Tyranitar",
+    "|-resisted|p1a: Tyranitar",
+    "|-damage|p1a: Tyranitar|319/404",
+    "|move|p1a: Tyranitar|Earthquake|p2a: Gengar",
+    "|-supereffective|p2a: Gengar",
+    "|-damage|p2a: Gengar|0 fnt",
+    "|faint|p2a: Gengar",
+    "|win|Player 1"
+  ]
+}

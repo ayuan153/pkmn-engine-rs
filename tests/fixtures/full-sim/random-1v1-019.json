@@ -1,0 +1,155 @@
+{
+  "id": "random-1v1-019",
+  "description": "1v1 random battle: Ferrothorn vs Blissey",
+  "seed": [
+    5072,
+    5073,
+    5074,
+    5075
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "team": [
+      {
+        "species": "Ferrothorn",
+        "ability": "Iron Barbs",
+        "item": "Leftovers",
+        "moves": [
+          "Power Whip",
+          "Knock Off",
+          "Stealth Rock",
+          "Leech Seed"
+        ],
+        "nature": "Relaxed",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Blissey",
+        "ability": "Natural Cure",
+        "item": "Leftovers",
+        "moves": [
+          "Seismic Toss",
+          "Soft-Boiled",
+          "Thunder Wave",
+          "Toxic"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 1",
+      "move 2"
+    ],
+    [
+      "move 3",
+      "move 2"
+    ],
+    [
+      "move 4",
+      "move 2"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 1"
+    ],
+    [
+      "move 2",
+      "move 4"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Ferrothorn|Ferrothorn, M|352/352",
+    "|switch|p2a: Blissey|Blissey, F|714/714",
+    "|turn|1",
+    "|move|p2a: Blissey|Soft-Boiled||[still]",
+    "|-fail|p2a: Blissey|heal",
+    "|move|p1a: Ferrothorn|Power Whip|p2a: Blissey",
+    "|-damage|p2a: Blissey|482/714",
+    "|-heal|p2a: Blissey|526/714|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|2",
+    "|move|p2a: Blissey|Soft-Boiled|p2a: Blissey",
+    "|-heal|p2a: Blissey|714/714",
+    "|move|p1a: Ferrothorn|Stealth Rock|p2a: Blissey",
+    "|-sidestart|p2: Player 2|move: Stealth Rock",
+    "|upkeep",
+    "|turn|3",
+    "|move|p2a: Blissey|Soft-Boiled||[still]",
+    "|-fail|p2a: Blissey|heal",
+    "|move|p1a: Ferrothorn|Leech Seed|p2a: Blissey",
+    "|-start|p2a: Blissey|move: Leech Seed",
+    "|-damage|p2a: Blissey|625/714|[from] Leech Seed|[of] p1a: Ferrothorn",
+    "|upkeep",
+    "|turn|4",
+    "|move|p2a: Blissey|Thunder Wave|p1a: Ferrothorn",
+    "|-status|p1a: Ferrothorn|par",
+    "|move|p1a: Ferrothorn|Knock Off|p2a: Blissey",
+    "|-damage|p2a: Blissey|492/714",
+    "|-enditem|p2a: Blissey|Leftovers|[from] move: Knock Off|[of] p1a: Ferrothorn",
+    "|-damage|p2a: Blissey|403/714|[from] Leech Seed|[of] p1a: Ferrothorn",
+    "|upkeep",
+    "|turn|5",
+    "|move|p2a: Blissey|Seismic Toss|p1a: Ferrothorn",
+    "|-damage|p1a: Ferrothorn|252/352 par",
+    "|-damage|p2a: Blissey|314/714|[from] ability: Iron Barbs|[of] p1a: Ferrothorn",
+    "|move|p1a: Ferrothorn|Knock Off|p2a: Blissey",
+    "|-damage|p2a: Blissey|225/714",
+    "|-heal|p1a: Ferrothorn|274/352 par|[from] item: Leftovers",
+    "|-damage|p2a: Blissey|136/714|[from] Leech Seed|[of] p1a: Ferrothorn",
+    "|-heal|p1a: Ferrothorn|352/352 par|[silent]",
+    "|upkeep",
+    "|turn|6",
+    "|move|p2a: Blissey|Toxic||[still]",
+    "|-fail|p2a: Blissey",
+    "|move|p1a: Ferrothorn|Knock Off|p2a: Blissey",
+    "|-damage|p2a: Blissey|49/714",
+    "|-damage|p2a: Blissey|0 fnt|[from] Leech Seed|[of] p1a: Ferrothorn",
+    "|faint|p2a: Blissey",
+    "|win|Player 1"
+  ]
+}

@@ -1,9 +1,6 @@
 import { BattleStreams, Dex, RandomPlayerAI, Teams } from '@pkmn/sim';
-import { TeamGenerators } from '@pkmn/randoms';
 import * as fs from 'fs';
 import * as path from 'path';
-
-Teams.setGeneratorFactory(TeamGenerators);
 
 const OUTPUT_DIR = path.resolve(import.meta.dirname, '../../../tests/fixtures/full-sim');
 
@@ -31,7 +28,48 @@ function isSemanticLine(line: string): boolean {
   return SEMANTIC_PREFIXES.some(prefix => line.startsWith(prefix));
 }
 
-async function runRandomBattle(id: string, seed: [number, number, number, number]) {
+interface PokemonSet {
+  species: string; ability: string; item: string;
+  moves: string[]; nature: string;
+  evs: { hp: number; atk: number; def: number; spa: number; spd: number; spe: number };
+  level: number;
+}
+
+function set(s: PokemonSet): PokemonSet { return s; }
+
+const POOL: PokemonSet[] = [
+  set({ species: 'Garchomp', ability: 'Rough Skin', item: 'Life Orb', moves: ['Earthquake', 'Dragon Claw', 'Stone Edge', 'Swords Dance'], nature: 'Jolly', evs: {hp:0,atk:252,def:0,spa:0,spd:4,spe:252}, level: 100 }),
+  set({ species: 'Dragonite', ability: 'Multiscale', item: 'Choice Band', moves: ['Outrage', 'Extreme Speed', 'Earthquake', 'Fire Punch'], nature: 'Adamant', evs: {hp:0,atk:252,def:0,spa:0,spd:4,spe:252}, level: 100 }),
+  set({ species: 'Tyranitar', ability: 'Sand Stream', item: 'Leftovers', moves: ['Stone Edge', 'Crunch', 'Earthquake', 'Stealth Rock'], nature: 'Adamant', evs: {hp:252,atk:252,def:0,spa:0,spd:4,spe:0}, level: 100 }),
+  set({ species: 'Gengar', ability: 'Cursed Body', item: 'Choice Specs', moves: ['Shadow Ball', 'Sludge Bomb', 'Focus Blast', 'Thunderbolt'], nature: 'Timid', evs: {hp:0,atk:0,def:0,spa:252,spd:4,spe:252}, level: 100 }),
+  set({ species: 'Scizor', ability: 'Technician', item: 'Choice Band', moves: ['Bullet Punch', 'U-turn', 'Knock Off', 'Superpower'], nature: 'Adamant', evs: {hp:248,atk:252,def:0,spa:0,spd:8,spe:0}, level: 100 }),
+  set({ species: 'Rotom-Wash', ability: 'Levitate', item: 'Leftovers', moves: ['Hydro Pump', 'Volt Switch', 'Will-O-Wisp', 'Pain Split'], nature: 'Bold', evs: {hp:252,atk:0,def:252,spa:0,spd:4,spe:0}, level: 100 }),
+  set({ species: 'Ferrothorn', ability: 'Iron Barbs', item: 'Leftovers', moves: ['Power Whip', 'Knock Off', 'Stealth Rock', 'Leech Seed'], nature: 'Relaxed', evs: {hp:252,atk:0,def:252,spa:0,spd:4,spe:0}, level: 100 }),
+  set({ species: 'Blissey', ability: 'Natural Cure', item: 'Leftovers', moves: ['Seismic Toss', 'Soft-Boiled', 'Thunder Wave', 'Toxic'], nature: 'Bold', evs: {hp:252,atk:0,def:252,spa:0,spd:4,spe:0}, level: 100 }),
+  set({ species: 'Corviknight', ability: 'Pressure', item: 'Leftovers', moves: ['Brave Bird', 'Body Press', 'Roost', 'Defog'], nature: 'Impish', evs: {hp:252,atk:0,def:252,spa:0,spd:4,spe:0}, level: 100 }),
+  set({ species: 'Excadrill', ability: 'Sand Rush', item: 'Choice Scarf', moves: ['Earthquake', 'Iron Head', 'Rock Slide', 'Rapid Spin'], nature: 'Jolly', evs: {hp:0,atk:252,def:0,spa:0,spd:4,spe:252}, level: 100 }),
+];
+
+function formatTeamForShowdown(mon: PokemonSet): string {
+  const evStr = Object.entries(mon.evs).filter(([,v]) => v > 0).map(([k,v]) => `${v} ${k}`).join(' / ');
+  const movesStr = mon.moves.map(m => `- ${m}`).join('\n');
+  return `${mon.species} @ ${mon.item}
+Ability: ${mon.ability}
+Level: ${mon.level}
+EVs: ${evStr}
+${mon.nature} Nature
+${movesStr}`;
+}
+
+// Simple seeded PRNG (xorshift32)
+function xorshift(state: number): number {
+  state ^= state << 13;
+  state ^= state >>> 17;
+  state ^= state << 5;
+  return state >>> 0;
+}
+
+async function runBattle(id: string, seed: [number, number, number, number], p1Mon: PokemonSet, p2Mon: PokemonSet) {
   const battleStream = new BattleStreams.BattleStream();
   const streams = BattleStreams.getPlayerStreams(battleStream);
 
@@ -50,141 +88,46 @@ async function runRandomBattle(id: string, seed: [number, number, number, number
   void p1.start();
   void p2.start();
 
+  const p1Team = formatTeamForShowdown(p1Mon);
+  const p2Team = formatTeamForShowdown(p2Mon);
+
   streams.omniscient.write(
-    `>start ${JSON.stringify({ formatid: 'gen9randombattle', seed })}\n` +
-    `>player p1 ${JSON.stringify({ name: 'Player 1' })}\n` +
-    `>player p2 ${JSON.stringify({ name: 'Player 2' })}`
+    `>start ${JSON.stringify({ formatid: 'gen9customgame', seed })}\n` +
+    `>player p1 ${JSON.stringify({ name: 'Player 1', team: Teams.pack(Teams.import(p1Team)!) })}\n` +
+    `>player p2 ${JSON.stringify({ name: 'Player 2', team: Teams.pack(Teams.import(p2Team)!) })}`
   );
 
   await omniscientDone;
 
   const battle = battleStream.battle!;
-  const sides = battle.sides;
-
-  // The team array is the ORIGINAL order (never changes).
-  // The pokemon array gets reordered: pokemon[0] is always active.
-  // We output the team in the original team[] order, with the lead moved to front.
-  // Switch indices need to be converted from pokemon-array-relative to team-array-relative.
-
-  // First, determine the initial pokemon array order by finding which team member was the lead.
-  // The lead is identified from the first |switch| protocol line.
   const protocol = allOutput.filter(isSemanticLine);
 
-  function getLeadName(prefix: string): string | null {
-    const line = protocol.find(l => l.startsWith(`|switch|${prefix}`));
-    if (!line) return null;
-    // |switch|p1a: Name|Details|HP
-    const match = line.match(/\|switch\|p[12]a: ([^|]+)\|/);
-    return match ? match[1] : null;
-  }
-
-  // Build team data from the stable team[] array
-  function buildTeamData(sideIdx: number) {
-    return sides[sideIdx].team.map(mon => ({
-      species: mon.species,
-      ability: mon.ability ? Dex.abilities.get(mon.ability).name : '',
-      item: mon.item ? Dex.items.get(mon.item).name : '',
-      moves: mon.moves.map(m => Dex.moves.get(m).name),
-      nature: mon.nature || 'Hardy',
-      evs: mon.evs,
-      ivs: mon.ivs,
-      level: mon.level,
-      gender: mon.gender || '',
-    }));
-  }
-
-  // Reorder team so lead is at index 0 (matching what Rust engine expects)
-  function reorderWithLead(team: any[], leadName: string | null): { team: any[], leadOrigIdx: number } {
-    if (!leadName) return { team, leadOrigIdx: 0 };
-    const leadIdx = team.findIndex(t => t.species === leadName);
-    if (leadIdx <= 0) return { team, leadOrigIdx: Math.max(0, leadIdx) };
-    const reordered = [...team];
-    const [lead] = reordered.splice(leadIdx, 1);
-    reordered.unshift(lead);
-    return { team: reordered, leadOrigIdx: leadIdx };
-  }
-
-  const p1TeamRaw = buildTeamData(0);
-  const p2TeamRaw = buildTeamData(1);
-  const p1Result = reorderWithLead(p1TeamRaw, getLeadName('p1a: '));
-  const p2Result = reorderWithLead(p2TeamRaw, getLeadName('p2a: '));
-
-  // Build a mapping from original team index to new (reordered) team index
-  // for converting switch targets
-  function buildIndexMap(teamRaw: any[], reordered: any[]): Map<number, number> {
-    const map = new Map<number, number>();
-    for (let newIdx = 0; newIdx < reordered.length; newIdx++) {
-      const origIdx = teamRaw.indexOf(reordered[newIdx]);
-      map.set(origIdx, newIdx);
-    }
-    return map;
-  }
-  const p1IndexMap = buildIndexMap(p1TeamRaw, p1Result.team);
-  const p2IndexMap = buildIndexMap(p2TeamRaw, p2Result.team);
-
-  // Now convert choices.
-  // In Showdown: pokemon array starts as [lead, ...rest] and gets reordered on switch.
-  // "switch N" means switch to pokemon[N-1] in the CURRENT pokemon array state.
-  // We need to track the pokemon array state and convert to our fixed team indices.
-
-  // Simulate the Showdown pokemon array state for each side
-  // Initial state: pokemon array = [leadOrigIdx, ...otherIndices]
-  // We need to figure out the initial pokemon array order.
-  // The initial order is: lead first, then the rest in original order.
-  function getInitialPokemonOrder(teamSize: number, leadOrigIdx: number): number[] {
-    const order = [];
-    order.push(leadOrigIdx);
-    for (let i = 0; i < teamSize; i++) {
-      if (i !== leadOrigIdx) order.push(i);
-    }
-    return order;
-  }
-
-  // pokemonOrder[i] = original team index of the pokemon at position i in Showdown's array
-  const pokemonOrder = [
-    getInitialPokemonOrder(p1TeamRaw.length, p1Result.leadOrigIdx),
-    getInitialPokemonOrder(p2TeamRaw.length, p2Result.leadOrigIdx),
-  ];
-  const indexMaps = [p1IndexMap, p2IndexMap];
-
-  // Build move lookup: for each side, map (original team index, moveId) -> slot index
-  const moveLookup: Map<string, number>[][] = [[], []];
-  for (let s = 0; s < 2; s++) {
-    for (const mon of sides[s].team) {
-      const map = new Map<string, number>();
-      mon.moves.forEach((moveId, i) => map.set(moveId, i + 1));
-      moveLookup[s].push(map);
-    }
-  }
-
+  // With 1v1, choices are simple: just move slots, no switching
   const choices: [string, string][] = [];
   let p1Choice: string | null = null;
   let p2Choice: string | null = null;
 
+  // Build move lookup for each side (inputLog uses toID format like 'ironhead')
+  const sides = battle.sides;
+  const moveLookup: Map<string, number>[] = [];
+  for (let s = 0; s < 2; s++) {
+    const map = new Map<string, number>();
+    sides[s].team[0].moves.forEach((moveName, i) => {
+      const moveId = Dex.moves.get(moveName).id;
+      map.set(moveId, i + 1);
+    });
+    moveLookup.push(map);
+  }
+
   function convertChoice(choice: string, sideIdx: number): string {
+    if (choice.startsWith('team ')) return ''; // skip team preview
     if (choice.startsWith('move ')) {
       const rest = choice.slice(5);
       const moveId = rest.split(' ')[0];
       const suffix = rest.slice(moveId.length);
       if (moveId === 'struggle' || moveId === 'recharge') return `move 1${suffix}`;
-      // Active pokemon is at pokemonOrder[sideIdx][0]
-      const activeOrigIdx = pokemonOrder[sideIdx][0];
-      const map = moveLookup[sideIdx][activeOrigIdx];
-      const slot = map?.get(moveId);
+      const slot = moveLookup[sideIdx].get(moveId);
       if (slot !== undefined) return `move ${slot}${suffix}`;
-      return choice;
-    } else if (choice.startsWith('switch ')) {
-      const n = parseInt(choice.slice(7));
-      if (isNaN(n)) return choice;
-      // In Showdown, "switch N" means switch to pokemon at position N-1 in current array
-      const targetOrigIdx = pokemonOrder[sideIdx][n - 1];
-      // Simulate the swap: Showdown swaps pokemon[0] with pokemon[N-1]
-      const tmp = pokemonOrder[sideIdx][0];
-      pokemonOrder[sideIdx][0] = pokemonOrder[sideIdx][n - 1];
-      pokemonOrder[sideIdx][n - 1] = tmp;
-      // Convert to our reordered team index (1-indexed)
-      const newTeamIdx = indexMaps[sideIdx].get(targetOrigIdx);
-      if (newTeamIdx !== undefined) return `switch ${newTeamIdx + 1}`;
       return choice;
     }
     return choice;
@@ -192,9 +135,11 @@ async function runRandomBattle(id: string, seed: [number, number, number, number
 
   for (const line of battle.inputLog) {
     if (line.startsWith('>p1 ')) {
-      p1Choice = convertChoice(line.slice(4), 0);
+      const c = convertChoice(line.slice(4), 0);
+      if (c) p1Choice = c;
     } else if (line.startsWith('>p2 ')) {
-      p2Choice = convertChoice(line.slice(4), 1);
+      const c = convertChoice(line.slice(4), 1);
+      if (c) p2Choice = c;
     }
     if (p1Choice && p2Choice) {
       choices.push([p1Choice, p2Choice]);
@@ -203,35 +148,58 @@ async function runRandomBattle(id: string, seed: [number, number, number, number
     }
   }
 
+  const defaultIvs = { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31 };
+  function buildTeamEntry(mon: PokemonSet) {
+    return {
+      species: mon.species,
+      ability: mon.ability,
+      item: mon.item,
+      moves: mon.moves,
+      nature: mon.nature,
+      evs: mon.evs,
+      ivs: defaultIvs,
+      level: mon.level,
+      gender: '',
+    };
+  }
+
   return {
     id,
-    description: `Random battle ${id}`,
+    description: `1v1 random battle: ${p1Mon.species} vs ${p2Mon.species}`,
     seed,
-    format: 'gen9randombattle',
-    p1: { team: p1Result.team },
-    p2: { team: p2Result.team },
+    format: 'gen9customgame',
+    p1: { team: [buildTeamEntry(p1Mon)] },
+    p2: { team: [buildTeamEntry(p2Mon)] },
     choices,
     protocol,
   };
 }
 
 async function main() {
-  const count = parseInt(process.argv[2] || '20');
+  const count = parseInt(process.argv[2] || '30');
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
-  console.log(`Generating ${count} random battle fixtures...`);
+  console.log(`Generating ${count} random 1v1 battle fixtures...`);
 
   for (let i = 0; i < count; i++) {
     const seed: [number, number, number, number] = [
-      3000 + i * 4, 3001 + i * 4, 3002 + i * 4, 3003 + i * 4,
+      5000 + i * 4, 5001 + i * 4, 5002 + i * 4, 5003 + i * 4,
     ];
-    const id = `random-${String(i + 1).padStart(3, '0')}`;
+    // Use seed to pick pokemon - mix multiple times for variety
+    let rng = seed[0] + i * 7919; // prime multiplier for spread
+    rng = xorshift(xorshift(xorshift(rng >>> 0)));
+    const p1Idx = rng % POOL.length;
+    rng = xorshift(rng);
+    let p2Idx = rng % POOL.length;
+    if (p2Idx === p1Idx) p2Idx = (p2Idx + 1) % POOL.length;
+
+    const id = `random-1v1-${String(i + 1).padStart(3, '0')}`;
 
     try {
-      const fixture = await runRandomBattle(id, seed);
+      const fixture = await runBattle(id, seed, POOL[p1Idx], POOL[p2Idx]);
       const outPath = path.join(OUTPUT_DIR, `${id}.json`);
       fs.writeFileSync(outPath, JSON.stringify(fixture, null, 2));
-      console.log(`  ✓ ${id}: ${fixture.protocol.length} lines, ${fixture.choices.length} turns`);
+      console.log(`  ✓ ${id}: ${fixture.protocol.length} lines, ${fixture.choices.length} turns (${POOL[p1Idx].species} vs ${POOL[p2Idx].species})`);
     } catch (e: any) {
       console.error(`  ✗ ${id}: ${e.message}`);
     }

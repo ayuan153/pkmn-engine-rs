@@ -1,0 +1,100 @@
+{
+  "id": "random-1v1-013",
+  "description": "1v1 random battle: Scizor vs Excadrill",
+  "seed": [
+    5048,
+    5049,
+    5050,
+    5051
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "team": [
+      {
+        "species": "Scizor",
+        "ability": "Technician",
+        "item": "Choice Band",
+        "moves": [
+          "Bullet Punch",
+          "U-turn",
+          "Knock Off",
+          "Superpower"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 248,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 8,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Excadrill",
+        "ability": "Sand Rush",
+        "item": "Choice Scarf",
+        "moves": [
+          "Earthquake",
+          "Iron Head",
+          "Rock Slide",
+          "Rapid Spin"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 4",
+      "move 2"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Scizor|Scizor, M|343/343",
+    "|switch|p2a: Excadrill|Excadrill, F|361/361",
+    "|turn|1",
+    "|move|p2a: Excadrill|Iron Head|p1a: Scizor",
+    "|-resisted|p1a: Scizor",
+    "|-damage|p1a: Scizor|274/343",
+    "|move|p1a: Scizor|Superpower|p2a: Excadrill",
+    "|-supereffective|p2a: Excadrill",
+    "|-damage|p2a: Excadrill|0 fnt",
+    "|-unboost|p1a: Scizor|atk|1",
+    "|-unboost|p1a: Scizor|def|1",
+    "|faint|p2a: Excadrill",
+    "|win|Player 1"
+  ]
+}

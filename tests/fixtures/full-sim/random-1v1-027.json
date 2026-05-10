@@ -1,0 +1,117 @@
+{
+  "id": "random-1v1-027",
+  "description": "1v1 random battle: Corviknight vs Gengar",
+  "seed": [
+    5104,
+    5105,
+    5106,
+    5107
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "team": [
+      {
+        "species": "Corviknight",
+        "ability": "Pressure",
+        "item": "Leftovers",
+        "moves": [
+          "Brave Bird",
+          "Body Press",
+          "Roost",
+          "Defog"
+        ],
+        "nature": "Impish",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "p2": {
+    "team": [
+      {
+        "species": "Gengar",
+        "ability": "Cursed Body",
+        "item": "Choice Specs",
+        "moves": [
+          "Shadow Ball",
+          "Sludge Bomb",
+          "Focus Blast",
+          "Thunderbolt"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": ""
+      }
+    ]
+  },
+  "choices": [
+    [
+      "move 4",
+      "move 3"
+    ],
+    [
+      "move 2",
+      "move 3"
+    ],
+    [
+      "move 4",
+      "move 3"
+    ]
+  ],
+  "protocol": [
+    "|switch|p1a: Corviknight|Corviknight, M|400/400",
+    "|switch|p2a: Gengar|Gengar, M|261/261",
+    "|-ability|p1a: Corviknight|Pressure",
+    "|turn|1",
+    "|move|p2a: Gengar|Focus Blast|p1a: Corviknight",
+    "|-damage|p1a: Corviknight|166/400",
+    "|move|p1a: Corviknight|Defog|p2a: Gengar",
+    "|-unboost|p2a: Gengar|evasion|1",
+    "|-heal|p1a: Corviknight|191/400|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|2",
+    "|move|p2a: Gengar|Focus Blast|p1a: Corviknight|[miss]",
+    "|-miss|p2a: Gengar|p1a: Corviknight",
+    "|move|p1a: Corviknight|Body Press|p2a: Gengar",
+    "|-immune|p2a: Gengar",
+    "|-heal|p1a: Corviknight|216/400|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|3",
+    "|move|p2a: Gengar|Focus Blast|p1a: Corviknight",
+    "|-damage|p1a: Corviknight|0 fnt",
+    "|faint|p1a: Corviknight",
+    "|win|Player 2"
+  ]
+}
