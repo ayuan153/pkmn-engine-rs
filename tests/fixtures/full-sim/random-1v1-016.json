@@ -78,19 +78,52 @@
   },
   "choices": [
     [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
       "move 1",
-      "move 2"
+      "move 4"
+    ],
+    [
+      "move 1",
+      "move 4"
     ]
   ],
   "protocol": [
     "|switch|p1a: Excadrill|Excadrill, F|361/361",
     "|switch|p2a: Gengar|Gengar, F|261/261",
     "|turn|1",
-    "|move|p1a: Excadrill|Earthquake|p2a: Gengar",
-    "|-supereffective|p2a: Gengar",
+    "|move|p1a: Excadrill|Rock Slide|p2a: Gengar|[miss]",
+    "|-miss|p1a: Excadrill|p2a: Gengar",
+    "|move|p2a: Gengar|Thunderbolt|p1a: Excadrill",
+    "|-immune|p1a: Excadrill",
+    "|upkeep",
+    "|turn|2",
+    "|move|p1a: Excadrill|Rock Slide|p2a: Gengar",
+    "|-damage|p2a: Gengar|114/261",
+    "|-start|p1a: Excadrill|Disable|Rock Slide|[from] ability: Cursed Body|[of] p2a: Gengar",
+    "|move|p2a: Gengar|Thunderbolt|p1a: Excadrill",
+    "|-immune|p1a: Excadrill",
+    "|upkeep",
+    "|turn|3",
+    "|-activate|p1a: Excadrill|move: Struggle",
+    "|move|p1a: Excadrill|Struggle|p2a: Gengar",
+    "|-damage|p2a: Gengar|21/261",
+    "|-damage|p1a: Excadrill|271/361|[from] recoil",
+    "|move|p2a: Gengar|Thunderbolt|p1a: Excadrill",
+    "|-immune|p1a: Excadrill",
+    "|upkeep",
+    "|turn|4",
+    "|-activate|p1a: Excadrill|move: Struggle",
+    "|move|p1a: Excadrill|Struggle|p2a: Gengar",
     "|-damage|p2a: Gengar|0 fnt",
-    "|-start|p1a: Excadrill|Disable|Earthquake|[from] ability: Cursed Body|[of] p2a: Gengar",
     "|faint|p2a: Gengar",
+    "|-damage|p1a: Excadrill|181/361|[from] recoil",
     "|win|Player 1"
   ]
 }

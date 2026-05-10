@@ -78,23 +78,15 @@
   },
   "choices": [
     [
-      "move 3",
+      "move 2",
       "move 2"
     ],
     [
-      "move 4",
-      "move 2"
-    ],
-    [
-      "move 3",
+      "move 2",
       "move 2"
     ],
     [
       "move 1",
-      "move 2"
-    ],
-    [
-      "move 4",
       "move 2"
     ],
     [
@@ -109,22 +101,16 @@
     "|turn|1",
     "|move|p2a: Gengar|Sludge Bomb|p1a: Corviknight",
     "|-immune|p1a: Corviknight",
-    "|move|p1a: Corviknight|Roost||[still]",
-    "|-fail|p1a: Corviknight|heal",
+    "|move|p1a: Corviknight|Body Press|p2a: Gengar",
+    "|-immune|p2a: Gengar",
     "|upkeep",
     "|turn|2",
     "|move|p2a: Gengar|Sludge Bomb|p1a: Corviknight",
     "|-immune|p1a: Corviknight",
-    "|move|p1a: Corviknight|Defog|p2a: Gengar",
-    "|-unboost|p2a: Gengar|evasion|1",
+    "|move|p1a: Corviknight|Body Press|p2a: Gengar",
+    "|-immune|p2a: Gengar",
     "|upkeep",
     "|turn|3",
-    "|move|p2a: Gengar|Sludge Bomb|p1a: Corviknight",
-    "|-immune|p1a: Corviknight",
-    "|move|p1a: Corviknight|Roost||[still]",
-    "|-fail|p1a: Corviknight|heal",
-    "|upkeep",
-    "|turn|4",
     "|move|p2a: Gengar|Sludge Bomb|p1a: Corviknight",
     "|-immune|p1a: Corviknight",
     "|move|p1a: Corviknight|Brave Bird|p2a: Gengar",
@@ -132,20 +118,13 @@
     "|-damage|p1a: Corviknight|340/400|[from] Recoil",
     "|-heal|p1a: Corviknight|365/400|[from] item: Leftovers",
     "|upkeep",
-    "|turn|5",
-    "|move|p2a: Gengar|Sludge Bomb|p1a: Corviknight",
-    "|-immune|p1a: Corviknight",
-    "|move|p1a: Corviknight|Defog|p2a: Gengar",
-    "|-unboost|p2a: Gengar|evasion|1",
-    "|-heal|p1a: Corviknight|390/400|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|6",
+    "|turn|4",
     "|move|p2a: Gengar|Sludge Bomb|p1a: Corviknight",
     "|-immune|p1a: Corviknight",
     "|move|p1a: Corviknight|Brave Bird|p2a: Gengar",
     "|-damage|p2a: Gengar|0 fnt",
     "|faint|p2a: Gengar",
-    "|-damage|p1a: Corviknight|364/400|[from] Recoil",
+    "|-damage|p1a: Corviknight|339/400|[from] Recoil",
     "|win|Player 1"
   ]
 }

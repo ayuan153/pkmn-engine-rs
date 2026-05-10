@@ -193,6 +193,7 @@ pub fn get_secondaries(id: u16) -> &'static [Secondary] {
         534 => &[Secondary { chance: 50, effect: SecondaryEffect::StatDrop(Stat::Def, -1) }],            // Razor Shell
 
         // Stat drops: -1 SpD on target
+        411 => &[Secondary { chance: 10, effect: SecondaryEffect::StatDrop(Stat::Spd, -1) }],            // Focus Blast
         247 => &[Secondary { chance: 20, effect: SecondaryEffect::StatDrop(Stat::Spd, -1) }],            // Shadow Ball
         94 => &[Secondary { chance: 10, effect: SecondaryEffect::StatDrop(Stat::Spd, -1) }],             // Psychic
         412 => &[Secondary { chance: 10, effect: SecondaryEffect::StatDrop(Stat::Spd, -1) }],            // Energy Ball

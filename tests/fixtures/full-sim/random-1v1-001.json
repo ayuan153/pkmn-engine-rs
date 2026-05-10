@@ -79,11 +79,27 @@
   "choices": [
     [
       "move 3",
-      "move 2"
+      "move 1"
+    ],
+    [
+      "move 3",
+      "move 3"
     ],
     [
       "move 3",
       "move 2"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 3"
     ],
     [
       "move 3",
@@ -91,15 +107,11 @@
     ],
     [
       "move 3",
-      "move 2"
+      "move 1"
     ],
     [
       "move 3",
-      "move 3"
-    ],
-    [
-      "move 3",
-      "move 3"
+      "move 4"
     ],
     [
       "move 3",
@@ -111,49 +123,71 @@
     "|switch|p2a: Corviknight|Corviknight, M|400/400",
     "|-ability|p2a: Corviknight|Pressure",
     "|turn|1",
-    "|move|p2a: Corviknight|Body Press|p1a: Scizor",
-    "|-damage|p1a: Scizor|251/343",
+    "|move|p2a: Corviknight|Brave Bird|p1a: Scizor",
+    "|-damage|p1a: Scizor|216/343",
+    "|-damage|p2a: Corviknight|358/400|[from] Recoil",
     "|move|p1a: Scizor|Knock Off|p2a: Corviknight",
-    "|-damage|p2a: Corviknight|274/400",
+    "|-damage|p2a: Corviknight|232/400",
     "|-enditem|p2a: Corviknight|Leftovers|[from] move: Knock Off|[of] p1a: Scizor",
     "|upkeep",
     "|turn|2",
-    "|move|p2a: Corviknight|Body Press|p1a: Scizor",
-    "|-damage|p1a: Scizor|168/343",
+    "|move|p2a: Corviknight|Roost|p2a: Corviknight",
+    "|-heal|p2a: Corviknight|400/400",
+    "|-singleturn|p2a: Corviknight|move: Roost",
     "|move|p1a: Scizor|Knock Off|p2a: Corviknight",
-    "|-damage|p2a: Corviknight|190/400",
+    "|-damage|p2a: Corviknight|318/400",
     "|upkeep",
     "|turn|3",
-    "|move|p2a: Corviknight|Defog|p1a: Scizor",
-    "|-unboost|p1a: Scizor|evasion|1",
+    "|move|p2a: Corviknight|Body Press|p1a: Scizor",
+    "|-damage|p1a: Scizor|131/343",
     "|move|p1a: Scizor|Knock Off|p2a: Corviknight",
-    "|-damage|p2a: Corviknight|107/400",
+    "|-damage|p2a: Corviknight|235/400",
     "|upkeep",
     "|turn|4",
-    "|move|p2a: Corviknight|Body Press|p1a: Scizor",
-    "|-damage|p1a: Scizor|83/343",
+    "|move|p2a: Corviknight|Roost|p2a: Corviknight",
+    "|-heal|p2a: Corviknight|400/400",
+    "|-singleturn|p2a: Corviknight|move: Roost",
     "|move|p1a: Scizor|Knock Off|p2a: Corviknight",
-    "|-damage|p2a: Corviknight|12/400",
+    "|-damage|p2a: Corviknight|316/400",
     "|upkeep",
     "|turn|5",
     "|move|p2a: Corviknight|Roost|p2a: Corviknight",
-    "|-heal|p2a: Corviknight|212/400",
+    "|-heal|p2a: Corviknight|400/400",
     "|-singleturn|p2a: Corviknight|move: Roost",
     "|move|p1a: Scizor|Knock Off|p2a: Corviknight",
-    "|-damage|p2a: Corviknight|129/400",
+    "|-damage|p2a: Corviknight|305/400",
     "|upkeep",
     "|turn|6",
     "|move|p2a: Corviknight|Roost|p2a: Corviknight",
-    "|-heal|p2a: Corviknight|329/400",
+    "|-heal|p2a: Corviknight|400/400",
     "|-singleturn|p2a: Corviknight|move: Roost",
     "|move|p1a: Scizor|Knock Off|p2a: Corviknight",
-    "|-damage|p2a: Corviknight|243/400",
+    "|-damage|p2a: Corviknight|317/400",
     "|upkeep",
     "|turn|7",
+    "|move|p2a: Corviknight|Defog|p1a: Scizor",
+    "|-unboost|p1a: Scizor|evasion|1",
+    "|move|p1a: Scizor|Knock Off|p2a: Corviknight",
+    "|-damage|p2a: Corviknight|231/400",
+    "|upkeep",
+    "|turn|8",
+    "|move|p2a: Corviknight|Brave Bird|p1a: Scizor",
+    "|-damage|p1a: Scizor|11/343",
+    "|-damage|p2a: Corviknight|191/400|[from] Recoil",
+    "|move|p1a: Scizor|Knock Off|p2a: Corviknight",
+    "|-damage|p2a: Corviknight|98/400",
+    "|upkeep",
+    "|turn|9",
+    "|move|p2a: Corviknight|Defog|p1a: Scizor",
+    "|-unboost|p1a: Scizor|evasion|1",
+    "|move|p1a: Scizor|Knock Off|p2a: Corviknight",
+    "|-damage|p2a: Corviknight|7/400",
+    "|upkeep",
+    "|turn|10",
     "|move|p2a: Corviknight|Brave Bird|p1a: Scizor",
     "|-damage|p1a: Scizor|0 fnt",
     "|faint|p1a: Scizor",
-    "|-damage|p2a: Corviknight|216/400|[from] Recoil",
+    "|-damage|p2a: Corviknight|3/400|[from] Recoil",
     "|win|Player 2"
   ]
 }

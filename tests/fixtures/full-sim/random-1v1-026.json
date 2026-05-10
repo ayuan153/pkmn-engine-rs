@@ -78,7 +78,11 @@
   },
   "choices": [
     [
-      "move 4",
+      "move 3",
+      "move 1"
+    ],
+    [
+      "move 3",
       "move 2"
     ]
   ],
@@ -87,12 +91,22 @@
     "|switch|p2a: Tyranitar|Tyranitar, F|404/404",
     "|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar",
     "|turn|1",
-    "|move|p1a: Scizor|Superpower|p2a: Tyranitar",
-    "|-supereffective|p2a: Tyranitar",
-    "|-damage|p2a: Tyranitar|0 fnt",
-    "|-unboost|p1a: Scizor|atk|1",
-    "|-unboost|p1a: Scizor|def|1",
-    "|faint|p2a: Tyranitar",
-    "|win|Player 1"
+    "|move|p1a: Scizor|Knock Off|p2a: Tyranitar",
+    "|-resisted|p2a: Tyranitar",
+    "|-damage|p2a: Tyranitar|317/404",
+    "|-enditem|p2a: Tyranitar|Leftovers|[from] move: Knock Off|[of] p1a: Scizor",
+    "|move|p2a: Tyranitar|Stone Edge|p1a: Scizor",
+    "|-crit|p1a: Scizor",
+    "|-damage|p1a: Scizor|64/343",
+    "|-weather|Sandstorm|[upkeep]",
+    "|upkeep",
+    "|turn|2",
+    "|move|p1a: Scizor|Knock Off|p2a: Tyranitar",
+    "|-resisted|p2a: Tyranitar",
+    "|-damage|p2a: Tyranitar|255/404",
+    "|move|p2a: Tyranitar|Crunch|p1a: Scizor",
+    "|-damage|p1a: Scizor|0 fnt",
+    "|faint|p1a: Scizor",
+    "|win|Player 2"
   ]
 }

@@ -56,8 +56,15 @@ impl Battle {
             rng_call_count: 0,
             pivot_switch_targets: [Vec::new(), Vec::new()],
         };
-        // PS consumes exactly one RNG call during battle initialization
-        battle.rand();
+        // PS consumes 1 RNG call per Pokemon with random gender during init
+        // (battle.sample(['M', 'F']) in Pokemon constructor)
+        // Species with fixed gender (genderless or single-gender) don't consume RNG
+        for p in 0..2u8 {
+            let species_id = battle.sides[p as usize].active().species_id;
+            if !Self::has_fixed_gender(species_id) {
+                battle.rand();
+            }
+        }
         // Emit switch-in for leads
         for p in 0..2u8 {
             let name = battle.species_name(p);
@@ -118,6 +125,28 @@ impl Battle {
             .map(|s| s.name)
             .unwrap_or("Unknown");
         display_name(full_name)
+    }
+
+    /// Returns true if a species has a fixed gender (genderless or single-gender)
+    /// These species don't consume RNG for gender assignment in PS
+    fn has_fixed_gender(species_id: u16) -> bool {
+        matches!(species_id,
+            // Genderless
+            81 | 82 | 100 | 101 | 120 | 121 | 137 | 233 | 292 | 337 | 338 |
+            343 | 344 | 374 | 375 | 376 | 436 | 437 | 462 | 474 | 479 |
+            599 | 600 | 601 | 615 | 622 | 623 | 649 | 703 | 774 | 781 |
+            785 | 786 | 787 | 788 | // Tapu Koko/Lele/Bulu/Fini
+            854 | 855 | 870 | 874 | 875 | 880 | 881 | 882 | 883 |
+            // Always female
+            113 | 115 | 124 | 238 | 241 | 242 | 314 | 380 | 413 | 416 |
+            440 | 478 | 488 | 548 | 549 | 629 | 630 | 669 | 670 | 671 |
+            761 | 762 | 763 | 856 | 857 | 858 |
+            // Always male
+            106 | 107 | 128 | 236 | 237 | 313 | 381 | 414 | 475 | 538 |
+            539 | 627 | 628 | 641 | 642 | 645 | // Landorus (all forms)
+            861 | // Grimmsnarl
+            905
+        )
     }
 
     pub(crate) fn full_species_name(&self, player: u8) -> &'static str {

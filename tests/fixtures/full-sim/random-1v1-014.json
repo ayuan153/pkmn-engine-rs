@@ -78,8 +78,8 @@
   },
   "choices": [
     [
-      "move 2",
-      "move 2"
+      "move 3",
+      "move 1"
     ]
   ],
   "protocol": [
@@ -87,10 +87,10 @@
     "|switch|p2a: Gengar|Gengar, M|261/261",
     "|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar",
     "|turn|1",
-    "|move|p2a: Gengar|Sludge Bomb|p1a: Tyranitar",
+    "|move|p2a: Gengar|Shadow Ball|p1a: Tyranitar",
     "|-resisted|p1a: Tyranitar",
-    "|-damage|p1a: Tyranitar|319/404",
-    "|move|p1a: Tyranitar|Crunch|p2a: Gengar",
+    "|-damage|p1a: Tyranitar|329/404",
+    "|move|p1a: Tyranitar|Earthquake|p2a: Gengar",
     "|-supereffective|p2a: Gengar",
     "|-damage|p2a: Gengar|0 fnt",
     "|faint|p2a: Gengar",

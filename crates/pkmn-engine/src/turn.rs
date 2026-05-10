@@ -170,11 +170,23 @@ impl Battle {
             }
         };
 
-        // Accuracy check (skip for multi-hit moves and moves that will fail)
+        // Check type immunity BEFORE accuracy (PS order: immunity → accuracy → damage)
+        let is_type_immune = if move_data.category != MoveCategory::Status {
+            let defender = self.sides[defender_idx as usize].active();
+            Type::effectiveness(move_data.move_type, &defender.types) == 0.0
+        } else {
+            false
+        };
+
+        // Also check ability immunity before accuracy
+        let is_ability_immune = move_data.category != MoveCategory::Status
+            && self.check_ability_immunity(defender_idx, move_data.move_type);
+
+        // Accuracy check (skip for multi-hit moves, moves that will fail, and immune targets)
         // accuracy=0 means "never miss" (PS accuracy: true), no RNG consumed
         // accuracy=100 means "always hits" — PS still consumes RNG via randomChance(100, 100)
         let is_multi_hit = self.get_multi_hit_count(player, &move_data).is_some();
-        if !will_fail_still && !is_multi_hit && move_data.accuracy > 0 {
+        if !will_fail_still && !is_multi_hit && !is_type_immune && !is_ability_immune && move_data.accuracy > 0 {
             if !self.rand_check(move_data.accuracy) {
                 let atk_name = self.species_name(player);
                 let def_name = self.species_name(defender_idx);
@@ -355,7 +367,7 @@ impl Battle {
         }
 
         // Calculate and apply damage
-        let damage = self.calculate_move_damage(player, defender_idx, &move_data);
+        let (damage, critical) = self.calculate_move_damage(player, defender_idx, &move_data);
 
         // Emit effectiveness messages (skip for fixed-damage moves like Seismic Toss/Night Shade)
         let is_fixed_damage = matches!(move_data.name, "Seismic Toss" | "Night Shade");
@@ -367,6 +379,9 @@ impl Battle {
                 self.emit(format!("|-supereffective|p{}a: {}", defender_idx+1, def_name));
             } else if effectiveness < 1.0 {
                 self.emit(format!("|-resisted|p{}a: {}", defender_idx+1, def_name));
+            }
+            if critical {
+                self.emit(format!("|-crit|p{}a: {}", defender_idx+1, def_name));
             }
         }
 
@@ -699,12 +714,12 @@ impl Battle {
         attacker_player: u8,
         defender_player: u8,
         move_data: &MoveData,
-    ) -> u16 {
+    ) -> (u16, bool) {
         // RNG order: 1. crit check, 2. damage roll (random(16))
         let critical = self.random_chance(1, 24);
         let roll = self.random(16); // 0-15
         let random_factor = (100 - roll) as u8; // 85-100
-        self.calculate_damage_with(attacker_player, defender_player, move_data, critical, random_factor)
+        (self.calculate_damage_with(attacker_player, defender_player, move_data, critical, random_factor), critical)
     }
 
     fn calculate_damage_with(
@@ -1578,6 +1593,10 @@ impl Battle {
                     self.sides[defender as usize].active_mut().substitute_hp -= damage;
                 }
             } else {
+                if critical {
+                    let def_name = self.species_name(defender);
+                    self.emit(format!("|-crit|p{}a: {}", defender+1, def_name));
+                }
                 let damage = self.check_focus_sash(defender, damage);
                 self.apply_damage(defender, damage);
                 let def_name = self.species_name(defender);

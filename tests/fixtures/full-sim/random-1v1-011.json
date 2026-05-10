@@ -78,12 +78,16 @@
   },
   "choices": [
     [
-      "move 4",
+      "move 1",
+      "move 3"
+    ],
+    [
+      "move 1",
       "move 4"
     ],
     [
-      "move 4",
-      "move 1"
+      "move 2",
+      "move 2"
     ]
   ],
   "protocol": [
@@ -91,18 +95,29 @@
     "|switch|p2a: Garchomp|Garchomp, M|357/357",
     "|-weather|Sandstorm|[from] ability: Sand Stream|[of] p1a: Tyranitar",
     "|turn|1",
-    "|move|p2a: Garchomp|Swords Dance|p2a: Garchomp",
-    "|-boost|p2a: Garchomp|atk|2",
-    "|move|p1a: Tyranitar|Stealth Rock|p2a: Garchomp",
-    "|-sidestart|p2: Player 2|move: Stealth Rock",
+    "|move|p2a: Garchomp|Stone Edge|p1a: Tyranitar|[miss]",
+    "|-miss|p2a: Garchomp|p1a: Tyranitar",
+    "|move|p1a: Tyranitar|Stone Edge|p2a: Garchomp",
+    "|-resisted|p2a: Garchomp",
+    "|-damage|p2a: Garchomp|246/357",
     "|-weather|Sandstorm|[upkeep]",
     "|upkeep",
     "|turn|2",
-    "|move|p2a: Garchomp|Earthquake|p1a: Tyranitar",
-    "|-supereffective|p1a: Tyranitar",
-    "|-damage|p1a: Tyranitar|0 fnt",
-    "|faint|p1a: Tyranitar",
-    "|-damage|p2a: Garchomp|322/357|[from] item: Life Orb",
-    "|win|Player 2"
+    "|move|p2a: Garchomp|Swords Dance|p2a: Garchomp",
+    "|-boost|p2a: Garchomp|atk|2",
+    "|move|p1a: Tyranitar|Stone Edge|p2a: Garchomp",
+    "|-resisted|p2a: Garchomp",
+    "|-damage|p2a: Garchomp|133/357",
+    "|-weather|Sandstorm|[upkeep]",
+    "|upkeep",
+    "|turn|3",
+    "|move|p2a: Garchomp|Dragon Claw|p1a: Tyranitar",
+    "|-damage|p1a: Tyranitar|79/404",
+    "|-damage|p2a: Garchomp|98/357|[from] item: Life Orb",
+    "|move|p1a: Tyranitar|Crunch|p2a: Garchomp",
+    "|-damage|p2a: Garchomp|0 fnt",
+    "|-damage|p1a: Tyranitar|29/404|[from] ability: Rough Skin|[of] p2a: Garchomp",
+    "|faint|p2a: Garchomp",
+    "|win|Player 1"
   ]
 }
