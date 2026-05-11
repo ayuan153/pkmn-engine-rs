@@ -6,6 +6,32 @@ Run identical battles in Pokemon Showdown and our engine. Compare the complete p
 
 This tests EVERYTHING: turn order, damage, status, abilities, items, switching, fainting, field conditions, win conditions.
 
+## Fixture Immutability Rule (CRITICAL)
+
+**Fixtures are immutable once committed.** They are the source of truth.
+
+| Rule | Rationale |
+|------|-----------|
+| Never regenerate existing fixtures | They represent "PS said this" — that doesn't change |
+| Engine changes can only INCREASE pass count | If pass count drops, the change is wrong |
+| Progress is monotonic | Pass count only goes up |
+| Generate NEW fixtures to find NEW gaps | Use new IDs/seeds, commit as new targets |
+| Both passing and failing fixtures are committed | Failing ones are targets to fix |
+
+**Anti-pattern:** Regenerating fixtures after a code change to "make tests pass" is cheating. It moves the goalposts instead of fixing the engine.
+
+**Correct workflow:**
+1. Run tests → see failures
+2. Fix engine code
+3. Run tests → pass count increases
+4. Commit engine fix (fixtures unchanged)
+
+**To expand coverage:**
+1. Generate new fixtures: `npx tsx src/generate-random.ts 10` (new seeds)
+2. Run them through our engine
+3. Commit ALL of them (passing + failing) with new IDs
+4. Fix engine until new fixtures pass too
+
 ## Architecture
 
 ```

@@ -64,9 +64,35 @@ After each major milestone or substantive progress:
 2. Update `README.md` "Status" section to reflect what's built
 3. Commit the doc updates alongside the code
 
-## Accuracy Work (Current Priority)
+## Full-Sim Differential Testing (Current Priority)
 
-The goal is 100% exact match on damage verification against real PS replays.
+The goal is 100% protocol match against Pokemon Showdown on full battle simulations.
+
+### Fixture Immutability Rule
+
+**Fixtures are immutable once committed.** They represent "PS produced this output — we must match it."
+
+Process:
+1. **Never regenerate existing fixtures.** They are permanent regression tests.
+2. **Engine changes can only INCREASE pass count.** If a code change reduces pass count, the change is wrong.
+3. **Progress is monotonic.** Pass count only goes up, never down.
+4. **To discover new gaps:** Generate NEW fixtures (new IDs, new seeds) in a separate batch. Run them. Commit both passing and failing ones as new targets.
+5. **To verify a fix:** Run existing fixtures. More pass = fix is correct.
+
+This ensures we never "move the goalposts" by changing tests to match broken code.
+
+### Workflow
+1. `cargo test -p pkmn-engine full_sim -- --nocapture` — see current pass/fail
+2. Look at first divergence in a failing fixture — identify the missing mechanic
+3. Fix the engine
+4. Run tests again — pass count must increase (or stay same), never decrease
+5. To find MORE gaps: `cd tools/generate-fixtures && npx tsx src/generate-random.ts 10` — generates new fixtures, commit them as new targets
+
+### Current State
+- `tests/fixtures/full-sim/` — curated (19) + random-1v1 (30) = 49 fixtures
+- Target: 49/49 (100%)
+
+## Accuracy Work (Legacy)
 
 Workflow:
 1. Run `cargo test -p pkmn-engine damage_matches -- --nocapture` to see current stats
