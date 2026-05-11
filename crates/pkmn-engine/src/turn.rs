@@ -779,14 +779,14 @@ impl Battle {
             2 => 2,
             _ => 1,
         };
-        let critical = self.random_chance(1, crit_denom);
-        let roll = self.random(16); // 0-15
-        let random_factor = (100 - roll) as u8; // 85-100
-        // Fixed-damage moves: return attacker's level (crit/roll consumed but unused)
+        // Fixed-damage moves: return attacker's level (PS skips crit+roll for these)
         if matches!(move_data.name, "Seismic Toss" | "Night Shade") {
             let attacker = self.sides[attacker_player as usize].active();
             return (attacker.level as u16, false);
         }
+        let critical = self.random_chance(1, crit_denom);
+        let roll = self.random(16); // 0-15
+        let random_factor = (100 - roll) as u8; // 85-100
         (self.calculate_damage_with(attacker_player, defender_player, move_data, critical, random_factor), critical)
     }
 
