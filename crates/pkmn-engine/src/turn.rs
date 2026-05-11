@@ -189,8 +189,8 @@ impl Battle {
 
         // Check type immunity BEFORE accuracy (PS order: immunity → accuracy → damage)
         let is_type_immune = if move_data.category != MoveCategory::Status {
-            let defender = self.sides[defender_idx as usize].active();
-            Type::effectiveness(move_data.move_type, &defender.types) == 0.0
+            let def_types = self.defender_types(defender_idx);
+            Type::effectiveness(move_data.move_type, &def_types) == 0.0
         } else {
             false
         };
@@ -367,8 +367,8 @@ impl Battle {
 
         // Check type immunity
         {
-            let defender = self.sides[defender_idx as usize].active();
-            let effectiveness = Type::effectiveness(move_data.move_type, &defender.types);
+            let def_types = self.defender_types(defender_idx);
+            let effectiveness = Type::effectiveness(move_data.move_type, &def_types);
             if effectiveness == 0.0 {
                 let def_name = self.species_name(defender_idx);
                 self.emit(format!("|-immune|p{}a: {}", defender_idx+1, def_name));
@@ -409,8 +409,8 @@ impl Battle {
         // Emit effectiveness messages (skip for fixed-damage moves like Seismic Toss/Night Shade)
         let is_fixed_damage = matches!(move_data.name, "Seismic Toss" | "Night Shade");
         if !is_fixed_damage {
-            let defender = self.sides[defender_idx as usize].active();
-            let effectiveness = Type::effectiveness(move_data.move_type, &defender.types);
+            let def_types = self.defender_types(defender_idx);
+            let effectiveness = Type::effectiveness(move_data.move_type, &def_types);
             let def_name = self.species_name(defender_idx);
             if effectiveness > 1.0 {
                 self.emit(format!("|-supereffective|p{}a: {}", defender_idx+1, def_name));
@@ -468,12 +468,32 @@ impl Battle {
                 }
             }
 
-            // Rapid Spin: +1 Speed after damage (Gen 9)
+            // Rapid Spin: +1 Speed then remove hazards from user's side (Gen 9)
             if move_data.name == "Rapid Spin" && self.sides[player as usize].active().is_alive() {
                 let atk_name = self.species_name(player);
-                let mon = self.sides[player as usize].active_mut();
-                mon.boosts.spe = (mon.boosts.spe + 1).min(6);
-                self.emit(format!("|-boost|p{}a: {}|spe|1", player+1, atk_name));
+                let current_spe = self.sides[player as usize].active().boosts.spe;
+                if current_spe < 6 {
+                    let mon = self.sides[player as usize].active_mut();
+                    mon.boosts.spe = (mon.boosts.spe + 1).min(6);
+                    self.emit(format!("|-boost|p{}a: {}|spe|1", player+1, atk_name));
+                }
+                let side = player as usize;
+                if self.sides[side].side_conditions.stealth_rock {
+                    self.sides[side].side_conditions.stealth_rock = false;
+                    self.emit(format!("|-sideend|p{}: Player {}|Stealth Rock|[from] move: Rapid Spin|[of] p{}a: {}", player+1, player+1, player+1, atk_name));
+                }
+                if self.sides[side].side_conditions.spikes > 0 {
+                    self.sides[side].side_conditions.spikes = 0;
+                    self.emit(format!("|-sideend|p{}: Player {}|Spikes|[from] move: Rapid Spin|[of] p{}a: {}", player+1, player+1, player+1, atk_name));
+                }
+                if self.sides[side].side_conditions.toxic_spikes > 0 {
+                    self.sides[side].side_conditions.toxic_spikes = 0;
+                    self.emit(format!("|-sideend|p{}: Player {}|Toxic Spikes|[from] move: Rapid Spin|[of] p{}a: {}", player+1, player+1, player+1, atk_name));
+                }
+                if self.sides[side].side_conditions.sticky_web {
+                    self.sides[side].side_conditions.sticky_web = false;
+                    self.emit(format!("|-sideend|p{}: Player {}|Sticky Web|[from] move: Rapid Spin|[of] p{}a: {}", player+1, player+1, player+1, atk_name));
+                }
             }
 
             // Secondary effects: must come BEFORE self-stat drops and contact recoil (PS order)
@@ -844,7 +864,8 @@ impl Battle {
             1.0
         };
 
-        let effectiveness = Type::effectiveness(move_data.move_type, &defender.types);
+        let def_types = self.defender_types(defender_player);
+        let effectiveness = Type::effectiveness(move_data.move_type, &def_types);
         let attacker_level = attacker.level;
         let attacker_status = attacker.status;
         let attacker_ability = attacker.ability_id;
@@ -983,6 +1004,19 @@ impl Battle {
         if mon.hp == 0 {
             mon.is_fainted = true;
         }
+    }
+
+    pub fn defender_types(&self, player: u8) -> [Type; 2] {
+        let mon = self.sides[player as usize].active();
+        let mut types = mon.types;
+        if mon.volatiles.contains(Volatiles::ROOST) {
+            for t in types.iter_mut() {
+                if *t == Type::Flying {
+                    *t = Type::Normal;
+                }
+            }
+        }
+        types
     }
 
     fn get_weather_modifier(&self, move_type: Type) -> f32 {
@@ -1268,6 +1302,7 @@ impl Battle {
                     self.emit(format!("|-heal|p{}a: {}|{}/{}", attacker+1, atk_name, hp, max_hp));
                     if name == "roost" {
                         self.emit(format!("|-singleturn|p{}a: {}|move: Roost", attacker+1, atk_name));
+                        self.sides[attacker as usize].active_mut().volatiles.insert(Volatiles::ROOST);
                     }
                 }
             }
@@ -1343,6 +1378,15 @@ impl Battle {
                         self.emit(format!("|-sideend|p{}: Player {}|Sticky Web|[from] move: Defog|[of] p{}a: {}", side_idx+1, side_idx+1, attacker+1, atk_name));
                     }
                 }
+            }
+            "pain split" => {
+                let atk_hp = self.sides[attacker as usize].active().hp;
+                let def_hp = self.sides[defender as usize].active().hp;
+                let avg = (atk_hp as u32 + def_hp as u32) / 2;
+                let atk_max = self.sides[attacker as usize].active().max_hp;
+                let def_max = self.sides[defender as usize].active().max_hp;
+                self.sides[attacker as usize].active_mut().hp = (avg as u16).min(atk_max);
+                self.sides[defender as usize].active_mut().hp = (avg as u16).min(def_max);
             }
             _ => {}
         }
@@ -1544,6 +1588,8 @@ impl Battle {
         }
 
         for side in &mut self.sides {
+            side.active_mut().volatiles.remove(Volatiles::ROOST);
+            side.active_mut().volatiles.remove(Volatiles::FLINCH);
             if side.side_conditions.reflect > 0 {
                 side.side_conditions.reflect -= 1;
             }

@@ -167,8 +167,9 @@ impl Battle {
                 }
             }
             AbilityId::TintedLens => {
+                let def_types = self.defender_types(defender_player);
                 let effectiveness =
-                    Type::effectiveness(move_data.move_type, &defender.types);
+                    Type::effectiveness(move_data.move_type, &def_types);
                 if effectiveness < 1.0 && effectiveness > 0.0 {
                     2.0
                 } else {
@@ -185,8 +186,13 @@ impl Battle {
             _ => 1.0,
         };
 
-        // Defender's Ruin abilities
+        // Defender's abilities
         match defender.ability_id {
+            AbilityId::Multiscale => {
+                if defender.hp == defender.max_hp {
+                    modifier *= 0.5;
+                }
+            }
             AbilityId::TabletsOfRuin => {
                 if move_data.category == MoveCategory::Physical {
                     modifier *= 0.75;

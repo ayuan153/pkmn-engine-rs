@@ -32,6 +32,7 @@ bitflags::bitflags! {
         const RECHARGING = 0x200;
         const MUST_RECHARGE = 0x400;
         const FLASH_FIRE = 0x800;
+        const ROOST = 0x1000;
     }
 }
 
