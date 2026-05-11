@@ -79,15 +79,23 @@
   "choices": [
     [
       "move 3",
-      "move 2"
+      "move 4"
     ],
     [
-      "move 2",
+      "move 4",
+      "move 4"
+    ],
+    [
+      "move 4",
       "move 1"
     ],
     [
-      "move 3",
+      "move 4",
       "move 2"
+    ],
+    [
+      "move 1",
+      "move 1"
     ]
   ],
   "protocol": [
@@ -97,28 +105,40 @@
     "|turn|1",
     "|move|p1a: Garchomp|Stone Edge|p2a: Tyranitar|[miss]",
     "|-miss|p1a: Garchomp|p2a: Tyranitar",
+    "|move|p2a: Tyranitar|Stealth Rock|p1a: Garchomp",
+    "|-sidestart|p1: Player 1|move: Stealth Rock",
+    "|-weather|Sandstorm|[upkeep]",
+    "|upkeep",
+    "|turn|2",
+    "|move|p1a: Garchomp|Swords Dance|p1a: Garchomp",
+    "|-boost|p1a: Garchomp|atk|2",
+    "|move|p2a: Tyranitar|Stealth Rock||[still]",
+    "|-fail|p2a: Tyranitar",
+    "|-weather|Sandstorm|[upkeep]",
+    "|upkeep",
+    "|turn|3",
+    "|move|p1a: Garchomp|Swords Dance|p1a: Garchomp",
+    "|-boost|p1a: Garchomp|atk|2",
+    "|move|p2a: Tyranitar|Stone Edge|p1a: Garchomp",
+    "|-resisted|p1a: Garchomp",
+    "|-damage|p1a: Garchomp|257/357",
+    "|-weather|Sandstorm|[upkeep]",
+    "|upkeep",
+    "|turn|4",
+    "|move|p1a: Garchomp|Swords Dance|p1a: Garchomp",
+    "|-boost|p1a: Garchomp|atk|2",
     "|move|p2a: Tyranitar|Crunch|p1a: Garchomp",
-    "|-damage|p1a: Garchomp|197/357",
+    "|-damage|p1a: Garchomp|95/357",
     "|-damage|p2a: Tyranitar|354/404|[from] ability: Rough Skin|[of] p1a: Garchomp",
     "|-weather|Sandstorm|[upkeep]",
     "|-heal|p2a: Tyranitar|379/404|[from] item: Leftovers",
     "|upkeep",
-    "|turn|2",
-    "|move|p1a: Garchomp|Dragon Claw|p2a: Tyranitar",
-    "|-damage|p2a: Tyranitar|215/404",
-    "|-damage|p1a: Garchomp|162/357|[from] item: Life Orb",
-    "|move|p2a: Tyranitar|Stone Edge|p1a: Garchomp|[miss]",
-    "|-miss|p2a: Tyranitar|p1a: Garchomp",
-    "|-weather|Sandstorm|[upkeep]",
-    "|-heal|p2a: Tyranitar|240/404|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|3",
-    "|move|p1a: Garchomp|Stone Edge|p2a: Tyranitar|[miss]",
-    "|-miss|p1a: Garchomp|p2a: Tyranitar",
-    "|move|p2a: Tyranitar|Crunch|p1a: Garchomp",
-    "|-damage|p1a: Garchomp|0 fnt",
-    "|-damage|p2a: Tyranitar|190/404|[from] ability: Rough Skin|[of] p1a: Garchomp",
-    "|faint|p1a: Garchomp",
-    "|win|Player 2"
+    "|turn|5",
+    "|move|p1a: Garchomp|Earthquake|p2a: Tyranitar",
+    "|-supereffective|p2a: Tyranitar",
+    "|-damage|p2a: Tyranitar|0 fnt",
+    "|faint|p2a: Tyranitar",
+    "|-damage|p1a: Garchomp|60/357|[from] item: Life Orb",
+    "|win|Player 1"
   ]
 }

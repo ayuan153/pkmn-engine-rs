@@ -87,11 +87,7 @@
     ],
     [
       "move 1",
-      "move 4"
-    ],
-    [
-      "move 1",
-      "move 3"
+      "move 1"
     ],
     [
       "move 1",
@@ -121,16 +117,13 @@
     "|turn|3",
     "|move|p1a: Excadrill|Earthquake|p2a: Corviknight",
     "|-immune|p2a: Corviknight",
-    "|move|p2a: Corviknight|Defog|p1a: Excadrill",
-    "|-unboost|p1a: Excadrill|evasion|1",
+    "|move|p2a: Corviknight|Brave Bird|p1a: Excadrill",
+    "|-resisted|p1a: Excadrill",
+    "|-damage|p1a: Excadrill|172/361",
+    "|-damage|p2a: Corviknight|369/400|[from] Recoil",
+    "|-heal|p2a: Corviknight|394/400|[from] item: Leftovers",
     "|upkeep",
     "|turn|4",
-    "|move|p1a: Excadrill|Earthquake|p2a: Corviknight",
-    "|-immune|p2a: Corviknight",
-    "|move|p2a: Corviknight|Roost||[still]",
-    "|-fail|p2a: Corviknight|heal",
-    "|upkeep",
-    "|turn|5",
     "|move|p1a: Excadrill|Earthquake|p2a: Corviknight",
     "|-immune|p2a: Corviknight",
     "|move|p2a: Corviknight|Body Press|p1a: Excadrill",

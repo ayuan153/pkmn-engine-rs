@@ -78,63 +78,76 @@
   },
   "choices": [
     [
+      "move 1",
+      "move 2"
+    ],
+    [
       "move 2",
-      "move 3"
+      "move 2"
     ],
     [
-      "move 4",
-      "move 3"
+      "move 1",
+      "move 2"
     ],
     [
-      "move 4",
-      "move 3"
+      "move 1",
+      "move 2"
     ],
     [
       "move 3",
-      "move 3"
+      "move 2"
     ],
     [
-      "move 2",
-      "move 3"
+      "move 4",
+      "move 2"
     ]
   ],
   "protocol": [
     "|switch|p1a: Blissey|Blissey, F|714/714",
     "|switch|p2a: Gengar|Gengar, M|261/261",
     "|turn|1",
-    "|move|p2a: Gengar|Focus Blast|p1a: Blissey",
-    "|-supereffective|p1a: Blissey",
-    "|-damage|p1a: Blissey|394/714",
+    "|move|p2a: Gengar|Sludge Bomb|p1a: Blissey",
+    "|-damage|p1a: Blissey|534/714",
+    "|move|p1a: Blissey|Seismic Toss|p2a: Gengar",
+    "|-immune|p2a: Gengar",
+    "|-heal|p1a: Blissey|578/714|[from] item: Leftovers",
+    "|upkeep",
+    "|turn|2",
+    "|move|p2a: Gengar|Sludge Bomb|p1a: Blissey",
+    "|-damage|p1a: Blissey|382/714",
     "|move|p1a: Blissey|Soft-Boiled|p1a: Blissey",
     "|-heal|p1a: Blissey|714/714",
     "|upkeep",
-    "|turn|2",
-    "|move|p2a: Gengar|Focus Blast|p1a: Blissey",
-    "|-supereffective|p1a: Blissey",
-    "|-damage|p1a: Blissey|366/714",
-    "|move|p1a: Blissey|Toxic|p2a: Gengar",
-    "|-immune|p2a: Gengar",
-    "|-heal|p1a: Blissey|410/714|[from] item: Leftovers",
-    "|upkeep",
     "|turn|3",
-    "|move|p2a: Gengar|Focus Blast|p1a: Blissey",
-    "|-supereffective|p1a: Blissey",
-    "|-damage|p1a: Blissey|90/714",
-    "|move|p1a: Blissey|Toxic|p2a: Gengar",
+    "|move|p2a: Gengar|Sludge Bomb|p1a: Blissey",
+    "|-damage|p1a: Blissey|530/714",
+    "|move|p1a: Blissey|Seismic Toss|p2a: Gengar",
     "|-immune|p2a: Gengar",
-    "|-heal|p1a: Blissey|134/714|[from] item: Leftovers",
+    "|-heal|p1a: Blissey|574/714|[from] item: Leftovers",
     "|upkeep",
     "|turn|4",
-    "|move|p2a: Gengar|Focus Blast|p1a: Blissey|[miss]",
-    "|-miss|p2a: Gengar|p1a: Blissey",
-    "|move|p1a: Blissey|Thunder Wave|p2a: Gengar",
-    "|-status|p2a: Gengar|par",
-    "|-heal|p1a: Blissey|178/714|[from] item: Leftovers",
+    "|move|p2a: Gengar|Sludge Bomb|p1a: Blissey",
+    "|-damage|p1a: Blissey|400/714",
+    "|move|p1a: Blissey|Seismic Toss|p2a: Gengar",
+    "|-immune|p2a: Gengar",
+    "|-heal|p1a: Blissey|444/714|[from] item: Leftovers",
     "|upkeep",
     "|turn|5",
-    "|move|p2a: Gengar|Focus Blast|p1a: Blissey",
-    "|-supereffective|p1a: Blissey",
-    "|-damage|p1a: Blissey|0 fnt",
+    "|move|p2a: Gengar|Sludge Bomb|p1a: Blissey",
+    "|-damage|p1a: Blissey|254/714",
+    "|-status|p1a: Blissey|psn",
+    "|move|p1a: Blissey|Thunder Wave|p2a: Gengar",
+    "|-status|p2a: Gengar|par",
+    "|-heal|p1a: Blissey|298/714 psn|[from] item: Leftovers",
+    "|-damage|p1a: Blissey|209/714 psn|[from] psn",
+    "|upkeep",
+    "|turn|6",
+    "|move|p2a: Gengar|Sludge Bomb|p1a: Blissey",
+    "|-damage|p1a: Blissey|29/714 psn",
+    "|move|p1a: Blissey|Toxic||[still]",
+    "|-fail|p1a: Blissey",
+    "|-heal|p1a: Blissey|73/714 psn|[from] item: Leftovers",
+    "|-damage|p1a: Blissey|0 fnt|[from] psn",
     "|faint|p1a: Blissey",
     "|win|Player 2"
   ]

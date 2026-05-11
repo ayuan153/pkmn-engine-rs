@@ -78,20 +78,12 @@
   },
   "choices": [
     [
-      "move 2",
-      "move 2"
-    ],
-    [
-      "move 2",
-      "move 2"
+      "move 4",
+      "move 4"
     ],
     [
       "move 1",
-      "move 2"
-    ],
-    [
-      "move 1",
-      "move 2"
+      "move 4"
     ]
   ],
   "protocol": [
@@ -99,32 +91,18 @@
     "|switch|p2a: Gengar|Gengar, M|261/261",
     "|-ability|p1a: Corviknight|Pressure",
     "|turn|1",
-    "|move|p2a: Gengar|Sludge Bomb|p1a: Corviknight",
-    "|-immune|p1a: Corviknight",
-    "|move|p1a: Corviknight|Body Press|p2a: Gengar",
-    "|-immune|p2a: Gengar",
+    "|move|p2a: Gengar|Thunderbolt|p1a: Corviknight",
+    "|-supereffective|p1a: Corviknight",
+    "|-damage|p1a: Corviknight|48/400",
+    "|move|p1a: Corviknight|Defog|p2a: Gengar",
+    "|-unboost|p2a: Gengar|evasion|1",
+    "|-heal|p1a: Corviknight|73/400|[from] item: Leftovers",
     "|upkeep",
     "|turn|2",
-    "|move|p2a: Gengar|Sludge Bomb|p1a: Corviknight",
-    "|-immune|p1a: Corviknight",
-    "|move|p1a: Corviknight|Body Press|p2a: Gengar",
-    "|-immune|p2a: Gengar",
-    "|upkeep",
-    "|turn|3",
-    "|move|p2a: Gengar|Sludge Bomb|p1a: Corviknight",
-    "|-immune|p1a: Corviknight",
-    "|move|p1a: Corviknight|Brave Bird|p2a: Gengar",
-    "|-damage|p2a: Gengar|80/261",
-    "|-damage|p1a: Corviknight|340/400|[from] Recoil",
-    "|-heal|p1a: Corviknight|365/400|[from] item: Leftovers",
-    "|upkeep",
-    "|turn|4",
-    "|move|p2a: Gengar|Sludge Bomb|p1a: Corviknight",
-    "|-immune|p1a: Corviknight",
-    "|move|p1a: Corviknight|Brave Bird|p2a: Gengar",
-    "|-damage|p2a: Gengar|0 fnt",
-    "|faint|p2a: Gengar",
-    "|-damage|p1a: Corviknight|339/400|[from] Recoil",
-    "|win|Player 1"
+    "|move|p2a: Gengar|Thunderbolt|p1a: Corviknight",
+    "|-supereffective|p1a: Corviknight",
+    "|-damage|p1a: Corviknight|0 fnt",
+    "|faint|p1a: Corviknight",
+    "|win|Player 2"
   ]
 }

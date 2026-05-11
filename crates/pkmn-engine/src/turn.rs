@@ -756,6 +756,11 @@ impl Battle {
         let critical = self.random_chance(1, 24);
         let roll = self.random(16); // 0-15
         let random_factor = (100 - roll) as u8; // 85-100
+        // Fixed-damage moves: return attacker's level (crit/roll consumed but unused)
+        if matches!(move_data.name, "Seismic Toss" | "Night Shade") {
+            let attacker = self.sides[attacker_player as usize].active();
+            return (attacker.level as u16, false);
+        }
         (self.calculate_damage_with(attacker_player, defender_player, move_data, critical, random_factor), critical)
     }
 
@@ -769,6 +774,11 @@ impl Battle {
     ) -> u16 {
         let attacker = self.sides[attacker_player as usize].active();
         let defender = self.sides[defender_player as usize].active();
+
+        // Fixed-damage moves: return attacker's level
+        if matches!(move_data.name, "Seismic Toss" | "Night Shade") {
+            return attacker.level as u16;
+        }
 
         let (mut atk_stat, mut def_stat) = match move_data.category {
             MoveCategory::Physical => {
@@ -880,15 +890,6 @@ impl Battle {
             other_modifiers: burn_mod * ability_mod * item_mod * screen_mod * (stab / if stab > 1.0 { 1.5 } else { 1.0 }),
             random_factor,
         };
-
-        if move_data.name == "Sacred Fire" || move_data.name == "Double-Edge" {
-            eprintln!("DEBUG {}: atk={} def={} bp={} stab={} eff={} crit={} weather={} other={} roll={} def_types={:?} atk_item={:?} => {}",
-                move_data.name, atk_stat, def_stat, base_power, stab > 1.0, effectiveness, critical,
-                weather_boost,
-                burn_mod * ability_mod * item_mod * screen_mod * (stab / if stab > 1.0 { 1.5 } else { 1.0 }),
-                random_factor, defender.types, attacker.item_id,
-                pkmn_core::damage::calculate_damage(&ctx));
-        }
 
         pkmn_core::damage::calculate_damage(&ctx)
     }
@@ -1422,7 +1423,7 @@ impl Battle {
             }
         }
 
-        // Item end-of-turn: healing items (Leftovers, Black Sludge) — before status damage
+        // Item end-of-turn: healing items (Leftovers, Black Sludge) — before Leech Seed
         let p1_speed = self.sides[0].active().effective_speed();
         let p2_speed = self.sides[1].active().effective_speed();
         let item_order: [u8; 2] = if p2_speed > p1_speed { [1, 0] } else { [0, 1] };

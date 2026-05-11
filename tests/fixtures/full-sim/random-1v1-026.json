@@ -79,7 +79,23 @@
   "choices": [
     [
       "move 3",
-      "move 1"
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 4"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 3"
+    ],
+    [
+      "move 3",
+      "move 4"
     ],
     [
       "move 3",
@@ -95,15 +111,46 @@
     "|-resisted|p2a: Tyranitar",
     "|-damage|p2a: Tyranitar|317/404",
     "|-enditem|p2a: Tyranitar|Leftovers|[from] move: Knock Off|[of] p1a: Scizor",
-    "|move|p2a: Tyranitar|Stone Edge|p1a: Scizor",
-    "|-crit|p1a: Scizor",
-    "|-damage|p1a: Scizor|64/343",
+    "|move|p2a: Tyranitar|Stealth Rock|p1a: Scizor",
+    "|-sidestart|p1: Player 1|move: Stealth Rock",
     "|-weather|Sandstorm|[upkeep]",
     "|upkeep",
     "|turn|2",
     "|move|p1a: Scizor|Knock Off|p2a: Tyranitar",
     "|-resisted|p2a: Tyranitar",
-    "|-damage|p2a: Tyranitar|255/404",
+    "|-damage|p2a: Tyranitar|262/404",
+    "|move|p2a: Tyranitar|Stealth Rock||[still]",
+    "|-fail|p2a: Tyranitar",
+    "|-weather|Sandstorm|[upkeep]",
+    "|upkeep",
+    "|turn|3",
+    "|move|p1a: Scizor|Knock Off|p2a: Tyranitar",
+    "|-resisted|p2a: Tyranitar",
+    "|-damage|p2a: Tyranitar|200/404",
+    "|move|p2a: Tyranitar|Earthquake|p1a: Scizor",
+    "|-damage|p1a: Scizor|198/343",
+    "|-weather|Sandstorm|[upkeep]",
+    "|upkeep",
+    "|turn|4",
+    "|move|p1a: Scizor|Knock Off|p2a: Tyranitar",
+    "|-resisted|p2a: Tyranitar",
+    "|-damage|p2a: Tyranitar|141/404",
+    "|move|p2a: Tyranitar|Earthquake|p1a: Scizor",
+    "|-damage|p1a: Scizor|67/343",
+    "|-weather|Sandstorm|[upkeep]",
+    "|upkeep",
+    "|turn|5",
+    "|move|p1a: Scizor|Knock Off|p2a: Tyranitar",
+    "|-resisted|p2a: Tyranitar",
+    "|-damage|p2a: Tyranitar|81/404",
+    "|move|p2a: Tyranitar|Stealth Rock||[still]",
+    "|-fail|p2a: Tyranitar",
+    "|-weather|none",
+    "|upkeep",
+    "|turn|6",
+    "|move|p1a: Scizor|Knock Off|p2a: Tyranitar",
+    "|-resisted|p2a: Tyranitar",
+    "|-damage|p2a: Tyranitar|18/404",
     "|move|p2a: Tyranitar|Crunch|p1a: Scizor",
     "|-damage|p1a: Scizor|0 fnt",
     "|faint|p1a: Scizor",

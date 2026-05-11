@@ -79,28 +79,27 @@
   "choices": [
     [
       "move 3",
-      "move 4"
+      "move 1"
     ],
     [
       "move 3",
-      "move 1"
+      "move 2"
     ]
   ],
   "protocol": [
     "|switch|p1a: Scizor|Scizor, M|343/343",
     "|switch|p2a: Excadrill|Excadrill, F|361/361",
     "|turn|1",
-    "|move|p2a: Excadrill|Rapid Spin|p1a: Scizor",
-    "|-resisted|p1a: Scizor",
-    "|-damage|p1a: Scizor|314/343",
-    "|-boost|p2a: Excadrill|spe|1",
+    "|move|p2a: Excadrill|Earthquake|p1a: Scizor",
+    "|-damage|p1a: Scizor|171/343",
     "|move|p1a: Scizor|Knock Off|p2a: Excadrill",
-    "|-damage|p2a: Excadrill|61/361",
+    "|-damage|p2a: Excadrill|79/361",
     "|-enditem|p2a: Excadrill|Choice Scarf|[from] move: Knock Off|[of] p1a: Scizor",
     "|upkeep",
     "|turn|2",
-    "|move|p2a: Excadrill|Earthquake|p1a: Scizor",
-    "|-damage|p1a: Scizor|127/343",
+    "|move|p2a: Excadrill|Iron Head|p1a: Scizor",
+    "|-resisted|p1a: Scizor",
+    "|-damage|p1a: Scizor|96/343",
     "|move|p1a: Scizor|Knock Off|p2a: Excadrill",
     "|-damage|p2a: Excadrill|0 fnt",
     "|faint|p2a: Excadrill",

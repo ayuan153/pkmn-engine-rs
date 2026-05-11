@@ -79,21 +79,30 @@
   "choices": [
     [
       "move 2",
-      "move 2"
+      "move 3"
+    ],
+    [
+      "move 1",
+      "move 3"
     ]
   ],
   "protocol": [
     "|switch|p1a: Garchomp|Garchomp, M|357/357",
     "|switch|p2a: Dragonite|Dragonite, M|323/323",
     "|turn|1",
-    "|move|p2a: Dragonite|Extreme Speed|p1a: Garchomp",
-    "|-damage|p1a: Garchomp|182/357",
-    "|-damage|p2a: Dragonite|283/323|[from] ability: Rough Skin|[of] p1a: Garchomp",
     "|move|p1a: Garchomp|Dragon Claw|p2a: Dragonite",
     "|-supereffective|p2a: Dragonite",
-    "|-damage|p2a: Dragonite|0 fnt",
-    "|faint|p2a: Dragonite",
-    "|-damage|p1a: Garchomp|147/357|[from] item: Life Orb",
-    "|win|Player 1"
+    "|-damage|p2a: Dragonite|120/323",
+    "|-damage|p1a: Garchomp|322/357|[from] item: Life Orb",
+    "|move|p2a: Dragonite|Earthquake|p1a: Garchomp",
+    "|-damage|p1a: Garchomp|126/357",
+    "|upkeep",
+    "|turn|2",
+    "|move|p1a: Garchomp|Earthquake|p2a: Dragonite",
+    "|-immune|p2a: Dragonite",
+    "|move|p2a: Dragonite|Earthquake|p1a: Garchomp",
+    "|-damage|p1a: Garchomp|0 fnt",
+    "|faint|p1a: Garchomp",
+    "|win|Player 2"
   ]
 }
