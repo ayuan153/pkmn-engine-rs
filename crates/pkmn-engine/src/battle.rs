@@ -62,11 +62,17 @@ impl Battle {
         // PS consumes 1 RNG call per Pokemon with random gender during init
         // (battle.sample(['M', 'F']) in Pokemon constructor)
         // Species with fixed gender (genderless or single-gender) don't consume RNG
-        for p in 0..2u8 {
-            let species_id = battle.sides[p as usize].active().species_id;
-            if !Self::has_fixed_gender(species_id) {
-                battle.rand();
+        // Must consume for ALL team members, not just leads
+        let mut gender_calls = 0u32;
+        for side in &battle.sides {
+            for mon in &side.team {
+                if !Self::has_fixed_gender(mon.species_id) {
+                    gender_calls += 1;
+                }
             }
+        }
+        for _ in 0..gender_calls {
+            battle.rand();
         }
         // Emit switch-in for leads
         for p in 0..2u8 {
