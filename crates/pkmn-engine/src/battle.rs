@@ -41,6 +41,8 @@ pub struct Battle {
     pub rng_call_count: u32,
     /// Queued pivot switch targets per player (set externally by test runner)
     pub pivot_switch_targets: [Vec<u8>; 2],
+    /// Last player who executed an attack (for simultaneous faint resolution)
+    pub last_attacker: Option<u8>,
 }
 
 impl Battle {
@@ -55,6 +57,7 @@ impl Battle {
             rng_seed: seed,
             rng_call_count: 0,
             pivot_switch_targets: [Vec::new(), Vec::new()],
+            last_attacker: None,
         };
         // PS consumes 1 RNG call per Pokemon with random gender during init
         // (battle.sample(['M', 'F']) in Pokemon constructor)
@@ -258,8 +261,11 @@ impl Battle {
 
         if self.result == BattleResult::Ongoing {
             self.end_of_turn();
-            self.emit("|upkeep".to_string());
+            // Check if someone fainted during EOT (Leech Seed, burn, etc.)
             self.check_win();
+            if self.result == BattleResult::Ongoing {
+                self.emit("|upkeep".to_string());
+            }
         }
 
         if let BattleResult::Win(winner) = self.result {

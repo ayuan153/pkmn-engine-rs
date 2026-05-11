@@ -80,6 +80,8 @@ impl Battle {
     fn execute_move(&mut self, player: u8, move_idx: u8) {
         let defender_idx = 1 - player;
 
+        self.last_attacker = Some(player);
+
         if !self.sides[player as usize].active().is_alive() {
             return;
         }
@@ -165,6 +167,21 @@ impl Battle {
                 "leech seed" => {
                     let def = self.sides[defender_idx as usize].active();
                     def.volatiles.contains(Volatiles::LEECH_SEED) || def.types.contains(&Type::Grass)
+                }
+                "thunder wave" => {
+                    // [still] when target has a DIFFERENT status (not par)
+                    let def = self.sides[defender_idx as usize].active();
+                    def.status != Status::None && def.status != Status::Paralyze
+                }
+                "toxic" => {
+                    // [still] when target has a DIFFERENT status (not tox/psn)
+                    let def = self.sides[defender_idx as usize].active();
+                    def.status != Status::None && def.status != Status::Toxic && def.status != Status::Poison
+                }
+                "will-o-wisp" => {
+                    // [still] when target has a DIFFERENT status (not brn)
+                    let def = self.sides[defender_idx as usize].active();
+                    def.status != Status::None && def.status != Status::Burn
                 }
                 _ => false,
             }
@@ -285,6 +302,18 @@ impl Battle {
                 def.volatiles.contains(Volatiles::LEECH_SEED) || def.types.contains(&Type::Grass)
             };
 
+            // Check if status move will fail because target has a DIFFERENT status
+            let is_status_fail = {
+                let mn = move_data.name.to_lowercase();
+                let def = self.sides[defender_idx as usize].active();
+                match mn.as_str() {
+                    "thunder wave" => def.status != Status::None && def.status != Status::Paralyze,
+                    "toxic" => def.status != Status::None && def.status != Status::Toxic && def.status != Status::Poison,
+                    "will-o-wisp" => def.status != Status::None && def.status != Status::Burn,
+                    _ => false,
+                }
+            };
+
             // Check if this is a locked move continuation (Outrage turn 2+)
             let is_locked = self.sides[player as usize].active().volatiles.contains(Volatiles::LOCKED_MOVE);
             let locked_suffix = if is_locked { "|[from] lockedmove" } else { "" };
@@ -297,6 +326,8 @@ impl Battle {
                 self.emit(format!("|move|p{}a: {}|{}||[still]", player+1, atk_name, move_data.name));
             } else if is_leech_seed_fail {
                 self.emit(format!("|move|p{}a: {}|{}||[still]", player+1, atk_name, move_data.name));
+            } else if is_status_fail {
+                self.emit(format!("|move|p{}a: {}|{}||[still]", player+1, atk_name, move_data.name));
             } else if is_self_target {
                 self.emit(format!("|move|p{}a: {}|{}|p{}a: {}{}", player+1, atk_name, move_data.name, player+1, atk_name, locked_suffix));
             } else {
@@ -306,6 +337,12 @@ impl Battle {
 
             if is_heal_fail {
                 self.emit(format!("|-fail|p{}a: {}|heal", player+1, atk_name));
+                return;
+            }
+
+            // Status move already-has-status: emit |-fail| and return
+            if is_status_fail {
+                self.emit(format!("|-fail|p{}a: {}", player+1, atk_name));
                 return;
             }
         }
@@ -1408,7 +1445,8 @@ impl Battle {
             let status_str = match self.sides[player as usize].active().status {
                 Status::Toxic => " tox", Status::Burn => " brn", Status::Poison => " psn", Status::Paralyze => " par", _ => "",
             };
-            if hp == 0 {
+            let fainted = hp == 0;
+            if fainted {
                 self.emit(format!("|-damage|p{}a: {}|0 fnt|[from] Leech Seed|[of] p{}a: {}", player+1, name, other+1, other_name));
             } else {
                 self.emit(format!("|-damage|p{}a: {}|{}/{}{}|[from] Leech Seed|[of] p{}a: {}", player+1, name, hp, max_hp, status_str, other+1, other_name));
@@ -1423,6 +1461,11 @@ impl Battle {
                     let omax = self.sides[other as usize].active().max_hp;
                     self.emit(format!("|-heal|p{}a: {}|{}/{}|[silent]", other+1, other_name, ohp, omax));
                 }
+            }
+            // Emit faint after heal
+            if fainted {
+                let name = self.species_name(player);
+                self.emit(format!("|faint|p{}a: {}", player+1, name));
             }
         }
 
@@ -1628,7 +1671,12 @@ impl Battle {
         let p2_alive = self.sides[1].alive_count();
 
         if p1_alive == 0 && p2_alive == 0 {
-            self.result = BattleResult::Tie;
+            // Simultaneous faint: attacker wins (defender fainted first)
+            if let Some(attacker) = self.last_attacker {
+                self.result = BattleResult::Win(attacker);
+            } else {
+                self.result = BattleResult::Tie;
+            }
         } else if p1_alive == 0 {
             self.result = BattleResult::Win(1);
         } else if p2_alive == 0 {
