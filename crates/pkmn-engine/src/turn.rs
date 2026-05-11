@@ -169,19 +169,19 @@ impl Battle {
                     def.volatiles.contains(Volatiles::LEECH_SEED) || def.types.contains(&Type::Grass)
                 }
                 "thunder wave" => {
-                    // [still] when target has a DIFFERENT status (not par)
+                    // [still] only for type immunity (Electric, Ground)
                     let def = self.sides[defender_idx as usize].active();
-                    def.status != Status::None && def.status != Status::Paralyze
+                    def.types.contains(&Type::Electric) || def.types.contains(&Type::Ground)
                 }
                 "toxic" => {
-                    // [still] when target has a DIFFERENT status (not tox/psn)
+                    // [still] only for type immunity (Poison, Steel)
                     let def = self.sides[defender_idx as usize].active();
-                    def.status != Status::None && def.status != Status::Toxic && def.status != Status::Poison
+                    def.types.contains(&Type::Poison) || def.types.contains(&Type::Steel)
                 }
                 "will-o-wisp" => {
-                    // [still] when target has a DIFFERENT status (not brn)
+                    // [still] only for type immunity (Fire)
                     let def = self.sides[defender_idx as usize].active();
-                    def.status != Status::None && def.status != Status::Burn
+                    def.types.contains(&Type::Fire)
                 }
                 _ => false,
             }
