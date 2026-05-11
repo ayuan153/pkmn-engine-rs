@@ -773,7 +773,13 @@ impl Battle {
         move_data: &MoveData,
     ) -> (u16, bool) {
         // RNG order: 1. crit check, 2. damage roll (random(16))
-        let critical = self.random_chance(1, 24);
+        let crit_denom = match move_data.crit_ratio {
+            0 => 24,
+            1 => 8,
+            2 => 2,
+            _ => 1,
+        };
+        let critical = self.random_chance(1, crit_denom);
         let roll = self.random(16); // 0-15
         let random_factor = (100 - roll) as u8; // 85-100
         // Fixed-damage moves: return attacker's level (crit/roll consumed but unused)
@@ -1667,7 +1673,13 @@ impl Battle {
 
         let mut actual_hits: u32 = 0;
         for _hit_num in 0..hits {
-            let critical = self.random_chance(1, 24);
+            let crit_denom = match move_data.crit_ratio {
+                0 => 24,
+                1 => 8,
+                2 => 2,
+                _ => 1,
+            };
+            let critical = self.random_chance(1, crit_denom);
             let roll = self.random(16);
             let random_factor = (100 - roll) as u8;
             let damage = self.calculate_damage_with(player, defender, move_data, critical, random_factor);
