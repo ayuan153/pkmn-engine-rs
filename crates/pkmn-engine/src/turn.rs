@@ -1404,7 +1404,14 @@ impl Battle {
     }
 
     pub fn end_of_turn(&mut self) {
-        for player in 0..2u8 {
+        // PS processes EOT effects in speed order (faster first)
+        let order: [u8; 2] = if self.sides[0].active().effective_speed() >= self.sides[1].active().effective_speed() {
+            [0, 1]
+        } else {
+            [1, 0]
+        };
+
+        for &player in &order {
             self.trigger_ability_end_of_turn(player);
         }
 
@@ -1427,8 +1434,8 @@ impl Battle {
         }
 
         // Sandstorm damage
-        for player in 0..2 {
-            let mon = self.sides[player].active_mut();
+        for &player in &order {
+            let mon = self.sides[player as usize].active_mut();
             if !mon.is_alive() { continue; }
             if self.field.weather == Weather::Sand
                 && !mon.types.contains(&Type::Rock)
@@ -1455,7 +1462,7 @@ impl Battle {
 
         // Grassy Terrain EOT heal (1/16 HP to grounded Pokemon)
         if self.field.terrain == Terrain::Grassy {
-            for player in 0..2u8 {
+            for &player in &order {
                 let mon = self.sides[player as usize].active();
                 if !mon.is_alive() { continue; }
                 let is_grounded = !mon.types.contains(&Type::Flying)
@@ -1482,7 +1489,7 @@ impl Battle {
         }
 
         // Leech Seed end-of-turn: drain 1/8 HP from seeded mon, heal the seeder
-        for player in 0..2u8 {
+        for &player in &order {
             let seeded = self.sides[player as usize].active().volatiles.contains(Volatiles::LEECH_SEED);
             if !seeded || !self.sides[player as usize].active().is_alive() { continue; }
             let max_hp = self.sides[player as usize].active().max_hp;
@@ -1521,8 +1528,8 @@ impl Battle {
         }
 
         // Status damage (burn/poison/toxic)
-        for player in 0..2 {
-            let mon = self.sides[player].active_mut();
+        for &player in &order {
+            let mon = self.sides[player as usize].active_mut();
             if !mon.is_alive() { continue; }
             let status = mon.status;
             match status {
