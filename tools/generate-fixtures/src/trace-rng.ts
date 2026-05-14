@@ -6,7 +6,7 @@ import * as fs from 'fs';
 (globalThis as any)._prngLog = [];
 (globalThis as any)._prngCallCount = 0;
 
-const fixture = JSON.parse(fs.readFileSync('../../tests/fixtures/full-sim/substitute-protect-toxic.json', 'utf8'));
+const fixture = JSON.parse(fs.readFileSync('../../tests/fixtures/full-sim/blaze-pinch.json', 'utf8'));
 
 async function run() {
   const stream = new BattleStreams.BattleStream();
@@ -22,17 +22,19 @@ async function run() {
   streams.omniscient.write(`>start {"formatid":"gen9customgame","seed":[${fixture.seed}]}`);
   streams.omniscient.write(`>player p1 {"name":"Player 1","team":"${Teams.pack(fixture.p1.team)}"}`);
   streams.omniscient.write(`>player p2 {"name":"Player 2","team":"${Teams.pack(fixture.p2.team)}"}`);
-  await new Promise(r => setTimeout(r, 100));
+  await new Promise(r => setTimeout(r, 200));
   streams.omniscient.write('>p1 team 1');
   streams.omniscient.write('>p2 team 1');
-  await new Promise(r => setTimeout(r, 100));
+  await new Promise(r => setTimeout(r, 200));
 
   for (const [p1c, p2c] of fixture.choices) {
     streams.omniscient.write(`>p1 ${p1c}`);
     streams.omniscient.write(`>p2 ${p2c}`);
-    await new Promise(r => setTimeout(r, 100));
+    await new Promise(r => setTimeout(r, 200));
   }
 
+  // Wait for all choices to process, then forcetie
+  await new Promise(r => setTimeout(r, 500));
   streams.omniscient.write('>forcetie');
   await done;
 
