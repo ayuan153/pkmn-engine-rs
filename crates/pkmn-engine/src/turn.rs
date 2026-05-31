@@ -526,15 +526,10 @@ impl Battle {
             if move_data.flags.has(MoveFlags::CONTACT) {
                 let defender_ability = self.sides[defender_idx as usize].active().ability_id;
                 let defender_item = self.sides[defender_idx as usize].active().item_id;
-                // Rough Skin / Iron Barbs: 1/8 max HP
-                if matches!(defender_ability, pkmn_core::abilities::AbilityId::RoughSkin | pkmn_core::abilities::AbilityId::IronBarbs) {
-                    let attacker_max_hp = self.sides[player as usize].active().max_hp;
-                    let recoil = (attacker_max_hp / 8).max(1);
-                    self.apply_damage(player, recoil);
-                    let atk_name = self.species_name(player);
-                    let ability_name = if defender_ability == pkmn_core::abilities::AbilityId::RoughSkin { "Rough Skin" } else { "Iron Barbs" };
-                    let hp_str = self.hp_display(player);
-                    self.emit(format!("|-damage|p{}a: {}|{}|[from] ability: {}|[of] p{}a: {}", player+1, atk_name, hp_str, ability_name, defender_idx+1, def_name));
+                // Contact recoil abilities dispatched via EventHooks
+                let hooks = crate::events::ability_hooks(defender_ability);
+                if let Some(hook) = hooks.on_damaging_hit {
+                    hook(self, player, defender_idx);
                 }
                 // Rocky Helmet: 1/6 max HP
                 if defender_item == pkmn_core::items::ItemId::RockyHelmet {
@@ -1004,11 +999,69 @@ impl Battle {
         }
     }
 
-    fn apply_damage(&mut self, player: u8, damage: u16) {
+    pub(crate) fn apply_damage(&mut self, player: u8, damage: u16) {
         let mon = self.sides[player as usize].active_mut();
         mon.hp = mon.hp.saturating_sub(damage);
         if mon.hp == 0 {
             mon.is_fainted = true;
+        }
+    }
+
+    /// Apply a data-driven boost effect to a player's active Pokemon.
+    /// Emits the appropriate protocol messages for each non-zero boost.
+    fn apply_boost_effect(&mut self, player: u8, boosts: &crate::events::BoostEffect) {
+        let atk_name = self.species_name(player);
+        let mon = self.sides[player as usize].active_mut();
+
+        if boosts.atk != 0 {
+            let old = mon.boosts.atk;
+            mon.boosts.atk = (mon.boosts.atk + boosts.atk).clamp(-6, 6);
+            let actual = (mon.boosts.atk - old).unsigned_abs();
+            if boosts.atk > 0 {
+                self.emit(format!("|-boost|p{}a: {}|atk|{}", player + 1, atk_name, actual));
+            } else {
+                self.emit(format!("|-unboost|p{}a: {}|atk|{}", player + 1, atk_name, actual));
+            }
+        }
+        if boosts.def != 0 {
+            let old = self.sides[player as usize].active().boosts.def;
+            self.sides[player as usize].active_mut().boosts.def = (old + boosts.def).clamp(-6, 6);
+            let actual = (self.sides[player as usize].active().boosts.def - old).unsigned_abs();
+            if boosts.def > 0 {
+                self.emit(format!("|-boost|p{}a: {}|def|{}", player + 1, atk_name, actual));
+            } else {
+                self.emit(format!("|-unboost|p{}a: {}|def|{}", player + 1, atk_name, actual));
+            }
+        }
+        if boosts.spa != 0 {
+            let old = self.sides[player as usize].active().boosts.spa;
+            self.sides[player as usize].active_mut().boosts.spa = (old + boosts.spa).clamp(-6, 6);
+            let actual = (self.sides[player as usize].active().boosts.spa - old).unsigned_abs();
+            if boosts.spa > 0 {
+                self.emit(format!("|-boost|p{}a: {}|spa|{}", player + 1, atk_name, actual));
+            } else {
+                self.emit(format!("|-unboost|p{}a: {}|spa|{}", player + 1, atk_name, actual));
+            }
+        }
+        if boosts.spd != 0 {
+            let old = self.sides[player as usize].active().boosts.spd;
+            self.sides[player as usize].active_mut().boosts.spd = (old + boosts.spd).clamp(-6, 6);
+            let actual = (self.sides[player as usize].active().boosts.spd - old).unsigned_abs();
+            if boosts.spd > 0 {
+                self.emit(format!("|-boost|p{}a: {}|spd|{}", player + 1, atk_name, actual));
+            } else {
+                self.emit(format!("|-unboost|p{}a: {}|spd|{}", player + 1, atk_name, actual));
+            }
+        }
+        if boosts.spe != 0 {
+            let old = self.sides[player as usize].active().boosts.spe;
+            self.sides[player as usize].active_mut().boosts.spe = (old + boosts.spe).clamp(-6, 6);
+            let actual = (self.sides[player as usize].active().boosts.spe - old).unsigned_abs();
+            if boosts.spe > 0 {
+                self.emit(format!("|-boost|p{}a: {}|spe|{}", player + 1, atk_name, actual));
+            } else {
+                self.emit(format!("|-unboost|p{}a: {}|spe|{}", player + 1, atk_name, actual));
+            }
         }
     }
 
@@ -1068,6 +1121,26 @@ impl Battle {
             let atk_name = self.species_name(attacker);
             self.emit(format!("|-fail|p{}a: {}", attacker+1, atk_name));
             return;
+        }
+
+        // Data-driven move effect dispatch (migrated moves skip the string match)
+        if let Some(effect) = crate::events::move_effect(name.as_str()) {
+            match effect {
+                crate::events::MoveEffect::Boost(boosts) => {
+                    self.apply_boost_effect(attacker, &boosts);
+                    return;
+                }
+                crate::events::MoveEffect::Hazard(crate::events::HazardType::StealthRock) => {
+                    if self.sides[defender as usize].side_conditions.stealth_rock {
+                        let atk_name = self.species_name(attacker);
+                        self.emit(format!("|-fail|p{}a: {}", attacker+1, atk_name));
+                    } else {
+                        self.sides[defender as usize].side_conditions.stealth_rock = true;
+                        self.emit(format!("|-sidestart|p{}: Player {}|move: Stealth Rock", defender+1, defender+1));
+                    }
+                    return;
+                }
+            }
         }
 
         match name.as_str() {
@@ -1147,41 +1220,7 @@ impl Battle {
                 }
                 return;
             }
-            // Boost moves
-            "swords dance" => {
-                let mon = self.sides[attacker as usize].active_mut();
-                let old = mon.boosts.atk;
-                mon.boosts.atk = (mon.boosts.atk + 2).min(6);
-                let actual = mon.boosts.atk - old;
-                let atk_name = self.species_name(attacker);
-                self.emit(format!("|-boost|p{}a: {}|atk|{}", attacker+1, atk_name, actual));
-            }
-            "dragon dance" => {
-                let (actual_atk, actual_spe) = {
-                    let mon = self.sides[attacker as usize].active_mut();
-                    let old_atk = mon.boosts.atk;
-                    let old_spe = mon.boosts.spe;
-                    mon.boosts.atk = (mon.boosts.atk + 1).min(6);
-                    mon.boosts.spe = (mon.boosts.spe + 1).min(6);
-                    (mon.boosts.atk - old_atk, mon.boosts.spe - old_spe)
-                };
-                let atk_name = self.species_name(attacker);
-                self.emit(format!("|-boost|p{}a: {}|atk|{}", attacker+1, atk_name, actual_atk));
-                self.emit(format!("|-boost|p{}a: {}|spe|{}", attacker+1, atk_name, actual_spe));
-            }
-            "calm mind" => {
-                let (actual_spa, actual_spd) = {
-                    let mon = self.sides[attacker as usize].active_mut();
-                    let old_spa = mon.boosts.spa;
-                    let old_spd = mon.boosts.spd;
-                    mon.boosts.spa = (mon.boosts.spa + 1).min(6);
-                    mon.boosts.spd = (mon.boosts.spd + 1).min(6);
-                    (mon.boosts.spa - old_spa, mon.boosts.spd - old_spd)
-                };
-                let atk_name = self.species_name(attacker);
-                self.emit(format!("|-boost|p{}a: {}|spa|{}", attacker+1, atk_name, actual_spa));
-                self.emit(format!("|-boost|p{}a: {}|spd|{}", attacker+1, atk_name, actual_spd));
-            }
+            // Boost moves (swords dance, dragon dance, calm mind now data-driven via events.rs)
             "iron defense" | "acid armor" => {
                 let mon = self.sides[attacker as usize].active_mut();
                 let old = mon.boosts.def;
@@ -1266,15 +1305,7 @@ impl Battle {
                 self.sides[attacker as usize].side_conditions.light_screen = 5;
                 self.emit(format!("|-sidestart|p{}: Player {}|move: Light Screen", attacker+1, attacker+1));
             }
-            "stealth rock" => {
-                if self.sides[defender as usize].side_conditions.stealth_rock {
-                    let atk_name = self.species_name(attacker);
-                    self.emit(format!("|-fail|p{}a: {}", attacker+1, atk_name));
-                } else {
-                    self.sides[defender as usize].side_conditions.stealth_rock = true;
-                    self.emit(format!("|-sidestart|p{}: Player {}|move: Stealth Rock", defender+1, defender+1));
-                }
-            }
+            // stealth rock is now data-driven via events.rs
             "toxic spikes" => {
                 let layers = &mut self.sides[defender as usize].side_conditions.toxic_spikes;
                 if *layers < 2 {

@@ -13,7 +13,11 @@ impl Battle {
         let modifier = match item {
             ItemId::ChoiceBand => 1.0,
             ItemId::ChoiceSpecs => 1.0,
-            ItemId::LifeOrb => 1.3,
+            ItemId::LifeOrb => {
+                // Dispatched via EventHooks
+                let hooks = crate::events::item_hooks(ItemId::LifeOrb);
+                hooks.on_source_modify_damage.unwrap()(self, attacker_player, move_data)
+            }
             ItemId::ExpertBelt => {
                 let effectiveness = Type::effectiveness(move_data.move_type, &defender.types);
                 if effectiveness > 1.0 { 1.2 } else { 1.0 }

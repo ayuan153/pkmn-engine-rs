@@ -1,5 +1,5 @@
 use crate::battle::Battle;
-use crate::field::{Terrain, Weather};
+use crate::field::Terrain;
 use pkmn_core::abilities::AbilityId;
 use pkmn_core::moves::{MoveCategory, MoveData, MoveFlags};
 use pkmn_core::types::Type;
@@ -9,35 +9,17 @@ impl Battle {
     pub fn trigger_ability_on_switch(&mut self, player: u8) {
         let ability = self.sides[player as usize].active().ability_id;
         let name = self.species_name(player);
+
+        // Hook dispatch: migrated abilities use the event system
+        let hooks = crate::events::ability_hooks(ability);
+        if let Some(hook) = hooks.on_switch_in {
+            hook(self, player);
+            return;
+        }
+
         match ability {
-            AbilityId::Intimidate => {
-                let opp = 1 - player;
-                let opp_name = self.species_name(opp);
-                self.emit(format!("|-ability|p{}a: {}|Intimidate|boost", player+1, name));
-                self.emit(format!("|-unboost|p{}a: {}|atk|1", opp+1, opp_name));
-                let cur = self.sides[opp as usize].active().boosts.atk;
-                self.sides[opp as usize].active_mut().boosts.atk = (cur - 1).max(-6);
-            }
-            AbilityId::Drizzle => {
-                self.field.weather = Weather::Rain;
-                self.field.weather_turns = 5;
-                self.emit(format!("|-weather|RainDance|[from] ability: Drizzle|[of] p{}a: {}", player+1, name));
-            }
-            AbilityId::Drought => {
-                self.field.weather = Weather::Sun;
-                self.field.weather_turns = 5;
-                self.emit(format!("|-weather|SunnyDay|[from] ability: Drought|[of] p{}a: {}", player+1, name));
-            }
-            AbilityId::SandStream => {
-                self.field.weather = Weather::Sand;
-                self.field.weather_turns = 5;
-                self.emit(format!("|-weather|Sandstorm|[from] ability: Sand Stream|[of] p{}a: {}", player+1, name));
-            }
-            AbilityId::SnowWarning => {
-                self.field.weather = Weather::Snow;
-                self.field.weather_turns = 5;
-                self.emit(format!("|-weather|Snowscape|[from] ability: Snow Warning|[of] p{}a: {}", player+1, name));
-            }
+            // Intimidate, Drizzle, Drought, SandStream, SnowWarning
+            // are now dispatched via EventHooks (see events.rs)
             AbilityId::ElectricSurge => {
                 self.field.terrain = Terrain::Electric;
                 self.field.terrain_turns = 5;
@@ -102,11 +84,9 @@ impl Battle {
         let mut modifier = match mon.ability_id {
             AbilityId::HugePower | AbilityId::PurePower => 1.0,
             AbilityId::Technician => {
-                if move_data.base_power <= 60 {
-                    1.5
-                } else {
-                    1.0
-                }
+                // Dispatched via EventHooks
+                let hooks = crate::events::ability_hooks(AbilityId::Technician);
+                hooks.on_source_modify_damage.unwrap()(self, attacker_player, move_data)
             }
             AbilityId::SheerForce => {
                 if !pkmn_core::moves::get_secondaries(move_data.id).is_empty() {
@@ -137,16 +117,9 @@ impl Battle {
                 }
             }
             AbilityId::Adaptability => {
-                // STAB becomes 2.0x; since STAB 1.5x is applied separately, multiply by 4/3
-                let species = pkmn_core::species::get_species_by_id(mon.species_id);
-                let has_stab = species
-                    .map(|s| s.types.contains(&move_data.move_type))
-                    .unwrap_or(false);
-                if has_stab {
-                    4.0 / 3.0
-                } else {
-                    1.0
-                }
+                // Dispatched via EventHooks
+                let hooks = crate::events::ability_hooks(AbilityId::Adaptability);
+                hooks.on_source_modify_damage.unwrap()(self, attacker_player, move_data)
             }
             AbilityId::Guts => {
                 if mon.status != crate::pokemon::Status::None

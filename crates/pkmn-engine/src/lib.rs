@@ -1,5 +1,6 @@
 pub mod battle;
 pub mod choice;
+pub mod events;
 pub mod field;
 pub mod hazards;
 pub mod pokemon;
