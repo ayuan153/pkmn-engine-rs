@@ -1,7 +1,7 @@
 use crate::battle::Battle;
 use crate::pokemon::Status;
 use pkmn_core::items::ItemId;
-use pkmn_core::moves::{MoveCategory, MoveData};
+use pkmn_core::moves::MoveData;
 use pkmn_core::types::Type;
 
 impl Battle {
@@ -10,14 +10,17 @@ impl Battle {
         let item = self.sides[attacker_player as usize].active().item_id;
         let defender_player = 1 - attacker_player;
         let defender = self.sides[defender_player as usize].active();
-        let modifier = match item {
+
+        // Generic hook dispatch: if the item has on_source_modify_damage, use it directly
+        let hooks = crate::events::item_hooks(item);
+        if let Some(hook_fn) = hooks.on_source_modify_damage {
+            return hook_fn(self, attacker_player, move_data);
+        }
+
+        // Non-migrated item modifiers (no hook yet)
+        match item {
             ItemId::ChoiceBand => 1.0,
             ItemId::ChoiceSpecs => 1.0,
-            ItemId::LifeOrb => {
-                // Dispatched via EventHooks
-                let hooks = crate::events::item_hooks(ItemId::LifeOrb);
-                hooks.on_source_modify_damage.unwrap()(self, attacker_player, move_data)
-            }
             ItemId::ExpertBelt => {
                 let effectiveness = Type::effectiveness(move_data.move_type, &defender.types);
                 if effectiveness > 1.0 { 1.2 } else { 1.0 }
@@ -42,8 +45,7 @@ impl Battle {
             ItemId::SilkScarf => if move_data.move_type == Type::Normal { 1.2 } else { 1.0 },
             ItemId::FairyFeather => if move_data.move_type == Type::Fairy { 1.2 } else { 1.0 },
             _ => 1.0,
-        };
-        modifier
+        }
     }
 
     /// Apply item speed modifier

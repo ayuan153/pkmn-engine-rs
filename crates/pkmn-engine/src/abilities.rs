@@ -81,82 +81,80 @@ impl Battle {
         let mon = self.sides[attacker_player as usize].active();
         let defender_player = 1 - attacker_player;
         let defender = self.sides[defender_player as usize].active();
-        let mut modifier = match mon.ability_id {
-            AbilityId::HugePower | AbilityId::PurePower => 1.0,
-            AbilityId::Technician => {
-                // Dispatched via EventHooks
-                let hooks = crate::events::ability_hooks(AbilityId::Technician);
-                hooks.on_source_modify_damage.unwrap()(self, attacker_player, move_data)
-            }
-            AbilityId::SheerForce => {
-                if !pkmn_core::moves::get_secondaries(move_data.id).is_empty() {
-                    1.3
-                } else {
-                    1.0
+
+        // Generic hook dispatch: if the ability has on_source_modify_damage, use it directly
+        let ability_hooks = crate::events::ability_hooks(mon.ability_id);
+        let mut modifier = if let Some(hook_fn) = ability_hooks.on_source_modify_damage {
+            hook_fn(self, attacker_player, move_data)
+        } else {
+            // Non-migrated ability modifiers (no hook yet)
+            match mon.ability_id {
+                AbilityId::HugePower | AbilityId::PurePower => 1.0,
+                AbilityId::SheerForce => {
+                    if !pkmn_core::moves::get_secondaries(move_data.id).is_empty() {
+                        1.3
+                    } else {
+                        1.0
+                    }
                 }
-            }
-            AbilityId::ToughClaws => {
-                if move_data.flags.has(MoveFlags::CONTACT) {
-                    1.3
-                } else {
-                    1.0
+                AbilityId::ToughClaws => {
+                    if move_data.flags.has(MoveFlags::CONTACT) {
+                        1.3
+                    } else {
+                        1.0
+                    }
                 }
-            }
-            AbilityId::IronFist => {
-                if move_data.flags.has(MoveFlags::PUNCH) {
-                    1.2
-                } else {
-                    1.0
+                AbilityId::IronFist => {
+                    if move_data.flags.has(MoveFlags::PUNCH) {
+                        1.2
+                    } else {
+                        1.0
+                    }
                 }
-            }
-            AbilityId::StrongJaw => {
-                if move_data.flags.has(MoveFlags::BITE) {
-                    1.5
-                } else {
-                    1.0
+                AbilityId::StrongJaw => {
+                    if move_data.flags.has(MoveFlags::BITE) {
+                        1.5
+                    } else {
+                        1.0
+                    }
                 }
-            }
-            AbilityId::Adaptability => {
-                // Dispatched via EventHooks
-                let hooks = crate::events::ability_hooks(AbilityId::Adaptability);
-                hooks.on_source_modify_damage.unwrap()(self, attacker_player, move_data)
-            }
-            AbilityId::Guts => {
-                if mon.status != crate::pokemon::Status::None
-                    && move_data.category == MoveCategory::Physical
-                {
-                    1.5
-                } else {
-                    1.0
+                AbilityId::Guts => {
+                    if mon.status != crate::pokemon::Status::None
+                        && move_data.category == MoveCategory::Physical
+                    {
+                        1.5
+                    } else {
+                        1.0
+                    }
                 }
-            }
-            AbilityId::FlashFire => {
-                if mon.volatiles.contains(crate::pokemon::Volatiles::FLASH_FIRE)
-                    && move_data.move_type == Type::Fire
-                {
-                    1.5
-                } else {
-                    1.0
+                AbilityId::FlashFire => {
+                    if mon.volatiles.contains(crate::pokemon::Volatiles::FLASH_FIRE)
+                        && move_data.move_type == Type::Fire
+                    {
+                        1.5
+                    } else {
+                        1.0
+                    }
                 }
-            }
-            AbilityId::TintedLens => {
-                let def_types = self.defender_types(defender_player);
-                let effectiveness =
-                    Type::effectiveness(move_data.move_type, &def_types);
-                if effectiveness < 1.0 && effectiveness > 0.0 {
-                    2.0
-                } else {
-                    1.0
+                AbilityId::TintedLens => {
+                    let def_types = self.defender_types(defender_player);
+                    let effectiveness =
+                        Type::effectiveness(move_data.move_type, &def_types);
+                    if effectiveness < 1.0 && effectiveness > 0.0 {
+                        2.0
+                    } else {
+                        1.0
+                    }
                 }
-            }
-            AbilityId::SwordOfRuin => {
-                if move_data.category == MoveCategory::Physical {
-                    1.33
-                } else {
-                    1.0
+                AbilityId::SwordOfRuin => {
+                    if move_data.category == MoveCategory::Physical {
+                        1.33
+                    } else {
+                        1.0
+                    }
                 }
+                _ => 1.0,
             }
-            _ => 1.0,
         };
 
         // Defender's abilities
@@ -191,12 +189,11 @@ impl Battle {
     /// End-of-turn ability effects
     pub fn trigger_ability_end_of_turn(&mut self, player: u8) {
         let ability = self.sides[player as usize].active().ability_id;
-        match ability {
-            AbilityId::SpeedBoost => {
-                let mon = self.sides[player as usize].active_mut();
-                mon.boosts.spe = (mon.boosts.spe + 1).min(6);
-            }
-            _ => {}
+
+        // Hook dispatch: migrated abilities use the event system
+        let hooks = crate::events::ability_hooks(ability);
+        if let Some(hook) = hooks.on_residual {
+            hook(self, player);
         }
     }
 }

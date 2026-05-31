@@ -169,19 +169,19 @@ impl Battle {
                     def.volatiles.contains(Volatiles::LEECH_SEED) || def.types.contains(&Type::Grass)
                 }
                 "thunder wave" => {
-                    // [still] only for type immunity (Electric, Ground)
+                    // [still] only for type immunity (Electric, Ground) — Thunder Wave has ignoreImmunity: false in PS
                     let def = self.sides[defender_idx as usize].active();
                     def.types.contains(&Type::Electric) || def.types.contains(&Type::Ground)
                 }
                 "toxic" => {
-                    // [still] only for type immunity (Poison, Steel)
-                    let def = self.sides[defender_idx as usize].active();
-                    def.types.contains(&Type::Poison) || def.types.contains(&Type::Steel)
+                    // PS: status moves ignore type immunity by default, so Toxic vs Steel/Poison
+                    // still consumes accuracy RNG. Only [still] if target already has status.
+                    false
                 }
                 "will-o-wisp" => {
-                    // [still] only for type immunity (Fire)
-                    let def = self.sides[defender_idx as usize].active();
-                    def.types.contains(&Type::Fire)
+                    // PS: status moves ignore type immunity, so Will-O-Wisp vs Fire
+                    // still consumes accuracy RNG. Only [still] if target already has status.
+                    false
                 }
                 _ => false,
             }
@@ -768,6 +768,8 @@ impl Battle {
         move_data: &MoveData,
     ) -> (u16, bool) {
         // RNG order: 1. crit check, 2. damage roll (random(16))
+        // Crit stage table (Gen 9): stage 0 → 1/24, stage 1 → 1/8, stage 2 → 1/2, stage 3+ → always
+        // crit_ratio: 0 = normal (1/24), 1 = high-crit (1/8), 2 = super (1/2), 3+ = always
         let crit_denom = match move_data.crit_ratio {
             0 => 24,
             1 => 8,
@@ -1511,12 +1513,19 @@ impl Battle {
             }
         }
 
-        // Item end-of-turn: healing items (Leftovers, Black Sludge) — before Leech Seed
+        // Item end-of-turn: healing items (Leftovers, Black Sludge) — PS residualOrder 5
+        // Dispatched via on_residual hooks for migrated items, fallback for others.
         let p1_speed = self.sides[0].active().effective_speed();
         let p2_speed = self.sides[1].active().effective_speed();
         let item_order: [u8; 2] = if p2_speed > p1_speed { [1, 0] } else { [0, 1] };
         for &player in &item_order {
-            self.trigger_item_heal_eot(player);
+            let item_id = self.sides[player as usize].active().item_id;
+            let hooks = crate::events::item_hooks(item_id);
+            if let Some(hook) = hooks.on_residual {
+                hook(self, player);
+            } else {
+                self.trigger_item_heal_eot(player);
+            }
         }
 
         // Leech Seed end-of-turn: drain 1/8 HP from seeded mon, heal the seeder
@@ -1711,6 +1720,7 @@ impl Battle {
 
         let mut actual_hits: u32 = 0;
         for _hit_num in 0..hits {
+            // Crit stage table: 0 → 1/24, 1 → 1/8, 2 → 1/2, 3+ → always
             let crit_denom = match move_data.crit_ratio {
                 0 => 24,
                 1 => 8,

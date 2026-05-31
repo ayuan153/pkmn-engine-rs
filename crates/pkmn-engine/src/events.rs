@@ -19,6 +19,9 @@ pub struct EventHooks {
     pub on_source_modify_damage: Option<fn(&Battle, attacker: u8, move_data: &MoveData) -> f32>,
     /// Called after a damaging hit with contact (defender's ability reacts).
     pub on_damaging_hit: Option<fn(&mut Battle, attacker: u8, defender: u8)>,
+    /// Called during the end-of-turn residual pass for this ability/item.
+    /// Residual order follows PS convention: items (5) < Leech Seed (8) < status (9-10).
+    pub on_residual: Option<fn(&mut Battle, player: u8)>,
 }
 
 impl EventHooks {
@@ -27,6 +30,7 @@ impl EventHooks {
         on_switch_in: None,
         on_source_modify_damage: None,
         on_damaging_hit: None,
+        on_residual: None,
     };
 }
 
@@ -72,6 +76,10 @@ pub fn ability_hooks(id: AbilityId) -> EventHooks {
             on_damaging_hit: Some(hook_iron_barbs_hit),
             ..EventHooks::NONE
         },
+        AbilityId::SpeedBoost => EventHooks {
+            on_residual: Some(hook_speed_boost_residual),
+            ..EventHooks::NONE
+        },
         _ => EventHooks::NONE,
     }
 }
@@ -81,6 +89,14 @@ pub fn item_hooks(id: ItemId) -> EventHooks {
     match id {
         ItemId::LifeOrb => EventHooks {
             on_source_modify_damage: Some(hook_life_orb_damage),
+            ..EventHooks::NONE
+        },
+        ItemId::Leftovers => EventHooks {
+            on_residual: Some(hook_leftovers_residual),
+            ..EventHooks::NONE
+        },
+        ItemId::BlackSludge => EventHooks {
+            on_residual: Some(hook_black_sludge_residual),
             ..EventHooks::NONE
         },
         _ => EventHooks::NONE,
@@ -206,6 +222,23 @@ fn hook_iron_barbs_hit(battle: &mut Battle, attacker: u8, defender: u8) {
     ));
 }
 
+// --- Hook implementations: on_residual ---
+
+fn hook_speed_boost_residual(battle: &mut Battle, player: u8) {
+    let mon = battle.sides[player as usize].active_mut();
+    if mon.is_alive() {
+        mon.boosts.spe = (mon.boosts.spe + 1).min(6);
+    }
+}
+
+fn hook_leftovers_residual(battle: &mut Battle, player: u8) {
+    battle.trigger_item_heal_eot(player);
+}
+
+fn hook_black_sludge_residual(battle: &mut Battle, player: u8) {
+    battle.trigger_item_heal_eot(player);
+}
+
 // --- Data-driven move effects ---
 
 /// Stat boosts for a move effect. Each field is the number of stages to change.
@@ -260,6 +293,7 @@ mod tests {
         assert!(hooks.on_switch_in.is_some());
         assert!(hooks.on_source_modify_damage.is_none());
         assert!(hooks.on_damaging_hit.is_none());
+        assert!(hooks.on_residual.is_none());
     }
 
     #[test]
@@ -281,6 +315,7 @@ mod tests {
         assert!(hooks.on_switch_in.is_none());
         assert!(hooks.on_source_modify_damage.is_none());
         assert!(hooks.on_damaging_hit.is_none());
+        assert!(hooks.on_residual.is_none());
     }
 
     #[test]
@@ -298,5 +333,19 @@ mod tests {
     #[test]
     fn test_move_effect_unknown_returns_none() {
         assert!(move_effect("flamethrower").is_none());
+    }
+
+    #[test]
+    fn test_ability_hooks_returns_residual_for_speed_boost() {
+        let hooks = ability_hooks(AbilityId::SpeedBoost);
+        assert!(hooks.on_residual.is_some());
+        assert!(hooks.on_switch_in.is_none());
+    }
+
+    #[test]
+    fn test_item_hooks_returns_residual_for_leftovers() {
+        let hooks = item_hooks(ItemId::Leftovers);
+        assert!(hooks.on_residual.is_some());
+        assert!(hooks.on_source_modify_damage.is_none());
     }
 }
