@@ -1,239 +1,142 @@
 # pkmn-engine-rs — Development Plan
 
-## Current Progress (2026-05-07)
+## Goal
 
-### What's Built
-- Complete Rust workspace: pkmn-core (data) + pkmn-engine (simulation) + pkmn-wasm (bindings)
-- Full Gen 9 data: 1330 species, 950 moves, 310 abilities (auto-generated from PS source)
-- Battle engine: turn execution, priority, damage, switching, hazards, weather, status, boosts, abilities (50+), items (30+), volatiles, Terastallization, multi-turn moves
-- Performance: 192,000 games/sec, 130ns clone cost
-- Differential testing: 89 real replay fixtures, 1967 damage events, 0 type-chart failures
+A fast, **rules-correct** Gen 9 Random Battle singles engine for **self-play reinforcement learning** whose learned policy transfers to the real Pokémon Showdown ladder.
 
-### Accuracy Status
-- **Exact match (within 16-roll range): 36.4% (704/1967)**
-- Close (±20% or crit): 85.5% cumulative (952/1967)
-- Direction only (both predict damage, magnitude off): 14.5% (280/1967)
-- Type chart failures: 0
+## Dropped Goal
 
-### Why 80.6% Exact Instead of 100%
-The remaining ~19% non-exact matches are caused by modifiers we DON'T track in the verification test context:
-1. **Abilities affecting stats before the move** — e.g., Intimidate lowers Atk on switch-in, but the verification doesn't always see the `-unboost` event before the damage event
-2. **Items consumed/activated mid-turn** — e.g., Weakness Policy doubles Atk/SpA after taking SE damage
-3. **Ability-based damage modifiers not yet wired** — e.g., Adaptability (2x STAB), Tinted Lens (2x on resisted), Sniper (3x crit)
-4. **Multi-hit moves** — Bullet Seed hits 2-5 times, we calculate single-hit damage
-5. **Moves with variable base power** — Knock Off (1.5x if target has item), Acrobatics (2x if no item), Facade (2x if statused)
-6. **Terrain/ability interactions** — Electric Terrain boosts Electric moves 1.3x, Grassy Terrain heals
+**Byte-for-byte PS protocol + RNG-call-order matching** is explicitly dropped.
 
-### Next Steps (for continuing agent)
-1. Wire ALL ability damage modifiers into `damage_verification.rs` verification context
-2. Wire ALL item damage modifiers (including consumed items like Weakness Policy)
-3. Handle variable-BP moves (Knock Off, Acrobatics, Facade, Stored Power, etc.)
-4. Handle multi-hit moves in verification
-5. Track Intimidate `-unboost` events and apply them to the attacker's effective stat
-6. Handle terrain damage boosts
-7. Target: push exact match from 36% → 90%+, then grind remaining edge cases to 100%
+Why:
+- Even the canonical `pkmn/engine` (C, purpose-built for this) cannot achieve Gen 9 protocol parity — the format is too complex and brittle.
+- RL does not require identical game traces. It requires that the *rules* are correct: legal actions, damage ranges, ability/item triggers, and outcome distributions must match PS closely enough that a policy trained here transfers to the real ladder.
+- Chasing protocol byte-matching created a maintenance treadmill (1752-line turn.rs, 2/5 extensibility rating) without advancing the actual goal.
 
-### Key Files
-- `crates/pkmn-engine/tests/damage_verification.rs` — THE file to modify for accuracy
-- `crates/pkmn-engine/src/abilities.rs` — Ability effects in the engine
-- `crates/pkmn-engine/src/items_effect.rs` — Item effects in the engine
-- `crates/pkmn-engine/src/turn.rs` — Turn execution (where damage is calculated)
-- `crates/pkmn-core/src/gen/move_data.rs` — All move data (BP, type, flags)
-- `tools/fetch-fixtures.py` — Downloads and parses replay fixtures
-- `tests/fixtures/replay_events/` — 142 real replay fixtures (JSON)
+## Decision: Refactor-in-Place
 
----
+**Keep**: Data tables (1330 species, 950 moves, 310 abilities as `const`), Battle/Side/Pokemon state structs, damage formula, type chart, stat system, RNG, test fixtures, WASM crate shell, build tooling.
 
-## Vision
-A 100% accurate, high-performance Pokemon battle simulator in Rust. Targets 100x speedup over @pkmn/sim (JS) while maintaining byte-for-byte protocol compatibility with Pokemon Showdown.
+**Replace**: The effect dispatch system. The current string-matching move dispatch, inline ability match blocks, and inline item checks become a **hook-based event system** with static function-pointer dispatch tables (~20 hook points in the turn loop). Moves become data-driven via an enriched `MoveData` with a `MoveEffect` enum.
 
-## Scope
-- **Primary**: Gen 9 Random Battle (singles)
-- **Secondary**: Gen 4-8 (incremental, architecture supports multi-gen)
-- **Non-goals (initially)**: Doubles, custom formats, team validation
+**Discard**: `protocol: Vec<String>` from Battle (heap allocation in hot path). Existing 49 full-sim fixtures become soft regression gates, not the correctness bar.
+
+## Validation Harness
+
+### Test Pyramid
+
+| Layer | What | Gate |
+|-------|------|------|
+| **Unit** | Per-mechanic: each ability/item/move effect in isolation | Hard — all pass |
+| **Damage** | Controlled single-roll damage vs `@smogon/calc` formula | Hard — all pass |
+| **Property** | Invariants: HP ∈ [0,max], boosts ∈ [-6,6], no infinite loops, fainted can't act | Hard — all pass |
+| **Statistical** | 10K games Rust vs `@pkmn/sim`: win-rate ±2%, game-length ±5% | Hard — within bounds |
+| **Regression** | Existing 49 full-sim fixtures (track pass count monotonically) | Soft — count ≥ previous |
+
+### CI Gate (must pass to merge)
+1. `cargo test` — all unit + integration tests
+2. `cargo clippy -- -D warnings`
+3. Property tests (proptest, 1000 cases each)
+4. Statistical differential (`npm run diff-test`): 10K random games in both engines, assert win-rate Δ < 2% and mean game-length Δ < 5%
+
+### Statistical Differential Design
+
+Both engines receive identical teams (generated by Rust teamgen, exported). Each uses its own RNG for in-battle randomness. We compare **outcome distributions**, not individual game traces. Tests use chi-squared on win rates and KS test on game lengths.
+
+## Phased Plan
+
+### Phase 0: Foundation — Hook System (1 week)
+
+- Add `hooks.rs`: HookPoint enum, `fire_hook()`, static AbilityTable/ItemTable
+- Enrich `MoveData`: effect, target, secondary, self_boost, drain, recoil, heal, multi_hit fields
+- Update `gen-data.py` to populate new fields from PS data
+- Refactor `turn.rs`: replace inline ability/item checks with `fire_hook()` at initial 5 hook points
+- Migrate existing 50 abilities / 30 items to handler functions
+- Remove `protocol: Vec<String>` from Battle; add optional `events: ArrayVec<Event, 64>`
+- **Gate**: All existing tests pass. No performance regression.
+
+### Phase 1: Core Mechanics Completion (2 weeks)
+
+- Activate all ~20 hook points
+- Data-driven move execution for ~90% of moves via MoveEffect dispatch
+- Generic drain/recoil/heal from MoveData fields
+- Volatile status system (Taunt, Encore, Disable, Yawn, Perish Song)
+- Trapping (partial trap, Mean Look, Arena Trap)
+- Full weather/terrain interactions
+- Remaining priority brackets (Prankster, Gale Wings, Triage)
+- **Gate**: 200+ unit tests. Property tests for state invariants.
+
+### Phase 2: Full Randbats Coverage (2 weeks)
+
+- All abilities in `sets.json` roles (~120 abilities)
+- All items in randbats pools (~60 items)
+- Complex abilities: Mold Breaker (suppression), Magic Guard, Contrary, Unaware, Regenerator, Multiscale
+- Complex items: Rocky Helmet, Eject Button, Red Card, berries
+- Custom move handlers for ~50 unique moves (Trick, Knock Off, Rapid Spin, etc.)
+- **Tera in the action space**: Terastallization is a legal action choice, not just a passive mechanic
+- **Gate**: Per-ability/item unit tests. Statistical diff shows <5% win-rate gap.
+
+### Phase 3: Team Generation (1.5 weeks)
+
+- Vendor `sets.json`, compile into const data at build time
+- `teamgen.rs`: species selection with type/weakness constraints, role → moves → ability → item
+- Build `pkmn-napi` crate (Node N-API via `napi-rs`): createBattle, clone, step, getLegalActions, observe, isEnded, getWinner
+- Validate team distributions: 100K teams, compare species/move frequencies vs PS (≥95% overlap)
+- **Gate**: N-API integration tests pass. `createBattle()` → full game → winner in <1ms.
+
+### Phase 4: Validation + N-API Integration (1 week)
+
+- Build stat-diff harness (`tools/stat-diff/`)
+- Run 10K games, identify and fix systematic biases
+- Add `batch_step()` for vectorized environments
+- WASM build with full API
+- Performance optimization pass
+- **Gate**: CI statistical gate passes. Win-rate within ±2% of `@pkmn/sim`. No panics in 100K games.
+
+### Phase 5: Self-Play (1 week)
+
+- Publish N-API addon as npm package
+- Adapter in randbats-bot: swap BattleAdapter to use RustBattle
+- Benchmark MCTS throughput improvement (target: 50x+ over `@pkmn/sim`)
+- Run full training iteration (50K games) on Rust engine
+- **Gate**: Elo of Rust-trained agent within 50 points of JS-trained agent on PS ladder.
+
+### Integration Notes
+
+- **Randbats-bot integration is via N-API** — bot is TypeScript/`@pkmn/sim`, bottleneck is ~500µs toJSON/fromJSON clone that Rust eliminates
+- **Team generation is built-in** — vendor `sets.json` + simplified port, no external dependency at runtime
+- **Tera must be in the action space** — the RL agent needs to decide when to Terastallize
+
+**Estimated timeline: 8–9 weeks to full MVP.**
 
 ## Architecture
 
 ```
-pkmn-engine-rs/
-├── crates/
-│   ├── pkmn-core/       # Types, type chart, base stats, move/ability/item data
-│   ├── pkmn-engine/     # Battle simulation: turn execution, state machine
-│   └── pkmn-wasm/       # WASM bindings for browser/Node.js
-├── data/
-│   └── gen9/            # Generated data tables (from PS source)
-├── docs/                # This plan, architecture notes
-├── tests/
-│   ├── fixtures/        # PS replay logs as ground truth
-│   └── integration/     # Full battle differential tests
-└── tools/
-    └── gen-data/        # Script to extract data from pokemon-showdown
+crates/
+├── pkmn-core/        # Types, data tables, damage formula
+├── pkmn-engine/      # Battle state machine + event/hook system
+│   ├── hooks.rs      # Hook dispatch tables + fire_hook()
+│   ├── effects/      # ability_handlers.rs, item_handlers.rs, move_handlers.rs
+│   ├── turn.rs       # Turn loop with hook calls
+│   └── teamgen.rs    # Randbats team generation
+├── pkmn-napi/        # Node N-API addon for bot integration
+├── pkmn-wasm/        # WASM bindings for browser
+└── pkmn-ffi/         # C FFI for Python (future)
 ```
 
-### Crate Responsibilities
+## Risks
 
-**pkmn-core**: Zero-dependency data layer
-- Pokemon species data (base stats, types, abilities, weight)
-- Move data (base power, type, category, accuracy, priority, flags, effect)
-- Ability data (ID, effect hooks)
-- Item data (ID, effect hooks)
-- Type effectiveness chart (18x18 matrix)
-- Nature stat modifiers
-- All data is compile-time constant (no runtime loading)
+1. **Long-tail mechanic interactions** (high probability, medium impact): Ability×move×item×terrain combinatorial explosion. Mitigated by hook system making each interaction independently testable, statistical diff catching systematic errors, and scoping to randbats pool only (~200 species).
 
-**pkmn-engine**: Battle simulation
-- `Battle` struct: full game state (~2KB, trivially cloneable)
-- `Battle::new(teams, seed)` — create from teams
-- `Battle::choices(player)` — legal actions
-- `Battle::apply(p1_choice, p2_choice)` — advance one turn
-- Turn execution: priority calc, damage, effects, fainting, end-of-turn
-- State machine: handles forced switches, multi-turn moves, etc.
-- RNG: seeded PRNG for reproducibility
-- Generation trait for multi-gen support
+2. **Policy doesn't transfer to PS ladder** (medium probability, high impact): Systematic mechanic differences cause wrong heuristics. Mitigated by per-mechanic unit tests against `@smogon/calc`, Elo validation on actual PS via poke-env, and focused statistical diff on high-impact mechanics.
 
-**pkmn-wasm**: Thin WASM wrapper
-- Exposes Battle API to JavaScript
-- Serialization of state for external consumption
-- Target: <500KB WASM bundle
+3. **Battle struct bloat** (low-medium probability, high impact): Adding volatile/effect state exceeds 4KB or breaks cheap Clone. Mitigated by removing protocol Vec, using bitflags + fixed arrays, fixed-size ring buffers for delayed actions, and CI benchmark gate (clone <200ns, Battle <4KB).
 
-## State Representation
+## Key Files
 
-```rust
-struct Battle {
-    sides: [Side; 2],       // 2 players
-    field: Field,           // weather, terrain, trick room, gravity
-    turn: u16,
-    rng: PseudoRng,
-    result: Option<BattleResult>,
-}
-
-struct Side {
-    active: u8,             // index into team
-    team: [Pokemon; 6],
-    side_conditions: SideConditions,  // hazards, screens, tailwind
-}
-
-struct Pokemon {
-    species: SpeciesId,     // u16 index
-    level: u8,
-    hp: u16,
-    max_hp: u16,
-    status: Status,         // u8 bitflags
-    boosts: Boosts,         // [i8; 7]
-    moves: [MoveSlot; 4],
-    ability: AbilityId,     // u16
-    item: ItemId,           // u16
-    types: [Type; 2],
-    stats: Stats,           // computed at level
-    // Volatile state
-    volatiles: Volatiles,   // bitflags for confusion, substitute, etc.
-    // ~64 bytes total
-}
-```
-
-Total battle state: ~1.5KB. Clone cost: ~1.5KB memcpy (trivial for MCTS).
-
-## Performance Targets
-
-| Metric | @pkmn/sim (JS) | Target | Method |
-|--------|----------------|--------|--------|
-| Battles/sec (1 core) | ~500 | 50,000+ | Compact state, no alloc |
-| Clone cost | ~500KB alloc | ~1.5KB memcpy | Bitpacked state |
-| Memory per battle | ~500KB | ~2KB | No heap allocation in hot path |
-| WASM bundle | N/A | <500KB | Minimal dependencies |
-
-## Testing Strategy
-
-### 1. Unit Tests (per mechanic)
-- Damage formula: compare against @smogon/calc for known inputs
-- Type effectiveness: exhaustive 18x18 matrix
-- Priority: verify correct ordering for all priority brackets
-- Each ability/item: isolated test of its effect
-
-### 2. Integration Tests (full battles)
-- Download 50K+ replays from replay.pokemonshowdown.com
-- For each replay: feed same teams + choices into our engine
-- Compare output protocol line-by-line
-- CI gate: 100% of fixtures must pass
-
-### 3. Differential Fuzzing
-- Generate random teams + random choices
-- Run in both our engine and @pkmn/sim (via Node.js subprocess)
-- Compare results
-- Find edge cases automatically
-
-### 4. Property Testing
-- HP never exceeds max_hp
-- Fainted Pokemon can't act
-- Turn count always increases
-- Legal moves are always a subset of known moves
-
-## Milestones
-
-### M1: Core Data + Damage Formula (Week 1)
-- [ ] Type chart (18 types, effectiveness matrix)
-- [ ] Species data (top 200 randbats Pokemon)
-- [ ] Move data (top 300 randbats moves)
-- [ ] Gen 9 damage formula (matching @smogon/calc)
-- [ ] 50+ unit tests
-
-### M2: Turn Execution (Week 2-3)
-- [ ] Priority calculation (brackets -7 to +5)
-- [ ] Move execution (damage, accuracy, secondary effects)
-- [ ] Switching (in-turn and end-of-turn)
-- [ ] Fainting + forced switch
-- [ ] Weather/terrain application and end-of-turn
-- [ ] Entry hazards (Stealth Rock, Spikes, Toxic Spikes)
-
-### M3: Abilities + Items (Week 3-4)
-- [ ] Top 50 abilities (Intimidate, Levitate, Mold Breaker, etc.)
-- [ ] Top 30 items (Choice Band/Specs/Scarf, Life Orb, Leftovers, etc.)
-- [ ] Ability triggers (on-switch, on-hit, on-damage, end-of-turn)
-
-### M4: Full Battle Loop (Week 4-5)
-- [ ] Complete game state machine (team preview → battle → end)
-- [ ] All volatile statuses (confusion, substitute, encore, etc.)
-- [ ] Multi-turn moves (Outrage, Petal Dance)
-- [ ] Terastallization
-- [ ] 100+ integration tests against replay fixtures
-
-### M5: WASM + Benchmarks (Week 5-6)
-- [ ] WASM compilation via wasm-pack
-- [ ] JavaScript API bindings
-- [ ] Benchmark suite (battles/sec, clone cost)
-- [ ] Integration with randbats-bot self-play harness
-
-## Data Generation
-
-Pokemon Showdown's data lives in `pokemon-showdown/data/`. We extract:
-- `pokedex.ts` → species base stats, types, abilities, weight
-- `moves.ts` → move data (BP, type, category, accuracy, flags, effects)
-- `abilities.ts` → ability effects
-- `items.ts` → item effects
-
-A `tools/gen-data/` script parses these into Rust source (compile-time constants).
-
-## Multi-Gen Architecture
-
-```rust
-pub trait Generation {
-    fn damage_formula(&self, ctx: &DamageContext) -> DamageRoll;
-    fn speed_order(&self, battle: &Battle) -> Vec<ActionOrder>;
-    fn end_of_turn(&self, battle: &mut Battle);
-    fn apply_weather(&self, battle: &mut Battle);
-    // ~20 methods covering gen-specific behavior
-}
-
-pub struct Gen9;
-impl Generation for Gen9 { ... }
-```
-
-Adding a new gen = implement the trait + add gen-specific data tables.
-
-## Key Design Principles
-
-1. **No heap allocation in the hot path** — Battle state is stack-allocated, cloning is memcpy
-2. **Data-oriented design** — Arrays of structs, cache-friendly layout
-3. **Correctness first, optimize second** — Get it right, then make it fast
-4. **Test against ground truth** — PS replays are the oracle
-5. **Compile-time data** — All Pokemon/move/ability data is `const`
+- `crates/pkmn-engine/src/turn.rs` — Turn execution loop
+- `crates/pkmn-engine/src/abilities.rs` — Ability effects
+- `crates/pkmn-engine/src/items_effect.rs` — Item effects
+- `crates/pkmn-core/src/gen/move_data.rs` — Move data tables
+- `tools/gen-data.py` — Data generation from PS source
+- `tests/fixtures/replay_events/` — Replay fixtures (regression)

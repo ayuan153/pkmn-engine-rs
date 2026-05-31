@@ -1,21 +1,17 @@
 # pkmn-engine-rs
 
-**192,000 games/sec** — A high-performance Pokémon battle simulation engine in Rust.
-
-100% accurate. 384x faster than the reference JS implementation. Built for AI search.
-
-## Performance
-
-| Metric | pkmn-engine-rs | @pkmn/sim (JS) | Speedup |
-|--------|---------------|----------------|----------|
-| Games/sec | 192,000 | ~500 | **384x** |
-| Clone cost | 130ns | ~500µs | **3,846x** |
-| Memory/battle | ~2KB | ~500KB | **250x** |
-| State size | 104 bytes | N/A | — |
+A high-performance Pokémon battle simulation engine in Rust, built for self-play reinforcement learning.
 
 ## Why?
 
-Monte Carlo Tree Search and minimax agents need to simulate **millions** of Pokemon battles to find optimal plays. JavaScript engines top out at ~500 games/sec. pkmn-engine-rs gives you 192,000 — enough to search 10+ turns deep in real time.
+Monte Carlo Tree Search and RL agents need to simulate **millions** of Pokemon battles to find optimal plays. JavaScript engines (`@pkmn/sim`) top out at ~500 games/sec. pkmn-engine-rs targets 100–1000x speedup with a compact, cloneable battle state — enough to search many turns deep in real time.
+
+## Performance
+
+**To be benchmarked.** Target: 100–1000x over `@pkmn/sim` (JS). The architecture is designed for:
+- No heap allocation in the hot path
+- Battle state <4KB, trivially cloneable via memcpy
+- All data tables compiled as `const` (no runtime loading)
 
 ## Features
 
@@ -27,7 +23,6 @@ Monte Carlo Tree Search and minimax agents need to simulate **millions** of Poke
 - ✅ Boost moves (Swords Dance, Dragon Dance, Shell Smash, …)
 - ✅ Complete type chart (18 types), stat calc with natures
 - ✅ WASM target (<500KB) for browser use
-- ✅ Multi-gen architecture (Gen 4–9 via trait dispatch)
 
 ## Quick Start
 
@@ -37,10 +32,6 @@ cd pkmn-engine-rs
 cargo build --release
 cargo test
 ```
-
-## Testing
-
-Differential tested against [Pokémon Showdown](https://github.com/smogon/pokemon-showdown) replay fixtures. Every damage roll, every interaction, verified tick-for-tick against the reference implementation. 120 unit + integration tests and growing. 117 unit + integration tests and growing. 117 unit + integration tests and growing.
 
 ## Architecture
 
@@ -53,11 +44,19 @@ crates/
 
 See [docs/plan.md](docs/plan.md) for the full development plan.
 
+## Testing
+
+Differential tested against [Pokémon Showdown](https://github.com/smogon/pokemon-showdown) replay fixtures. The type chart is 100% correct across 3126 damage events from 142 real replays.
+
+The project is pivoting away from byte-for-byte protocol matching as the correctness metric. The new validation approach uses per-mechanic unit tests (hard gate), controlled damage comparisons against `@smogon/calc` (hard gate), and statistical differential testing against `@pkmn/sim` on outcome distributions (hard gate at ±2% win-rate).
+
 ## Status
 
-Early development. Core engine works, expanding move/ability/species coverage toward full Gen 9 competitive singles.
+**Early development — active refactor in progress.**
 
-**Accuracy**: 0 type-chart failures on 3126 damage events from 142 real replays. 80.6% exact match (within damage roll range), 88.6% within ±10%. Actively grinding toward 100% exact match.
+Core engine works: turn execution, damage, switching, hazards, weather, status, boosts, abilities, items, Terastallization. Currently refactoring the effect dispatch system from inline match blocks to a hook-based event system for extensibility (see [docs/plan.md](docs/plan.md)).
+
+**Goal**: A rules-correct Gen 9 Random Battle singles engine for self-play RL, with policy transfer to the real Pokémon Showdown ladder.
 
 ## License
 
