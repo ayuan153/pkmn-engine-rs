@@ -77,6 +77,7 @@ pub enum AbilityId {
     InnerFocus,
     Infiltrator,
     Synchronize,
+    RockHead,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -164,6 +165,7 @@ static ABILITY_TABLE: &[AbilityData] = &[
     AbilityData { id: AbilityId::SupremeOverlord, name: "Supreme Overlord", triggers: &[AbilityTrigger::Passive] },
     AbilityData { id: AbilityId::CursedBody, name: "Cursed Body", triggers: &[AbilityTrigger::OnBeingHit] },
     AbilityData { id: AbilityId::SkillLink, name: "Skill Link", triggers: &[AbilityTrigger::ModifyDamage] },
+    AbilityData { id: AbilityId::RockHead, name: "Rock Head", triggers: &[AbilityTrigger::Passive] },
 ];
 
 pub fn get_ability(id: AbilityId) -> &'static AbilityData {

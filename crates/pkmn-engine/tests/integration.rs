@@ -933,4 +933,128 @@ mod tests {
         // Game should have ended or be in a valid state
         assert!(battle.turn > 0);
     }
+
+    // === Data-driven damaging self-effect tests ===
+
+    fn drain_punch_slot() -> MoveSlot {
+        MoveSlot { move_id: 409, pp: 10, max_pp: 10 }
+    }
+
+    fn brave_bird_slot() -> MoveSlot {
+        MoveSlot { move_id: 413, pp: 15, max_pp: 15 }
+    }
+
+    fn close_combat_slot() -> MoveSlot {
+        MoveSlot { move_id: 370, pp: 5, max_pp: 5 }
+    }
+
+    fn draco_meteor_slot() -> MoveSlot {
+        MoveSlot { move_id: 434, pp: 5, max_pp: 5 }
+    }
+
+    fn shell_smash_slot() -> MoveSlot {
+        MoveSlot { move_id: 504, pp: 15, max_pp: 15 }
+    }
+
+    #[test]
+    fn test_drain_heals_attacker() {
+        // Drain Punch heals 1/2 of damage dealt
+        let mut p1 = make_pokemon("Conkeldurr", Nature::Adamant, [drain_punch_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        p1.ability_id = AbilityId::None;
+        let p2 = make_pokemon("Blissey", Nature::Bold, [empty_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, p2);
+        // Reduce attacker HP to test healing
+        let max_hp = battle.sides[0].active().max_hp;
+        battle.sides[0].active_mut().hp = max_hp / 2;
+        let hp_before = battle.sides[0].active().hp;
+        battle.execute_choice(0, Choice::Move(0));
+        // Attacker should have healed (hp increased)
+        assert!(battle.sides[0].active().hp > hp_before, "Drain should heal attacker");
+        // Check protocol contains drain message
+        let log = battle.protocol.join("\n");
+        assert!(log.contains("[from] drain"), "Protocol should contain drain message");
+    }
+
+    #[test]
+    fn test_recoil_damages_attacker() {
+        // Brave Bird deals 1/3 recoil
+        let mut p1 = make_pokemon("Corviknight", Nature::Adamant, [brave_bird_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        p1.ability_id = AbilityId::None; // No Rock Head
+        let p2 = make_pokemon("Blissey", Nature::Bold, [empty_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, p2);
+        let hp_before = battle.sides[0].active().hp;
+        battle.execute_choice(0, Choice::Move(0));
+        // Attacker should have taken recoil damage
+        assert!(battle.sides[0].active().hp < hp_before, "Recoil should damage attacker");
+        let log = battle.protocol.join("\n");
+        assert!(log.contains("[from] Recoil"), "Protocol should contain Recoil message");
+    }
+
+    #[test]
+    fn test_rock_head_negates_recoil() {
+        // Rock Head prevents recoil damage
+        let mut p1 = make_pokemon("Corviknight", Nature::Adamant, [brave_bird_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        p1.ability_id = AbilityId::RockHead;
+        let p2 = make_pokemon("Blissey", Nature::Bold, [empty_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, p2);
+        let hp_before = battle.sides[0].active().hp;
+        battle.execute_choice(0, Choice::Move(0));
+        // Attacker should NOT have taken recoil damage
+        assert_eq!(battle.sides[0].active().hp, hp_before, "Rock Head should negate recoil");
+        let log = battle.protocol.join("\n");
+        assert!(!log.contains("[from] Recoil"), "No Recoil message with Rock Head");
+    }
+
+    #[test]
+    fn test_close_combat_self_drops() {
+        // Close Combat: def -1, spd -1
+        let p1 = make_pokemon("Lucario", Nature::Adamant, [close_combat_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let p2 = make_pokemon("Blissey", Nature::Bold, [empty_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, p2);
+        assert_eq!(battle.sides[0].active().boosts.def, 0);
+        assert_eq!(battle.sides[0].active().boosts.spd, 0);
+        battle.execute_choice(0, Choice::Move(0));
+        assert_eq!(battle.sides[0].active().boosts.def, -1, "Close Combat should drop def by 1");
+        assert_eq!(battle.sides[0].active().boosts.spd, -1, "Close Combat should drop spd by 1");
+        let log = battle.protocol.join("\n");
+        assert!(log.contains("|-unboost|") && log.contains("|def|1"), "Should emit unboost def");
+        assert!(log.contains("|spd|1"), "Should emit unboost spd");
+    }
+
+    #[test]
+    fn test_draco_meteor_spa_minus_2() {
+        // Draco Meteor: spa -2
+        let p1 = make_pokemon("Dragapult", Nature::Modest, [draco_meteor_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let p2 = make_pokemon("Blissey", Nature::Bold, [empty_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, p2);
+        assert_eq!(battle.sides[0].active().boosts.spa, 0);
+        battle.execute_choice(0, Choice::Move(0));
+        // Draco Meteor has 90% accuracy — if it hits, spa drops by 2
+        if battle.sides[1].active().hp < battle.sides[1].active().max_hp {
+            // Hit — check spa drop
+            assert_eq!(battle.sides[0].active().boosts.spa, -2, "Draco Meteor should drop spa by 2");
+            let log = battle.protocol.join("\n");
+            assert!(log.contains("|-unboost|") && log.contains("|spa|2"), "Should emit unboost spa 2");
+        }
+        // If it missed, spa stays at 0 (no self-effect on miss)
+    }
+
+    #[test]
+    fn test_shell_smash_boosts() {
+        // Shell Smash: +2 atk/spa/spe, -1 def/spd
+        let p1 = make_pokemon("Cloyster", Nature::Adamant, [shell_smash_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let p2 = make_pokemon("Blissey", Nature::Bold, [empty_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, p2);
+        battle.execute_choice(0, Choice::Move(0));
+        assert_eq!(battle.sides[0].active().boosts.atk, 2);
+        assert_eq!(battle.sides[0].active().boosts.spa, 2);
+        assert_eq!(battle.sides[0].active().boosts.spe, 2);
+        assert_eq!(battle.sides[0].active().boosts.def, -1);
+        assert_eq!(battle.sides[0].active().boosts.spd, -1);
+        // Check protocol order: unboosts before boosts
+        let log = battle.protocol.join("\n");
+        let unboost_def_pos = log.find("|-unboost|").unwrap();
+        let boost_atk_pos = log.find("|-boost|").unwrap();
+        assert!(unboost_def_pos < boost_atk_pos, "Unboosts should come before boosts in protocol");
+    }
 }

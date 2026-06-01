@@ -447,24 +447,27 @@ impl Battle {
             let hp_str = self.hp_display(defender_idx);
             self.emit(format!("|-damage|p{}a: {}|{}", defender_idx+1, def_name, hp_str));
 
-            // Drain moves (Drain Punch, Giga Drain, etc.) — heal 1/2 of damage dealt
+            // Drain moves — heal attacker by fraction of damage dealt (data-driven)
             let move_name_lower2 = move_data.name.to_lowercase();
-            if matches!(move_name_lower2.as_str(), "drain punch" | "giga drain" | "horn leech" | "leech life" | "oblivion wing" | "parabolic charge") {
-                let heal = (damage / 2).max(1);
-                let mon = self.sides[player as usize].active_mut();
-                if mon.is_alive() && mon.hp < mon.max_hp {
-                    mon.hp = (mon.hp + heal).min(mon.max_hp);
-                    let atk_name = self.species_name(player);
-                    let atk_hp = self.sides[player as usize].active().hp;
-                    let atk_max = self.sides[player as usize].active().max_hp;
-                    let status_str = match self.sides[player as usize].active().status {
-                        Status::Toxic => " tox",
-                        Status::Burn => " brn",
-                        Status::Poison => " psn",
-                        Status::Paralyze => " par",
-                        _ => "",
-                    };
-                    self.emit(format!("|-heal|p{}a: {}|{}/{}{}|[from] drain|[of] p{}a: {}", player+1, atk_name, atk_hp, atk_max, status_str, defender_idx+1, def_name));
+            if let Some(effect) = crate::events::damaging_self_effect(move_name_lower2.as_str()) {
+                if effect.drain.1 > 0 {
+                    // PS rounding: floor(damage * num / denom), min 1
+                    let heal = ((damage as u32 * effect.drain.0 as u32) / effect.drain.1 as u32).max(1) as u16;
+                    let mon = self.sides[player as usize].active_mut();
+                    if mon.is_alive() && mon.hp < mon.max_hp {
+                        mon.hp = (mon.hp + heal).min(mon.max_hp);
+                        let atk_name = self.species_name(player);
+                        let atk_hp = self.sides[player as usize].active().hp;
+                        let atk_max = self.sides[player as usize].active().max_hp;
+                        let status_str = match self.sides[player as usize].active().status {
+                            Status::Toxic => " tox",
+                            Status::Burn => " brn",
+                            Status::Poison => " psn",
+                            Status::Paralyze => " par",
+                            _ => "",
+                        };
+                        self.emit(format!("|-heal|p{}a: {}|{}/{}{}|[from] drain|[of] p{}a: {}", player+1, atk_name, atk_hp, atk_max, status_str, defender_idx+1, def_name));
+                    }
                 }
             }
 
@@ -504,22 +507,14 @@ impl Battle {
                 self.apply_secondaries(player, defender_idx, &move_data);
             }
 
-            // Self-stat drops (Close Combat, Superpower) emit BEFORE contact recoil per PS protocol
-            if matches!(move_data.name, "Close Combat") {
-                let atk_name = self.species_name(player);
-                let mon = self.sides[player as usize].active_mut();
-                mon.boosts.def = (mon.boosts.def - 1).max(-6);
-                mon.boosts.spd = (mon.boosts.spd - 1).max(-6);
-                self.emit(format!("|-unboost|p{}a: {}|def|1", player+1, atk_name));
-                self.emit(format!("|-unboost|p{}a: {}|spd|1", player+1, atk_name));
-            }
-            if move_data.name == "Superpower" {
-                let atk_name = self.species_name(player);
-                let mon = self.sides[player as usize].active_mut();
-                mon.boosts.atk = (mon.boosts.atk - 1).max(-6);
-                mon.boosts.def = (mon.boosts.def - 1).max(-6);
-                self.emit(format!("|-unboost|p{}a: {}|atk|1", player+1, atk_name));
-                self.emit(format!("|-unboost|p{}a: {}|def|1", player+1, atk_name));
+            // Self-stat drops (data-driven) — emit BEFORE contact recoil per PS protocol
+            {
+                let move_name_lower3 = move_data.name.to_lowercase();
+                if let Some(effect) = crate::events::damaging_self_effect(move_name_lower3.as_str()) {
+                    if let Some(ref boosts) = effect.self_boosts {
+                        self.apply_boost_effect(player, boosts);
+                    }
+                }
             }
 
             // Contact recoil abilities (Rough Skin, Iron Barbs) — triggers even if defender fainted
@@ -565,25 +560,28 @@ impl Battle {
             }
         }
 
-        // Move recoil (Brave Bird, Flare Blitz, etc.) — 1/3 of damage dealt
+        // Move recoil (data-driven) — Rock Head / Magic Guard negate
         let move_name_lower = move_data.name.to_lowercase();
-        if matches!(move_name_lower.as_str(), "brave bird" | "flare blitz" | "double-edge" | "head smash" | "wild charge" | "wood hammer" | "take down") {
-            let recoil_fraction = match move_name_lower.as_str() {
-                "head smash" => 2, // 1/2
-                "take down" => 4,  // 1/4
-                _ => 3,            // 1/3
-            };
-            let recoil = (damage / recoil_fraction).max(1);
-            if self.sides[player as usize].active().is_alive() {
-                self.apply_damage(player, recoil);
-                let atk_name = self.species_name(player);
-                let hp = self.sides[player as usize].active().hp;
-                let max_hp = self.sides[player as usize].active().max_hp;
-                if hp == 0 {
-                    self.emit(format!("|-damage|p{}a: {}|0 fnt|[from] Recoil", player+1, atk_name));
-                    self.emit(format!("|faint|p{}a: {}", player+1, atk_name));
-                } else {
-                    self.emit(format!("|-damage|p{}a: {}|{}/{}|[from] Recoil", player+1, atk_name, hp, max_hp));
+        if let Some(effect) = crate::events::damaging_self_effect(move_name_lower.as_str()) {
+            if effect.recoil.1 > 0 {
+                let attacker_ability = self.sides[player as usize].active().ability_id;
+                let negated = attacker_ability == pkmn_core::abilities::AbilityId::RockHead
+                    || attacker_ability == pkmn_core::abilities::AbilityId::MagicGuard;
+                if !negated {
+                    // PS rounding: floor(damage * num / denom), min 1
+                    let recoil = ((damage as u32 * effect.recoil.0 as u32) / effect.recoil.1 as u32).max(1) as u16;
+                    if self.sides[player as usize].active().is_alive() {
+                        self.apply_damage(player, recoil);
+                        let atk_name = self.species_name(player);
+                        let hp = self.sides[player as usize].active().hp;
+                        let max_hp = self.sides[player as usize].active().max_hp;
+                        if hp == 0 {
+                            self.emit(format!("|-damage|p{}a: {}|0 fnt|[from] Recoil", player+1, atk_name));
+                            self.emit(format!("|faint|p{}a: {}", player+1, atk_name));
+                        } else {
+                            self.emit(format!("|-damage|p{}a: {}|{}/{}|[from] Recoil", player+1, atk_name, hp, max_hp));
+                        }
+                    }
                 }
             }
         }
@@ -595,9 +593,6 @@ impl Battle {
         if !sheer_force_active {
             self.apply_life_orb_recoil(player);
         }
-
-        // Post-damage self-stat drops (Close Combat, etc.)
-        self.apply_post_damage_effects(player, &move_data);
 
         // Multi-turn move handling
         self.handle_multi_turn(player, move_idx, &move_data);
@@ -644,24 +639,6 @@ impl Battle {
                     .active_mut()
                     .volatiles
                     .insert(Volatiles::MUST_RECHARGE);
-            }
-            _ => {}
-        }
-    }
-
-    fn apply_post_damage_effects(&mut self, player: u8, move_data: &MoveData) {
-        let pname = self.species_name(player);
-        let name = move_data.name.to_lowercase();
-        match name.as_str() {
-            "overheat" => {
-                let mon = self.sides[player as usize].active_mut();
-                mon.boosts.spa = (mon.boosts.spa - 2).max(-6);
-                self.emit(format!("|-unboost|p{}a: {}|spa|2", player+1, pname));
-            }
-            "draco meteor" => {
-                let mon = self.sides[player as usize].active_mut();
-                mon.boosts.spa = (mon.boosts.spa - 2).max(-6);
-                self.emit(format!("|-unboost|p{}a: {}|spa|2", player+1, pname));
             }
             _ => {}
         }
@@ -1265,59 +1242,53 @@ impl Battle {
     }
 
     /// Apply a data-driven boost effect to a player's active Pokemon.
-    /// Emits the appropriate protocol messages for each non-zero boost.
+    /// Emits unboosts first, then boosts (PS protocol order for mixed moves like Shell Smash).
     fn apply_boost_effect(&mut self, player: u8, boosts: &crate::events::BoostEffect) {
         let atk_name = self.species_name(player);
-        let mon = self.sides[player as usize].active_mut();
 
-        if boosts.atk != 0 {
-            let old = mon.boosts.atk;
-            mon.boosts.atk = (mon.boosts.atk + boosts.atk).clamp(-6, 6);
-            let actual = (mon.boosts.atk - old).unsigned_abs();
-            if boosts.atk > 0 {
-                self.emit(format!("|-boost|p{}a: {}|atk|{}", player + 1, atk_name, actual));
-            } else {
-                self.emit(format!("|-unboost|p{}a: {}|atk|{}", player + 1, atk_name, actual));
+        // Stat order for iteration: atk, def, spa, spd, spe
+        let stats: [(i8, &str); 5] = [
+            (boosts.atk, "atk"),
+            (boosts.def, "def"),
+            (boosts.spa, "spa"),
+            (boosts.spd, "spd"),
+            (boosts.spe, "spe"),
+        ];
+
+        // First pass: apply all stat changes
+        let mon = self.sides[player as usize].active_mut();
+        let old_atk = mon.boosts.atk;
+        let old_def = mon.boosts.def;
+        let old_spa = mon.boosts.spa;
+        let old_spd = mon.boosts.spd;
+        let old_spe = mon.boosts.spe;
+        if boosts.atk != 0 { mon.boosts.atk = (mon.boosts.atk + boosts.atk).clamp(-6, 6); }
+        if boosts.def != 0 { mon.boosts.def = (mon.boosts.def + boosts.def).clamp(-6, 6); }
+        if boosts.spa != 0 { mon.boosts.spa = (mon.boosts.spa + boosts.spa).clamp(-6, 6); }
+        if boosts.spd != 0 { mon.boosts.spd = (mon.boosts.spd + boosts.spd).clamp(-6, 6); }
+        if boosts.spe != 0 { mon.boosts.spe = (mon.boosts.spe + boosts.spe).clamp(-6, 6); }
+
+        let new_vals = [
+            self.sides[player as usize].active().boosts.atk,
+            self.sides[player as usize].active().boosts.def,
+            self.sides[player as usize].active().boosts.spa,
+            self.sides[player as usize].active().boosts.spd,
+            self.sides[player as usize].active().boosts.spe,
+        ];
+        let old_vals = [old_atk, old_def, old_spa, old_spd, old_spe];
+
+        // Emit unboosts first (PS order)
+        for (i, &(change, stat_name)) in stats.iter().enumerate() {
+            if change < 0 {
+                let actual = (old_vals[i] - new_vals[i]).unsigned_abs();
+                self.emit(format!("|-unboost|p{}a: {}|{}|{}", player + 1, atk_name, stat_name, actual));
             }
         }
-        if boosts.def != 0 {
-            let old = self.sides[player as usize].active().boosts.def;
-            self.sides[player as usize].active_mut().boosts.def = (old + boosts.def).clamp(-6, 6);
-            let actual = (self.sides[player as usize].active().boosts.def - old).unsigned_abs();
-            if boosts.def > 0 {
-                self.emit(format!("|-boost|p{}a: {}|def|{}", player + 1, atk_name, actual));
-            } else {
-                self.emit(format!("|-unboost|p{}a: {}|def|{}", player + 1, atk_name, actual));
-            }
-        }
-        if boosts.spa != 0 {
-            let old = self.sides[player as usize].active().boosts.spa;
-            self.sides[player as usize].active_mut().boosts.spa = (old + boosts.spa).clamp(-6, 6);
-            let actual = (self.sides[player as usize].active().boosts.spa - old).unsigned_abs();
-            if boosts.spa > 0 {
-                self.emit(format!("|-boost|p{}a: {}|spa|{}", player + 1, atk_name, actual));
-            } else {
-                self.emit(format!("|-unboost|p{}a: {}|spa|{}", player + 1, atk_name, actual));
-            }
-        }
-        if boosts.spd != 0 {
-            let old = self.sides[player as usize].active().boosts.spd;
-            self.sides[player as usize].active_mut().boosts.spd = (old + boosts.spd).clamp(-6, 6);
-            let actual = (self.sides[player as usize].active().boosts.spd - old).unsigned_abs();
-            if boosts.spd > 0 {
-                self.emit(format!("|-boost|p{}a: {}|spd|{}", player + 1, atk_name, actual));
-            } else {
-                self.emit(format!("|-unboost|p{}a: {}|spd|{}", player + 1, atk_name, actual));
-            }
-        }
-        if boosts.spe != 0 {
-            let old = self.sides[player as usize].active().boosts.spe;
-            self.sides[player as usize].active_mut().boosts.spe = (old + boosts.spe).clamp(-6, 6);
-            let actual = (self.sides[player as usize].active().boosts.spe - old).unsigned_abs();
-            if boosts.spe > 0 {
-                self.emit(format!("|-boost|p{}a: {}|spe|{}", player + 1, atk_name, actual));
-            } else {
-                self.emit(format!("|-unboost|p{}a: {}|spe|{}", player + 1, atk_name, actual));
+        // Then emit boosts
+        for (i, &(change, stat_name)) in stats.iter().enumerate() {
+            if change > 0 {
+                let actual = (new_vals[i] - old_vals[i]).unsigned_abs();
+                self.emit(format!("|-boost|p{}a: {}|{}|{}", player + 1, atk_name, stat_name, actual));
             }
         }
     }
@@ -1546,83 +1517,7 @@ impl Battle {
                 }
                 return;
             }
-            // Boost moves (swords dance, dragon dance, calm mind now data-driven via events.rs)
-            "iron defense" | "acid armor" => {
-                let mon = self.sides[attacker as usize].active_mut();
-                let old = mon.boosts.def;
-                mon.boosts.def = (mon.boosts.def + 2).min(6);
-                let actual = mon.boosts.def - old;
-                let atk_name = self.species_name(attacker);
-                self.emit(format!("|-boost|p{}a: {}|def|{}", attacker+1, atk_name, actual));
-            }
-            "nasty plot" => {
-                let mon = self.sides[attacker as usize].active_mut();
-                let old = mon.boosts.spa;
-                mon.boosts.spa = (mon.boosts.spa + 2).min(6);
-                let actual = mon.boosts.spa - old;
-                let atk_name = self.species_name(attacker);
-                self.emit(format!("|-boost|p{}a: {}|spa|{}", attacker+1, atk_name, actual));
-            }
-            "agility" | "rock polish" => {
-                let mon = self.sides[attacker as usize].active_mut();
-                let old = mon.boosts.spe;
-                mon.boosts.spe = (mon.boosts.spe + 2).min(6);
-                let actual = mon.boosts.spe - old;
-                let atk_name = self.species_name(attacker);
-                self.emit(format!("|-boost|p{}a: {}|spe|{}", attacker+1, atk_name, actual));
-            }
-            "shift gear" => {
-                let (actual_spe, actual_atk) = {
-                    let mon = self.sides[attacker as usize].active_mut();
-                    let old_spe = mon.boosts.spe;
-                    let old_atk = mon.boosts.atk;
-                    mon.boosts.spe = (mon.boosts.spe + 2).min(6);
-                    mon.boosts.atk = (mon.boosts.atk + 1).min(6);
-                    (mon.boosts.spe - old_spe, mon.boosts.atk - old_atk)
-                };
-                let atk_name = self.species_name(attacker);
-                self.emit(format!("|-boost|p{}a: {}|spe|{}", attacker+1, atk_name, actual_spe));
-                self.emit(format!("|-boost|p{}a: {}|atk|{}", attacker+1, atk_name, actual_atk));
-            }
-            "quiver dance" => {
-                let (actual_spa, actual_spd, actual_spe) = {
-                    let mon = self.sides[attacker as usize].active_mut();
-                    let old_spa = mon.boosts.spa;
-                    let old_spd = mon.boosts.spd;
-                    let old_spe = mon.boosts.spe;
-                    mon.boosts.spa = (mon.boosts.spa + 1).min(6);
-                    mon.boosts.spd = (mon.boosts.spd + 1).min(6);
-                    mon.boosts.spe = (mon.boosts.spe + 1).min(6);
-                    (mon.boosts.spa - old_spa, mon.boosts.spd - old_spd, mon.boosts.spe - old_spe)
-                };
-                let atk_name = self.species_name(attacker);
-                self.emit(format!("|-boost|p{}a: {}|spa|{}", attacker+1, atk_name, actual_spa));
-                self.emit(format!("|-boost|p{}a: {}|spd|{}", attacker+1, atk_name, actual_spd));
-                self.emit(format!("|-boost|p{}a: {}|spe|{}", attacker+1, atk_name, actual_spe));
-            }
-            "shell smash" => {
-                let (actual_atk, actual_spa, actual_spe, actual_def, actual_spd) = {
-                    let mon = self.sides[attacker as usize].active_mut();
-                    let old_atk = mon.boosts.atk;
-                    let old_spa = mon.boosts.spa;
-                    let old_spe = mon.boosts.spe;
-                    let old_def = mon.boosts.def;
-                    let old_spd = mon.boosts.spd;
-                    mon.boosts.atk = (mon.boosts.atk + 2).min(6);
-                    mon.boosts.spa = (mon.boosts.spa + 2).min(6);
-                    mon.boosts.spe = (mon.boosts.spe + 2).min(6);
-                    mon.boosts.def = (mon.boosts.def - 1).max(-6);
-                    mon.boosts.spd = (mon.boosts.spd - 1).max(-6);
-                    (mon.boosts.atk - old_atk, mon.boosts.spa - old_spa, mon.boosts.spe - old_spe,
-                     (old_def - mon.boosts.def).unsigned_abs(), (old_spd - mon.boosts.spd).unsigned_abs())
-                };
-                let atk_name = self.species_name(attacker);
-                self.emit(format!("|-unboost|p{}a: {}|def|{}", attacker+1, atk_name, actual_def));
-                self.emit(format!("|-unboost|p{}a: {}|spd|{}", attacker+1, atk_name, actual_spd));
-                self.emit(format!("|-boost|p{}a: {}|atk|{}", attacker+1, atk_name, actual_atk));
-                self.emit(format!("|-boost|p{}a: {}|spa|{}", attacker+1, atk_name, actual_spa));
-                self.emit(format!("|-boost|p{}a: {}|spe|{}", attacker+1, atk_name, actual_spe));
-            }
+            // Boost moves (swords dance, dragon dance, calm mind, nasty plot, agility, etc. now data-driven via events.rs)
             "reflect" => {
                 self.sides[attacker as usize].side_conditions.reflect = 5;
                 self.emit(format!("|-sidestart|p{}: Player {}|Reflect", attacker+1, attacker+1));
