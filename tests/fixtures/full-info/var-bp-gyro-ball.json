@@ -1,0 +1,207 @@
+{
+  "id": "var-bp-gyro-ball",
+  "description": "Gyro Ball: BP = 25 * target_spe / user_spe (capped 150)",
+  "seed": [
+    3330,
+    3331,
+    3332,
+    3333
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Ferrothorn",
+        "species": "Ferrothorn",
+        "item": "",
+        "ability": "Iron Barbs",
+        "moves": [
+          "Gyro Ball",
+          "Power Whip",
+          "Stealth Rock",
+          "Leech Seed"
+        ],
+        "nature": "Relaxed",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 0
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Dragapult",
+        "species": "Dragapult",
+        "item": "",
+        "ability": "Infiltrator",
+        "moves": [
+          "Shadow Ball",
+          "Draco Meteor",
+          "Fire Blast",
+          "Thunderbolt"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Shadow Ball",
+      "damage": 109,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Dragapult",
+        "level": 100,
+        "stat_atk": 248,
+        "stat_def": 186,
+        "stat_spa": 299,
+        "ability": "Infiltrator",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 287,
+        "stat_def": 327,
+        "stat_spd": 269,
+        "ability": "Iron Barbs",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 352,
+        "hp_after": 243,
+        "max_hp": 352
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Gyro Ball",
+      "damage": 258,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Ferrothorn",
+        "level": 100,
+        "stat_atk": 287,
+        "stat_def": 327,
+        "stat_spa": 144,
+        "ability": "Iron Barbs",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Dragapult",
+        "level": 100,
+        "stat_atk": 248,
+        "stat_def": 186,
+        "stat_spd": 187,
+        "ability": "Infiltrator",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 317,
+        "hp_after": 59,
+        "max_hp": 317
+      }
+    }
+  ]
+}

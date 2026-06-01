@@ -25,25 +25,7 @@ impl Battle {
                 let effectiveness = Type::effectiveness(move_data.move_type, &defender.types);
                 if effectiveness > 1.0 { 1.2 } else { 1.0 }
             }
-            // Type-boosting items (1.2x)
-            ItemId::MysticWater => if move_data.move_type == Type::Water { 1.2 } else { 1.0 },
-            ItemId::Charcoal => if move_data.move_type == Type::Fire { 1.2 } else { 1.0 },
-            ItemId::Magnet => if move_data.move_type == Type::Electric { 1.2 } else { 1.0 },
-            ItemId::MiracleSeed => if move_data.move_type == Type::Grass { 1.2 } else { 1.0 },
-            ItemId::NeverMeltIce => if move_data.move_type == Type::Ice { 1.2 } else { 1.0 },
-            ItemId::BlackBelt => if move_data.move_type == Type::Fighting { 1.2 } else { 1.0 },
-            ItemId::PoisonBarb => if move_data.move_type == Type::Poison { 1.2 } else { 1.0 },
-            ItemId::SoftSand => if move_data.move_type == Type::Ground { 1.2 } else { 1.0 },
-            ItemId::SharpBeak => if move_data.move_type == Type::Flying { 1.2 } else { 1.0 },
-            ItemId::TwistedSpoon => if move_data.move_type == Type::Psychic { 1.2 } else { 1.0 },
-            ItemId::SilverPowder => if move_data.move_type == Type::Bug { 1.2 } else { 1.0 },
-            ItemId::HardStone => if move_data.move_type == Type::Rock { 1.2 } else { 1.0 },
-            ItemId::SpellTag => if move_data.move_type == Type::Ghost { 1.2 } else { 1.0 },
-            ItemId::DragonFang => if move_data.move_type == Type::Dragon { 1.2 } else { 1.0 },
-            ItemId::BlackGlasses => if move_data.move_type == Type::Dark { 1.2 } else { 1.0 },
-            ItemId::MetalCoat => if move_data.move_type == Type::Steel { 1.2 } else { 1.0 },
-            ItemId::SilkScarf => if move_data.move_type == Type::Normal { 1.2 } else { 1.0 },
-            ItemId::FairyFeather => if move_data.move_type == Type::Fairy { 1.2 } else { 1.0 },
+            // Type-boosting items and Muscle Band/Wise Glasses: handled in apply_bp_modifiers
             _ => 1.0,
         }
     }

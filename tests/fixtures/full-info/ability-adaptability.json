@@ -1,0 +1,153 @@
+{
+  "id": "ability-adaptability",
+  "description": "Adaptability: STAB becomes 2x",
+  "seed": [
+    3400,
+    3401,
+    3402,
+    3403
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Porygon-Z",
+        "species": "Porygon-Z",
+        "item": "",
+        "ability": "Adaptability",
+        "moves": [
+          "Hyper Beam",
+          "Thunderbolt",
+          "Ice Beam",
+          "Shadow Ball"
+        ],
+        "nature": "Modest",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Blissey",
+        "species": "Blissey",
+        "item": "",
+        "ability": "Natural Cure",
+        "moves": [
+          "Seismic Toss",
+          "Soft-Boiled",
+          "Thunder Wave",
+          "Toxic"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Thunderbolt",
+      "damage": 93,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Porygon-Z",
+        "level": 100,
+        "stat_atk": 176,
+        "stat_def": 176,
+        "stat_spa": 405,
+        "ability": "Adaptability",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Blissey",
+        "level": 100,
+        "stat_atk": 50,
+        "stat_def": 130,
+        "stat_spd": 307,
+        "ability": "Natural Cure",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 714,
+        "hp_after": 621,
+        "max_hp": 714
+      }
+    }
+  ]
+}

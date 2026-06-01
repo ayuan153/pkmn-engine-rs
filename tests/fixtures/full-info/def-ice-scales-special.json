@@ -1,0 +1,207 @@
+{
+  "id": "def-ice-scales-special",
+  "description": "Ice Scales halves special damage",
+  "seed": [
+    3520,
+    3521,
+    3522,
+    3523
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Alakazam",
+        "species": "Alakazam",
+        "item": "",
+        "ability": "Magic Guard",
+        "moves": [
+          "Psychic",
+          "Shadow Ball",
+          "Focus Blast",
+          "Energy Ball"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Frosmoth",
+        "species": "Frosmoth",
+        "item": "",
+        "ability": "Ice Scales",
+        "moves": [
+          "Ice Beam",
+          "Bug Buzz",
+          "Hurricane",
+          "Quiver Dance"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Psychic",
+      "damage": 83,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Alakazam",
+        "level": 100,
+        "stat_atk": 122,
+        "stat_def": 126,
+        "stat_spa": 369,
+        "ability": "Magic Guard",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Frosmoth",
+        "level": 100,
+        "stat_atk": 149,
+        "stat_def": 156,
+        "stat_spd": 217,
+        "ability": "Ice Scales",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 344,
+        "hp_after": 261,
+        "max_hp": 344
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Ice Beam",
+      "damage": 153,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Frosmoth",
+        "level": 100,
+        "stat_atk": 149,
+        "stat_def": 156,
+        "stat_spa": 349,
+        "ability": "Ice Scales",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Alakazam",
+        "level": 100,
+        "stat_atk": 122,
+        "stat_def": 126,
+        "stat_spd": 227,
+        "ability": "Magic Guard",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 251,
+        "hp_after": 98,
+        "max_hp": 251
+      }
+    }
+  ]
+}

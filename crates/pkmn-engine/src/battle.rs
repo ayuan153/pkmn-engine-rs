@@ -102,6 +102,23 @@ impl Battle {
         battle
     }
 
+    /// Raw constructor: sets up battle state without triggering abilities or RNG.
+    /// Used by the damage verification test to set exact state from fixtures.
+    pub fn new_raw(side1: Side, side2: Side) -> Self {
+        Self {
+            sides: [side1, side2],
+            field: Field::default(),
+            turn: 1,
+            result: BattleResult::Ongoing,
+            phase: BattlePhase::ActionSelection,
+            protocol: Vec::new(),
+            rng_seed: [0; 4],
+            rng_call_count: 0,
+            pivot_switch_targets: [Vec::new(), Vec::new()],
+            last_attacker: None,
+        }
+    }
+
     pub(crate) fn emit(&mut self, event: String) {
         self.protocol.push(event);
     }

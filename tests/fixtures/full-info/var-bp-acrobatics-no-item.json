@@ -1,0 +1,207 @@
+{
+  "id": "var-bp-acrobatics-no-item",
+  "description": "Acrobatics 110 BP with no item",
+  "seed": [
+    3310,
+    3311,
+    3312,
+    3313
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Hawlucha",
+        "species": "Hawlucha",
+        "item": "",
+        "ability": "Unburden",
+        "moves": [
+          "Acrobatics",
+          "Close Combat",
+          "Swords Dance",
+          "Roost"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Conkeldurr",
+        "species": "Conkeldurr",
+        "item": "",
+        "ability": "Guts",
+        "moves": [
+          "Drain Punch",
+          "Mach Punch",
+          "Knock Off",
+          "Ice Punch"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Acrobatics",
+      "damage": 378,
+      "crit": false,
+      "effectiveness": 2,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Hawlucha",
+        "level": 100,
+        "stat_atk": 311,
+        "stat_def": 186,
+        "stat_spa": 165,
+        "ability": "Unburden",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Conkeldurr",
+        "level": 100,
+        "stat_atk": 416,
+        "stat_def": 226,
+        "stat_spd": 167,
+        "ability": "Guts",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 414,
+        "hp_after": 36,
+        "max_hp": 414
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Drain Punch",
+      "damage": 102,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Conkeldurr",
+        "level": 100,
+        "stat_atk": 416,
+        "stat_def": 226,
+        "stat_spa": 131,
+        "ability": "Guts",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Hawlucha",
+        "level": 100,
+        "stat_atk": 311,
+        "stat_def": 186,
+        "stat_spd": 163,
+        "ability": "Unburden",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 297,
+        "hp_after": 195,
+        "max_hp": 297
+      }
+    }
+  ]
+}

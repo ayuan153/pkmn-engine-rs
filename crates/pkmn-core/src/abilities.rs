@@ -69,6 +69,14 @@ pub enum AbilityId {
     CloudNine,
     Turboblaze,
     Teravolt,
+    FurCoat,
+    IceScales,
+    SolidRock,
+    Filter,
+    PrismArmor,
+    InnerFocus,
+    Infiltrator,
+    Synchronize,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

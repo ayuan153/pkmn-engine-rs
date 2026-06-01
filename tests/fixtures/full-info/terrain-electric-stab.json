@@ -1,0 +1,191 @@
+{
+  "id": "terrain-electric-stab",
+  "description": "Electric Terrain + Electric STAB grounded",
+  "seed": [
+    3200,
+    3201,
+    3202,
+    3203
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Jolteon",
+        "species": "Jolteon",
+        "item": "",
+        "ability": "Volt Absorb",
+        "moves": [
+          "Thunderbolt",
+          "Shadow Ball",
+          "Volt Switch",
+          "Yawn"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Tapu Koko",
+        "species": "Tapu Koko",
+        "item": "",
+        "ability": "Electric Surge",
+        "moves": [
+          "Thunderbolt",
+          "Dazzling Gleam",
+          "U-turn",
+          "Roost"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      },
+      {
+        "name": "Swampert",
+        "species": "Swampert",
+        "item": "",
+        "ability": "Torrent",
+        "moves": [
+          "Earthquake",
+          "Ice Beam",
+          "Stealth Rock",
+          "Flip Turn"
+        ],
+        "nature": "Relaxed",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Earthquake",
+      "damage": 271,
+      "crit": false,
+      "effectiveness": 2,
+      "weather": null,
+      "terrain": "Electric Terrain",
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Swampert",
+        "level": 100,
+        "stat_atk": 256,
+        "stat_def": 306,
+        "stat_spa": 206,
+        "ability": "Torrent",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Jolteon",
+        "level": 100,
+        "stat_atk": 149,
+        "stat_def": 156,
+        "stat_spd": 227,
+        "ability": "Volt Absorb",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 271,
+        "hp_after": 0,
+        "max_hp": 271
+      }
+    }
+  ]
+}

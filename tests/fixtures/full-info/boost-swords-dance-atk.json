@@ -1,0 +1,207 @@
+{
+  "id": "boost-swords-dance-atk",
+  "description": "+2 Atk from Swords Dance then attack",
+  "seed": [
+    3740,
+    3741,
+    3742,
+    3743
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Garchomp",
+        "species": "Garchomp",
+        "item": "",
+        "ability": "Rough Skin",
+        "moves": [
+          "Swords Dance",
+          "Earthquake",
+          "Dragon Claw",
+          "Stone Edge"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Blissey",
+        "species": "Blissey",
+        "item": "",
+        "ability": "Natural Cure",
+        "moves": [
+          "Seismic Toss",
+          "Soft-Boiled",
+          "Thunder Wave",
+          "Toxic"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Earthquake",
+      "damage": 669,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Garchomp",
+        "level": 100,
+        "stat_atk": 359,
+        "stat_def": 226,
+        "stat_spa": 176,
+        "ability": "Rough Skin",
+        "item": "",
+        "boosts": {
+          "atk": 2,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Blissey",
+        "level": 100,
+        "stat_atk": 50,
+        "stat_def": 130,
+        "stat_spd": 307,
+        "ability": "Natural Cure",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 714,
+        "hp_after": 45,
+        "max_hp": 714
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Seismic Toss",
+      "damage": 100,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Blissey",
+        "level": 100,
+        "stat_atk": 50,
+        "stat_def": 130,
+        "stat_spa": 186,
+        "ability": "Natural Cure",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Garchomp",
+        "level": 100,
+        "stat_atk": 359,
+        "stat_def": 226,
+        "stat_spd": 207,
+        "ability": "Rough Skin",
+        "item": "",
+        "boosts": {
+          "atk": 2,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 357,
+        "hp_after": 257,
+        "max_hp": 357
+      }
+    }
+  ]
+}

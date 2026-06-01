@@ -98,11 +98,8 @@ impl Battle {
                     }
                 }
                 AbilityId::ToughClaws => {
-                    if move_data.flags.has(MoveFlags::CONTACT) {
-                        1.3
-                    } else {
-                        1.0
-                    }
+                    // Handled in apply_bp_modifiers (onBasePower)
+                    1.0
                 }
                 AbilityId::IronFist => {
                     if move_data.flags.has(MoveFlags::PUNCH) {

@@ -1,0 +1,207 @@
+{
+  "id": "ability-sheer-force-lo",
+  "description": "Sheer Force + Life Orb (1.3x SF, 1.3x LO, no LO recoil)",
+  "seed": [
+    3440,
+    3441,
+    3442,
+    3443
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Nidoking",
+        "species": "Nidoking",
+        "item": "Life Orb",
+        "ability": "Sheer Force",
+        "moves": [
+          "Earth Power",
+          "Sludge Wave",
+          "Ice Beam",
+          "Thunderbolt"
+        ],
+        "nature": "Modest",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Slowbro",
+        "species": "Slowbro",
+        "item": "",
+        "ability": "Regenerator",
+        "moves": [
+          "Scald",
+          "Psychic",
+          "Slack Off",
+          "Thunder Wave"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Earth Power",
+      "damage": 286,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Nidoking",
+        "level": 100,
+        "stat_atk": 216,
+        "stat_def": 190,
+        "stat_spa": 295,
+        "ability": "Sheer Force",
+        "item": "Life Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Slowbro",
+        "level": 100,
+        "stat_atk": 167,
+        "stat_def": 350,
+        "stat_spd": 197,
+        "ability": "Regenerator",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 394,
+        "hp_after": 108,
+        "max_hp": 394
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Scald",
+      "damage": 236,
+      "crit": false,
+      "effectiveness": 2,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Slowbro",
+        "level": 100,
+        "stat_atk": 167,
+        "stat_def": 350,
+        "stat_spa": 236,
+        "ability": "Regenerator",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Nidoking",
+        "level": 100,
+        "stat_atk": 216,
+        "stat_def": 190,
+        "stat_spd": 187,
+        "ability": "Sheer Force",
+        "item": "Life Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 303,
+        "hp_after": 67,
+        "max_hp": 303
+      }
+    }
+  ]
+}

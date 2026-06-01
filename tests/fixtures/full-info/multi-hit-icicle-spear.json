@@ -1,0 +1,315 @@
+{
+  "id": "multi-hit-icicle-spear",
+  "description": "Multi-hit Icicle Spear (Skill Link = 5 hits)",
+  "seed": [
+    3750,
+    3751,
+    3752,
+    3753
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Cloyster",
+        "species": "Cloyster",
+        "item": "",
+        "ability": "Skill Link",
+        "moves": [
+          "Icicle Spear",
+          "Rock Blast",
+          "Hydro Pump",
+          "Shell Smash"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Garchomp",
+        "species": "Garchomp",
+        "item": "",
+        "ability": "Rough Skin",
+        "moves": [
+          "Earthquake",
+          "Dragon Claw",
+          "Stone Edge",
+          "Swords Dance"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Earthquake",
+      "damage": 105,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Garchomp",
+        "level": 100,
+        "stat_atk": 359,
+        "stat_def": 226,
+        "stat_spa": 176,
+        "ability": "Rough Skin",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spd": 127,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 241,
+        "hp_after": 136,
+        "max_hp": 241
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Icicle Spear",
+      "damage": 156,
+      "crit": false,
+      "effectiveness": 2,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spa": 185,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Garchomp",
+        "level": 100,
+        "stat_atk": 359,
+        "stat_def": 226,
+        "stat_spd": 207,
+        "ability": "Rough Skin",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 357,
+        "hp_after": 201,
+        "max_hp": 357
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Icicle Spear",
+      "damage": 148,
+      "crit": false,
+      "effectiveness": 2,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spa": 185,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Garchomp",
+        "level": 100,
+        "stat_atk": 359,
+        "stat_def": 226,
+        "stat_spd": 207,
+        "ability": "Rough Skin",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 201,
+        "hp_after": 53,
+        "max_hp": 357
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Icicle Spear",
+      "damage": 53,
+      "crit": false,
+      "effectiveness": 2,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Cloyster",
+        "level": 100,
+        "stat_atk": 289,
+        "stat_def": 396,
+        "stat_spa": 185,
+        "ability": "Skill Link",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Garchomp",
+        "level": 100,
+        "stat_atk": 359,
+        "stat_def": 226,
+        "stat_spd": 207,
+        "ability": "Rough Skin",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 53,
+        "hp_after": 0,
+        "max_hp": 357
+      }
+    }
+  ]
+}

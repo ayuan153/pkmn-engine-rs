@@ -1,0 +1,207 @@
+{
+  "id": "weather-sand-rock-spd",
+  "description": "Sand boosts Rock-type SpD by 1.5x",
+  "seed": [
+    3120,
+    3121,
+    3122,
+    3123
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Alakazam",
+        "species": "Alakazam",
+        "item": "",
+        "ability": "Magic Guard",
+        "moves": [
+          "Psychic",
+          "Shadow Ball",
+          "Focus Blast",
+          "Energy Ball"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Tyranitar",
+        "species": "Tyranitar",
+        "item": "",
+        "ability": "Sand Stream",
+        "moves": [
+          "Stone Edge",
+          "Crunch",
+          "Earthquake",
+          "Stealth Rock"
+        ],
+        "nature": "Careful",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 4,
+          "spa": 0,
+          "spd": 252,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Shadow Ball",
+      "damage": 24,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": "Sandstorm",
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Alakazam",
+        "level": 100,
+        "stat_atk": 122,
+        "stat_def": 126,
+        "stat_spa": 369,
+        "ability": "Magic Guard",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Tyranitar",
+        "level": 100,
+        "stat_atk": 304,
+        "stat_def": 257,
+        "stat_spd": 328,
+        "ability": "Sand Stream",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 404,
+        "hp_after": 380,
+        "max_hp": 404
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Crunch",
+      "damage": 251,
+      "crit": false,
+      "effectiveness": 2,
+      "weather": "Sandstorm",
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Tyranitar",
+        "level": 100,
+        "stat_atk": 304,
+        "stat_def": 257,
+        "stat_spa": 203,
+        "ability": "Sand Stream",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Alakazam",
+        "level": 100,
+        "stat_atk": 122,
+        "stat_def": 126,
+        "stat_spd": 227,
+        "ability": "Magic Guard",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 251,
+        "hp_after": 0,
+        "max_hp": 251
+      }
+    }
+  ]
+}

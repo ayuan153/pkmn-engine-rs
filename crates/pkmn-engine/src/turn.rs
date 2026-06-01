@@ -787,7 +787,7 @@ impl Battle {
         (self.calculate_damage_with(attacker_player, defender_player, move_data, critical, random_factor), critical)
     }
 
-    fn calculate_damage_with(
+    pub fn calculate_damage_with(
         &self,
         attacker_player: u8,
         defender_player: u8,
@@ -803,23 +803,40 @@ impl Battle {
             return attacker.level as u16;
         }
 
+        // --- Foul Play uses defender's Atk stat ---
         let (mut atk_stat, mut def_stat) = match move_data.category {
             MoveCategory::Physical => {
                 let atk = if move_data.name == "Body Press" {
                     attacker.effective_def()
+                } else if move_data.name == "Foul Play" {
+                    defender.effective_atk()
                 } else {
                     attacker.effective_atk()
                 };
-                (atk, defender.effective_def())
+                // Crit ignores positive def boosts
+                let def = if critical && defender.boosts.def > 0 {
+                    defender.stats.def // raw stat, no boost
+                } else {
+                    defender.effective_def()
+                };
+                (atk, def)
             }
-            MoveCategory::Special => (attacker.effective_spa(), defender.effective_spd()),
+            MoveCategory::Special => {
+                let def = if critical && defender.boosts.spd > 0 {
+                    defender.stats.spd
+                } else {
+                    defender.effective_spd()
+                };
+                (attacker.effective_spa(), def)
+            }
             _ => return 0,
         };
 
-        // Stat-modifying items/abilities (applied to stat, not final damage)
-        // Attacker: Choice Band, Choice Specs, Light Ball, Huge Power
         let atk_item = attacker.item_id;
         let atk_ability = attacker.ability_id;
+        let def_ability = defender.ability_id;
+
+        // --- Offensive stat modifiers ---
         match move_data.category {
             MoveCategory::Physical => {
                 if atk_item == pkmn_core::items::ItemId::ChoiceBand {
@@ -831,6 +848,16 @@ impl Battle {
                 if matches!(atk_ability, pkmn_core::abilities::AbilityId::HugePower | pkmn_core::abilities::AbilityId::PurePower) {
                     atk_stat = (atk_stat as u32 * 2) as u16;
                 }
+                // Guts: 1.5x Atk when statused (replaces burn penalty)
+                if atk_ability == pkmn_core::abilities::AbilityId::Guts
+                    && attacker.status != Status::None
+                {
+                    atk_stat = (atk_stat as u32 * 3 / 2) as u16;
+                }
+                // Tablets of Ruin (opponent has it): attacker's Atk * 3/4
+                if def_ability == pkmn_core::abilities::AbilityId::TabletsOfRuin {
+                    atk_stat = (atk_stat as u32 * 3 / 4) as u16;
+                }
             }
             MoveCategory::Special => {
                 if atk_item == pkmn_core::items::ItemId::ChoiceSpecs {
@@ -839,11 +866,15 @@ impl Battle {
                 if atk_item == pkmn_core::items::ItemId::LightBall {
                     atk_stat = (atk_stat as u32 * 2) as u16;
                 }
+                // Vessel of Ruin (opponent has it): attacker's SpA * 3/4
+                if def_ability == pkmn_core::abilities::AbilityId::VesselOfRuin {
+                    atk_stat = (atk_stat as u32 * 3 / 4) as u16;
+                }
             }
             _ => {}
         }
 
-        // Defender: Eviolite (1.5x Def and SpD), Assault Vest (1.5x SpD)
+        // --- Defensive stat modifiers ---
         let def_item = defender.item_id;
         if def_item == pkmn_core::items::ItemId::Eviolite {
             def_stat = (def_stat as u32 * 3 / 2) as u16;
@@ -851,71 +882,221 @@ impl Battle {
         if def_item == pkmn_core::items::ItemId::AssaultVest && move_data.category == MoveCategory::Special {
             def_stat = (def_stat as u32 * 3 / 2) as u16;
         }
+        // Fur Coat: 2x physical Def
+        if def_ability == pkmn_core::abilities::AbilityId::FurCoat
+            && move_data.category == MoveCategory::Physical
+        {
+            def_stat = (def_stat as u32 * 2) as u16;
+        }
+        // Thick Fat: halves Fire/Ice damage (applied as 0.5x to attacker's offensive stat in PS)
+        // Actually in PS it's onSourceModifyAtk/SpA, effectively halving the attacking stat
+        if def_ability == pkmn_core::abilities::AbilityId::ThickFat
+            && (move_data.move_type == Type::Fire || move_data.move_type == Type::Ice)
+        {
+            atk_stat = (atk_stat as u32 / 2) as u16;
+        }
+        // Sword of Ruin (attacker has it): defender's Def * 3/4
+        if atk_ability == pkmn_core::abilities::AbilityId::SwordOfRuin
+            && move_data.category == MoveCategory::Physical
+        {
+            def_stat = (def_stat as u32 * 3 / 4) as u16;
+        }
+        // Beads of Ruin (attacker has it): defender's SpD * 3/4
+        if atk_ability == pkmn_core::abilities::AbilityId::BeadsOfRuin
+            && move_data.category == MoveCategory::Special
+        {
+            def_stat = (def_stat as u32 * 3 / 4) as u16;
+        }
+        // Sandstorm: 1.5x SpD for Rock-type defenders
+        if self.field.weather == crate::field::Weather::Sand
+            && move_data.category == MoveCategory::Special
+            && defender.types.contains(&Type::Rock)
+        {
+            def_stat = (def_stat as u32 * 3 / 2) as u16;
+        }
+        // Snow: 1.5x Def for Ice-type defenders
+        if self.field.weather == crate::field::Weather::Snow
+            && move_data.category == MoveCategory::Physical
+            && defender.types.contains(&Type::Ice)
+        {
+            def_stat = (def_stat as u32 * 3 / 2) as u16;
+        }
 
+        // --- Base power calculation ---
         let base_power = self.get_variable_bp(attacker_player, defender_player, move_data);
 
-        // Terrain boost: applied to base power (onBasePower in Showdown)
-        // PS uses modify(bp, num, denom) = Math.floor(bp * num / denom)
-        let (terrain_num, terrain_denom) = self.get_terrain_modifier(attacker_player, move_data.move_type);
+        // Determine effective move type (Weather Ball changes type in weather)
+        let move_type = if move_data.name == "Weather Ball" {
+            match self.field.weather {
+                crate::field::Weather::Sun => Type::Fire,
+                crate::field::Weather::Rain => Type::Water,
+                crate::field::Weather::Sand => Type::Rock,
+                crate::field::Weather::Snow => Type::Ice,
+                _ => move_data.move_type,
+            }
+        } else {
+            move_data.move_type
+        };
+
+        // Knock Off: 1.5x BP when target has item (onBasePower)
+        let base_power = if move_data.name == "Knock Off"
+            && defender.item_id != pkmn_core::items::ItemId::None
+        {
+            (base_power as u32 * 6144 + 2048) / 4096
+        } else {
+            base_power as u32
+        } as u16;
+
+        // Terrain boost (onBasePower)
+        let (terrain_num, terrain_denom) = self.get_terrain_modifier(attacker_player, move_type);
         let base_power = (base_power as u32 * terrain_num / terrain_denom) as u16;
 
+        // onBasePower modifiers (Tough Claws, type-boosting items, Muscle Band, etc.)
+        let base_power = self.apply_bp_modifiers_with_type(attacker_player, move_data, base_power, move_type);
+
+        // --- STAB ---
         let stab = if attacker.is_terastallized {
-            self.tera_stab(attacker_player, move_data.move_type)
-        } else if attacker.types.contains(&move_data.move_type) {
-            1.5
+            self.tera_stab(attacker_player, move_type)
+        } else if attacker.types.contains(&move_type) {
+            // Adaptability: 2.0x STAB instead of 1.5x
+            if atk_ability == pkmn_core::abilities::AbilityId::Adaptability { 2.0 } else { 1.5 }
         } else {
             1.0
         };
 
+        // --- Type effectiveness ---
         let def_types = self.defender_types(defender_player);
-        let effectiveness = Type::effectiveness(move_data.move_type, &def_types);
-        let attacker_level = attacker.level;
-        let attacker_status = attacker.status;
-        let attacker_ability = attacker.ability_id;
-
+        let effectiveness = Type::effectiveness(move_type, &def_types);
         if effectiveness == 0.0 {
             return 0;
         }
 
-        let weather_boost = self.get_weather_modifier(move_data.move_type);
+        // --- Weather power modifier ---
+        let weather_boost = self.get_weather_modifier(move_type);
 
-        let burn_mod =
-            if attacker_status == Status::Burn
-                && move_data.category == MoveCategory::Physical
-                && attacker_ability != pkmn_core::abilities::AbilityId::Guts
-            {
-                0.5
-            } else {
-                1.0
-            };
+        // --- Burn (halves physical damage, Guts/Facade exempt) ---
+        let burn_mod: u32 = if attacker.status == Status::Burn
+            && move_data.category == MoveCategory::Physical
+            && atk_ability != pkmn_core::abilities::AbilityId::Guts
+            && move_data.name != "Facade"
+        {
+            2048 // 0.5x
+        } else {
+            4096
+        };
 
-        let ability_mod = self.ability_damage_modifier(attacker_player, move_data);
-        let item_mod = self.item_damage_modifier(attacker_player, move_data);
-
-        let screen_mod = if !critical {
+        // --- Screen modifier ---
+        let screen_mod: u32 = if !critical {
             match move_data.category {
-                MoveCategory::Physical if self.sides[defender_player as usize].side_conditions.reflect > 0 => 0.5,
-                MoveCategory::Special if self.sides[defender_player as usize].side_conditions.light_screen > 0 => 0.5,
-                _ => 1.0,
+                MoveCategory::Physical if self.sides[defender_player as usize].side_conditions.reflect > 0 => 2048,
+                MoveCategory::Special if self.sides[defender_player as usize].side_conditions.light_screen > 0 => 2048,
+                _ => 4096,
             }
         } else {
-            1.0
+            4096
         };
 
-        let ctx = pkmn_core::damage::DamageContext {
-            attacker_level,
-            attacker_stat: atk_stat,
-            defender_stat: def_stat,
-            base_power,
-            stab: stab > 1.0,
-            type_effectiveness: effectiveness,
-            critical,
-            weather_boost,
-            other_modifiers: burn_mod * ability_mod * item_mod * screen_mod * (stab / if stab > 1.0 { 1.5 } else { 1.0 }),
-            random_factor,
-        };
+        // --- Base damage formula ---
+        let level = attacker.level as u32;
+        let power = base_power as u32;
+        let atk = atk_stat as u32;
+        let def = def_stat as u32;
+        let mut damage = ((2 * level / 5 + 2) * power * atk / def) / 50 + 2;
 
-        pkmn_core::damage::calculate_damage(&ctx)
+        // Weather: chainModify
+        let weather_mod = (weather_boost * 4096.0) as u32;
+        damage = (damage * weather_mod + 2047) / 4096;
+
+        // Critical hit: simple truncation (1.5x)
+        if critical {
+            damage = damage * 3 / 2;
+        }
+
+        // Random factor: simple truncation
+        damage = damage * random_factor as u32 / 100;
+
+        // STAB: chainModify(6144/4096) for normal, 8192 for Adaptability
+        if stab > 1.0 {
+            let stab_mod = (stab / 1.5 * 6144.0) as u32; // 6144 for 1.5x, 8192 for 2.0x
+            damage = (damage * stab_mod + 2047) / 4096;
+        }
+
+        // Type effectiveness: direct multiplication
+        if effectiveness == 4.0 { damage *= 4; }
+        else if effectiveness == 2.0 { damage *= 2; }
+        else if effectiveness == 0.5 { damage /= 2; }
+        else if effectiveness == 0.25 { damage /= 4; }
+
+        // Burn: chainModify
+        damage = (damage * burn_mod + 2047) / 4096;
+
+        // Screen: chainModify
+        damage = (damage * screen_mod + 2047) / 4096;
+
+        // --- Final modifier chain (each applied separately via chainModify) ---
+
+        // Solid Rock / Filter / Prism Armor: 0.75x on super effective
+        if (def_ability == pkmn_core::abilities::AbilityId::SolidRock
+            || def_ability == pkmn_core::abilities::AbilityId::Filter
+            || def_ability == pkmn_core::abilities::AbilityId::PrismArmor)
+            && effectiveness > 1.0
+        {
+            damage = (damage * 3072 + 2047) / 4096;
+        }
+
+        // Ice Scales: 0.5x special damage
+        if def_ability == pkmn_core::abilities::AbilityId::IceScales
+            && move_data.category == MoveCategory::Special
+        {
+            damage = (damage * 2048 + 2047) / 4096;
+        }
+
+        // Multiscale: 0.5x at full HP
+        if def_ability == pkmn_core::abilities::AbilityId::Multiscale
+            && defender.hp == defender.max_hp
+        {
+            damage = (damage * 2048 + 2047) / 4096;
+        }
+
+        // Tinted Lens: 2x on resisted hits
+        if atk_ability == pkmn_core::abilities::AbilityId::TintedLens
+            && effectiveness < 1.0
+        {
+            damage = (damage * 8192 + 2047) / 4096;
+        }
+
+        // Sheer Force: 1.3x (5325/4096) on moves with secondary effects
+        if atk_ability == pkmn_core::abilities::AbilityId::SheerForce
+            && !pkmn_core::moves::get_secondaries(move_data.id).is_empty()
+        {
+            damage = (damage * 5325 + 2047) / 4096;
+        }
+
+        // Iron Fist: 1.2x (4915/4096) on punching moves
+        if atk_ability == pkmn_core::abilities::AbilityId::IronFist
+            && move_data.flags.has(MoveFlags::PUNCH)
+        {
+            damage = (damage * 4915 + 2047) / 4096;
+        }
+
+        // Strong Jaw: 1.5x (6144/4096) on biting moves
+        if atk_ability == pkmn_core::abilities::AbilityId::StrongJaw
+            && move_data.flags.has(MoveFlags::BITE)
+        {
+            damage = (damage * 6144 + 2047) / 4096;
+        }
+
+        // Life Orb: 1.3x (5324/4096)
+        if atk_item == pkmn_core::items::ItemId::LifeOrb {
+            damage = (damage * 5324 + 2047) / 4096;
+        }
+
+        // Expert Belt: 1.2x (4915/4096) on super effective
+        if atk_item == pkmn_core::items::ItemId::ExpertBelt && effectiveness > 1.0 {
+            damage = (damage * 4915 + 2047) / 4096;
+        }
+
+        damage.max(1) as u16
     }
 
     fn get_variable_bp(&self, attacker_player: u8, defender_player: u8, move_data: &MoveData) -> u16 {
@@ -940,6 +1121,18 @@ impl Battle {
             "weather ball" => {
                 if self.field.weather != crate::field::Weather::None { 100 } else { 50 }
             }
+            // Gyro Ball: BP = min(150, floor(25 * target_speed / max(1, user_speed))), min 1
+            "gyro ball" => {
+                let user_spe = attacker.effective_speed().max(1) as u32;
+                let target_spe = defender.effective_speed() as u32;
+                ((25 * target_spe / user_spe).clamp(1, 150)) as u16
+            }
+            // Fishious Rend: doubles BP when attacker moves first
+            "fishious rend" | "bolt beak" => {
+                if !defender.has_moved_this_turn { 170 } else { 85 }
+            }
+            // Return: BP = happiness * 2 / 5 (max 102 at 255 happiness)
+            "return" => 102,
             _ => move_data.base_power as u16,
         };
 
@@ -962,6 +1155,68 @@ impl Battle {
         }
 
         bp
+    }
+
+    /// Apply onBasePower modifiers (abilities + items that modify BP in PS).
+    /// Uses pokeround: floor((bp * modifier + 2048) / 4096).
+    fn apply_bp_modifiers_with_type(&self, attacker_player: u8, move_data: &MoveData, bp: u16, move_type: Type) -> u16 {
+        let attacker = self.sides[attacker_player as usize].active();
+        let mut bp = bp as u32;
+
+        // Technician: 1.5x (6144/4096) on moves with effective BP <= 60
+        if attacker.ability_id == pkmn_core::abilities::AbilityId::Technician
+            && bp > 0 && bp <= 60
+        {
+            bp = (bp * 6144 + 2048) / 4096;
+        }
+
+        // Tough Claws: 1.3x (5325/4096) on contact moves
+        if attacker.ability_id == pkmn_core::abilities::AbilityId::ToughClaws
+            && move_data.flags.has(MoveFlags::CONTACT)
+        {
+            bp = (bp * 5325 + 2048) / 4096;
+        }
+
+        // Muscle Band: 1.1x (4505/4096) on physical moves
+        if attacker.item_id == pkmn_core::items::ItemId::MuscleBand
+            && move_data.category == MoveCategory::Physical
+        {
+            bp = (bp * 4505 + 2048) / 4096;
+        }
+        // Wise Glasses: 1.1x (4505/4096) on special moves
+        if attacker.item_id == pkmn_core::items::ItemId::WiseGlasses
+            && move_data.category == MoveCategory::Special
+        {
+            bp = (bp * 4505 + 2048) / 4096;
+        }
+
+        // Type-boosting items: 1.2x (4915/4096) for matching move type
+        let type_boost = match attacker.item_id {
+            pkmn_core::items::ItemId::MysticWater => move_type == Type::Water,
+            pkmn_core::items::ItemId::Charcoal => move_type == Type::Fire,
+            pkmn_core::items::ItemId::Magnet => move_type == Type::Electric,
+            pkmn_core::items::ItemId::MiracleSeed => move_type == Type::Grass,
+            pkmn_core::items::ItemId::NeverMeltIce => move_type == Type::Ice,
+            pkmn_core::items::ItemId::BlackBelt => move_type == Type::Fighting,
+            pkmn_core::items::ItemId::PoisonBarb => move_type == Type::Poison,
+            pkmn_core::items::ItemId::SoftSand => move_type == Type::Ground,
+            pkmn_core::items::ItemId::SharpBeak => move_type == Type::Flying,
+            pkmn_core::items::ItemId::TwistedSpoon => move_type == Type::Psychic,
+            pkmn_core::items::ItemId::SilverPowder => move_type == Type::Bug,
+            pkmn_core::items::ItemId::HardStone => move_type == Type::Rock,
+            pkmn_core::items::ItemId::SpellTag => move_type == Type::Ghost,
+            pkmn_core::items::ItemId::DragonFang => move_type == Type::Dragon,
+            pkmn_core::items::ItemId::BlackGlasses => move_type == Type::Dark,
+            pkmn_core::items::ItemId::MetalCoat => move_type == Type::Steel,
+            pkmn_core::items::ItemId::SilkScarf => move_type == Type::Normal,
+            pkmn_core::items::ItemId::FairyFeather | pkmn_core::items::ItemId::PixiePlate => move_type == Type::Fairy,
+            _ => false,
+        };
+        if type_boost {
+            bp = (bp * 4915 + 2048) / 4096;
+        }
+
+        bp as u16
     }
 
     /// Returns terrain modifier as (numerator, 4096) pair matching PS's chainModify values.

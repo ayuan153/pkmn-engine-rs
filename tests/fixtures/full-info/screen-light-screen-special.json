@@ -1,0 +1,261 @@
+{
+  "id": "screen-light-screen-special",
+  "description": "Light Screen halves special damage (non-crit)",
+  "seed": [
+    3730,
+    3731,
+    3732,
+    3733
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Gengar",
+        "species": "Gengar",
+        "item": "",
+        "ability": "Cursed Body",
+        "moves": [
+          "Shadow Ball",
+          "Sludge Bomb",
+          "Focus Blast",
+          "Thunderbolt"
+        ],
+        "nature": "Timid",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Grimmsnarl",
+        "species": "Grimmsnarl",
+        "item": "",
+        "ability": "Prankster",
+        "moves": [
+          "Reflect",
+          "Light Screen",
+          "Spirit Break",
+          "Thunder Wave"
+        ],
+        "nature": "Careful",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 0,
+          "spe": 4
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Thunderbolt",
+      "damage": 65,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": true
+      },
+      "attacker": {
+        "species": "Gengar",
+        "level": 100,
+        "stat_atk": 149,
+        "stat_def": 156,
+        "stat_spa": 359,
+        "ability": "Cursed Body",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Grimmsnarl",
+        "level": 100,
+        "stat_atk": 276,
+        "stat_def": 229,
+        "stat_spd": 204,
+        "ability": "Prankster",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 394,
+        "hp_after": 329,
+        "max_hp": 394
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Shadow Ball",
+      "damage": 40,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": true
+      },
+      "attacker": {
+        "species": "Gengar",
+        "level": 100,
+        "stat_atk": 149,
+        "stat_def": 156,
+        "stat_spa": 359,
+        "ability": "Cursed Body",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Grimmsnarl",
+        "level": 100,
+        "stat_atk": 276,
+        "stat_def": 229,
+        "stat_spd": 204,
+        "ability": "Prankster",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 329,
+        "hp_after": 289,
+        "max_hp": 394
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Spirit Break",
+      "damage": 74,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Grimmsnarl",
+        "level": 100,
+        "stat_atk": 276,
+        "stat_def": 229,
+        "stat_spa": 203,
+        "ability": "Prankster",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Gengar",
+        "level": 100,
+        "stat_atk": 149,
+        "stat_def": 156,
+        "stat_spd": 187,
+        "ability": "Cursed Body",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 261,
+        "hp_after": 187,
+        "max_hp": 261
+      }
+    }
+  ]
+}

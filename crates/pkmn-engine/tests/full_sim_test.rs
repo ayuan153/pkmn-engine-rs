@@ -168,6 +168,14 @@ fn parse_ability(name: &str) -> AbilityId {
         "Cloud Nine" => AbilityId::CloudNine,
         "Turboblaze" => AbilityId::Turboblaze,
         "Teravolt" => AbilityId::Teravolt,
+        "Fur Coat" => AbilityId::FurCoat,
+        "Ice Scales" => AbilityId::IceScales,
+        "Solid Rock" => AbilityId::SolidRock,
+        "Filter" => AbilityId::Filter,
+        "Prism Armor" => AbilityId::PrismArmor,
+        "Inner Focus" => AbilityId::InnerFocus,
+        "Infiltrator" => AbilityId::Infiltrator,
+        "Synchronize" => AbilityId::Synchronize,
         _ => AbilityId::None,
     }
 }
@@ -203,6 +211,8 @@ fn parse_item(name: &str) -> ItemId {
         "Clear Amulet" => ItemId::ClearAmulet,
         "Light Ball" => ItemId::LightBall,
         "Pixie Plate" => ItemId::PixiePlate,
+        "Muscle Band" => ItemId::MuscleBand,
+        "Wise Glasses" => ItemId::WiseGlasses,
         _ => ItemId::None,
     }
 }

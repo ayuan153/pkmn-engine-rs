@@ -1,0 +1,261 @@
+{
+  "id": "var-bp-facade-burn",
+  "description": "Facade 140 BP when burned (Guts negates burn penalty)",
+  "seed": [
+    3320,
+    3321,
+    3322,
+    3323
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Conkeldurr",
+        "species": "Conkeldurr",
+        "item": "Flame Orb",
+        "ability": "Guts",
+        "moves": [
+          "Facade",
+          "Drain Punch",
+          "Mach Punch",
+          "Knock Off"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Slowbro",
+        "species": "Slowbro",
+        "item": "",
+        "ability": "Regenerator",
+        "moves": [
+          "Scald",
+          "Psychic",
+          "Slack Off",
+          "Thunder Wave"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Drain Punch",
+      "damage": 50,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Conkeldurr",
+        "level": 100,
+        "stat_atk": 416,
+        "stat_def": 226,
+        "stat_spa": 131,
+        "ability": "Guts",
+        "item": "Flame Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Slowbro",
+        "level": 100,
+        "stat_atk": 167,
+        "stat_def": 350,
+        "stat_spd": 197,
+        "ability": "Regenerator",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 394,
+        "hp_after": 344,
+        "max_hp": 394
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Scald",
+      "damage": 144,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Slowbro",
+        "level": 100,
+        "stat_atk": 167,
+        "stat_def": 350,
+        "stat_spa": 236,
+        "ability": "Regenerator",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Conkeldurr",
+        "level": 100,
+        "stat_atk": 416,
+        "stat_def": 226,
+        "stat_spd": 167,
+        "ability": "Guts",
+        "item": "Flame Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": "par",
+        "hp_before": 414,
+        "hp_after": 270,
+        "max_hp": 414
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 2,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Facade",
+      "damage": 183,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Conkeldurr",
+        "level": 100,
+        "stat_atk": 416,
+        "stat_def": 226,
+        "stat_spa": 131,
+        "ability": "Guts",
+        "item": "Flame Orb",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": "par",
+        "teraType": null
+      },
+      "defender": {
+        "species": "Slowbro",
+        "level": 100,
+        "stat_atk": 167,
+        "stat_def": 350,
+        "stat_spd": 197,
+        "ability": "Regenerator",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 344,
+        "hp_after": 161,
+        "max_hp": 394
+      }
+    }
+  ]
+}

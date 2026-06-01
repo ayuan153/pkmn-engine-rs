@@ -1,0 +1,207 @@
+{
+  "id": "def-multiscale",
+  "description": "Multiscale halves damage at full HP",
+  "seed": [
+    3500,
+    3501,
+    3502,
+    3503
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Weavile",
+        "species": "Weavile",
+        "item": "",
+        "ability": "Pressure",
+        "moves": [
+          "Ice Punch",
+          "Knock Off",
+          "Ice Shard",
+          "Low Kick"
+        ],
+        "nature": "Jolly",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Dragonite",
+        "species": "Dragonite",
+        "item": "",
+        "ability": "Multiscale",
+        "moves": [
+          "Outrage",
+          "Extreme Speed",
+          "Earthquake",
+          "Fire Punch"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Extreme Speed",
+      "damage": 143,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Dragonite",
+        "level": 100,
+        "stat_atk": 403,
+        "stat_def": 226,
+        "stat_spa": 212,
+        "ability": "Multiscale",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Weavile",
+        "level": 100,
+        "stat_atk": 339,
+        "stat_def": 166,
+        "stat_spd": 207,
+        "ability": "Pressure",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 281,
+        "hp_after": 138,
+        "max_hp": 281
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Ice Punch",
+      "damage": 260,
+      "crit": false,
+      "effectiveness": 2,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Weavile",
+        "level": 100,
+        "stat_atk": 339,
+        "stat_def": 166,
+        "stat_spa": 113,
+        "ability": "Pressure",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Dragonite",
+        "level": 100,
+        "stat_atk": 403,
+        "stat_def": 226,
+        "stat_spd": 237,
+        "ability": "Multiscale",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 323,
+        "hp_after": 63,
+        "max_hp": 323
+      }
+    }
+  ]
+}
