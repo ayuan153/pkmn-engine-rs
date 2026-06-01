@@ -33,6 +33,8 @@ bitflags::bitflags! {
         const MUST_RECHARGE = 0x400;
         const FLASH_FIRE = 0x800;
         const ROOST = 0x1000;
+        const CHARGING = 0x2000;
+        const SEMI_INVULNERABLE = 0x4000;
     }
 }
 
@@ -119,6 +121,7 @@ pub struct Pokemon {
     pub substitute_hp: u16,
     pub locked_move_turns: u8,
     pub locked_move_idx: u8,
+    pub charging_move_idx: u8,
     pub protect_consecutive: u8,
     pub confusion_turns: u8,
     // Tera
@@ -165,6 +168,7 @@ impl Pokemon {
             substitute_hp: 0,
             locked_move_turns: 0,
             locked_move_idx: 0,
+            charging_move_idx: 0,
             protect_consecutive: 0,
             confusion_turns: 0,
             tera_type: None,

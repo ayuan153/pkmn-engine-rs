@@ -86,12 +86,14 @@ impl Battle {
             return;
         }
 
-        // Must recharge: skip turn and clear
+        // Must recharge: skip turn, emit cant, and clear
         if self.sides[player as usize]
             .active()
             .volatiles
             .contains(Volatiles::MUST_RECHARGE)
         {
+            let name = self.species_name(player);
+            self.emit(format!("|cant|p{}a: {}|recharge", player+1, name));
             self.sides[player as usize]
                 .active_mut()
                 .volatiles
@@ -149,13 +151,37 @@ impl Battle {
             None => return,
         };
 
-        // Deduct PP
-        self.sides[player as usize].active_mut().moves[move_idx as usize].pp = self.sides
-            [player as usize]
-            .active_mut()
-            .moves[move_idx as usize]
-            .pp
-            .saturating_sub(1);
+        // Deduct PP (skip for locked move continuations and charge/semi-invulnerable turn 2)
+        let is_locked_continuation = self.sides[player as usize]
+            .active()
+            .volatiles
+            .contains(Volatiles::LOCKED_MOVE);
+        let is_charge_turn2 = self.sides[player as usize]
+            .active()
+            .volatiles
+            .intersects(Volatiles::CHARGING | Volatiles::SEMI_INVULNERABLE);
+        if !is_locked_continuation && !is_charge_turn2 {
+            self.sides[player as usize].active_mut().moves[move_idx as usize].pp = self.sides
+                [player as usize]
+                .active_mut()
+                .moves[move_idx as usize]
+                .pp
+                .saturating_sub(1);
+        }
+
+        // --- Multi-turn move state machine: charge / semi-invulnerable ---
+        // Turn 2: clear charging state and proceed with normal execution
+        if is_charge_turn2 {
+            let mon = self.sides[player as usize].active_mut();
+            mon.volatiles.remove(Volatiles::CHARGING);
+            mon.volatiles.remove(Volatiles::SEMI_INVULNERABLE);
+        } else {
+            // Turn 1: check if this is a charge/semi-invulnerable move that needs setup
+            let charge_result = self.check_charge_turn1(player, move_idx, &move_data);
+            if charge_result {
+                return; // Charge turn consumed; move executes next turn
+            }
+        }
 
         // Check if move will fail (skip accuracy for these - PS behavior)
         let will_fail_still = {
@@ -198,6 +224,21 @@ impl Battle {
         // Also check ability immunity before accuracy
         let is_ability_immune = move_data.category != MoveCategory::Status
             && self.check_ability_immunity(defender_idx, move_data.move_type);
+
+        // Semi-invulnerable: most moves auto-miss against a semi-invulnerable target
+        // TODO: Earthquake hits Dig, Surf hits Dive, Thunder/Hurricane hit Fly/Bounce, etc.
+        if self.sides[defender_idx as usize]
+            .active()
+            .volatiles
+            .contains(Volatiles::SEMI_INVULNERABLE)
+            && move_data.category != MoveCategory::Status
+        {
+            let atk_name = self.species_name(player);
+            let def_name = self.species_name(defender_idx);
+            self.emit(format!("|move|p{}a: {}|{}|p{}a: {}|[miss]", player+1, atk_name, move_data.name, defender_idx+1, def_name));
+            self.emit(format!("|-miss|p{}a: {}|p{}a: {}", player+1, atk_name, defender_idx+1, def_name));
+            return;
+        }
 
         // Accuracy check (skip for multi-hit moves, moves that will fail, and immune targets)
         // accuracy=0 means "never miss" (PS accuracy: true), no RNG consumed
@@ -356,6 +397,8 @@ impl Battle {
         {
             let def_name = self.species_name(defender_idx);
             self.emit(format!("|-activate|p{}a: {}|move: Protect", defender_idx+1, def_name));
+            // Interrupt breaks locking moves (no confusion)
+            self.break_lock(player);
             return;
         }
 
@@ -372,6 +415,7 @@ impl Battle {
             if effectiveness == 0.0 {
                 let def_name = self.species_name(defender_idx);
                 self.emit(format!("|-immune|p{}a: {}", defender_idx+1, def_name));
+                self.break_lock(player);
                 return;
             }
         }
@@ -400,6 +444,7 @@ impl Battle {
                 let ability_name = pkmn_core::abilities::get_ability(defender_ability).name;
                 self.emit(format!("|-immune|p{}a: {}|[from] ability: {}", defender_idx+1, def_name, ability_name));
             }
+            self.break_lock(player);
             return;
         }
 
@@ -631,10 +676,20 @@ impl Battle {
         }
     }
 
+    /// Break a locking move early (no confusion). Called when the move is interrupted.
+    fn break_lock(&mut self, player: u8) {
+        let mon = self.sides[player as usize].active_mut();
+        if mon.volatiles.contains(Volatiles::LOCKED_MOVE) {
+            mon.volatiles.remove(Volatiles::LOCKED_MOVE);
+            mon.locked_move_turns = 0;
+        }
+    }
+
     fn handle_recharge_move(&mut self, player: u8, move_data: &MoveData) {
         let name = move_data.name.to_lowercase();
         match name.as_str() {
-            "hyper beam" | "giga impact" | "blast burn" | "frenzy plant" | "hydro cannon" => {
+            "hyper beam" | "giga impact" | "blast burn" | "frenzy plant" | "hydro cannon"
+            | "eternabeam" | "prismatic laser" | "roar of time" => {
                 self.sides[player as usize]
                     .active_mut()
                     .volatiles
@@ -642,6 +697,75 @@ impl Battle {
             }
             _ => {}
         }
+    }
+
+    /// Check if a move is a charge or semi-invulnerable move on turn 1.
+    /// Returns true if the charge turn was consumed (caller should return).
+    /// Handles Power Herb skip and Solar Beam/Blade sun skip.
+    fn check_charge_turn1(&mut self, player: u8, move_idx: u8, move_data: &MoveData) -> bool {
+        let name = move_data.name.to_lowercase();
+        let is_charge = matches!(name.as_str(), "solar beam" | "solar blade" | "meteor beam");
+        let is_semi_inv = matches!(name.as_str(), "fly" | "bounce" | "dig" | "dive" | "phantom force" | "shadow force");
+        if !is_charge && !is_semi_inv {
+            return false;
+        }
+
+        // Check if charge can be skipped: Sun for Solar Beam/Blade, Power Herb for all
+        let skip_charge = if matches!(name.as_str(), "solar beam" | "solar blade")
+            && self.field.weather == Weather::Sun
+        {
+            true
+        } else {
+            self.sides[player as usize].active().item_id == pkmn_core::items::ItemId::PowerHerb
+        };
+
+        if skip_charge {
+            // Consume Power Herb if that's what skipped it
+            if self.sides[player as usize].active().item_id == pkmn_core::items::ItemId::PowerHerb
+                && !(matches!(name.as_str(), "solar beam" | "solar blade") && self.field.weather == Weather::Sun)
+            {
+                self.sides[player as usize].active_mut().item_id = pkmn_core::items::ItemId::None;
+                let atk_name = self.species_name(player);
+                self.emit(format!("|-enditem|p{}a: {}|Power Herb", player+1, atk_name));
+            }
+            // For Meteor Beam, the SpA boost still happens on the skip turn
+            if name == "meteor beam" {
+                let atk_name = self.species_name(player);
+                let mon = self.sides[player as usize].active_mut();
+                mon.boosts.spa = (mon.boosts.spa + 1).min(6);
+                self.emit(format!("|-boost|p{}a: {}|spa|1", player+1, atk_name));
+            }
+            return false; // Proceed with normal execution (no charge turn)
+        }
+
+        // Turn 1: set up the charge state
+        let atk_name = self.species_name(player);
+        let defender_idx = 1 - player;
+        let def_name = self.species_name(defender_idx);
+
+        if is_semi_inv {
+            // Semi-invulnerable: emit move line then prepare message
+            self.emit(format!("|move|p{}a: {}|{}|p{}a: {}", player+1, atk_name, move_data.name, defender_idx+1, def_name));
+            self.emit(format!("|-prepare|p{}a: {}|{}", player+1, atk_name, move_data.name));
+            let mon = self.sides[player as usize].active_mut();
+            mon.volatiles.insert(Volatiles::SEMI_INVULNERABLE);
+            mon.charging_move_idx = move_idx;
+        } else {
+            // Charge move: emit move line then prepare message
+            self.emit(format!("|move|p{}a: {}|{}|p{}a: {}", player+1, atk_name, move_data.name, defender_idx+1, def_name));
+            self.emit(format!("|-prepare|p{}a: {}|{}", player+1, atk_name, move_data.name));
+            // Meteor Beam: +1 SpA on charge turn
+            if name == "meteor beam" {
+                let mon = self.sides[player as usize].active_mut();
+                mon.boosts.spa = (mon.boosts.spa + 1).min(6);
+                let atk_name2 = self.species_name(player);
+                self.emit(format!("|-boost|p{}a: {}|spa|1", player+1, atk_name2));
+            }
+            let mon = self.sides[player as usize].active_mut();
+            mon.volatiles.insert(Volatiles::CHARGING);
+            mon.charging_move_idx = move_idx;
+        }
+        true
     }
 
     fn apply_secondaries(&mut self, attacker: u8, defender: u8, move_data: &MoveData) {
@@ -1129,6 +1253,13 @@ impl Battle {
                 && defender.ability_id != pkmn_core::abilities::AbilityId::Levitate
                 && defender.item_id != pkmn_core::items::ItemId::AirBalloon;
             if def_grounded { bp /= 2; }
+        }
+
+        // Solar Beam/Blade: 0.5x BP in Rain/Sand/Snow (weather weakening)
+        if matches!(name.as_str(), "solar beam" | "solar blade")
+            && matches!(self.field.weather, Weather::Rain | Weather::Sand | Weather::Snow)
+        {
+            bp /= 2;
         }
 
         bp

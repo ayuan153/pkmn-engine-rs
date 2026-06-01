@@ -1057,4 +1057,176 @@ mod tests {
         let boost_atk_pos = log.find("|-boost|").unwrap();
         assert!(unboost_def_pos < boost_atk_pos, "Unboosts should come before boosts in protocol");
     }
+
+    // === Multi-turn move tests (extended) ===
+
+    fn outrage_slot() -> MoveSlot {
+        MoveSlot { move_id: 200, pp: 10, max_pp: 10 }
+    }
+
+    fn solar_beam_slot() -> MoveSlot {
+        MoveSlot { move_id: 76, pp: 10, max_pp: 10 }
+    }
+
+    fn fly_slot() -> MoveSlot {
+        MoveSlot { move_id: 19, pp: 15, max_pp: 15 }
+    }
+
+    fn hyper_beam_slot() -> MoveSlot {
+        MoveSlot { move_id: 63, pp: 5, max_pp: 5 }
+    }
+
+    #[test]
+    fn test_outrage_pp_not_deducted_on_continuation() {
+        // Outrage locks for 2-3 turns then confuses; PP only deducted on first use
+        let p1 = make_pokemon("Dragonite", Nature::Adamant, [outrage_slot(), eq_slot(), empty_slot(), empty_slot()]);
+        let p2 = make_pokemon("Blissey", Nature::Bold, [empty_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, p2);
+        battle.protocol.clear();
+
+        // Turn 1: use Outrage - should lock
+        battle.execute_choice(0, Choice::Move(0));
+        assert!(battle.sides[0].active().volatiles.contains(Volatiles::LOCKED_MOVE));
+        // PP should be deducted on first use
+        assert_eq!(battle.sides[0].active().moves[0].pp, 9);
+
+        // While locked, legal actions should only be the locked move
+        let choices = battle.choices(0);
+        assert_eq!(choices.len(), 1);
+        assert_eq!(choices[0], Choice::Move(0));
+
+        // Turn 2: continue Outrage (PP should NOT be deducted again)
+        battle.protocol.clear();
+        battle.execute_choice(0, Choice::Move(0));
+        assert_eq!(battle.sides[0].active().moves[0].pp, 9); // Still 9, not 8
+
+        // After 2 or 3 turns, should become confused (depends on RNG)
+        // The lock either ended (confused) or continues for 1 more turn
+        let mon = battle.sides[0].active();
+        if !mon.volatiles.contains(Volatiles::LOCKED_MOVE) {
+            // Lock ended after 2 turns - should be confused
+            assert!(mon.volatiles.contains(Volatiles::CONFUSED));
+        } else {
+            // Lock continues for turn 3
+            battle.execute_choice(0, Choice::Move(0));
+            let mon = battle.sides[0].active();
+            assert!(!mon.volatiles.contains(Volatiles::LOCKED_MOVE));
+            assert!(mon.volatiles.contains(Volatiles::CONFUSED));
+        }
+    }
+
+    #[test]
+    fn test_solar_beam_charges_then_hits() {
+        // Solar Beam: turn 1 charges, turn 2 hits
+        let p1 = make_pokemon("Venusaur", Nature::Modest, [solar_beam_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let p2 = make_pokemon("Blissey", Nature::Bold, [empty_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, p2);
+        let p2_hp_before = battle.sides[1].active().hp;
+        battle.protocol.clear();
+
+        // Turn 1: charge (no damage)
+        battle.execute_choice(0, Choice::Move(0));
+        assert_eq!(battle.sides[1].active().hp, p2_hp_before, "No damage on charge turn");
+        assert!(battle.sides[0].active().volatiles.contains(Volatiles::CHARGING));
+        assert!(battle.protocol.iter().any(|l| l.contains("|-prepare|")));
+
+        // While charging, legal actions should force the move
+        let choices = battle.choices(0);
+        assert_eq!(choices.len(), 1);
+        assert_eq!(choices[0], Choice::Move(0));
+
+        // Turn 2: hit
+        battle.protocol.clear();
+        battle.execute_choice(0, Choice::Move(0));
+        assert!(battle.sides[1].active().hp < p2_hp_before, "Should deal damage on turn 2");
+        assert!(!battle.sides[0].active().volatiles.contains(Volatiles::CHARGING));
+    }
+
+    #[test]
+    fn test_solar_beam_skips_charge_in_sun() {
+        // Solar Beam skips charge turn in Sun
+        let p1 = make_pokemon("Venusaur", Nature::Modest, [solar_beam_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let p2 = make_pokemon("Blissey", Nature::Bold, [empty_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, p2);
+        battle.field.weather = Weather::Sun;
+        let p2_hp_before = battle.sides[1].active().hp;
+        battle.protocol.clear();
+
+        // Should hit immediately (no charge turn)
+        battle.execute_choice(0, Choice::Move(0));
+        assert!(battle.sides[1].active().hp < p2_hp_before, "Should deal damage immediately in Sun");
+        assert!(!battle.sides[0].active().volatiles.contains(Volatiles::CHARGING));
+    }
+
+    #[test]
+    fn test_solar_beam_power_herb_skips_charge() {
+        // Power Herb skips charge turn
+        let mut p1 = make_pokemon("Venusaur", Nature::Modest, [solar_beam_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        p1.item_id = ItemId::PowerHerb;
+        let p2 = make_pokemon("Blissey", Nature::Bold, [empty_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, p2);
+        let p2_hp_before = battle.sides[1].active().hp;
+        battle.protocol.clear();
+
+        // Should hit immediately and consume Power Herb
+        battle.execute_choice(0, Choice::Move(0));
+        assert!(battle.sides[1].active().hp < p2_hp_before, "Should deal damage immediately with Power Herb");
+        assert_eq!(battle.sides[0].active().item_id, ItemId::None, "Power Herb consumed");
+        assert!(battle.protocol.iter().any(|l| l.contains("|-enditem|") && l.contains("Power Herb")));
+    }
+
+    #[test]
+    fn test_fly_semi_invulnerable() {
+        // Fly: turn 1 semi-invulnerable (moves miss), turn 2 hits
+        let p1 = make_pokemon("Dragonite", Nature::Adamant, [fly_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let p2 = make_pokemon("Blissey", Nature::Bold, [flamethrower_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, p2);
+        let p1_hp_before = battle.sides[0].active().hp;
+        let p2_hp_before = battle.sides[1].active().hp;
+        battle.protocol.clear();
+
+        // Turn 1: go into the air
+        battle.execute_choice(0, Choice::Move(0));
+        assert!(battle.sides[0].active().volatiles.contains(Volatiles::SEMI_INVULNERABLE));
+        assert_eq!(battle.sides[1].active().hp, p2_hp_before, "No damage on charge turn");
+        assert!(battle.protocol.iter().any(|l| l.contains("|-prepare|")));
+
+        // Opponent's move should miss while semi-invulnerable
+        battle.protocol.clear();
+        battle.execute_choice(1, Choice::Move(0));
+        assert_eq!(battle.sides[0].active().hp, p1_hp_before, "Move should miss semi-invulnerable target");
+        assert!(battle.protocol.iter().any(|l| l.contains("[miss]")));
+
+        // Turn 2: Fly hits
+        battle.protocol.clear();
+        battle.execute_choice(0, Choice::Move(0));
+        assert!(battle.sides[1].active().hp < p2_hp_before, "Fly should deal damage on turn 2");
+        assert!(!battle.sides[0].active().volatiles.contains(Volatiles::SEMI_INVULNERABLE));
+    }
+
+    #[test]
+    fn test_hyper_beam_recharge_emits_cant() {
+        let p1 = make_pokemon("Dragonite", Nature::Modest, [hyper_beam_slot(), eq_slot(), empty_slot(), empty_slot()]);
+        let p2 = make_pokemon("Blissey", Nature::Bold, [empty_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let mut battle = make_battle(p1, p2);
+        battle.protocol.clear();
+
+        // Use Hyper Beam
+        battle.execute_choice(0, Choice::Move(0));
+        assert!(battle.sides[0].active().volatiles.contains(Volatiles::MUST_RECHARGE));
+
+        // Legal actions should be empty (forced recharge)
+        let choices = battle.choices(0);
+        assert!(choices.is_empty(), "No choices during recharge");
+
+        // Next turn: recharge (emit |cant|...|recharge)
+        battle.protocol.clear();
+        battle.execute_choice(0, Choice::Move(0));
+        assert!(!battle.sides[0].active().volatiles.contains(Volatiles::MUST_RECHARGE));
+        assert!(battle.protocol.iter().any(|l| l.contains("|cant|") && l.contains("|recharge")));
+
+        // After recharge, should be free to act
+        let choices = battle.choices(0);
+        assert!(choices.len() > 1, "Should have normal choices after recharge");
+    }
 }

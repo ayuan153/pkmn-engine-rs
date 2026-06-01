@@ -207,6 +207,14 @@ impl Battle {
             return choices;
         }
 
+        // Charging or semi-invulnerable: forced to continue the move
+        if active.volatiles.contains(Volatiles::CHARGING)
+            || active.volatiles.contains(Volatiles::SEMI_INVULNERABLE)
+        {
+            choices.push(Choice::Move(active.charging_move_idx));
+            return choices;
+        }
+
         // Locked move: only that move
         if active.volatiles.contains(Volatiles::LOCKED_MOVE) {
             choices.push(Choice::Move(active.locked_move_idx));
