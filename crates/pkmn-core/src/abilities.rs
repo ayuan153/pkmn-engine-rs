@@ -78,6 +78,9 @@ pub enum AbilityId {
     Infiltrator,
     Synchronize,
     RockHead,
+    GaleWings,
+    Triage,
+    Unburden,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -166,6 +169,9 @@ static ABILITY_TABLE: &[AbilityData] = &[
     AbilityData { id: AbilityId::CursedBody, name: "Cursed Body", triggers: &[AbilityTrigger::OnBeingHit] },
     AbilityData { id: AbilityId::SkillLink, name: "Skill Link", triggers: &[AbilityTrigger::ModifyDamage] },
     AbilityData { id: AbilityId::RockHead, name: "Rock Head", triggers: &[AbilityTrigger::Passive] },
+    AbilityData { id: AbilityId::GaleWings, name: "Gale Wings", triggers: &[AbilityTrigger::Passive] },
+    AbilityData { id: AbilityId::Triage, name: "Triage", triggers: &[AbilityTrigger::Passive] },
+    AbilityData { id: AbilityId::Unburden, name: "Unburden", triggers: &[AbilityTrigger::ModifySpeed] },
 ];
 
 pub fn get_ability(id: AbilityId) -> &'static AbilityData {

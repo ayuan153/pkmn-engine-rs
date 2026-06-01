@@ -275,6 +275,8 @@ pub enum MoveEffect {
     Hazard(HazardKind),
     /// Set weather or terrain on the field.
     Field(FieldEffect),
+    /// Toggle Trick Room (set 5 turns if off, clear if on).
+    TrickRoom,
 }
 
 /// Weather/terrain setter effect (data-driven).
@@ -362,6 +364,8 @@ pub fn move_effect(name: &str) -> Option<MoveEffect> {
         "grassy terrain" => Some(MoveEffect::Field(FieldEffect::Terrain(FieldTerrain::Grassy))),
         "misty terrain" => Some(MoveEffect::Field(FieldEffect::Terrain(FieldTerrain::Misty))),
         "psychic terrain" => Some(MoveEffect::Field(FieldEffect::Terrain(FieldTerrain::Psychic))),
+        // Trick Room
+        "trick room" => Some(MoveEffect::TrickRoom),
         _ => None,
     }
 }

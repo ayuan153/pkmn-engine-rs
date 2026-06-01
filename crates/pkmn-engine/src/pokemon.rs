@@ -37,6 +37,7 @@ bitflags::bitflags! {
         const SEMI_INVULNERABLE = 0x4000;
         const DISABLE = 0x8000;
         const TRAPPED = 0x10000;
+        const UNBURDEN = 0x20000;
     }
 }
 

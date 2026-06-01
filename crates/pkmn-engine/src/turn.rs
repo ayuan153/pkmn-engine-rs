@@ -1632,6 +1632,19 @@ impl Battle {
         }
     }
 
+    /// Toggle Trick Room: set 5 turns if off, clear if already on.
+    fn apply_trick_room(&mut self, _attacker: u8) {
+        if self.field.trick_room > 0 {
+            // Already active: toggle off
+            self.field.trick_room = 0;
+            self.emit("|-fieldend|move: Trick Room".to_string());
+        } else {
+            // Set Trick Room for 5 turns
+            self.field.trick_room = 5;
+            self.emit("|-fieldstart|move: Trick Room".to_string());
+        }
+    }
+
     pub fn defender_types(&self, player: u8) -> [Type; 2] {
         let mon = self.sides[player as usize].active();
         let mut types = mon.types;
@@ -1719,6 +1732,10 @@ impl Battle {
                 }
                 crate::events::MoveEffect::Field(field_effect) => {
                     self.apply_field_effect(attacker, field_effect);
+                    return;
+                }
+                crate::events::MoveEffect::TrickRoom => {
+                    self.apply_trick_room(attacker);
                     return;
                 }
             }
@@ -1913,8 +1930,8 @@ impl Battle {
     }
 
     pub fn end_of_turn(&mut self) {
-        // PS processes EOT effects in speed order (faster first)
-        let order: [u8; 2] = if self.sides[0].active().effective_speed() >= self.sides[1].active().effective_speed() {
+        // PS processes EOT effects in speed order (faster first, respecting abilities)
+        let order: [u8; 2] = if self.ordering_speed(0) >= self.ordering_speed(1) {
             [0, 1]
         } else {
             [1, 0]
@@ -1991,8 +2008,8 @@ impl Battle {
 
         // Item end-of-turn: healing items (Leftovers, Black Sludge) — PS residualOrder 5
         // Dispatched via on_residual hooks for migrated items, fallback for others.
-        let p1_speed = self.sides[0].active().effective_speed();
-        let p2_speed = self.sides[1].active().effective_speed();
+        let p1_speed = self.ordering_speed(0);
+        let p2_speed = self.ordering_speed(1);
         let item_order: [u8; 2] = if p2_speed > p1_speed { [1, 0] } else { [0, 1] };
         for &player in &item_order {
             let item_id = self.sides[player as usize].active().item_id;
@@ -2176,6 +2193,9 @@ impl Battle {
         }
         if self.field.trick_room > 0 {
             self.field.trick_room -= 1;
+            if self.field.trick_room == 0 {
+                self.emit("|-fieldend|move: Trick Room".to_string());
+            }
         }
 
         for side in &mut self.sides {
