@@ -251,18 +251,36 @@ pub struct BoostEffect {
     pub spe: i8,
 }
 
+/// Which non-volatile status a move inflicts.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum StatusKind {
+    Burn,
+    Paralyze,
+    Poison,
+    Toxic,
+    Sleep,
+    Freeze,
+}
+
 /// Data-driven move effect for status/boost moves.
 #[derive(Debug, Clone, Copy)]
 pub enum MoveEffect {
     /// Apply stat boosts to the user.
     Boost(BoostEffect),
+    /// Inflict a non-volatile status on the target (immunity checks applied by applier).
+    StatusInflict(StatusKind),
+    /// Heal the user by num/denom of max HP.
+    Heal(u16, u16),
     /// Set a hazard on the opponent's side.
-    Hazard(HazardType),
+    Hazard(HazardKind),
 }
 
-#[derive(Debug, Clone, Copy)]
-pub enum HazardType {
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum HazardKind {
     StealthRock,
+    Spikes,
+    ToxicSpikes,
+    StickyWeb,
 }
 
 /// Lookup data-driven effect for a move by name. Returns None for moves
@@ -278,7 +296,17 @@ pub fn move_effect(name: &str) -> Option<MoveEffect> {
         "calm mind" => Some(MoveEffect::Boost(BoostEffect {
             atk: 0, def: 0, spa: 1, spd: 1, spe: 0,
         })),
-        "stealth rock" => Some(MoveEffect::Hazard(HazardType::StealthRock)),
+        // Status-inflicting moves
+        "toxic" => Some(MoveEffect::StatusInflict(StatusKind::Toxic)),
+        "will-o-wisp" => Some(MoveEffect::StatusInflict(StatusKind::Burn)),
+        "thunder wave" => Some(MoveEffect::StatusInflict(StatusKind::Paralyze)),
+        // Flat recovery moves (1/2 max HP)
+        "recover" | "soft-boiled" | "slack off" | "milk drink" => Some(MoveEffect::Heal(1, 2)),
+        // Hazards
+        "stealth rock" => Some(MoveEffect::Hazard(HazardKind::StealthRock)),
+        "spikes" => Some(MoveEffect::Hazard(HazardKind::Spikes)),
+        "toxic spikes" => Some(MoveEffect::Hazard(HazardKind::ToxicSpikes)),
+        "sticky web" => Some(MoveEffect::Hazard(HazardKind::StickyWeb)),
         _ => None,
     }
 }
@@ -327,7 +355,7 @@ mod tests {
     #[test]
     fn test_move_effect_stealth_rock() {
         let eff = move_effect("stealth rock");
-        assert!(matches!(eff, Some(MoveEffect::Hazard(HazardType::StealthRock))));
+        assert!(matches!(eff, Some(MoveEffect::Hazard(HazardKind::StealthRock))));
     }
 
     #[test]

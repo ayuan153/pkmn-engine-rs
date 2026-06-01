@@ -1322,6 +1322,114 @@ impl Battle {
         }
     }
 
+    /// Apply a data-driven status infliction. Enforces type/ability immunity
+    /// exactly as the old per-move match arms did.
+    fn apply_status_inflict(&mut self, _attacker: u8, defender: u8, kind: crate::events::StatusKind) {
+        use crate::events::StatusKind;
+        let def_mon = self.sides[defender as usize].active();
+        // Already statused → fail
+        if def_mon.status != Status::None {
+            let def_name = self.species_name(defender);
+            let tag = match kind {
+                StatusKind::Burn => "brn",
+                StatusKind::Paralyze => "par",
+                StatusKind::Poison | StatusKind::Toxic => "tox",
+                StatusKind::Sleep => "slp",
+                StatusKind::Freeze => "frz",
+            };
+            self.emit(format!("|-fail|p{}a: {}|{}", defender + 1, def_name, tag));
+            return;
+        }
+        // Type immunity checks
+        let immune = match kind {
+            StatusKind::Burn => def_mon.types.contains(&Type::Fire),
+            StatusKind::Paralyze => {
+                def_mon.types.contains(&Type::Electric) || def_mon.types.contains(&Type::Ground)
+            }
+            StatusKind::Poison | StatusKind::Toxic => {
+                def_mon.types.contains(&Type::Poison) || def_mon.types.contains(&Type::Steel)
+            }
+            StatusKind::Freeze => def_mon.types.contains(&Type::Ice),
+            StatusKind::Sleep => false,
+        };
+        if immune {
+            let def_name = self.species_name(defender);
+            self.emit(format!("|-immune|p{}a: {}", defender + 1, def_name));
+            return;
+        }
+        // Apply the status
+        let status = match kind {
+            StatusKind::Burn => Status::Burn,
+            StatusKind::Paralyze => Status::Paralyze,
+            StatusKind::Poison => Status::Poison,
+            StatusKind::Toxic => Status::Toxic,
+            StatusKind::Sleep => Status::Sleep,
+            StatusKind::Freeze => Status::Freeze,
+        };
+        let tag = match kind {
+            StatusKind::Burn => "brn",
+            StatusKind::Paralyze => "par",
+            StatusKind::Poison => "psn",
+            StatusKind::Toxic => "tox",
+            StatusKind::Sleep => "slp",
+            StatusKind::Freeze => "frz",
+        };
+        self.sides[defender as usize].active_mut().status = status;
+        let def_name = self.species_name(defender);
+        self.emit(format!("|-status|p{}a: {}|{}", defender + 1, def_name, tag));
+    }
+
+    /// Apply a data-driven flat heal (num/denom of max HP).
+    fn apply_heal(&mut self, player: u8, num: u16, denom: u16) {
+        let mon = self.sides[player as usize].active_mut();
+        if mon.hp >= mon.max_hp {
+            let name = self.species_name(player);
+            self.emit(format!("|-fail|p{}a: {}|heal", player + 1, name));
+        } else {
+            let heal = mon.max_hp * num / denom;
+            mon.hp = (mon.hp + heal).min(mon.max_hp);
+            let name = self.species_name(player);
+            let hp = self.sides[player as usize].active().hp;
+            let max_hp = self.sides[player as usize].active().max_hp;
+            self.emit(format!("|-heal|p{}a: {}|{}/{}", player + 1, name, hp, max_hp));
+        }
+    }
+
+    /// Apply a data-driven hazard set on the defender's side.
+    fn apply_hazard(&mut self, attacker: u8, defender: u8, kind: crate::events::HazardKind) {
+        use crate::events::HazardKind;
+        let sc = &self.sides[defender as usize].side_conditions;
+        let fail = match kind {
+            HazardKind::StealthRock => sc.stealth_rock,
+            HazardKind::Spikes => sc.spikes >= 3,
+            HazardKind::ToxicSpikes => sc.toxic_spikes >= 2,
+            HazardKind::StickyWeb => sc.sticky_web,
+        };
+        if fail {
+            let atk_name = self.species_name(attacker);
+            self.emit(format!("|-fail|p{}a: {}", attacker + 1, atk_name));
+        } else {
+            match kind {
+                HazardKind::StealthRock => {
+                    self.sides[defender as usize].side_conditions.stealth_rock = true;
+                    self.emit(format!("|-sidestart|p{}: Player {}|move: Stealth Rock", defender + 1, defender + 1));
+                }
+                HazardKind::Spikes => {
+                    self.sides[defender as usize].side_conditions.spikes += 1;
+                    self.emit(format!("|-sidestart|p{}: Player {}|move: Spikes", defender + 1, defender + 1));
+                }
+                HazardKind::ToxicSpikes => {
+                    self.sides[defender as usize].side_conditions.toxic_spikes += 1;
+                    self.emit(format!("|-sidestart|p{}: Player {}|move: Toxic Spikes", defender + 1, defender + 1));
+                }
+                HazardKind::StickyWeb => {
+                    self.sides[defender as usize].side_conditions.sticky_web = true;
+                    self.emit(format!("|-sidestart|p{}: Player {}|move: Sticky Web", defender + 1, defender + 1));
+                }
+            }
+        }
+    }
+
     pub fn defender_types(&self, player: u8) -> [Type; 2] {
         let mon = self.sides[player as usize].active();
         let mut types = mon.types;
@@ -1343,6 +1451,14 @@ impl Battle {
             (Weather::Rain, Type::Fire) => 0.5,
             _ => 1.0,
         }
+    }
+
+    /// Test helper: call apply_status_move with a move looked up by name.
+    #[cfg(test)]
+    pub(crate) fn apply_status_move_for_test(&mut self, attacker: u8, defender: u8, move_name: &str) {
+        let move_data = pkmn_core::moves::get_move(move_name)
+            .expect("test move not found");
+        self.apply_status_move(attacker, defender, move_data);
     }
 
     fn apply_status_move(&mut self, attacker: u8, defender: u8, move_data: &MoveData) {
@@ -1387,69 +1503,22 @@ impl Battle {
                     self.apply_boost_effect(attacker, &boosts);
                     return;
                 }
-                crate::events::MoveEffect::Hazard(crate::events::HazardType::StealthRock) => {
-                    if self.sides[defender as usize].side_conditions.stealth_rock {
-                        let atk_name = self.species_name(attacker);
-                        self.emit(format!("|-fail|p{}a: {}", attacker+1, atk_name));
-                    } else {
-                        self.sides[defender as usize].side_conditions.stealth_rock = true;
-                        self.emit(format!("|-sidestart|p{}: Player {}|move: Stealth Rock", defender+1, defender+1));
-                    }
+                crate::events::MoveEffect::StatusInflict(kind) => {
+                    self.apply_status_inflict(attacker, defender, kind);
+                    return;
+                }
+                crate::events::MoveEffect::Heal(num, denom) => {
+                    self.apply_heal(attacker, num, denom);
+                    return;
+                }
+                crate::events::MoveEffect::Hazard(kind) => {
+                    self.apply_hazard(attacker, defender, kind);
                     return;
                 }
             }
         }
 
         match name.as_str() {
-            "toxic" => {
-                let def_mon = self.sides[defender as usize].active_mut();
-                if def_mon.status == Status::None
-                    && !def_mon.types.contains(&Type::Poison)
-                    && !def_mon.types.contains(&Type::Steel)
-                {
-                    def_mon.status = Status::Toxic;
-                    let def_name = self.species_name(defender);
-                    self.emit(format!("|-status|p{}a: {}|tox", defender+1, def_name));
-                } else if def_mon.types.contains(&Type::Poison) || def_mon.types.contains(&Type::Steel) {
-                    let def_name = self.species_name(defender);
-                    self.emit(format!("|-immune|p{}a: {}", defender+1, def_name));
-                } else {
-                    let def_name = self.species_name(defender);
-                    self.emit(format!("|-fail|p{}a: {}|tox", defender+1, def_name));
-                }
-            }
-            "will-o-wisp" => {
-                let def_mon = self.sides[defender as usize].active_mut();
-                if def_mon.status == Status::None {
-                    if def_mon.types.contains(&Type::Fire) {
-                        let def_name = self.species_name(defender);
-                        self.emit(format!("|-immune|p{}a: {}", defender+1, def_name));
-                    } else {
-                        def_mon.status = Status::Burn;
-                        let def_name = self.species_name(defender);
-                        self.emit(format!("|-status|p{}a: {}|brn", defender+1, def_name));
-                    }
-                } else {
-                    let def_name = self.species_name(defender);
-                    self.emit(format!("|-fail|p{}a: {}|brn", defender+1, def_name));
-                }
-            }
-            "thunder wave" => {
-                let def_mon = self.sides[defender as usize].active_mut();
-                if def_mon.status == Status::None {
-                    if def_mon.types.contains(&Type::Electric) || def_mon.types.contains(&Type::Ground) {
-                        let def_name = self.species_name(defender);
-                        self.emit(format!("|-immune|p{}a: {}", defender+1, def_name));
-                    } else {
-                        def_mon.status = Status::Paralyze;
-                        let def_name = self.species_name(defender);
-                        self.emit(format!("|-status|p{}a: {}|par", defender+1, def_name));
-                    }
-                } else {
-                    let def_name = self.species_name(defender);
-                    self.emit(format!("|-fail|p{}a: {}|par", defender+1, def_name));
-                }
-            }
             "protect" | "detect" => {
                 let consecutive = self.sides[attacker as usize].active().protect_consecutive;
                 if consecutive > 0 && self.rand_check(50) {
@@ -1562,27 +1631,8 @@ impl Battle {
                 self.sides[attacker as usize].side_conditions.light_screen = 5;
                 self.emit(format!("|-sidestart|p{}: Player {}|move: Light Screen", attacker+1, attacker+1));
             }
-            // stealth rock is now data-driven via events.rs
-            "toxic spikes" => {
-                let layers = &mut self.sides[defender as usize].side_conditions.toxic_spikes;
-                if *layers < 2 {
-                    *layers += 1;
-                    self.emit(format!("|-sidestart|p{}: Player {}|move: Toxic Spikes", defender+1, defender+1));
-                } else {
-                    let atk_name = self.species_name(attacker);
-                    self.emit(format!("|-fail|p{}a: {}", attacker+1, atk_name));
-                }
-            }
-            "sticky web" => {
-                if self.sides[defender as usize].side_conditions.sticky_web {
-                    let atk_name = self.species_name(attacker);
-                    self.emit(format!("|-fail|p{}a: {}", attacker+1, atk_name));
-                } else {
-                    self.sides[defender as usize].side_conditions.sticky_web = true;
-                    self.emit(format!("|-sidestart|p{}: Player {}|move: Sticky Web", defender+1, defender+1));
-                }
-            }
-            "recover" | "soft-boiled" | "roost" | "slack off" | "moonlight" | "synthesis" | "morning sun" => {
+            // stealth rock, spikes, toxic spikes, sticky web are now data-driven via events.rs
+            "roost" | "moonlight" | "synthesis" | "morning sun" => {
                 let mon = self.sides[attacker as usize].active_mut();
                 if mon.hp >= mon.max_hp {
                     let atk_name = self.species_name(attacker);
@@ -2044,5 +2094,189 @@ impl Battle {
         } else if p2_alive == 0 {
             self.result = BattleResult::Win(0);
         }
+    }
+}
+
+#[cfg(test)]
+mod tests_data_driven_moves {
+    use crate::battle::Battle;
+    use crate::pokemon::{MoveSlot, Pokemon, Status};
+    use crate::side::Side;
+    use pkmn_core::nature::Nature;
+    use pkmn_core::species::get_species;
+
+    fn toxic_slot() -> MoveSlot { MoveSlot { move_id: 92, pp: 10, max_pp: 10 } }
+    fn wow_slot() -> MoveSlot { MoveSlot { move_id: 261, pp: 15, max_pp: 15 } } // Will-O-Wisp
+    fn twave_slot() -> MoveSlot { MoveSlot { move_id: 86, pp: 20, max_pp: 20 } } // Thunder Wave
+    fn recover_slot() -> MoveSlot { MoveSlot { move_id: 105, pp: 10, max_pp: 10 } }
+    fn spikes_slot() -> MoveSlot { MoveSlot { move_id: 191, pp: 20, max_pp: 20 } }
+    fn tspikes_slot() -> MoveSlot { MoveSlot { move_id: 390, pp: 20, max_pp: 20 } } // Toxic Spikes
+    fn sweb_slot() -> MoveSlot { MoveSlot { move_id: 564, pp: 20, max_pp: 20 } } // Sticky Web
+    fn empty_slot() -> MoveSlot { MoveSlot { move_id: 0, pp: 0, max_pp: 0 } }
+
+    fn make_battle_with_moves(p1_name: &str, p1_moves: [MoveSlot; 4], p2_name: &str) -> Battle {
+        let species1 = get_species(p1_name).unwrap();
+        let species2 = get_species(p2_name).unwrap();
+        let p1 = Pokemon::new(species1, 100, Nature::Hardy, p1_moves, [0; 6], [31; 6]);
+        let p2 = Pokemon::new(species2, 100, Nature::Hardy, [empty_slot(); 4], [0; 6], [31; 6]);
+        Battle::new(Side::new(vec![p1]), Side::new(vec![p2]), [1, 2, 3, 4])
+    }
+
+    // --- StatusInflict tests ---
+
+    #[test]
+    fn toxic_poisons_neutral_target() {
+        let mut battle = make_battle_with_moves("Blissey", [toxic_slot(), empty_slot(), empty_slot(), empty_slot()], "Garchomp");
+        // Garchomp is Dragon/Ground — not immune to Toxic
+        battle.apply_status_move_for_test(0, 1, "Toxic");
+        assert_eq!(battle.sides[1].active().status, Status::Toxic);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-status|") && l.contains("tox")));
+    }
+
+    #[test]
+    fn toxic_immune_vs_steel() {
+        let mut battle = make_battle_with_moves("Blissey", [toxic_slot(), empty_slot(), empty_slot(), empty_slot()], "Ferrothorn");
+        // Ferrothorn is Grass/Steel — immune to Toxic
+        battle.apply_status_move_for_test(0, 1, "Toxic");
+        assert_eq!(battle.sides[1].active().status, Status::None);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-immune|")));
+    }
+
+    #[test]
+    fn toxic_immune_vs_poison() {
+        let mut battle = make_battle_with_moves("Blissey", [toxic_slot(), empty_slot(), empty_slot(), empty_slot()], "Toxapex");
+        // Toxapex is Poison/Water — immune to Toxic
+        battle.apply_status_move_for_test(0, 1, "Toxic");
+        assert_eq!(battle.sides[1].active().status, Status::None);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-immune|")));
+    }
+
+    #[test]
+    fn wow_burns_neutral_target() {
+        let mut battle = make_battle_with_moves("Blissey", [wow_slot(), empty_slot(), empty_slot(), empty_slot()], "Garchomp");
+        battle.apply_status_move_for_test(0, 1, "Will-O-Wisp");
+        assert_eq!(battle.sides[1].active().status, Status::Burn);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-status|") && l.contains("brn")));
+    }
+
+    #[test]
+    fn wow_immune_vs_fire() {
+        let mut battle = make_battle_with_moves("Blissey", [wow_slot(), empty_slot(), empty_slot(), empty_slot()], "Arcanine");
+        battle.apply_status_move_for_test(0, 1, "Will-O-Wisp");
+        assert_eq!(battle.sides[1].active().status, Status::None);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-immune|")));
+    }
+
+    #[test]
+    fn thunder_wave_paralyzes_neutral() {
+        let mut battle = make_battle_with_moves("Blissey", [twave_slot(), empty_slot(), empty_slot(), empty_slot()], "Garchomp");
+        // Garchomp is Dragon/Ground — immune to Thunder Wave (Ground type)
+        battle.apply_status_move_for_test(0, 1, "Thunder Wave");
+        assert_eq!(battle.sides[1].active().status, Status::None);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-immune|")));
+    }
+
+    #[test]
+    fn thunder_wave_paralyzes_non_immune() {
+        let mut battle = make_battle_with_moves("Blissey", [twave_slot(), empty_slot(), empty_slot(), empty_slot()], "Dragapult");
+        // Dragapult is Dragon/Ghost — not immune
+        battle.apply_status_move_for_test(0, 1, "Thunder Wave");
+        assert_eq!(battle.sides[1].active().status, Status::Paralyze);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-status|") && l.contains("par")));
+    }
+
+    #[test]
+    fn status_fails_if_already_statused() {
+        let mut battle = make_battle_with_moves("Blissey", [toxic_slot(), empty_slot(), empty_slot(), empty_slot()], "Dragapult");
+        battle.sides[1].active_mut().status = Status::Burn;
+        battle.apply_status_move_for_test(0, 1, "Toxic");
+        assert_eq!(battle.sides[1].active().status, Status::Burn); // unchanged
+        assert!(battle.protocol.iter().any(|l| l.contains("|-fail|")));
+    }
+
+    // --- Heal tests ---
+
+    #[test]
+    fn recover_heals_half() {
+        let mut battle = make_battle_with_moves("Blissey", [recover_slot(), empty_slot(), empty_slot(), empty_slot()], "Garchomp");
+        let max_hp = battle.sides[0].active().max_hp;
+        battle.sides[0].active_mut().hp = max_hp / 4;
+        battle.apply_status_move_for_test(0, 1, "Recover");
+        // Should heal max_hp/2
+        let expected = (max_hp / 4) + (max_hp / 2);
+        assert_eq!(battle.sides[0].active().hp, expected.min(max_hp));
+        assert!(battle.protocol.iter().any(|l| l.contains("|-heal|")));
+    }
+
+    #[test]
+    fn recover_fails_at_full_hp() {
+        let mut battle = make_battle_with_moves("Blissey", [recover_slot(), empty_slot(), empty_slot(), empty_slot()], "Garchomp");
+        // HP is already full
+        battle.apply_status_move_for_test(0, 1, "Recover");
+        assert!(battle.protocol.iter().any(|l| l.contains("|-fail|") && l.contains("heal")));
+    }
+
+    // --- Hazard tests ---
+
+    #[test]
+    fn spikes_sets_layer() {
+        let mut battle = make_battle_with_moves("Blissey", [spikes_slot(), empty_slot(), empty_slot(), empty_slot()], "Garchomp");
+        battle.apply_status_move_for_test(0, 1, "Spikes");
+        assert_eq!(battle.sides[1].side_conditions.spikes, 1);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-sidestart|") && l.contains("Spikes")));
+    }
+
+    #[test]
+    fn spikes_stacks_to_three() {
+        let mut battle = make_battle_with_moves("Blissey", [spikes_slot(), empty_slot(), empty_slot(), empty_slot()], "Garchomp");
+        battle.apply_status_move_for_test(0, 1, "Spikes");
+        battle.protocol.clear();
+        battle.apply_status_move_for_test(0, 1, "Spikes");
+        assert_eq!(battle.sides[1].side_conditions.spikes, 2);
+        battle.protocol.clear();
+        battle.apply_status_move_for_test(0, 1, "Spikes");
+        assert_eq!(battle.sides[1].side_conditions.spikes, 3);
+    }
+
+    #[test]
+    fn spikes_fails_at_max() {
+        let mut battle = make_battle_with_moves("Blissey", [spikes_slot(), empty_slot(), empty_slot(), empty_slot()], "Garchomp");
+        battle.sides[1].side_conditions.spikes = 3;
+        battle.apply_status_move_for_test(0, 1, "Spikes");
+        assert_eq!(battle.sides[1].side_conditions.spikes, 3);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-fail|")));
+    }
+
+    #[test]
+    fn toxic_spikes_sets_layer() {
+        let mut battle = make_battle_with_moves("Blissey", [tspikes_slot(), empty_slot(), empty_slot(), empty_slot()], "Garchomp");
+        battle.apply_status_move_for_test(0, 1, "Toxic Spikes");
+        assert_eq!(battle.sides[1].side_conditions.toxic_spikes, 1);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-sidestart|") && l.contains("Toxic Spikes")));
+    }
+
+    #[test]
+    fn toxic_spikes_fails_at_two() {
+        let mut battle = make_battle_with_moves("Blissey", [tspikes_slot(), empty_slot(), empty_slot(), empty_slot()], "Garchomp");
+        battle.sides[1].side_conditions.toxic_spikes = 2;
+        battle.apply_status_move_for_test(0, 1, "Toxic Spikes");
+        assert_eq!(battle.sides[1].side_conditions.toxic_spikes, 2);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-fail|")));
+    }
+
+    #[test]
+    fn sticky_web_sets() {
+        let mut battle = make_battle_with_moves("Blissey", [sweb_slot(), empty_slot(), empty_slot(), empty_slot()], "Garchomp");
+        battle.apply_status_move_for_test(0, 1, "Sticky Web");
+        assert!(battle.sides[1].side_conditions.sticky_web);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-sidestart|") && l.contains("Sticky Web")));
+    }
+
+    #[test]
+    fn sticky_web_fails_if_already_set() {
+        let mut battle = make_battle_with_moves("Blissey", [sweb_slot(), empty_slot(), empty_slot(), empty_slot()], "Garchomp");
+        battle.sides[1].side_conditions.sticky_web = true;
+        battle.apply_status_move_for_test(0, 1, "Sticky Web");
+        assert!(battle.protocol.iter().any(|l| l.contains("|-fail|")));
     }
 }
