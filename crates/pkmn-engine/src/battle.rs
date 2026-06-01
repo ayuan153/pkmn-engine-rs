@@ -221,26 +221,78 @@ impl Battle {
             return choices;
         }
 
+        // Encore: forced to use the encored move (if it still has PP)
+        if active.volatiles.contains(Volatiles::ENCORE) {
+            let idx = active.encore_move_idx;
+            if active.moves[idx as usize].pp > 0 {
+                choices.push(Choice::Move(idx));
+                // Switches still allowed unless trapped
+                if !active.volatiles.contains(Volatiles::TRAPPED) {
+                    for (i, mon) in side.team.iter().enumerate() {
+                        if i != side.active_index && mon.is_alive() {
+                            choices.push(Choice::Switch(i as u8));
+                        }
+                    }
+                }
+                return choices;
+            }
+            // PP exhausted: encore ends, fall through to normal selection
+        }
+
         if active.is_alive() {
             for i in 0..4 {
                 if active.moves[i].pp > 0 && active.moves[i].move_id != 0 {
+                    // Disable: skip the disabled move
+                    if active.volatiles.contains(Volatiles::DISABLE)
+                        && i as u8 == active.disable_move_idx
+                    {
+                        continue;
+                    }
+                    // Taunt: skip status-category moves
+                    if active.volatiles.contains(Volatiles::TAUNT) {
+                        if let Some(md) = pkmn_core::moves::get_move_by_id(active.moves[i].move_id) {
+                            if md.category == pkmn_core::moves::MoveCategory::Status {
+                                continue;
+                            }
+                        }
+                    }
                     choices.push(Choice::Move(i as u8));
                 }
+            }
+
+            // Struggle fallback: no selectable moves
+            if choices.is_empty() {
+                choices.push(Choice::Move(255)); // sentinel for Struggle
             }
 
             // Tera option: if side hasn't used tera and mon has a tera type
             if !side.tera_used && active.tera_type.is_some() && !active.is_terastallized {
                 for i in 0..4 {
                     if active.moves[i].pp > 0 && active.moves[i].move_id != 0 {
+                        if active.volatiles.contains(Volatiles::DISABLE)
+                            && i as u8 == active.disable_move_idx
+                        {
+                            continue;
+                        }
+                        if active.volatiles.contains(Volatiles::TAUNT) {
+                            if let Some(md) = pkmn_core::moves::get_move_by_id(active.moves[i].move_id) {
+                                if md.category == pkmn_core::moves::MoveCategory::Status {
+                                    continue;
+                                }
+                            }
+                        }
                         choices.push(Choice::Tera(i as u8));
                     }
                 }
             }
         }
 
-        for (i, mon) in side.team.iter().enumerate() {
-            if i != side.active_index && mon.is_alive() {
-                choices.push(Choice::Switch(i as u8));
+        // Switches: blocked if trapped by partial trapping move
+        if !active.volatiles.contains(Volatiles::TRAPPED) {
+            for (i, mon) in side.team.iter().enumerate() {
+                if i != side.active_index && mon.is_alive() {
+                    choices.push(Choice::Switch(i as u8));
+                }
             }
         }
 

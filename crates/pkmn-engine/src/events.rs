@@ -273,7 +273,22 @@ pub enum MoveEffect {
     Heal(u16, u16),
     /// Set a hazard on the opponent's side.
     Hazard(HazardKind),
+    /// Set weather or terrain on the field.
+    Field(FieldEffect),
 }
+
+/// Weather/terrain setter effect (data-driven).
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum FieldEffect {
+    Weather(FieldWeather),
+    Terrain(FieldTerrain),
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum FieldWeather { Rain, Sun, Sand, Snow }
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum FieldTerrain { Electric, Grassy, Misty, Psychic }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum HazardKind {
@@ -337,6 +352,16 @@ pub fn move_effect(name: &str) -> Option<MoveEffect> {
         "spikes" => Some(MoveEffect::Hazard(HazardKind::Spikes)),
         "toxic spikes" => Some(MoveEffect::Hazard(HazardKind::ToxicSpikes)),
         "sticky web" => Some(MoveEffect::Hazard(HazardKind::StickyWeb)),
+        // Weather setter moves
+        "rain dance" => Some(MoveEffect::Field(FieldEffect::Weather(FieldWeather::Rain))),
+        "sunny day" => Some(MoveEffect::Field(FieldEffect::Weather(FieldWeather::Sun))),
+        "sandstorm" => Some(MoveEffect::Field(FieldEffect::Weather(FieldWeather::Sand))),
+        "snowscape" => Some(MoveEffect::Field(FieldEffect::Weather(FieldWeather::Snow))),
+        // Terrain setter moves
+        "electric terrain" => Some(MoveEffect::Field(FieldEffect::Terrain(FieldTerrain::Electric))),
+        "grassy terrain" => Some(MoveEffect::Field(FieldEffect::Terrain(FieldTerrain::Grassy))),
+        "misty terrain" => Some(MoveEffect::Field(FieldEffect::Terrain(FieldTerrain::Misty))),
+        "psychic terrain" => Some(MoveEffect::Field(FieldEffect::Terrain(FieldTerrain::Psychic))),
         _ => None,
     }
 }

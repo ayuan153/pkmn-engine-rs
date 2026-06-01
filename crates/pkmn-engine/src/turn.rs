@@ -57,6 +57,20 @@ impl Battle {
         mon.locked_move_turns = 0;
         mon.confusion_turns = 0;
         mon.protect_consecutive = 0;
+        mon.taunt_turns = 0;
+        mon.encore_turns = 0;
+        mon.disable_turns = 0;
+        mon.trap_turns = 0;
+        mon.trap_move_id = 0;
+
+        // Trapper leaving: release opponent's partial trap
+        let opp = 1 - player;
+        if self.sides[opp as usize].active().volatiles.contains(Volatiles::TRAPPED) {
+            let opp_mon = self.sides[opp as usize].active_mut();
+            opp_mon.volatiles.remove(Volatiles::TRAPPED);
+            opp_mon.trap_turns = 0;
+            opp_mon.trap_move_id = 0;
+        }
 
         self.sides[player as usize].active_index = target as usize;
         let name = self.species_name(player);
@@ -83,6 +97,39 @@ impl Battle {
         self.last_attacker = Some(player);
 
         if !self.sides[player as usize].active().is_alive() {
+            return;
+        }
+
+        // Struggle: typeless 50 BP physical, 1/4 max HP recoil, ignores type immunity
+        if move_idx == 255 {
+            let atk_name = self.species_name(player);
+            let def_name = self.species_name(1 - player);
+            self.emit(format!("|move|p{}a: {}|Struggle|p{}a: {}", player+1, atk_name, 2-player, def_name));
+            let attacker_mon = self.sides[player as usize].active();
+            let level = attacker_mon.level as u32;
+            let atk = attacker_mon.effective_atk() as u32;
+            let def = self.sides[(1-player) as usize].active().effective_def() as u32;
+            let damage = ((2 * level / 5 + 2) * 50 * atk / def / 50 + 2) as u16;
+            let defender_idx = 1 - player;
+            self.apply_damage(defender_idx, damage);
+            let def_name = self.species_name(defender_idx);
+            let hp_str = self.hp_display(defender_idx);
+            self.emit(format!("|-damage|p{}a: {}|{}", defender_idx+1, def_name, hp_str));
+            if self.sides[defender_idx as usize].active().hp == 0 {
+                self.emit(format!("|faint|p{}a: {}", defender_idx+1, def_name));
+            }
+            // 1/4 max HP recoil to user
+            let max_hp = self.sides[player as usize].active().max_hp;
+            let recoil = (max_hp / 4).max(1);
+            self.apply_damage(player, recoil);
+            let atk_name = self.species_name(player);
+            let hp_str = self.hp_display(player);
+            if self.sides[player as usize].active().hp == 0 {
+                self.emit(format!("|-damage|p{}a: {}|0 fnt|[from] Recoil", player+1, atk_name));
+                self.emit(format!("|faint|p{}a: {}", player+1, atk_name));
+            } else {
+                self.emit(format!("|-damage|p{}a: {}|{}|[from] Recoil", player+1, atk_name, hp_str));
+            }
             return;
         }
 
@@ -167,6 +214,8 @@ impl Battle {
                 .moves[move_idx as usize]
                 .pp
                 .saturating_sub(1);
+            // Track last used move for Encore/Disable targeting
+            self.sides[player as usize].active_mut().last_used_move_idx = move_idx;
         }
 
         // --- Multi-turn move state machine: charge / semi-invulnerable ---
@@ -637,6 +686,23 @@ impl Battle {
         // Life Orb recoil (skipped by Sheer Force when move has secondaries)
         if !sheer_force_active {
             self.apply_life_orb_recoil(player);
+        }
+
+        // Partial trapping moves: trap the target for 4-5 turns
+        if self.sides[defender_idx as usize].active().is_alive() {
+            let mn = move_data.name.to_lowercase();
+            let is_trapping = matches!(mn.as_str(),
+                "bind" | "wrap" | "fire spin" | "whirlpool" | "sand tomb" | "magma storm" | "infestation"
+            );
+            if is_trapping && !self.sides[defender_idx as usize].active().volatiles.contains(Volatiles::TRAPPED) {
+                let turns = if self.random(2) == 0 { 4 } else { 5 };
+                let def_mon = self.sides[defender_idx as usize].active_mut();
+                def_mon.volatiles.insert(Volatiles::TRAPPED);
+                def_mon.trap_turns = turns;
+                def_mon.trap_move_id = move_data.id;
+                let def_name = self.species_name(defender_idx);
+                self.emit(format!("|-activate|p{}a: {}|move: {}", defender_idx+1, def_name, move_data.name));
+            }
         }
 
         // Multi-turn move handling
@@ -1532,6 +1598,40 @@ impl Battle {
         }
     }
 
+    /// Apply a data-driven weather/terrain field effect.
+    fn apply_field_effect(&mut self, attacker: u8, effect: crate::events::FieldEffect) {
+        use crate::events::{FieldEffect, FieldWeather, FieldTerrain};
+        use crate::field::{Weather as W, Terrain as T};
+        use pkmn_core::items::ItemId;
+
+        match effect {
+            FieldEffect::Weather(w) => {
+                let (weather, name_str, rock_item) = match w {
+                    FieldWeather::Rain => (W::Rain, "RainDance", ItemId::DampRock),
+                    FieldWeather::Sun => (W::Sun, "SunnyDay", ItemId::HeatRock),
+                    FieldWeather::Sand => (W::Sand, "Sandstorm", ItemId::SmoothRock),
+                    FieldWeather::Snow => (W::Snow, "Snowscape", ItemId::IcyRock),
+                };
+                let turns = if self.sides[attacker as usize].active().item_id == rock_item { 8 } else { 5 };
+                self.field.weather = weather;
+                self.field.weather_turns = turns;
+                self.emit(format!("|-weather|{}", name_str));
+            }
+            FieldEffect::Terrain(t) => {
+                let (terrain, name_str) = match t {
+                    FieldTerrain::Electric => (T::Electric, "Electric Terrain"),
+                    FieldTerrain::Grassy => (T::Grassy, "Grassy Terrain"),
+                    FieldTerrain::Misty => (T::Misty, "Misty Terrain"),
+                    FieldTerrain::Psychic => (T::Psychic, "Psychic Terrain"),
+                };
+                let turns = if self.sides[attacker as usize].active().item_id == ItemId::TerrainExtender { 8 } else { 5 };
+                self.field.terrain = terrain;
+                self.field.terrain_turns = turns;
+                self.emit(format!("|-fieldstart|move: {}", name_str));
+            }
+        }
+    }
+
     pub fn defender_types(&self, player: u8) -> [Type; 2] {
         let mon = self.sides[player as usize].active();
         let mut types = mon.types;
@@ -1615,6 +1715,10 @@ impl Battle {
                 }
                 crate::events::MoveEffect::Hazard(kind) => {
                     self.apply_hazard(attacker, defender, kind);
+                    return;
+                }
+                crate::events::MoveEffect::Field(field_effect) => {
+                    self.apply_field_effect(attacker, field_effect);
                     return;
                 }
             }
@@ -1757,6 +1861,47 @@ impl Battle {
                 let def_max = self.sides[defender as usize].active().max_hp;
                 self.sides[attacker as usize].active_mut().hp = (avg as u16).min(atk_max);
                 self.sides[defender as usize].active_mut().hp = (avg as u16).min(def_max);
+            }
+            "taunt" => {
+                let def_mon = self.sides[defender as usize].active_mut();
+                if !def_mon.volatiles.contains(Volatiles::TAUNT) {
+                    def_mon.volatiles.insert(Volatiles::TAUNT);
+                    def_mon.taunt_turns = 3;
+                    let def_name = self.species_name(defender);
+                    self.emit(format!("|-start|p{}a: {}|move: Taunt", defender+1, def_name));
+                }
+            }
+            "encore" => {
+                let last_idx = self.sides[defender as usize].active().last_used_move_idx;
+                if last_idx == 255 || self.sides[defender as usize].active().volatiles.contains(Volatiles::ENCORE) {
+                    // Fail: no last move or already encored
+                    let atk_name = self.species_name(attacker);
+                    self.emit(format!("|-fail|p{}a: {}", attacker+1, atk_name));
+                } else {
+                    let def_mon = self.sides[defender as usize].active_mut();
+                    def_mon.volatiles.insert(Volatiles::ENCORE);
+                    def_mon.encore_turns = 3;
+                    def_mon.encore_move_idx = last_idx;
+                    let def_name = self.species_name(defender);
+                    self.emit(format!("|-start|p{}a: {}|move: Encore", defender+1, def_name));
+                }
+            }
+            "disable" => {
+                let last_idx = self.sides[defender as usize].active().last_used_move_idx;
+                if last_idx == 255 || self.sides[defender as usize].active().volatiles.contains(Volatiles::DISABLE) {
+                    let atk_name = self.species_name(attacker);
+                    self.emit(format!("|-fail|p{}a: {}", attacker+1, atk_name));
+                } else {
+                    let move_name = pkmn_core::moves::get_move_by_id(
+                        self.sides[defender as usize].active().moves[last_idx as usize].move_id
+                    ).map(|m| m.name).unwrap_or("???");
+                    let def_mon = self.sides[defender as usize].active_mut();
+                    def_mon.volatiles.insert(Volatiles::DISABLE);
+                    def_mon.disable_turns = 4;
+                    def_mon.disable_move_idx = last_idx;
+                    let def_name = self.species_name(defender);
+                    self.emit(format!("|-start|p{}a: {}|Disable|{}", defender+1, def_name, move_name));
+                }
             }
             _ => {}
         }
@@ -1958,6 +2103,68 @@ impl Battle {
         // Flame Orb / Toxic Orb: apply status after status damage
         for &player in &item_order {
             self.trigger_item_orb_eot(player);
+        }
+
+        // Partial trapping: 1/8 max HP chip each end-of-turn, decrement counter
+        for &player in &order {
+            let mon = self.sides[player as usize].active();
+            if !mon.is_alive() || !mon.volatiles.contains(Volatiles::TRAPPED) { continue; }
+            let trap_move_id = mon.trap_move_id;
+            let max_hp = mon.max_hp;
+            let dmg = (max_hp / 8).max(1);
+            self.apply_damage(player, dmg);
+            let move_name = pkmn_core::moves::get_move_by_id(trap_move_id)
+                .map(|m| m.name).unwrap_or("???");
+            let name = self.species_name(player);
+            let hp_str = self.hp_display(player);
+            self.emit(format!("|-damage|p{}a: {}|{}|[from] move: {}", player+1, name, hp_str, move_name));
+            if self.sides[player as usize].active().hp == 0 {
+                self.emit(format!("|faint|p{}a: {}", player+1, name));
+            }
+            let mon = self.sides[player as usize].active_mut();
+            mon.trap_turns = mon.trap_turns.saturating_sub(1);
+            if mon.trap_turns == 0 {
+                mon.volatiles.remove(Volatiles::TRAPPED);
+                mon.trap_move_id = 0;
+            }
+        }
+
+        // Action-constraining volatile counters: decrement at end of turn
+        for &player in &order {
+            if !self.sides[player as usize].active().is_alive() { continue; }
+            // Taunt
+            if self.sides[player as usize].active().volatiles.contains(Volatiles::TAUNT) {
+                let mon = self.sides[player as usize].active_mut();
+                mon.taunt_turns = mon.taunt_turns.saturating_sub(1);
+                if mon.taunt_turns == 0 {
+                    mon.volatiles.remove(Volatiles::TAUNT);
+                    let name = self.species_name(player);
+                    self.emit(format!("|-end|p{}a: {}|move: Taunt", player+1, name));
+                }
+            }
+            // Encore: also ends if PP of encored move is 0
+            if self.sides[player as usize].active().volatiles.contains(Volatiles::ENCORE) {
+                let idx = self.sides[player as usize].active().encore_move_idx as usize;
+                let pp_zero = self.sides[player as usize].active().moves[idx].pp == 0;
+                let mon = self.sides[player as usize].active_mut();
+                if pp_zero { mon.encore_turns = 0; }
+                mon.encore_turns = mon.encore_turns.saturating_sub(1);
+                if mon.encore_turns == 0 {
+                    mon.volatiles.remove(Volatiles::ENCORE);
+                    let name = self.species_name(player);
+                    self.emit(format!("|-end|p{}a: {}|move: Encore", player+1, name));
+                }
+            }
+            // Disable
+            if self.sides[player as usize].active().volatiles.contains(Volatiles::DISABLE) {
+                let mon = self.sides[player as usize].active_mut();
+                mon.disable_turns = mon.disable_turns.saturating_sub(1);
+                if mon.disable_turns == 0 {
+                    mon.volatiles.remove(Volatiles::DISABLE);
+                    let name = self.species_name(player);
+                    self.emit(format!("|-end|p{}a: {}|Disable", player+1, name));
+                }
+            }
         }
 
         // Decrement field turns
@@ -2304,5 +2511,360 @@ mod tests_data_driven_moves {
         battle.sides[1].side_conditions.sticky_web = true;
         battle.apply_status_move_for_test(0, 1, "Sticky Web");
         assert!(battle.protocol.iter().any(|l| l.contains("|-fail|")));
+    }
+}
+
+#[cfg(test)]
+mod tests_volatiles_and_field {
+    use crate::battle::Battle;
+    use crate::choice::Choice;
+    use crate::field::{Weather, Terrain};
+    use crate::pokemon::{MoveSlot, Pokemon, Volatiles};
+    use crate::side::Side;
+    use pkmn_core::items::ItemId;
+    use pkmn_core::nature::Nature;
+    use pkmn_core::species::get_species;
+
+    fn slot(id: u16, pp: u8) -> MoveSlot { MoveSlot { move_id: id, pp, max_pp: pp } }
+    fn empty() -> MoveSlot { MoveSlot { move_id: 0, pp: 0, max_pp: 0 } }
+
+    /// Build a 1v1 battle (no RNG init, no switch-in protocol) for unit testing.
+    fn raw_battle(p1_moves: [MoveSlot; 4], p2_moves: [MoveSlot; 4]) -> Battle {
+        let sp = get_species("Blissey").unwrap();
+        let p1 = Pokemon::new(sp, 100, Nature::Hardy, p1_moves, [0; 6], [31; 6]);
+        let p2 = Pokemon::new(sp, 100, Nature::Hardy, p2_moves, [0; 6], [31; 6]);
+        Battle::new_raw(Side::new(vec![p1]), Side::new(vec![p2]))
+    }
+
+    /// Build a battle with a second mon on p2's team (for switch tests).
+    fn raw_battle_with_switch(p1_moves: [MoveSlot; 4], p2_moves: [MoveSlot; 4]) -> Battle {
+        let sp = get_species("Blissey").unwrap();
+        let p1 = Pokemon::new(sp, 100, Nature::Hardy, p1_moves, [0; 6], [31; 6]);
+        let p2 = Pokemon::new(sp, 100, Nature::Hardy, p2_moves, [0; 6], [31; 6]);
+        let p2b = Pokemon::new(sp, 100, Nature::Hardy, [empty(); 4], [0; 6], [31; 6]);
+        Battle::new_raw(Side::new(vec![p1]), Side::new(vec![p2, p2b]))
+    }
+
+    // Move IDs:
+    // Taunt=269, Encore=227, Disable=50, Fire Spin=83, Rain Dance=240
+    // Grassy Terrain=580, Swords Dance=14, Flamethrower=53, Tackle=33, Thunderbolt=85
+
+    // ===== TAUNT TESTS =====
+
+    #[test]
+    fn taunt_blocks_status_moves_from_choices() {
+        // P2 has: Swords Dance (status), Flamethrower (special)
+        let mut battle = raw_battle(
+            [slot(269, 20), empty(), empty(), empty()], // P1: Taunt
+            [slot(14, 20), slot(53, 15), empty(), empty()], // P2: Swords Dance, Flamethrower
+        );
+        // Apply Taunt to P2
+        battle.apply_status_move_for_test(0, 1, "Taunt");
+        assert!(battle.sides[1].active().volatiles.contains(Volatiles::TAUNT));
+
+        // P2's choices should NOT include Swords Dance (index 0, status)
+        let choices = battle.choices(1);
+        assert!(!choices.contains(&Choice::Move(0)), "Taunted mon should not have status move");
+        assert!(choices.contains(&Choice::Move(1)), "Taunted mon should keep damaging move");
+    }
+
+    #[test]
+    fn taunt_expires_after_3_turns() {
+        let mut battle = raw_battle(
+            [slot(269, 20), empty(), empty(), empty()],
+            [slot(14, 20), slot(53, 15), empty(), empty()],
+        );
+        battle.apply_status_move_for_test(0, 1, "Taunt");
+        assert_eq!(battle.sides[1].active().taunt_turns, 3);
+
+        // Simulate 3 end-of-turns
+        battle.end_of_turn();
+        assert_eq!(battle.sides[1].active().taunt_turns, 2);
+        battle.end_of_turn();
+        assert_eq!(battle.sides[1].active().taunt_turns, 1);
+        battle.end_of_turn();
+        assert_eq!(battle.sides[1].active().taunt_turns, 0);
+        assert!(!battle.sides[1].active().volatiles.contains(Volatiles::TAUNT));
+
+        // Status moves should be available again
+        let choices = battle.choices(1);
+        assert!(choices.contains(&Choice::Move(0)), "After taunt expires, status moves return");
+    }
+
+    #[test]
+    fn taunt_all_status_yields_struggle() {
+        // P2 has ONLY status moves
+        let mut battle = raw_battle(
+            [slot(269, 20), empty(), empty(), empty()],
+            [slot(14, 20), slot(240, 5), empty(), empty()], // Swords Dance, Rain Dance (both status)
+        );
+        battle.apply_status_move_for_test(0, 1, "Taunt");
+
+        let choices = battle.choices(1);
+        // Should only have Struggle (sentinel 255)
+        let move_choices: Vec<_> = choices.iter().filter(|c| matches!(c, Choice::Move(_))).collect();
+        assert_eq!(move_choices, vec![&Choice::Move(255)], "All-status taunted mon should Struggle");
+    }
+
+    // ===== ENCORE TESTS =====
+
+    #[test]
+    fn encore_forces_last_used_move() {
+        // P2 has: Flamethrower, Thunderbolt
+        let mut battle = raw_battle(
+            [slot(227, 5), empty(), empty(), empty()], // P1: Encore
+            [slot(53, 15), slot(85, 15), empty(), empty()], // P2: Flamethrower, Thunderbolt
+        );
+        // P2 uses Flamethrower (index 0) — set last_used_move_idx
+        battle.sides[1].active_mut().last_used_move_idx = 0;
+
+        // Apply Encore
+        battle.apply_status_move_for_test(0, 1, "Encore");
+        assert!(battle.sides[1].active().volatiles.contains(Volatiles::ENCORE));
+        assert_eq!(battle.sides[1].active().encore_move_idx, 0);
+
+        // P2's choices should be forced to move 0 only (plus switches if available)
+        let choices = battle.choices(1);
+        let move_choices: Vec<_> = choices.iter().filter(|c| matches!(c, Choice::Move(_))).collect();
+        assert_eq!(move_choices, vec![&Choice::Move(0)], "Encored mon forced to last-used move");
+    }
+
+    #[test]
+    fn encore_expires_after_3_turns() {
+        let mut battle = raw_battle(
+            [slot(227, 5), empty(), empty(), empty()],
+            [slot(53, 15), slot(85, 15), empty(), empty()],
+        );
+        battle.sides[1].active_mut().last_used_move_idx = 0;
+        battle.apply_status_move_for_test(0, 1, "Encore");
+
+        battle.end_of_turn();
+        battle.end_of_turn();
+        battle.end_of_turn();
+        assert!(!battle.sides[1].active().volatiles.contains(Volatiles::ENCORE));
+
+        // Both moves available again
+        let choices = battle.choices(1);
+        assert!(choices.contains(&Choice::Move(0)));
+        assert!(choices.contains(&Choice::Move(1)));
+    }
+
+    #[test]
+    fn encore_fails_if_no_last_move() {
+        let mut battle = raw_battle(
+            [slot(227, 5), empty(), empty(), empty()],
+            [slot(53, 15), empty(), empty(), empty()],
+        );
+        // last_used_move_idx is 255 (no last move)
+        battle.apply_status_move_for_test(0, 1, "Encore");
+        assert!(!battle.sides[1].active().volatiles.contains(Volatiles::ENCORE));
+        assert!(battle.protocol.iter().any(|l| l.contains("|-fail|")));
+    }
+
+    // ===== DISABLE TESTS =====
+
+    #[test]
+    fn disable_removes_last_used_move_from_choices() {
+        let mut battle = raw_battle(
+            [slot(50, 20), empty(), empty(), empty()], // P1: Disable
+            [slot(53, 15), slot(85, 15), empty(), empty()], // P2: Flamethrower, Thunderbolt
+        );
+        // P2 last used Flamethrower (index 0)
+        battle.sides[1].active_mut().last_used_move_idx = 0;
+
+        battle.apply_status_move_for_test(0, 1, "Disable");
+        assert!(battle.sides[1].active().volatiles.contains(Volatiles::DISABLE));
+        assert_eq!(battle.sides[1].active().disable_move_idx, 0);
+
+        let choices = battle.choices(1);
+        assert!(!choices.contains(&Choice::Move(0)), "Disabled move should be absent");
+        assert!(choices.contains(&Choice::Move(1)), "Other moves should remain");
+    }
+
+    #[test]
+    fn disable_expires_after_4_turns() {
+        let mut battle = raw_battle(
+            [slot(50, 20), empty(), empty(), empty()],
+            [slot(53, 15), slot(85, 15), empty(), empty()],
+        );
+        battle.sides[1].active_mut().last_used_move_idx = 0;
+        battle.apply_status_move_for_test(0, 1, "Disable");
+        assert_eq!(battle.sides[1].active().disable_turns, 4);
+
+        battle.end_of_turn();
+        battle.end_of_turn();
+        battle.end_of_turn();
+        battle.end_of_turn();
+        assert!(!battle.sides[1].active().volatiles.contains(Volatiles::DISABLE));
+
+        let choices = battle.choices(1);
+        assert!(choices.contains(&Choice::Move(0)), "Disabled move returns after expiry");
+    }
+
+    #[test]
+    fn disable_fails_if_no_last_move() {
+        let mut battle = raw_battle(
+            [slot(50, 20), empty(), empty(), empty()],
+            [slot(53, 15), empty(), empty(), empty()],
+        );
+        battle.apply_status_move_for_test(0, 1, "Disable");
+        assert!(!battle.sides[1].active().volatiles.contains(Volatiles::DISABLE));
+        assert!(battle.protocol.iter().any(|l| l.contains("|-fail|")));
+    }
+
+    // ===== PARTIAL TRAPPING TESTS =====
+
+    #[test]
+    fn partial_trap_blocks_switching() {
+        let mut battle = raw_battle_with_switch(
+            [slot(83, 15), empty(), empty(), empty()], // P1: Fire Spin
+            [slot(53, 15), empty(), empty(), empty()], // P2: Flamethrower
+        );
+        // Manually apply trap (Fire Spin hit)
+        let def_mon = battle.sides[1].active_mut();
+        def_mon.volatiles.insert(Volatiles::TRAPPED);
+        def_mon.trap_turns = 4;
+        def_mon.trap_move_id = 83; // Fire Spin
+
+        let choices = battle.choices(1);
+        // Should have no Switch choices
+        let switch_choices: Vec<_> = choices.iter().filter(|c| matches!(c, Choice::Switch(_))).collect();
+        assert!(switch_choices.is_empty(), "Trapped mon cannot switch");
+        // But should still have move choices
+        assert!(choices.contains(&Choice::Move(0)));
+    }
+
+    #[test]
+    fn partial_trap_deals_1_8_damage_eot() {
+        let mut battle = raw_battle_with_switch(
+            [slot(83, 15), empty(), empty(), empty()],
+            [slot(53, 15), empty(), empty(), empty()],
+        );
+        let def_mon = battle.sides[1].active_mut();
+        def_mon.volatiles.insert(Volatiles::TRAPPED);
+        def_mon.trap_turns = 4;
+        def_mon.trap_move_id = 83;
+
+        let max_hp = battle.sides[1].active().max_hp;
+        let expected_dmg = (max_hp / 8).max(1);
+        let hp_before = battle.sides[1].active().hp;
+
+        battle.protocol.clear();
+        battle.end_of_turn();
+
+        let hp_after = battle.sides[1].active().hp;
+        assert_eq!(hp_before - hp_after, expected_dmg, "Trap should deal 1/8 max HP");
+
+        // Check protocol emits correct [from] move: Fire Spin
+        assert!(battle.protocol.iter().any(|l| l.contains("|-damage|") && l.contains("[from] move: Fire Spin")),
+            "Trap damage should cite the trapping move");
+    }
+
+    #[test]
+    fn partial_trap_releases_after_turns_expire() {
+        let mut battle = raw_battle_with_switch(
+            [slot(83, 15), empty(), empty(), empty()],
+            [slot(53, 15), empty(), empty(), empty()],
+        );
+        let def_mon = battle.sides[1].active_mut();
+        def_mon.volatiles.insert(Volatiles::TRAPPED);
+        def_mon.trap_turns = 2; // Will expire after 2 EOTs
+        def_mon.trap_move_id = 83;
+
+        battle.end_of_turn();
+        assert_eq!(battle.sides[1].active().trap_turns, 1);
+        assert!(battle.sides[1].active().volatiles.contains(Volatiles::TRAPPED));
+
+        battle.end_of_turn();
+        assert_eq!(battle.sides[1].active().trap_turns, 0);
+        assert!(!battle.sides[1].active().volatiles.contains(Volatiles::TRAPPED));
+
+        // Switching should be available again
+        let choices = battle.choices(1);
+        let switch_choices: Vec<_> = choices.iter().filter(|c| matches!(c, Choice::Switch(_))).collect();
+        assert!(!switch_choices.is_empty(), "Released mon can switch");
+    }
+
+    // ===== WEATHER SETTER TESTS =====
+
+    #[test]
+    fn rain_dance_sets_rain_5_turns() {
+        let mut battle = raw_battle(
+            [slot(240, 5), empty(), empty(), empty()], // Rain Dance
+            [slot(53, 15), empty(), empty(), empty()],
+        );
+        battle.apply_status_move_for_test(0, 1, "Rain Dance");
+        assert_eq!(battle.field.weather, Weather::Rain);
+        assert_eq!(battle.field.weather_turns, 5);
+    }
+
+    #[test]
+    fn rain_dance_with_damp_rock_sets_8_turns() {
+        let mut battle = raw_battle(
+            [slot(240, 5), empty(), empty(), empty()],
+            [slot(53, 15), empty(), empty(), empty()],
+        );
+        battle.sides[0].active_mut().item_id = ItemId::DampRock;
+        battle.apply_status_move_for_test(0, 1, "Rain Dance");
+        assert_eq!(battle.field.weather, Weather::Rain);
+        assert_eq!(battle.field.weather_turns, 8);
+    }
+
+    #[test]
+    fn grassy_terrain_sets_terrain_5_turns() {
+        let mut battle = raw_battle(
+            [slot(580, 10), empty(), empty(), empty()], // Grassy Terrain
+            [slot(53, 15), empty(), empty(), empty()],
+        );
+        battle.apply_status_move_for_test(0, 1, "Grassy Terrain");
+        assert_eq!(battle.field.terrain, Terrain::Grassy);
+        assert_eq!(battle.field.terrain_turns, 5);
+    }
+
+    #[test]
+    fn grassy_terrain_with_terrain_extender_sets_8_turns() {
+        let mut battle = raw_battle(
+            [slot(580, 10), empty(), empty(), empty()],
+            [slot(53, 15), empty(), empty(), empty()],
+        );
+        battle.sides[0].active_mut().item_id = ItemId::TerrainExtender;
+        battle.apply_status_move_for_test(0, 1, "Grassy Terrain");
+        assert_eq!(battle.field.terrain, Terrain::Grassy);
+        assert_eq!(battle.field.terrain_turns, 8);
+    }
+
+    // ===== STRUGGLE TESTS =====
+
+    #[test]
+    fn struggle_when_no_pp() {
+        // P2 has moves but all 0 PP
+        let mut battle = raw_battle(
+            [slot(53, 15), empty(), empty(), empty()],
+            [slot(53, 0), slot(85, 0), empty(), empty()], // 0 PP on both
+        );
+        let choices = battle.choices(1);
+        let move_choices: Vec<_> = choices.iter().filter(|c| matches!(c, Choice::Move(_))).collect();
+        assert_eq!(move_choices, vec![&Choice::Move(255)], "No PP = Struggle");
+    }
+
+    #[test]
+    fn struggle_deals_recoil_quarter_max_hp() {
+        let mut battle = raw_battle(
+            [slot(53, 15), empty(), empty(), empty()],
+            [slot(53, 0), empty(), empty(), empty()],
+        );
+        let max_hp = battle.sides[1].active().max_hp;
+        let hp_before = battle.sides[1].active().hp;
+
+        // P2 uses Struggle (move_idx 255)
+        battle.execute_choice(1, Choice::Move(255));
+
+        // P2 should take 1/4 max HP recoil
+        let expected_recoil = (max_hp / 4).max(1);
+        let hp_after = battle.sides[1].active().hp;
+        assert_eq!(hp_before - hp_after, expected_recoil, "Struggle recoil should be 1/4 max HP");
+
+        // Protocol should mention Recoil
+        assert!(battle.protocol.iter().any(|l| l.contains("[from] Recoil")));
     }
 }

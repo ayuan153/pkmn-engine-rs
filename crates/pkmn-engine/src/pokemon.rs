@@ -35,6 +35,8 @@ bitflags::bitflags! {
         const ROOST = 0x1000;
         const CHARGING = 0x2000;
         const SEMI_INVULNERABLE = 0x4000;
+        const DISABLE = 0x8000;
+        const TRAPPED = 0x10000;
     }
 }
 
@@ -124,6 +126,16 @@ pub struct Pokemon {
     pub charging_move_idx: u8,
     pub protect_consecutive: u8,
     pub confusion_turns: u8,
+    // Action-constraining volatile counters
+    pub taunt_turns: u8,
+    pub encore_turns: u8,
+    pub encore_move_idx: u8,
+    pub disable_turns: u8,
+    pub disable_move_idx: u8,
+    // Partial trapping state
+    pub trap_turns: u8,
+    pub trap_move_id: u16,
+    pub last_used_move_idx: u8,
     // Tera
     pub tera_type: Option<Type>,
     pub is_terastallized: bool,
@@ -171,6 +183,14 @@ impl Pokemon {
             charging_move_idx: 0,
             protect_consecutive: 0,
             confusion_turns: 0,
+            taunt_turns: 0,
+            encore_turns: 0,
+            encore_move_idx: 0,
+            disable_turns: 0,
+            disable_move_idx: 0,
+            trap_turns: 0,
+            trap_move_id: 0,
+            last_used_move_idx: 255,
             tera_type: None,
             is_terastallized: false,
         }
