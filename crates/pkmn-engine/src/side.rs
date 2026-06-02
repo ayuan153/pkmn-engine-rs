@@ -17,11 +17,14 @@ pub struct Side {
     pub active_index: usize,
     pub side_conditions: SideConditions,
     pub tera_used: bool,
+    /// Number of Pokemon on this side currently asleep from a move (not Rest).
+    /// Used for Sleep Clause Mod enforcement.
+    pub sleep_clause_count: u8,
 }
 
 impl Side {
     pub fn new(team: Vec<Pokemon>) -> Self {
-        Self { team, active_index: 0, side_conditions: SideConditions::default(), tera_used: false }
+        Self { team, active_index: 0, side_conditions: SideConditions::default(), tera_used: false, sleep_clause_count: 0 }
     }
 
     pub fn active(&self) -> &Pokemon {

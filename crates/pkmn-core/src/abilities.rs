@@ -81,6 +81,9 @@ pub enum AbilityId {
     GaleWings,
     Triage,
     Unburden,
+    Insomnia,
+    VitalSpirit,
+    SweetVeil,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -172,6 +175,9 @@ static ABILITY_TABLE: &[AbilityData] = &[
     AbilityData { id: AbilityId::GaleWings, name: "Gale Wings", triggers: &[AbilityTrigger::Passive] },
     AbilityData { id: AbilityId::Triage, name: "Triage", triggers: &[AbilityTrigger::Passive] },
     AbilityData { id: AbilityId::Unburden, name: "Unburden", triggers: &[AbilityTrigger::ModifySpeed] },
+    AbilityData { id: AbilityId::Insomnia, name: "Insomnia", triggers: &[AbilityTrigger::Immunity] },
+    AbilityData { id: AbilityId::VitalSpirit, name: "Vital Spirit", triggers: &[AbilityTrigger::Immunity] },
+    AbilityData { id: AbilityId::SweetVeil, name: "Sweet Veil", triggers: &[AbilityTrigger::Immunity] },
 ];
 
 pub fn get_ability(id: AbilityId) -> &'static AbilityData {

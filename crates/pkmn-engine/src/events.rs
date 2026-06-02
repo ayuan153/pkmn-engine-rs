@@ -347,6 +347,9 @@ pub fn move_effect(name: &str) -> Option<MoveEffect> {
         "toxic" => Some(MoveEffect::StatusInflict(StatusKind::Toxic)),
         "will-o-wisp" => Some(MoveEffect::StatusInflict(StatusKind::Burn)),
         "thunder wave" => Some(MoveEffect::StatusInflict(StatusKind::Paralyze)),
+        // Sleep-inducing moves
+        "spore" | "sleep powder" | "hypnosis" | "lovely kiss" | "sing"
+        | "grass whistle" => Some(MoveEffect::StatusInflict(StatusKind::Sleep)),
         // Flat recovery moves (1/2 max HP)
         "recover" | "soft-boiled" | "slack off" | "milk drink" => Some(MoveEffect::Heal(1, 2)),
         // Hazards

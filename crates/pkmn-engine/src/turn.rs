@@ -159,6 +159,25 @@ impl Battle {
             return;
         }
 
+        // Sleep check: decrement counter, wake if 0, otherwise can't move
+        if self.sides[player as usize].active().status == Status::Sleep {
+            let mon = self.sides[player as usize].active_mut();
+            mon.status_turns = mon.status_turns.saturating_sub(1);
+            if mon.status_turns == 0 {
+                mon.status = Status::None;
+                let name = self.species_name(player);
+                self.emit(format!("|-curestatus|p{}a: {}|slp|[msg]", player+1, name));
+                // Decrement sleep clause counter when waking
+                self.sides[player as usize].sleep_clause_count =
+                    self.sides[player as usize].sleep_clause_count.saturating_sub(1);
+                // Pokemon wakes and may act this turn — continue execution
+            } else {
+                let name = self.species_name(player);
+                self.emit(format!("|cant|p{}a: {}|slp", player+1, name));
+                return;
+            }
+        }
+
         // Paralysis full-para check: 25% chance to be fully paralyzed
         if self.sides[player as usize].active().status == Status::Paralyze {
             let roll = self.random(4);
@@ -347,6 +366,7 @@ impl Battle {
                 move_data.name.to_lowercase().as_str(),
                 "toxic" | "will-o-wisp" | "thunder wave" | "sleep powder" | "spore"
                 | "stun spore" | "hypnosis" | "sing" | "lovely kiss" | "dark void"
+                | "grass whistle"
                 | "yawn" | "glare" | "nuzzle" | "confuse ray" | "swagger" | "flatter"
                 | "taunt" | "encore" | "torment" | "disable" | "heal block"
                 | "leech seed" | "whirlwind" | "roar"
@@ -1494,6 +1514,7 @@ impl Battle {
     /// exactly as the old per-move match arms did.
     fn apply_status_inflict(&mut self, _attacker: u8, defender: u8, kind: crate::events::StatusKind) {
         use crate::events::StatusKind;
+        use pkmn_core::abilities::AbilityId;
         let def_mon = self.sides[defender as usize].active();
         // Already statused → fail
         if def_mon.status != Status::None {
@@ -1518,12 +1539,43 @@ impl Battle {
                 def_mon.types.contains(&Type::Poison) || def_mon.types.contains(&Type::Steel)
             }
             StatusKind::Freeze => def_mon.types.contains(&Type::Ice),
-            StatusKind::Sleep => false,
+            // Grass-type immunity to powder/spore sleep moves (Gen 6+)
+            StatusKind::Sleep => def_mon.types.contains(&Type::Grass),
         };
         if immune {
             let def_name = self.species_name(defender);
             self.emit(format!("|-immune|p{}a: {}", defender + 1, def_name));
             return;
+        }
+        // Sleep-specific immunity checks
+        if kind == StatusKind::Sleep {
+            let ability = self.sides[defender as usize].active().ability_id;
+            // Ability immunity: Insomnia, Vital Spirit, Sweet Veil
+            if ability == AbilityId::Insomnia
+                || ability == AbilityId::VitalSpirit
+                || ability == AbilityId::SweetVeil
+            {
+                let def_name = self.species_name(defender);
+                self.emit(format!("|-immune|p{}a: {}", defender + 1, def_name));
+                return;
+            }
+            // Terrain immunity: Electric Terrain and Misty Terrain block sleep for grounded mons
+            let is_grounded = !self.sides[defender as usize].active().types.contains(&Type::Flying)
+                && self.sides[defender as usize].active().ability_id != AbilityId::Levitate;
+            if is_grounded
+                && (self.field.terrain == crate::field::Terrain::Electric
+                    || self.field.terrain == crate::field::Terrain::Misty)
+            {
+                let def_name = self.species_name(defender);
+                self.emit(format!("|-immune|p{}a: {}", defender + 1, def_name));
+                return;
+            }
+            // Sleep Clause Mod: can't put a second mon to sleep via a move
+            if self.sides[defender as usize].sleep_clause_count > 0 {
+                let def_name = self.species_name(defender);
+                self.emit(format!("|-fail|p{}a: {}|slp", defender + 1, def_name));
+                return;
+            }
         }
         // Apply the status
         let status = match kind {
@@ -1543,6 +1595,12 @@ impl Battle {
             StatusKind::Freeze => "frz",
         };
         self.sides[defender as usize].active_mut().status = status;
+        // Sleep: set random 1-3 turn counter and track for Sleep Clause
+        if kind == StatusKind::Sleep {
+            let turns = self.random(3) as u8 + 1; // 1, 2, or 3
+            self.sides[defender as usize].active_mut().status_turns = turns;
+            self.sides[defender as usize].sleep_clause_count += 1;
+        }
         let def_name = self.species_name(defender);
         self.emit(format!("|-status|p{}a: {}|{}", defender + 1, def_name, tag));
     }
@@ -1680,7 +1738,11 @@ impl Battle {
         let name = move_data.name.to_lowercase();
 
         // Prankster immunity: Dark types are immune to Prankster-boosted status moves
-        let is_targeting_status = matches!(name.as_str(), "toxic" | "will-o-wisp" | "thunder wave");
+        let is_targeting_status = matches!(name.as_str(),
+            "toxic" | "will-o-wisp" | "thunder wave"
+            | "spore" | "sleep powder" | "hypnosis" | "lovely kiss" | "sing"
+            | "grass whistle"
+        );
         if is_targeting_status
             && self.sides[attacker as usize].active().ability_id == pkmn_core::abilities::AbilityId::Prankster
             && self.sides[defender as usize].active().types.contains(&Type::Dark)
@@ -1698,13 +1760,19 @@ impl Battle {
         {
             // Protect blocks targeting status moves
             match name.as_str() {
-                "toxic" | "will-o-wisp" | "thunder wave" => return,
+                "toxic" | "will-o-wisp" | "thunder wave"
+                | "spore" | "sleep powder" | "hypnosis" | "lovely kiss" | "sing"
+                | "grass whistle" => return,
                 _ => {}
             }
         }
 
         // Substitute blocks targeting status moves
-        let is_targeting = matches!(name.as_str(), "toxic" | "will-o-wisp" | "thunder wave");
+        let is_targeting = matches!(name.as_str(),
+            "toxic" | "will-o-wisp" | "thunder wave"
+            | "spore" | "sleep powder" | "hypnosis" | "lovely kiss" | "sing"
+            | "grass whistle"
+        );
         if is_targeting && self.sides[defender as usize].active().volatiles.contains(Volatiles::SUBSTITUTE) {
             let atk_name = self.species_name(attacker);
             self.emit(format!("|-fail|p{}a: {}", attacker+1, atk_name));
@@ -1796,6 +1864,35 @@ impl Battle {
                         self.sides[attacker as usize].active_mut().volatiles.insert(Volatiles::ROOST);
                     }
                 }
+            }
+            "rest" => {
+                use pkmn_core::abilities::AbilityId;
+                let mon = self.sides[attacker as usize].active();
+                // Fail if at full HP or if ability prevents sleep
+                let ability = mon.ability_id;
+                if mon.hp >= mon.max_hp {
+                    let atk_name = self.species_name(attacker);
+                    self.emit(format!("|-fail|p{}a: {}|heal", attacker+1, atk_name));
+                    return;
+                }
+                if ability == AbilityId::Insomnia
+                    || ability == AbilityId::VitalSpirit
+                    || ability == AbilityId::SweetVeil
+                {
+                    let atk_name = self.species_name(attacker);
+                    self.emit(format!("|-fail|p{}a: {}", attacker+1, atk_name));
+                    return;
+                }
+                // Rest: full heal, set sleep for exactly 2 turns (Rest-sleep is exempt from Sleep Clause)
+                let mon = self.sides[attacker as usize].active_mut();
+                mon.status = Status::Sleep;
+                mon.status_turns = 2;
+                mon.hp = mon.max_hp;
+                let atk_name = self.species_name(attacker);
+                let hp = self.sides[attacker as usize].active().hp;
+                let max_hp = self.sides[attacker as usize].active().max_hp;
+                self.emit(format!("|-status|p{}a: {}|slp|[from] move: Rest", attacker+1, atk_name));
+                self.emit(format!("|-heal|p{}a: {}|{}/{}|[silent]", attacker+1, atk_name, hp, max_hp));
             }
             "belly drum" => {
                 let mon = self.sides[attacker as usize].active_mut();
@@ -3165,5 +3262,192 @@ mod tests_multi_hit {
             let hits: u32 = hitcount_line.split('|').last().unwrap().trim().parse().unwrap();
             assert_eq!(hits, 10, "Skill Link + Pop Bomb = 10 hits, got {}", hits);
         }
+    }
+}
+
+
+#[cfg(test)]
+mod tests_sleep {
+    use crate::battle::Battle;
+    use crate::pokemon::{MoveSlot, Pokemon, Status};
+    use crate::side::Side;
+    use crate::field::Terrain;
+    use pkmn_core::nature::Nature;
+    use pkmn_core::species::get_species;
+    use pkmn_core::abilities::AbilityId;
+    use pkmn_core::moves::get_move;
+
+    fn slot(id: u16, pp: u8) -> MoveSlot { MoveSlot { move_id: id, pp, max_pp: pp } }
+    fn empty() -> MoveSlot { MoveSlot { move_id: 0, pp: 0, max_pp: 0 } }
+
+    fn make_battle(p1_species: &str, p1_moves: [MoveSlot; 4], p2_species: &str, p2_moves: [MoveSlot; 4]) -> Battle {
+        let sp1 = get_species(p1_species).unwrap();
+        let sp2 = get_species(p2_species).unwrap();
+        let p1 = Pokemon::new(sp1, 100, Nature::Hardy, p1_moves, [0; 6], [31; 6]);
+        let p2 = Pokemon::new(sp2, 100, Nature::Hardy, p2_moves, [0; 6], [31; 6]);
+        Battle::new_raw(Side::new(vec![p1]), Side::new(vec![p2]))
+    }
+
+    // === 1. Sleep-inducing move sets Status::Sleep with counter 1..=3 ===
+    #[test]
+    fn test_spore_inflicts_sleep_with_valid_counter() {
+        // Spore: id 147, 100% accuracy
+        let spore_id = get_move("spore").unwrap().id;
+        let mut battle = make_battle(
+            "Breloom", [slot(spore_id, 15), empty(), empty(), empty()],
+            "Dragonite", [empty(), empty(), empty(), empty()],
+        );
+        battle.execute_move(0, 0);
+        let target = battle.sides[1].active();
+        assert_eq!(target.status, Status::Sleep);
+        assert!((1..=3).contains(&target.status_turns), "sleep counter should be 1-3, got {}", target.status_turns);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-status|") && l.contains("|slp")));
+    }
+
+    // === 2. Sleep can't-move + wake ===
+    #[test]
+    fn test_sleep_cant_move_then_wakes() {
+        let spore_id = get_move("spore").unwrap().id;
+        let tackle_id = get_move("tackle").unwrap().id;
+        let mut battle = make_battle(
+            "Breloom", [slot(spore_id, 15), empty(), empty(), empty()],
+            "Dragonite", [slot(tackle_id, 35), empty(), empty(), empty()],
+        );
+        // Manually put p2 to sleep with 2 turns
+        battle.sides[1].active_mut().status = Status::Sleep;
+        battle.sides[1].active_mut().status_turns = 2;
+        battle.sides[1].sleep_clause_count = 1;
+
+        // Turn 1: p2 tries to move, counter 2→1, can't move
+        battle.protocol.clear();
+        battle.execute_move(1, 0);
+        assert_eq!(battle.sides[1].active().status, Status::Sleep);
+        assert_eq!(battle.sides[1].active().status_turns, 1);
+        assert!(battle.protocol.iter().any(|l| l.contains("|cant|") && l.contains("|slp")));
+
+        // Turn 2: p2 tries to move, counter 1→0, wakes and acts
+        battle.protocol.clear();
+        battle.execute_move(1, 0);
+        assert_eq!(battle.sides[1].active().status, Status::None);
+        assert_eq!(battle.sides[1].active().status_turns, 0);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-curestatus|") && l.contains("|slp")));
+        // Should have moved (Tackle) after waking
+        assert!(battle.protocol.iter().any(|l| l.contains("|move|") && l.contains("Tackle")));
+    }
+
+    // === 3. Rest: 2-turn sleep + full HP ===
+    #[test]
+    fn test_rest_heals_fully_and_sleeps_2_turns() {
+        let rest_id = get_move("rest").unwrap().id;
+        let tackle_id = get_move("tackle").unwrap().id;
+        let mut battle = make_battle(
+            "Blissey", [slot(rest_id, 5), slot(tackle_id, 35), empty(), empty()],
+            "Blissey", [slot(tackle_id, 35), empty(), empty(), empty()],
+        );
+        // Damage p1
+        let max_hp = battle.sides[0].active().max_hp;
+        battle.sides[0].active_mut().hp = max_hp / 2;
+
+        battle.execute_move(0, 0);
+        let mon = battle.sides[0].active();
+        assert_eq!(mon.status, Status::Sleep);
+        assert_eq!(mon.status_turns, 2);
+        assert_eq!(mon.hp, mon.max_hp, "Rest should fully heal");
+        assert!(battle.protocol.iter().any(|l| l.contains("|-status|") && l.contains("|slp|[from] move: Rest")));
+        assert!(battle.protocol.iter().any(|l| l.contains("|-heal|")));
+        // Rest-sleep does NOT increment sleep_clause_count
+        assert_eq!(battle.sides[0].sleep_clause_count, 0);
+    }
+
+    // === 4a. Insomnia blocks sleep ===
+    #[test]
+    fn test_insomnia_blocks_sleep() {
+        let spore_id = get_move("spore").unwrap().id;
+        let mut battle = make_battle(
+            "Breloom", [slot(spore_id, 15), empty(), empty(), empty()],
+            "Blissey", [empty(), empty(), empty(), empty()],
+        );
+        battle.sides[1].active_mut().ability_id = AbilityId::Insomnia;
+
+        battle.execute_move(0, 0);
+        assert_eq!(battle.sides[1].active().status, Status::None);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-immune|")));
+    }
+
+    // === 4b. Vital Spirit blocks sleep ===
+    #[test]
+    fn test_vital_spirit_blocks_sleep() {
+        let spore_id = get_move("spore").unwrap().id;
+        let mut battle = make_battle(
+            "Breloom", [slot(spore_id, 15), empty(), empty(), empty()],
+            "Blissey", [empty(), empty(), empty(), empty()],
+        );
+        battle.sides[1].active_mut().ability_id = AbilityId::VitalSpirit;
+
+        battle.execute_move(0, 0);
+        assert_eq!(battle.sides[1].active().status, Status::None);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-immune|")));
+    }
+
+    // === 4c. Electric Terrain blocks sleep for grounded target ===
+    #[test]
+    fn test_electric_terrain_blocks_sleep_grounded() {
+        let spore_id = get_move("spore").unwrap().id;
+        let mut battle = make_battle(
+            "Breloom", [slot(spore_id, 15), empty(), empty(), empty()],
+            "Blissey", [empty(), empty(), empty(), empty()],
+        );
+        battle.field.terrain = Terrain::Electric;
+        battle.field.terrain_turns = 5;
+
+        battle.execute_move(0, 0);
+        assert_eq!(battle.sides[1].active().status, Status::None);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-immune|")));
+    }
+
+    // === 4d. Grass-type immunity to sleep powder (powder move) ===
+    #[test]
+    fn test_grass_type_immune_to_sleep_moves() {
+        let sleep_powder_id = get_move("sleep powder").unwrap().id;
+        let mut battle = make_battle(
+            "Breloom", [slot(sleep_powder_id, 15), empty(), empty(), empty()],
+            "Breloom", [empty(), empty(), empty(), empty()], // Grass/Fighting
+        );
+
+        battle.execute_move(0, 0);
+        assert_eq!(battle.sides[1].active().status, Status::None);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-immune|")));
+    }
+
+    // === 5. Sleep Clause Mod ===
+    #[test]
+    fn test_sleep_clause_prevents_second_sleep() {
+        let spore_id = get_move("spore").unwrap().id;
+        let tackle_id = get_move("tackle").unwrap().id;
+        let sp = get_species("Blissey").unwrap();
+        let p2a = Pokemon::new(sp, 100, Nature::Hardy, [slot(tackle_id, 35), empty(), empty(), empty()], [0; 6], [31; 6]);
+        let p2b = Pokemon::new(sp, 100, Nature::Hardy, [slot(tackle_id, 35), empty(), empty(), empty()], [0; 6], [31; 6]);
+
+        let sp1 = get_species("Breloom").unwrap();
+        let p1 = Pokemon::new(sp1, 100, Nature::Hardy, [slot(spore_id, 15), empty(), empty(), empty()], [0; 6], [31; 6]);
+
+        let mut battle = Battle::new_raw(
+            Side::new(vec![p1]),
+            Side::new(vec![p2a, p2b]),
+        );
+
+        // Put first mon to sleep
+        battle.execute_move(0, 0);
+        assert_eq!(battle.sides[1].active().status, Status::Sleep);
+        assert_eq!(battle.sides[1].sleep_clause_count, 1);
+
+        // Switch to second mon
+        battle.sides[1].active_index = 1;
+        battle.protocol.clear();
+
+        // Try to sleep second mon — should fail due to Sleep Clause
+        battle.execute_move(0, 0);
+        assert_eq!(battle.sides[1].active().status, Status::None);
+        assert!(battle.protocol.iter().any(|l| l.contains("|-fail|") && l.contains("|slp")));
     }
 }
