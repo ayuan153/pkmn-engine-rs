@@ -2240,13 +2240,22 @@ impl Battle {
 
     fn get_multi_hit_count(&self, player: u8, move_data: &MoveData) -> Option<u8> {
         match move_data.name {
-            "Double Iron Bash" | "Dual Wingbeat" | "Dragon Darts" => Some(2),
-            "Surging Strikes" | "Triple Axel" | "Triple Kick" => Some(3),
+            // Fixed 2-hit moves
+            "Double Iron Bash" | "Dual Wingbeat" | "Dragon Darts"
+            | "Double Kick" | "Dual Chop" | "Bonemerang" | "Gear Grind"
+            | "Twin Beam" | "Double Hit" => Some(2),
+            // Fixed 3-hit
+            "Surging Strikes" => Some(3),
+            // Escalating: Triple Axel (20/40/60) and Triple Kick (10/20/30)
+            // Max 3 hits but each hit rolls accuracy; stop on miss
+            "Triple Axel" | "Triple Kick" => Some(3),
+            // Population Bomb: up to 10 hits, per-hit accuracy unless Loaded Dice
             "Population Bomb" => Some(10),
+            // 2-5 hit moves
             "Bullet Seed" | "Icicle Spear" | "Rock Blast" | "Scale Shot"
             | "Pin Missile" | "Tail Slap" | "Bone Rush" | "Arm Thrust"
-            | "Double Slap" | "Comet Punch" => {
-                // 2-5 hits; Skill Link always gives 5
+            | "Double Slap" | "Comet Punch" | "Fury Attack" | "Fury Swipes" => {
+                // Skill Link always gives 5
                 if self.sides[player as usize].active().ability_id
                     == pkmn_core::abilities::AbilityId::SkillLink
                 {
@@ -2260,9 +2269,14 @@ impl Battle {
     }
 
     fn execute_multi_hit(&mut self, player: u8, defender: u8, move_data: &MoveData, max_hits: u8) {
+        let is_escalating = matches!(move_data.name, "Triple Axel" | "Triple Kick");
+        let is_pop_bomb = move_data.name == "Population Bomb";
+        let has_loaded_dice = self.sides[player as usize].active().item_id == pkmn_core::items::ItemId::LoadedDice;
+        // Per-hit accuracy: escalating moves and Population Bomb (unless Loaded Dice)
+        let per_hit_accuracy = is_escalating || (is_pop_bomb && !has_loaded_dice);
+
         let hits = if max_hits == 0 {
             // 2-5 hit distribution
-            let has_loaded_dice = self.sides[player as usize].active().item_id == pkmn_core::items::ItemId::LoadedDice;
             if has_loaded_dice {
                 // Loaded Dice: 4 or 5 hits
                 let roll = self.random(2);
@@ -2272,12 +2286,31 @@ impl Battle {
                 let roll = self.random(20);
                 if roll < 7 { 2 } else if roll < 14 { 3 } else if roll < 17 { 4 } else { 5 }
             }
+        } else if is_pop_bomb && has_loaded_dice {
+            // Loaded Dice + Population Bomb: guaranteed 4-5 hits, no per-hit acc
+            let roll = self.random(2);
+            roll + 4
         } else {
             max_hits as u32
         };
 
         let mut actual_hits: u32 = 0;
-        for _hit_num in 0..hits {
+        for hit_num in 0..hits {
+            // Per-hit accuracy check (skip first hit — already checked before entering)
+            if per_hit_accuracy && hit_num > 0 && move_data.accuracy > 0
+                && !self.rand_check(move_data.accuracy)
+            {
+                break;
+            }
+
+            // Escalating BP: create a modified move_data with overridden base_power
+            let effective_bp = if is_escalating {
+                let base = move_data.base_power as u16;
+                base * (hit_num as u16 + 1) // Triple Kick: 10/20/30, Triple Axel: 20/40/60
+            } else {
+                move_data.base_power as u16
+            };
+
             // Crit stage table: 0 → 1/24, 1 → 1/8, 2 → 1/2, 3+ → always
             let crit_denom = match move_data.crit_ratio {
                 0 => 24,
@@ -2288,7 +2321,15 @@ impl Battle {
             let critical = self.random_chance(1, crit_denom);
             let roll = self.random(16);
             let random_factor = (100 - roll) as u8;
-            let damage = self.calculate_damage_with(player, defender, move_data, critical, random_factor);
+
+            let damage = if is_escalating {
+                // Use a modified MoveData with escalating BP
+                let mut modified = *move_data;
+                modified.base_power = effective_bp as u8;
+                self.calculate_damage_with(player, defender, &modified, critical, random_factor)
+            } else {
+                self.calculate_damage_with(player, defender, move_data, critical, random_factor)
+            };
 
             if self.sides[defender as usize].active().volatiles.contains(Volatiles::SUBSTITUTE) {
                 let sub_hp = self.sides[defender as usize].active().substitute_hp;
@@ -2315,10 +2356,33 @@ impl Battle {
                 } else {
                     self.emit(format!("|-damage|p{}a: {}|{}/{}", defender+1, def_name, hp, max_hp));
                 }
+
+                // on_damaging_hit per hit for contact moves
+                if move_data.flags.has(MoveFlags::CONTACT) && self.sides[defender as usize].active().is_alive() {
+                    let defender_ability = self.sides[defender as usize].active().ability_id;
+                    let defender_item = self.sides[defender as usize].active().item_id;
+                    let hooks = crate::events::ability_hooks(defender_ability);
+                    if let Some(hook) = hooks.on_damaging_hit {
+                        hook(self, player, defender);
+                    }
+                    if defender_item == pkmn_core::items::ItemId::RockyHelmet {
+                        let attacker_max_hp = self.sides[player as usize].active().max_hp;
+                        let recoil = (attacker_max_hp / 6).max(1);
+                        self.apply_damage(player, recoil);
+                        let atk_name = self.species_name(player);
+                        let hp_str = self.hp_display(player);
+                        let def_name = self.species_name(defender);
+                        self.emit(format!("|-damage|p{}a: {}|{}|[from] item: Rocky Helmet|[of] p{}a: {}", player+1, atk_name, hp_str, defender+1, def_name));
+                    }
+                }
             }
 
             actual_hits += 1;
             if self.sides[defender as usize].active().hp == 0 {
+                break;
+            }
+            // Stop if attacker fainted (e.g. from Rough Skin recoil)
+            if !self.sides[player as usize].active().is_alive() {
                 break;
             }
         }
@@ -2886,5 +2950,220 @@ mod tests_volatiles_and_field {
 
         // Protocol should mention Recoil
         assert!(battle.protocol.iter().any(|l| l.contains("[from] Recoil")));
+    }
+}
+
+#[cfg(test)]
+mod tests_multi_hit {
+    use crate::battle::Battle;
+    use crate::pokemon::{MoveSlot, Pokemon};
+    use crate::side::Side;
+    use crate::choice::Choice;
+    use pkmn_core::nature::Nature;
+    use pkmn_core::species::get_species;
+    use pkmn_core::abilities::AbilityId;
+    use pkmn_core::items::ItemId;
+
+    fn slot(id: u16, pp: u8) -> MoveSlot { MoveSlot { move_id: id, pp, max_pp: pp } }
+    fn empty() -> MoveSlot { MoveSlot { move_id: 0, pp: 0, max_pp: 0 } }
+
+    fn raw_battle(p1_moves: [MoveSlot; 4], p2_moves: [MoveSlot; 4]) -> Battle {
+        let sp = get_species("Blissey").unwrap();
+        let p1 = Pokemon::new(sp, 100, Nature::Hardy, p1_moves, [0; 6], [31; 6]);
+        let p2 = Pokemon::new(sp, 100, Nature::Hardy, p2_moves, [0; 6], [31; 6]);
+        Battle::new_raw(Side::new(vec![p1]), Side::new(vec![p2]))
+    }
+
+    fn raw_battle_species(p1_species: &str, p1_moves: [MoveSlot; 4], p2_species: &str, p2_moves: [MoveSlot; 4]) -> Battle {
+        let sp1 = get_species(p1_species).unwrap();
+        let sp2 = get_species(p2_species).unwrap();
+        let p1 = Pokemon::new(sp1, 100, Nature::Hardy, p1_moves, [252; 6], [31; 6]);
+        let p2 = Pokemon::new(sp2, 100, Nature::Hardy, p2_moves, [252; 6], [31; 6]);
+        Battle::new_raw(Side::new(vec![p1]), Side::new(vec![p2]))
+    }
+
+    // ===== 2-5 HIT MOVES =====
+
+    #[test]
+    fn bullet_seed_hits_2_to_5_times() {
+        // Run with multiple seeds to verify hit range [2,5]
+        let mut seen_hits = [false; 6]; // index 2..5
+        for seed_val in 0u16..50 {
+            let mut battle = raw_battle(
+                [slot(331, 30), empty(), empty(), empty()], // Bullet Seed
+                [empty(), empty(), empty(), empty()],
+            );
+            battle.rng_seed = [seed_val, seed_val + 1, seed_val + 2, seed_val + 3];
+            let hp_before = battle.sides[1].active().hp;
+            battle.execute_choice(0, Choice::Move(0));
+            let hp_after = battle.sides[1].active().hp;
+            let total_damage = hp_before.saturating_sub(hp_after);
+            // Find hitcount from protocol
+            let hitcount_line = battle.protocol.iter().find(|l| l.contains("|-hitcount|"));
+            assert!(hitcount_line.is_some(), "Should emit hitcount");
+            let line = hitcount_line.unwrap();
+            let hits: u32 = line.split('|').last().unwrap().trim().parse().unwrap();
+            assert!((2..=5).contains(&hits), "Hits should be 2-5, got {}", hits);
+            seen_hits[hits as usize] = true;
+            // Verify total damage = sum of individual hits
+            let damage_lines: Vec<_> = battle.protocol.iter()
+                .filter(|l| l.contains("|-damage|") && !l.contains("[from]"))
+                .collect();
+            assert_eq!(damage_lines.len(), hits as usize, "damage lines should equal hit count");
+            assert!(total_damage > 0);
+        }
+        // Should have seen at least 2 different hit counts
+        let unique = seen_hits[2..=5].iter().filter(|&&x| x).count();
+        assert!(unique >= 2, "Should see multiple hit counts across seeds, got {}", unique);
+    }
+
+    // ===== SKILL LINK =====
+
+    #[test]
+    fn skill_link_forces_5_hits() {
+        let mut battle = raw_battle(
+            [slot(331, 30), empty(), empty(), empty()], // Bullet Seed
+            [empty(), empty(), empty(), empty()],
+        );
+        battle.sides[0].active_mut().ability_id = AbilityId::SkillLink;
+        battle.execute_choice(0, Choice::Move(0));
+        let hitcount_line = battle.protocol.iter().find(|l| l.contains("|-hitcount|")).unwrap();
+        let hits: u32 = hitcount_line.split('|').last().unwrap().trim().parse().unwrap();
+        assert_eq!(hits, 5, "Skill Link should force 5 hits");
+    }
+
+    // ===== LOADED DICE =====
+
+    #[test]
+    fn loaded_dice_forces_at_least_4_hits() {
+        for seed_val in 0u16..30 {
+            let mut battle = raw_battle(
+                [slot(331, 30), empty(), empty(), empty()], // Bullet Seed
+                [empty(), empty(), empty(), empty()],
+            );
+            battle.sides[0].active_mut().item_id = ItemId::LoadedDice;
+            battle.rng_seed = [seed_val, seed_val + 10, seed_val + 20, seed_val + 30];
+            battle.execute_choice(0, Choice::Move(0));
+            let hitcount_line = battle.protocol.iter().find(|l| l.contains("|-hitcount|")).unwrap();
+            let hits: u32 = hitcount_line.split('|').last().unwrap().trim().parse().unwrap();
+            assert!((4..=5).contains(&hits), "Loaded Dice should force 4-5 hits, got {}", hits);
+        }
+    }
+
+    // ===== FIXED-COUNT MOVES =====
+
+    #[test]
+    fn double_kick_always_2_hits() {
+        for seed_val in 0u16..10 {
+            let mut battle = raw_battle(
+                [slot(24, 30), empty(), empty(), empty()], // Double Kick
+                [empty(), empty(), empty(), empty()],
+            );
+            battle.rng_seed = [seed_val, seed_val + 1, seed_val + 2, seed_val + 3];
+            battle.execute_choice(0, Choice::Move(0));
+            let hitcount_line = battle.protocol.iter().find(|l| l.contains("|-hitcount|")).unwrap();
+            let hits: u32 = hitcount_line.split('|').last().unwrap().trim().parse().unwrap();
+            assert_eq!(hits, 2, "Double Kick should always be 2 hits, got {}", hits);
+        }
+    }
+
+    // ===== TRIPLE AXEL (ESCALATING) =====
+
+    #[test]
+    fn triple_axel_escalates_bp_and_stops_on_miss() {
+        // Use enough seeds to see both full 3-hit and partial hit patterns
+        let mut saw_full = false;
+        let mut saw_partial = false;
+        for seed_val in 0u16..100 {
+            let mut battle = raw_battle_species(
+                "Weavile", [slot(813, 10), empty(), empty(), empty()], // Triple Axel
+                "Blissey", [empty(), empty(), empty(), empty()],
+            );
+            battle.rng_seed = [seed_val, seed_val + 5, seed_val + 10, seed_val + 15];
+            let hp_before = battle.sides[1].active().hp;
+            battle.execute_choice(0, Choice::Move(0));
+
+            // Check if it missed entirely or hit
+            let missed_all = battle.protocol.iter().any(|l| l.contains("[miss]"));
+            if missed_all {
+                // First hit missed
+                assert_eq!(battle.sides[1].active().hp, hp_before);
+                continue;
+            }
+
+            let hitcount_line = battle.protocol.iter().find(|l| l.contains("|-hitcount|"));
+            if let Some(line) = hitcount_line {
+                let hits: u32 = line.split('|').last().unwrap().trim().parse().unwrap();
+                assert!((1..=3).contains(&hits), "Triple Axel should be 1-3 hits, got {}", hits);
+                if hits == 3 { saw_full = true; }
+                if hits < 3 { saw_partial = true; }
+            }
+        }
+        // With 90% accuracy per hit, we should see both outcomes across 100 seeds
+        assert!(saw_full, "Should see at least one full 3-hit Triple Axel");
+        assert!(saw_partial, "Should see at least one partial-hit Triple Axel");
+    }
+
+    // ===== SCALE SHOT STAT CHANGES =====
+
+    #[test]
+    fn scale_shot_applies_speed_up_def_down_after() {
+        let mut battle = raw_battle_species(
+            "Garchomp", [slot(799, 20), empty(), empty(), empty()], // Scale Shot
+            "Blissey", [empty(), empty(), empty(), empty()],
+        );
+        // Use a seed that gives a hit (Scale Shot acc=90 should mostly hit)
+        battle.rng_seed = [100, 200, 300, 400];
+        battle.execute_choice(0, Choice::Move(0));
+
+        // If it didn't miss entirely, check secondaries
+        let missed = battle.protocol.iter().any(|l| l.contains("[miss]"));
+        if !missed {
+            // Scale Shot secondaries: Def -1, Spe +1
+            assert_eq!(battle.sides[0].active().boosts.spe, 1, "Scale Shot should +1 Spe");
+            assert_eq!(battle.sides[0].active().boosts.def, -1, "Scale Shot should -1 Def");
+        }
+    }
+
+    // ===== POPULATION BOMB WITH LOADED DICE =====
+
+    #[test]
+    fn population_bomb_loaded_dice_forces_4_or_5() {
+        for seed_val in 0u16..20 {
+            let mut battle = raw_battle(
+                [slot(860, 10), empty(), empty(), empty()], // Population Bomb
+                [empty(), empty(), empty(), empty()],
+            );
+            battle.sides[0].active_mut().item_id = ItemId::LoadedDice;
+            battle.rng_seed = [seed_val, seed_val + 3, seed_val + 6, seed_val + 9];
+            battle.execute_choice(0, Choice::Move(0));
+
+            let missed = battle.protocol.iter().any(|l| l.contains("[miss]"));
+            if missed { continue; }
+
+            let hitcount_line = battle.protocol.iter().find(|l| l.contains("|-hitcount|")).unwrap();
+            let hits: u32 = hitcount_line.split('|').last().unwrap().trim().parse().unwrap();
+            assert!((4..=5).contains(&hits), "Pop Bomb + Loaded Dice = 4-5 hits, got {}", hits);
+        }
+    }
+
+    // ===== SKILL LINK + POPULATION BOMB =====
+
+    #[test]
+    fn skill_link_population_bomb_gives_10_hits() {
+        let mut battle = raw_battle(
+            [slot(860, 10), empty(), empty(), empty()], // Population Bomb
+            [empty(), empty(), empty(), empty()],
+        );
+        battle.sides[0].active_mut().ability_id = AbilityId::SkillLink;
+        battle.rng_seed = [100, 200, 300, 400];
+        battle.execute_choice(0, Choice::Move(0));
+
+        let missed = battle.protocol.iter().any(|l| l.contains("[miss]"));
+        if !missed {
+            let hitcount_line = battle.protocol.iter().find(|l| l.contains("|-hitcount|")).unwrap();
+            let hits: u32 = hitcount_line.split('|').last().unwrap().trim().parse().unwrap();
+            assert_eq!(hits, 10, "Skill Link + Pop Bomb = 10 hits, got {}", hits);
+        }
     }
 }

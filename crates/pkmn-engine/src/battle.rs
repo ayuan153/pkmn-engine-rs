@@ -37,7 +37,7 @@ pub struct Battle {
     pub result: BattleResult,
     pub phase: BattlePhase,
     pub protocol: Vec<String>,
-    rng_seed: [u16; 4],
+    pub(crate) rng_seed: [u16; 4],
     pub rng_call_count: u32,
     /// Queued pivot switch targets per player (set externally by test runner)
     pub pivot_switch_targets: [Vec<u8>; 2],
