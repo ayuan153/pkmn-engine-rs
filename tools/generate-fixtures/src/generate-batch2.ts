@@ -2,11 +2,12 @@ import { BattleStreams, Teams, Dex } from '@pkmn/sim';
 import { batch2Scenarios } from './scenarios-batch2.js';
 import { batch3Scenarios } from './scenarios-batch3.js';
 import { batch4Scenarios } from './scenarios-batch4.js';
+import { batch5Scenarios } from './scenarios-batch5.js';
 import * as fs from 'fs';
 import * as path from 'path';
 
 const outputDir = path.resolve(import.meta.dirname, '../../../tests/fixtures/full-info');
-const allScenarios = [...batch2Scenarios, ...batch3Scenarios, ...batch4Scenarios];
+const allScenarios = [...batch2Scenarios, ...batch3Scenarios, ...batch4Scenarios, ...batch5Scenarios];
 
 interface DamageEvent {
   type: 'damage'; turn: number; source: string; target: string;

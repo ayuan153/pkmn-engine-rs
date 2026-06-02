@@ -1,0 +1,207 @@
+{
+  "id": "ability-punk-rock-defense",
+  "description": "Punk Rock halves sound damage taken by defender",
+  "seed": [
+    5040,
+    5041,
+    5042,
+    5043
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Exploud",
+        "species": "Exploud",
+        "item": "",
+        "ability": "Scrappy",
+        "moves": [
+          "Boomburst",
+          "Hyper Voice",
+          "Fire Blast",
+          "Surf"
+        ],
+        "nature": "Modest",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Toxtricity",
+        "species": "Toxtricity",
+        "item": "",
+        "ability": "Punk Rock",
+        "moves": [
+          "Overdrive",
+          "Sludge Bomb",
+          "Volt Switch",
+          "Boomburst"
+        ],
+        "nature": "Modest",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 4,
+          "spa": 0,
+          "spd": 252,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Boomburst",
+      "damage": 107,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Exploud",
+        "level": 100,
+        "stat_atk": 196,
+        "stat_def": 162,
+        "stat_spa": 309,
+        "ability": "Scrappy",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Toxtricity",
+        "level": 100,
+        "stat_atk": 208,
+        "stat_def": 177,
+        "stat_spd": 239,
+        "ability": "Punk Rock",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 354,
+        "hp_after": 247,
+        "max_hp": 354
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Overdrive",
+      "damage": 196,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Toxtricity",
+        "level": 100,
+        "stat_atk": 208,
+        "stat_def": 177,
+        "stat_spa": 290,
+        "ability": "Punk Rock",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Exploud",
+        "level": 100,
+        "stat_atk": 196,
+        "stat_def": 162,
+        "stat_spd": 183,
+        "ability": "Scrappy",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 349,
+        "hp_after": 153,
+        "max_hp": 349
+      }
+    }
+  ]
+}

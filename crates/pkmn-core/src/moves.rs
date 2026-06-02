@@ -246,6 +246,16 @@ const _: () = {
     let _ = P;
 };
 
+/// Returns true if the move has recoil (used by Reckless ability).
+/// Checks by move ID to avoid depending on pkmn-engine's damaging_self_effect.
+pub fn is_recoil_move(id: u16) -> bool {
+    matches!(id,
+        413 | 394 | 344 | 452 // Brave Bird, Flare Blitz, Double-Edge, Wood Hammer
+        | 528 | 36            // Wild Charge, Take Down
+        | 457               // Head Smash
+    )
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

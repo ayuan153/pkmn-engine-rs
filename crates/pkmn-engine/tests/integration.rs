@@ -1229,4 +1229,215 @@ mod tests {
         let choices = battle.choices(0);
         assert!(choices.len() > 1, "Should have normal choices after recharge");
     }
+
+    // === Damage-modifying ability tests (batch 5) ===
+
+    #[test]
+    fn test_sharpness_boosts_slicing() {
+        let leaf_blade = pkmn_core::moves::get_move("Leaf Blade").unwrap();
+        let mut p1 = make_pokemon("Gallade", Nature::Adamant, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let p2 = make_blissey();
+        p1.ability_id = AbilityId::Sharpness;
+        let battle = make_battle(p1.clone(), p2.clone());
+        let dmg_sharp = battle.calculate_damage_with(0, 1, leaf_blade, false, 100);
+
+        let mut p1b = p1.clone();
+        p1b.ability_id = AbilityId::None;
+        let battle2 = make_battle(p1b, p2);
+        let dmg_none = battle2.calculate_damage_with(0, 1, leaf_blade, false, 100);
+        assert!(dmg_sharp > dmg_none, "Sharpness should boost slicing: {} vs {}", dmg_sharp, dmg_none);
+    }
+
+    #[test]
+    fn test_reckless_boosts_recoil() {
+        let brave_bird = pkmn_core::moves::get_move("Brave Bird").unwrap();
+        let mut p1 = make_pokemon("Staraptor", Nature::Adamant, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let p2 = make_blissey();
+        p1.ability_id = AbilityId::Reckless;
+        let battle = make_battle(p1.clone(), p2.clone());
+        let dmg_reck = battle.calculate_damage_with(0, 1, brave_bird, false, 100);
+
+        let mut p1b = p1.clone();
+        p1b.ability_id = AbilityId::None;
+        let battle2 = make_battle(p1b, p2);
+        let dmg_none = battle2.calculate_damage_with(0, 1, brave_bird, false, 100);
+        assert!(dmg_reck > dmg_none, "Reckless should boost recoil: {} vs {}", dmg_reck, dmg_none);
+    }
+
+    #[test]
+    fn test_mega_launcher_boosts_pulse() {
+        let dark_pulse = pkmn_core::moves::get_move("Dark Pulse").unwrap();
+        let mut p1 = make_pokemon("Clawitzer", Nature::Modest, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let p2 = make_blissey();
+        p1.ability_id = AbilityId::MegaLauncher;
+        let battle = make_battle(p1.clone(), p2.clone());
+        let dmg_ml = battle.calculate_damage_with(0, 1, dark_pulse, false, 100);
+
+        let mut p1b = p1.clone();
+        p1b.ability_id = AbilityId::None;
+        let battle2 = make_battle(p1b, p2);
+        let dmg_none = battle2.calculate_damage_with(0, 1, dark_pulse, false, 100);
+        assert!(dmg_ml > dmg_none, "Mega Launcher should boost pulse: {} vs {}", dmg_ml, dmg_none);
+    }
+
+    #[test]
+    fn test_punk_rock_boosts_sound_offense() {
+        let boomburst = pkmn_core::moves::get_move("Boomburst").unwrap();
+        let mut p1 = make_pokemon("Toxtricity", Nature::Modest, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let p2 = make_blissey();
+        p1.ability_id = AbilityId::PunkRock;
+        let battle = make_battle(p1.clone(), p2.clone());
+        let dmg_pr = battle.calculate_damage_with(0, 1, boomburst, false, 100);
+
+        let mut p1b = p1.clone();
+        p1b.ability_id = AbilityId::None;
+        let battle2 = make_battle(p1b, p2);
+        let dmg_none = battle2.calculate_damage_with(0, 1, boomburst, false, 100);
+        assert!(dmg_pr > dmg_none, "Punk Rock should boost sound: {} vs {}", dmg_pr, dmg_none);
+    }
+
+    #[test]
+    fn test_punk_rock_halves_sound_defense() {
+        let boomburst = pkmn_core::moves::get_move("Boomburst").unwrap();
+        let p1 = make_pokemon("Exploud", Nature::Modest, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let mut p2 = make_pokemon("Toxtricity", Nature::Bold, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        p2.ability_id = AbilityId::PunkRock;
+        let battle = make_battle(p1.clone(), p2.clone());
+        let dmg_pr = battle.calculate_damage_with(0, 1, boomburst, false, 100);
+
+        let mut p2b = p2.clone();
+        p2b.ability_id = AbilityId::None;
+        let battle2 = make_battle(p1, p2b);
+        let dmg_none = battle2.calculate_damage_with(0, 1, boomburst, false, 100);
+        assert!(dmg_pr < dmg_none, "Punk Rock defender should halve sound: {} vs {}", dmg_pr, dmg_none);
+    }
+
+    #[test]
+    fn test_steelworker_boosts_steel() {
+        let flash_cannon = pkmn_core::moves::get_move("Flash Cannon").unwrap();
+        let mut p1 = make_pokemon("Dhelmise", Nature::Modest, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let p2 = make_blissey();
+        p1.ability_id = AbilityId::Steelworker;
+        let battle = make_battle(p1.clone(), p2.clone());
+        let dmg_sw = battle.calculate_damage_with(0, 1, flash_cannon, false, 100);
+
+        let mut p1b = p1.clone();
+        p1b.ability_id = AbilityId::None;
+        let battle2 = make_battle(p1b, p2);
+        let dmg_none = battle2.calculate_damage_with(0, 1, flash_cannon, false, 100);
+        assert!(dmg_sw > dmg_none, "Steelworker should boost Steel: {} vs {}", dmg_sw, dmg_none);
+    }
+
+    #[test]
+    fn test_water_bubble_doubles_water_offense() {
+        let scald = pkmn_core::moves::get_move("Scald").unwrap();
+        let mut p1 = make_pokemon("Araquanid", Nature::Modest, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let p2 = make_blissey();
+        p1.ability_id = AbilityId::WaterBubble;
+        let battle = make_battle(p1.clone(), p2.clone());
+        let dmg_wb = battle.calculate_damage_with(0, 1, scald, false, 100);
+
+        let mut p1b = p1.clone();
+        p1b.ability_id = AbilityId::None;
+        let battle2 = make_battle(p1b, p2);
+        let dmg_none = battle2.calculate_damage_with(0, 1, scald, false, 100);
+        // Should be approximately 2x
+        assert!(dmg_wb > dmg_none * 3 / 2, "Water Bubble should ~2x Water: {} vs {}", dmg_wb, dmg_none);
+    }
+
+    #[test]
+    fn test_water_bubble_halves_fire_defense() {
+        let fire_blast = pkmn_core::moves::get_move("Fire Blast").unwrap();
+        let p1 = make_pokemon("Volcarona", Nature::Modest, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        let mut p2 = make_pokemon("Araquanid", Nature::Careful, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        p2.ability_id = AbilityId::WaterBubble;
+        let battle = make_battle(p1.clone(), p2.clone());
+        let dmg_wb = battle.calculate_damage_with(0, 1, fire_blast, false, 100);
+
+        let mut p2b = p2.clone();
+        p2b.ability_id = AbilityId::None;
+        let battle2 = make_battle(p1, p2b);
+        let dmg_none = battle2.calculate_damage_with(0, 1, fire_blast, false, 100);
+        assert!(dmg_wb < dmg_none, "Water Bubble defender should halve Fire: {} vs {}", dmg_wb, dmg_none);
+    }
+
+    #[test]
+    fn test_neuroforce_boosts_super_effective() {
+        // Psychic vs pure Fighting (super effective)
+        let psychic = pkmn_core::moves::get_move("Psychic").unwrap();
+        let mut p1 = make_pokemon("Necrozma", Nature::Modest, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        // Use a pure Fighting type target (Hitmonlee)
+        let p2 = make_pokemon("Hitmonlee", Nature::Adamant, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        p1.ability_id = AbilityId::Neuroforce;
+        let battle = make_battle(p1.clone(), p2.clone());
+        let dmg_nf = battle.calculate_damage_with(0, 1, psychic, false, 100);
+
+        let mut p1b = p1.clone();
+        p1b.ability_id = AbilityId::None;
+        let battle2 = make_battle(p1b, p2);
+        let dmg_none = battle2.calculate_damage_with(0, 1, psychic, false, 100);
+        assert!(dmg_nf > dmg_none, "Neuroforce should boost SE: {} vs {}", dmg_nf, dmg_none);
+    }
+
+    #[test]
+    fn test_pixilate_type_change_and_boost() {
+        // Hyper Voice (Normal) should become Fairy with Pixilate
+        let hyper_voice = pkmn_core::moves::get_move("Hyper Voice").unwrap();
+        let mut p1 = make_pokemon("Sylveon", Nature::Modest, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        // Garchomp is Dragon — Fairy is super effective against it
+        let p2 = make_garchomp();
+        p1.ability_id = AbilityId::Pixilate;
+        let battle = make_battle(p1.clone(), p2.clone());
+        let dmg_pix = battle.calculate_damage_with(0, 1, hyper_voice, false, 100);
+
+        let mut p1b = p1.clone();
+        p1b.ability_id = AbilityId::None;
+        let battle2 = make_battle(p1b, p2);
+        let dmg_none = battle2.calculate_damage_with(0, 1, hyper_voice, false, 100);
+        // Pixilate: Normal->Fairy (2x vs Dragon) + 1.2x boost
+        assert!(dmg_pix > dmg_none * 2, "Pixilate should change type + boost: {} vs {}", dmg_pix, dmg_none);
+    }
+
+    #[test]
+    fn test_refrigerate_type_change() {
+        let hyper_voice = pkmn_core::moves::get_move("Hyper Voice").unwrap();
+        let mut p1 = make_pokemon("Aurorus", Nature::Modest, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        // Garchomp is Dragon/Ground — Ice is 4x effective
+        let p2 = make_garchomp();
+        p1.ability_id = AbilityId::Refrigerate;
+        let battle = make_battle(p1.clone(), p2.clone());
+        let dmg_ref = battle.calculate_damage_with(0, 1, hyper_voice, false, 100);
+
+        let mut p1b = p1.clone();
+        p1b.ability_id = AbilityId::None;
+        let battle2 = make_battle(p1b, p2);
+        let dmg_none = battle2.calculate_damage_with(0, 1, hyper_voice, false, 100);
+        // Refrigerate: Normal->Ice (4x vs Dragon/Ground) + 1.2x
+        assert!(dmg_ref > dmg_none * 4, "Refrigerate should change type: {} vs {}", dmg_ref, dmg_none);
+    }
+
+    #[test]
+    fn test_download_boosts_atk_when_def_lower() {
+        // Use a defender whose Def <= SpD
+        let mut p1 = make_pokemon("Porygon-Z", Nature::Modest, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        p1.ability_id = AbilityId::Download;
+        // Blissey has very low Def, high SpD
+        let p2 = make_blissey();
+        let battle = make_battle(p1, p2);
+        // Battle::new triggers on_switch_in automatically
+        // Blissey: Def < SpD => should boost Atk
+        assert_eq!(battle.sides[0].active().boosts.atk, 1, "Download should +1 Atk when target Def <= SpD");
+        assert_eq!(battle.sides[0].active().boosts.spa, 0);
+    }
+
+    #[test]
+    fn test_download_boosts_spa_when_spd_lower() {
+        let mut p1 = make_pokemon("Porygon-Z", Nature::Modest, [eq_slot(), empty_slot(), empty_slot(), empty_slot()]);
+        p1.ability_id = AbilityId::Download;
+        // Use Garchomp: base Def 95, base SpD 85 => Def > SpD so Download boosts SpA
+        let p2 = make_garchomp();
+        let battle = make_battle(p1, p2);
+        assert_eq!(battle.sides[0].active().boosts.spa, 1, "Download should +1 SpA when target Def > SpD");
+        assert_eq!(battle.sides[0].active().boosts.atk, 0);
+    }
 }

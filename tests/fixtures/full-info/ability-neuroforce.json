@@ -1,0 +1,207 @@
+{
+  "id": "ability-neuroforce",
+  "description": "Neuroforce 1.25x on super effective Psychic vs Fighting",
+  "seed": [
+    5080,
+    5081,
+    5082,
+    5083
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Necrozma",
+        "species": "Necrozma",
+        "item": "",
+        "ability": "Neuroforce",
+        "moves": [
+          "Psychic",
+          "Dark Pulse",
+          "Flash Cannon",
+          "Earth Power"
+        ],
+        "nature": "Modest",
+        "evs": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Lucario",
+        "species": "Lucario",
+        "item": "",
+        "ability": "Inner Focus",
+        "moves": [
+          "Close Combat",
+          "Meteor Mash",
+          "Extreme Speed",
+          "Swords Dance"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Close Combat",
+      "damage": 95,
+      "crit": false,
+      "effectiveness": 0.5,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Lucario",
+        "level": 100,
+        "stat_atk": 350,
+        "stat_def": 176,
+        "stat_spa": 239,
+        "ability": "Inner Focus",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Necrozma",
+        "level": 100,
+        "stat_atk": 225,
+        "stat_def": 238,
+        "stat_spd": 215,
+        "ability": "Neuroforce",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 335,
+        "hp_after": 240,
+        "max_hp": 335
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Psychic",
+      "damage": 281,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Necrozma",
+        "level": 100,
+        "stat_atk": 225,
+        "stat_def": 238,
+        "stat_spa": 388,
+        "ability": "Neuroforce",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Lucario",
+        "level": 100,
+        "stat_atk": 350,
+        "stat_def": 176,
+        "stat_spd": 177,
+        "ability": "Inner Focus",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": -1,
+          "spa": 0,
+          "spd": -1,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 281,
+        "hp_after": 0,
+        "max_hp": 281
+      }
+    }
+  ]
+}

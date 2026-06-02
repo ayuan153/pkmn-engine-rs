@@ -84,6 +84,22 @@ pub enum AbilityId {
     Insomnia,
     VitalSpirit,
     SweetVeil,
+    // Damage-modifying abilities (batch 5)
+    Sharpness,
+    Reckless,
+    MegaLauncher,
+    PunkRock,
+    Steelworker,
+    SteelySpirit,
+    WaterBubble,
+    Neuroforce,
+    Analytic,
+    Stakeout,
+    Pixilate,
+    Refrigerate,
+    Aerilate,
+    Galvanize,
+    Download,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -178,6 +194,21 @@ static ABILITY_TABLE: &[AbilityData] = &[
     AbilityData { id: AbilityId::Insomnia, name: "Insomnia", triggers: &[AbilityTrigger::Immunity] },
     AbilityData { id: AbilityId::VitalSpirit, name: "Vital Spirit", triggers: &[AbilityTrigger::Immunity] },
     AbilityData { id: AbilityId::SweetVeil, name: "Sweet Veil", triggers: &[AbilityTrigger::Immunity] },
+    AbilityData { id: AbilityId::Sharpness, name: "Sharpness", triggers: &[AbilityTrigger::ModifyDamage] },
+    AbilityData { id: AbilityId::Reckless, name: "Reckless", triggers: &[AbilityTrigger::ModifyDamage] },
+    AbilityData { id: AbilityId::MegaLauncher, name: "Mega Launcher", triggers: &[AbilityTrigger::ModifyDamage] },
+    AbilityData { id: AbilityId::PunkRock, name: "Punk Rock", triggers: &[AbilityTrigger::ModifyDamage] },
+    AbilityData { id: AbilityId::Steelworker, name: "Steelworker", triggers: &[AbilityTrigger::ModifyDamage] },
+    AbilityData { id: AbilityId::SteelySpirit, name: "Steely Spirit", triggers: &[AbilityTrigger::ModifyDamage] },
+    AbilityData { id: AbilityId::WaterBubble, name: "Water Bubble", triggers: &[AbilityTrigger::ModifyDamage] },
+    AbilityData { id: AbilityId::Neuroforce, name: "Neuroforce", triggers: &[AbilityTrigger::ModifyDamage] },
+    AbilityData { id: AbilityId::Analytic, name: "Analytic", triggers: &[AbilityTrigger::ModifyDamage] },
+    AbilityData { id: AbilityId::Stakeout, name: "Stakeout", triggers: &[AbilityTrigger::ModifyDamage] },
+    AbilityData { id: AbilityId::Pixilate, name: "Pixilate", triggers: &[AbilityTrigger::ModifyDamage] },
+    AbilityData { id: AbilityId::Refrigerate, name: "Refrigerate", triggers: &[AbilityTrigger::ModifyDamage] },
+    AbilityData { id: AbilityId::Aerilate, name: "Aerilate", triggers: &[AbilityTrigger::ModifyDamage] },
+    AbilityData { id: AbilityId::Galvanize, name: "Galvanize", triggers: &[AbilityTrigger::ModifyDamage] },
+    AbilityData { id: AbilityId::Download, name: "Download", triggers: &[AbilityTrigger::OnSwitchIn] },
 ];
 
 pub fn get_ability(id: AbilityId) -> &'static AbilityData {

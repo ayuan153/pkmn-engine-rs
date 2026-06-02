@@ -1125,6 +1125,19 @@ impl Battle {
             move_data.move_type
         };
 
+        // -ate abilities: Normal moves become a different type + 1.2x (4915/4096)
+        let (move_type, ate_boost) = if move_type == Type::Normal {
+            match atk_ability {
+                pkmn_core::abilities::AbilityId::Pixilate => (Type::Fairy, true),
+                pkmn_core::abilities::AbilityId::Refrigerate => (Type::Ice, true),
+                pkmn_core::abilities::AbilityId::Aerilate => (Type::Flying, true),
+                pkmn_core::abilities::AbilityId::Galvanize => (Type::Electric, true),
+                _ => (move_type, false),
+            }
+        } else {
+            (move_type, false)
+        };
+
         // Knock Off: 1.5x BP when target has item (onBasePower)
         let base_power = if move_data.name == "Knock Off"
             && defender.item_id != pkmn_core::items::ItemId::None
@@ -1140,6 +1153,13 @@ impl Battle {
 
         // onBasePower modifiers (Tough Claws, type-boosting items, Muscle Band, etc.)
         let base_power = self.apply_bp_modifiers_with_type(attacker_player, move_data, base_power, move_type);
+
+        // -ate abilities: 1.2x (4915/4096) BP boost when type was changed from Normal
+        let base_power = if ate_boost {
+            ((base_power as u32 * 4915 + 2048) / 4096) as u16
+        } else {
+            base_power
+        };
 
         // --- STAB ---
         let stab = if attacker.is_terastallized {
@@ -1273,6 +1293,53 @@ impl Battle {
             damage = (damage * 6144 + 2047) / 4096;
         }
 
+        // Punk Rock: 0.5x (2048/4096) on sound moves (defender takes less)
+        if def_ability == pkmn_core::abilities::AbilityId::PunkRock
+            && move_data.flags.has(MoveFlags::SOUND)
+        {
+            damage = (damage * 2048 + 2047) / 4096;
+        }
+
+        // Steelworker / Steely Spirit: 1.5x (6144/4096) on Steel moves
+        if (atk_ability == pkmn_core::abilities::AbilityId::Steelworker
+            || atk_ability == pkmn_core::abilities::AbilityId::SteelySpirit)
+            && move_type == Type::Steel
+        {
+            damage = (damage * 6144 + 2047) / 4096;
+        }
+
+        // Water Bubble: 2x (8192/4096) on Water moves (attacker)
+        if atk_ability == pkmn_core::abilities::AbilityId::WaterBubble
+            && move_type == Type::Water
+        {
+            damage = (damage * 8192 + 2047) / 4096;
+        }
+
+        // Water Bubble: 0.5x (2048/4096) on Fire moves (defender takes less)
+        if def_ability == pkmn_core::abilities::AbilityId::WaterBubble
+            && move_type == Type::Fire
+        {
+            damage = (damage * 2048 + 2047) / 4096;
+        }
+
+        // Neuroforce: 1.25x (5120/4096) on super-effective hits
+        if atk_ability == pkmn_core::abilities::AbilityId::Neuroforce
+            && effectiveness > 1.0
+        {
+            damage = (damage * 5120 + 2047) / 4096;
+        }
+
+        // Analytic: 1.3x (5325/4096) when user moves last
+        // Uses has_moved_this_turn: if defender already moved, attacker is slower/moved last
+        if atk_ability == pkmn_core::abilities::AbilityId::Analytic
+            && defender.has_moved_this_turn
+        {
+            damage = (damage * 5325 + 2047) / 4096;
+        }
+
+        // TODO: Stakeout: 2x (8192/4096) when target switched in this turn
+        // Requires tracking switched_in_this_turn on Pokemon (not yet available)
+
         // Life Orb: 1.3x (5324/4096)
         if atk_item == pkmn_core::items::ItemId::LifeOrb {
             damage = (damage * 5324 + 2047) / 4096;
@@ -1367,6 +1434,34 @@ impl Battle {
         // Tough Claws: 1.3x (5325/4096) on contact moves
         if attacker.ability_id == pkmn_core::abilities::AbilityId::ToughClaws
             && move_data.flags.has(MoveFlags::CONTACT)
+        {
+            bp = (bp * 5325 + 2048) / 4096;
+        }
+
+        // Sharpness: 1.5x (6144/4096) on slicing moves (onBasePower in PS)
+        if attacker.ability_id == pkmn_core::abilities::AbilityId::Sharpness
+            && move_data.flags.has(MoveFlags::SLICING)
+        {
+            bp = (bp * 6144 + 2048) / 4096;
+        }
+
+        // Reckless: 1.2x (4915/4096) on recoil moves (onBasePower in PS)
+        if attacker.ability_id == pkmn_core::abilities::AbilityId::Reckless
+            && pkmn_core::moves::is_recoil_move(move_data.id)
+        {
+            bp = (bp * 4915 + 2048) / 4096;
+        }
+
+        // Mega Launcher: 1.5x (6144/4096) on pulse/aura moves (onBasePower in PS)
+        if attacker.ability_id == pkmn_core::abilities::AbilityId::MegaLauncher
+            && move_data.flags.has(MoveFlags::PULSE)
+        {
+            bp = (bp * 6144 + 2048) / 4096;
+        }
+
+        // Punk Rock: 1.3x (5325/4096) on sound moves (onBasePower in PS)
+        if attacker.ability_id == pkmn_core::abilities::AbilityId::PunkRock
+            && move_data.flags.has(MoveFlags::SOUND)
         {
             bp = (bp * 5325 + 2048) / 4096;
         }

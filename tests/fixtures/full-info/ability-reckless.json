@@ -1,0 +1,207 @@
+{
+  "id": "ability-reckless",
+  "description": "Reckless 1.2x on Brave Bird (recoil)",
+  "seed": [
+    5010,
+    5011,
+    5012,
+    5013
+  ],
+  "format": "gen9customgame",
+  "p1": {
+    "name": "Player 1",
+    "team": [
+      {
+        "name": "Staraptor",
+        "species": "Staraptor",
+        "item": "",
+        "ability": "Reckless",
+        "moves": [
+          "Brave Bird",
+          "Double-Edge",
+          "Close Combat",
+          "U-turn"
+        ],
+        "nature": "Adamant",
+        "evs": {
+          "hp": 0,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "p2": {
+    "name": "Player 2",
+    "team": [
+      {
+        "name": "Blissey",
+        "species": "Blissey",
+        "item": "",
+        "ability": "Natural Cure",
+        "moves": [
+          "Seismic Toss",
+          "Soft-Boiled",
+          "Thunder Wave",
+          "Toxic"
+        ],
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "level": 100,
+        "gender": "",
+        "shiny": false,
+        "happiness": 255,
+        "pokeball": "",
+        "hpType": "",
+        "dynamaxLevel": 10,
+        "teraType": "",
+        "gigantamax": false
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p1a",
+      "target": "p2a",
+      "move": "Brave Bird",
+      "damage": 484,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Staraptor",
+        "level": 100,
+        "stat_atk": 372,
+        "stat_def": 176,
+        "stat_spa": 122,
+        "ability": "Reckless",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Blissey",
+        "level": 100,
+        "stat_atk": 50,
+        "stat_def": 130,
+        "stat_spd": 307,
+        "ability": "Natural Cure",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 714,
+        "hp_after": 230,
+        "max_hp": 714
+      }
+    },
+    {
+      "type": "damage",
+      "turn": 1,
+      "source": "p2a",
+      "target": "p1a",
+      "move": "Seismic Toss",
+      "damage": 100,
+      "crit": false,
+      "effectiveness": 1,
+      "weather": null,
+      "terrain": null,
+      "screens": {
+        "reflect": false,
+        "lightScreen": false
+      },
+      "attacker": {
+        "species": "Blissey",
+        "level": 100,
+        "stat_atk": 50,
+        "stat_def": 130,
+        "stat_spa": 186,
+        "ability": "Natural Cure",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "teraType": null
+      },
+      "defender": {
+        "species": "Staraptor",
+        "level": 100,
+        "stat_atk": 372,
+        "stat_def": 176,
+        "stat_spd": 157,
+        "ability": "Reckless",
+        "item": "",
+        "boosts": {
+          "atk": 0,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        "status": null,
+        "hp_before": 151,
+        "hp_after": 51,
+        "max_hp": 311
+      }
+    }
+  ]
+}

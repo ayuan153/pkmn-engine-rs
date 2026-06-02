@@ -80,6 +80,10 @@ pub fn ability_hooks(id: AbilityId) -> EventHooks {
             on_residual: Some(hook_speed_boost_residual),
             ..EventHooks::NONE
         },
+        AbilityId::Download => EventHooks {
+            on_switch_in: Some(hook_download_switch),
+            ..EventHooks::NONE
+        },
         _ => EventHooks::NONE,
     }
 }
@@ -223,6 +227,26 @@ fn hook_iron_barbs_hit(battle: &mut Battle, attacker: u8, defender: u8) {
 }
 
 // --- Hook implementations: on_residual ---
+
+/// Download: +1 Atk if target's Def <= SpD, else +1 SpA.
+fn hook_download_switch(battle: &mut Battle, player: u8) {
+    let opp = 1 - player;
+    let opp_mon = battle.sides[opp as usize].active();
+    let def = opp_mon.stats.def;
+    let spd = opp_mon.stats.spd;
+    let name = battle.species_name(player);
+    if def <= spd {
+        battle.sides[player as usize].active_mut().boosts.atk =
+            (battle.sides[player as usize].active().boosts.atk + 1).min(6);
+        battle.emit(format!("|-ability|p{}a: {}|Download|boost", player + 1, name));
+        battle.emit(format!("|-boost|p{}a: {}|atk|1", player + 1, name));
+    } else {
+        battle.sides[player as usize].active_mut().boosts.spa =
+            (battle.sides[player as usize].active().boosts.spa + 1).min(6);
+        battle.emit(format!("|-ability|p{}a: {}|Download|boost", player + 1, name));
+        battle.emit(format!("|-boost|p{}a: {}|spa|1", player + 1, name));
+    }
+}
 
 fn hook_speed_boost_residual(battle: &mut Battle, player: u8) {
     let mon = battle.sides[player as usize].active_mut();
@@ -509,5 +533,118 @@ mod tests {
         let hooks = item_hooks(ItemId::Leftovers);
         assert!(hooks.on_residual.is_some());
         assert!(hooks.on_source_modify_damage.is_none());
+    }
+
+    #[test]
+    fn test_download_hook_registered() {
+        let hooks = ability_hooks(AbilityId::Download);
+        assert!(hooks.on_switch_in.is_some());
+    }
+
+    #[test]
+    fn test_sharpness_flag_detection() {
+        use pkmn_core::moves::{MoveFlags, get_move};
+        let leaf_blade = get_move("Leaf Blade").unwrap();
+        assert!(leaf_blade.flags.has(MoveFlags::SLICING));
+        let earthquake = get_move("Earthquake").unwrap();
+        assert!(!earthquake.flags.has(MoveFlags::SLICING));
+    }
+
+    #[test]
+    fn test_reckless_recoil_detection() {
+        use pkmn_core::moves::is_recoil_move;
+        let bb = pkmn_core::moves::get_move("Brave Bird").unwrap();
+        assert!(is_recoil_move(bb.id));
+        let eq = pkmn_core::moves::get_move("Earthquake").unwrap();
+        assert!(!is_recoil_move(eq.id));
+    }
+
+    #[test]
+    fn test_iron_fist_flag_detection() {
+        use pkmn_core::moves::{MoveFlags, get_move};
+        let ice_punch = get_move("Ice Punch").unwrap();
+        assert!(ice_punch.flags.has(MoveFlags::PUNCH));
+        let eq = get_move("Earthquake").unwrap();
+        assert!(!eq.flags.has(MoveFlags::PUNCH));
+    }
+
+    #[test]
+    fn test_strong_jaw_flag_detection() {
+        use pkmn_core::moves::{MoveFlags, get_move};
+        let crunch = get_move("Crunch").unwrap();
+        assert!(crunch.flags.has(MoveFlags::BITE));
+    }
+
+    #[test]
+    fn test_mega_launcher_flag_detection() {
+        use pkmn_core::moves::{MoveFlags, get_move};
+        let dark_pulse = get_move("Dark Pulse").unwrap();
+        assert!(dark_pulse.flags.has(MoveFlags::PULSE));
+        let aura_sphere = get_move("Aura Sphere").unwrap();
+        assert!(aura_sphere.flags.has(MoveFlags::PULSE));
+    }
+
+    #[test]
+    fn test_punk_rock_sound_flag() {
+        use pkmn_core::moves::{MoveFlags, get_move};
+        let boomburst = get_move("Boomburst").unwrap();
+        assert!(boomburst.flags.has(MoveFlags::SOUND));
+        let eq = get_move("Earthquake").unwrap();
+        assert!(!eq.flags.has(MoveFlags::SOUND));
+    }
+
+    #[test]
+    fn test_steelworker_type_check() {
+        use pkmn_core::moves::get_move;
+        use pkmn_core::types::Type;
+        let flash_cannon = get_move("Flash Cannon").unwrap();
+        assert_eq!(flash_cannon.move_type, Type::Steel);
+    }
+
+    #[test]
+    fn test_water_bubble_type_check() {
+        use pkmn_core::moves::get_move;
+        use pkmn_core::types::Type;
+        let scald = get_move("Scald").unwrap();
+        assert_eq!(scald.move_type, Type::Water);
+        let fire_blast = get_move("Fire Blast").unwrap();
+        assert_eq!(fire_blast.move_type, Type::Fire);
+    }
+
+    #[test]
+    fn test_ate_type_change_pixilate() {
+        use pkmn_core::moves::get_move;
+        use pkmn_core::types::Type;
+        // Hyper Voice is Normal type
+        let hv = get_move("Hyper Voice").unwrap();
+        assert_eq!(hv.move_type, Type::Normal);
+        // Pixilate changes Normal -> Fairy (tested via damage path)
+    }
+
+    #[test]
+    fn test_ate_type_change_refrigerate() {
+        use pkmn_core::moves::get_move;
+        use pkmn_core::types::Type;
+        let hv = get_move("Hyper Voice").unwrap();
+        assert_eq!(hv.move_type, Type::Normal);
+        // Refrigerate changes Normal -> Ice (tested via damage path)
+    }
+
+    #[test]
+    fn test_ate_type_change_aerilate() {
+        use pkmn_core::moves::get_move;
+        use pkmn_core::types::Type;
+        let hv = get_move("Hyper Voice").unwrap();
+        assert_eq!(hv.move_type, Type::Normal);
+        // Aerilate changes Normal -> Flying (tested via damage path)
+    }
+
+    #[test]
+    fn test_ate_type_change_galvanize() {
+        use pkmn_core::moves::get_move;
+        use pkmn_core::types::Type;
+        let hv = get_move("Hyper Voice").unwrap();
+        assert_eq!(hv.move_type, Type::Normal);
+        // Galvanize changes Normal -> Electric (tested via damage path)
     }
 }
