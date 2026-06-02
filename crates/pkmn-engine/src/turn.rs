@@ -73,6 +73,8 @@ impl Battle {
         }
 
         self.sides[player as usize].active_index = target as usize;
+        // Mark new active as having switched in this turn (used by Stakeout)
+        self.sides[player as usize].active_mut().switched_in_this_turn = true;
         let name = self.species_name(player);
         let full_name = self.full_species_name(player);
         let mon = self.sides[player as usize].active();
@@ -991,37 +993,61 @@ impl Battle {
         }
 
         // --- Foul Play uses defender's Atk stat ---
+        // Unaware: attacker ignores defender's defensive boosts; defender ignores attacker's offensive boosts
+        let atk_ability = attacker.ability_id;
+        let def_ability = defender.ability_id;
         let (mut atk_stat, mut def_stat) = match move_data.category {
             MoveCategory::Physical => {
+                // Unaware (defender): ignore attacker's offensive boosts
+                let atk_boost = if def_ability == pkmn_core::abilities::AbilityId::Unaware {
+                    0
+                } else {
+                    attacker.boosts.atk
+                };
                 let atk = if move_data.name == "Body Press" {
                     attacker.effective_def()
                 } else if move_data.name == "Foul Play" {
-                    defender.effective_atk()
+                    (defender.stats.atk as f32 * crate::pokemon::Boosts::multiplier(
+                        if def_ability == pkmn_core::abilities::AbilityId::Unaware { 0 } else { defender.boosts.atk }
+                    )) as u16
                 } else {
-                    attacker.effective_atk()
+                    (attacker.stats.atk as f32 * crate::pokemon::Boosts::multiplier(atk_boost)) as u16
                 };
-                // Crit ignores positive def boosts
-                let def = if critical && defender.boosts.def > 0 {
-                    defender.stats.def // raw stat, no boost
+                // Unaware (attacker): ignore defender's defensive boosts
+                // Crit also ignores positive def boosts
+                let def_boost = if atk_ability == pkmn_core::abilities::AbilityId::Unaware {
+                    0
+                } else if critical && defender.boosts.def > 0 {
+                    0
                 } else {
-                    defender.effective_def()
+                    defender.boosts.def
                 };
+                let def = (defender.stats.def as f32 * crate::pokemon::Boosts::multiplier(def_boost)) as u16;
                 (atk, def)
             }
             MoveCategory::Special => {
-                let def = if critical && defender.boosts.spd > 0 {
-                    defender.stats.spd
+                // Unaware (defender): ignore attacker's offensive boosts
+                let spa_boost = if def_ability == pkmn_core::abilities::AbilityId::Unaware {
+                    0
                 } else {
-                    defender.effective_spd()
+                    attacker.boosts.spa
                 };
-                (attacker.effective_spa(), def)
+                let atk = (attacker.stats.spa as f32 * crate::pokemon::Boosts::multiplier(spa_boost)) as u16;
+                // Unaware (attacker): ignore defender's defensive boosts
+                let spd_boost = if atk_ability == pkmn_core::abilities::AbilityId::Unaware {
+                    0
+                } else if critical && defender.boosts.spd > 0 {
+                    0
+                } else {
+                    defender.boosts.spd
+                };
+                let def = (defender.stats.spd as f32 * crate::pokemon::Boosts::multiplier(spd_boost)) as u16;
+                (atk, def)
             }
             _ => return 0,
         };
 
         let atk_item = attacker.item_id;
-        let atk_ability = attacker.ability_id;
-        let def_ability = defender.ability_id;
 
         // --- Offensive stat modifiers ---
         match move_data.category {
@@ -1337,8 +1363,12 @@ impl Battle {
             damage = (damage * 5325 + 2047) / 4096;
         }
 
-        // TODO: Stakeout: 2x (8192/4096) when target switched in this turn
-        // Requires tracking switched_in_this_turn on Pokemon (not yet available)
+        // Stakeout: 2x (8192/4096) when target switched in this turn
+        if atk_ability == pkmn_core::abilities::AbilityId::Stakeout
+            && defender.switched_in_this_turn
+        {
+            damage = (damage * 8192 + 2047) / 4096;
+        }
 
         // Life Orb: 1.3x (5324/4096)
         if atk_item == pkmn_core::items::ItemId::LifeOrb {
@@ -1555,7 +1585,22 @@ impl Battle {
 
     /// Apply a data-driven boost effect to a player's active Pokemon.
     /// Emits unboosts first, then boosts (PS protocol order for mixed moves like Shell Smash).
+    /// Routes through the on_boost hook for ability transforms (Contrary, Simple, Defiant, Competitive).
     fn apply_boost_effect(&mut self, player: u8, boosts: &crate::events::BoostEffect) {
+        self.apply_boost_effect_with(player, boosts, false);
+    }
+
+    /// Apply boost with explicit by_opponent flag for Defiant/Competitive triggers.
+    pub(crate) fn apply_boost_effect_with(&mut self, player: u8, boosts: &crate::events::BoostEffect, by_opponent: bool) {
+        // on_boost transform pipeline: run the target's ability hook to transform boosts
+        let ability = self.sides[player as usize].active().ability_id;
+        let hooks = crate::events::ability_hooks(ability);
+        let boosts = if let Some(hook) = hooks.on_boost {
+            hook(self, player, *boosts, by_opponent)
+        } else {
+            *boosts
+        };
+
         let atk_name = self.species_name(player);
 
         // Stat order for iteration: atk, def, spa, spd, spe
@@ -2393,6 +2438,8 @@ impl Battle {
         for side in &mut self.sides {
             side.active_mut().volatiles.remove(Volatiles::ROOST);
             side.active_mut().volatiles.remove(Volatiles::FLINCH);
+            // Clear switched_in_this_turn flag (Stakeout only applies during the switch-in turn)
+            side.active_mut().switched_in_this_turn = false;
             if side.side_conditions.reflect > 0 {
                 side.side_conditions.reflect -= 1;
             }
@@ -3544,5 +3591,156 @@ mod tests_sleep {
         battle.execute_move(0, 0);
         assert_eq!(battle.sides[1].active().status, Status::None);
         assert!(battle.protocol.iter().any(|l| l.contains("|-fail|") && l.contains("|slp")));
+    }
+}
+
+#[cfg(test)]
+mod tests_boost_reactive {
+    use crate::battle::Battle;
+    use crate::pokemon::{MoveSlot, Pokemon};
+    use crate::side::Side;
+    use pkmn_core::abilities::AbilityId;
+    use pkmn_core::nature::Nature;
+    use pkmn_core::species::get_species;
+    use pkmn_core::moves::get_move;
+
+    fn slot(id: u16, pp: u8) -> MoveSlot { MoveSlot { move_id: id, pp, max_pp: pp } }
+    fn empty() -> MoveSlot { MoveSlot { move_id: 0, pp: 0, max_pp: 0 } }
+
+    fn make_mon(species: &str, ability: AbilityId) -> Pokemon {
+        let sp = get_species(species).unwrap();
+        let mut mon = Pokemon::new(sp, 100, Nature::Hardy, [empty(); 4], [0; 6], [31; 6]);
+        mon.ability_id = ability;
+        mon
+    }
+
+    fn raw_battle(p1: Pokemon, p2: Pokemon) -> Battle {
+        Battle::new_raw(Side::new(vec![p1]), Side::new(vec![p2]))
+    }
+
+    // --- Contrary: inverts boosts (Swords Dance -> -2 Atk) ---
+    #[test]
+    fn test_contrary_inverts_swords_dance() {
+        let mut p1 = make_mon("Spinda", AbilityId::Contrary);
+        // Give Swords Dance (move_id for "Swords Dance")
+        let sd = get_move("Swords Dance").unwrap();
+        p1.moves[0] = slot(sd.id, 20);
+        let p2 = make_mon("Garchomp", AbilityId::None);
+        let mut battle = raw_battle(p1, p2);
+        battle.execute_move(0, 0); // use Swords Dance
+        assert_eq!(battle.sides[0].active().boosts.atk, -2, "Contrary should invert +2 Atk to -2 Atk");
+    }
+
+    // --- Simple: doubles boosts (Swords Dance -> +4 Atk) ---
+    #[test]
+    fn test_simple_doubles_swords_dance() {
+        let mut p1 = make_mon("Numel", AbilityId::Simple);
+        let sd = get_move("Swords Dance").unwrap();
+        p1.moves[0] = slot(sd.id, 20);
+        let p2 = make_mon("Garchomp", AbilityId::None);
+        let mut battle = raw_battle(p1, p2);
+        battle.execute_move(0, 0);
+        assert_eq!(battle.sides[0].active().boosts.atk, 4, "Simple should double +2 Atk to +4 Atk");
+    }
+
+    // --- Defiant: +2 Atk when Intimidated ---
+    #[test]
+    fn test_defiant_triggers_on_intimidate() {
+        let p1 = make_mon("Garchomp", AbilityId::Intimidate);
+        let p2 = make_mon("Bisharp", AbilityId::Defiant);
+        let side1 = Side::new(vec![p1]);
+        let side2 = Side::new(vec![p2]);
+        let battle = Battle::new(side1, side2, [1, 2, 3, 4]);
+        // Intimidate fires on switch-in, drops Atk by 1; Defiant triggers +2 Atk
+        // Net: -1 + 2 = +1 Atk
+        assert_eq!(battle.sides[1].active().boosts.atk, 1, "Defiant: -1 from Intimidate +2 from Defiant = +1 net");
+    }
+
+    // --- Competitive: +2 SpA when Intimidated ---
+    #[test]
+    fn test_competitive_triggers_on_intimidate() {
+        let p1 = make_mon("Garchomp", AbilityId::Intimidate);
+        let p2 = make_mon("Milotic", AbilityId::Competitive);
+        let side1 = Side::new(vec![p1]);
+        let side2 = Side::new(vec![p2]);
+        let battle = Battle::new(side1, side2, [1, 2, 3, 4]);
+        // Intimidate drops Atk by 1; Competitive triggers +2 SpA
+        assert_eq!(battle.sides[1].active().boosts.atk, -1);
+        assert_eq!(battle.sides[1].active().boosts.spa, 2, "Competitive: +2 SpA on opponent stat drop");
+    }
+
+    // --- Unaware (defender): ignores attacker's offensive boosts ---
+    #[test]
+    fn test_unaware_defender_ignores_attacker_boosts() {
+        let mut p1 = make_mon("Garchomp", AbilityId::None);
+        let eq = get_move("Earthquake").unwrap();
+        p1.moves[0] = slot(eq.id, 10);
+        let p2 = make_mon("Clefable", AbilityId::Unaware);
+        // Set +2 Atk on attacker
+        let mut battle = raw_battle(p1, p2);
+        battle.sides[0].active_mut().boosts.atk = 2;
+        // Damage with +2 Atk vs Unaware should equal damage with 0 Atk boost
+        let dmg_boosted = battle.calculate_damage_with(0, 1, eq, false, 100);
+        battle.sides[0].active_mut().boosts.atk = 0;
+        let dmg_unboosted = battle.calculate_damage_with(0, 1, eq, false, 100);
+        assert_eq!(dmg_boosted, dmg_unboosted, "Unaware defender should ignore attacker's +2 Atk");
+    }
+
+    // --- Unaware (attacker): ignores defender's defensive boosts ---
+    #[test]
+    fn test_unaware_attacker_ignores_defender_boosts() {
+        let mut p1 = make_mon("Clefable", AbilityId::Unaware);
+        let eq = get_move("Earthquake").unwrap();
+        p1.moves[0] = slot(eq.id, 10);
+        let p2 = make_mon("Garchomp", AbilityId::None);
+        let mut battle = raw_battle(p1, p2);
+        battle.sides[1].active_mut().boosts.def = 2;
+        let dmg_boosted_def = battle.calculate_damage_with(0, 1, eq, false, 100);
+        battle.sides[1].active_mut().boosts.def = 0;
+        let dmg_unboosted_def = battle.calculate_damage_with(0, 1, eq, false, 100);
+        assert_eq!(dmg_boosted_def, dmg_unboosted_def, "Unaware attacker should ignore defender's +2 Def");
+    }
+
+    // --- Download: +1 Atk when target Def <= SpD ---
+    #[test]
+    fn test_download_boosts_atk_when_def_leq_spd() {
+        let p1 = make_mon("Porygon-Z", AbilityId::Download);
+        // Blissey: extremely low Def, high SpD => Def <= SpD => +1 Atk
+        let p2 = make_mon("Blissey", AbilityId::None);
+        let side1 = Side::new(vec![p1]);
+        let side2 = Side::new(vec![p2]);
+        let battle = Battle::new(side1, side2, [1, 2, 3, 4]);
+        assert_eq!(battle.sides[0].active().boosts.atk, 1);
+        assert_eq!(battle.sides[0].active().boosts.spa, 0);
+    }
+
+    // --- Download: +1 SpA when target SpD < Def ---
+    #[test]
+    fn test_download_boosts_spa_when_spd_lt_def() {
+        let p1 = make_mon("Porygon-Z", AbilityId::Download);
+        // Garchomp: base Def 95, base SpD 85 => SpD < Def => +1 SpA
+        let p2 = make_mon("Garchomp", AbilityId::None);
+        let side1 = Side::new(vec![p1]);
+        let side2 = Side::new(vec![p2]);
+        let battle = Battle::new(side1, side2, [1, 2, 3, 4]);
+        assert_eq!(battle.sides[0].active().boosts.spa, 1);
+        assert_eq!(battle.sides[0].active().boosts.atk, 0);
+    }
+
+    // --- Stakeout: x2 damage when target switched in this turn ---
+    #[test]
+    fn test_stakeout_doubles_damage_on_switch_in() {
+        let mut p1 = make_mon("Starmie", AbilityId::Stakeout);
+        let eq = get_move("Earthquake").unwrap();
+        p1.moves[0] = slot(eq.id, 10);
+        let p2 = make_mon("Garchomp", AbilityId::None);
+        let mut battle = raw_battle(p1, p2);
+        // Without switch flag
+        let dmg_normal = battle.calculate_damage_with(0, 1, eq, false, 100);
+        // With switch flag
+        battle.sides[1].active_mut().switched_in_this_turn = true;
+        let dmg_stakeout = battle.calculate_damage_with(0, 1, eq, false, 100);
+        // Stakeout applies 8192/4096 = exactly 2x via chainModify
+        assert_eq!(dmg_stakeout as u32, (dmg_normal as u32 * 8192 + 2047) / 4096, "Stakeout should 2x damage on switched target");
     }
 }

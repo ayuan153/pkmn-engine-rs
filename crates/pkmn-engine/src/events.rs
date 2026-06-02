@@ -22,6 +22,12 @@ pub struct EventHooks {
     /// Called during the end-of-turn residual pass for this ability/item.
     /// Residual order follows PS convention: items (5) < Leech Seed (8) < status (9-10).
     pub on_residual: Option<fn(&mut Battle, player: u8)>,
+    /// on_boost transform pipeline: called BEFORE a stat change is applied to the target.
+    /// Arguments: (battle, target_player, boosts, caused_by_opponent).
+    /// Returns the potentially-transformed BoostEffect to actually apply.
+    /// Abilities like Contrary invert, Simple doubles, Defiant/Competitive react to opponent drops.
+    #[allow(clippy::type_complexity)]
+    pub on_boost: Option<fn(&mut Battle, target: u8, boosts: BoostEffect, by_opponent: bool) -> BoostEffect>,
 }
 
 impl EventHooks {
@@ -31,6 +37,7 @@ impl EventHooks {
         on_source_modify_damage: None,
         on_damaging_hit: None,
         on_residual: None,
+        on_boost: None,
     };
 }
 
@@ -84,6 +91,22 @@ pub fn ability_hooks(id: AbilityId) -> EventHooks {
             on_switch_in: Some(hook_download_switch),
             ..EventHooks::NONE
         },
+        AbilityId::Contrary => EventHooks {
+            on_boost: Some(hook_contrary_boost),
+            ..EventHooks::NONE
+        },
+        AbilityId::Simple => EventHooks {
+            on_boost: Some(hook_simple_boost),
+            ..EventHooks::NONE
+        },
+        AbilityId::Defiant => EventHooks {
+            on_boost: Some(hook_defiant_boost),
+            ..EventHooks::NONE
+        },
+        AbilityId::Competitive => EventHooks {
+            on_boost: Some(hook_competitive_boost),
+            ..EventHooks::NONE
+        },
         _ => EventHooks::NONE,
     }
 }
@@ -112,15 +135,14 @@ pub fn item_hooks(id: ItemId) -> EventHooks {
 fn hook_intimidate_switch(battle: &mut Battle, player: u8) {
     let name = battle.species_name(player);
     let opp = 1 - player;
-    let opp_name = battle.species_name(opp);
     battle.emit(format!(
         "|-ability|p{}a: {}|Intimidate|boost",
         player + 1,
         name
     ));
-    battle.emit(format!("|-unboost|p{}a: {}|atk|1", opp + 1, opp_name));
-    let cur = battle.sides[opp as usize].active().boosts.atk;
-    battle.sides[opp as usize].active_mut().boosts.atk = (cur - 1).max(-6);
+    // Route through apply_boost_effect_with so on_boost hooks (Defiant/Competitive/Contrary) fire
+    let drop = BoostEffect { atk: -1, def: 0, spa: 0, spd: 0, spe: 0 };
+    battle.apply_boost_effect_with(opp, &drop, true);
 }
 
 fn hook_drizzle_switch(battle: &mut Battle, player: u8) {
@@ -253,6 +275,60 @@ fn hook_speed_boost_residual(battle: &mut Battle, player: u8) {
     if mon.is_alive() {
         mon.boosts.spe = (mon.boosts.spe + 1).min(6);
     }
+}
+
+// --- Hook implementations: on_boost ---
+
+/// Contrary: invert the sign of every stat change.
+fn hook_contrary_boost(_battle: &mut Battle, _target: u8, boosts: BoostEffect, _by_opponent: bool) -> BoostEffect {
+    BoostEffect {
+        atk: -boosts.atk,
+        def: -boosts.def,
+        spa: -boosts.spa,
+        spd: -boosts.spd,
+        spe: -boosts.spe,
+    }
+}
+
+/// Simple: double every stat change.
+fn hook_simple_boost(_battle: &mut Battle, _target: u8, boosts: BoostEffect, _by_opponent: bool) -> BoostEffect {
+    BoostEffect {
+        atk: boosts.atk.saturating_mul(2),
+        def: boosts.def.saturating_mul(2),
+        spa: boosts.spa.saturating_mul(2),
+        spd: boosts.spd.saturating_mul(2),
+        spe: boosts.spe.saturating_mul(2),
+    }
+}
+
+/// Defiant: when an opponent lowers any stat, +2 Atk.
+fn hook_defiant_boost(battle: &mut Battle, target: u8, boosts: BoostEffect, by_opponent: bool) -> BoostEffect {
+    if by_opponent {
+        let has_drop = boosts.atk < 0 || boosts.def < 0 || boosts.spa < 0 || boosts.spd < 0 || boosts.spe < 0;
+        if has_drop {
+            let name = battle.species_name(target);
+            battle.emit(format!("|-ability|p{}a: {}|Defiant|boost", target + 1, name));
+            let mon = battle.sides[target as usize].active_mut();
+            mon.boosts.atk = (mon.boosts.atk + 2).min(6);
+            battle.emit(format!("|-boost|p{}a: {}|atk|2", target + 1, name));
+        }
+    }
+    boosts
+}
+
+/// Competitive: when an opponent lowers any stat, +2 SpA.
+fn hook_competitive_boost(battle: &mut Battle, target: u8, boosts: BoostEffect, by_opponent: bool) -> BoostEffect {
+    if by_opponent {
+        let has_drop = boosts.atk < 0 || boosts.def < 0 || boosts.spa < 0 || boosts.spd < 0 || boosts.spe < 0;
+        if has_drop {
+            let name = battle.species_name(target);
+            battle.emit(format!("|-ability|p{}a: {}|Competitive|boost", target + 1, name));
+            let mon = battle.sides[target as usize].active_mut();
+            mon.boosts.spa = (mon.boosts.spa + 2).min(6);
+            battle.emit(format!("|-boost|p{}a: {}|spa|2", target + 1, name));
+        }
+    }
+    boosts
 }
 
 fn hook_leftovers_residual(battle: &mut Battle, player: u8) {
@@ -539,6 +615,30 @@ mod tests {
     fn test_download_hook_registered() {
         let hooks = ability_hooks(AbilityId::Download);
         assert!(hooks.on_switch_in.is_some());
+    }
+
+    #[test]
+    fn test_contrary_hook_registered() {
+        let hooks = ability_hooks(AbilityId::Contrary);
+        assert!(hooks.on_boost.is_some());
+    }
+
+    #[test]
+    fn test_simple_hook_registered() {
+        let hooks = ability_hooks(AbilityId::Simple);
+        assert!(hooks.on_boost.is_some());
+    }
+
+    #[test]
+    fn test_defiant_hook_registered() {
+        let hooks = ability_hooks(AbilityId::Defiant);
+        assert!(hooks.on_boost.is_some());
+    }
+
+    #[test]
+    fn test_competitive_hook_registered() {
+        let hooks = ability_hooks(AbilityId::Competitive);
+        assert!(hooks.on_boost.is_some());
     }
 
     #[test]

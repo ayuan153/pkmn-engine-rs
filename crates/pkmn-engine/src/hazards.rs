@@ -69,11 +69,11 @@ impl Battle {
             && self.sides[player as usize].active().ability_id != pkmn_core::abilities::AbilityId::Levitate
             && self.sides[player as usize].active().item_id != pkmn_core::items::ItemId::AirBalloon
         {
-            let mon = self.sides[player as usize].active_mut();
-            mon.boosts.spe = (mon.boosts.spe - 1).max(-6);
             let name = self.species_name(player);
             self.emit(format!("|-activate|p{}a: {}|move: Sticky Web", player+1, name));
-            self.emit(format!("|-unboost|p{}a: {}|spe|1", player+1, name));
+            // Route through on_boost hook (by_opponent=true: set by the opponent's side)
+            let drop = crate::events::BoostEffect { atk: 0, def: 0, spa: 0, spd: 0, spe: -1 };
+            self.apply_boost_effect_with(player, &drop, true);
         }
 
         if self.sides[player as usize].active().hp == 0 {

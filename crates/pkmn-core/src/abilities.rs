@@ -100,6 +100,11 @@ pub enum AbilityId {
     Aerilate,
     Galvanize,
     Download,
+    // Boost-reactive abilities (batch 6)
+    Contrary,
+    Simple,
+    Defiant,
+    Competitive,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -209,6 +214,10 @@ static ABILITY_TABLE: &[AbilityData] = &[
     AbilityData { id: AbilityId::Aerilate, name: "Aerilate", triggers: &[AbilityTrigger::ModifyDamage] },
     AbilityData { id: AbilityId::Galvanize, name: "Galvanize", triggers: &[AbilityTrigger::ModifyDamage] },
     AbilityData { id: AbilityId::Download, name: "Download", triggers: &[AbilityTrigger::OnSwitchIn] },
+    AbilityData { id: AbilityId::Contrary, name: "Contrary", triggers: &[AbilityTrigger::Passive] },
+    AbilityData { id: AbilityId::Simple, name: "Simple", triggers: &[AbilityTrigger::Passive] },
+    AbilityData { id: AbilityId::Defiant, name: "Defiant", triggers: &[AbilityTrigger::Passive] },
+    AbilityData { id: AbilityId::Competitive, name: "Competitive", triggers: &[AbilityTrigger::Passive] },
 ];
 
 pub fn get_ability(id: AbilityId) -> &'static AbilityData {

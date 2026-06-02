@@ -140,6 +140,8 @@ pub struct Pokemon {
     // Tera
     pub tera_type: Option<Type>,
     pub is_terastallized: bool,
+    /// Set on switch-in, cleared at end of turn. Used by Stakeout.
+    pub switched_in_this_turn: bool,
 }
 
 impl Pokemon {
@@ -194,6 +196,7 @@ impl Pokemon {
             last_used_move_idx: 255,
             tera_type: None,
             is_terastallized: false,
+            switched_in_this_turn: false,
         }
     }
 

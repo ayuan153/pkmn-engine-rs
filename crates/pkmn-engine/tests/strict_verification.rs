@@ -263,6 +263,10 @@ fn parse_ability(name: &str) -> AbilityId {
         "Aerilate" => AbilityId::Aerilate,
         "Galvanize" => AbilityId::Galvanize,
         "Download" => AbilityId::Download,
+        "Contrary" => AbilityId::Contrary,
+        "Simple" => AbilityId::Simple,
+        "Defiant" => AbilityId::Defiant,
+        "Competitive" => AbilityId::Competitive,
         _ => AbilityId::None,
     }
 }
@@ -395,6 +399,7 @@ fn build_pokemon(species_name: &str, level: u8, stat_atk: u16, stat_def: u16,
         last_used_move_idx: 255,
         tera_type: None,
         is_terastallized: false,
+        switched_in_this_turn: false,
     };
     // Set HP to max_hp (defender will be adjusted per-event)
     mon.hp = max_hp;
